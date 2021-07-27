@@ -111,7 +111,7 @@ fields:
     constraints:
       required: true
   - name: sqa_unidade_exec
-    tille: Unidade de Exercício - Chave Estrangeira
+    tille: Unidade de Exercício - Chave Origem
     type: integer
     format: default
     bareNumber: true
@@ -119,7 +119,7 @@ fields:
       required: true
       unique: false
   - name: sqa_unidade_orc
-    tille: Unidade Orçamentária - Chave Estrangeira
+    tille: Unidade Orçamentária - Chave Origem
     type: integer
     format: default
     bareNumber: true
