@@ -23,7 +23,7 @@ full-extract:
 extract: $(DATA_RAW_FILES) # Extract raw files from external source into data/raw/
 
 $(DATA_RAW_FILES): data/raw/%.csv: scripts/sql/%.sql
-	dtamg-py etl-make extract --resource $*
+	@dtamg-py etl-make extract --resource $* 2>> logs/extract.txt
 
 ingest: $(DATA_INGEST_FILES) ## Ingest raw files (data/raw/) into staging area (data/staging/)
 
