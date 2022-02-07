@@ -57,7 +57,7 @@ $(DATASETS_FILES): logs/update/%.txt: build_datasets/%/datapackage.json
 	dpckan dataset update --datapackage build_datasets/$*/datapackage.json > $@
 
 $(VALIDATION_FILES): logs/validate/%.json: data/%.csv.gz schemas/%.yaml
-	-dtamg-py etl-make validate -r $* >$@
+	-dtamg-py etl-make validate -r $*
 
 validate-metadata: ## Valida arquivo yaml com tableschema
 	@echo "Validando tableschemas"
