@@ -7,7 +7,7 @@ help:
 
 container: ## Start Docker Container
 	@echo 'Run etl process on Docker Container...'
-	@docker run -it --rm -v /$(PWD):/work_dir \
+
 					     -v ~/.local/share/AzureR:/root/.local/share/AzureR \
 						 -e CKAN_HOST=$(CKAN_HOST) \
 						 -e CKAN_KEY=$(CKAN_KEY) \
