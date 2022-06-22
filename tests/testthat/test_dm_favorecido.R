@@ -30,7 +30,7 @@ test_that("Anonimização prêmios lotéricos", {
   }
   
   
-  premios_lotericos <- map(2002:2022, get_id_favorecido_premios_lotericos) |> unlist()
+  premios_lotericos <- unlist(map(2002:2022, get_id_favorecido_premios_lotericos))
     
   dm_favorecido[
     id_favorecido %in% premios_lotericos, 
