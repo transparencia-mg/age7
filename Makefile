@@ -16,6 +16,7 @@ container: ## Start Docker Container
 						 -e DB_USER=$(DB_USER) \
 						 -e DB_DATABASE=$(DB_DATABASE) \
 						 -e DB_PASSWORD=$(DB_PASSWORD) \
+						 -e RETICULATE_PYTHON=$(RETICULATE_PYTHON) \
 						 gabrielbdornas/dtamg-age7:latest /bin/bash ./all.sh
 
 container-bash: ## Start Docker Container
@@ -29,6 +30,7 @@ container-bash: ## Start Docker Container
 						 -e DB_USER=$(DB_USER) \
 						 -e DB_DATABASE=$(DB_DATABASE) \
 						 -e DB_PASSWORD=$(DB_PASSWORD) \
+						 -e RETICULATE_PYTHON=$(RETICULATE_PYTHON) \
 						 gabrielbdornas/dtamg-age7:latest bash
 	
 datapackage.json: datapackage.yaml schemas/* data/* logs/validate/* schemas/dialect.json README.md CHANGELOG.md CONTRIBUTING.md
