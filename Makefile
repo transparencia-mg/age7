@@ -83,7 +83,7 @@ create:
 update: $(DATASETS_FILES)
 
 $(DATASETS_FILES): logs/update/%.txt: build_datasets/%/datapackage.json
-	dpckan dataset update --datapackage build_datasets/$*/datapackage.json 2> $@
+	dpckan --datapackage build_datasets/$*/datapackage.json dataset update 2> $@
 
 $(VALIDATION_FILES): logs/validate/%.json: data/%.csv.gz schemas/%.yaml
 	-dtamg-py etl-make validate -r $* > $@
