@@ -2953,6 +2953,496 @@ resources:
     mediatype: text/csv
     encoding: utf-8-sig
     dialect: schemas/dialect.json
+    profile: tabular-data-resource  
+  - name: dm_emenda_orcam
+    title: ''
+    path: data/dm_emenda_orcam.csv.gz
+    schema: schemas/dm_emenda_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_emenda_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_fonte_plan
+    title: Fonte de Recurso Planejamento
+    path: data/dm_fonte_plan.csv.gz
+    schema: schemas/dm_fonte_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_fonte_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_responsavel_plan
+    title: Responsável Planejamento
+    path: data/dm_responsavel_plan.csv.gz
+    schema: schemas/dm_responsavel_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_responsavel_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_indicador_plan
+    title: Indicador Planejamento
+    path: data/dm_indicador_plan.csv.gz
+    schema: schemas/dm_indicador_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_indicador_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_prog_plan
+    title: Tipo Programa Planejamento
+    path: data/dm_tipo_prog_plan.csv.gz
+    schema: schemas/dm_tipo_prog_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_prog_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_orcam_plan
+    title: Tipo Orçamento Planejamento
+    path: data/dm_tipo_orcam_plan.csv.gz
+    schema: schemas/dm_tipo_orcam_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_orcam_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_acao_plan
+    title: Tipo Ação Planejamento
+    path: data/dm_tipo_acao_plan.csv.gz
+    schema: schemas/dm_tipo_acao_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_acao_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_territorio_plan
+    title: Território Planejamento v1
+    path: data/dm_territorio_plan.csv.gz
+    schema: schemas/dm_territorio_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_territorio_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_programa_plan
+    title: Programa Planejamento
+    path: data/dm_programa_plan.csv.gz
+    schema: schemas/dm_programa_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_programa_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_ppag_plan
+    title: Horizonte PPAG
+    path: data/dm_ppag_plan.csv.gz
+    schema: schemas/dm_ppag_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_ppag_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_orgao_plan
+    title: Órgão Planejamento
+    path: data/dm_orgao_plan.csv.gz
+    schema: schemas/dm_orgao_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_orgao_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_municipio_plan
+    title: Município Planejamento
+    path: data/dm_municipio_plan.csv.gz
+    schema: schemas/dm_municipio_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_municipio_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_horizonte_plan
+    title: Horizonte Planejamento
+    path: data/dm_horizonte_plan.csv.gz
+    schema: schemas/dm_horizonte_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_horizonte_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_funcao_plan
+    title: ''
+    path: data/dm_funcao_plan.csv.gz
+    schema: schemas/dm_funcao_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_funcao_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_autor_emenda
+    title: Autor Emenda
+    path: data/dm_autor_emenda.csv.gz
+    schema: schemas/dm_autor_emenda.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_autor_emenda
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_decreto
+    title: Decreto
+    path: data/dm_decreto.csv.gz
+    schema: schemas/dm_decreto.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_decreto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_indicador_acao
+    title: Indicador Ação
+    path: data/dm_indicador_acao.csv.gz
+    schema: schemas/dm_indicador_acao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_indicador_acao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: sa_indicador_acao
+    title: SA Indicador Ação
+    path: data/sa_indicador_acao.csv.gz
+    schema: schemas/sa_indicador_acao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: sa_indicador_acao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_acao_orcam
+    title: Ação Orçamentária
+    path: data/dm_acao_orcam.csv.gz
+    schema: schemas/dm_acao_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_acao_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_categ_econ_orcam
+    title: Categoria Econômica Orçamento
+    path: data/dm_categ_econ_orcam.csv.gz
+    schema: schemas/dm_categ_econ_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_categ_econ_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_fonte_orcam
+    title: Fonte Orçamento
+    path: data/dm_fonte_orcam.csv.gz
+    schema: schemas/dm_fonte_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_fonte_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_funcao_orcam
+    title: Função Orçamento
+    path: data/dm_funcao_orcam.csv.gz
+    schema: schemas/dm_funcao_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_funcao_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_subfuncao_orcam
+    title: Subfunção Orçamento
+    path: data/dm_subfuncao_orcam.csv.gz
+    schema: schemas/dm_subfuncao_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_subfuncao_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_grupo_orcam
+    title: Grupo Orçamento
+    path: data/dm_grupo_orcam.csv.gz
+    schema: schemas/dm_grupo_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_grupo_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_programa_orcam
+    title: Programa Orçamento
+    path: data/dm_programa_orcam.csv.gz
+    schema: schemas/dm_programa_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_programa_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_procedencia_orcam
+    title: Procedência Orçamento
+    path: data/dm_procedencia_orcam.csv.gz
+    schema: schemas/dm_procedencia_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_procedencia_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_orgao_orcam
+    title: Órgão Orçamento
+    path: data/dm_orgao_orcam.csv.gz
+    schema: schemas/dm_orgao_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_orgao_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_indic_acao_orcam
+    title: Indicador Ação Orçamento
+    path: data/dm_indic_acao_orcam.csv.gz
+    schema: schemas/dm_indic_acao_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_indic_acao_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_modal_aplic_orcam
+    title: Modalidade Aplicação Orçamento
+    path: data/dm_modal_aplic_orcam.csv.gz
+    schema: schemas/dm_modal_aplic_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_modal_aplic_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_unidade_resp_plan
+    title: Unidade Responsável Planejamento
+    path: data/dm_unidade_resp_plan.csv.gz
+    schema: schemas/dm_unidade_resp_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_unidade_resp_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_municipio_obra
+    title: Município Obra
+    path: data/dm_municipio_obra.csv.gz
+    schema: schemas/dm_municipio_obra.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_municipio_obra
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_obra
+    title: Obra
+    path: data/dm_obra.csv.gz
+    schema: schemas/dm_obra.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_obra
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_orgao_obra
+    title: Órgão Obra
+    path: data/dm_orgao_obra.csv.gz
+    schema: schemas/dm_orgao_obra.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_orgao_obra
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_situacao_obra
+    title: Situação Obra
+    path: data/dm_situacao_obra.csv.gz
+    schema: schemas/dm_situacao_obra.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_situacao_obra
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_territorio_planeja
+    title: Território Planejamento v2
+    path: data/dm_territorio_planeja.csv.gz
+    schema: schemas/dm_territorio_planeja.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_territorio_planeja
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
     profile: tabular-data-resource
 name: age7
 owner_org: controladoria-geral-do-estado-cge
