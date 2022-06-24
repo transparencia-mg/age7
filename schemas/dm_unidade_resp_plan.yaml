@@ -1,0 +1,39 @@
+fields:
+  - name: id_unidade
+    title: Unidade Orçamentária Responsável - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: ano_ppag
+    title: Ano do PPAG
+    type: year
+    format: default
+    bareNumber: true
+    description: Ano de monitoramento do Plano Plurianual de Ação Governamental.
+    constraints:
+      required: true
+  - name: cd_unidade
+    title: Unidade Orçamentária Responsável - Código
+    type: string
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      pattern: \d{4}
+  - name: nome
+    title: Unidade Orçamentária Responsável - Descrição
+    type: string
+    format: default
+    description: |
+      - >
+      Especifica a unidade orçamentária responsável pelo gerenciamento em que 
+      estão consignados os recursos orçamentários alocados.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_unidade

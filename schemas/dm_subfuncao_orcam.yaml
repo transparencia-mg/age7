@@ -1,0 +1,30 @@
+fields:
+  - name: id_subfuncao
+    title: Subfunção - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_subfuncao
+    title: Subfunção - Código
+    type: integer
+    format: default
+    description: Código identificador do detalhamento das áreas de atuação do Governo
+      (1 a 999)
+    constraints:
+      minimum: '31'
+      maximum: '999'
+  - name: nome
+    title: Subfunção - Descrição
+    type: string
+    format: default
+    description: |
+      Detalhamento das áreas de atuação do Governo.
+      Representa uma partição da função, visando agregar determinado conjunto de despesa do setor público.
+      A subfunção identifica a natureza básica das ações que se aglutinam em torno das funções.
+    missingValues:
+      - 'SEM DESCRICAO'
+primaryKey:
+  - id_subfuncao

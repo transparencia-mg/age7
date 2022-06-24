@@ -1,0 +1,36 @@
+fields:
+  - name: id_indicador_acao
+    title: Indicador de Ação Governamental - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_indicador_acao
+    title: Indicador de Ação Governamental  - Código
+    type: integer
+    format: default
+    description: |
+      Código de identificador do orçamento conforme o SIAFI-MG
+    constraints:
+      enum:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '9'
+  - name: nome
+    title: Indicador de Ação Governamental - Descrição
+    type: string
+    format: default
+    description: |
+      Descrião do identificador do orçamento conforme o SIAFI-MG
+    constraints:
+      required: true
+missingValues:
+  - 'SEM DESCRICAO'
+primaryKey:
+  - id_indicador_acao

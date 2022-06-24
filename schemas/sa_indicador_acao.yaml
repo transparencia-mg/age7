@@ -1,0 +1,50 @@
+fields:
+  - name: sqd_indicador_acao
+    title: Indicador de Ação Governamental
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: ano_exercicio
+    title: Ano de Exercício
+    type: year
+    format: default
+    bareNumber: true
+    missingValues:
+      - '0'
+  - name: cd_indicador_acao
+    title: Indicador de Ação Governamental  - Código
+    type: integer
+    format: default
+    description: |
+      Código de identificador do orçamento conforme o SIAFI-MG
+    constraints:
+      enum:
+        - '0'
+        - '1'
+        - '3'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: nome
+    title: Indicador de Ação Governamental - Descrição
+    type: string
+    format: default
+    description: |
+      Descrião do identificador do orçamento conforme o SIAFI-MG
+    constraints:
+      required: true
+    missingValues:
+      - 'SEM DESCRICAO'
+missingValues:
+  - ''

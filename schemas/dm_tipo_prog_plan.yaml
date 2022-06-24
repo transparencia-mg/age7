@@ -1,0 +1,31 @@
+fields:
+  - name: id_tipo_programa
+    title: Tipo de Programa - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: nome
+    title: Tipo de Programa
+    type: string
+    format: default
+    description: |
+      - >
+        Classificação do programa quanto aos seus beneficiários. Existem dois tipos de programa, a saber:
+        
+         - Finalísticos: são os programas dos quais resultam bens ou serviços ofertados diretamente à
+           sociedade, cujos resultados sejam passíveis de mensuração e 
+
+         - Apoio às Políticas Públicas e Áreas Específicas: são os programas voltados à prestação de 
+           serviços ao próprio estado para a gestão de políticas públicas e para o apoio administrativo.
+    constraints:
+      enum:
+        - 'FINALISTICO'
+        - 'APOIO A POLITICAS PUBLICAS E AREAS ESPECIFICAS'
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_tipo_programa

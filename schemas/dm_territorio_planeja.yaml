@@ -1,0 +1,44 @@
+fields:
+  - name: id_territorio
+    title: Território - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: cd_territorio
+    title: Território - Código
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '14'
+        - '15'
+        - '16'
+        - '17'
+        - '99'
+  - name: nome
+    title: Território - Descrição
+    type: string
+    format: default
+    description: |
+      Regiões formadas por um conjunto de municípios, de acordo com a divisão
+      adotada pelo Governo de Minas Gerais
+missingValues:
+  - ''
+primaryKey:
+  - id_territorio

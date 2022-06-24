@@ -1,0 +1,30 @@
+fields:
+  - name: id_tipo_orcam
+    title: Tipo d Orçamento - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: nome
+    title: Tipo de Orçamento
+    type: string
+    format: default
+    description: |
+      - >
+         - Orçamento Fiscal: Despesas Correntes , Despesas de Capital e Despesa de Pessoal;
+         - Orçamento de Investimento das empresas controladas pelo Estado.
+    constraints:
+      enum:
+        - 'ORCAMENTO FISCAL'
+        - 'DESPESAS DE PESSOAL'
+        - 'DESPESAS CORRENTES'
+        - 'DESPESAS DE CAPITAL'
+        - 'ORCAMENTO DE INVESTIMENTO DAS EMPRESAS CONTROLADAS PELO ESTADO'
+    required: true
+    unique: false
+missingValues:
+  - ''
+primaryKey:
+  - id_tipo_orcam
