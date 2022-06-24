@@ -1,0 +1,126 @@
+fields:
+  - name: id_programa
+    title: Programa- Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: ano_ppag
+    title: Ano do PPAG
+    type: year
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+    description: Ano de monitoramento do PPAG
+  - name: cd_programa
+    title: Programa - Código
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      minimum: 1
+      maximum: 999
+    missingValues:
+      - '0'
+  - name: nome
+    title: Programa - Descrição
+    type: string
+    format: default
+    description: |
+      - >
+      Instrumento de organização de ação governamental que integra o planejamento, o orçamento e a gestão. 
+      Visa o enfrentamento de um problema, sendo mensurado por indicadores estabelecidos no Plano Plurianula de
+      Ação Governamental.
+      Resulta do reconhecimento de carências, demandas administrativas, sociais e econômicas e de oportunidades.
+  - name: uni_orc_resp
+    title: Unidade Orçamentária Responsável pelo Programa
+    type: string
+    format: default
+    description: |
+      - >
+      É a unidade orçamentária responsável pelo gerenciamento do programa. Vinculam-se aos programas
+      multissetorias apenas uma Unidade Orçamentária Responsável pelo Programa.
+  - name: uni_adm_resp
+    title: Unidade Administrativa Responsável pelo Programa
+    type: string
+    format: default
+    description: |
+      - >
+        É a unidade responsável pela gestão global do programa, empreendendo as etapas de formulação, 
+        execução, monitoramento e avaliação do programa sob a coordenação técnica da unidade setorial de 
+        planejamento e orçamento. Corresponde ao menor nível hierárquico com ampla responsabilidade de 
+        decisão e alocação de recursos no âmbito do programa.
+  - name: tipo
+    title: Tipo de Programa
+    type: string
+    format: default
+    description: |
+      - >
+        Classificação do programa quanto aos seus beneficiários. Existem dois tipos de programa, a saber:
+        - Finalísticos: são os programas dos quais resultam bens ou serviços ofertados diretamente à 
+         sociedade, cujos resultados sejam passíveis de mensuração e
+
+        - Apoio às Políticas Públicas e Áreas Específicas: são os programas voltados à prestação de 
+         serviços ao próprio estado para a gestão de políticas públicas e para o apoio administrativo.
+    comissingValues:
+      - 'SEM DESCRICAO'
+  - name: horizonte_temporal
+    title: Horizonte Temporal
+    type: string
+    format: default
+    constraints:
+      required: true
+    description: |
+      - >
+       Estabelece o período de vigência do programa, podendo ser contínuo ou temporário.
+
+       - Programa contínuo: é aquele composto por pelo menos uma ação de duração continuada, ou seja, 
+       ação que contemple um conjunto de operações que se realizam de modo permanente durante a vigência 
+       do programa e
+
+       - Programa temporário: é aquele composto na integralidade por projetos. Ou seja, todas as ações 
+       que compõem o programa compreendem um conjunto de operações limitadas no tempo, com data de 
+       início e de término bem definidas.
+  - name: justificativa
+    title: Justificativa
+    type: string
+    format: default
+    description: |
+      - >
+        É a descrição do problema que o programa tem por objetivo enfrentar. 
+        Por sua vez, o problema é a situação indesejável ou uma necessidade não atendida, identificada na 
+        sociedade. Tratam-se de demandas não satisfeitas, carências ou oportunidades, que, ao serem 
+        reconhecidas e declaradas pelo governo, passam a integrar a sua agenda de compromissos.
+  - name: objetivo
+    title: Objetivo
+    type: string
+    format: default
+    description: |
+      - >
+        Expressa a finalidade do programa, ou seja, o resultado pretendido. 
+        O objetivo deverá ser concisão, preciso e iniciado sempre por um verbo no infinitivo.
+  - name: causas
+    title: Causas
+    type: string
+    format: default
+    description: |
+      - >
+        As causas são fatores que contribuem para a ocorrência do problema, ou seja, processos ou 
+        fatores responsáveis pelo surgimento, manutenção ou expansão do problema.
+  - name: estrategia_implementa
+    title: Estratégia de implementação do programa
+    type: string
+    format: default
+    description: |
+      - >
+        A estratégia de implementação define a forma como o programa se articulará para alcançar seu 
+        objetivo, solucionando o problema atacado. Desse modo, indica, por exemplo, como serão conduzidas 
+        as ações, quais os instrumentos disponíveis ou a serem constituídos, e a forma de execução (direta, 
+        descentralizada para Municípios, transferências, parcerias, etc.) para atingir os resultados 
+        pretendidos pelo programa.
+missingValues:
+  - ''
+primaryKey:
+  - id_programa

@@ -1,0 +1,36 @@
+fields:
+  - name: id_situacao
+    title: Situação da Obra - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_situacao
+    title: Situação da Obra - Código
+    type: string
+    format: default
+    constraints:
+      enum:
+        - 'E'
+        - 'P'
+        - 'I'
+  - name: nome
+    title: Situação da Obra - Descrição
+    type: string
+    format: default
+    description: |
+      Estágio em que a obra se encontra no momento de elaboração da Lei Orçamentária:
+       - Execução;
+       - Paralisado;
+       - Iniciado
+    constraints:
+      enum:
+        - 'EXECUCAO'
+        - 'PARALISADO'
+        - 'INICIADO'
+missingValues:
+  - ''
+primaryKey:
+  - id_situacao

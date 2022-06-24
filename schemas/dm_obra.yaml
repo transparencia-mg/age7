@@ -1,0 +1,53 @@
+fields:
+  - name: id_obra
+    title: Obra - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: nr_obra
+    title: Número da Obra
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: ano_exercicio
+    title: Ano de Exercício
+    type: year
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: nome
+    title: Discriminação da Obra
+    type: string
+    format: default
+    description: |
+      Descrição suscinta da obra na Lei Orçamentária no ano de exercício escolhido.
+    constraints:
+      required: true
+  - name: un_meta_fisica
+    title: Meta Física - Unidade Medida
+    type: string
+    format: default
+    description: |
+      Padrão selecionado para mensurar a obra. Elemento que dá significado ao valor númerico estampado 
+      como meta física.
+    constraints:
+      required: true
+  - name: qt_meta_fisica
+    title: Meta Física - Quantidade
+    type: integer
+    format: default
+    bareNumber: true
+    description: |
+      Quantidade do produto que será orfetado para a sociedade
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_obra
