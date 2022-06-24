@@ -77,8 +77,8 @@ notify:
 build:
 	dtamg-py etl-make build-datapackages 2> logs/build.txt
 
-create:
-	dtamg-py etl-make dpckan-create 2> logs/create.txt
+create: build_datasets/%/datapackage.json
+	dpckan --datapackage build_datasets/$*/datapackage.json dataset create 2> logs/create.txt
 
 update: $(DATASETS_FILES)
 
