@@ -8,16 +8,29 @@ help:
 container: ## Start Docker Container
 	@echo 'Run etl process on Docker Container...'
 	@docker run -it --rm -v /$(PWD):/work_dir \
+					     -v ~/.local/share/AzureR:/root/.local/share/AzureR \
 						 -e CKAN_HOST=$(CKAN_HOST) \
 						 -e CKAN_KEY=$(CKAN_KEY) \
 						 -e HTTPS_PROXY=$(HTTPS_PROXY) \
+						 -e DB_HOST=$(DB_HOST) \
+						 -e DB_USER=$(DB_USER) \
+						 -e DB_DATABASE=$(DB_DATABASE) \
+						 -e DB_PASSWORD=$(DB_PASSWORD) \
+						 -e RETICULATE_PYTHON=$(RETICULATE_PYTHON) \
 						 gabrielbdornas/dtamg-age7:latest /bin/bash ./all.sh
 
 container-bash: ## Start Docker Container
 	@echo 'Starting Docker Container...'
 	@docker run -it --rm -v /$(PWD):/work_dir \
+						 -v ~/.local/share/AzureR:/root/.local/share/AzureR \
 						 -e CKAN_HOST=$(CKAN_HOST) \
 						 -e CKAN_KEY=$(CKAN_KEY) \
+						 -e HTTPS_PROXY=$(HTTPS_PROXY) \
+						 -e DB_HOST=$(DB_HOST) \
+						 -e DB_USER=$(DB_USER) \
+						 -e DB_DATABASE=$(DB_DATABASE) \
+						 -e DB_PASSWORD=$(DB_PASSWORD) \
+						 -e RETICULATE_PYTHON=$(RETICULATE_PYTHON) \
 						 gabrielbdornas/dtamg-age7:latest bash
 	
 datapackage.json: datapackage.yaml schemas/* data/* logs/validate/* schemas/dialect.json README.md CHANGELOG.md CONTRIBUTING.md
@@ -64,13 +77,13 @@ notify:
 build:
 	dtamg-py etl-make build-datapackages 2> logs/build.txt
 
-create:
-	dtamg-py etl-make dpckan-create 2> logs/create.txt
+create: build_datasets/%/datapackage.json
+	dpckan --datapackage build_datasets/$*/datapackage.json dataset create 2> logs/create.txt
 
 update: $(DATASETS_FILES)
 
 $(DATASETS_FILES): logs/update/%.txt: build_datasets/%/datapackage.json
-	dpckan dataset update --datapackage build_datasets/$*/datapackage.json 2> $@
+	dpckan --datapackage build_datasets/$*/datapackage.json dataset update 2> $@
 
 $(VALIDATION_FILES): logs/validate/%.json: data/%.csv.gz schemas/%.yaml
 	-dtamg-py etl-make validate -r $* > $@

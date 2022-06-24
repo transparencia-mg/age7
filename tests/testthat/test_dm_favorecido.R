@@ -30,7 +30,7 @@ test_that("Anonimização prêmios lotéricos", {
   }
   
   
-  premios_lotericos <- map(2002:2022, get_id_favorecido_premios_lotericos) |> unlist()
+  premios_lotericos <- unlist(map(2002:2022, get_id_favorecido_premios_lotericos))
     
   dm_favorecido[
     id_favorecido %in% premios_lotericos, 
@@ -48,7 +48,7 @@ test_that("Anonimização prêmios lotéricos", {
 
 test_that("Anonimização hanseniase 2021", {
 
-  ft_despesa_2021 <- dtamg::flatten_resource("C:\\Users/m752587/projects/age7/datapackage.json", 
+  ft_despesa_2021 <- dtamg::flatten_resource(here::here("datapackage.json"), 
                                              "ft_despesa_2021",
                                              c("dm_empenho_desp_2021", "dm_unidade_orc", "dm_favorecido"))
   
@@ -71,7 +71,7 @@ test_that("Anonimização hanseniase 2021", {
 
 test_that("Anonimização hanseniase 2022", {
 
-  ft_despesa_2022 <- dtamg::flatten_resource("C:\\Users/m752587/projects/age7/datapackage.json", 
+  ft_despesa_2022 <- dtamg::flatten_resource(here::here("datapackage.json"), 
                                              "ft_despesa_2022",
                                              c("dm_empenho_desp_2022", "dm_unidade_orc", "dm_favorecido"))
   

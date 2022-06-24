@@ -2,7 +2,7 @@ outlb <- Microsoft365R::get_business_outlook()
 
 body <- blastula::render_email(here::here("scripts", "r", "notify.Rmd"))
 
-exit_code <- readLines(here::here("logs/exit-code.txt")) |> as.numeric()
+exit_code <- as.numeric(readLines(here::here("logs/exit-code.txt")))
 status <- ifelse(exit_code == 0, "SUCESSO", "FRACASSO")
 
 em <- outlb$create_email(body,
