@@ -3458,6 +3458,48 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
+  - name: ft_orcamento_emenda
+    title: Orçamento Proposta
+    path: data/ft_orcamento_emenda.csv.gz
+    schema: schemas/ft_orcamento_emenda.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_orcamento_emenda
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_orcamento_cred_alt
+    title: Orçamento Proposta
+    path: data/ft_orcamento_cred_alt.csv.gz
+    schema: schemas/ft_orcamento_cred_alt.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_orcamento_cred_alt
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_obra
+    title: Orçamento Proposta
+    path: data/ft_obra.csv.gz
+    schema: schemas/ft_obra.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_obra
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
 name: age7
 owner_org: controladoria-geral-do-estado-cge
 licenses:
