@@ -3444,6 +3444,20 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
+  - name: ft_orcamento_proposta
+    title: Orçamento Proposta
+    path: data/ft_orcamento_proposta.csv.gz
+    schema: schemas/ft_orcamento_proposta.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_orcamento_proposta
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
 name: age7
 owner_org: controladoria-geral-do-estado-cge
 licenses:
