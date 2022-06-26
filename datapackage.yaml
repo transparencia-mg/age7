@@ -3500,6 +3500,258 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
+  - name: ft_plan_acao_ppag
+    title: Orçamento Proposta
+    path: data/ft_plan_acao_ppag.csv.gz
+    schema: schemas/ft_plan_acao_ppag.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_acao_ppag
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_plan_indicador
+    title: Orçamento Proposta
+    path: data/fl_plan_indicador.csv.gz
+    schema: schemas/fl_plan_indicador.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_plan_indicador
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_indic_referencia
+    title: Orçamento Proposta
+    path: data/ft_plan_indic_referencia.csv.gz
+    schema: schemas/ft_plan_indic_referencia.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_indic_referencia
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_indic_plan_exec
+    title: Orçamento Proposta
+    path: data/ft_plan_indic_plan_exec.csv.gz
+    schema: schemas/ft_plan_indic_plan_exec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_indic_plan_exec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_plan_programa
+    title: Orçamento Proposta
+    path: data/fl_plan_programa.csv.gz
+    schema: schemas/fl_plan_programa.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_plan_programa
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_plan_responsavel
+    title: Orçamento Proposta
+    path: data/fl_plan_responsavel.csv.gz
+    schema: schemas/fl_plan_responsavel.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_plan_responsavel
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_exec_of_tipoorc
+    title: Orçamento Proposta
+    path: data/ft_plan_exec_of_tipoorc.csv.gz
+    schema: schemas/ft_plan_exec_of_tipoorc.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_exec_of_tipoorc
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_exec_of_territorio
+    title: Orçamento Proposta
+    path: data/ft_plan_exec_of_territorio.csv.gz
+    schema: schemas/ft_plan_exec_of_territorio.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_exec_of_territorio
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_exec_of_fonte
+    title: Orçamento Proposta
+    path: data/ft_plan_exec_of_fonte.csv.gz
+    schema: schemas/ft_plan_exec_of_fonte.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_exec_of_fonte
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_plan_acao
+    title: Orçamento Proposta
+    path: data/fl_plan_acao.csv.gz
+    schema: schemas/fl_plan_acao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_plan_acao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_fonte_fin_acao
+    title: Orçamento Proposta
+    path: data/ft_plan_fonte_fin_acao.csv.gz
+    schema: schemas/ft_plan_fonte_fin_acao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_fonte_fin_acao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_prog_fftd
+    title: Orçamento Proposta
+    path: data/ft_plan_prog_fftd.csv.gz
+    schema: schemas/ft_plan_prog_fftd.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_prog_fftd
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_prog_mensal
+    title: Orçamento Proposta
+    path: data/ft_plan_prog_mensal.csv.gz
+    schema: schemas/ft_plan_prog_mensal.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_prog_mensal
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_prog_territorial
+    title: Orçamento Proposta
+    path: data/ft_plan_prog_territorial.csv.gz
+    schema: schemas/ft_plan_prog_territorial.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_prog_territorial
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_execucao_acao
+    title: Orçamento Proposta
+    path: data/ft_plan_execucao_acao.csv.gz
+    schema: schemas/ft_plan_execucao_acao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_execucao_acao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_prog_of_tipoorc
+    title: Orçamento Proposta
+    path: data/ft_plan_prog_of_tipoorc.csv.gz
+    schema: schemas/ft_plan_prog_of_tipoorc.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_prog_of_tipoorc
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_prog_of_territorio
+    title: Orçamento Proposta
+    path: data/ft_plan_prog_of_territorio.csv.gz
+    schema: schemas/ft_plan_prog_of_territorio.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_prog_of_territorio
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_prog_of_fonte
+    title: Orçamento Proposta
+    path: data/ft_plan_prog_of_fonte.csv.gz
+    schema: schemas/ft_plan_prog_of_fonte.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_prog_of_fonte
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
 name: age7
 owner_org: controladoria-geral-do-estado-cge
 licenses:
