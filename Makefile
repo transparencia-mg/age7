@@ -17,7 +17,7 @@ container: ## Start Docker Container
 						 -e DB_DATABASE=$(DB_DATABASE) \
 						 -e DB_PASSWORD=$(DB_PASSWORD) \
 						 -e RETICULATE_PYTHON=$(RETICULATE_PYTHON) \
-						 gabrielbdornas/dtamg-age7:latest /bin/sh /home/desenvolvimento/age7/all.sh
+						 gabrielbdornas/dtamg-age7:latest /bin/sh ./all.sh
 
 container-bash: ## Start Docker Container
 	@echo 'Starting Docker Container...'
