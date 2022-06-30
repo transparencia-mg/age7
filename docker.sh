@@ -1,0 +1,11 @@
+docker run -v /$(PWD):/work_dir \
+                         -v ~/.local/share/AzureR:/root/.local/share/AzureR \
+                         -e CKAN_HOST=$(CKAN_HOST) \
+                         -e CKAN_KEY=$(CKAN_KEY) \
+                         -e HTTPS_PROXY=$(HTTPS_PROXY) \
+                         -e DB_HOST=$(DB_HOST) \
+                         -e DB_USER=$(DB_USER) \
+                         -e DB_DATABASE=$(DB_DATABASE) \
+                         -e DB_PASSWORD=$(DB_PASSWORD) \
+                         -e RETICULATE_PYTHON=$(RETICULATE_PYTHON) \
+                         gabrielbdornas/dtamg-age7:latest bash
