@@ -1,5 +1,5 @@
 docker run -v /$PROJECT_PATH:/work_dir \
-                         -v ~/.local/share/AzureR:/root/.local/share/AzureR \
+                         -v $PROJECT_PATH/.local/share/AzureR:/root/.local/share/AzureR \
                          -e CKAN_HOST=$CKAN_HOST \
                          -e CKAN_KEY=$CKAN_KEY \
                          -e HTTPS_PROXY=$HTTPS_PROXY \
