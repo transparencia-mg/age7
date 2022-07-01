@@ -1,4 +1,6 @@
-docker run -i --rm -v /$PROJECT_PATH:/work_dir \
+#!/bin/bash
+source $HOME/.bash_profile
+docker run -i --rm -v $PROJECT_PATH:/work_dir \
                          -v $PROJECT_PATH/.local/share/AzureR:/root/.local/share/AzureR \
                          -e CKAN_HOST=$CKAN_HOST \
                          -e CKAN_KEY=$CKAN_KEY \
@@ -8,4 +10,4 @@ docker run -i --rm -v /$PROJECT_PATH:/work_dir \
                          -e DB_DATABASE=$DB_DATABASE \
                          -e DB_PASSWORD=$DB_PASSWORD \
                          -e RETICULATE_PYTHON=$RETICULATE_PYTHON \
-                         gabrielbdornas/dtamg-age7:latest all.sh
+                         gabrielbdornas/dtamg-age7:latest ./all.sh

@@ -1,23 +1,9 @@
-.PHONY: help container container-bash vars parse extract full-extract ingest data validate check-validation notify load all clean report
+.PHONY: help container-bash vars parse extract full-extract ingest data validate check-validation notify load all clean report
 
 include config.mk
 
 help: 
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-10s\033[0m %s\n", $$1, $$2}'
-
-container: ## Start Docker Container
-	@echo 'Run etl process on Docker Container...'
-	@docker run -i --rm -v /$(PWD):/work_dir \
-					     -v ~/.local/share/AzureR:/root/.local/share/AzureR \
-						 -e CKAN_HOST=$(CKAN_HOST) \
-						 -e CKAN_KEY=$(CKAN_KEY) \
-						 -e HTTPS_PROXY=$(HTTPS_PROXY) \
-						 -e DB_HOST=$(DB_HOST) \
-						 -e DB_USER=$(DB_USER) \
-						 -e DB_DATABASE=$(DB_DATABASE) \
-						 -e DB_PASSWORD=$(DB_PASSWORD) \
-						 -e RETICULATE_PYTHON=$(RETICULATE_PYTHON) \
-						 gabrielbdornas/dtamg-age7:latest /bin/bash /home/desenvolvimento/age7/all.sh
 
 container-bash: ## Start Docker Container
 	@echo 'Starting Docker Container...'
