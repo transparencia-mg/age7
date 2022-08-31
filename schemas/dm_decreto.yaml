@@ -1,0 +1,18 @@
+fields:
+  - name: id_decreto
+    title: Decreto - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: nr_decreto
+    title: Número do Decreto
+    type: integer
+    format: default
+    bareNumber: true
+missingValues:
+  - '0'
+  - '9999999'
+primaryKey:
+  - id_decreto

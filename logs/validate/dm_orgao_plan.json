@@ -1,0 +1,109 @@
+{
+  "version": "4.38.0",
+  "time": 0.021,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_orgao_plan",
+        "title": "Órgão Planejamento",
+        "path": "data/dm_orgao_plan.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_orgao",
+              "title": "Órgão - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_orgao",
+              "title": "Órgão - Código",
+              "type": "string",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "pattern": "\\d{4}"
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Órgão - descrição",
+              "type": "string",
+              "format": "default",
+              "description": "- >\nIdentifica o sistema operacional a que está vinculada a unidade orçamentária responsável pelo\nprograma. Usualmente são identificados pela secretaria líder do referido sistema operacional. \nVinculam-se aos programas multissetorias apenas um Órgão Responsável.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_orgao"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_orgao_plan"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "9fe75654cbb19a4f94e39496c2b548ff",
+          "bytes": 41,
+          "fields": 3,
+          "rows": 0
+        }
+      },
+      "time": 0.021,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

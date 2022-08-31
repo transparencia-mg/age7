@@ -1,0 +1,18 @@
+fields:
+  - name: id_tempo
+    title: Tempo - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: ano
+    title: Ano de Exercício
+    type: year
+    format: default
+    bareNumber: true
+    missingValues:
+      - '0'
+primaryKey:
+  - id_tempo

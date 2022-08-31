@@ -1,0 +1,19 @@
+fields:
+  - name: id_meio_transporte
+    title: Meio de Transporte - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: nome
+    title: Meio de Transporte - Descrição
+    description: |
+      Meio de transporte utilizado para a realização da viagem a serviço ao servidor dos órgãos da Administração Pública direta, autárquica e fundacional do Poder Executivo.
+    type: string
+    format: default
+missingValues:
+  - 'SEM DESCRICAO'
+primaryKey:
+  - id_meio_transporte

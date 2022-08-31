@@ -1,0 +1,121 @@
+{
+  "version": "4.38.0",
+  "time": 0.72,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_acao",
+        "title": "Ação Orçamentária",
+        "path": "data/dm_acao.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_acao",
+              "title": "Ação Orçamentária- Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "ano_exercicio",
+              "title": "Ano de Exercício",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "cd_acao",
+              "title": "Ação Orçamentária - Código",
+              "type": "string",
+              "format": "default",
+              "bareNumber": true,
+              "missingValues": [
+                "0"
+              ],
+              "constraints": {
+                "pattern": "\\d{4}"
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Ação Orçamentária - Descrição",
+              "description": "- >\n  Conjunto de operações limitadas no tempo (projeto), realizadas de modo contínuo e permanente (atividade),\n  de natureza não orçamentária dos quais resulta um produto final (projeto ou não orçamentária), \n  de atuação necessária à manutenção da ação governamental (atividade) ou transferência financeira \n  (operação especial).\n",
+              "type": "string",
+              "format": "default",
+              "missingValues": [
+                "SEM DESCRICAO"
+              ]
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_acao"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_acao"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "a5e90c23ce442964881d245779d91239",
+          "bytes": 359952,
+          "fields": 4,
+          "rows": 20406
+        }
+      },
+      "time": 0.72,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

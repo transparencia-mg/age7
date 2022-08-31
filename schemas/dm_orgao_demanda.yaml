@@ -1,0 +1,37 @@
+fields:
+  - name: id_orgao_demanda
+    title: Órgão Demandante - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_orgao_demanda
+    title: Órgão Demandante - Código
+    type: string
+    format: default
+    constraints:
+      pattern: \d{4}
+    missingValues:
+      - '-1'
+      - '-2'
+      - '-3'
+      - '-4'
+  - name: nome
+    title: Órgão Demandante - Descrição
+    type: string
+    format: default
+    description: |
+      - >
+       Órgão ou entidade que solicitou a compra de determinado material ou serviço. 
+       Pode coincidir ou não com o órgão que está executando o processo de compra.
+    missingValues:
+      - 'INEXISTENTE'
+      - 'NÃO SE APLICA'
+      - 'INVÁLIDO'
+      - 'NÃO INFORMADO'
+missingValues:
+  - ''
+primaryKey:
+  - id_orgao_demanda

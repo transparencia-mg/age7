@@ -1,0 +1,50 @@
+---
+title: make notify
+output: blastula::blastula_email
+--- 
+
+```{r,echo=FALSE, message=FALSE}
+library(jsonlite); library(purrr); library(dplyr); library(kableExtra); library(readr)
+
+commit <- readLines(here::here("logs/commit.txt"))
+exit_code_path <- here::here("logs/exit-code.txt")
+exit_code <- as.numeric(readLines(exit_code_path))
+sucess <- ifelse(exit_code == 0, TRUE, FALSE)
+
+validation_report <- function(resource) {
+  
+  name <- pluck(resource, "name")
+  valid <- pluck(resource, "validation", "valid")
+  stats <- pluck(resource, "validation", "tasks", 1, "resource", "stats")
+  stats["size"] <- R.utils::hsize(pluck(stats, "bytes"))
+  
+  result <- c(list(name = name), stats[c("size")] , list(valid = valid), stats[c("fields", "rows")])
+  
+  data.frame(result)
+}
+
+dp <- read_json(here::here("datapackage.json"))
+
+df <- arrange(map_df(dp$resources, validation_report), valid)
+```
+
+O fluxo ETL de atualização do projeto age7 foi concluído com `r ifelse(sucess == TRUE, "SUCESSO", "__FRACASSO__")` em `r file.mtime(exit_code_path)` com os seguintes dados de carga:
+
+```{r, echo=FALSE, message=FALSE}
+evento_etl_carga <- readr::read_csv2(here::here("logs/evento_etl_carga.csv"), show_col_types = FALSE)
+
+kable_minimal(kbl(evento_etl_carga))
+```
+
+
+Os logs da execução estão disponíveis `r ifelse(sucess == TRUE, glue::glue("no commit [{commit}](https://github.com/transparencia-mg/age7/commit/{commit})"), "no servidor")`.
+
+Dos `r length(dp$resources)` recursos, `r length(dp$resources) - sum(df$valid)` tiveram erros de validação.
+
+Os logs da validação podem ser consultados no site <https://transparencia-mg.github.io/age7/>.
+
+```{r,echo=FALSE}
+column_spec(kable_minimal(kbl(df)), 3, color = ifelse(df$valid == FALSE, "red", "green"))
+```
+
+Att.

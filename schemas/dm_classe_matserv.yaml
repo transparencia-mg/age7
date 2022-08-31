@@ -1,0 +1,26 @@
+fields:
+  - name: id_classe_matserv
+    title: Classe Material e Serviço - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_classe_matserv
+    title: Classe Material e Serviço - Código
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: nome
+    title: Classe Material e Serviço - Descrição
+    description: Detalha o grupo de materiais e serviços
+    type: string
+    format: default
+    constraints:
+      required: true
+missingValues:
+  - 'SEM DESCRICAO'
+primaryKey:
+  - id_classe_matserv

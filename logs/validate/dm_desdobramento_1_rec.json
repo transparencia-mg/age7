@@ -1,0 +1,119 @@
+{
+  "version": "4.38.0",
+  "time": 0.051,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_desdobramento_1_rec",
+        "title": "Desdobramento1 da receita",
+        "path": "data/dm_desdobramento_1_rec.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_desdobramento_1",
+              "title": "Descobramento 1 - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_desdobramento_1",
+              "title": "Desdobramento 1 - Código",
+              "description": "Código do desdobramento da receita (1 a 9)",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ]
+              },
+              "missingValues": [
+                "0"
+              ]
+            },
+            {
+              "name": "nome",
+              "title": "Desdobramento 1 - Descrição",
+              "description": "Desdobramento para identificação das peculiaridades de cada receita.\n",
+              "type": "string",
+              "format": "default"
+            }
+          ],
+          "missingValues": [
+            "SEM DESCRICAO"
+          ],
+          "primaryKey": [
+            "id_desdobramento_1"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_desdobramento_1_rec"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "18c7741701f33343e0781182db37a896",
+          "bytes": 6058,
+          "fields": 3,
+          "rows": 981
+        }
+      },
+      "time": 0.051,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

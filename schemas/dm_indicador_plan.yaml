@@ -1,0 +1,86 @@
+fields:
+  - name: id_indicador
+    title: Indicador - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: nome
+    title: Indicador
+    type: string
+    format: default
+    description: |
+      Nome descritivo do indicador do Programa.
+      É o título do indicador. Trata-se da forma pela qual o indicador será apresentado à sociedade. 
+      O título deve ser congruente com a unidade de medida do indicador. Ou seja, se a unidade de medida 
+      for percentual (%) sugere-se que o título do indicador se inicie com a expressão Percentual.
+    constraints:
+      required: true
+  - name: titulo
+    title: Título do Indicador
+    type: string
+    format: default
+    description: |
+      Trata-se da forma pela qual o indicador será apresentado à sociedade.O título deve ser congruente 
+      com a unidade de medida do indicador. Ou seja, se a unidade de medida for percentual (%) sugere-se 
+      que o título do indicador se inicie com a expressão Percentual.
+    constraints:
+      required: true
+  - name: unidade_medida
+    title: Unidade de Medida
+    type: string
+    format: default
+    description: |
+      Padrão escolhido para mensuração do indicador. Representa a relação entre as grandezas escolhidas, 
+      sendo, portanto, o elemento que dá significado ao valor numérico estampado pelo indicador.
+    constraints:
+      required: true
+  - name: fonte
+    title: Fonte do Indicador
+    type: string
+    format: default
+    description: |
+      Órgão ou entidade responsável pelo registro ou produção das informações necessárias para a 
+      apuração do indicador e divulgação periódica dos índices.
+    constraints:
+      required: true
+  - name: polaridade
+    title: Polaridade
+    type: string
+    format: default
+    description: |
+      Indica o sentido favorável de comportamento do indicador, cabendo duas possibilidades: 
+      maior melhor ou menor melhor.
+    constraints:
+      required: true
+  - name: periodicidade
+    title: Periodicidade
+    type: string
+    format: default
+    description: |
+      Frequência com a qual o indicador será monitorado.
+    constraints:
+      required: true
+  - name: base_geografica
+    title: Base Geográfica
+    type: string
+    format: default
+    description: |
+      Menor nível de agregação geográfica de apuração do indicador, podendo ser municipal, estadual, 
+      regional ou nacional.
+    constraints:
+      required: true
+  - name: formula_calculo
+    title: Fórmula de Cálculo
+    type: string
+    format: default
+    description: |
+      Demonstra, de forma sucinta e por meio de expressões matemáticas, a fórmula que permite calcular o 
+      valor do indicador. Ou seja, detalha como é possível chegar ao índice expresso pelo indicador.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_indicador

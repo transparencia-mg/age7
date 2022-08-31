@@ -1,0 +1,143 @@
+fields:
+  - name: id_emenda
+    title: Emenda Orçamentária - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: ano_exercicio
+    title: Ano de Exercício
+    type: year
+    format: default
+    bareNumber: true
+    missingValues:
+      - '0'
+  - name: nr_inciso
+    title: Número do Inciso
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: nr_emenda
+    title: Número da Emenda
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: grupo
+    title: Grupo de Despesa - Descrição
+    type: string
+    format: default
+    description: |
+      Descrição do grupo de natureza econômica da despesa: 
+      - 1- Pessoal e Encargos Sociais; 
+      - 2- Juros e Encargos da Divida; 
+      - 3- Outras Despesas Correntes; 
+      - 4- Investimentos; 
+      - 5- Inversões Financeiras;
+      - 6- Amortização da Divida e 
+      - 9- Reserva de Contingência
+    constraints:
+      enum:
+        - 'INVERSOES FINANCEIRAS'
+        - 'INVESTIMENTOS'
+        - 'OUTRAS DESPESAS CORRENTES'
+        - 'PESSOAL E ENCARGOS SOCIAIS'
+        - 'RESERVA DE CONTINGENCIA'
+  - name: modalidade_aplic
+    title: Modalidade de Aplicação - Descrição
+    type: string
+    format: default
+    description: |
+      - > 
+        Classificação da natureza da despesa que traduz a forma como os recursos serão aplicados pelos órgãos/entiddes, 
+        podendo ser diretamente pelos mesmos ou sbo a forma de transferência a outras entidades públicas ou privadas que 
+        se encarregarão da execução das ações.
+    constraints:
+      enum:
+        - 'A DEFINIR'
+        - 'APLICACOES DIRETAS'
+        - 'TRANSFERENCIAS A INSTITUICOES PRIVADAS SEM FINS LUCRATIVOS'
+        - 'TRANSFERENCIAS A MUNICIPIOS'
+        - 'TRANSFERENCIAS A UNIAO'
+    missingValues:
+      - 'SEM DESCRICAO'
+      - 'A DEFINIR'
+  - name: indicador_acao
+    title: Indicador de Ação Governamental - Descrição
+    type: string
+    format: default
+    description: |
+      Descrição do identificador do orçamento conforme o SIAFI-MG
+    missingValues:
+      - 'SEM DESCRICAO'
+      - 'NAO INFORMADO'
+  - name: fonte
+    title: Fonte de Recurso - Descrição
+    type: string
+    format: default
+    description: |
+      - > 
+        Permite a identificação da origem e destinação dos recursos legalmente vinculados a órgão, fundo ou despesa.
+    constraints:
+      enum:
+        - 'RECURSOS ORDINARIOS'
+        - 'OPERACOES DE CREDITO CONTRATUAIS'
+        - 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB'
+        - 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL'
+        - 'RECURSOS DIRETAMENTE ARRECADADOS'
+        - 'ALIENACAO DE BENS DO TESOURO ESTADUAL'
+        - 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE'
+        - 'CONVENIOS, ACORDOS E AJUSTES'
+    missingValues:
+      - 'SEM DESCRICAO'
+  - name: procedencia
+    title: Procedência - Descrição
+    type: string
+    format: default
+    description: |
+      - > 
+       Identifica a origem e a utilização dos recursos. 
+       O identificador de procedência e uso (IPU) informa, dentre outros, se os recursos serão para livre utilização, 
+       se foram transferidos de outra unidade orçamentária ou se objetivam oferecer contrapartida a convênios, acordos 
+       e ajustes.
+    constraints:
+      enum:
+        - 'RECURSOS DIRETAMENTE RECEBIDOS'
+        - 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA'
+        - 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES'
+        - 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO'
+      required: true
+    missingValues:
+      - 'SEM DESCRICAO'
+  - name: uo_beneficiada
+    title: Unidade Orçamentária Beneficiada
+    description: |
+      Código e Nome da Unidade Orçamentária beneficiada com a emenda parlamentar.
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: origem_recurso
+    title: Origem do Recurso
+    description: |
+      Nome da Unidade Orçamentária onde ocorreu a dedução.
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: objeto
+    title: Objeto
+    description: |
+      - > 
+      Objeto do gasto da emenda parlamentar.
+    type: string
+    format: default
+missingValues:
+  - ''
+primaryKey:
+  - id_emenda

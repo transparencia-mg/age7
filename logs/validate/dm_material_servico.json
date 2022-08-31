@@ -1,0 +1,106 @@
+{
+  "version": "4.38.0",
+  "time": 0.708,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_material_servico",
+        "title": "Material/Serviço",
+        "path": "data/dm_material_servico.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_material_servico",
+              "title": "Material e Serviço - chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_material_servico",
+              "title": "Material e Serviço - Código",
+              "description": "Código identificador do tipo de objeto da especificação do empenho, M-Material; S-Serviço",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Material e Serviço - Descrição",
+              "description": "Identificação do tipo de objeto da especificação do empenho, material ou serviço.",
+              "type": "string",
+              "format": "default",
+              "missingValues": [
+                "SEM DESCRICAO"
+              ]
+            }
+          ],
+          "primaryKey": [
+            "id_material_servico"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_material_servico"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "76d4f31ffad040a36b00c5f1f2d96c4c",
+          "bytes": 395808,
+          "fields": 3,
+          "rows": 22871
+        }
+      },
+      "time": 0.708,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

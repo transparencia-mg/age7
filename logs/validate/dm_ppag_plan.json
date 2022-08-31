@@ -1,0 +1,122 @@
+{
+  "version": "4.38.0",
+  "time": 0.029,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_ppag_plan",
+        "title": "Horizonte PPAG",
+        "path": "data/dm_ppag_plan.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_ppag",
+              "title": "PPAG - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Plano Plurianual de Ação Governamental - PPAG",
+              "type": "string",
+              "format": "default",
+              "description": "- > \n Vigência do Plano Plurianual de Ação Governamental - PPAG.\n",
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_inicio",
+              "title": "Ano de início do PPAG",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_termino",
+              "title": "Ano de término do PPAG",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_ppag"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_ppag_plan"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "3fbab4cc2ed37c0e1f8bf5cb0acb8a6c",
+          "bytes": 57,
+          "fields": 4,
+          "rows": 0
+        }
+      },
+      "time": 0.029,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

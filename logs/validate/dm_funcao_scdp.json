@@ -1,0 +1,99 @@
+{
+  "version": "4.38.0",
+  "time": 0.161,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_funcao_scdp",
+        "title": "Cargo em Comissão",
+        "path": "data/dm_funcao_scdp.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_funcao",
+              "title": "Função - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Função - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Cargo em comissão ocupado pelo servidor no momento que realizou a viagem.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_funcao"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_funcao_scdp"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "13d53d7066176fd7dad6a12cfc78e48a",
+          "bytes": 45408,
+          "fields": 2,
+          "rows": 5531
+        }
+      },
+      "time": 0.161,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

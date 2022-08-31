@@ -1,0 +1,32 @@
+fields:
+  - name: id_convenio
+    title: Convênio de Entrada - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_interveniente
+    title: Interveniente - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+missingValues:
+  - ''
+foreignKeys:
+  - fields:
+      - id_convenio
+    reference:
+      fields:
+        - id_convenio
+      resource: dm_convenio_entrada
+  - fields:
+      - id_interveniente
+    reference:
+      fields:
+        - id_interveniente
+      resource: dm_interveniente_conv_ent

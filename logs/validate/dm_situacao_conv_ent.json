@@ -1,0 +1,99 @@
+{
+  "version": "4.38.0",
+  "time": 0.017,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_situacao_conv_ent",
+        "title": "Situação Convênio Entrada",
+        "path": "data/dm_situacao_conv_ent.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_situacao",
+              "title": "Situação do Convênio de Entrada- Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Situação do Convênio de Entrada",
+              "type": "string",
+              "format": "default",
+              "description": "Informa a situação na qual o convênio se encontra na data da consulta realizada no portal: vigente ou vencido.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_situacao"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_situacao_conv_ent"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "47deb534eb50ed119a84babf35bd5266",
+          "bytes": 63,
+          "fields": 2,
+          "rows": 2
+        }
+      },
+      "time": 0.017,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

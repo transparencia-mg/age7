@@ -1,0 +1,21 @@
+fields:
+  - name: id_cidade
+    title: Cidade - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: nome
+    title: Cidade - Descrição
+    type: string
+    format: default
+    description: |
+      Cidade de origem ou destino do servidor ou colaborador eventual em viagem a trabalho.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_cidade

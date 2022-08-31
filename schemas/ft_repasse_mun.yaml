@@ -1,0 +1,55 @@
+fields:
+  - name: id_tempo
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: id_municipio
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: ano_particao
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: vr_icms
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+  - name: vr_ipi
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+  - name: vr_ipva
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+missingValues:
+  - ''
+foreignKeys:
+  - fields:
+      - id_municipio
+    reference:
+      fields:
+        - id_municipio
+      resource: dm_municipio
+  - fields:
+      - id_tempo
+    reference:
+      fields:
+        - id_tempo
+      resource: dm_tempo_mensal

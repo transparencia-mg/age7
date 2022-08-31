@@ -1,0 +1,29 @@
+fields:
+  - name: id_municipio
+    title: Município da Obra - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_municipio
+    title: Município da Obra - Código
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: nome
+    title: Município da Obra - Código
+    type: string
+    format: default
+    description: |
+      Nome da cidade na qual a obra será ou está sendo realizada.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_municipio

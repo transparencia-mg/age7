@@ -1,0 +1,56 @@
+fields:
+  - name: id_convenio
+    title: Convênio / Parceria - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: nr_alteracao
+    title: Número da Alteração
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: false
+  - name: dt_publicacao
+    title: Data da Alteração
+    type: date
+    format: default
+  - name: tp_alteracao
+    title: Tipo de Alteração
+    type: string
+    format: default
+    description: |
+      Tipo de alteração ocorrida no Convênio / Parceria:
+       - adequação do convênio;
+       - alteração simples;
+       - ampliação de meta;
+       - cancelamento convênio;
+       - dotação orcamentaria;
+       - gestor parceria;
+       - prorrogação de ofício;
+       - retificação por erro humano;
+       - termo aditivo;
+       - valor;
+       - vigência e
+       - vigência/valor
+    missingValues:
+      - 'sem classificação'
+      - 'outros'
+    constraints:
+      required: true
+  - name: objetivo
+    title: Objetivo da Alteração
+    type: string
+    format: default
+missingValues:
+  - ''
+foreignKeys:
+  - fields:
+      - id_convenio
+    reference:
+      fields:
+        - id_convenio
+      resource: dm_convenio

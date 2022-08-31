@@ -1,0 +1,201 @@
+fields:
+  - name: id_documento_viagem
+    title: Documento de Viagem - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_empenho
+    title: Número do Empenho - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_programa
+    title: Programa - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_funcao
+    title: Função - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_fonte
+    title: Fonte de Recurso - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_item
+    title: Item de Despesa - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_acao
+    title: Ação Orçamentária - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: fl_passagem
+    title: Passagem - Flag
+    type: string
+    format: default
+    description: |
+      - '0' - Diárias
+      - '1' - Passagem
+    constraints:
+      required: true
+      enum:
+        - '0'
+        - "1"
+  - name: nr_liquidacao
+    title: Número Liquidação
+    type: string
+    format: default
+    description: |
+      Número do documento de liquidação.
+    constraints:
+      required: true
+      unique: false
+  - name: nr_pagamento
+    title: Número Pagamento
+    type: string
+    format: default
+    description: |
+      Número do documento de ordem de pagamento.
+    constraints:
+      required: true
+      unique: false
+  - name: dt_liquidacao
+    title: Data da liquidação
+    type: date
+    format: default
+  - name: dt_pagamento
+    type: date
+    format: default
+  - name: vr_devolvido
+    title: Valor Devolvido
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+  - name: vr_liqpag
+    title: Valor liquidado/Pago
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    description: |
+      - > 
+        Valor pago referente às despesas com diárias e passagens aéreas e terrestres de servidor público ou 
+        colaborador eventual em razão de viagem a trabalho.
+    constraints:
+      required: true
+missingValues:
+  - ''
+foreignKeys:
+  - fields:
+      - id_funcao
+    reference:
+      fields:
+        - id_funcao
+      resource: dm_funcao_desp
+  - fields:
+      - id_fonte
+    reference:
+      fields:
+        - id_fonte
+      resource: dm_fonte
+  - fields:
+      - id_item
+    reference:
+      fields:
+        - id_item
+      resource: dm_item_desp
+  - fields:
+      - id_programa
+    reference:
+      fields:
+        - id_programa
+      resource: dm_programa
+  - fields:
+      - id_empenho
+    reference:
+      fields:
+        - id_empenho
+      resource: dm_empenho_desp_diarias_scdp_liqpag
+  - fields:
+      - id_documento_viagem
+    reference:
+      fields:
+        - id_documento_viagem
+      resource: dm_documento_viagem
+  - fields:
+      - id_acao
+    reference:
+      fields:
+        - id_acao
+      resource: dm_acao
+  - fields:
+      - id_item
+    reference:
+      fields:
+        - id_item
+      resource: dm_item_desp
+  - fields:
+      - id_fonte
+    reference:
+      fields:
+        - id_fonte
+      resource: dm_fonte
+  - fields:
+      - id_programa
+    reference:
+      fields:
+        - id_programa
+      resource: dm_programa
+  - fields:
+      - id_documento_viagem
+    reference:
+      fields:
+        - id_documento_viagem
+      resource: dm_documento_viagem
+  - fields:
+      - id_acao
+    reference:
+      fields:
+        - id_acao
+      resource: dm_acao
+  - fields:
+      - id_empenho
+    reference:
+      fields:
+        - id_empenho
+      resource: dm_empenho_desp_diarias_scdp_liqpag
+  - fields:
+      - id_funcao
+    reference:
+      fields:
+        - id_funcao
+      resource: dm_funcao_desp

@@ -1,0 +1,29 @@
+fields:
+  - name: id_rubrica
+    title: Rubrica - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_rubrica
+    title: Rubrica - Código
+    type: string
+    format: default
+    constraints:
+      required: true
+      pattern: \d{1}
+  - name: nome
+    title: Rubrica - Descrição
+    type: string
+    format: default
+    description: |
+      Agrega determinadas espécies de receitas cujas características próprias sejam semelhantes entre si; dessa forma, detalha a espécie, por meio da especificação dos recursos financeiros que lhe são correlatos. 
+      Por exemplo, a rubrica “Impostos sobre o Patrimônio e a Renda” corresponde ao detalhamento da Espécie “Impostos”.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_rubrica

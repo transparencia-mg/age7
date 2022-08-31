@@ -1,0 +1,21 @@
+fields:
+  - name: id_situacao
+    title: Situação do Convênio de Entrada- Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: nome
+    title: Situação do Convênio de Entrada
+    type: string
+    format: default
+    description: |
+      Informa a situação na qual o convênio se encontra na data da consulta realizada no portal: vigente ou vencido.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_situacao

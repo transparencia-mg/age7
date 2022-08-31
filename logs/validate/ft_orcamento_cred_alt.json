@@ -1,0 +1,192 @@
+{
+  "version": "4.38.0",
+  "time": 15.047,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "ft_orcamento_cred_alt",
+        "title": "Orçamento Proposta",
+        "path": "data/ft_orcamento_cred_alt.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tempo",
+              "type": "integer"
+            },
+            {
+              "name": "id_grupo",
+              "type": "integer"
+            },
+            {
+              "name": "id_funcao",
+              "type": "integer"
+            },
+            {
+              "name": "id_modalidade",
+              "type": "integer"
+            },
+            {
+              "name": "id_indicador_acao",
+              "type": "integer"
+            },
+            {
+              "name": "id_procedencia",
+              "type": "integer"
+            },
+            {
+              "name": "id_programa",
+              "type": "integer"
+            },
+            {
+              "name": "id_categ_econ",
+              "type": "integer"
+            },
+            {
+              "name": "id_subfuncao",
+              "type": "integer"
+            },
+            {
+              "name": "id_fonte",
+              "type": "integer"
+            },
+            {
+              "name": "id_acao",
+              "type": "integer"
+            },
+            {
+              "name": "id_unidade_orc",
+              "type": "integer"
+            },
+            {
+              "name": "id_decreto",
+              "type": "integer"
+            },
+            {
+              "name": "id_credito",
+              "type": "integer"
+            },
+            {
+              "name": "dt_documento",
+              "type": "date"
+            },
+            {
+              "name": "sqa_unidade_exec",
+              "type": "integer"
+            },
+            {
+              "name": "sqa_unidade_orc",
+              "type": "integer"
+            },
+            {
+              "name": "tp_operacao",
+              "type": "integer"
+            },
+            {
+              "name": "tp_documento",
+              "type": "integer"
+            },
+            {
+              "name": "nr_documento_global",
+              "type": "integer"
+            },
+            {
+              "name": "nr_documento",
+              "type": "integer"
+            },
+            {
+              "name": "cd_transacao",
+              "type": "string"
+            },
+            {
+              "name": "cd_unidade_orc",
+              "type": "integer"
+            },
+            {
+              "name": "ano_particao",
+              "type": "integer"
+            },
+            {
+              "name": "vr_credito_suplem",
+              "type": "number"
+            },
+            {
+              "name": "vr_credito_extraord",
+              "type": "number"
+            },
+            {
+              "name": "vr_credito_especial",
+              "type": "number"
+            },
+            {
+              "name": "vr_anulacao_credito",
+              "type": "number"
+            },
+            {
+              "name": "vr_credito_inicial",
+              "type": "number"
+            },
+            {
+              "name": "vr_credito_autorizado",
+              "type": "number"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_orcamento_cred_alt"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "f394d27e38149ee35e68f724a56c4e85",
+          "bytes": 4025501,
+          "fields": 30,
+          "rows": 203355
+        }
+      },
+      "time": 15.047,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

@@ -1,0 +1,30 @@
+fields:
+  - name: id_convenio
+    title: Convênio / Parceria - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: id_interveniente
+    title: Interveniente - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+missingValues:
+  - ''
+foreignKeys:
+  - fields:
+      - id_interveniente
+    reference:
+      fields:
+        - id_interveniente
+      resource: dm_interveniente
+  - fields:
+      - id_convenio
+    reference:
+      fields:
+        - id_convenio
+      resource: dm_convenio

@@ -1,0 +1,118 @@
+{
+  "version": "4.38.0",
+  "time": 0.021,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_situacao_proc",
+        "title": "Situação Procedimento Licitatório",
+        "path": "data/dm_situacao_proc.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_situacao_proc",
+              "title": "Situação do Processo de Compra - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_situacao_proc",
+              "title": "Situação do Processo de Compra - Código",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "enum": [
+                  "3",
+                  "4",
+                  "12"
+                ]
+              },
+              "missingValues": [
+                "-1",
+                "-2",
+                "-3",
+                "-4"
+              ]
+            },
+            {
+              "name": "nome",
+              "title": "Situação do Processo de Compra - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "- >\nSituação do processo de compra durante a aquisição de materiais e serviços (concluído, suspenso, em andamento, etc.).\nQuanto aos processos de compra com situação em andamento, são considerados apenas os itens já homologados desses processos.\n",
+              "missingValues": [
+                "NÃO INFORMADO",
+                "INVÁLIDO",
+                "NÃO SE APLICA",
+                "INEXISTENTE"
+              ]
+            }
+          ],
+          "primaryKey": [
+            "id_situacao_proc"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_situacao_proc"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "1117c2f41c3bb9c9e939153dcd673e06",
+          "bytes": 161,
+          "fields": 3,
+          "rows": 7
+        }
+      },
+      "time": 0.021,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

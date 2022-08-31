@@ -1,0 +1,119 @@
+{
+  "version": "4.38.0",
+  "time": 0.024,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_tipo_acao_plan",
+        "title": "Tipo Ação Planejamento",
+        "path": "data/dm_tipo_acao_plan.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tipo_acao",
+              "title": "Tipo de Ação - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_tipo_acao",
+              "title": "Tipo de Ação - Código",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ]
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Tipo de Ação - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "- >\n Descrição do tipo de ação:\n   1 Projeto do Orçamento Fiscal\n   2 Atividade Meio do Orçamento Fiscal\n   3 Projeto do Orçamento de Investimento\n   4 Atividade Fim do Orçamento Fiscal\n   5 Não Orçamentário\n   6 Atividade Meio de Empresa\n   7 Operação Especial\n   8 Atividade Fim de Empresa\n   9 Reserva de Contingência\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_tipo_acao"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_tipo_acao_plan"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "e36dc422769808bb955d9616c1a5eed3",
+          "bytes": 45,
+          "fields": 3,
+          "rows": 0
+        }
+      },
+      "time": 0.024,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

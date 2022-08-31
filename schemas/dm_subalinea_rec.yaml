@@ -1,0 +1,32 @@
+fields:
+  - name: id_subalinea
+    title: Alinea - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_subalinea
+    title: Subalínea - Código
+    bareNumber: true
+    type: integer
+    format: default
+    constraints:
+      minimum: 1
+      maximum: 99
+    missingValues:
+      - '0'
+  - name: nome
+    title: Subalínea - Descrição
+    type: string
+    format: default
+    description: |
+      A subalínea constitui o nível mais analítico da receita, utilizado quando há necessidade de se detalhar a Alínea com maior especificidade. 
+      Por exemplo, a subalínea “Pessoas Físicas” é detalhamento da Alínea “Impostos sobre a Renda e Proventos de Qualquer Natureza”.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_subalinea

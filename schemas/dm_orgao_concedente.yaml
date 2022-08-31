@@ -1,0 +1,29 @@
+fields:
+  - name: id_orgao
+    title: Órgão Concedente - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_orgao
+    title: Órgão Concedente - Código
+    type: string
+    format: default
+    constraints:
+      required: true
+      pattern: \d{4}
+  - name: nome
+    title: Órgão Concedente - Descrição
+    type: string
+    format: default
+    description: |
+      Órgão/entidade que celebrou o convênio ou a parceria entre o governo estadual e um terceiro, 
+      responsável pela transferência dos recursos financeiros ou pela descentralização dos créditos orçamentários destinados à execução do objeto do convênio.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_orgao

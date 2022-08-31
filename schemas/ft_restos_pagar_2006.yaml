@@ -1,0 +1,298 @@
+fields:
+  - name: id_tempo
+    title: Tempo - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_categ_econ
+    title: Categoria Econômica da Despesa - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_grupo
+    title: Grupo de Despesa - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_elemento
+    title: Elemento de Despesa - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_item
+    title: Item de Despesa - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_fonte
+    title: Fonte de Recurso - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_modalidade_aplic
+    title: Modalidade de Aplicação - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: id_funcao
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: id_subfuncao
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: id_programa
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: id_acao
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: id_procedencia
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: id_unidade_orc
+    title: Unidade Orçamentária - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_favorecido
+    tille: Favorecido - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_empenho
+    tille: Número do Empenho - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_tipo_documento
+    tille: Tipo de Documento - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: ano_origem
+    tille: Ano Origem
+    type: year
+    format: default
+    bareNumber: true
+    description: |
+      Ano de origem do empenho
+    constraints:
+      required: true
+  - name: cd_evento
+    tille: Evento - Código
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: false
+  - name: tp_operacao
+    tille: Tipo de Operação
+    type: string
+    format: default
+    constraints:
+      required: true
+      enum:
+        - '1'
+        - '2'
+  - name: cd_documento
+    tille: Documento - Código
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: false
+  - name: nr_ordem
+    tille: Número de Ordem
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: false
+  - name: dt_documento
+    tille: Data do Documento
+    type: date
+    format: default
+    constraints:
+      required: true
+  - name: ano_particao
+    tille: Ano de Partição
+    type: year
+    bareNumber: true
+    constraints:
+      required: true
+  - name: vr_nao_processado
+    tille: Valor Inscrito Não Processado
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    description: |
+      Valor, em reais, de empenho inscrito em restos a pagar não processado, ou seja, são aqueles derivados de despesas “legalmente empenhadas que não foram liquidadas e nem pagas até 31 de dezembro do mesmo exercício.
+    constraints:
+      required: true
+  - name: vr_processado
+    tille: Valor Inscrito Processado
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    description: |
+      Valor, em reais, de despesa liquidada de exercícios anteriores, ou seja, são aqueles cujo 2º estágio da despesa (liquidação) já ocorreu restando apenas o pagamento.
+    constraints:
+      required: true
+  - name: vr_pago
+    tille: valor Pago
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    description: |
+      Soma do valor de restos a pagar processados e não processados referentes aos pagamentos efetuados através de movimentações bancárias, escriturais e apropriação contábil da despesa. 
+      O efetivo pagamento pode estar pendente de transmissão aos bancos e/ou sujeito a compensação bancária.
+    constraints:
+      required: true
+missingValues:
+  - ''
+foreignKeys:
+  - fields:
+      - id_elemento
+    reference:
+      fields:
+        - id_elemento
+      resource: dm_elemento_desp
+  - fields:
+      - id_modalidade_aplic
+    reference:
+      fields:
+        - id_modalidade_aplic
+      resource: dm_modalidade_aplic
+  - fields:
+      - id_grupo
+    reference:
+      fields:
+        - id_grupo
+      resource: dm_grupo_desp
+  - fields:
+      - id_favorecido
+    reference:
+      fields:
+        - id_favorecido
+      resource: dm_favorecido
+  - fields:
+      - id_unidade_orc
+    reference:
+      fields:
+        - id_unidade_orc
+      resource: dm_unidade_orc
+  - fields:
+      - id_tempo
+    reference:
+      fields:
+        - id_tempo
+      resource: dm_tempo_anual
+  - fields:
+      - id_empenho
+    reference:
+      fields:
+        - id_empenho
+      resource: dm_empenho_resto_2006
+  - fields:
+      - id_categ_econ
+    reference:
+      fields:
+        - id_categ_econ
+      resource: dm_categ_econ
+  - fields:
+      - id_item
+    reference:
+      fields:
+        - id_item
+      resource: dm_item_desp
+  - fields:
+      - id_fonte
+    reference:
+      fields:
+        - id_fonte
+      resource: dm_fonte
+  - fields:
+      - id_tipo_documento
+    reference:
+      fields:
+        - id_tipo_documento
+      resource: dm_tipo_documento
+  - fields:
+      - id_funcao
+    reference:
+      fields:
+        - id_funcao
+      resource: dm_funcao_resto
+  - fields:
+      - id_subfuncao
+    reference:
+      fields:
+        - id_subfuncao
+      resource: dm_subfuncao_resto
+  - fields:
+      - id_programa
+    reference:
+      fields:
+        - id_programa
+      resource: dm_programa_resto
+  - fields:
+      - id_acao
+    reference:
+      fields:
+        - id_acao
+      resource: dm_acao_resto
+  - fields:
+      - id_procedencia
+    reference:
+      fields:
+        - id_procedencia
+      resource: dm_procedencia

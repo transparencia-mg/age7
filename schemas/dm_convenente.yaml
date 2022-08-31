@@ -1,0 +1,41 @@
+fields:
+  - name: id_convenente
+    title: Convenente - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: tp_documento
+    title: Tipo de Documento
+    type: string
+    format: default
+    constraints:
+      required: true
+      enum:
+        - '1'
+        - '2'
+    missingValues:
+      - ''
+  - name: nr_documento
+    title: Número Documento
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: false
+  - name: nome
+    title: Convenente
+    type: string
+    format: default
+    description: |
+      - >
+      Órgão / entidade pública ou privada ou pessoa física que celebrou a parceria com o Estado para a execução de projeto
+      ou atividade de interesse comum e, para isso, recebe recursos repassados pelo concedente / órgão ou entidade estadual parceiro.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_convenente

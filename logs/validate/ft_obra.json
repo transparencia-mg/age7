@@ -1,0 +1,104 @@
+{
+  "version": "4.38.0",
+  "time": 0.027,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "ft_obra",
+        "title": "Orçamento Proposta",
+        "path": "data/ft_obra.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tempo",
+              "type": "any"
+            },
+            {
+              "name": "id_obra",
+              "type": "any"
+            },
+            {
+              "name": "id_orgao",
+              "type": "any"
+            },
+            {
+              "name": "id_territorio",
+              "type": "any"
+            },
+            {
+              "name": "id_municipio",
+              "type": "any"
+            },
+            {
+              "name": "id_situacao",
+              "type": "any"
+            },
+            {
+              "name": "vr_tesouro",
+              "type": "any"
+            },
+            {
+              "name": "vr_outras_fontes",
+              "type": "any"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_obra"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "4587344b78a11e3cb063240afb9f9251",
+          "bytes": 94,
+          "fields": 8,
+          "rows": 0
+        }
+      },
+      "time": 0.027,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

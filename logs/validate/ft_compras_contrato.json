@@ -1,0 +1,243 @@
+{
+  "version": "4.38.0",
+  "time": 19.158,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "ft_compras_contrato",
+        "title": "Compras - Contratos",
+        "path": "data/ft_compras_contrato.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tempo",
+              "title": "Tempo - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_processo",
+              "title": "Número do Processo - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_orgao_contrato",
+              "title": "Órgão do Contrato - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_contrato",
+              "title": "Número do Contrato - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_contratado",
+              "title": "Contratado - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_situacao_cont",
+              "title": "Situação do Contrato - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_particao",
+              "title": "Ano Partição",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_homologado",
+              "title": "Valor Homologado",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "description": "Valor total homologado licitado ou comprado do item de material/serviço.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_atualizado",
+              "title": "Valor Atualizado",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "description": "Valor total do item de material/serviço atualizado pelas alterações contratuais, com ou sem termo de contrato.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_contratado"
+              ],
+              "reference": {
+                "fields": [
+                  "id_contratado"
+                ],
+                "resource": "dm_contratado"
+              }
+            },
+            {
+              "fields": [
+                "id_situacao_cont"
+              ],
+              "reference": {
+                "fields": [
+                  "id_situacao_cont"
+                ],
+                "resource": "dm_situacao_cont"
+              }
+            },
+            {
+              "fields": [
+                "id_orgao_contrato"
+              ],
+              "reference": {
+                "fields": [
+                  "id_orgao_contrato"
+                ],
+                "resource": "dm_orgao_contrato"
+              }
+            },
+            {
+              "fields": [
+                "id_tempo"
+              ],
+              "reference": {
+                "fields": [
+                  "id_tempo"
+                ],
+                "resource": "dm_tempo_diario"
+              }
+            },
+            {
+              "fields": [
+                "id_processo"
+              ],
+              "reference": {
+                "fields": [
+                  "id_processo"
+                ],
+                "resource": "dm_processo"
+              }
+            },
+            {
+              "fields": [
+                "id_contrato"
+              ],
+              "reference": {
+                "fields": [
+                  "id_contrato"
+                ],
+                "resource": "dm_contrato"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_compras_contrato"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "63d4a36c18f1c4efb8bf01f36d183d82",
+          "bytes": 1650342,
+          "fields": 9,
+          "rows": 79065
+        }
+      },
+      "time": 19.158,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

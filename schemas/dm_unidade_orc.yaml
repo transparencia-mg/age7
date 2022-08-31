@@ -1,0 +1,72 @@
+fields:
+  - name: id_unidade_orc
+    title: Unidade Orçamentária - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: ano_exercicio
+    title: Ano de Exercício
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: cd_unidade_orc
+    title: Unidade Orçamentária- Código
+    type: string
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      pattern: \d{4}
+  - name: id_grupo_administracao
+    title: Grupo Administração- Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: grupo_administracao
+    title: Grupo Administração- Descrição
+    type: string
+    format: default
+    description: |
+      Descrição da natureza jurídica no qual a unidade orçamentária está incluída.
+    constraints:
+      required: true
+  - name: id_administracao
+    title: Administração - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: administracao
+    title: Administração - Descrição
+    type: string
+    format: default
+    description: |
+      Descrição da natureza jurídica no qual a unidade orçamentária está incluída.
+    constraints:
+      required: true
+  - name: nome
+    title: Unidade Orçamentária - Descrição
+    type: string
+    format: default
+    description: |
+      Nome completo da Unidade Orçamentária.
+    constraints:
+      required: true
+  - name: sigla
+    title: Unidade Orçamentária - Sigla
+    type: string
+    format: default
+missingValues:
+  - ''
+primaryKey:
+  - id_unidade_orc

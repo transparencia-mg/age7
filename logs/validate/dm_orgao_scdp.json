@@ -1,0 +1,111 @@
+{
+  "version": "4.38.0",
+  "time": 0.021,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_orgao_scdp",
+        "title": "Órgão SCDP",
+        "path": "data/dm_orgao_scdp.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_orgao",
+              "title": "Órgão - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_orgao",
+              "title": "Órgão - Código",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "pattern": "\\d{4}"
+              },
+              "missingValues": [
+                "99"
+              ]
+            },
+            {
+              "name": "nome",
+              "title": "Órgão - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Nome da unidade orçamentária que executou a despesa de diárias de viagem ou passagem.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_orgao"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_orgao_scdp"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "67b3d2650c733ff4509f03f01ef79713",
+          "bytes": 1166,
+          "fields": 3,
+          "rows": 72
+        }
+      },
+      "time": 0.021,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

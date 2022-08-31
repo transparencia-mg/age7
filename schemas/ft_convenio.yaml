@@ -1,0 +1,158 @@
+fields:
+  - name: id_tempo
+    title: Tempo - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_orgao
+    title: Órgão - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_convenio
+    title: Convênio / Parceria - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_municipio
+    title: Municipío - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_convenente
+    title: Convenente - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: ano_particao
+    title: Ano Partição
+    type: year
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: vr_concede_atual
+    title: Valor Concedente Atualizado
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    description: |
+      - >
+      Valor financeiro previsto no convênio / parceria para o órgão concedente ou entidade estadual 
+      parceiro repassar ao convenente / Organização da Sociedade Civil (OSC) parceira, incluindo termos aditivos.
+    constraints:
+      required: true
+  - name: vr_emen_parl_atual
+    title: Valor Emenda Parlamentar Atualizado
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    description: |
+      - >
+      Valor financeiro referente a indicação de um ou mais deputados estaduais, previsto no convênio / parceira 
+      para o órgão concedente repassar ao convenente, incluindo termos aditivos.
+    constraints:
+      required: true
+  - name: vr_interv_atual
+    title: Valor Interveniente Atualizado
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    description: |
+      - > 
+       Valor financeiro previsto no convênio / parceria para o interveniente (entidade pública ou privada que 
+       participa do convênio para manifestar consentimento ou assumir obrigações) ou outros partícipes repassar ao 
+       convenente, incluindo termos aditivos.
+    constraints:
+      required: true
+  - name: vr_contra_atual
+    title: Valor Contrapartida Atualizado
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    description: |
+      - > 
+       Valor financeiro previsto no convênio / parceria referente a contrapartida financeira a ser dada pelo convenente 
+       (entidade ou pessoa que firmou a parceria com o órgão concedente), incluindo termos aditivos.
+    constraints:
+      required: true
+  - name: vr_total_atual
+    title: Valor Total Atualizado
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    description: |
+      - > 
+      Valor financeiro total do convênio/parceria, incluindo termos aditivos. 
+      Refere-se à soma dos valores do concedente / órgão ou entidade estadual parceiro, emenda parlamentar, interveniente, 
+      outras fontes, contrapartida e rendimentos financeiros provenientes da aplicação dos recursos depositados na conta 
+      bancária do convênio / parceria.
+    constraints:
+      required: true
+  - name: vr_rep_concede_atual
+    title: Valor Repassado Concedente Atualizado
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    description: |
+      - > 
+      Valor financeiro repassado pelo concedente/órgão ou entidade estadual parceiro ao convenente / Organização da 
+      Sociedade Civil (OSC) parceria, referente ao(s) convênios(s)/ parceria(s) firmado(s) entre as partes por meio de 
+      pagamento via SIAFI. 
+
+      Abrange o valor do concedente / órgão ou entidade estadual parceiro, das emendas parlamentares e outras fontes. 
+      O efetivo pagamento pode estar sujeito a compensação bancária.
+missingValues:
+  - ''
+foreignKeys:
+  - fields:
+      - id_orgao
+    reference:
+      fields:
+        - id_orgao
+      resource: dm_orgao_concedente
+  - fields:
+      - id_municipio
+    reference:
+      fields:
+        - id_municipio
+      resource: dm_municipio
+  - fields:
+      - id_convenio
+    reference:
+      fields:
+        - id_convenio
+      resource: dm_convenio
+  - fields:
+      - id_convenente
+    reference:
+      fields:
+        - id_convenente
+      resource: dm_convenente
+  - fields:
+      - id_tempo
+    reference:
+      fields:
+        - id_tempo
+      resource: dm_tempo_diario

@@ -1,0 +1,88 @@
+{
+  "version": "4.38.0",
+  "time": 0.02,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "fl_plan_programa",
+        "title": "Orçamento Proposta",
+        "path": "data/fl_plan_programa.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_orgao",
+              "type": "any"
+            },
+            {
+              "name": "id_ppag",
+              "type": "any"
+            },
+            {
+              "name": "id_programa",
+              "type": "any"
+            },
+            {
+              "name": "ano_ppag",
+              "type": "any"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "fl_plan_programa"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "9f278eba00b518579876e7386089a9fd",
+          "bytes": 54,
+          "fields": 4,
+          "rows": 0
+        }
+      },
+      "time": 0.02,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

@@ -1,0 +1,330 @@
+fields:
+  - name: id_tempo
+    title: Tempo - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_procedimento
+    title: Procedimento de Contratação - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_orgao_demanda
+    title: Órgão Demandante - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_orgao_contrato
+    title: Órgão do Contrato - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_situacao_proc
+    title: Situação do Processo de Compra - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_situacao_cont
+    title: Situação do Contrato - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_municipio
+    title: Município - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_contratado
+    title: Contratado - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_tipo_licitacao
+    title: Tipo de Licitação - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_grupo_matserv
+    title: Grupo Material e Serviço - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_classe_matserv
+    title: Classe Material e Serviço - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_material_servico
+    title: Material e Serviço - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_item_matserv
+    title: Item Material e Serviço - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_processo
+    title: Processo - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_contrato
+    title: Número do Contrato - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_unidade_medida
+    title: Unidade de Medida - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_linha_fornec
+    title: Linha de Fornecimento - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_item
+    title: Item - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_unidade_orc
+    title: Unidade Orçamentária - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      unique: false
+  - name: ano_particao
+    title: Ano Partição
+    type: year
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: dt_item_homologa
+    title: Data da Homologação do Item
+    type: date
+    format: default
+    constraints:
+      required: true
+  - name: qt_item_pedido
+    title: Item do Pedido - Quantidade
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+  - name: vr_un_referencia
+    title: Valor Unitário de Referência
+    description: |
+      Valor unitário estimado de um determinado bem ou serviço, obtido por meio de pesquisa de mercado ou cadastro de preços.
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+  - name: vr_referencia
+    title: Valor de Referência
+    description: |
+      Valor estimado de um determinado bem ou serviço, obtido por meio de pesquisa de mercado ou cadastro de preços.
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+  - name: vr_un_homologado
+    title: Valor Unitário Homologado
+    description: Valor unitário final licitado ou comprado.
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+  - name: vr_homologado
+    title: Valor Homologado
+    description: Valor final licitado ou comprado.
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+  - name: vr_atualizado
+    title: Valor Atualizado
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+missingValues:
+  - ''
+foreignKeys:
+  - fields:
+      - id_processo
+    reference:
+      fields:
+        - id_processo
+      resource: dm_processo
+  - fields:
+      - id_situacao_cont
+    reference:
+      fields:
+        - id_situacao_cont
+      resource: dm_situacao_cont
+  - fields:
+      - id_situacao_proc
+    reference:
+      fields:
+        - id_situacao_proc
+      resource: dm_situacao_proc
+  - fields:
+      - id_linha_fornec
+    reference:
+      fields:
+        - id_linha_fornec
+      resource: dm_linha_fornec
+  - fields:
+      - id_classe_matserv
+    reference:
+      fields:
+        - id_classe_matserv
+      resource: dm_classe_matserv
+  - fields:
+      - id_tempo
+    reference:
+      fields:
+        - id_tempo
+      resource: dm_tempo_diario
+  - fields:
+      - id_municipio
+    reference:
+      fields:
+        - id_municipio
+      resource: dm_municipio
+  - fields:
+      - id_item_matserv
+    reference:
+      fields:
+        - id_item_matserv
+      resource: dm_item_matserv
+  - fields:
+      - id_tipo_licitacao
+    reference:
+      fields:
+        - id_tipo_licitacao
+      resource: dm_tipo_licitacao
+  - fields:
+      - id_item
+    reference:
+      fields:
+        - id_item
+      resource: dm_item_desp
+  - fields:
+      - id_material_servico
+    reference:
+      fields:
+        - id_material_servico
+      resource: dm_material_servico
+  - fields:
+      - id_orgao_contrato
+    reference:
+      fields:
+        - id_orgao_contrato
+      resource: dm_orgao_contrato
+  - fields:
+      - id_contrato
+    reference:
+      fields:
+        - id_contrato
+      resource: dm_contrato
+  - fields:
+      - id_orgao_demanda
+    reference:
+      fields:
+        - id_orgao_demanda
+      resource: dm_orgao_demanda
+  - fields:
+      - id_unidade_medida
+    reference:
+      fields:
+        - id_unidade_medida
+      resource: dm_unidade_medida
+  - fields:
+      - id_grupo_matserv
+    reference:
+      fields:
+        - id_grupo_matserv
+      resource: dm_grupo_matserv
+  - fields:
+      - id_contratado
+    reference:
+      fields:
+        - id_contratado
+      resource: dm_contratado
+  - fields:
+      - id_procedimento
+    reference:
+      fields:
+        - id_procedimento
+      resource: dm_procedimento

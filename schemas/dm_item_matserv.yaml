@@ -1,0 +1,36 @@
+fields:
+  - name: id_item_matserv
+    title: Item Material e Serviço - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_item_matserv
+    title: Item Material e Serviço - Código
+    description: Código numérico aleatório gerado pelo SIAD
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: nome
+    title: Item Material e Serviço - Descrição
+    description: |
+      Objeto especificado de forma completa no CATMAS e que será utilizado nos processos de compras, contratação de serviços ou no cadastro de patrimônio.
+    type: string
+    format: default
+    missingValues:
+      - 'SEM DESCRICAO'
+  - name: natureza_despesa
+    title: Natureza de Despesa - Descrição
+    description: |
+      A natureza da despesa é uma categorização que identifica o tipo de gasto realizado, com uma perspectiva de forma, mas também com uma visão econômica/contábil/financeira. Ela ajuda, por exemplo, a entender se o governo está investindo, se está endividado, se gasta muito com a folha de pessoal. Também ajuda a entender como os recursos serão aplicados: com serviços, obras ou compras, por exemplo.
+    type: string
+    format: default
+    constraints:
+      required: true
+missingValues:
+  - 'SEM DESCRICAO'
+primaryKey:
+  - id_item_matserv

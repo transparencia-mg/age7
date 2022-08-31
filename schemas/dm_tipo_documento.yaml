@@ -1,0 +1,26 @@
+fields:
+  - name: id_tipo_documento
+    title: Tipo de Documento - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_tipo_documento
+    title: Tipo de Documento - Código
+    type: string
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: nome
+    title: Tipo de Documento - Descrição
+    type: string
+    format: default
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_tipo_documento

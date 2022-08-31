@@ -1,0 +1,21 @@
+fields:
+  - name: id_tipo_viajante
+    title: Tipo Viajante - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: nome
+    title: Tipo Viajante - Descrição
+    description: Informa o tipo de vínculo do viajante com o órgão responsável pela
+      viagem.
+    type: string
+    format: default
+    constraints:
+      required: true
+missingValues:
+  - 'SEM DESCRICAO'
+primaryKey:
+  - id_tipo_viajante

@@ -1,0 +1,33 @@
+fields:
+  - name: id_favorecido
+    title: Favorecido - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: nr_cpf_anonimizado
+    title: CPF do Favorecido
+    description: Número do registro do credor no cadastro nacional das pessoas físicas.
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: masp
+    title: MASP do Favorecido
+    description: Matrícula do servidor civil ou militar de Minas Gerais.
+    type: string
+    format: default
+  - name: nome_anonimizado
+    title: Favorecido - Descrição
+    description: |
+      Nome completo do servidor público ou colaborador eventual que realizou a viagem a trabalho.
+    type: string
+    format: default
+    constraints:
+      required: true
+missingValues:
+  - 'SEM DESCRICAO'
+primaryKey:
+  - id_favorecido

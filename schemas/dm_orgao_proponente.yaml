@@ -1,0 +1,37 @@
+fields:
+  - name: id_orgao
+    title: Órgão Proponente - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_orgao
+    title: Órgão Proponente - Código
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: false
+  - name: nr_documento
+    title: Órgão Proponente - CNPJ
+    description: Número de identificação da pessoa jurídica - CNPJ
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: nome
+    title: Órgão Proponente - Descrição
+    description: |
+      - > 
+      Órgão ou entidade da administração pública estadual com o qual o concedente (governo federal, prefeitura, 
+      associação, etc.) pactua a execução de programa, projeto, atividade ou evento mediante a celebração de convênio.
+    type: string
+    format: default
+    constraints:
+      required: true
+missingValues:
+  - 'SEM DESCRICAO'
+primaryKey:
+  - id_orgao

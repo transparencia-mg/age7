@@ -1,0 +1,91 @@
+---
+title: "Data Package"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+library(purrr); library(jsonlite); library(reactable)
+```
+
+```{r, echo=FALSE}
+dp <- jsonlite::read_json("datapackage.json")
+
+expand_resource_metadata <- function(resource) {
+  resource$schema <- yaml::yaml.load_file(resource[["schema"]])
+  resource$dialect <- jsonlite::read_json(resource[["dialect"]])
+  resource
+}
+
+dp$resources <- map(dp$resources, expand_resource_metadata)
+
+get_name <- function(x) {
+  map(x[["schema"]][["fields"]], "name") |> 
+    unlist()
+}
+
+get_title <- function(x) {
+  map(x[["schema"]][["fields"]],  pluck, "title", .default = "") |> 
+    unlist()
+}
+
+get_type <- function(x) {
+  map(x[["schema"]][["fields"]],  pluck, "type", .default = "") |> 
+    unlist()
+}
+
+get_format <- function(x) {
+  map(x[["schema"]][["fields"]],  pluck, "format", .default = "") |> 
+    unlist()
+}
+
+get_constraints <- function(x) {
+  map(x[["schema"]][["fields"]], "constraints") |> 
+    map(toJSON, pretty = TRUE, auto_unbox = TRUE) |> 
+    unlist()
+}
+
+md_text_to_html_fragment <- Vectorize(markdown::markdownToHTML, vectorize.args = "text")
+
+get_description <- function(x) {
+  map(x[["schema"]][["fields"]], "description") |> 
+    map(~ md_text_to_html_fragment(text = ifelse(is.null(.x), '', .x), fragment.only = TRUE)) |> 
+    unlist()
+          
+}
+
+name <- map(dp$resources, get_name) |> 
+  unlist()
+
+title <- map(dp$resources, get_title) |> 
+  unlist()
+
+type <- map(dp$resources, get_type) |> 
+  unlist()
+
+format <- map(dp$resources, get_format) |> 
+  unlist()
+
+constraints <- map(dp$resources, get_constraints) |> 
+  unlist()
+
+description <- map(dp$resources, get_description) |> 
+  unlist()
+
+resource_name <- map(dp$resources, ~ rep_len(.x$name, length(.x$schema$fields))) |> 
+  unlist()
+
+resource_title <- map(dp$resources, ~ rep_len(.x$title, length(.x$schema$fields))) |> 
+  unlist()
+
+df <- data.frame(resource_name,resource_title, name,title,  type = glue::glue("{type} ({format})"), description, constraints)
+row.names(df) <- NULL
+```
+
+
+```{r, echo=FALSE}
+df |> reactable::reactable(filterable = TRUE, 
+                           searchable = TRUE,
+                           resizable = TRUE,
+                           columns = list(description = colDef(html = TRUE)))
+```
+

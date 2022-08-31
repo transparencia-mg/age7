@@ -1,0 +1,18 @@
+running
+  '/usr/lib/R/bin/R --no-echo --no-restore --file=scripts/r/notify.R'
+
+httpuv not installed, defaulting to device code authentication
+Using device_code flow
+Creating Microsoft Graph login for default tenant
+httpuv not installed, defaulting to device code authentication
+Using device_code flow
+Waiting for device code in browser...
+Press Esc/Ctrl + C to abort
+Error in process_aad_response(res) : 
+  Bad Request (HTTP 400). Failed to obtain Azure Active Directory token. Message:
+AADSTS70020: The provided value for the input parameter 'device_code' is not valid. This device code has expired.
+Trace ID: 59bf90c9-b834-44c8-a34c-e37c697a5600
+Correlation ID: 95dfe3d4-d0bc-423b-ae73-6ce395c49018
+Timestamp: 2022-08-31 03:38:50Z.
+Calls: <Anonymous> ... poll_for_token -> process_aad_response -> <Anonymous>
+Execution halted

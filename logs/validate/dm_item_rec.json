@@ -1,0 +1,153 @@
+{
+  "version": "4.38.0",
+  "time": 0.523,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_item_rec",
+        "title": "Item de Receita",
+        "path": "data/dm_item_rec.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_item",
+              "title": "Item da Receita- Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_item",
+              "title": "Item da Receita - código",
+              "description": "Código do item da receita (1 a 99)",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "51",
+                  "52",
+                  "94",
+                  "95",
+                  "96",
+                  "97",
+                  "98",
+                  "99"
+                ]
+              },
+              "missingValues": [
+                "0"
+              ]
+            },
+            {
+              "name": "nome",
+              "title": "Item da Receita- Descrição",
+              "description": "Detalhamento da classificação orçamentária da receita referente ao tipo de receita.\n",
+              "type": "string",
+              "format": "default"
+            }
+          ],
+          "missingValues": [
+            "SEM DESCRICAO"
+          ],
+          "primaryKey": [
+            "id_item"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_item_rec"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "2f5087e2c0e789d5287f9a934f81baf0",
+          "bytes": 131100,
+          "fields": 3,
+          "rows": 15964
+        }
+      },
+      "time": 0.523,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

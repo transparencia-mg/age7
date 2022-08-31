@@ -1,0 +1,28 @@
+fields:
+  - name: id_concedente
+    title: Concedente - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: nr_documento
+    title: Número Documento
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: nome
+    title: Concedente
+    type: string
+    format: default
+    description: |
+      - > 
+      Órgão ou entidade responsável pela transferência dos recursos financeiros destinados à execução do objeto do convênio.
+      Exemplos: Ministérios da União, Prefeituras, associações, etc.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_concedente

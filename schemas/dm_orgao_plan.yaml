@@ -1,0 +1,31 @@
+fields:
+  - name: id_orgao
+    title: Órgão - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_orgao
+    title: Órgão - Código
+    type: string
+    format: default
+    bareNumber: true
+    constraints:
+      pattern: \d{4}
+  - name: nome
+    title: Órgão - descrição
+    type: string
+    format: default
+    description: |
+      - >
+      Identifica o sistema operacional a que está vinculada a unidade orçamentária responsável pelo
+      programa. Usualmente são identificados pela secretaria líder do referido sistema operacional. 
+      Vinculam-se aos programas multissetorias apenas um Órgão Responsável.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_orgao

@@ -1,0 +1,37 @@
+fields:
+  - name: id_desdobramento_1
+    title: Descobramento 1 - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_desdobramento_1
+    title: Desdobramento 1 - Código
+    description: Código do desdobramento da receita (1 a 9)
+    type: string
+    format: default
+    constraints:
+      enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+    missingValues:
+      - '0'
+  - name: nome
+    title: Desdobramento 1 - Descrição
+    description: |
+      Desdobramento para identificação das peculiaridades de cada receita.
+    type: string
+    format: default
+missingValues:
+  - 'SEM DESCRICAO'
+primaryKey:
+  - id_desdobramento_1
