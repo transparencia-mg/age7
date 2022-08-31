@@ -1,0 +1,28 @@
+fields:
+  - name: id_municipio
+    title: Município - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_municipio_ibge
+    title: Município - Código
+    type: string
+    format: default
+    description: |
+      Código do Município conforme consta na [Tabela de Códigos de Municípios do IBGE]https://www.ibge.gov.br/explica/codigos-dos-municipios.php)
+    constraints:
+      required: true
+      unique: false
+  - name: nome
+    title: Município - Descrição
+    type: string
+    format: default
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_municipio

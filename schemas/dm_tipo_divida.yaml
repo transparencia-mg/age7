@@ -1,0 +1,34 @@
+fields:
+  - name: id_tipo
+    title: Tipo da Dívida - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_tipo
+    title: Tipo da Dívida - Código
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      enum:
+        - '1'
+        - '2'
+  - name: nome
+    title: Tipo da Dívida
+    desciription: |
+      Informa o tipo de dívida contraída pelo Estado junto a instituições financeiras públicas ou privadas, no mercado financeiro interno ou externo, bem como junto a empresas, organimos nacionais e internacionais, pessoas ou outros governos. A dívida pública é classificada como Dívida Pública Interna ou Dívida Pública Externa.
+    type: string
+    format: default
+    constraints:
+      required: true
+      enum:
+        - 'DÍVIDA PÚBLICA INTERNA'
+        - 'DÍVIDA PÚBLICA EXTERNA'
+missingValues:
+  - 'SEM DESCRICAO'
+primaryKey:
+  - id_tipo

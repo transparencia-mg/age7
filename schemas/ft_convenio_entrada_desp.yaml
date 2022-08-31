@@ -1,0 +1,151 @@
+fields:
+  - name: id_convenio
+    title: Convênio de Entrada  - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_favorecido
+    title: Favorecido  - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_tipo_documento
+    title: Tipo de Documento  - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_elemento
+    title: Elemento de Despesa  - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_item
+    title: Item de Despesa  - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: nr_empenho
+    title: Número do Empenho
+    type: string
+    format: default
+    description: |
+      Número de identificação do documento de empenho.
+    constraints:
+      required: true
+      unique: false
+  - name: cd_documento
+    title: Documento - Código
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: false
+  - name: dt_documento
+    title: Data do documento
+    type: date
+    format: default
+    constraints:
+      required: true
+  - name: fl_origem
+    title: Origem - Flag
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      enum:
+        - '1'
+        - '2'
+  - name: tp_operacao
+    title: Tipo de Operação
+    type: string
+    format: default
+    constraints:
+      required: true
+      enum:
+        - '1'
+        - '2'
+  - name: cd_evento
+    title: Evento - Código
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: false
+  - name: sqaempenho_nrordem
+    title: Número de Ordem do Empenho- Chave Origem
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: anomes_anorigem
+    title: Mês e Ano
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: ano_particao
+    title: Ano Partição
+    type: year
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: vr_despesa
+    title: Valor da Despesa
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+missingValues:
+  - ''
+foreignKeys:
+  - fields:
+      - id_item
+    reference:
+      fields:
+        - id_item
+      resource: dm_item_desp
+  - fields:
+      - id_elemento
+    reference:
+      fields:
+        - id_elemento
+      resource: dm_elemento_desp
+  - fields:
+      - id_convenio
+    reference:
+      fields:
+        - id_convenio
+      resource: dm_convenio_entrada
+  - fields:
+      - id_tipo_documento
+    reference:
+      fields:
+        - id_tipo_documento
+      resource: dm_tipo_documento
+  - fields:
+      - id_favorecido
+    reference:
+      fields:
+        - id_favorecido
+      resource: dm_favorecido

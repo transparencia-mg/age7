@@ -1,0 +1,31 @@
+fields:
+  - name: id_tipo_atendimento
+    title: Tipo de Atendimento - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: fl_versao
+    title: Tipo de Atendimento - Flag
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      enum:
+        - '1'
+        - '2'
+  - name: nome
+    title: Tipo de Atendimento
+    type: string
+    format: default
+    description: |
+      Categoria na qual o objeto do convênio / parceria se enquadra, por exemplo: transporte escolar, aquisição de bens, reforma ou obra, etc.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_tipo_atendimento

@@ -1,0 +1,51 @@
+fields:
+  - name: id_convenio
+    title: Convênio de Entrada- Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_classifica_rec
+    title: Classificação da receita
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: dt_registro_receita
+    title: Data de registro da receita
+    type: date
+    format: default
+    constraints:
+      required: true
+  - name: ano_particao
+    title: Ano Partição
+    type: year
+    format: default
+    bareNumber: true
+  - name: vr_arrecadado
+    title: Valor Arrecadado
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+missingValues:
+  - ''
+foreignKeys:
+  - fields:
+      - id_classifica_rec
+    reference:
+      fields:
+        - id_classifica_rec
+      resource: dm_classifica_rec
+  - fields:
+      - id_convenio
+    reference:
+      fields:
+        - id_convenio
+      resource: dm_convenio_entrada

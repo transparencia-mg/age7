@@ -1,0 +1,66 @@
+fields:
+  - name: id_modalidade
+    title: Modalidade de Aplicação - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_modalidade
+    title: Modalidade de Aplicação - Código
+    type: string
+    format: default
+    description: |
+      Classificação da natureza da despesa que traduz a forma como os recursos serão aplicados pelos órgãos/entidades, podendo ser diretamente pelos mesmos ou sob a forma de transferências a outras entidades públicas ou privadas que se encarregarão da execução das ações. (2 dígitos)
+    constraints:
+      enum:
+        - '10'
+        - '20'
+        - '22'
+        - '30'
+        - '31'
+        - '32'
+        - '35'
+        - '36'
+        - '40'
+        - '41'
+        - '42'
+        - '45'
+        - '46'
+        - '50'
+        - '60'
+        - '67'
+        - '70'
+        - '71'
+        - '72'
+        - '73'
+        - '74'
+        - '75'
+        - '76'
+        - '80'
+        - '90'
+        - '91'
+        - '92'
+        - '93'
+        - '94'
+        - '95'
+        - '96'
+        - '99'
+    missingValues:
+      - '0'
+  - name: nome
+    title: Modalidade de Aplicação - Descrição
+    type: string
+    format: default
+    description: |
+      - > 
+        Classificação da natureza da despesa que traduz a forma como os recursos serão aplicados pelos órgãos/entiddes, 
+        podendo ser diretamente pelos mesmos ou sbo a forma de transferência a outras entidades públicas ou privadas que 
+        se encarregarão da execução das ações.
+    missingValues:
+      - 'SEM DESCRICAO'
+missingValues:
+  - ''
+primaryKey:
+  - id_modalidade

@@ -1,0 +1,3765 @@
+profile: tabular-data-package
+resources:
+  - name: dm_poder
+    title: Poder
+    path: data/dm_poder.csv.gz
+    schema: schemas/dm_poder.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_poder
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_contrato_divida
+    title: Contrato Dívida
+    path: data/dm_contrato_divida.csv.gz
+    schema: schemas/dm_contrato_divida.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_contrato_divida
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_divida
+    title: Tipo Dívida
+    path: data/dm_tipo_divida.csv.gz
+    schema: schemas/dm_tipo_divida.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_divida
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_unidade_orc
+    title: Unidade Orçamentária
+    path: data/dm_unidade_orc.csv.gz
+    schema: schemas/dm_unidade_orc.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_unidade_orc
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_funcao_desp
+    title: Função
+    path: data/dm_funcao_desp.csv.gz
+    schema: schemas/dm_funcao_desp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_funcao_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_subfuncao_desp
+    title: Subfunção
+    path: data/dm_subfuncao_desp.csv.gz
+    schema: schemas/dm_subfuncao_desp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_subfuncao_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tempo_diario
+    title: Calendário - Dias
+    path: data/dm_tempo_diario.csv.gz
+    schema: schemas/dm_tempo_diario.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tempo_diario
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_documento
+    title: Tipo Documento
+    path: data/dm_tipo_documento.csv.gz
+    schema: schemas/dm_tipo_documento.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_documento
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tempo_mensal
+    title: Calendário - Mês
+    path: data/dm_tempo_mensal.csv.gz
+    schema: schemas/dm_tempo_mensal.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tempo_mensal
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_alinea_rec
+    title: Alínea da receita
+    path: data/dm_alinea_rec.csv.gz
+    schema: schemas/dm_alinea_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_alinea_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_especie_rec
+    title: Espécie da receita
+    path: data/dm_especie_rec.csv.gz
+    schema: schemas/dm_especie_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_especie_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_fonte_rec
+    title: Fonte de Recurso
+    path: data/dm_fonte_rec.csv.gz
+    schema: schemas/dm_fonte_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_fonte_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_item_rec
+    title: Item de Receita
+    path: data/dm_item_rec.csv.gz
+    schema: schemas/dm_item_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_item_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_rubrica_rec
+    title: Rubrica da receita
+    path: data/dm_rubrica_rec.csv.gz
+    schema: schemas/dm_rubrica_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_rubrica_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_origem_rec
+    title: Origem da receita
+    path: data/dm_origem_rec.csv.gz
+    schema: schemas/dm_origem_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_origem_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_subalinea_rec
+    title: Subalínea da receita
+    path: data/dm_subalinea_rec.csv.gz
+    schema: schemas/dm_subalinea_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_subalinea_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_receita_prevista
+    title: Receita Orçamentária Prevista
+    path: data/ft_receita_prevista.csv.gz
+    schema: schemas/ft_receita_prevista.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_receita_prevista
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_receita
+    title: Receita Orçamentária
+    path: data/ft_receita.csv.gz
+    schema: schemas/ft_receita.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_receita
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_desdobramento_1_rec
+    title: Desdobramento1 da receita
+    path: data/dm_desdobramento_1_rec.csv.gz
+    schema: schemas/dm_desdobramento_1_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_desdobramento_1_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_desdobramento_2_rec
+    title: Desdobramento2 da receita
+    path: data/dm_desdobramento_2_rec.csv.gz
+    schema: schemas/dm_desdobramento_2_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_desdobramento_2_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_desdobramento_3_rec
+    title: Desdobramento3 da receita
+    path: data/dm_desdobramento_3_rec.csv.gz
+    schema: schemas/dm_desdobramento_3_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_desdobramento_3_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_rec
+    title: Tipo da receita
+    path: data/dm_tipo_rec.csv.gz
+    schema: schemas/dm_tipo_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_receita_prevista_v2018
+    title: Receita Orçamentária Prevista v2
+    path: data/ft_receita_prevista_v2018.csv.gz
+    schema: schemas/ft_receita_prevista_v2018.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_receita_prevista_v2018
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_receita_v2018
+    title: Receita v2
+    path: data/ft_receita_v2018.csv.gz
+    schema: schemas/ft_receita_v2018.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_receita_v2018
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_item_desp
+    title: Item de Despesa
+    path: data/dm_item_desp.csv.gz
+    schema: schemas/dm_item_desp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_item_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_programa
+    title: Programa
+    path: data/dm_programa.csv.gz
+    schema: schemas/dm_programa.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_programa
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_acao
+    title: Ação Orçamentária
+    path: data/dm_acao.csv.gz
+    schema: schemas/dm_acao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_acao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_funcao_scdp
+    title: Cargo em Comissão
+    path: data/dm_funcao_scdp.csv.gz
+    schema: schemas/dm_funcao_scdp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_funcao_scdp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_convenio_investimento
+    title: Convênio de saída - Investimento
+    path: data/ft_convenio_investimento.csv.gz
+    schema: schemas/ft_convenio_investimento.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_convenio_investimento
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_convenio_tipoatendimento
+    title: Convênio Tipo Atendimento
+    path: data/ft_convenio_tipoatendimento.csv.gz
+    schema: schemas/ft_convenio_tipoatendimento.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_convenio_tipoatendimento
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_convenio_metaetapa
+    title: Convênio - Meta Etapa
+    path: data/ft_convenio_metaetapa.csv.gz
+    schema: schemas/ft_convenio_metaetapa.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_convenio_metaetapa
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_convenio_interveniente
+    title: Convênio Interveniente
+    path: data/fl_convenio_interveniente.csv.gz
+    schema: schemas/fl_convenio_interveniente.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_convenio_interveniente
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_convenio_alteracao
+    title: Convênio Alteração
+    path: data/fl_convenio_alteracao.csv.gz
+    schema: schemas/fl_convenio_alteracao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_convenio_alteracao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_convenio_entrada_dotacao
+    title: Convênio Entrada Dotação
+    path: data/ft_convenio_entrada_dotacao.csv.gz
+    schema: schemas/ft_convenio_entrada_dotacao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_convenio_entrada_dotacao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_convenio_entrada_desp
+    title: Convênio Entrada - Despesa
+    path: data/ft_convenio_entrada_desp.csv.gz
+    schema: schemas/ft_convenio_entrada_desp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_convenio_entrada_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_convenio_entrada_rec
+    title: Convênio Entrada - Receita
+    path: data/ft_convenio_entrada_rec.csv.gz
+    schema: schemas/ft_convenio_entrada_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_convenio_entrada_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_convenio_entrada
+    title: Convênio Entrada - tabela dimensão
+    path: data/dm_convenio_entrada.csv.gz
+    schema: schemas/dm_convenio_entrada.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_convenio_entrada
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_favorecido_scdp
+    title: Favorecido SCDP
+    path: data/dm_favorecido_scdp.csv.gz
+    schema: schemas/dm_favorecido_scdp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_favorecido_scdp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_documento_viagem
+    title: Documento Viagem
+    path: data/dm_documento_viagem.csv.gz
+    schema: schemas/dm_documento_viagem.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_documento_viagem
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_compras_empenho
+    title: Empenho Despesa Compras
+    path: data/dm_empenho_desp_compras_empenho.csv.gz
+    schema: schemas/dm_empenho_desp_compras_empenho.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_diarias_scdp_liqpag
+    title: Empenho Despesa Diárias SCDP
+    path: data/dm_empenho_desp_diarias_scdp_liqpag.csv.gz
+    schema: schemas/dm_empenho_desp_diarias_scdp_liqpag.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2002
+    title: Empenho Despesa 2002
+    path: data/dm_empenho_desp_2002.csv.gz
+    schema: schemas/dm_empenho_desp_2002.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2003
+    title: Empenho Despesa 2003
+    path: data/dm_empenho_desp_2003.csv.gz
+    schema: schemas/dm_empenho_desp_2003.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2004
+    title: Empenho Despesa 2004
+    path: data/dm_empenho_desp_2004.csv.gz
+    schema: schemas/dm_empenho_desp_2004.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2005
+    title: Empenho Despesa 2005
+    path: data/dm_empenho_desp_2005.csv.gz
+    schema: schemas/dm_empenho_desp_2005.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2006
+    title: Empenho Despesa 2006
+    path: data/dm_empenho_desp_2006.csv.gz
+    schema: schemas/dm_empenho_desp_2006.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2007
+    title: Empenho Despesa 2007
+    path: data/dm_empenho_desp_2007.csv.gz
+    schema: schemas/dm_empenho_desp_2007.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2008
+    title: Empenho Despesa 2008
+    path: data/dm_empenho_desp_2008.csv.gz
+    schema: schemas/dm_empenho_desp_2008.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2009
+    title: Empenho Despesa 2009
+    path: data/dm_empenho_desp_2009.csv.gz
+    schema: schemas/dm_empenho_desp_2009.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2010
+    title: Empenho Despesa 2010
+    path: data/dm_empenho_desp_2010.csv.gz
+    schema: schemas/dm_empenho_desp_2010.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2011
+    title: Empenho Despesa 2011
+    path: data/dm_empenho_desp_2011.csv.gz
+    schema: schemas/dm_empenho_desp_2011.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2012
+    title: Empenho Despesa 2012
+    path: data/dm_empenho_desp_2012.csv.gz
+    schema: schemas/dm_empenho_desp_2012.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2013
+    title: Empenho Despesa 2013
+    path: data/dm_empenho_desp_2013.csv.gz
+    schema: schemas/dm_empenho_desp_2013.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2014
+    title: Empenho Despesa 2014
+    path: data/dm_empenho_desp_2014.csv.gz
+    schema: schemas/dm_empenho_desp_2014.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2015
+    title: Empenho Despesa 2015
+    path: data/dm_empenho_desp_2015.csv.gz
+    schema: schemas/dm_empenho_desp_2015.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2016
+    title: Empenho Despesa 2016
+    path: data/dm_empenho_desp_2016.csv.gz
+    schema: schemas/dm_empenho_desp_2016.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2017
+    title: Empenho Despesa 2017
+    path: data/dm_empenho_desp_2017.csv.gz
+    schema: schemas/dm_empenho_desp_2017.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2018
+    title: Empenho Despesa 2018
+    path: data/dm_empenho_desp_2018.csv.gz
+    schema: schemas/dm_empenho_desp_2018.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2019
+    title: Empenho Despesa 2019
+    path: data/dm_empenho_desp_2019.csv.gz
+    schema: schemas/dm_empenho_desp_2019.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2020
+    title: Empenho Despesa 2020
+    path: data/dm_empenho_desp_2020.csv.gz
+    schema: schemas/dm_empenho_desp_2020.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2021
+    title: Empenho Despesa 2021
+    path: data/dm_empenho_desp_2021.csv.gz
+    schema: schemas/dm_empenho_desp_2021.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2022
+    title: Empenho Despesa 2022
+    path: data/dm_empenho_desp_2022.csv.gz
+    schema: schemas/dm_empenho_desp_2022.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_favorecido
+    title: Favorecido
+    path: data/dm_favorecido.csv.gz
+    schema: schemas/dm_favorecido.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_favorecido
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_despesa_pgto
+    title: Despesa - Ordem de Pagamento
+    path: data/fl_despesa_pgto.csv.gz
+    schema: schemas/fl_despesa_pgto.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_despesa_pgto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_fonte
+    title: Fonte de Recurso
+    path: data/dm_fonte.csv.gz
+    schema: schemas/dm_fonte.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_fonte
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_grupo_desp
+    title: Grupo de natureza da despesa
+    path: data/dm_grupo_desp.csv.gz
+    schema: schemas/dm_grupo_desp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_grupo_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_modalidade_aplic
+    title: Modalidade de Aplicação
+    path: data/dm_modalidade_aplic.csv.gz
+    schema: schemas/dm_modalidade_aplic.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_modalidade_aplic
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_procedencia
+    title: Identificador de procedência e uso (IPU)
+    path: data/dm_procedencia.csv.gz
+    schema: schemas/dm_procedencia.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_procedencia
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_cidade
+    title: Cidade
+    path: data/dm_cidade.csv.gz
+    schema: schemas/dm_cidade.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_cidade
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_grupo_matserv
+    title: Grupo de Material/Serviço
+    path: data/dm_grupo_matserv.csv.gz
+    schema: schemas/dm_grupo_matserv.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_grupo_matserv
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_item_matserv
+    title: Item de Material/Serviço
+    path: data/dm_item_matserv.csv.gz
+    schema: schemas/dm_item_matserv.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_item_matserv
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_linha_fornec
+    title: Linha de fornecimento
+    path: data/dm_linha_fornec.csv.gz
+    schema: schemas/dm_linha_fornec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_linha_fornec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_processo
+    title: Processo de Compra
+    path: data/dm_processo.csv.gz
+    schema: schemas/dm_processo.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_processo
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_unidade_medida
+    title: Unidade de Medida
+    path: data/dm_unidade_medida.csv.gz
+    schema: schemas/dm_unidade_medida.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_unidade_medida
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_compras_empenho
+    title: Compras - Empenho
+    path: data/fl_compras_empenho.csv.gz
+    schema: schemas/fl_compras_empenho.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_compras_empenho
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_situacao_conv_ent
+    title: Situação Convênio Entrada
+    path: data/dm_situacao_conv_ent.csv.gz
+    schema: schemas/dm_situacao_conv_ent.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_situacao_conv_ent
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_convenio
+    title: Convênio de Saída
+    path: data/ft_convenio.csv.gz
+    schema: schemas/ft_convenio.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_convenio
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_convenio_entrada_compras
+    title: Convênio Entrada Compras
+    path: data/fl_convenio_entrada_compras.csv.gz
+    schema: schemas/fl_convenio_entrada_compras.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_convenio_entrada_compras
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_convenio
+    title: Convênio
+    path: data/dm_convenio.csv.gz
+    schema: schemas/dm_convenio.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_convenio
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_convenio_entrada_interv
+    title: Convênio Entrada Interveniente
+    path: data/fl_convenio_entrada_interv.csv.gz
+    schema: schemas/fl_convenio_entrada_interv.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_convenio_entrada_interv
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_convenio_entrada_aditivo
+    title: Convênio Entrada - Aditivos
+    path: data/fl_convenio_entrada_aditivo.csv.gz
+    schema: schemas/fl_convenio_entrada_aditivo.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_convenio_entrada_aditivo
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_convenio_entrada
+    title: Convênio Entrada - tabela fato
+    path: data/ft_convenio_entrada.csv.gz
+    schema: schemas/ft_convenio_entrada.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_convenio_entrada
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_interveniente_conv_ent
+    title: Interveniente Convênio de Entrada
+    path: data/dm_interveniente_conv_ent.csv.gz
+    schema: schemas/dm_interveniente_conv_ent.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_interveniente_conv_ent
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_classifica_rec
+    title: Convênio Entrada - Classificação da Receita
+    path: data/dm_classifica_rec.csv.gz
+    schema: schemas/dm_classifica_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_classifica_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_programa_conv_ent
+    title: Convênio de Entrada - Programa
+    path: data/dm_programa_conv_ent.csv.gz
+    schema: schemas/dm_programa_conv_ent.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_programa_conv_ent
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_orgao_proponente
+    title: Convênio Entrada - Órgão Proponente
+    path: data/dm_orgao_proponente.csv.gz
+    schema: schemas/dm_orgao_proponente.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_orgao_proponente
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_concedente
+    title: Convênio de Entrada - Órgão Concedente
+    path: data/dm_concedente.csv.gz
+    schema: schemas/dm_concedente.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_concedente
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_interveniente
+    title: Convênio de Entrada - Interveniente
+    path: data/dm_interveniente.csv.gz
+    schema: schemas/dm_interveniente.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_interveniente
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_atendimento
+    title: Tipo Atendimento
+    path: data/dm_tipo_atendimento.csv.gz
+    schema: schemas/dm_tipo_atendimento.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_atendimento
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_estado
+    title: Estado
+    path: data/dm_estado.csv.gz
+    schema: schemas/dm_estado.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_estado
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_convenente
+    title: Convenente
+    path: data/dm_convenente.csv.gz
+    schema: schemas/dm_convenente.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_convenente
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_scdp
+    title: Diárias SCDP
+    path: data/ft_diarias_scdp.csv.gz
+    schema: schemas/ft_diarias_scdp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias_scdp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_scdp_liqpag
+    title: Diárias SCDP - Liquidação e Pagamento
+    path: data/ft_diarias_scdp_liqpag.csv.gz
+    schema: schemas/ft_diarias_scdp_liqpag.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias_scdp_liqpag
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_cargo_scdp
+    title: Cargo
+    path: data/dm_cargo_scdp.csv.gz
+    schema: schemas/dm_cargo_scdp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_cargo_scdp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_meio_transporte
+    title: Meio Transporte
+    path: data/dm_meio_transporte.csv.gz
+    schema: schemas/dm_meio_transporte.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_meio_transporte
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_pais
+    title: País
+    path: data/dm_pais.csv.gz
+    schema: schemas/dm_pais.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_pais
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_viagem
+    title: Tipo viagem
+    path: data/dm_tipo_viagem.csv.gz
+    schema: schemas/dm_tipo_viagem.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_viagem
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_compras
+    title: Compras
+    path: data/ft_compras.csv.gz
+    schema: schemas/ft_compras.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_compras
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_compras_contrato
+    title: Compras - Contratos
+    path: data/ft_compras_contrato.csv.gz
+    schema: schemas/ft_compras_contrato.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_compras_contrato
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2002
+    title: Despesa 2002
+    path: data/ft_despesa_2002.csv.gz
+    schema: schemas/ft_despesa_2002.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2002
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2003
+    title: Despesa 2003
+    path: data/ft_despesa_2003.csv.gz
+    schema: schemas/ft_despesa_2003.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2003
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2004
+    title: Despesa 2004
+    path: data/ft_despesa_2004.csv.gz
+    schema: schemas/ft_despesa_2004.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2004
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2005
+    title: Despesa 2005
+    path: data/ft_despesa_2005.csv.gz
+    schema: schemas/ft_despesa_2005.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2005
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2006
+    title: Despesa 2006
+    path: data/ft_despesa_2006.csv.gz
+    schema: schemas/ft_despesa_2006.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2006
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2007
+    title: Despesa 2007
+    path: data/ft_despesa_2007.csv.gz
+    schema: schemas/ft_despesa_2007.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2007
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2008
+    title: Despesa 2008
+    path: data/ft_despesa_2008.csv.gz
+    schema: schemas/ft_despesa_2008.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2008
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2009
+    title: Despesa 2009
+    path: data/ft_despesa_2009.csv.gz
+    schema: schemas/ft_despesa_2009.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2009
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2010
+    title: Despesa 2010
+    path: data/ft_despesa_2010.csv.gz
+    schema: schemas/ft_despesa_2010.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2010
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2011
+    title: Despesa 2011
+    path: data/ft_despesa_2011.csv.gz
+    schema: schemas/ft_despesa_2011.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2011
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2012
+    title: Despesa 2012
+    path: data/ft_despesa_2012.csv.gz
+    schema: schemas/ft_despesa_2012.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2012
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2013
+    title: Despesa 2013
+    path: data/ft_despesa_2013.csv.gz
+    schema: schemas/ft_despesa_2013.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2013
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2014
+    title: Despesa 2014
+    path: data/ft_despesa_2014.csv.gz
+    schema: schemas/ft_despesa_2014.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2014
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2015
+    title: Despesa 2015
+    path: data/ft_despesa_2015.csv.gz
+    schema: schemas/ft_despesa_2015.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2015
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2016
+    title: Despesa 2016
+    path: data/ft_despesa_2016.csv.gz
+    schema: schemas/ft_despesa_2016.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2016
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2017
+    title: Despesa 2017
+    path: data/ft_despesa_2017.csv.gz
+    schema: schemas/ft_despesa_2017.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2017
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2018
+    title: Despesa 2018
+    path: data/ft_despesa_2018.csv.gz
+    schema: schemas/ft_despesa_2018.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2018
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2019
+    title: Despesa 2019
+    path: data/ft_despesa_2019.csv.gz
+    schema: schemas/ft_despesa_2019.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2019
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2020
+    title: Despesa 2020
+    path: data/ft_despesa_2020.csv.gz
+    schema: schemas/ft_despesa_2020.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2020
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2021
+    title: Despesa 2021
+    path: data/ft_despesa_2021.csv.gz
+    schema: schemas/ft_despesa_2021.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2021
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_despesa_2022
+    title: Despesa 2022
+    path: data/ft_despesa_2022.csv.gz
+    schema: schemas/ft_despesa_2022.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2022
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_situacao_op_desp
+    title: Situação Ordem de Pagamento
+    path: data/dm_situacao_op_desp.csv.gz
+    schema: schemas/dm_situacao_op_desp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_situacao_op_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_motivo_viagem
+    title: Motivo Viagem
+    path: data/dm_motivo_viagem.csv.gz
+    schema: schemas/dm_motivo_viagem.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_motivo_viagem
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_viajante
+    title: Tipo Viajante
+    path: data/dm_tipo_viajante.csv.gz
+    schema: schemas/dm_tipo_viajante.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_viajante
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_classe_matserv
+    title: Classe Material/Serviço
+    path: data/dm_classe_matserv.csv.gz
+    schema: schemas/dm_classe_matserv.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_classe_matserv
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_contrato
+    title: Contrato
+    path: data/dm_contrato.csv.gz
+    schema: schemas/dm_contrato.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_contrato
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_situacao_cont
+    title: Situação Contrato
+    path: data/dm_situacao_cont.csv.gz
+    schema: schemas/dm_situacao_cont.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_situacao_cont
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_situacao_proc
+    title: Situação Procedimento Licitatório
+    path: data/dm_situacao_proc.csv.gz
+    schema: schemas/dm_situacao_proc.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_situacao_proc
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_licitacao
+    title: Tipo Licitação
+    path: data/dm_tipo_licitacao.csv.gz
+    schema: schemas/dm_tipo_licitacao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_licitacao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_situacao_convenio
+    title: Situação Convênio
+    path: data/dm_situacao_convenio.csv.gz
+    schema: schemas/dm_situacao_convenio.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_situacao_convenio
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_contratado
+    title: Contratado
+    path: data/dm_contratado.csv.gz
+    schema: schemas/dm_contratado.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_contratado
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2002
+    title: Empenho Restos a Pagar 2002
+    path: data/dm_empenho_resto_2002.csv.gz
+    schema: schemas/dm_empenho_resto_2002.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2003
+    title: Empenho Restos a Pagar 2003
+    path: data/dm_empenho_resto_2003.csv.gz
+    schema: schemas/dm_empenho_resto_2003.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2004
+    title: Empenho Restos a Pagar 2004
+    path: data/dm_empenho_resto_2004.csv.gz
+    schema: schemas/dm_empenho_resto_2004.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2005
+    title: Empenho Restos a Pagar 2005
+    path: data/dm_empenho_resto_2005.csv.gz
+    schema: schemas/dm_empenho_resto_2005.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2006
+    title: Empenho Restos a Pagar 2006
+    path: data/dm_empenho_resto_2006.csv.gz
+    schema: schemas/dm_empenho_resto_2006.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2007
+    title: Empenho Restos a Pagar 2007
+    path: data/dm_empenho_resto_2007.csv.gz
+    schema: schemas/dm_empenho_resto_2007.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2008
+    title: Empenho Restos a Pagar 2008
+    path: data/dm_empenho_resto_2008.csv.gz
+    schema: schemas/dm_empenho_resto_2008.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2009
+    title: Empenho Restos a Pagar 2009
+    path: data/dm_empenho_resto_2009.csv.gz
+    schema: schemas/dm_empenho_resto_2009.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2010
+    title: Empenho Restos a Pagar 2010
+    path: data/dm_empenho_resto_2010.csv.gz
+    schema: schemas/dm_empenho_resto_2010.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2011
+    title: Empenho Restos a Pagar 2011
+    path: data/dm_empenho_resto_2011.csv.gz
+    schema: schemas/dm_empenho_resto_2011.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2012
+    title: Empenho Restos a Pagar 2012
+    path: data/dm_empenho_resto_2012.csv.gz
+    schema: schemas/dm_empenho_resto_2012.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2013
+    title: Empenho Restos a Pagar 2013
+    path: data/dm_empenho_resto_2013.csv.gz
+    schema: schemas/dm_empenho_resto_2013.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2014
+    title: Empenho Restos a Pagar 2014
+    path: data/dm_empenho_resto_2014.csv.gz
+    schema: schemas/dm_empenho_resto_2014.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2015
+    title: Empenho Restos a Pagar 2015
+    path: data/dm_empenho_resto_2015.csv.gz
+    schema: schemas/dm_empenho_resto_2015.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2016
+    title: Empenho Restos a Pagar 2016
+    path: data/dm_empenho_resto_2016.csv.gz
+    schema: schemas/dm_empenho_resto_2016.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2017
+    title: Empenho Restos a Pagar 2017
+    path: data/dm_empenho_resto_2017.csv.gz
+    schema: schemas/dm_empenho_resto_2017.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2018
+    title: Empenho Restos a Pagar 2018
+    path: data/dm_empenho_resto_2018.csv.gz
+    schema: schemas/dm_empenho_resto_2018.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2019
+    title: Empenho Restos a Pagar 2019
+    path: data/dm_empenho_resto_2019.csv.gz
+    schema: schemas/dm_empenho_resto_2019.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2020
+    title: Empenho Restos a Pagar 2020
+    path: data/dm_empenho_resto_2020.csv.gz
+    schema: schemas/dm_empenho_resto_2020.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2021
+    title: Empenho Restos a Pagar 2021
+    path: data/dm_empenho_resto_2021.csv.gz
+    schema: schemas/dm_empenho_resto_2021.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2022
+    title: Empenho Restos a Pagar 2022
+    path: data/dm_empenho_resto_2022.csv.gz
+    schema: schemas/dm_empenho_resto_2022.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_categ_econ
+    title: Categoria Econômica
+    path: data/dm_categ_econ.csv.gz
+    schema: schemas/dm_categ_econ.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_categ_econ
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_subitem_rec
+    title: Subitem da receita
+    path: data/dm_subitem_rec.csv.gz
+    schema: schemas/dm_subitem_rec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_subitem_rec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_procedimento
+    title: Procedimento de Contratação
+    path: data/dm_procedimento.csv.gz
+    schema: schemas/dm_procedimento.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_procedimento
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tempo_anual
+    title: Tempo Anual
+    path: data/dm_tempo_anual.csv.gz
+    schema: schemas/dm_tempo_anual.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tempo_anual
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_orgao_scdp
+    title: Órgão SCDP
+    path: data/dm_orgao_scdp.csv.gz
+    schema: schemas/dm_orgao_scdp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_orgao_scdp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_orgao_demanda
+    title: Órgão Demanda
+    path: data/dm_orgao_demanda.csv.gz
+    schema: schemas/dm_orgao_demanda.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_orgao_demanda
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_orgao_contrato
+    title: Órgão do Contrato
+    path: data/dm_orgao_contrato.csv.gz
+    schema: schemas/dm_orgao_contrato.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_orgao_contrato
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_orgao_concedente
+    title: Órgão Concedente
+    path: data/dm_orgao_concedente.csv.gz
+    schema: schemas/dm_orgao_concedente.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_orgao_concedente
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_municipio
+    title: Município
+    path: data/dm_municipio.csv.gz
+    schema: schemas/dm_municipio.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_municipio
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_elemento_desp
+    title: Elemento de Despesa
+    path: data/dm_elemento_desp.csv.gz
+    schema: schemas/dm_elemento_desp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_elemento_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_material_servico
+    title: Material/Serviço
+    path: data/dm_material_servico.csv.gz
+    schema: schemas/dm_material_servico.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_material_servico
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2002
+    title: Diárias 2002
+    path: data/ft_diarias_2002.csv.gz
+    schema: schemas/ft_diarias_2002.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2003
+    title: Diárias 2003
+    path: data/ft_diarias_2003.csv.gz
+    schema: schemas/ft_diarias_2003.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2004
+    title: Diárias 2004
+    path: data/ft_diarias_2004.csv.gz
+    schema: schemas/ft_diarias_2004.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2005
+    title: Diárias 2005
+    path: data/ft_diarias_2005.csv.gz
+    schema: schemas/ft_diarias_2005.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2006
+    title: Diárias 2006
+    path: data/ft_diarias_2006.csv.gz
+    schema: schemas/ft_diarias_2006.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2007
+    title: Diárias 2007
+    path: data/ft_diarias_2007.csv.gz
+    schema: schemas/ft_diarias_2007.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2008
+    title: Diárias 2008
+    path: data/ft_diarias_2008.csv.gz
+    schema: schemas/ft_diarias_2008.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2009
+    title: Diárias 2009
+    path: data/ft_diarias_2009.csv.gz
+    schema: schemas/ft_diarias_2009.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2010
+    title: Diárias 2010
+    path: data/ft_diarias_2010.csv.gz
+    schema: schemas/ft_diarias_2010.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2011
+    title: Diárias 2011
+    path: data/ft_diarias_2011.csv.gz
+    schema: schemas/ft_diarias_2011.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2012
+    title: Diárias 2012
+    path: data/ft_diarias_2012.csv.gz
+    schema: schemas/ft_diarias_2012.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2013
+    title: Diárias 2013
+    path: data/ft_diarias_2013.csv.gz
+    schema: schemas/ft_diarias_2013.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2014
+    title: Diárias 2014
+    path: data/ft_diarias_2014.csv.gz
+    schema: schemas/ft_diarias_2014.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2015
+    title: Diárias 2015
+    path: data/ft_diarias_2015.csv.gz
+    schema: schemas/ft_diarias_2015.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2016
+    title: Diárias 2016
+    path: data/ft_diarias_2016.csv.gz
+    schema: schemas/ft_diarias_2016.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2017
+    title: Diárias 2017
+    path: data/ft_diarias_2017.csv.gz
+    schema: schemas/ft_diarias_2017.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2018
+    title: Diárias 2018
+    path: data/ft_diarias_2018.csv.gz
+    schema: schemas/ft_diarias_2018.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2019
+    title: Diárias 2019
+    path: data/ft_diarias_2019.csv.gz
+    schema: schemas/ft_diarias_2019.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2020
+    title: Diárias 2020
+    path: data/ft_diarias_2020.csv.gz
+    schema: schemas/ft_diarias_2020.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2021
+    title: Diárias 2021
+    path: data/ft_diarias_2021.csv.gz
+    schema: schemas/ft_diarias_2021.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_diarias_2022
+    title: Diárias 2022
+    path: data/ft_diarias_2022.csv.gz
+    schema: schemas/ft_diarias_2022.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2002
+    title: ft_restos_pagar 2002
+    path: data/ft_restos_pagar_2002.csv.gz
+    schema: schemas/ft_restos_pagar_2002.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2003
+    title: ft_restos_pagar 2003
+    path: data/ft_restos_pagar_2003.csv.gz
+    schema: schemas/ft_restos_pagar_2003.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2004
+    title: ft_restos_pagar 2004
+    path: data/ft_restos_pagar_2004.csv.gz
+    schema: schemas/ft_restos_pagar_2004.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2005
+    title: ft_restos_pagar 2005
+    path: data/ft_restos_pagar_2005.csv.gz
+    schema: schemas/ft_restos_pagar_2005.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2006
+    title: ft_restos_pagar 2006
+    path: data/ft_restos_pagar_2006.csv.gz
+    schema: schemas/ft_restos_pagar_2006.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2007
+    title: ft_restos_pagar 2007
+    path: data/ft_restos_pagar_2007.csv.gz
+    schema: schemas/ft_restos_pagar_2007.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2008
+    title: ft_restos_pagar 2008
+    path: data/ft_restos_pagar_2008.csv.gz
+    schema: schemas/ft_restos_pagar_2008.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2009
+    title: ft_restos_pagar 2009
+    path: data/ft_restos_pagar_2009.csv.gz
+    schema: schemas/ft_restos_pagar_2009.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2010
+    title: ft_restos_pagar 2010
+    path: data/ft_restos_pagar_2010.csv.gz
+    schema: schemas/ft_restos_pagar_2010.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2011
+    title: ft_restos_pagar 2011
+    path: data/ft_restos_pagar_2011.csv.gz
+    schema: schemas/ft_restos_pagar_2011.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2012
+    title: ft_restos_pagar 2012
+    path: data/ft_restos_pagar_2012.csv.gz
+    schema: schemas/ft_restos_pagar_2012.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2013
+    title: ft_restos_pagar 2013
+    path: data/ft_restos_pagar_2013.csv.gz
+    schema: schemas/ft_restos_pagar_2013.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2014
+    title: ft_restos_pagar 2014
+    path: data/ft_restos_pagar_2014.csv.gz
+    schema: schemas/ft_restos_pagar_2014.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2015
+    title: ft_restos_pagar 2015
+    path: data/ft_restos_pagar_2015.csv.gz
+    schema: schemas/ft_restos_pagar_2015.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2016
+    title: ft_restos_pagar 2016
+    path: data/ft_restos_pagar_2016.csv.gz
+    schema: schemas/ft_restos_pagar_2016.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2017
+    title: ft_restos_pagar 2017
+    path: data/ft_restos_pagar_2017.csv.gz
+    schema: schemas/ft_restos_pagar_2017.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2018
+    title: ft_restos_pagar 2018
+    path: data/ft_restos_pagar_2018.csv.gz
+    schema: schemas/ft_restos_pagar_2018.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2019
+    title: ft_restos_pagar 2019
+    path: data/ft_restos_pagar_2019.csv.gz
+    schema: schemas/ft_restos_pagar_2019.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2020
+    title: ft_restos_pagar 2020
+    path: data/ft_restos_pagar_2020.csv.gz
+    schema: schemas/ft_restos_pagar_2020.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2021
+    title: ft_restos_pagar 2021
+    path: data/ft_restos_pagar_2021.csv.gz
+    schema: schemas/ft_restos_pagar_2021.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2022
+    title: ft_restos_pagar 2022
+    path: data/ft_restos_pagar_2022.csv.gz
+    schema: schemas/ft_restos_pagar_2022.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_funcao_resto
+    title: Função - Restos a Pagar
+    path: data/dm_funcao_resto.csv.gz
+    schema: schemas/dm_funcao_resto.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_funcao_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_subfuncao_resto
+    title: Subfunção - Restos a Pagar
+    path: data/dm_subfuncao_resto.csv.gz
+    schema: schemas/dm_subfuncao_resto.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_subfuncao_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_programa_resto
+    title: Programa - Restos a Pagar
+    path: data/dm_programa_resto.csv.gz
+    schema: schemas/dm_programa_resto.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_programa_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_acao_resto
+    title: Ação - Restos a Pagar
+    path: data/dm_acao_resto.csv.gz
+    schema: schemas/dm_acao_resto.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_acao_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_divida_pub
+    title: Dívida Pública
+    path: data/ft_divida_pub.csv.gz
+    schema: schemas/ft_divida_pub.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_divida_pub
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_repasse_mun
+    title: Transferência de Impostos a Municípios
+    path: data/ft_repasse_mun.csv.gz
+    schema: schemas/ft_repasse_mun.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_repasse_mun
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_pessoal_desp
+    title: Despesa com Pessoal
+    path: data/ft_pessoal_desp.csv.gz
+    schema: schemas/ft_pessoal_desp.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_pessoal_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource  
+  - name: dm_emenda_orcam
+    title: ''
+    path: data/dm_emenda_orcam.csv.gz
+    schema: schemas/dm_emenda_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_emenda_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_fonte_plan
+    title: Fonte de Recurso Planejamento
+    path: data/dm_fonte_plan.csv.gz
+    schema: schemas/dm_fonte_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_fonte_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_responsavel_plan
+    title: Responsável Planejamento
+    path: data/dm_responsavel_plan.csv.gz
+    schema: schemas/dm_responsavel_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_responsavel_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_indicador_plan
+    title: Indicador Planejamento
+    path: data/dm_indicador_plan.csv.gz
+    schema: schemas/dm_indicador_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_indicador_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_prog_plan
+    title: Tipo Programa Planejamento
+    path: data/dm_tipo_prog_plan.csv.gz
+    schema: schemas/dm_tipo_prog_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_prog_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_orcam_plan
+    title: Tipo Orçamento Planejamento
+    path: data/dm_tipo_orcam_plan.csv.gz
+    schema: schemas/dm_tipo_orcam_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_orcam_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_tipo_acao_plan
+    title: Tipo Ação Planejamento
+    path: data/dm_tipo_acao_plan.csv.gz
+    schema: schemas/dm_tipo_acao_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_tipo_acao_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_territorio_plan
+    title: Território Planejamento v1
+    path: data/dm_territorio_plan.csv.gz
+    schema: schemas/dm_territorio_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_territorio_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_programa_plan
+    title: Programa Planejamento
+    path: data/dm_programa_plan.csv.gz
+    schema: schemas/dm_programa_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_programa_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_ppag_plan
+    title: Horizonte PPAG
+    path: data/dm_ppag_plan.csv.gz
+    schema: schemas/dm_ppag_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_ppag_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_orgao_plan
+    title: Órgão Planejamento
+    path: data/dm_orgao_plan.csv.gz
+    schema: schemas/dm_orgao_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_orgao_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_municipio_plan
+    title: Município Planejamento
+    path: data/dm_municipio_plan.csv.gz
+    schema: schemas/dm_municipio_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_municipio_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_horizonte_plan
+    title: Horizonte Planejamento
+    path: data/dm_horizonte_plan.csv.gz
+    schema: schemas/dm_horizonte_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_horizonte_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_funcao_plan
+    title: ''
+    path: data/dm_funcao_plan.csv.gz
+    schema: schemas/dm_funcao_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_funcao_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_autor_emenda
+    title: Autor Emenda
+    path: data/dm_autor_emenda.csv.gz
+    schema: schemas/dm_autor_emenda.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_autor_emenda
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_decreto
+    title: Decreto
+    path: data/dm_decreto.csv.gz
+    schema: schemas/dm_decreto.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_decreto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_indicador_acao
+    title: Indicador Ação
+    path: data/dm_indicador_acao.csv.gz
+    schema: schemas/dm_indicador_acao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_indicador_acao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: sa_indicador_acao
+    title: SA Indicador Ação
+    path: data/sa_indicador_acao.csv.gz
+    schema: schemas/sa_indicador_acao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: sa_indicador_acao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_acao_orcam
+    title: Ação Orçamentária
+    path: data/dm_acao_orcam.csv.gz
+    schema: schemas/dm_acao_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_acao_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_categ_econ_orcam
+    title: Categoria Econômica Orçamento
+    path: data/dm_categ_econ_orcam.csv.gz
+    schema: schemas/dm_categ_econ_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_categ_econ_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_fonte_orcam
+    title: Fonte Orçamento
+    path: data/dm_fonte_orcam.csv.gz
+    schema: schemas/dm_fonte_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_fonte_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_funcao_orcam
+    title: Função Orçamento
+    path: data/dm_funcao_orcam.csv.gz
+    schema: schemas/dm_funcao_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_funcao_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_subfuncao_orcam
+    title: Subfunção Orçamento
+    path: data/dm_subfuncao_orcam.csv.gz
+    schema: schemas/dm_subfuncao_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_subfuncao_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_grupo_orcam
+    title: Grupo Orçamento
+    path: data/dm_grupo_orcam.csv.gz
+    schema: schemas/dm_grupo_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_grupo_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_programa_orcam
+    title: Programa Orçamento
+    path: data/dm_programa_orcam.csv.gz
+    schema: schemas/dm_programa_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_programa_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_procedencia_orcam
+    title: Procedência Orçamento
+    path: data/dm_procedencia_orcam.csv.gz
+    schema: schemas/dm_procedencia_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_procedencia_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_orgao_orcam
+    title: Órgão Orçamento
+    path: data/dm_orgao_orcam.csv.gz
+    schema: schemas/dm_orgao_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_orgao_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_indic_acao_orcam
+    title: Indicador Ação Orçamento
+    path: data/dm_indic_acao_orcam.csv.gz
+    schema: schemas/dm_indic_acao_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_indic_acao_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_modal_aplic_orcam
+    title: Modalidade Aplicação Orçamento
+    path: data/dm_modal_aplic_orcam.csv.gz
+    schema: schemas/dm_modal_aplic_orcam.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_modal_aplic_orcam
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_unidade_resp_plan
+    title: Unidade Responsável Planejamento
+    path: data/dm_unidade_resp_plan.csv.gz
+    schema: schemas/dm_unidade_resp_plan.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_unidade_resp_plan
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_municipio_obra
+    title: Município Obra
+    path: data/dm_municipio_obra.csv.gz
+    schema: schemas/dm_municipio_obra.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_municipio_obra
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_obra
+    title: Obra
+    path: data/dm_obra.csv.gz
+    schema: schemas/dm_obra.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_obra
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_orgao_obra
+    title: Órgão Obra
+    path: data/dm_orgao_obra.csv.gz
+    schema: schemas/dm_orgao_obra.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_orgao_obra
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_situacao_obra
+    title: Situação Obra
+    path: data/dm_situacao_obra.csv.gz
+    schema: schemas/dm_situacao_obra.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_situacao_obra
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_territorio_planeja
+    title: Território Planejamento v2
+    path: data/dm_territorio_planeja.csv.gz
+    schema: schemas/dm_territorio_planeja.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_territorio_planeja
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_orcamento_proposta
+    title: Orçamento Proposta
+    path: data/ft_orcamento_proposta.csv.gz
+    schema: schemas/ft_orcamento_proposta.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_orcamento_proposta
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_orcamento_emenda
+    title: Orçamento Proposta
+    path: data/ft_orcamento_emenda.csv.gz
+    schema: schemas/ft_orcamento_emenda.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_orcamento_emenda
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_orcamento_cred_alt
+    title: Orçamento Proposta
+    path: data/ft_orcamento_cred_alt.csv.gz
+    schema: schemas/ft_orcamento_cred_alt.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_orcamento_cred_alt
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_obra
+    title: Orçamento Proposta
+    path: data/ft_obra.csv.gz
+    schema: schemas/ft_obra.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_obra
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_acao_ppag
+    title: Orçamento Proposta
+    path: data/ft_plan_acao_ppag.csv.gz
+    schema: schemas/ft_plan_acao_ppag.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_acao_ppag
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_plan_indicador
+    title: Orçamento Proposta
+    path: data/fl_plan_indicador.csv.gz
+    schema: schemas/fl_plan_indicador.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_plan_indicador
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_indic_referencia
+    title: Orçamento Proposta
+    path: data/ft_plan_indic_referencia.csv.gz
+    schema: schemas/ft_plan_indic_referencia.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_indic_referencia
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_indic_plan_exec
+    title: Orçamento Proposta
+    path: data/ft_plan_indic_plan_exec.csv.gz
+    schema: schemas/ft_plan_indic_plan_exec.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_indic_plan_exec
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_plan_programa
+    title: Orçamento Proposta
+    path: data/fl_plan_programa.csv.gz
+    schema: schemas/fl_plan_programa.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_plan_programa
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_plan_responsavel
+    title: Orçamento Proposta
+    path: data/fl_plan_responsavel.csv.gz
+    schema: schemas/fl_plan_responsavel.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_plan_responsavel
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_exec_of_tipoorc
+    title: Orçamento Proposta
+    path: data/ft_plan_exec_of_tipoorc.csv.gz
+    schema: schemas/ft_plan_exec_of_tipoorc.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_exec_of_tipoorc
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_exec_of_territorio
+    title: Orçamento Proposta
+    path: data/ft_plan_exec_of_territorio.csv.gz
+    schema: schemas/ft_plan_exec_of_territorio.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_exec_of_territorio
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_exec_of_fonte
+    title: Orçamento Proposta
+    path: data/ft_plan_exec_of_fonte.csv.gz
+    schema: schemas/ft_plan_exec_of_fonte.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_exec_of_fonte
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: fl_plan_acao
+    title: Orçamento Proposta
+    path: data/fl_plan_acao.csv.gz
+    schema: schemas/fl_plan_acao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: fl_plan_acao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_fonte_fin_acao
+    title: Orçamento Proposta
+    path: data/ft_plan_fonte_fin_acao.csv.gz
+    schema: schemas/ft_plan_fonte_fin_acao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_fonte_fin_acao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_prog_fftd
+    title: Orçamento Proposta
+    path: data/ft_plan_prog_fftd.csv.gz
+    schema: schemas/ft_plan_prog_fftd.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_prog_fftd
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_prog_mensal
+    title: Orçamento Proposta
+    path: data/ft_plan_prog_mensal.csv.gz
+    schema: schemas/ft_plan_prog_mensal.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_prog_mensal
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_prog_territorial
+    title: Orçamento Proposta
+    path: data/ft_plan_prog_territorial.csv.gz
+    schema: schemas/ft_plan_prog_territorial.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_prog_territorial
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_execucao_acao
+    title: Orçamento Proposta
+    path: data/ft_plan_execucao_acao.csv.gz
+    schema: schemas/ft_plan_execucao_acao.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_execucao_acao
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_prog_of_tipoorc
+    title: Orçamento Proposta
+    path: data/ft_plan_prog_of_tipoorc.csv.gz
+    schema: schemas/ft_plan_prog_of_tipoorc.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_prog_of_tipoorc
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_prog_of_territorio
+    title: Orçamento Proposta
+    path: data/ft_plan_prog_of_territorio.csv.gz
+    schema: schemas/ft_plan_prog_of_territorio.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_prog_of_territorio
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_plan_prog_of_fonte
+    title: Orçamento Proposta
+    path: data/ft_plan_prog_of_fonte.csv.gz
+    schema: schemas/ft_plan_prog_of_fonte.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_plan_prog_of_fonte
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+name: age7
+owner_org: controladoria-geral-do-estado-cge
+frequência de atualização: diária
+contributors:
+  - title: Diretoria Central de Transparência Ativa
+    role: author
+    email: transparencia@cge.mg.gov.br
+licenses:
+  - name: CC-BY-4.0
+    title: Creative Commons Attribution 4.0
+    path: https://creativecommons.org/licenses/by/4.0/

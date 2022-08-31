@@ -1,0 +1,113 @@
+{
+  "version": "4.38.0",
+  "time": 0.055,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_tipo_atendimento",
+        "title": "Tipo Atendimento",
+        "path": "data/dm_tipo_atendimento.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tipo_atendimento",
+              "title": "Tipo de Atendimento - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "fl_versao",
+              "title": "Tipo de Atendimento - Flag",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "enum": [
+                  "1",
+                  "2"
+                ]
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Tipo de Atendimento",
+              "type": "string",
+              "format": "default",
+              "description": "Categoria na qual o objeto do convênio / parceria se enquadra, por exemplo: transporte escolar, aquisição de bens, reforma ou obra, etc.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_tipo_atendimento"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_tipo_atendimento"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "e4b8d75d1c3a9576648384335f4f31a4",
+          "bytes": 13994,
+          "fields": 3,
+          "rows": 1168
+        }
+      },
+      "time": 0.055,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

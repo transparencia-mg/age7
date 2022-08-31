@@ -1,0 +1,44 @@
+fields:
+  - name: id_favorecido
+    ttile: Favorecido - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: tp_documento
+    title: Tipo de Documento
+    type: string
+    format: default
+    description: |
+      Identificador da natureza jurídica do credor.
+        1 - Pessoa Física
+        2 - Pessoa Jurídica
+        3 - CPF Administrativo
+        4 - CNPJ Administrativo
+    constraints:
+      enum:
+        - "1"
+        - "2"
+        - "3"
+        - "4"
+    missingValues:
+      - '0'
+  - name: nr_documento_anonimizado
+    title: Número do Documento
+    description: |
+      Número de identificação da pessoa física (CPF) ou da pesssoa jurídica (CNPJ).
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: nome_anonimizado
+    title: Favorecido - Descrição
+    description: Nome de identificação da pessoa física ou jurídica.
+    type: string
+    format: default
+missingValues:
+  - 'SEM DESCRICAO'
+primaryKey:
+  - id_favorecido

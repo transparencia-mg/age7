@@ -1,0 +1,141 @@
+{
+  "version": "4.38.0",
+  "time": 0.028,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_modalidade_aplic",
+        "title": "Modalidade de Aplicação",
+        "path": "data/dm_modalidade_aplic.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_modalidade_aplic",
+              "title": "Modalidade de Aplicação - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_modalidade_aplic",
+              "title": "Modalidade de Aplicação - Código",
+              "description": "Classificação da natureza da despesa que traduz a forma como os recursos serão aplicados pelos órgãos/entidades, podendo ser diretamente pelos mesmos ou sob a forma de transferências a outras entidades públicas ou privadas que se encarregarão da execução das ações. (2 dígitos)\n",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "enum": [
+                  "20",
+                  "22",
+                  "30",
+                  "31",
+                  "32",
+                  "35",
+                  "36",
+                  "40",
+                  "41",
+                  "42",
+                  "45",
+                  "46",
+                  "50",
+                  "60",
+                  "67",
+                  "70",
+                  "71",
+                  "72",
+                  "73",
+                  "74",
+                  "75",
+                  "76",
+                  "80",
+                  "90",
+                  "91",
+                  "92",
+                  "93",
+                  "94",
+                  "95",
+                  "96",
+                  "99"
+                ]
+              },
+              "missingValues": [
+                "0"
+              ]
+            },
+            {
+              "name": "nome",
+              "title": "Modalidade de Aplicação - Descrição",
+              "description": "- > \n  Classificação da natureza da despesa que traduz a forma como os recursos serão aplicados pelos órgãos/entiddes, \n  podendo ser diretamente pelos mesmos ou sbo a forma de transferência a outras entidades públicas ou privadas que \n  se encarregarão da execução das ações.\n",
+              "type": "string",
+              "format": "default",
+              "missingValues": [
+                "SEM DESCRICAO"
+              ]
+            }
+          ],
+          "primaryKey": [
+            "id_modalidade_aplic"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_modalidade_aplic"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "1d2573414580ee806679163b36667453",
+          "bytes": 610,
+          "fields": 3,
+          "rows": 30
+        }
+      },
+      "time": 0.028,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

@@ -1,0 +1,27 @@
+fields:
+  - name: id_horizonte
+    title: Horizonte Temporal - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: nome
+    title: Horizonte Temporal
+    type: string
+    format: default
+    description: |
+      - >
+       Estabelece o período de vigência do programa, podendo ser contínuo ou temporário.
+       - Programa contínuo: é aquele composto por pelo menos uma ação de duração continuada, ou seja,
+        ação que contemple um conjunto de operações que se realizam de modo permanente durante a vigência 
+        do programa.
+       - Programa temporário: é aquele composto na integralidade por projetos. Ou seja, todas as ações
+        que compõem o programa compreendem um conjunto de operações limitadas no tempo, com data de início e 
+        de término bem definidas.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_horizonte

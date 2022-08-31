@@ -1,0 +1,148 @@
+{
+  "version": "4.38.0",
+  "time": 2.721,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "ft_convenio_entrada_rec",
+        "title": "Convênio Entrada - Receita",
+        "path": "data/ft_convenio_entrada_rec.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_convenio",
+              "title": "Convênio de Entrada- Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_classifica_rec",
+              "title": "Classificação da receita",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "dt_registro_receita",
+              "title": "Data de registro da receita",
+              "type": "date",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "ano_particao",
+              "title": "Ano Partição",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true
+            },
+            {
+              "name": "vr_arrecadado",
+              "title": "Valor Arrecadado",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_classifica_rec"
+              ],
+              "reference": {
+                "fields": [
+                  "id_classifica_rec"
+                ],
+                "resource": "dm_classifica_rec"
+              }
+            },
+            {
+              "fields": [
+                "id_convenio"
+              ],
+              "reference": {
+                "fields": [
+                  "id_convenio"
+                ],
+                "resource": "dm_convenio_entrada"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_convenio_entrada_rec"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "7d283ca5d7f2e62f33f604a00bff296f",
+          "bytes": 331585,
+          "fields": 5,
+          "rows": 45787
+        }
+      },
+      "time": 2.721,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

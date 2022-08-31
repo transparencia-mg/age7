@@ -1,0 +1,21 @@
+fields:
+  - name: id_funcao
+    title: Função - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: nome
+    title: Função - Descrição
+    type: string
+    format: default
+    description: |
+      Cargo em comissão ocupado pelo servidor no momento que realizou a viagem.
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_funcao

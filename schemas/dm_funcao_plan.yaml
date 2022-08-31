@@ -1,0 +1,67 @@
+fields:
+  - name: id_funcao
+    title: Função - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: ano_ppag
+    title: Ano do PPAG
+    type: year
+    format: default
+    bareNumber: true
+    description: Ano de monitoramento da função.
+    constraints:
+      required: true
+  - name: cd_funcao
+    title: Função - Código
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '14'
+        - '15'
+        - '16'
+        - '17'
+        - '18'
+        - '19'
+        - '20'
+        - '21'
+        - '22'
+        - '23'
+        - '24'
+        - '25'
+        - '26'
+        - '27'
+        - '28'
+        - '99'
+    missingValues:
+      - '0'
+  - name: nome
+    title: Função - Descrição
+    type: string
+    format: default
+    description: |
+      - >
+       De acordo com a [Portaria Ministerial n. 42/99](http://www.orcamentofederal.gov.br/orcamentos-anuais/orcamento-1999/Portaria_Ministerial_42_de_140499.pdf/), a função representa o maior nível de agregação das diversas áreas de despesa que competem ao setor público. 
+       Tem como objetivo consolidar em que áreas de atuação do setor público são gastos os recursos orçamentários, tendo como critério a natureza do objeto da ação. Portanto, visa a agregar ações que tenham objetos correlatos.
+       No estado de Minas Gerais definiu-se que o código identificador da função Reserva de Contigência será 99, conforme estabelece o art. 5 da Portaria Ministerial n. 42/99. 
+missingValues:
+  - ''
+primaryKey:
+  - id_funcao

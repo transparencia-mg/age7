@@ -1,0 +1,132 @@
+{
+  "version": "4.38.0",
+  "time": 0.024,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_grupo_orcam",
+        "title": "Grupo Orçamento",
+        "path": "data/dm_grupo_orcam.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_grupo",
+              "title": "Grupo de Despesa - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_grupo",
+              "title": "Grupo de Despesa - Código",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "enum": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "9"
+                ]
+              },
+              "missingValues": [
+                "0"
+              ]
+            },
+            {
+              "name": "nome",
+              "title": "Grupo de Despesa - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Descrição do grupo de natureza econômica da despesa: \n- 1- Pessoal e Encargos Sociais; \n- 2- Juros e Encargos da Divida; \n- 3- Outras Despesas Correntes; \n- 4- Investimentos; \n- 5- Inversões Financeiras;\n- 6- Amortização da Divida;\n- 9- Reserva de Contingência\n",
+              "constraints": {
+                "enum": [
+                  "PESSOAL E ENCARGOS SOCIAIS",
+                  "JUROS E ENCARGOS DA DIVIDA",
+                  "OUTRAS DESPESAS CORRENTES",
+                  "INVESTIMENTOS",
+                  "INVERSOES FINANCEIRAS",
+                  "AMORTIZACAO DA DIVIDA",
+                  "RESERVA DE CONTINGENCIA"
+                ]
+              },
+              "missingValues": [
+                "PARA COMPOSICAO DA NATUREZA",
+                "DESPESAS DE CAPITAL",
+                "DESPESAS CORRENTES"
+              ]
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_grupo"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_grupo_orcam"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "e56df3dc3e8e2742a849d5688d981a6f",
+          "bytes": 207,
+          "fields": 3,
+          "rows": 8
+        }
+      },
+      "time": 0.024,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

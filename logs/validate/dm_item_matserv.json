@@ -1,0 +1,119 @@
+{
+  "version": "4.38.0",
+  "time": 6.625,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_item_matserv",
+        "title": "Item de Material/Serviço",
+        "path": "data/dm_item_matserv.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_item_matserv",
+              "title": "Item Material e Serviço - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_item_matserv",
+              "title": "Item Material e Serviço - Código",
+              "description": "Código numérico aleatório gerado pelo SIAD",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Item Material e Serviço - Descrição",
+              "description": "Objeto especificado de forma completa no CATMAS e que será utilizado nos processos de compras, contratação de serviços ou no cadastro de patrimônio.\n",
+              "type": "string",
+              "format": "default",
+              "missingValues": [
+                "SEM DESCRICAO"
+              ]
+            },
+            {
+              "name": "natureza_despesa",
+              "title": "Natureza de Despesa - Descrição",
+              "description": "A natureza da despesa é uma categorização que identifica o tipo de gasto realizado, com uma perspectiva de forma, mas também com uma visão econômica/contábil/financeira. Ela ajuda, por exemplo, a entender se o governo está investindo, se está endividado, se gasta muito com a folha de pessoal. Também ajuda a entender como os recursos serão aplicados: com serviços, obras ou compras, por exemplo.\n",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            "SEM DESCRICAO"
+          ],
+          "primaryKey": [
+            "id_item_matserv"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_item_matserv"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "4db091e25527286b63b214c531710c82",
+          "bytes": 8892594,
+          "fields": 4,
+          "rows": 192448
+        }
+      },
+      "time": 6.625,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

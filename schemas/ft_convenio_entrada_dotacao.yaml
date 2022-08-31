@@ -1,0 +1,138 @@
+fields:
+  - name: id_tempo
+    title: Tempo - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_convenio
+    title: Convênio de Entrada - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_orgao
+    title: Órgão - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_concedente
+    title: Concedente - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_programa
+    title: Programa - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_acao
+    title: Ação Orçamentária - Chave
+    type: string
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_elemento
+    title: Elemento de Despesa - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_unidade_orc
+    title: Unidade Orçamentária - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: dotacao_orcamentaria
+    title: Dotação Orçamentária
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: false
+  - name: ano_particao
+    title: Ano
+    type: year
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: vr_concedente_atual
+    title: Valor Concedente Atualiado
+    description: |
+      Valor financeiro previsto no convênio para o concedente repassar ao proponente, incluindo termos aditivos.
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+  - name: vr_proponente_atual
+    title: Valor Proponente Atualizado
+    description: |
+      Valor financeiro previsto no convênio para o proponente dar como contrapartida financeira, incluindo termos aditivos.
+    type: number
+    format: default
+    bareNumber: true
+    decimalChar: '.'
+    constraints:
+      required: true
+missingValues:
+  - 'SEM DESCRICAO'
+foreignKeys:
+  - fields:
+      - id_tempo
+    reference:
+      fields:
+        - id_tempo
+      resource: dm_tempo_diario
+  - fields:
+      - id_concedente
+    reference:
+      fields:
+        - id_concedente
+      resource: dm_concedente
+  - fields:
+      - id_orgao
+    reference:
+      fields:
+        - id_orgao
+      resource: dm_orgao_proponente
+  - fields:
+      - id_elemento
+    reference:
+      fields:
+        - id_elemento
+      resource: dm_elemento_desp
+  - fields:
+      - id_programa
+    reference:
+      fields:
+        - id_programa
+      resource: dm_programa_conv_ent
+  - fields:
+      - id_convenio
+    reference:
+      fields:
+        - id_convenio
+      resource: dm_convenio_entrada

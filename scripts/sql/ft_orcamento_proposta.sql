@@ -1,0 +1,20 @@
+select id_tempo,
+id_grupo,
+id_funcao,
+id_modalidade,
+id_indicador_acao,
+id_procedencia,
+id_programa,
+id_categ_econ,
+id_subfuncao,
+id_fonte,
+id_acao,
+id_orgao,
+sqe_progtrab,
+cd_grupo_fonte,
+cd_elemento_desp,
+cd_identificador_orc,
+ano_particao,
+vr_proposta_credito
+from ft_orcamento_proposta
+

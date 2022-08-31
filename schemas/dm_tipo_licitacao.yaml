@@ -1,0 +1,41 @@
+fields:
+  - name: id_tipo_licitacao
+    title: Tipo de Licitação - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_tipo_licitacao
+    title: Tipo de Licitação - Código
+    type: string
+    format: default
+    constraints:
+      enum:
+        - '1'
+        - '2'
+        - '3'
+    missingValues:
+      - '-1'
+      - '-2'
+      - '-3'
+      - '-4'
+  - name: nome
+    title: Tipo de Licitação - Descrição
+    type: string
+    format: default
+    description: |
+      Descrição do tipo de licitação do processo de compra:
+       - Menor preço;
+       - Melhor técnica e
+       - Técnica e preço
+    missingValues:
+      - 'NÃO INFORMADO'
+      - 'INVÁLIDO'
+      - 'NÃO SE APLICA'
+      - 'INEXISTENTE'
+missingValues:
+  - ''
+primaryKey:
+  - id_tipo_licitacao

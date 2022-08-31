@@ -1,0 +1,108 @@
+fields:
+  - name: id_fonte
+    title: Fonte de Recurso - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_fonte
+    title: Fonte de Recurso- Código
+    type: string
+    format: default
+    bareNumber: true
+    constraints:
+      enum:
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '20'
+        - '21'
+        - '22'
+        - '23'
+        - '24'
+        - '25'
+        - '26'
+        - '27'
+        - '28'
+        - '29'
+        - '30'
+        - '31'
+        - '32'
+        - '33'
+        - '34'
+        - '35'
+        - '36'
+        - '37'
+        - '38'
+        - '39'
+        - '40'
+        - '41'
+        - '42'
+        - '43'
+        - '44'
+        - '45'
+        - '46'
+        - '47'
+        - '48'
+        - '49'
+        - '50'
+        - '51'
+        - '52'
+        - '53'
+        - '54'
+        - '55'
+        - '56'
+        - '57'
+        - '58'
+        - '59'
+        - '60'
+        - '61'
+        - '70'
+        - '71'
+        - '72'
+        - '73'
+        - '74'
+        - '75'
+        - '76'
+        - '77'
+        - '78'
+        - '79'
+        - '80'
+        - '81'
+        - '82'
+        - '83'
+        - '84'
+        - '85'
+        - '86'
+        - '87'
+        - '88'
+        - '89'
+        - '90'
+        - '91'
+        - '92'
+        - '93'
+        - '94'
+        - '95'
+        - '96'
+        - '97'
+        - '98'
+        - '99'
+    missingValues:
+      - '0'
+  - name: nome
+    title: Fonte de Recurso - Descrição
+    description: |
+      - > 
+        Permite a identificação da origem e destinação dos recursos legalmente vinculados a órgão, fundo ou despesa.
+    type: string
+    format: default
+    missingValues:
+      - 'SEM INFORMAÇÃO'
+      - 'FONTE DE EXERCICIO ANTERIOR'
+missingValues:
+  - ''
+primaryKey:
+  - id_fonte

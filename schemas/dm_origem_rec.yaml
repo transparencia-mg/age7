@@ -1,0 +1,68 @@
+fields:
+  - name: id_origem
+    title: Origem - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_origem
+    title: Origem - Código
+    description: Código da origem da receita (0 a 9)
+    type: string
+    format: default
+    constraints:
+      enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+    missingValues:
+      - '0'
+  - name: id_categoria_economica
+    title: Categoria Econômica da Receita- Código
+    description: Código da categoria econômica da receita
+    type: string
+    format: default
+    constraints:
+      enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+    missingValues:
+      - '0'
+  - name: categoria_economica
+    title: Categoria Econômica da Receita - Descrição
+    description: |
+      Primeiro nível de classificação das receitas, dividindo-as em receitas correntes e receitas de capital.
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: nome
+    title: Origem - Descrição
+    description: |
+      - > 
+      Detalhamento das categorias econômicas. Identifica a procedência das receitas no momento em que ingressam
+      nos cofres públicos. 
+      Exemplo: impostos, taxas e contribuições de melhoria, contribuições, operações de crédito, receita agropecuária, etc.
+    type: string
+    format: default
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_origem

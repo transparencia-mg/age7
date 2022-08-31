@@ -1,0 +1,118 @@
+{
+  "version": "4.38.0",
+  "time": 0.235,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_tipo_rec",
+        "title": "Tipo da receita",
+        "path": "data/dm_tipo_rec.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tipo",
+              "title": "Tipo de Receita- Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "cd_tipo",
+              "title": "Tipo de Receita- Código",
+              "type": "string",
+              "format": "default",
+              "description": "De acordo com a [Lei Estadual 23685, de 07/08/2020](https://www.lexml.gov.br/urn/urn:lex:br;minas.gerais:estadual:lei:2020-08-07;23685) o tipo de receita possui a seguinte estrutura lógica:\n\n- “0”, quando se tratar de natureza de receita não valorizável ou agregadora;\n- “1”, quando se tratar da arrecadação principal da receita;\n- “2”, quando se tratar de multas e juros de mora da respectiva receita;\n- “3”, quando se tratar de dívida ativa da respectiva receita;\n- “4”, quando se tratar de multas e juros de mora da dívida ativa da respectiva receita;\n- “5” a “9”, quando se tratar de outros desdobramentos a serem criados, caso a caso, pela Secretaria de Orçamento Federal, mediante portaria específica.\n",
+              "notes": [
+                "Apesar da previsão na [Portaria Interministerial STN/SOF nº 163 de 04/05/2001](https://www.gov.br/economia/pt-br/assuntos/planejamento-e-orcamento/orcamento/legislacao-sobre-orcamento/portariainterm1632001.pdf), o Estado de Minas Gerais ainda não possui execução orçamentária nos tipos de receita 5 a 9.\n"
+              ],
+              "constraints": {
+                "required": true,
+                "enum": [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ]
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Tipo de Receita - Código",
+              "type": "string",
+              "format": "default",
+              "description": "Identifica o tipo de arrecadação a que se refere a receita. \nExemplo, receita de multas e juros, arrecadação principal e etc.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_tipo"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_tipo_rec"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "370d5004785eda9211307c8da9d091a5",
+          "bytes": 48905,
+          "fields": 3,
+          "rows": 7475
+        }
+      },
+      "time": 0.235,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

@@ -1,0 +1,116 @@
+{
+  "version": "4.38.0",
+  "time": 0.048,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_fonte_plan",
+        "title": "Fonte de Recurso Planejamento",
+        "path": "data/dm_fonte_plan.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_fonte",
+              "title": "Fonte de Recurso - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_exercicio",
+              "title": "Ano de Exercício",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "missingValues": [
+                "0"
+              ]
+            },
+            {
+              "name": "cd_fonte",
+              "title": "Fonte de Recurso - Código",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Fonte de Recurso - Descrição",
+              "description": "- > \n Permite a identificação da origem e destinação dos recursos legalmente vinculados a órgão, fundo ou despesa.\n",
+              "type": "string",
+              "format": "default"
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_fonte"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_fonte_plan"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "5907223e3efec93de2563c748f2fbc91",
+          "bytes": 6101,
+          "fields": 4,
+          "rows": 726
+        }
+      },
+      "time": 0.048,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

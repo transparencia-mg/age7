@@ -1,0 +1,36 @@
+fields:
+  - name: id_contratado
+    title: Contratado - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: tp_documento
+    title: Tipo de Documento
+    description: Identifica a natureza jurídica do credor.
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: nr_documento_anonimizado
+    title: Número do Documento
+    description: |
+      CPF ou CNPJ da pesssoa física ou jurídica contratada para prestar um serviço ou entregar bens materiais ao Estado.
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: nome_anonimizado
+    title: Contratado - Descrição
+    description: |
+      Nome da pessoa física ou jurídica contratada para prestar um serviço ou entregar bens materiais ao Estado.
+    type: string
+    format: default
+    constraints:
+      required: true
+missingValues:
+  - 'SEM DESCRICAO'
+primaryKey:
+  - id_contratado

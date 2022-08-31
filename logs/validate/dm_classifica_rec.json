@@ -1,0 +1,110 @@
+{
+  "version": "4.38.0",
+  "time": 0.177,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_classifica_rec",
+        "title": "Convênio Entrada - Classificação da Receita",
+        "path": "data/dm_classifica_rec.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_classifica_rec",
+              "title": "Classificação da Receita - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_classifica_rec",
+              "title": "Classificação da Receita - Código",
+              "description": "Código que identifica os recursos que ingressam nos confres públicos.",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Classificação da Receita - Descrição",
+              "description": "Detalhada os recursos que ingressam nos confres públicos.",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            "SEM DESCRICAO"
+          ],
+          "primaryKey": [
+            "id_classifica_rec"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_classifica_rec"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "383a50e7240e29ead96a5ad126b6b685",
+          "bytes": 94031,
+          "fields": 3,
+          "rows": 5326
+        }
+      },
+      "time": 0.177,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

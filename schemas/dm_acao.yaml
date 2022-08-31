@@ -1,0 +1,40 @@
+fields:
+  - name: id_acao
+    title: Ação Orçamentária- Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: ano_exercicio
+    title: Ano de Exercício
+    type: year
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+  - name: cd_acao
+    title: Ação Orçamentária - Código
+    type: string
+    format: default
+    bareNumber: true
+    missingValues:
+      - '0'
+    constraints:
+      pattern: \d{4}
+  - name: nome
+    title: Ação Orçamentária - Descrição
+    description: |
+      - >
+        Conjunto de operações limitadas no tempo (projeto), realizadas de modo contínuo e permanente (atividade),
+        de natureza não orçamentária dos quais resulta um produto final (projeto ou não orçamentária), 
+        de atuação necessária à manutenção da ação governamental (atividade) ou transferência financeira 
+        (operação especial).
+    type: string
+    format: default
+    missingValues:
+      - SEM DESCRICAO
+missingValues:
+  - ''
+primaryKey:
+  - id_acao

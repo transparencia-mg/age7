@@ -1,0 +1,26 @@
+fields:
+  - name: id_subitem
+    title: Subitem - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_subitem
+    title: Subitem - Código
+    description: Código identificador de subitem da receita
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: nome
+    title: Subitem - Descrição
+    description: Detalhamento da classificação orçamentária da receita referente ao
+      item de receita.
+    type: string
+    format: default
+    missingValues:
+      - 'SEM DESCRICAO'
+primaryKey:
+  - id_subitem

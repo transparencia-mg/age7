@@ -1,0 +1,156 @@
+{
+  "version": "4.38.0",
+  "time": 7.743,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "ft_repasse_mun",
+        "title": "Transferência de Impostos a Municípios",
+        "path": "data/ft_repasse_mun.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tempo",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "id_municipio",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "ano_particao",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_icms",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_ipi",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_ipva",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_municipio"
+              ],
+              "reference": {
+                "fields": [
+                  "id_municipio"
+                ],
+                "resource": "dm_municipio"
+              }
+            },
+            {
+              "fields": [
+                "id_tempo"
+              ],
+              "reference": {
+                "fields": [
+                  "id_tempo"
+                ],
+                "resource": "dm_tempo_mensal"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_repasse_mun"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "1f6620d25755dedd4f281aca1742fe1b",
+          "bytes": 2957595,
+          "fields": 6,
+          "rows": 179130
+        }
+      },
+      "time": 7.743,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

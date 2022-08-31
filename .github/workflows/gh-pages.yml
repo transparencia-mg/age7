@@ -1,0 +1,22 @@
+name: Render and deploy static website with validation results
+
+on:
+  push:
+    branches: main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: gabrielbdornas/dtamg-age7:latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build static website
+        run: make report
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: report

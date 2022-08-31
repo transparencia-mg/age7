@@ -1,0 +1,99 @@
+{
+  "version": "4.38.0",
+  "time": 0.023,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_pais",
+        "title": "País",
+        "path": "data/dm_pais.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_pais",
+              "title": "País - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nome",
+              "title": "País - Descrição",
+              "description": "Nome do país de origem/destino da viagem a serviço realizada pelo servidor dos órgãos da Administração Pública direta, autárquica e fundacional do Poder Executivo.\n",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            "SEM DESCRICAO"
+          ],
+          "primaryKey": [
+            "id_pais"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_pais"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "3cc5e25f985974dbab4a9a4c71fb4972",
+          "bytes": 1713,
+          "fields": 2,
+          "rows": 203
+        }
+      },
+      "time": 0.023,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

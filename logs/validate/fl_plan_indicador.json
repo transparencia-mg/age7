@@ -1,0 +1,80 @@
+{
+  "version": "4.38.0",
+  "time": 0.016,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "fl_plan_indicador",
+        "title": "Orçamento Proposta",
+        "path": "data/fl_plan_indicador.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_programa",
+              "type": "any"
+            },
+            {
+              "name": "id_indicador",
+              "type": "any"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "fl_plan_indicador"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "805e16e40e4453ef1eb9683a599dc69e",
+          "bytes": 48,
+          "fields": 2,
+          "rows": 0
+        }
+      },
+      "time": 0.016,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

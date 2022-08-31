@@ -1,0 +1,114 @@
+{
+  "version": "4.38.0",
+  "time": 171.8,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "fl_despesa_pgto",
+        "title": "Despesa - Ordem de Pagamento",
+        "path": "data/fl_despesa_pgto.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "sqa_pagamento",
+              "title": "Situação da Ordem de Pagamento - Chave Origem",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true
+            },
+            {
+              "name": "id_situacao_op",
+              "title": "Situação da Ordem de Pagamento - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "sqa_pagamento"
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_situacao_op"
+              ],
+              "reference": {
+                "fields": [
+                  "id_situacao_op"
+                ],
+                "resource": "dm_situacao_op_desp"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "fl_despesa_pgto"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "2490e65eb7fe5348e9c2188ea93a8475",
+          "bytes": 64857063,
+          "fields": 2,
+          "rows": 0
+        }
+      },
+      "time": 171.8,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": true,
+      "errors": [
+        {
+          "code": "task-error",
+          "name": "Task Error",
+          "tags": [],
+          "note": "exceeded memory limit \"1000MB\"",
+          "message": "The task has an error: exceeded memory limit \"1000MB\"",
+          "description": "General task-level error."
+        }
+      ],
+      "stats": {
+        "errors": 1
+      },
+      "valid": false
+    }
+  ],
+  "stats": {
+    "errors": 1,
+    "tasks": 1
+  },
+  "valid": false
+}

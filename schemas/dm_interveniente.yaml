@@ -1,0 +1,48 @@
+fields:
+  - name: id_interveniente
+    title: Interveniente - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: fl_versao
+    title: Interveniente - Flag
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      enum:
+        - '1'
+        - '2'
+  - name: nr_documento
+    title: Número do Documento - Flag
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: false
+  - name: nome
+    title: Interveniente
+    type: string
+    format: default
+    description: |
+      - > 
+      É o partícipe do convênio que auxilia em sua execução, seja por meio do fornecimento de recursos, seja assumindo 
+      obrigações de execução do convênio de forma indireta. Podem ser intervenientes órgão, autarquia, fundação pública, 
+      empresa pública, sociedade de economia mista ou consórcio público.
+
+      nota:
+      (Decreto nº 46.319 / 2013)[https://www.almg.gov.br/consulte/legislacao/completa/completa.html?tipo=DEC&num=46319&comp=&ano=2013]
+      - Art. 2º, inciso IV, "_IV – interveniente: órgão, autarquia, fundação pública, empresa pública, sociedade de economia
+       mista, consórcio público, serviço social autônomo ou entidade privada sem fins lucrativos enquadrada no conceito de 
+       fundação de apoio previsto no inciso VII do art. 2ºda Lei Federal nº 10.973, de 2 de dezembro de 2004, que participe do 
+       convênio de saída para manifestar consentimento ou assumir obrigações em nome próprio;_"
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_interveniente

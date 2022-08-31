@@ -1,0 +1,108 @@
+{
+  "version": "4.38.0",
+  "time": 0.08,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_unidade_medida",
+        "title": "Unidade de Medida",
+        "path": "data/dm_unidade_medida.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_unidade_medida",
+              "title": "Unidade de Medida - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_unidade_medida",
+              "title": "Unidade de Medida - Código",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Unidade de Medida - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Padrão utilizado para mensurar o bem ou serviço comprado.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_unidade_medida"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_unidade_medida"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "94d2a00d2da7e6246cf094c8d933c14f",
+          "bytes": 16269,
+          "fields": 3,
+          "rows": 1992
+        }
+      },
+      "time": 0.08,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

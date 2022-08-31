@@ -1,0 +1,222 @@
+{
+  "version": "4.38.0",
+  "time": 0.104,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_subfuncao_desp",
+        "title": "Subfunção",
+        "path": "data/dm_subfuncao_desp.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_subfuncao",
+              "title": "Subfunção - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_exercicio",
+              "title": "Ano de Exerício",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "cd_subfuncao",
+              "title": "Subfunção - Código",
+              "description": "Código identificador do detalhamento das áreas de atuação do Governo (1 a 999)",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "enum": [
+                  "31",
+                  "32",
+                  "61",
+                  "62",
+                  "91",
+                  "92",
+                  "121",
+                  "122",
+                  "123",
+                  "124",
+                  "125",
+                  "126",
+                  "127",
+                  "128",
+                  "129",
+                  "130",
+                  "131",
+                  "181",
+                  "182",
+                  "183",
+                  "212",
+                  "241",
+                  "242",
+                  "243",
+                  "244",
+                  "272",
+                  "273",
+                  "274",
+                  "301",
+                  "302",
+                  "303",
+                  "304",
+                  "305",
+                  "306",
+                  "331",
+                  "332",
+                  "333",
+                  "334",
+                  "361",
+                  "362",
+                  "363",
+                  "364",
+                  "365",
+                  "366",
+                  "367",
+                  "368",
+                  "391",
+                  "392",
+                  "421",
+                  "422",
+                  "423",
+                  "451",
+                  "452",
+                  "453",
+                  "481",
+                  "482",
+                  "511",
+                  "512",
+                  "541",
+                  "542",
+                  "543",
+                  "544",
+                  "571",
+                  "572",
+                  "573",
+                  "601",
+                  "602",
+                  "603",
+                  "604",
+                  "605",
+                  "606",
+                  "607",
+                  "608",
+                  "609",
+                  "631",
+                  "632",
+                  "661",
+                  "662",
+                  "663",
+                  "665",
+                  "691",
+                  "692",
+                  "693",
+                  "694",
+                  "695",
+                  "722",
+                  "751",
+                  "752",
+                  "753",
+                  "754",
+                  "781",
+                  "782",
+                  "783",
+                  "784",
+                  "811",
+                  "812",
+                  "813",
+                  "843",
+                  "844",
+                  "845",
+                  "846",
+                  "999"
+                ]
+              },
+              "missingValues": [
+                "0"
+              ]
+            },
+            {
+              "name": "nome",
+              "title": "Subfunção - Descrição",
+              "description": "Detalhamento das áreas de atuação do Governo.\nRepresenta uma partição da função, visando agregar determinado conjunto de despesa do setor público.\nA subfunção identifica a natureza básica das ações que se aglutinam em torno das funções.\n",
+              "type": "string",
+              "format": "default",
+              "missingValues": [
+                "SEM DESCRICAO"
+              ]
+            }
+          ],
+          "primaryKey": [
+            "id_subfuncao"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_subfuncao_desp"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "71d60b1ceff0e2ae557e732d3d28cdf9",
+          "bytes": 13580,
+          "fields": 4,
+          "rows": 2010
+        }
+      },
+      "time": 0.104,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

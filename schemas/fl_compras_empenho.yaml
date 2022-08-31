@@ -1,0 +1,96 @@
+fields:
+  - name: id_processo
+    title: Número do Processo - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_empenho
+    title: Número do Empenho - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_programa
+    title: Programa - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_acao
+    title: Ação Orçamentária - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_elemento
+    title: Elemento de Despesa - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: id_item
+    title: Item de Despesa - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: dotacao_orcamentaria
+    title: Dotação Orçamentária
+    type: string
+    format: default
+    constraints:
+      required: true
+      pattern: '\d{4} \d{2}.\d{3}.\d{3}.\d{4}.\d{1} \d{1}.\d{1}.\d{2}.\d{2}.\d{2}
+        \d{1}.\d{2}.\d{1}'
+missingValues:
+  - ''
+foreignKeys:
+  - fields:
+      - id_programa
+    reference:
+      fields:
+        - id_programa
+      resource: dm_programa
+  - fields:
+      - id_elemento
+    reference:
+      fields:
+        - id_elemento
+      resource: dm_elemento_desp
+  - fields:
+      - id_item
+    reference:
+      fields:
+        - id_item
+      resource: dm_item_desp
+  - fields:
+      - id_processo
+    reference:
+      fields:
+        - id_processo
+      resource: dm_processo
+  - fields:
+      - id_acao
+    reference:
+      fields:
+        - id_acao
+      resource: dm_acao
+  - fields:
+      - id_empenho
+    reference:
+      fields:
+        - id_empenho
+      resource: dm_empenho_desp_compras_empenho

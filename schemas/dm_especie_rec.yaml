@@ -1,0 +1,38 @@
+fields:
+  - name: id_especie
+    title: Espécie - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_especie
+    title: Espécie - Código
+    description: Código da espécie da receita (0 a 9)
+    type: string
+    format: default
+    constraints:
+      enum:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+  - name: nome
+    title: Espécie - Descrição
+    type: string
+    description: |
+      Classificação da Receita vinculada à origem que permite qualificar com maior detalhe o fato gerador das receitas, por exemplo: dentro da Origem Contribuições, identifica-se as espécies “Contribuições Sociais”, “Contribuições Econômicas”, “Contribuições para Entidades Privadas de Serviço Social e de Formação Profissional” e “Contribuição para Custeio de Iluminação Pública”.
+    format: default
+    constraints:
+      required: true
+missingValues:
+  - ''
+primaryKey:
+  - id_especie

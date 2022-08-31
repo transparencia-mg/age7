@@ -1,0 +1,26 @@
+fields:
+  - name: id_programa
+    title: Programa Convênio de Entrada - Chave
+    type: integer
+    format: default
+    bareNumber: true
+    constraints:
+      required: true
+      unique: false
+  - name: cd_programa
+    title: Programa Convênio de Entrada - Código
+    type: string
+    format: default
+    constraints:
+      required: true
+  - name: nome
+    title: Programa Convênio de Entrada - Descrição
+    description: |
+      Instrumento de organização de ação governamental que integra o planejamento, o orçamento e a gestão. Visa o enfrentamento de um problema, sendo mensurado por indicadores estabelecidos no plano plurianual.
+      Resulta do reconhecimento de carências, demandas administrativas, sociais e econômicas e de oportunidades.
+    type: string
+    format: default
+missingValues:
+  - 'SEM DESCRICAO'
+primaryKey:
+  - id_programa
