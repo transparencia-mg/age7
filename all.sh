@@ -1,5 +1,6 @@
 #!/bin/bash
 {
+git pull origin main && \
 make clean && \
 make parse && \
 make full-extract && \
@@ -10,7 +11,9 @@ make check-validation && \
 make datapackage.json && \
 make test && \
 make build && \
-make update
+make update && \
+git add . && git commit -m "Atualização age7"
 } > logs/all.txt
 echo $? > logs/exit-code.txt
-make notify
+git add . && git commit -m "Atualização age7 - logs notificação"
+git push origin main
