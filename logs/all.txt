@@ -17,3 +17,374 @@ make: Nothing to be done for 'parse'.
 # python scripts/python/full-extract.py
 python scripts/python/extract_csv_evento_etl_carga.py 2> logs/evento_etl_carga.txt
 dtamg-py etl-make full-extract 2> logs/full_extract.txt
+rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
+>f+++++++++ dm_acao.csv
+>f+++++++++ dm_acao_orcam.csv
+>f+++++++++ dm_acao_resto.csv
+>f+++++++++ dm_alinea_rec.csv
+>f+++++++++ dm_autor_emenda.csv
+>f+++++++++ dm_cargo_scdp.csv
+>f+++++++++ dm_categ_econ.csv
+>f+++++++++ dm_categ_econ_orcam.csv
+>f+++++++++ dm_cidade.csv
+>f+++++++++ dm_classe_matserv.csv
+>f+++++++++ dm_classifica_rec.csv
+>f+++++++++ dm_concedente.csv
+>f+++++++++ dm_contratado.csv
+>f+++++++++ dm_contrato.csv
+>f+++++++++ dm_contrato_divida.csv
+>f+++++++++ dm_convenente.csv
+>f+++++++++ dm_convenio.csv
+>f+++++++++ dm_convenio_entrada.csv
+>f+++++++++ dm_decreto.csv
+>f+++++++++ dm_desdobramento_1_rec.csv
+>f+++++++++ dm_desdobramento_2_rec.csv
+>f+++++++++ dm_desdobramento_3_rec.csv
+>f+++++++++ dm_documento_viagem.csv
+>f+++++++++ dm_elemento_desp.csv
+>f+++++++++ dm_emenda_orcam.csv
+>f+++++++++ dm_empenho_desp_2002.csv
+>f+++++++++ dm_empenho_desp_2003.csv
+>f+++++++++ dm_empenho_desp_2004.csv
+>f+++++++++ dm_empenho_desp_2005.csv
+>f+++++++++ dm_empenho_desp_2006.csv
+>f+++++++++ dm_empenho_desp_2007.csv
+>f+++++++++ dm_empenho_desp_2008.csv
+>f+++++++++ dm_empenho_desp_2009.csv
+>f+++++++++ dm_empenho_desp_2010.csv
+>f+++++++++ dm_empenho_desp_2011.csv
+>f+++++++++ dm_empenho_desp_2012.csv
+>f+++++++++ dm_empenho_desp_2013.csv
+>f+++++++++ dm_empenho_desp_2014.csv
+>f+++++++++ dm_empenho_desp_2015.csv
+>f+++++++++ dm_empenho_desp_2016.csv
+>f+++++++++ dm_empenho_desp_2017.csv
+>f+++++++++ dm_empenho_desp_2018.csv
+>f+++++++++ dm_empenho_desp_2019.csv
+>f+++++++++ dm_empenho_desp_2020.csv
+>f+++++++++ dm_empenho_desp_2021.csv
+>f+++++++++ dm_empenho_desp_2022.csv
+>f+++++++++ dm_empenho_desp_compras_empenho.csv
+>f+++++++++ dm_empenho_desp_diarias_scdp_liqpag.csv
+>f+++++++++ dm_empenho_resto_2002.csv
+>f+++++++++ dm_empenho_resto_2003.csv
+>f+++++++++ dm_empenho_resto_2004.csv
+>f+++++++++ dm_empenho_resto_2005.csv
+>f+++++++++ dm_empenho_resto_2006.csv
+>f+++++++++ dm_empenho_resto_2007.csv
+>f+++++++++ dm_empenho_resto_2008.csv
+>f+++++++++ dm_empenho_resto_2009.csv
+>f+++++++++ dm_empenho_resto_2010.csv
+>f+++++++++ dm_empenho_resto_2011.csv
+>f+++++++++ dm_empenho_resto_2012.csv
+>f+++++++++ dm_empenho_resto_2013.csv
+>f+++++++++ dm_empenho_resto_2014.csv
+>f+++++++++ dm_empenho_resto_2015.csv
+>f+++++++++ dm_empenho_resto_2016.csv
+>f+++++++++ dm_empenho_resto_2017.csv
+>f+++++++++ dm_empenho_resto_2018.csv
+>f+++++++++ dm_empenho_resto_2019.csv
+>f+++++++++ dm_empenho_resto_2020.csv
+>f+++++++++ dm_empenho_resto_2021.csv
+>f+++++++++ dm_empenho_resto_2022.csv
+>f+++++++++ dm_especie_rec.csv
+>f+++++++++ dm_estado.csv
+>f+++++++++ dm_favorecido.csv
+>f+++++++++ dm_favorecido_scdp.csv
+>f+++++++++ dm_fonte.csv
+>f+++++++++ dm_fonte_orcam.csv
+>f+++++++++ dm_fonte_plan.csv
+>f+++++++++ dm_fonte_rec.csv
+>f+++++++++ dm_funcao_desp.csv
+>f+++++++++ dm_funcao_orcam.csv
+>f+++++++++ dm_funcao_plan.csv
+>f+++++++++ dm_funcao_resto.csv
+>f+++++++++ dm_funcao_scdp.csv
+>f+++++++++ dm_grupo_desp.csv
+>f+++++++++ dm_grupo_matserv.csv
+>f+++++++++ dm_grupo_orcam.csv
+>f+++++++++ dm_horizonte_plan.csv
+>f+++++++++ dm_indic_acao_orcam.csv
+>f+++++++++ dm_indicador_acao.csv
+>f+++++++++ dm_indicador_plan.csv
+>f+++++++++ dm_interveniente.csv
+>f+++++++++ dm_interveniente_conv_ent.csv
+>f+++++++++ dm_item_desp.csv
+>f+++++++++ dm_item_matserv.csv
+>f+++++++++ dm_item_rec.csv
+>f+++++++++ dm_linha_fornec.csv
+>f+++++++++ dm_material_servico.csv
+>f+++++++++ dm_meio_transporte.csv
+>f+++++++++ dm_modal_aplic_orcam.csv
+>f+++++++++ dm_modalidade_aplic.csv
+>f+++++++++ dm_motivo_viagem.csv
+>f+++++++++ dm_municipio.csv
+>f+++++++++ dm_municipio_obra.csv
+>f+++++++++ dm_municipio_plan.csv
+>f+++++++++ dm_obra.csv
+>f+++++++++ dm_orgao_concedente.csv
+>f+++++++++ dm_orgao_contrato.csv
+>f+++++++++ dm_orgao_demanda.csv
+>f+++++++++ dm_orgao_obra.csv
+>f+++++++++ dm_orgao_orcam.csv
+>f+++++++++ dm_orgao_plan.csv
+>f+++++++++ dm_orgao_proponente.csv
+>f+++++++++ dm_orgao_scdp.csv
+>f+++++++++ dm_origem_rec.csv
+>f+++++++++ dm_pais.csv
+>f+++++++++ dm_poder.csv
+>f+++++++++ dm_ppag_plan.csv
+>f+++++++++ dm_procedencia.csv
+>f+++++++++ dm_procedencia_orcam.csv
+>f+++++++++ dm_procedimento.csv
+>f+++++++++ dm_processo.csv
+>f+++++++++ dm_programa.csv
+>f+++++++++ dm_programa_conv_ent.csv
+>f+++++++++ dm_programa_orcam.csv
+>f+++++++++ dm_programa_plan.csv
+>f+++++++++ dm_programa_resto.csv
+>f+++++++++ dm_responsavel_plan.csv
+>f+++++++++ dm_rubrica_rec.csv
+>f+++++++++ dm_situacao_cont.csv
+>f+++++++++ dm_situacao_conv_ent.csv
+>f+++++++++ dm_situacao_convenio.csv
+>f+++++++++ dm_situacao_obra.csv
+>f+++++++++ dm_situacao_op_desp.csv
+>f+++++++++ dm_situacao_proc.csv
+>f+++++++++ dm_subalinea_rec.csv
+>f+++++++++ dm_subfuncao_desp.csv
+>f+++++++++ dm_subfuncao_orcam.csv
+>f+++++++++ dm_subfuncao_resto.csv
+>f+++++++++ dm_subitem_rec.csv
+>f+++++++++ dm_tempo_anual.csv
+>f+++++++++ dm_tempo_diario.csv
+>f+++++++++ dm_tempo_mensal.csv
+>f+++++++++ dm_territorio_plan.csv
+>f+++++++++ dm_territorio_planeja.csv
+>f+++++++++ dm_tipo_acao_plan.csv
+>f+++++++++ dm_tipo_atendimento.csv
+>f+++++++++ dm_tipo_divida.csv
+>f+++++++++ dm_tipo_documento.csv
+>f+++++++++ dm_tipo_licitacao.csv
+>f+++++++++ dm_tipo_orcam_plan.csv
+>f+++++++++ dm_tipo_prog_plan.csv
+>f+++++++++ dm_tipo_rec.csv
+>f+++++++++ dm_tipo_viagem.csv
+>f+++++++++ dm_tipo_viajante.csv
+>f+++++++++ dm_unidade_medida.csv
+>f+++++++++ dm_unidade_orc.csv
+>f+++++++++ dm_unidade_resp_plan.csv
+>f+++++++++ fl_compras_empenho.csv
+>f+++++++++ fl_convenio_alteracao.csv
+>f+++++++++ fl_convenio_entrada_aditivo.csv
+>f+++++++++ fl_convenio_entrada_compras.csv
+>f+++++++++ fl_convenio_entrada_interv.csv
+>f+++++++++ fl_convenio_interveniente.csv
+>f+++++++++ fl_despesa_pgto.csv
+>f+++++++++ fl_plan_acao.csv
+>f+++++++++ fl_plan_indicador.csv
+>f+++++++++ fl_plan_programa.csv
+>f+++++++++ fl_plan_responsavel.csv
+>f+++++++++ ft_compras.csv
+>f+++++++++ ft_compras_contrato.csv
+>f+++++++++ ft_convenio.csv
+>f+++++++++ ft_convenio_entrada.csv
+>f+++++++++ ft_convenio_entrada_desp.csv
+>f+++++++++ ft_convenio_entrada_dotacao.csv
+>f+++++++++ ft_convenio_entrada_rec.csv
+>f+++++++++ ft_convenio_investimento.csv
+>f+++++++++ ft_convenio_metaetapa.csv
+>f+++++++++ ft_convenio_tipoatendimento.csv
+>f+++++++++ ft_despesa_2002.csv
+>f+++++++++ ft_despesa_2003.csv
+>f+++++++++ ft_despesa_2004.csv
+>f+++++++++ ft_despesa_2005.csv
+>f+++++++++ ft_despesa_2006.csv
+>f+++++++++ ft_despesa_2008.csv
+>f+++++++++ ft_despesa_2010.csv
+>f+++++++++ ft_despesa_2011.csv
+>f+++++++++ ft_despesa_2012.csv
+>f+++++++++ ft_despesa_2013.csv
+>f+++++++++ ft_despesa_2014.csv
+>f+++++++++ ft_despesa_2015.csv
+>f+++++++++ ft_despesa_2016.csv
+>f+++++++++ ft_despesa_2017.csv
+>f+++++++++ ft_despesa_2018.csv
+>f+++++++++ ft_despesa_2019.csv
+>f+++++++++ ft_despesa_2020.csv
+>f+++++++++ ft_despesa_2021.csv
+>f+++++++++ ft_despesa_2022.csv
+>f+++++++++ ft_diarias_2002.csv
+>f+++++++++ ft_diarias_2003.csv
+>f+++++++++ ft_diarias_2004.csv
+>f+++++++++ ft_diarias_2005.csv
+>f+++++++++ ft_diarias_2006.csv
+>f+++++++++ ft_diarias_2007.csv
+>f+++++++++ ft_diarias_2008.csv
+>f+++++++++ ft_diarias_2009.csv
+>f+++++++++ ft_diarias_2010.csv
+>f+++++++++ ft_diarias_2011.csv
+>f+++++++++ ft_diarias_2012.csv
+>f+++++++++ ft_diarias_2013.csv
+>f+++++++++ ft_diarias_2014.csv
+>f+++++++++ ft_diarias_2015.csv
+>f+++++++++ ft_diarias_2016.csv
+>f+++++++++ ft_diarias_2017.csv
+>f+++++++++ ft_diarias_2018.csv
+>f+++++++++ ft_diarias_2019.csv
+>f+++++++++ ft_diarias_2020.csv
+>f+++++++++ ft_diarias_2021.csv
+>f+++++++++ ft_diarias_2022.csv
+>f+++++++++ ft_diarias_scdp.csv
+>f+++++++++ ft_diarias_scdp_liqpag.csv
+>f+++++++++ ft_divida_pub.csv
+>f+++++++++ ft_obra.csv
+>f+++++++++ ft_orcamento_cred_alt.csv
+>f+++++++++ ft_orcamento_emenda.csv
+>f+++++++++ ft_orcamento_proposta.csv
+>f+++++++++ ft_pessoal_desp.csv
+>f+++++++++ ft_plan_acao_ppag.csv
+>f+++++++++ ft_plan_exec_of_fonte.csv
+>f+++++++++ ft_plan_exec_of_territorio.csv
+>f+++++++++ ft_plan_exec_of_tipoorc.csv
+>f+++++++++ ft_plan_execucao_acao.csv
+>f+++++++++ ft_plan_fonte_fin_acao.csv
+>f+++++++++ ft_plan_indic_plan_exec.csv
+>f+++++++++ ft_plan_indic_referencia.csv
+>f+++++++++ ft_plan_prog_fftd.csv
+>f+++++++++ ft_plan_prog_mensal.csv
+>f+++++++++ ft_plan_prog_of_fonte.csv
+>f+++++++++ ft_plan_prog_of_territorio.csv
+>f+++++++++ ft_plan_prog_of_tipoorc.csv
+>f+++++++++ ft_plan_prog_territorial.csv
+>f+++++++++ ft_receita.csv
+>f+++++++++ ft_receita_prevista.csv
+>f+++++++++ ft_receita_prevista_v2018.csv
+>f+++++++++ ft_receita_v2018.csv
+>f+++++++++ ft_repasse_mun.csv
+>f+++++++++ ft_restos_pagar_2002.csv
+>f+++++++++ ft_restos_pagar_2003.csv
+>f+++++++++ ft_restos_pagar_2004.csv
+>f+++++++++ ft_restos_pagar_2005.csv
+>f+++++++++ ft_restos_pagar_2006.csv
+>f+++++++++ ft_restos_pagar_2007.csv
+>f+++++++++ ft_restos_pagar_2008.csv
+>f+++++++++ ft_restos_pagar_2009.csv
+>f+++++++++ ft_restos_pagar_2010.csv
+>f+++++++++ ft_restos_pagar_2011.csv
+>f+++++++++ ft_restos_pagar_2012.csv
+>f+++++++++ ft_restos_pagar_2013.csv
+>f+++++++++ ft_restos_pagar_2014.csv
+>f+++++++++ ft_restos_pagar_2015.csv
+>f+++++++++ ft_restos_pagar_2016.csv
+>f+++++++++ ft_restos_pagar_2017.csv
+>f+++++++++ ft_restos_pagar_2018.csv
+>f+++++++++ ft_restos_pagar_2019.csv
+>f+++++++++ ft_restos_pagar_2020.csv
+>f+++++++++ ft_restos_pagar_2021.csv
+>f+++++++++ ft_restos_pagar_2022.csv
+>f+++++++++ sa_indicador_acao.csv
+gzip -n < data/staging/dm_poder.csv > data/dm_poder.csv.gz
+gzip -n < data/staging/dm_contrato_divida.csv > data/dm_contrato_divida.csv.gz
+gzip -n < data/staging/dm_tipo_divida.csv > data/dm_tipo_divida.csv.gz
+gzip -n < data/staging/dm_unidade_orc.csv > data/dm_unidade_orc.csv.gz
+gzip -n < data/staging/dm_funcao_desp.csv > data/dm_funcao_desp.csv.gz
+gzip -n < data/staging/dm_subfuncao_desp.csv > data/dm_subfuncao_desp.csv.gz
+gzip -n < data/staging/dm_tempo_diario.csv > data/dm_tempo_diario.csv.gz
+gzip -n < data/staging/dm_tipo_documento.csv > data/dm_tipo_documento.csv.gz
+gzip -n < data/staging/dm_tempo_mensal.csv > data/dm_tempo_mensal.csv.gz
+gzip -n < data/staging/dm_alinea_rec.csv > data/dm_alinea_rec.csv.gz
+gzip -n < data/staging/dm_especie_rec.csv > data/dm_especie_rec.csv.gz
+gzip -n < data/staging/dm_fonte_rec.csv > data/dm_fonte_rec.csv.gz
+gzip -n < data/staging/dm_item_rec.csv > data/dm_item_rec.csv.gz
+gzip -n < data/staging/dm_rubrica_rec.csv > data/dm_rubrica_rec.csv.gz
+gzip -n < data/staging/dm_origem_rec.csv > data/dm_origem_rec.csv.gz
+gzip -n < data/staging/dm_subalinea_rec.csv > data/dm_subalinea_rec.csv.gz
+gzip -n < data/staging/ft_receita_prevista.csv > data/ft_receita_prevista.csv.gz
+gzip -n < data/staging/ft_receita.csv > data/ft_receita.csv.gz
+gzip -n < data/staging/dm_desdobramento_1_rec.csv > data/dm_desdobramento_1_rec.csv.gz
+gzip -n < data/staging/dm_desdobramento_2_rec.csv > data/dm_desdobramento_2_rec.csv.gz
+gzip -n < data/staging/dm_desdobramento_3_rec.csv > data/dm_desdobramento_3_rec.csv.gz
+gzip -n < data/staging/dm_tipo_rec.csv > data/dm_tipo_rec.csv.gz
+gzip -n < data/staging/ft_receita_prevista_v2018.csv > data/ft_receita_prevista_v2018.csv.gz
+gzip -n < data/staging/ft_receita_v2018.csv > data/ft_receita_v2018.csv.gz
+gzip -n < data/staging/dm_item_desp.csv > data/dm_item_desp.csv.gz
+gzip -n < data/staging/dm_programa.csv > data/dm_programa.csv.gz
+gzip -n < data/staging/dm_acao.csv > data/dm_acao.csv.gz
+gzip -n < data/staging/dm_funcao_scdp.csv > data/dm_funcao_scdp.csv.gz
+gzip -n < data/staging/ft_convenio_investimento.csv > data/ft_convenio_investimento.csv.gz
+gzip -n < data/staging/ft_convenio_tipoatendimento.csv > data/ft_convenio_tipoatendimento.csv.gz
+gzip -n < data/staging/ft_convenio_metaetapa.csv > data/ft_convenio_metaetapa.csv.gz
+gzip -n < data/staging/fl_convenio_interveniente.csv > data/fl_convenio_interveniente.csv.gz
+gzip -n < data/staging/fl_convenio_alteracao.csv > data/fl_convenio_alteracao.csv.gz
+gzip -n < data/staging/ft_convenio_entrada_dotacao.csv > data/ft_convenio_entrada_dotacao.csv.gz
+gzip -n < data/staging/ft_convenio_entrada_desp.csv > data/ft_convenio_entrada_desp.csv.gz
+gzip -n < data/staging/ft_convenio_entrada_rec.csv > data/ft_convenio_entrada_rec.csv.gz
+gzip -n < data/staging/dm_convenio_entrada.csv > data/dm_convenio_entrada.csv.gz
+gzip -n < data/staging/dm_favorecido_scdp.csv > data/dm_favorecido_scdp.csv.gz
+gzip -n < data/staging/dm_documento_viagem.csv > data/dm_documento_viagem.csv.gz
+gzip -n < data/staging/dm_empenho_desp_compras_empenho.csv > data/dm_empenho_desp_compras_empenho.csv.gz
+gzip -n < data/staging/dm_empenho_desp_diarias_scdp_liqpag.csv > data/dm_empenho_desp_diarias_scdp_liqpag.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2002.csv > data/dm_empenho_desp_2002.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2003.csv > data/dm_empenho_desp_2003.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2004.csv > data/dm_empenho_desp_2004.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2005.csv > data/dm_empenho_desp_2005.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2006.csv > data/dm_empenho_desp_2006.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2007.csv > data/dm_empenho_desp_2007.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2008.csv > data/dm_empenho_desp_2008.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2009.csv > data/dm_empenho_desp_2009.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2010.csv > data/dm_empenho_desp_2010.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2011.csv > data/dm_empenho_desp_2011.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2012.csv > data/dm_empenho_desp_2012.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2013.csv > data/dm_empenho_desp_2013.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2014.csv > data/dm_empenho_desp_2014.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2015.csv > data/dm_empenho_desp_2015.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2016.csv > data/dm_empenho_desp_2016.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2017.csv > data/dm_empenho_desp_2017.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2018.csv > data/dm_empenho_desp_2018.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2019.csv > data/dm_empenho_desp_2019.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2020.csv > data/dm_empenho_desp_2020.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2021.csv > data/dm_empenho_desp_2021.csv.gz
+gzip -n < data/staging/dm_empenho_desp_2022.csv > data/dm_empenho_desp_2022.csv.gz
+gzip -n < data/staging/dm_favorecido.csv > data/dm_favorecido.csv.gz
+gzip -n < data/staging/fl_despesa_pgto.csv > data/fl_despesa_pgto.csv.gz
+gzip -n < data/staging/dm_fonte.csv > data/dm_fonte.csv.gz
+gzip -n < data/staging/dm_grupo_desp.csv > data/dm_grupo_desp.csv.gz
+gzip -n < data/staging/dm_modalidade_aplic.csv > data/dm_modalidade_aplic.csv.gz
+gzip -n < data/staging/dm_procedencia.csv > data/dm_procedencia.csv.gz
+gzip -n < data/staging/dm_cidade.csv > data/dm_cidade.csv.gz
+gzip -n < data/staging/dm_grupo_matserv.csv > data/dm_grupo_matserv.csv.gz
+gzip -n < data/staging/dm_item_matserv.csv > data/dm_item_matserv.csv.gz
+gzip -n < data/staging/dm_linha_fornec.csv > data/dm_linha_fornec.csv.gz
+gzip -n < data/staging/dm_processo.csv > data/dm_processo.csv.gz
+gzip -n < data/staging/dm_unidade_medida.csv > data/dm_unidade_medida.csv.gz
+gzip -n < data/staging/fl_compras_empenho.csv > data/fl_compras_empenho.csv.gz
+gzip -n < data/staging/dm_situacao_conv_ent.csv > data/dm_situacao_conv_ent.csv.gz
+gzip -n < data/staging/ft_convenio.csv > data/ft_convenio.csv.gz
+gzip -n < data/staging/fl_convenio_entrada_compras.csv > data/fl_convenio_entrada_compras.csv.gz
+gzip -n < data/staging/dm_convenio.csv > data/dm_convenio.csv.gz
+gzip -n < data/staging/fl_convenio_entrada_interv.csv > data/fl_convenio_entrada_interv.csv.gz
+gzip -n < data/staging/fl_convenio_entrada_aditivo.csv > data/fl_convenio_entrada_aditivo.csv.gz
+gzip -n < data/staging/ft_convenio_entrada.csv > data/ft_convenio_entrada.csv.gz
+gzip -n < data/staging/dm_interveniente_conv_ent.csv > data/dm_interveniente_conv_ent.csv.gz
+gzip -n < data/staging/dm_classifica_rec.csv > data/dm_classifica_rec.csv.gz
+gzip -n < data/staging/dm_programa_conv_ent.csv > data/dm_programa_conv_ent.csv.gz
+gzip -n < data/staging/dm_orgao_proponente.csv > data/dm_orgao_proponente.csv.gz
+gzip -n < data/staging/dm_concedente.csv > data/dm_concedente.csv.gz
+gzip -n < data/staging/dm_interveniente.csv > data/dm_interveniente.csv.gz
+gzip -n < data/staging/dm_tipo_atendimento.csv > data/dm_tipo_atendimento.csv.gz
+gzip -n < data/staging/dm_estado.csv > data/dm_estado.csv.gz
+gzip -n < data/staging/dm_convenente.csv > data/dm_convenente.csv.gz
+gzip -n < data/staging/ft_diarias_scdp.csv > data/ft_diarias_scdp.csv.gz
+gzip -n < data/staging/ft_diarias_scdp_liqpag.csv > data/ft_diarias_scdp_liqpag.csv.gz
+gzip -n < data/staging/dm_cargo_scdp.csv > data/dm_cargo_scdp.csv.gz
+gzip -n < data/staging/dm_meio_transporte.csv > data/dm_meio_transporte.csv.gz
+gzip -n < data/staging/dm_pais.csv > data/dm_pais.csv.gz
+gzip -n < data/staging/dm_tipo_viagem.csv > data/dm_tipo_viagem.csv.gz
+gzip -n < data/staging/ft_compras.csv > data/ft_compras.csv.gz
+gzip -n < data/staging/ft_compras_contrato.csv > data/ft_compras_contrato.csv.gz
+gzip -n < data/staging/ft_despesa_2002.csv > data/ft_despesa_2002.csv.gz
+gzip -n < data/staging/ft_despesa_2003.csv > data/ft_despesa_2003.csv.gz
+gzip -n < data/staging/ft_despesa_2004.csv > data/ft_despesa_2004.csv.gz
+gzip -n < data/staging/ft_despesa_2005.csv > data/ft_despesa_2005.csv.gz
+gzip -n < data/staging/ft_despesa_2006.csv > data/ft_despesa_2006.csv.gz
