@@ -622,7 +622,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.016,
+        "time": 0.018,
         "errors": [],
         "tasks": [
           {
@@ -654,7 +654,7 @@
                 "rows": 0
               }
             },
-            "time": 0.016,
+            "time": 0.018,
             "scope": [],
             "partial": false,
             "errors": [
@@ -759,7 +759,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 36.064,
+        "time": 36.314,
         "errors": [],
         "tasks": [
           {
@@ -840,13 +840,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "0e61398688f81c872bc7b9a9e2199caa",
-                "bytes": 19949446,
+                "hash": "5f270040e8b963de5b5354d7c18a2aaf",
+                "bytes": 19955189,
                 "fields": 4,
-                "rows": 1152427
+                "rows": 1152684
               }
             },
-            "time": 36.064,
+            "time": 36.314,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1172,10 +1172,10 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "bd34945952a7db67fe9068fc85ef13f7",
-                "bytes": 2641,
+                "hash": "4657fd0971171788c6e7890000758cf8",
+                "bytes": 2669,
                 "fields": 3,
-                "rows": 196
+                "rows": 197
               }
             },
             "time": 0.036,
@@ -1246,16 +1246,39 @@
                 "note": "constraint \"enum\" is \"['10', '11', '12', '13', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
                 "message": "The cell \"15\" in row at position \"197\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
                 "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "18",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "564",
+                  "18",
+                  "AUXILIO FINANCEIRO PELA OUTORGA DE CREDITO TRIBUTARIO - ICMS ETANOL"
+                ],
+                "rowNumber": 197,
+                "rowPosition": 198,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"18\" in row at position \"198\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
               }
             ],
             "stats": {
-              "errors": 2
+              "errors": 3
             },
             "valid": false
           }
         ],
         "stats": {
-          "errors": 2,
+          "errors": 3,
           "tasks": 1
         },
         "valid": false
@@ -2009,7 +2032,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 9.198,
+        "time": 9.019,
         "errors": [],
         "tasks": [
           {
@@ -2122,13 +2145,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "6880f78229e1d2443cd6d83e82aab0db",
-                "bytes": 1563253,
+                "hash": "ae73839c829834c18dc6c18475d20681",
+                "bytes": 1564930,
                 "fields": 8,
                 "rows": 128344
               }
             },
-            "time": 9.198,
+            "time": 9.019,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2276,7 +2299,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 6.172,
+        "time": 6.3,
         "errors": [],
         "tasks": [
           {
@@ -2389,13 +2412,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "3fe6ce743b23976142c513646826454f",
-                "bytes": 1176735,
+                "hash": "5ac5d77cccb0b8790bc4495885c23ee0",
+                "bytes": 1175175,
                 "fields": 8,
                 "rows": 87739
               }
             },
-            "time": 6.172,
+            "time": 6.3,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2543,7 +2566,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 4.986,
+        "time": 5.044,
         "errors": [],
         "tasks": [
           {
@@ -2656,13 +2679,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "8eea373126ab18431343b375efaba970",
-                "bytes": 1000407,
+                "hash": "0819dba6c9b4367368b595baff2afad2",
+                "bytes": 1003010,
                 "fields": 8,
                 "rows": 71538
               }
             },
-            "time": 4.986,
+            "time": 5.044,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2810,7 +2833,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.213,
+        "time": 3.179,
         "errors": [],
         "tasks": [
           {
@@ -2923,13 +2946,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e2d0c9a8ea96727a41acb34867b5cb3a",
-                "bytes": 650587,
+                "hash": "a8f95730300b3fd903b8531421f22236",
+                "bytes": 653092,
                 "fields": 8,
                 "rows": 45258
               }
             },
-            "time": 3.213,
+            "time": 3.179,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3077,7 +3100,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.201,
+        "time": 3.195,
         "errors": [],
         "tasks": [
           {
@@ -3190,13 +3213,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "5310ccd27c63cad9455c4a931de236d2",
-                "bytes": 644223,
+                "hash": "ea5d2e3a06f106ed0b1daa2992697c74",
+                "bytes": 644001,
                 "fields": 8,
                 "rows": 45177
               }
             },
-            "time": 3.201,
+            "time": 3.195,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3344,7 +3367,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.311,
+        "time": 3.336,
         "errors": [],
         "tasks": [
           {
@@ -3457,13 +3480,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "13423e3377d1796fde77a89af8235aae",
-                "bytes": 669851,
+                "hash": "3cc454e424543f409697a47918f63ce4",
+                "bytes": 670777,
                 "fields": 8,
                 "rows": 46665
               }
             },
-            "time": 3.311,
+            "time": 3.336,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3611,7 +3634,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.563,
+        "time": 3.578,
         "errors": [],
         "tasks": [
           {
@@ -3724,13 +3747,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "a041f39938edbefa7023fa3730d72a5d",
-                "bytes": 720219,
+                "hash": "a452569d8b440be5133919f890510550",
+                "bytes": 718946,
                 "fields": 8,
                 "rows": 49567
               }
             },
-            "time": 3.563,
+            "time": 3.578,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3878,7 +3901,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.309,
+        "time": 3.395,
         "errors": [],
         "tasks": [
           {
@@ -3991,13 +4014,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "ceff5af9ab72eed9d7b746666c497b96",
-                "bytes": 673599,
+                "hash": "ebaeacb4aa09f72addc8d87ac287ad35",
+                "bytes": 672781,
                 "fields": 8,
                 "rows": 46651
               }
             },
-            "time": 3.309,
+            "time": 3.395,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4145,7 +4168,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.002,
+        "time": 3.02,
         "errors": [],
         "tasks": [
           {
@@ -4258,13 +4281,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "635a3a4e681053455e4b7bc6738dd161",
-                "bytes": 591713,
+                "hash": "fafbc4288b827e8c904a6071dd580a85",
+                "bytes": 594189,
                 "fields": 8,
                 "rows": 42367
               }
             },
-            "time": 3.002,
+            "time": 3.02,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4412,7 +4435,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 2.812,
+        "time": 2.737,
         "errors": [],
         "tasks": [
           {
@@ -4525,13 +4548,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "ff1f5a88f8e2d6c5c07e04c906026e49",
-                "bytes": 537573,
+                "hash": "4bdad4c7a3113ec639e37717e5a7a777",
+                "bytes": 539814,
                 "fields": 8,
                 "rows": 38126
               }
             },
-            "time": 2.812,
+            "time": 2.737,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4679,7 +4702,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 2.936,
+        "time": 2.93,
         "errors": [],
         "tasks": [
           {
@@ -4792,13 +4815,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "256ed484d57cf83f4edbacc1d8b960f1",
-                "bytes": 591556,
+                "hash": "d0ca1d7f59365b1f015e0d0e992b98ab",
+                "bytes": 595408,
                 "fields": 8,
                 "rows": 40965
               }
             },
-            "time": 2.936,
+            "time": 2.93,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4946,7 +4969,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.576,
+        "time": 3.603,
         "errors": [],
         "tasks": [
           {
@@ -5059,13 +5082,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "ecc47cb6313decd51123cd72b820cd28",
-                "bytes": 732258,
+                "hash": "f8d1710b904edc0ea530d3d5a82d3897",
+                "bytes": 732283,
                 "fields": 8,
                 "rows": 51023
               }
             },
-            "time": 3.576,
+            "time": 3.603,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -5213,7 +5236,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 5.613,
+        "time": 5.463,
         "errors": [],
         "tasks": [
           {
@@ -5326,13 +5349,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "cf5048529590dcef2ddf98c408099af0",
-                "bytes": 1042094,
+                "hash": "58e49ddf8c3a77ddae7a063b3cad6e08",
+                "bytes": 1041819,
                 "fields": 8,
                 "rows": 77573
               }
             },
-            "time": 5.613,
+            "time": 5.463,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -5480,7 +5503,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 5.784,
+        "time": 5.775,
         "errors": [],
         "tasks": [
           {
@@ -5593,13 +5616,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "f7303e272b5b4022765a5523e15af977",
-                "bytes": 1055794,
+                "hash": "21d6c2c53cfb0a96e90670de77f14705",
+                "bytes": 1058954,
                 "fields": 8,
                 "rows": 82038
               }
             },
-            "time": 5.784,
+            "time": 5.775,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -5747,7 +5770,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 8.487,
+        "time": 8.347,
         "errors": [],
         "tasks": [
           {
@@ -5860,13 +5883,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "6388216fa2bb08bea847281cda94ec9d",
-                "bytes": 1480375,
+                "hash": "779302ed02afe43ca12b8d5f24c1c73b",
+                "bytes": 1484842,
                 "fields": 8,
                 "rows": 118481
               }
             },
-            "time": 8.487,
+            "time": 8.347,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -6014,7 +6037,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 13.136,
+        "time": 13.151,
         "errors": [],
         "tasks": [
           {
@@ -6127,13 +6150,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "db45db1adcc9be70ef2c9200cce053a0",
-                "bytes": 2334125,
+                "hash": "0db63ed9dc33e60cf0a6a556048f5f8e",
+                "bytes": 2336854,
                 "fields": 8,
                 "rows": 186255
               }
             },
-            "time": 13.136,
+            "time": 13.151,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -6281,7 +6304,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 18.056,
+        "time": 18.126,
         "errors": [],
         "tasks": [
           {
@@ -6394,13 +6417,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "6e3b464e340aeb3921cbaf65d90f9aad",
-                "bytes": 3127427,
+                "hash": "ec992d25e3cbe7f3729816a110c0851f",
+                "bytes": 3134371,
                 "fields": 8,
                 "rows": 256370
               }
             },
-            "time": 18.056,
+            "time": 18.126,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -6548,7 +6571,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 15.855,
+        "time": 15.597,
         "errors": [],
         "tasks": [
           {
@@ -6661,13 +6684,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "df4750c4d340a46dfbd24c7eae4634aa",
-                "bytes": 2692859,
+                "hash": "90bbca498b05ac1e2c17311a91216573",
+                "bytes": 2699085,
                 "fields": 8,
                 "rows": 217062
               }
             },
-            "time": 15.855,
+            "time": 15.597,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -6815,7 +6838,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 16.077,
+        "time": 16.216,
         "errors": [],
         "tasks": [
           {
@@ -6928,13 +6951,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "0e96abdcfa611cc26bfc5a6e342db825",
-                "bytes": 2747727,
+                "hash": "215dc450e06399de0c17db43531a4c25",
+                "bytes": 2749024,
                 "fields": 8,
                 "rows": 227715
               }
             },
-            "time": 16.077,
+            "time": 16.216,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7082,7 +7105,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 18.025,
+        "time": 17.756,
         "errors": [],
         "tasks": [
           {
@@ -7195,13 +7218,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "814c7b85f0330f1f1acb4f29c34656e6",
-                "bytes": 2568363,
+                "hash": "5a1d9dbaca2e9f3eca15a665ef5407e5",
+                "bytes": 2568111,
                 "fields": 8,
                 "rows": 252932
               }
             },
-            "time": 18.025,
+            "time": 17.756,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7349,7 +7372,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 16.31,
+        "time": 15.688,
         "errors": [],
         "tasks": [
           {
@@ -7462,13 +7485,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "6c434f103582292dee9942f603b6ff86",
-                "bytes": 2593123,
+                "hash": "6df1f891742817ea73b64362117e3739",
+                "bytes": 2589281,
                 "fields": 8,
                 "rows": 223830
               }
             },
-            "time": 16.31,
+            "time": 15.688,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -8669,7 +8692,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 25.232,
+        "time": 25.409,
         "errors": [],
         "tasks": [
           {
@@ -9157,7 +9180,7 @@
                 "rows": 0
               }
             },
-            "time": 25.232,
+            "time": 25.409,
             "scope": [],
             "partial": false,
             "errors": [
@@ -9667,7 +9690,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 24.44,
+        "time": 24.097,
         "errors": [],
         "tasks": [
           {
@@ -10155,7 +10178,7 @@
                 "rows": 0
               }
             },
-            "time": 24.44,
+            "time": 24.097,
             "scope": [],
             "partial": false,
             "errors": [
@@ -10665,7 +10688,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 24.101,
+        "time": 23.844,
         "errors": [],
         "tasks": [
           {
@@ -11153,7 +11176,7 @@
                 "rows": 0
               }
             },
-            "time": 24.101,
+            "time": 23.844,
             "scope": [],
             "partial": false,
             "errors": [
@@ -11663,7 +11686,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 22.913,
+        "time": 23.25,
         "errors": [],
         "tasks": [
           {
@@ -12151,7 +12174,7 @@
                 "rows": 0
               }
             },
-            "time": 22.913,
+            "time": 23.25,
             "scope": [],
             "partial": false,
             "errors": [
@@ -12661,7 +12684,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 23.812,
+        "time": 22.821,
         "errors": [],
         "tasks": [
           {
@@ -13149,7 +13172,7 @@
                 "rows": 0
               }
             },
-            "time": 23.812,
+            "time": 22.821,
             "scope": [],
             "partial": false,
             "errors": [
@@ -13659,7 +13682,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 23.319,
+        "time": 23.361,
         "errors": [],
         "tasks": [
           {
@@ -14147,7 +14170,7 @@
                 "rows": 0
               }
             },
-            "time": 23.319,
+            "time": 23.361,
             "scope": [],
             "partial": false,
             "errors": [
@@ -14657,7 +14680,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 23.457,
+        "time": 23.327,
         "errors": [],
         "tasks": [
           {
@@ -15145,7 +15168,7 @@
                 "rows": 0
               }
             },
-            "time": 23.457,
+            "time": 23.327,
             "scope": [],
             "partial": false,
             "errors": [
@@ -15655,7 +15678,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 23.511,
+        "time": 23.681,
         "errors": [],
         "tasks": [
           {
@@ -16143,7 +16166,7 @@
                 "rows": 0
               }
             },
-            "time": 23.511,
+            "time": 23.681,
             "scope": [],
             "partial": false,
             "errors": [
@@ -16653,7 +16676,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 22.8,
+        "time": 23.003,
         "errors": [],
         "tasks": [
           {
@@ -17141,7 +17164,7 @@
                 "rows": 0
               }
             },
-            "time": 22.8,
+            "time": 23.003,
             "scope": [],
             "partial": false,
             "errors": [
@@ -17651,7 +17674,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 23.124,
+        "time": 23.671,
         "errors": [],
         "tasks": [
           {
@@ -18139,7 +18162,7 @@
                 "rows": 0
               }
             },
-            "time": 23.124,
+            "time": 23.671,
             "scope": [],
             "partial": false,
             "errors": [
@@ -18649,7 +18672,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 22.909,
+        "time": 23.459,
         "errors": [],
         "tasks": [
           {
@@ -19137,7 +19160,7 @@
                 "rows": 0
               }
             },
-            "time": 22.909,
+            "time": 23.459,
             "scope": [],
             "partial": false,
             "errors": [
@@ -19647,7 +19670,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 24.033,
+        "time": 23.457,
         "errors": [],
         "tasks": [
           {
@@ -20135,7 +20158,7 @@
                 "rows": 0
               }
             },
-            "time": 24.033,
+            "time": 23.457,
             "scope": [],
             "partial": false,
             "errors": [
@@ -20645,7 +20668,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 25.046,
+        "time": 24.682,
         "errors": [],
         "tasks": [
           {
@@ -21133,7 +21156,7 @@
                 "rows": 0
               }
             },
-            "time": 25.046,
+            "time": 24.682,
             "scope": [],
             "partial": false,
             "errors": [
@@ -21643,7 +21666,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 23.819,
+        "time": 24.204,
         "errors": [],
         "tasks": [
           {
@@ -22131,7 +22154,7 @@
                 "rows": 0
               }
             },
-            "time": 23.819,
+            "time": 24.204,
             "scope": [],
             "partial": false,
             "errors": [
@@ -22641,7 +22664,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 24.526,
+        "time": 26.002,
         "errors": [],
         "tasks": [
           {
@@ -23129,7 +23152,7 @@
                 "rows": 0
               }
             },
-            "time": 24.526,
+            "time": 26.002,
             "scope": [],
             "partial": false,
             "errors": [
@@ -23639,7 +23662,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 25.677,
+        "time": 25.957,
         "errors": [],
         "tasks": [
           {
@@ -24127,7 +24150,7 @@
                 "rows": 0
               }
             },
-            "time": 25.677,
+            "time": 25.957,
             "scope": [],
             "partial": false,
             "errors": [
@@ -24637,7 +24660,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 27.424,
+        "time": 27.375,
         "errors": [],
         "tasks": [
           {
@@ -25125,7 +25148,7 @@
                 "rows": 0
               }
             },
-            "time": 27.424,
+            "time": 27.375,
             "scope": [],
             "partial": false,
             "errors": [
@@ -25635,7 +25658,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 26.642,
+        "time": 27.054,
         "errors": [],
         "tasks": [
           {
@@ -26123,7 +26146,7 @@
                 "rows": 0
               }
             },
-            "time": 26.642,
+            "time": 27.054,
             "scope": [],
             "partial": false,
             "errors": [
@@ -26633,7 +26656,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 27.111,
+        "time": 27.067,
         "errors": [],
         "tasks": [
           {
@@ -27121,7 +27144,7 @@
                 "rows": 0
               }
             },
-            "time": 27.111,
+            "time": 27.067,
             "scope": [],
             "partial": false,
             "errors": [
@@ -27531,7 +27554,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 27.156,
+        "time": 27.54,
         "errors": [],
         "tasks": [
           {
@@ -27919,7 +27942,7 @@
                 "rows": 0
               }
             },
-            "time": 27.156,
+            "time": 27.54,
             "scope": [],
             "partial": false,
             "errors": [
@@ -28329,7 +28352,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 26.943,
+        "time": 27.036,
         "errors": [],
         "tasks": [
           {
@@ -28711,13 +28734,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "33c1f78a9a7c1e4bf1993882474144d1",
-                "bytes": 4960505,
+                "hash": "38e3c8ddcd3540f517a9fbc9682f5457",
+                "bytes": 4967052,
                 "fields": 21,
                 "rows": 0
               }
             },
-            "time": 26.943,
+            "time": 27.036,
             "scope": [],
             "partial": false,
             "errors": [
