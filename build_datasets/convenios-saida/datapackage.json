@@ -686,7 +686,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.017,
+        "time": 0.018,
         "errors": [],
         "tasks": [
           {
@@ -718,7 +718,7 @@
                 "rows": 0
               }
             },
-            "time": 0.017,
+            "time": 0.018,
             "scope": [],
             "partial": false,
             "errors": [
@@ -935,7 +935,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 1.136,
+        "time": 1.139,
         "errors": [],
         "tasks": [
           {
@@ -1133,7 +1133,7 @@
                 "rows": 0
               }
             },
-            "time": 1.136,
+            "time": 1.139,
             "scope": [],
             "partial": false,
             "errors": [
@@ -2279,7 +2279,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 4.378,
+        "time": 4.56,
         "errors": [],
         "tasks": [
           {
@@ -2364,20 +2364,21 @@
               "mediatype": "text/csv",
               "encoding": "utf-8-sig",
               "dialect": {
-                "delimiter": ";"
+                "delimiter": ";",
+                "quoteChar": "\""
               },
               "profile": "tabular-data-resource",
               "scheme": "file",
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "bc3531251488295f12b0c248fc767380",
-                "bytes": 3417135,
+                "hash": "83e546edfab67b09867b3a3fd0ce0be6",
+                "bytes": 3425790,
                 "fields": 5,
                 "rows": 46552
               }
             },
-            "time": 4.378,
+            "time": 4.56,
             "scope": [
               "hash-count-error",
               "byte-count-error",
