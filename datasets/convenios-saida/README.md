@@ -12,5 +12,5 @@ Ele é composto pelas seguintes [tabelas fato](https://pt.wikipedia.org/wiki/Tab
 - `fl_convenio_alteracao`
 
 Informações sobre o SIGCON-SAÍDA e atendimento sobre demandas específicas
-- [Portal SIGCON-SAÍDA](https://sigconsaida.mg.gov.br/):
+- [Portal SIGCON-SAÍDA](https://sigconsaida.mg.gov.br/)
 - [Atendimento SIGCON-SAÍDA](mailto:atendimento@sigconsaida.mg.gov.br): Fale diretamente com a Superintendência Central de Convênios e Parcerias
