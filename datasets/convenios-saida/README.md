@@ -10,3 +10,7 @@ Ele é composto pelas seguintes [tabelas fato](https://pt.wikipedia.org/wiki/Tab
 - `ft_convenio_metaetapa`
 - `fl_convenio_interveniente`
 - `fl_convenio_alteracao`
+
+Informações sobre o SIGCON-SAÍDA e atendimento sobre demandas específicas
+- [Portal SIGCON-SAÍDA](https://sigconsaida.mg.gov.br/):
+- [Atendimento SIGCON-SAÍDA](mailto:atendimento@sigconsaida.mg.gov.br): Fale diretamente com a Superintendência Central de Convênios e Parcerias
