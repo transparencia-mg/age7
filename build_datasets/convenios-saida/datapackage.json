@@ -935,7 +935,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 1.209,
+        "time": 1.161,
         "errors": [],
         "tasks": [
           {
@@ -1127,13 +1127,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "2208d81663bcd71421aca082e8808de4",
-                "bytes": 6356508,
+                "hash": "0a522c134292411e9724ea015d0aff2a",
+                "bytes": 6357413,
                 "fields": 11,
                 "rows": 0
               }
             },
-            "time": 1.209,
+            "time": 1.161,
             "scope": [],
             "partial": false,
             "errors": [
@@ -1433,7 +1433,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 9.428,
+        "time": 9.441,
         "errors": [],
         "tasks": [
           {
@@ -1703,13 +1703,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "fe177e3eba0f8220598f367bbf073cde",
-                "bytes": 1243516,
+                "hash": "2964c644c84a0dfb7df2a071a009fac8",
+                "bytes": 1250938,
                 "fields": 14,
                 "rows": 70749
               }
             },
-            "time": 9.428,
+            "time": 9.441,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2071,7 +2071,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 2.209,
+        "time": 2.222,
         "errors": [],
         "tasks": [
           {
@@ -2147,13 +2147,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "abcd2f2acd408071d852581abf211e87",
-                "bytes": 17059,
+                "hash": "15a8272808715bc8bd2eec841480617e",
+                "bytes": 17049,
                 "fields": 2,
                 "rows": 3326
               }
             },
-            "time": 2.209,
+            "time": 2.222,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2279,7 +2279,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 4.526,
+        "time": 4.523,
         "errors": [],
         "tasks": [
           {
@@ -2371,13 +2371,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "c05d1b75490377a19299935429ed6bf4",
-                "bytes": 3727326,
+                "hash": "f41b2e16ccb7478b4ec44ffd42179c1c",
+                "bytes": 3731313,
                 "fields": 5,
-                "rows": 46621
+                "rows": 46623
               }
             },
-            "time": 4.526,
+            "time": 4.523,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2399,18 +2399,39 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [],
+            "errors": [
+              {
+                "cells": [
+                  "68418",
+                  "01/TA",
+                  "2022-10-05",
+                  "TERMO ADITIVO",
+                  "Melhoramento de via pública com execução de recapeamento asfáltico  em conformidade com projeto e planilha orçamentária.<div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><h1 jstcache=\"\"162\"\" class=\"\"DUwDvf fontHeadlineLarge\"\" jsan=\"\"7.DUwDvf,7.fontHeadlineLarge\"\" style=\"\"background: rgb(255, 255, 255); border: 0px; border-radius: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 1.375rem; line-height: 1.75rem; font-family: \"\"Google Sans\"\", Roboto, Arial, sans-serif; list-style: none; margin: 0px; outline: 0px; overflow: visible; padding: 0px; vertical-align: baseline;\"\"><br></h1></div>"
+                ],
+                "rowNumber": 46430,
+                "rowPosition": 46431,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_convenio\": values \"68418\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"46431\" violates the foreign key: for \"id_convenio\": values \"68418\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              }
+            ],
             "stats": {
-              "errors": 0
+              "errors": 1
             },
-            "valid": true
+            "valid": false
           }
         ],
         "stats": {
-          "errors": 0,
+          "errors": 1,
           "tasks": 1
         },
-        "valid": true
+        "valid": false
       }
     },
     {
@@ -2640,7 +2661,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 8.505,
+        "time": 8.73,
         "errors": [],
         "tasks": [
           {
@@ -2863,13 +2884,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "819e4d5018bc554ee1ffc8fc5c75827b",
-                "bytes": 1141907,
+                "hash": "c67f18fc9e89fab52c1b87bda1c155d8",
+                "bytes": 1145724,
                 "fields": 12,
                 "rows": 67822
               }
             },
-            "time": 8.505,
+            "time": 8.73,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3160,7 +3181,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 8.789,
+        "time": 8.953,
         "errors": [],
         "tasks": [
           {
@@ -3412,13 +3433,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "922242937a0661ee1d95acb6d40de22b",
-                "bytes": 6983938,
+                "hash": "f6521069d21ea687e003de80cbc4ec0c",
+                "bytes": 6983943,
                 "fields": 20,
                 "rows": 68417
               }
             },
-            "time": 8.789,
+            "time": 8.953,
             "scope": [
               "hash-count-error",
               "byte-count-error",
