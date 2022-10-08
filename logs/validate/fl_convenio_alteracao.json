@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 4.523,
+  "time": 4.377,
   "errors": [],
   "tasks": [
     {
@@ -92,13 +92,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "f41b2e16ccb7478b4ec44ffd42179c1c",
-          "bytes": 3731313,
+          "hash": "295520708585a4a29003b9a4488dd8c9",
+          "bytes": 3697396,
           "fields": 5,
-          "rows": 46623
+          "rows": 46626
         }
       },
-      "time": 4.523,
+      "time": 4.377,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -120,37 +120,16 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [
-        {
-          "cells": [
-            "68418",
-            "01/TA",
-            "2022-10-05",
-            "TERMO ADITIVO",
-            "Melhoramento de via pública com execução de recapeamento asfáltico  em conformidade com projeto e planilha orçamentária.<div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><h1 jstcache=\"\"162\"\" class=\"\"DUwDvf fontHeadlineLarge\"\" jsan=\"\"7.DUwDvf,7.fontHeadlineLarge\"\" style=\"\"background: rgb(255, 255, 255); border: 0px; border-radius: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 1.375rem; line-height: 1.75rem; font-family: \"\"Google Sans\"\", Roboto, Arial, sans-serif; list-style: none; margin: 0px; outline: 0px; overflow: visible; padding: 0px; vertical-align: baseline;\"\"><br></h1></div>"
-          ],
-          "rowNumber": 46430,
-          "rowPosition": 46431,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "for \"id_convenio\": values \"68418\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-          "message": "Row at position \"46431\" violates the foreign key: for \"id_convenio\": values \"68418\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        }
-      ],
+      "errors": [],
       "stats": {
-        "errors": 1
+        "errors": 0
       },
-      "valid": false
+      "valid": true
     }
   ],
   "stats": {
-    "errors": 1,
+    "errors": 0,
     "tasks": 1
   },
-  "valid": false
+  "valid": true
 }
