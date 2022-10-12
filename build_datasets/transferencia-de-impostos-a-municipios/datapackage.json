@@ -1,0 +1,718 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "dm_tempo_mensal",
+      "title": "Calendário - Mês",
+      "path": "data/dm_tempo_mensal.csv.gz",
+      "schema": {
+        "fields": [
+          {
+            "name": "id_tempo",
+            "title": "Tempo Mensal - Chave",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true,
+              "unique": false
+            }
+          },
+          {
+            "name": "anomes_iso",
+            "title": "Ano e Mês",
+            "type": "string",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "mes",
+            "title": "Mês",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "enum": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12"
+              ]
+            },
+            "missingValues": [
+              "0",
+              "13",
+              "14"
+            ]
+          },
+          {
+            "name": "ano",
+            "title": "Ano",
+            "type": "year",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "anomes_formatado",
+            "title": "Ano e Mês Formatado",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "id_tempo"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+          "table": "dm_tempo_mensal"
+        }
+      ],
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "dialect": {
+        "delimiter": ";",
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "skipInitialSpace": false
+      },
+      "profile": "tabular-data-resource",
+      "validation": {
+        "version": "4.38.0",
+        "time": 0.108,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_tempo_mensal",
+              "title": "Calendário - Mês",
+              "path": "data/dm_tempo_mensal.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_tempo",
+                    "title": "Tempo Mensal - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "anomes_iso",
+                    "title": "Ano e Mês",
+                    "type": "string",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "mes",
+                    "title": "Mês",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "enum": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12"
+                      ]
+                    },
+                    "missingValues": [
+                      "0",
+                      "13",
+                      "14"
+                    ]
+                  },
+                  {
+                    "name": "ano",
+                    "title": "Ano",
+                    "type": "year",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "anomes_formatado",
+                    "title": "Ano e Mês Formatado",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "required": true
+                    }
+                  }
+                ],
+                "missingValues": [
+                  ""
+                ],
+                "primaryKey": [
+                  "id_tempo"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_tempo_mensal"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ";"
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "da56d93e172cb0df7154444d626e1976",
+                "bytes": 16060,
+                "fields": 5,
+                "rows": 2265
+              }
+            },
+            "time": 0.108,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
+        ],
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
+      }
+    },
+    {
+      "name": "dm_municipio",
+      "title": "Município",
+      "path": "data/dm_municipio.csv.gz",
+      "schema": {
+        "fields": [
+          {
+            "name": "id_municipio",
+            "title": "Município - Chave",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true,
+              "unique": false
+            }
+          },
+          {
+            "name": "cd_municipio_ibge",
+            "title": "Município - Código",
+            "type": "string",
+            "format": "default",
+            "description": "Código do Município conforme consta na [Tabela de Códigos de Municípios do IBGE]https://www.ibge.gov.br/explica/codigos-dos-municipios.php)\n",
+            "constraints": {
+              "required": true,
+              "unique": false
+            }
+          },
+          {
+            "name": "nome",
+            "title": "Município - Descrição",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "id_municipio"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+          "table": "dm_municipio"
+        }
+      ],
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "dialect": {
+        "delimiter": ";",
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "skipInitialSpace": false
+      },
+      "profile": "tabular-data-resource",
+      "validation": {
+        "version": "4.38.0",
+        "time": 0.047,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_municipio",
+              "title": "Município",
+              "path": "data/dm_municipio.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_municipio",
+                    "title": "Município - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "cd_municipio_ibge",
+                    "title": "Município - Código",
+                    "type": "string",
+                    "format": "default",
+                    "description": "Código do Município conforme consta na [Tabela de Códigos de Municípios do IBGE]https://www.ibge.gov.br/explica/codigos-dos-municipios.php)\n",
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "nome",
+                    "title": "Município - Descrição",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "required": true
+                    }
+                  }
+                ],
+                "missingValues": [
+                  ""
+                ],
+                "primaryKey": [
+                  "id_municipio"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_municipio"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ";"
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "755abdecc597069248de6eb367ac82f9",
+                "bytes": 10082,
+                "fields": 3,
+                "rows": 915
+              }
+            },
+            "time": 0.047,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
+        ],
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
+      }
+    },
+    {
+      "name": "ft_repasse_mun",
+      "title": "Transferência de Impostos a Municípios",
+      "path": "data/ft_repasse_mun.csv.gz",
+      "schema": {
+        "fields": [
+          {
+            "name": "id_tempo",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "id_municipio",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "ano_particao",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "vr_icms",
+            "type": "number",
+            "format": "default",
+            "bareNumber": true,
+            "decimalChar": ".",
+            "constraints": {
+              "required": true
+            },
+            "groupChar": ""
+          },
+          {
+            "name": "vr_ipi",
+            "type": "number",
+            "format": "default",
+            "bareNumber": true,
+            "decimalChar": ".",
+            "constraints": {
+              "required": true
+            },
+            "groupChar": ""
+          },
+          {
+            "name": "vr_ipva",
+            "type": "number",
+            "format": "default",
+            "bareNumber": true,
+            "decimalChar": ".",
+            "constraints": {
+              "required": true
+            },
+            "groupChar": ""
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "id_municipio"
+            ],
+            "reference": {
+              "fields": [
+                "id_municipio"
+              ],
+              "resource": "dm_municipio"
+            }
+          },
+          {
+            "fields": [
+              "id_tempo"
+            ],
+            "reference": {
+              "fields": [
+                "id_tempo"
+              ],
+              "resource": "dm_tempo_mensal"
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+          "table": "ft_repasse_mun"
+        }
+      ],
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "dialect": {
+        "delimiter": ";",
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "skipInitialSpace": false
+      },
+      "profile": "tabular-data-resource",
+      "validation": {
+        "version": "4.38.0",
+        "time": 8.121,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "ft_repasse_mun",
+              "title": "Transferência de Impostos a Municípios",
+              "path": "data/ft_repasse_mun.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_tempo",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "id_municipio",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "ano_particao",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "vr_icms",
+                    "type": "number",
+                    "format": "default",
+                    "bareNumber": true,
+                    "decimalChar": ".",
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "vr_ipi",
+                    "type": "number",
+                    "format": "default",
+                    "bareNumber": true,
+                    "decimalChar": ".",
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "vr_ipva",
+                    "type": "number",
+                    "format": "default",
+                    "bareNumber": true,
+                    "decimalChar": ".",
+                    "constraints": {
+                      "required": true
+                    }
+                  }
+                ],
+                "missingValues": [
+                  ""
+                ],
+                "foreignKeys": [
+                  {
+                    "fields": [
+                      "id_municipio"
+                    ],
+                    "reference": {
+                      "fields": [
+                        "id_municipio"
+                      ],
+                      "resource": "dm_municipio"
+                    }
+                  },
+                  {
+                    "fields": [
+                      "id_tempo"
+                    ],
+                    "reference": {
+                      "fields": [
+                        "id_tempo"
+                      ],
+                      "resource": "dm_tempo_mensal"
+                    }
+                  }
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "ft_repasse_mun"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ";"
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "bc34de904c2b6ce6cd30d8c6e31fcaba",
+                "bytes": 2986571,
+                "fields": 6,
+                "rows": 180836
+              }
+            },
+            "time": 8.121,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
+        ],
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
+      }
+    }
+  ],
+  "name": "transferencia-de-impostos-a-municipios",
+  "owner_org": "controladoria-geral-do-estado-cge",
+  "frequência de atualização": "diária",
+  "contributors": [
+    {
+      "title": "Diretoria Central de Transparência Ativa",
+      "role": "author",
+      "email": "transparencia@cge.mg.gov.br"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "description": "None\n# Portal da Transparência\n\nEsse data package visa documentar as tabelas do modelo dimensional utilizado no banco de dados do Portal da Transparência. \nOs data packages representando consultas específicas do Portal da Transparência serão extraídos deste data package para fins de publicação.\n\nEssa organização foi utilizada para evitar a necessidade de manter documentação em múltiplos repositórios para tabelas que são utilizadas em múltiplas consultas.\n\n## Instalação e configuração\n\nInstruções sobre instalação dos pré-requisitos e configuração do ambiente estão disponíves no arquivo [INSTALL](INSTALL.md)\n\n## Uso\n\n### Linha de comando\n\n#### Documentação\n\n```bash\nmake preview\n```\n\n```bash\nmake format resource=resource-name\n```\n\n#### Validação\n\nPara validação do data package com `make validate` e `make validate_metadata` é necessário a ativação do ambiente virtual do Python criado durante o processo de instalação.\n\nPara determinar qual comando para fazer a ativação execute na linha de comando\n\n```bash\nconda env list\n# conda environments:\n# age7                     /path/r-miniconda/envs/age7\n# base                  *  /path/opt/anaconda3\n```\n\nPara ativar execute\n\n```bash\nconda activate age7\n```\n\nEm alguns casos, o \"atalho\" para ativação do ambiente conda não é registrado. Por exemplo\n\n```bash\nconda env list\n# conda environments:\n                         /Users/fjunior/Library/r-miniconda/envs/age7\nbase                     /Users/fjunior/opt/anaconda3\n```\n\nNesse caso, ao invés de executar `conda activate age7`  necessário indicar o caminho para o ambiente conda (eg. `conda activate /path/r-miniconda/envs/age7`).\n\nNo windows é necessário utilizar o separador \\ no lugar de /:\n\n```bash\nconda activate C:\\Users\\user\\AppData\\Local\\R-MINI~1\\envs\\age7\n```\n\nO seu prompt da linha de comando, apesar de formas possivelmente diferentes, vai indicar se o ambiente virtual está ativo\n\n- `remuneracao$` -> `(age7) remuneracao$`\n\nPara validar: \n\n - os metadados armazenados no table schema, execute:\n\n```bash\nmake validate_metadata resource=resource_name\n```\n\n - os dados armazenados em `data/`, em conformidade com os metadados, execute:\n\n```bash\nmake validate\n```\n\n - somente um recurso unitário armazenado em `data/`, em conformidade com os metadados, execute:\n\n```bash\nmake validate_data resource=resource_name\n```\n\n### Rstudio\n\nO script `scripts/exploratory-analysis.R` pode ser utilizado de forma interativa para o processo de análise exploratória para construção de um perfil dos recursos (ie. tabelas fato e dimensão).\n\n\n",
+  "keywords": [
+    "Portal da Transparência",
+    "Repasses",
+    "Transferências"
+  ],
+  "version": "0.1.0",
+  "title": "Despesas com repasse a municípios",
+  "homepage": "http://www.transparencia.mg.gov.br/transferencia-de-impostos-a-municipios"
+}
