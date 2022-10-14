@@ -37,6 +37,8 @@ fields:
     format: default
     constraints:
       required: true
+      minimum: 2002
+      maximum: 2050
   - name: data_formatada
     title: Data Formatada
     type: date
