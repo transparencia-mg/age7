@@ -45,6 +45,8 @@ fields:
     bareNumber: true
     constraints:
       required: true
+      minimum: 2002
+      maximum: 2050
   - name: anomes_formatado
     title: Ano e Mês Formatado
     type: string
