@@ -12,6 +12,10 @@ fields:
     type: year
     format: default
     bareNumber: true
+    constraints:
+      required: true
+      minimum: 2002
+      maximum: 2050
     missingValues:
       - '0'
 primaryKey:
