@@ -474,7 +474,9 @@
             "type": "year",
             "format": "default",
             "constraints": {
-              "required": true
+              "required": true,
+              "minimum": 1900,
+              "maximum": 2050
             }
           },
           {
@@ -513,7 +515,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.537,
+        "time": 4.001,
         "errors": [],
         "tasks": [
           {
@@ -573,7 +575,9 @@
                     "type": "year",
                     "format": "default",
                     "constraints": {
-                      "required": true
+                      "required": true,
+                      "minimum": 1900,
+                      "maximum": 2050
                     }
                   },
                   {
@@ -616,7 +620,7 @@
                 "rows": 55153
               }
             },
-            "time": 3.537,
+            "time": 4.001,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -731,7 +735,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 36.351,
+        "time": 39.843,
         "errors": [],
         "tasks": [
           {
@@ -812,13 +816,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "a396694c736a06af4a5b24bda37c281f",
-                "bytes": 20122648,
+                "hash": "4e1f1342b73370675963bfc4db9c0e9f",
+                "bytes": 20131781,
                 "fields": 4,
                 "rows": 1162987
               }
             },
-            "time": 36.351,
+            "time": 39.843,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -997,7 +1001,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 23.121,
+        "time": 25.184,
         "errors": [],
         "tasks": [
           {
@@ -1140,13 +1144,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "5256538c1bb927be842835c795b5b02e",
-                "bytes": 93105,
+                "hash": "a6e79330c879b3316f88e2f148da9e7f",
+                "bytes": 92887,
                 "fields": 7,
                 "rows": 8825
               }
             },
-            "time": 23.121,
+            "time": 25.184,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1200,7 +1204,7 @@
       "path": "https://creativecommons.org/licenses/by/4.0/"
     }
   ],
-  "description": "None\n# Portal da Transparência\n\nEsse data package visa documentar as tabelas do modelo dimensional utilizado no banco de dados do Portal da Transparência. \nOs data packages representando consultas específicas do Portal da Transparência serão extraídos deste data package para fins de publicação.\n\nEssa organização foi utilizada para evitar a necessidade de manter documentação em múltiplos repositórios para tabelas que são utilizadas em múltiplas consultas.\n\n## Instalação e configuração\n\nInstruções sobre instalação dos pré-requisitos e configuração do ambiente estão disponíves no arquivo [INSTALL](INSTALL.md)\n\n## Uso\n\n### Linha de comando\n\n#### Documentação\n\n```bash\nmake preview\n```\n\n```bash\nmake format resource=resource-name\n```\n\n#### Validação\n\nPara validação do data package com `make validate` e `make validate_metadata` é necessário a ativação do ambiente virtual do Python criado durante o processo de instalação.\n\nPara determinar qual comando para fazer a ativação execute na linha de comando\n\n```bash\nconda env list\n# conda environments:\n# age7                     /path/r-miniconda/envs/age7\n# base                  *  /path/opt/anaconda3\n```\n\nPara ativar execute\n\n```bash\nconda activate age7\n```\n\nEm alguns casos, o \"atalho\" para ativação do ambiente conda não é registrado. Por exemplo\n\n```bash\nconda env list\n# conda environments:\n                         /Users/fjunior/Library/r-miniconda/envs/age7\nbase                     /Users/fjunior/opt/anaconda3\n```\n\nNesse caso, ao invés de executar `conda activate age7`  necessário indicar o caminho para o ambiente conda (eg. `conda activate /path/r-miniconda/envs/age7`).\n\nNo windows é necessário utilizar o separador \\ no lugar de /:\n\n```bash\nconda activate C:\\Users\\user\\AppData\\Local\\R-MINI~1\\envs\\age7\n```\n\nO seu prompt da linha de comando, apesar de formas possivelmente diferentes, vai indicar se o ambiente virtual está ativo\n\n- `remuneracao$` -> `(age7) remuneracao$`\n\nPara validar: \n\n - os metadados armazenados no table schema, execute:\n\n```bash\nmake validate_metadata resource=resource_name\n```\n\n - os dados armazenados em `data/`, em conformidade com os metadados, execute:\n\n```bash\nmake validate\n```\n\n - somente um recurso unitário armazenado em `data/`, em conformidade com os metadados, execute:\n\n```bash\nmake validate_data resource=resource_name\n```\n\n### Rstudio\n\nO script `scripts/exploratory-analysis.R` pode ser utilizado de forma interativa para o processo de análise exploratória para construção de um perfil dos recursos (ie. tabelas fato e dimensão).\n\n\n",
+  "description": "None\n# Portal da Transparência\n\nEsse data package visa documentar as tabelas do modelo dimensional utilizado no banco de dados do Portal da Transparência. \nOs data packages representando consultas específicas do Portal da Transparência serão extraídos deste data package para fins de publicação.\n\nEssa organização foi utilizada para evitar a necessidade de manter documentação em múltiplos repositórios para tabelas que são utilizadas em múltiplas consultas.\n\n## Instalação e configuração\n\nInstruções sobre instalação dos pré-requisitos e configuração do ambiente estão disponíves no arquivo [INSTALL](INSTALL.md)\n\n## Uso\n\n### Linha de comando\n\n#### Documentação\n\n```bash\nmake preview\n```\n\n```bash\nmake format resource=resource-name\n```\n\n#### Validação\n\nPara validação do data package com `make validate` e `make validate_metadata` é necessário a ativação do ambiente virtual do Python criado durante o processo de instalação.\n\nPara determinar qual comando para fazer a ativação execute na linha de comando\n\n```bash\nconda env list\n# conda environments:\n# age7                     /path/r-miniconda/envs/age7\n# base                  *  /path/opt/anaconda3\n```\n\nPara ativar execute\n\n```bash\nconda activate age7\n```\n\nEm alguns casos, o \"atalho\" para ativação do ambiente conda não é registrado. Por exemplo\n\n```bash\nconda env list\n# conda environments:\n                         /Users/fjunior/Library/r-miniconda/envs/age7\nbase                     /Users/fjunior/opt/anaconda3\n```\n\nNesse caso, ao invés de executar `conda activate age7`  necessário indicar o caminho para o ambiente conda (eg. `conda activate /path/r-miniconda/envs/age7`).\n\nNo windows é necessário utilizar o separador \\ no lugar de /:\n\n```bash\nconda activate C:\\Users\\user\\AppData\\Local\\R-MINI~1\\envs\\age7\n```\n\nO seu prompt da linha de comando, apesar de formas possivelmente diferentes, vai indicar se o ambiente virtual está ativo\n\n- `remuneracao$` -> `(age7) remuneracao$`\n\nPara validar: \n\n - os metadados armazenados no table schema, execute:\n\n```bash\nmake validate_metadata resource=resource_name\n```\n\n - os dados armazenados em `data/`, em conformidade com os metadados, execute:\n\n```bash\nmake validate\n```\n\n - somente um recurso unitário armazenado em `data/`, em conformidade com os metadados, execute:\n\n```bash\nmake validate_data resource=resource_name\n```\n\n### Rstudio\n\nO script `scripts/exploratory-analysis.R` pode ser utilizado de forma interativa para o processo de análise exploratória para construção de um perfil dos recursos (ie. tabelas fato e dimensão).\n\n",
   "keywords": [
     "Portal da Transparência",
     "Dívida"

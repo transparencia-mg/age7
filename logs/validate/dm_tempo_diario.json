@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 3.537,
+  "time": 4.001,
   "errors": [],
   "tasks": [
     {
@@ -60,7 +60,9 @@
               "type": "year",
               "format": "default",
               "constraints": {
-                "required": true
+                "required": true,
+                "minimum": 1900,
+                "maximum": 2050
               }
             },
             {
@@ -103,7 +105,7 @@
           "rows": 55153
         }
       },
-      "time": 3.537,
+      "time": 4.001,
       "scope": [
         "hash-count-error",
         "byte-count-error",
