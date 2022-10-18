@@ -8,6 +8,7 @@ help:
 container-bash: ## Start Docker Container
 	@echo 'Starting Docker Container...'
 	@docker run -it --rm -v /$(PWD):/work_dir \
+	                     -v /pwd:/pwd \
 						 -v ~/.local/share/AzureR:/root/.local/share/AzureR \
 						 -e CKAN_HOST=$(CKAN_HOST) \
 						 -e CKAN_KEY=$(CKAN_KEY) \
