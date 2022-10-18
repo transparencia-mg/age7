@@ -88,3 +88,6 @@ make validate_data resource=resource_name
 O script `scripts/exploratory-analysis.R` pode ser utilizado de forma interativa para o processo de análise exploratória para construção de um perfil dos recursos (ie. tabelas fato e dimensão).
 
 
+
+
+
