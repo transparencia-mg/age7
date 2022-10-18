@@ -89,3 +89,9 @@ O script `scripts/exploratory-analysis.R` pode ser utilizado de forma interativa
 
 
 
+
+
+
+
+
+
