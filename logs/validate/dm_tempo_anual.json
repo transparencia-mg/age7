@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 0.022,
+  "time": 0.025,
   "errors": [],
   "tasks": [
     {
@@ -27,6 +27,11 @@
               "type": "year",
               "format": "default",
               "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "minimum": 1900,
+                "maximum": 2050
+              },
               "missingValues": [
                 "0"
               ]
@@ -59,7 +64,7 @@
           "rows": 152
         }
       },
-      "time": 0.022,
+      "time": 0.025,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -81,16 +86,39 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "cell": "0",
+          "fieldName": "ano",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "299",
+            "0"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"required\" is \"True\"",
+          "message": "The cell \"0\" in row at position \"2\" and field \"ano\" at position \"2\" does not conform to a constraint: constraint \"required\" is \"True\"",
+          "description": "A field value does not conform to a constraint."
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 1
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 1,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }
