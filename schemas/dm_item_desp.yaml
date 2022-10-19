@@ -1,5 +1,5 @@
 fields:
-  - name: id_item_desp
+  - name: id_item
     title: Item de Despesa - Chave
     type: integer
     format: default
@@ -7,7 +7,7 @@ fields:
     constraints:
       required: true
       unique: false
-  - name: cd_item_desp
+  - name: cd_item
     title: Item de Despesa - Código
     description: Código identificador do item de despesa
     type: string
@@ -121,4 +121,4 @@ fields:
 missingValues:
   - 'SEM DESCRIÇÃO'
 primaryKey:
-  - id_item_desp
+  - id_item
