@@ -1,8 +1,4 @@
-Updating 15023eb..74cbe0b
-Fast-forward
- datapackage.yaml         | 1 +
- schemas/ft_convenio.yaml | 7 +------
- 2 files changed, 2 insertions(+), 6 deletions(-)
+Already up to date.
 rm -rf logs/extract/*
 rm -rf logs/parse/*
 rm -rf logs/tests/*
@@ -17,5 +13,4 @@ rm -rf data/raw/*
 rm -f datapackage.json
 rm -rf build_datasets
 rm -rf reports.html
-Rscript --verbose scripts/r/parse-sql.R dm_item_desp 2> logs/parse/dm_item_desp.Rout
 Rscript --verbose scripts/r/parse-sql.R ft_convenio 2> logs/parse/ft_convenio.Rout
