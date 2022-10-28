@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 16.432,
+  "time": 397.124,
   "errors": [],
   "tasks": [
     {
@@ -529,23 +529,76 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "0898c1b4413312a567b09d90573b4e99",
-          "bytes": 57605240,
+          "hash": "b07c3261cf48eb124760c4f692383dde",
+          "bytes": 57716253,
           "fields": 27,
-          "rows": 0
+          "rows": 1892465
         }
       },
-      "time": 16.432,
-      "scope": [],
+      "time": 397.124,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
       "partial": false,
       "errors": [
         {
-          "code": "schema-error",
-          "name": "Schema Error",
-          "tags": [],
-          "note": "primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
-          "message": "Schema is not valid: primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
-          "description": "Provided schema is not valid."
+          "cells": [
+            "43582",
+            "1",
+            "1831027",
+            "50",
+            "1",
+            "8",
+            "880",
+            "72557",
+            "1",
+            "77",
+            "479",
+            "1836",
+            "91508",
+            "380848",
+            "46296",
+            "889",
+            "1831808",
+            "2602",
+            "2045",
+            "2022",
+            "2022-10-26",
+            "0.0000",
+            "1798.0000",
+            "1798.00",
+            "1798.0000",
+            "1798.00",
+            "1798.00"
+          ],
+          "rowNumber": 1814682,
+          "rowPosition": 1814683,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_contratado\": values \"72557\" not found in the lookup table \"dm_contratado\" as \"id_contratado\"",
+          "message": "Row at position \"1814683\" violates the foreign key: for \"id_contratado\": values \"72557\" not found in the lookup table \"dm_contratado\" as \"id_contratado\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
         }
       ],
       "stats": {

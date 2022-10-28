@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 29.303,
+  "time": 81.976,
   "errors": [],
   "tasks": [
     {
@@ -382,34 +382,44 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "2ab0f9b1bbc4ba8bd5e6b9ed894a5eac",
-          "bytes": 5169579,
+          "hash": "041173b243fb79bfe84fee35303ad818",
+          "bytes": 5197769,
           "fields": 21,
-          "rows": 0
+          "rows": 348721
         }
       },
-      "time": 29.303,
-      "scope": [],
-      "partial": false,
-      "errors": [
-        {
-          "code": "schema-error",
-          "name": "Schema Error",
-          "tags": [],
-          "note": "primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
-          "message": "Schema is not valid: primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
-          "description": "Provided schema is not valid."
-        }
+      "time": 81.976,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
       ],
+      "partial": false,
+      "errors": [],
       "stats": {
-        "errors": 1
+        "errors": 0
       },
-      "valid": false
+      "valid": true
     }
   ],
   "stats": {
-    "errors": 1,
+    "errors": 0,
     "tasks": 1
   },
-  "valid": false
+  "valid": true
 }
