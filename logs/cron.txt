@@ -23,3 +23,16 @@ rsync error: some files/attrs were not transferred (see previous errors) (code 2
 rsync: [sender] link_stat "/work_dir/data/raw/*" failed: No such file or directory (2)
 rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1333) [sender=3.2.3]
 make: *** [Makefile:37: full-extract] Error 137
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+[main 938dff1] Atualização age7 - logs notificação
+ 5 files changed, 11 insertions(+), 11 deletions(-)
+ create mode 100644 logs/full_extract.txt
+ delete mode 100644 logs/parse/ft_convenio.Rout
+remote: error: Trace: 6255b601a8778ee79ae5f2eddaebfdc9d27393beb5661fed7d970d5055fc2686        
+remote: error: See http://git.io/iEPt8g for more information.        
+remote: error: File logs/full_extract.txt is 691.69 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/transparencia-mg/age7.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/transparencia-mg/age7.git'
