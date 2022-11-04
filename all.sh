@@ -8,6 +8,7 @@ make ingest && \
 make data && \
 make validate && \
 make check-validation && \
+make report && \
 make datapackage.json && \
 make test && \
 make build && \
