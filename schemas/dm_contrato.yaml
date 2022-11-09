@@ -20,7 +20,8 @@ fields:
     description: Link para acessar o contrato
     type: string
     format: default
-    missingValues: ''
+    missingValues: 
+      - ''
   - name: objeto
     title: Objeto
     description: Descrição dos bens e serviços que estão sendo comprados e sua finalidade.
