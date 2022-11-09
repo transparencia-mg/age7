@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 0.03,
+  "time": 0.021,
   "errors": [],
   "tasks": [
     {
@@ -28,15 +28,8 @@
               "format": "default",
               "description": "- >\n   - Orçamento Fiscal: Despesas Correntes , Despesas de Capital e Despesa de Pessoal;\n   - Orçamento de Investimento das empresas controladas pelo Estado.\n",
               "constraints": {
-                "enum": [
-                  "ORCAMENTO FISCAL",
-                  "DESPESAS DE PESSOAL",
-                  "DESPESAS CORRENTES",
-                  "DESPESAS DE CAPITAL",
-                  "ORCAMENTO DE INVESTIMENTO DAS EMPRESAS CONTROLADAS PELO ESTADO"
-                ]
+                "required": true
               },
-              "required": true,
               "unique": false
             }
           ],
@@ -70,7 +63,7 @@
           "rows": 0
         }
       },
-      "time": 0.03,
+      "time": 0.021,
       "scope": [
         "hash-count-error",
         "byte-count-error",
