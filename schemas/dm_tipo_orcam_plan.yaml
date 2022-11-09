@@ -22,7 +22,8 @@ fields:
         - 'DESPESAS CORRENTES'
         - 'DESPESAS DE CAPITAL'
         - 'ORCAMENTO DE INVESTIMENTO DAS EMPRESAS CONTROLADAS PELO ESTADO'
-    required: true
+    constraints:
+        required: true
     unique: false
 missingValues:
   - ''
