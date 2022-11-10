@@ -219,3 +219,78 @@ Traceback (most recent call last):
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 make: *** [Makefile:79: check-validation] Error 1
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+[main 63d7602] Atualização age7 - logs notificação
+ 158 files changed, 30280 insertions(+), 1465231 deletions(-)
+ delete mode 100644 build_datasets/compras_contratos/CHANGELOG.md
+ delete mode 100644 build_datasets/compras_contratos/CONTRIBUTING.md
+ delete mode 100644 build_datasets/compras_contratos/README.md
+ delete mode 100644 build_datasets/compras_contratos/datapackage.json
+ delete mode 100644 build_datasets/convenios-entrada/CHANGELOG.md
+ delete mode 100644 build_datasets/convenios-entrada/CONTRIBUTING.md
+ delete mode 100644 build_datasets/convenios-entrada/README.md
+ delete mode 100644 build_datasets/convenios-entrada/datapackage.json
+ delete mode 100644 build_datasets/convenios-saida/CHANGELOG.md
+ delete mode 100644 build_datasets/convenios-saida/CONTRIBUTING.md
+ delete mode 100644 build_datasets/convenios-saida/README.md
+ delete mode 100644 build_datasets/convenios-saida/datapackage.json
+ delete mode 100644 build_datasets/despesa-com-pessoal/CHANGELOG.md
+ delete mode 100644 build_datasets/despesa-com-pessoal/CONTRIBUTING.md
+ delete mode 100644 build_datasets/despesa-com-pessoal/README.md
+ delete mode 100644 build_datasets/despesa-com-pessoal/datapackage.json
+ delete mode 100644 build_datasets/despesa/CHANGELOG.md
+ delete mode 100644 build_datasets/despesa/CONTRIBUTING.md
+ delete mode 100644 build_datasets/despesa/README.md
+ delete mode 100644 build_datasets/despesa/datapackage.json
+ delete mode 100644 build_datasets/diarias/CHANGELOG.md
+ delete mode 100644 build_datasets/diarias/CONTRIBUTING.md
+ delete mode 100644 build_datasets/diarias/README.md
+ delete mode 100644 build_datasets/diarias/datapackage.json
+ delete mode 100644 build_datasets/execucao-da-divida/CHANGELOG.md
+ delete mode 100644 build_datasets/execucao-da-divida/CONTRIBUTING.md
+ delete mode 100644 build_datasets/execucao-da-divida/README.md
+ delete mode 100644 build_datasets/execucao-da-divida/datapackage.json
+ delete mode 100644 build_datasets/planejamento-e-monitoramento/CHANGELOG.md
+ delete mode 100644 build_datasets/planejamento-e-monitoramento/CONTRIBUTING.md
+ delete mode 100644 build_datasets/planejamento-e-monitoramento/README.md
+ delete mode 100644 build_datasets/planejamento-e-monitoramento/datapackage.json
+ delete mode 100644 build_datasets/proposta-lei-orcamentaria/CHANGELOG.md
+ delete mode 100644 build_datasets/proposta-lei-orcamentaria/CONTRIBUTING.md
+ delete mode 100644 build_datasets/proposta-lei-orcamentaria/README.md
+ delete mode 100644 build_datasets/proposta-lei-orcamentaria/datapackage.json
+ delete mode 100644 build_datasets/receita/CHANGELOG.md
+ delete mode 100644 build_datasets/receita/CONTRIBUTING.md
+ delete mode 100644 build_datasets/receita/README.md
+ delete mode 100644 build_datasets/receita/datapackage.json
+ delete mode 100644 build_datasets/restos_pagar/CHANGELOG.md
+ delete mode 100644 build_datasets/restos_pagar/CONTRIBUTING.md
+ delete mode 100644 build_datasets/restos_pagar/README.md
+ delete mode 100644 build_datasets/restos_pagar/datapackage.json
+ delete mode 100644 build_datasets/transferencia-de-impostos-a-municipios/CHANGELOG.md
+ delete mode 100644 build_datasets/transferencia-de-impostos-a-municipios/CONTRIBUTING.md
+ delete mode 100644 build_datasets/transferencia-de-impostos-a-municipios/README.md
+ delete mode 100644 build_datasets/transferencia-de-impostos-a-municipios/datapackage.json
+ delete mode 100644 build_datasets/viagens/CHANGELOG.md
+ delete mode 100644 build_datasets/viagens/CONTRIBUTING.md
+ delete mode 100644 build_datasets/viagens/README.md
+ delete mode 100644 build_datasets/viagens/datapackage.json
+ delete mode 100644 datapackage.json
+ rewrite logs/check_validation.txt (89%)
+ delete mode 100644 logs/extract/dm_item_desp.txt
+ create mode 100644 logs/parse/dm_contrato.Rout
+ create mode 100644 logs/parse/dm_tipo_orcam_plan.Rout
+ delete mode 100644 logs/tests/test_dm_contratado.Rout
+ delete mode 100644 logs/tests/test_dm_favorecido.Rout
+ delete mode 100644 logs/tests/test_dm_favorecido_scdp.Rout
+ delete mode 100644 logs/update/compras_contratos.txt
+ delete mode 100644 logs/update/convenios-saida.txt
+ delete mode 100644 logs/update/despesa.txt
+ delete mode 100644 logs/update/diarias.txt
+ delete mode 100644 logs/update/restos_pagar.txt
+ rename logs/{build.txt => validate/fl_despesfl_despesa_pgto} (100%)
+ rewrite logs/validate/ft_compras.json (96%)
+ rewrite logs/validate/ft_receita_prevista_v2018.json (97%)
+ rewrite logs/validate/ft_receita_v2018.json (98%)
+To https://github.com/transparencia-mg/age7.git
+   3d79e61..63d7602  main -> main
