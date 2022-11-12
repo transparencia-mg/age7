@@ -19,18 +19,12 @@ Traceback (most recent call last):
     update(
   File "/usr/local/lib/python3.9/site-packages/dpckan/update_dataset.py", line 13, in update
     dataset_update(ckan_instance, package, datastore, exit_code)
-  File "/usr/local/lib/python3.9/site-packages/dpckan/functions.py", line 136, in dataset_update
-    different_resources = dataset_diff(ckan_instance, datapackage)
-  File "/usr/local/lib/python3.9/site-packages/dpckan/functions.py", line 167, in dataset_diff
-    resource_diff = get_resource_diff(ckan_instance, datapackage, resource_name, resource_id)
-  File "/usr/local/lib/python3.9/site-packages/dpckan/functions.py", line 195, in get_resource_diff
-    resource_diff['metadada_diff'] = is_resource_metadata_diff(ckan_instance,
-  File "/usr/local/lib/python3.9/site-packages/dpckan/functions.py", line 213, in is_resource_metadata_diff
-    remote_dataset_metadata = get_remote_dataset_metadata(ckan_instance, datapackage.name)
-  File "/usr/local/lib/python3.9/site-packages/dpckan/functions.py", line 221, in get_remote_dataset_metadata
-    ckan_datapackage_resource_id = get_ckan_datapackage_resource_id(ckan_instance, dataset_name)
-  File "/usr/local/lib/python3.9/site-packages/dpckan/functions.py", line 289, in get_ckan_datapackage_resource_id
-    ckan_datapackage_resources = ckan_instance.action.package_show(id=dataset_id)["resources"]
+  File "/usr/local/lib/python3.9/site-packages/dpckan/functions.py", line 147, in dataset_update
+    dataset_patch(ckan_instance, datapackage)
+  File "/usr/local/lib/python3.9/site-packages/dpckan/functions.py", line 155, in dataset_patch
+    datapackage['resources_ids'] = get_ckan_dataset_resources_ids(ckan_instance, datapackage)
+  File "/usr/local/lib/python3.9/site-packages/dpckan/functions.py", line 173, in get_ckan_dataset_resources_ids
+    ckan_dataset = ckan_instance.action.package_show(id = datapackage.name)
   File "/usr/local/lib/python3.9/site-packages/ckanapi/common.py", line 51, in action
     return self._ckan.call_action(name, data_dict=kwargs)
   File "/usr/local/lib/python3.9/site-packages/ckanapi/remoteckan.py", line 97, in call_action
