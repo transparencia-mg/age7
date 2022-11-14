@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 188.926,
+  "time": 0.035,
   "errors": [],
   "tasks": [
     {
@@ -62,13 +62,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "90c236e6a23e2b24d58b292b00caeffb",
-          "bytes": 65623775,
+          "hash": "86c9bc738fb5bfb618c4edf03f2a8273",
+          "bytes": 53,
           "fields": 2,
           "rows": 0
         }
       },
-      "time": 188.926,
+      "time": 0.035,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -89,26 +89,17 @@
         "constraint-error",
         "unique-error"
       ],
-      "partial": true,
-      "errors": [
-        {
-          "code": "task-error",
-          "name": "Task Error",
-          "tags": [],
-          "note": "exceeded memory limit \"1000MB\"",
-          "message": "The task has an error: exceeded memory limit \"1000MB\"",
-          "description": "General task-level error."
-        }
-      ],
+      "partial": false,
+      "errors": [],
       "stats": {
-        "errors": 1
+        "errors": 0
       },
-      "valid": false
+      "valid": true
     }
   ],
   "stats": {
-    "errors": 1,
+    "errors": 0,
     "tasks": 1
   },
-  "valid": false
+  "valid": true
 }
