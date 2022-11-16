@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "formated_date": "16/11/2022 19:48:18",
+  "formated_date": "16/11/2022 20:35:22",
   "time": 0.01,
   "errors": [],
   "tasks": [
@@ -1499,53 +1499,6 @@
       ],
       "stats": {
         "errors": 14
-      },
-      "valid": false
-    },
-    {
-      "resource": {
-        "name": "dm_item_desp",
-        "title": "Item de Despesa",
-        "path": "data/dm_item_desp.csv.gz",
-        "schema": "schemas/dm_item_desp.yaml",
-        "sources": [
-          {
-            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
-            "table": "dm_item_desp"
-          }
-        ],
-        "format": "csv",
-        "mediatype": "text/csv",
-        "encoding": "utf-8-sig",
-        "dialect": {
-          "delimiter": ";"
-        },
-        "profile": "tabular-data-resource",
-        "scheme": "file",
-        "hashing": "md5",
-        "compression": "gz",
-        "stats": {
-          "hash": "",
-          "bytes": 0,
-          "fields": 0,
-          "rows": 0
-        }
-      },
-      "time": 0.019,
-      "scope": [],
-      "partial": false,
-      "errors": [
-        {
-          "code": "schema-error",
-          "name": "Schema Error",
-          "tags": [],
-          "note": "primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
-          "message": "Schema is not valid: primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
-          "description": "Provided schema is not valid."
-        }
-      ],
-      "stats": {
-        "errors": 1
       },
       "valid": false
     },
@@ -16225,8 +16178,8 @@
     }
   ],
   "stats": {
-    "errors": 513,
-    "tasks": 13
+    "errors": 512,
+    "tasks": 12
   },
   "valid": false
 }
