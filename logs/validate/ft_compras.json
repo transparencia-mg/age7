@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 407.835,
+  "time": 16.432,
   "errors": [],
   "tasks": [
     {
@@ -529,76 +529,23 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "cfee85fa398e5b5b638032e3e31fe918",
-          "bytes": 57878686,
+          "hash": "0898c1b4413312a567b09d90573b4e99",
+          "bytes": 57605240,
           "fields": 27,
-          "rows": 1898288
+          "rows": 0
         }
       },
-      "time": 407.835,
-      "scope": [
-        "hash-count-error",
-        "byte-count-error",
-        "field-count-error",
-        "row-count-error",
-        "blank-header",
-        "extra-label",
-        "missing-label",
-        "blank-label",
-        "duplicate-label",
-        "incorrect-label",
-        "blank-row",
-        "primary-key-error",
-        "foreign-key-error",
-        "extra-cell",
-        "missing-cell",
-        "type-error",
-        "constraint-error",
-        "unique-error"
-      ],
+      "time": 16.432,
+      "scope": [],
       "partial": false,
       "errors": [
         {
-          "cells": [
-            "43492",
-            "4",
-            "1831009",
-            "1",
-            "1",
-            "1",
-            "835",
-            "72545",
-            "1",
-            "77",
-            "183",
-            "4416",
-            "273711",
-            "380911",
-            "77974",
-            "889",
-            "1831800",
-            "3136",
-            "2413",
-            "2022",
-            "2022-10-27",
-            "0.0000",
-            "20000.0000",
-            "20000.00",
-            "20000.0000",
-            "20000.00",
-            "20000.00"
-          ],
-          "rowNumber": 1853845,
-          "rowPosition": 1853846,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "for \"id_contrato\": values \"77974\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-          "message": "Row at position \"1853846\" violates the foreign key: for \"id_contrato\": values \"77974\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-          "description": "Values in the foreign key fields should exist in the reference table"
+          "code": "schema-error",
+          "name": "Schema Error",
+          "tags": [],
+          "note": "primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
+          "message": "Schema is not valid: primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
+          "description": "Provided schema is not valid."
         }
       ],
       "stats": {

@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 0.059,
+  "time": 0.019,
   "errors": [],
   "tasks": [
     {
@@ -8,144 +8,7 @@
         "name": "dm_item_desp",
         "title": "Item de Despesa",
         "path": "data/dm_item_desp.csv.gz",
-        "schema": {
-          "fields": [
-            {
-              "name": "id_item",
-              "title": "Item de Despesa - Chave",
-              "type": "integer",
-              "format": "default",
-              "bareNumber": true,
-              "constraints": {
-                "required": true,
-                "unique": false
-              }
-            },
-            {
-              "name": "cd_item",
-              "title": "Item de Despesa - Código",
-              "description": "Código identificador do item de despesa",
-              "type": "string",
-              "format": "default",
-              "constraints": {
-                "enum": [
-                  "1",
-                  "2",
-                  "3",
-                  "4",
-                  "5",
-                  "6",
-                  "7",
-                  "8",
-                  "9",
-                  "10",
-                  "11",
-                  "12",
-                  "13",
-                  "14",
-                  "15",
-                  "16",
-                  "17",
-                  "18",
-                  "19",
-                  "20",
-                  "21",
-                  "22",
-                  "23",
-                  "24",
-                  "25",
-                  "26",
-                  "27",
-                  "28",
-                  "29",
-                  "30",
-                  "31",
-                  "32",
-                  "33",
-                  "34",
-                  "35",
-                  "36",
-                  "37",
-                  "38",
-                  "39",
-                  "40",
-                  "41",
-                  "42",
-                  "43",
-                  "44",
-                  "45",
-                  "46",
-                  "47",
-                  "48",
-                  "49",
-                  "50",
-                  "51",
-                  "52",
-                  "53",
-                  "54",
-                  "55",
-                  "56",
-                  "57",
-                  "58",
-                  "59",
-                  "60",
-                  "61",
-                  "62",
-                  "63",
-                  "64",
-                  "65",
-                  "66",
-                  "67",
-                  "68",
-                  "69",
-                  "70",
-                  "71",
-                  "72",
-                  "73",
-                  "74",
-                  "75",
-                  "76",
-                  "77",
-                  "78",
-                  "80",
-                  "81",
-                  "82",
-                  "83",
-                  "84",
-                  "85",
-                  "86",
-                  "87",
-                  "88",
-                  "91",
-                  "92",
-                  "93",
-                  "94",
-                  "95",
-                  "96",
-                  "97",
-                  "98",
-                  "99"
-                ]
-              },
-              "missingValues": [
-                "0"
-              ]
-            },
-            {
-              "name": "nome",
-              "title": "Item de Despesa - Descrição",
-              "description": "Desdobramento do elemento de despesa (material gráfico, medicamentos, diárias, etc)\n",
-              "type": "string",
-              "format": "default"
-            }
-          ],
-          "missingValues": [
-            "SEM DESCRIÇÃO"
-          ],
-          "primaryKey": [
-            "id_item"
-          ]
-        },
+        "schema": "schemas/dm_item_desp.yaml",
         "sources": [
           {
             "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
@@ -163,44 +26,34 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "4af1b9d80730968f27e1c2b31a4fa7e9",
-          "bytes": 9739,
-          "fields": 3,
-          "rows": 649
+          "hash": "",
+          "bytes": 0,
+          "fields": 0,
+          "rows": 0
         }
       },
-      "time": 0.059,
-      "scope": [
-        "hash-count-error",
-        "byte-count-error",
-        "field-count-error",
-        "row-count-error",
-        "blank-header",
-        "extra-label",
-        "missing-label",
-        "blank-label",
-        "duplicate-label",
-        "incorrect-label",
-        "blank-row",
-        "primary-key-error",
-        "foreign-key-error",
-        "extra-cell",
-        "missing-cell",
-        "type-error",
-        "constraint-error",
-        "unique-error"
-      ],
+      "time": 0.019,
+      "scope": [],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "code": "schema-error",
+          "name": "Schema Error",
+          "tags": [],
+          "note": "primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
+          "message": "Schema is not valid: primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
+          "description": "Provided schema is not valid."
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 1
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 1,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }
