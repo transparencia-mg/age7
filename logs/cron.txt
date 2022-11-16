@@ -12,15 +12,16 @@ hint: or --ff-only on the command line to override the configured default per
 hint: invocation.
 From https://github.com/transparencia-mg/age7
  * branch            main       -> FETCH_HEAD
-   4aa6647..bec292f  main       -> origin/main
+   15023eb..74cbe0b  main       -> origin/main
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
 rsync: [sender] link_stat "/work_dir/data/raw/*" failed: No such file or directory (2)
 rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1333) [sender=3.2.3]
 rsync: [sender] link_stat "/work_dir/data/raw/*" failed: No such file or directory (2)
 rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1333) [sender=3.2.3]
-rsync: [sender] link_stat "/work_dir/data/raw/*" failed: No such file or directory (2)
-rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1333) [sender=3.2.3]
-rsync: [sender] link_stat "/work_dir/data/raw/*" failed: No such file or directory (2)
-rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1333) [sender=3.2.3]
+<<<<<<< HEAD
 <<<<<<< HEAD
 make: *** [Makefile:36: full-extract] Error 137
 =======
@@ -13625,3 +13626,6 @@ make: *** [Makefile:72: logs/update/despesa-com-pessoal.txt] Error 1
 2022-10-18T03:20:59+0000 INFO  [dtamg_py.utils] Processando recurso ft_plan_prog_of_territorio...
 2022-10-18T03:20:59+0000 INFO  [dtamg_py.utils] Processando recurso ft_plan_prog_of_fonte...
 >>>>>>> 143b050 (Atualização age7)
+=======
+make: *** [Makefile:32: scripts/sql/ft_convenio.sql] Error 1
+>>>>>>> c730310 (Atualização age7 - logs notificação)

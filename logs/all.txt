@@ -1,16 +1,8 @@
-Auto-merging datapackage.json
-Auto-merging build_datasets/proposta-lei-orcamentaria/datapackage.json
-Auto-merging build_datasets/planejamento-e-monitoramento/datapackage.json
-Merge made by the 'recursive' strategy.
- README.md                                          |    2 +-
- .../planejamento-e-monitoramento/datapackage.json  |   74 +-
- .../proposta-lei-orcamentaria/datapackage.json     |   14 +-
- datapackage.json                                   | 1790 ++++++++++++--------
- datapackage.yaml                                   |   42 +-
- schemas/dm_tempo_anual.yaml                        |    4 +
- schemas/dm_tempo_diario.yaml                       |    2 +
- schemas/dm_tempo_mensal.yaml                       |   19 +-
- 8 files changed, 1192 insertions(+), 755 deletions(-)
+Updating 15023eb..74cbe0b
+Fast-forward
+ datapackage.yaml         | 1 +
+ schemas/ft_convenio.yaml | 7 +------
+ 2 files changed, 2 insertions(+), 6 deletions(-)
 rm -rf logs/extract/*
 rm -rf logs/parse/*
 rm -rf logs/tests/*
@@ -25,6 +17,7 @@ rm -rf data/raw/*
 rm -f datapackage.json
 rm -rf build_datasets
 rm -rf reports.html
+<<<<<<< HEAD
 Rscript --verbose scripts/r/parse-sql.R dm_tempo_diario 2> logs/parse/dm_tempo_diario.Rout
 Rscript --verbose scripts/r/parse-sql.R dm_tempo_mensal 2> logs/parse/dm_tempo_mensal.Rout
 Rscript --verbose scripts/r/parse-sql.R dm_tempo_anual 2> logs/parse/dm_tempo_anual.Rout
@@ -1694,3 +1687,7 @@ Updating data and metadata of resource ft_obra.
 Updating resource datapackage.json.
 Dataset proposta-lei-orcamentaria updated.
 >>>>>>> 143b050 (Atualização age7)
+=======
+Rscript --verbose scripts/r/parse-sql.R dm_item_desp 2> logs/parse/dm_item_desp.Rout
+Rscript --verbose scripts/r/parse-sql.R ft_convenio 2> logs/parse/ft_convenio.Rout
+>>>>>>> c730310 (Atualização age7 - logs notificação)
