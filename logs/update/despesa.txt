@@ -1,0 +1,70 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 994, in _prepare_proxy
+    conn.connect()
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 369, in connect
+    self._tunnel()
+  File "/usr/local/lib/python3.9/http/client.py", line 926, in _tunnel
+    (version, code, message) = response._read_status()
+  File "/usr/local/lib/python3.9/http/client.py", line 281, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='dados.mg.gov.br', port=443): Max retries exceeded with url: /api/action/package_show (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(104, 'Connection reset by peer')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/dpckan", line 8, in <module>
+    sys.exit(cli())
+  File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/local/lib/python3.9/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/dpckan/update_dataset.py", line 21, in update_cli
+    update(
+  File "/usr/local/lib/python3.9/site-packages/dpckan/update_dataset.py", line 13, in update
+    dataset_update(ckan_instance, package, datastore, exit_code)
+  File "/usr/local/lib/python3.9/site-packages/dpckan/functions.py", line 136, in dataset_update
+    different_resources = dataset_diff(ckan_instance, datapackage)
+  File "/usr/local/lib/python3.9/site-packages/dpckan/functions.py", line 162, in dataset_diff
+    ckan_dataset_resources_ids = get_ckan_dataset_resources_ids(ckan_instance, datapackage)
+  File "/usr/local/lib/python3.9/site-packages/dpckan/functions.py", line 173, in get_ckan_dataset_resources_ids
+    ckan_dataset = ckan_instance.action.package_show(id = datapackage.name)
+  File "/usr/local/lib/python3.9/site-packages/ckanapi/common.py", line 51, in action
+    return self._ckan.call_action(name, data_dict=kwargs)
+  File "/usr/local/lib/python3.9/site-packages/ckanapi/remoteckan.py", line 96, in call_action
+    status, response = self._request_fn(url, data, headers, files, requests_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/ckanapi/remoteckan.py", line 100, in _request_fn
+    r = self.session.post(url, data=data, headers=headers, files=files,
+  File "/usr/local/lib/python3.9/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/adapters.py", line 559, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='dados.mg.gov.br', port=443): Max retries exceeded with url: /api/action/package_show (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(104, 'Connection reset by peer')))
