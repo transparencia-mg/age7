@@ -1,0 +1,1211 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "dm_contrato_divida",
+      "title": "Contrato Dívida",
+      "path": "data/dm_contrato_divida.csv.gz",
+      "schema": {
+        "fields": [
+          {
+            "name": "id_contrato",
+            "title": "Contrato - Chave",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true,
+              "unique": false
+            }
+          },
+          {
+            "name": "cd_siafi",
+            "title": "Número SIAFI - Código",
+            "type": "string",
+            "format": "default",
+            "description": "Número de identificação Contrato no Sistema Integrado de Administração Financeira (SIAFI).\n",
+            "bareNumber": true,
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "nr_contrato_conv",
+            "title": "Número Contrato Convênio",
+            "type": "string",
+            "format": "default",
+            "description": "Número identificador do instrumento de contratação.\n"
+          },
+          {
+            "name": "dt_assinatura",
+            "title": "Data de Assinatura",
+            "type": "date",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "dt_vencimento",
+            "title": "Data de Vencimento",
+            "type": "date",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "vr_inicial",
+            "title": "Valor Inicial",
+            "type": "number",
+            "format": "default",
+            "bareNumber": true,
+            "decimalChar": ".",
+            "description": "Valor financeiro inicial do contrato ou convênio. \n",
+            "constraints": {
+              "required": true
+            },
+            "groupChar": ""
+          }
+        ],
+        "missingValues": [
+          "SEM DESCRICAO"
+        ],
+        "primaryKey": [
+          "id_contrato"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+          "table": "dm_contrato_divida"
+        }
+      ],
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "dialect": {
+        "delimiter": ";",
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "skipInitialSpace": false
+      },
+      "profile": "tabular-data-resource",
+      "validation": {
+        "version": "4.38.0",
+        "time": 0.036,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_contrato_divida",
+              "title": "Contrato Dívida",
+              "path": "data/dm_contrato_divida.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_contrato",
+                    "title": "Contrato - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "cd_siafi",
+                    "title": "Número SIAFI - Código",
+                    "type": "string",
+                    "format": "default",
+                    "description": "Número de identificação Contrato no Sistema Integrado de Administração Financeira (SIAFI).\n",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "nr_contrato_conv",
+                    "title": "Número Contrato Convênio",
+                    "type": "string",
+                    "format": "default",
+                    "description": "Número identificador do instrumento de contratação.\n"
+                  },
+                  {
+                    "name": "dt_assinatura",
+                    "title": "Data de Assinatura",
+                    "type": "date",
+                    "format": "default",
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "dt_vencimento",
+                    "title": "Data de Vencimento",
+                    "type": "date",
+                    "format": "default",
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "vr_inicial",
+                    "title": "Valor Inicial",
+                    "type": "number",
+                    "format": "default",
+                    "bareNumber": true,
+                    "decimalChar": ".",
+                    "description": "Valor financeiro inicial do contrato ou convênio. \n",
+                    "constraints": {
+                      "required": true
+                    }
+                  }
+                ],
+                "missingValues": [
+                  "SEM DESCRICAO"
+                ],
+                "primaryKey": [
+                  "id_contrato"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_contrato_divida"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ";"
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "92a2ba17ca4d73ee054ba108c361d2d3",
+                "bytes": 2068,
+                "fields": 6,
+                "rows": 88
+              }
+            },
+            "time": 0.036,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
+        ],
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
+      }
+    },
+    {
+      "name": "dm_tipo_divida",
+      "title": "Tipo Dívida",
+      "path": "data/dm_tipo_divida.csv.gz",
+      "schema": {
+        "fields": [
+          {
+            "name": "id_tipo",
+            "title": "Tipo da Dívida - Chave",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true,
+              "unique": false
+            }
+          },
+          {
+            "name": "cd_tipo",
+            "title": "Tipo da Dívida - Código",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true,
+              "enum": [
+                "1",
+                "2"
+              ]
+            }
+          },
+          {
+            "name": "nome",
+            "title": "Tipo da Dívida",
+            "desciription": "Informa o tipo de dívida contraída pelo Estado junto a instituições financeiras públicas ou privadas, no mercado financeiro interno ou externo, bem como junto a empresas, organimos nacionais e internacionais, pessoas ou outros governos. A dívida pública é classificada como Dívida Pública Interna ou Dívida Pública Externa.\n",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "DÍVIDA PÚBLICA INTERNA",
+                "DÍVIDA PÚBLICA EXTERNA"
+              ]
+            }
+          }
+        ],
+        "missingValues": [
+          "SEM DESCRICAO"
+        ],
+        "primaryKey": [
+          "id_tipo"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+          "table": "dm_tipo_divida"
+        }
+      ],
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "dialect": {
+        "delimiter": ";",
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "skipInitialSpace": false
+      },
+      "profile": "tabular-data-resource",
+      "validation": {
+        "version": "4.38.0",
+        "time": 0.022,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_tipo_divida",
+              "title": "Tipo Dívida",
+              "path": "data/dm_tipo_divida.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_tipo",
+                    "title": "Tipo da Dívida - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "cd_tipo",
+                    "title": "Tipo da Dívida - Código",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "enum": [
+                        "1",
+                        "2"
+                      ]
+                    }
+                  },
+                  {
+                    "name": "nome",
+                    "title": "Tipo da Dívida",
+                    "desciription": "Informa o tipo de dívida contraída pelo Estado junto a instituições financeiras públicas ou privadas, no mercado financeiro interno ou externo, bem como junto a empresas, organimos nacionais e internacionais, pessoas ou outros governos. A dívida pública é classificada como Dívida Pública Interna ou Dívida Pública Externa.\n",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "required": true,
+                      "enum": [
+                        "DÍVIDA PÚBLICA INTERNA",
+                        "DÍVIDA PÚBLICA EXTERNA"
+                      ]
+                    }
+                  }
+                ],
+                "missingValues": [
+                  "SEM DESCRICAO"
+                ],
+                "primaryKey": [
+                  "id_tipo"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_tipo_divida"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ";"
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "c01b02938c3139dd9b9cace16726b535",
+                "bytes": 79,
+                "fields": 3,
+                "rows": 2
+              }
+            },
+            "time": 0.022,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
+        ],
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
+      }
+    },
+    {
+      "name": "dm_tempo_diario",
+      "title": "Calendário - Dias",
+      "path": "data/dm_tempo_diario.csv.gz",
+      "schema": {
+        "fields": [
+          {
+            "name": "id_tempo",
+            "title": "Tempo - Chave",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true,
+              "unique": false
+            }
+          },
+          {
+            "name": "data_iso",
+            "title": "Data ISO",
+            "type": "date",
+            "format": "%Y%m%d",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "dia",
+            "title": "Dia",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true,
+              "minimum": 1,
+              "maximum": 31
+            }
+          },
+          {
+            "name": "mes",
+            "title": "Mês",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true,
+              "minimum": 1,
+              "maximum": 12
+            }
+          },
+          {
+            "name": "ano",
+            "title": "Ano",
+            "type": "year",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "data_formatada",
+            "title": "Data Formatada",
+            "type": "date",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "id_tempo"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+          "table": "dm_tempo_diario"
+        }
+      ],
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "dialect": {
+        "delimiter": ";",
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "skipInitialSpace": false
+      },
+      "profile": "tabular-data-resource",
+      "validation": {
+        "version": "4.38.0",
+        "time": 3.537,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_tempo_diario",
+              "title": "Calendário - Dias",
+              "path": "data/dm_tempo_diario.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_tempo",
+                    "title": "Tempo - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "data_iso",
+                    "title": "Data ISO",
+                    "type": "date",
+                    "format": "%Y%m%d",
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "dia",
+                    "title": "Dia",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "minimum": 1,
+                      "maximum": 31
+                    }
+                  },
+                  {
+                    "name": "mes",
+                    "title": "Mês",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "minimum": 1,
+                      "maximum": 12
+                    }
+                  },
+                  {
+                    "name": "ano",
+                    "title": "Ano",
+                    "type": "year",
+                    "format": "default",
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "data_formatada",
+                    "title": "Data Formatada",
+                    "type": "date",
+                    "format": "default",
+                    "constraints": {
+                      "required": true
+                    }
+                  }
+                ],
+                "missingValues": [
+                  ""
+                ],
+                "primaryKey": [
+                  "id_tempo"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_tempo_diario"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ";"
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "72fc8f3e960c9f7d979aae296fa1a93c",
+                "bytes": 422039,
+                "fields": 6,
+                "rows": 55153
+              }
+            },
+            "time": 3.537,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
+        ],
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
+      }
+    },
+    {
+      "name": "dm_favorecido",
+      "title": "Favorecido",
+      "path": "data/dm_favorecido.csv.gz",
+      "schema": {
+        "fields": [
+          {
+            "name": "id_favorecido",
+            "ttile": "Favorecido - Chave",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true,
+              "unique": false
+            }
+          },
+          {
+            "name": "tp_documento",
+            "title": "Tipo de Documento",
+            "type": "string",
+            "format": "default",
+            "description": "Identificador da natureza jurídica do credor.\n  1 - Pessoa Física\n  2 - Pessoa Jurídica\n  3 - CPF Administrativo\n  4 - CNPJ Administrativo\n",
+            "constraints": {
+              "enum": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ]
+            },
+            "missingValues": [
+              "0"
+            ]
+          },
+          {
+            "name": "nr_documento_anonimizado",
+            "title": "Número do Documento",
+            "description": "Número de identificação da pessoa física (CPF) ou da pesssoa jurídica (CNPJ).\n",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "nome_anonimizado",
+            "title": "Favorecido - Descrição",
+            "description": "Nome de identificação da pessoa física ou jurídica.",
+            "type": "string",
+            "format": "default"
+          }
+        ],
+        "missingValues": [
+          "SEM DESCRICAO"
+        ],
+        "primaryKey": [
+          "id_favorecido"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+          "table": "dm_favorecido"
+        }
+      ],
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "dialect": {
+        "delimiter": ";",
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "skipInitialSpace": false
+      },
+      "profile": "tabular-data-resource",
+      "validation": {
+        "version": "4.38.0",
+        "time": 36.091,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "dm_favorecido",
+              "title": "Favorecido",
+              "path": "data/dm_favorecido.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_favorecido",
+                    "ttile": "Favorecido - Chave",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true,
+                      "unique": false
+                    }
+                  },
+                  {
+                    "name": "tp_documento",
+                    "title": "Tipo de Documento",
+                    "type": "string",
+                    "format": "default",
+                    "description": "Identificador da natureza jurídica do credor.\n  1 - Pessoa Física\n  2 - Pessoa Jurídica\n  3 - CPF Administrativo\n  4 - CNPJ Administrativo\n",
+                    "constraints": {
+                      "enum": [
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                      ]
+                    },
+                    "missingValues": [
+                      "0"
+                    ]
+                  },
+                  {
+                    "name": "nr_documento_anonimizado",
+                    "title": "Número do Documento",
+                    "description": "Número de identificação da pessoa física (CPF) ou da pesssoa jurídica (CNPJ).\n",
+                    "type": "string",
+                    "format": "default",
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "nome_anonimizado",
+                    "title": "Favorecido - Descrição",
+                    "description": "Nome de identificação da pessoa física ou jurídica.",
+                    "type": "string",
+                    "format": "default"
+                  }
+                ],
+                "missingValues": [
+                  "SEM DESCRICAO"
+                ],
+                "primaryKey": [
+                  "id_favorecido"
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "dm_favorecido"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ";"
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "4d0f464d01e25ecfcd4d294bddc20895",
+                "bytes": 20109059,
+                "fields": 4,
+                "rows": 1162191
+              }
+            },
+            "time": 36.091,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
+        ],
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
+      }
+    },
+    {
+      "name": "ft_divida_pub",
+      "title": "Dívida Pública",
+      "path": "data/ft_divida_pub.csv.gz",
+      "schema": {
+        "fields": [
+          {
+            "name": "id_tempo",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "id_tipo",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "id_favorecido",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "id_contrato",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "ano_particao",
+            "type": "integer",
+            "format": "default",
+            "bareNumber": true,
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "vr_juros",
+            "type": "number",
+            "format": "default",
+            "bareNumber": true,
+            "decimalChar": ".",
+            "constraints": {
+              "required": true
+            },
+            "groupChar": ""
+          },
+          {
+            "name": "vr_amortizacao",
+            "type": "number",
+            "format": "default",
+            "bareNumber": true,
+            "decimalChar": ".",
+            "constraints": {
+              "required": true
+            },
+            "groupChar": ""
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "id_contrato"
+            ],
+            "reference": {
+              "fields": [
+                "id_contrato"
+              ],
+              "resource": "dm_contrato_divida"
+            }
+          },
+          {
+            "fields": [
+              "id_tipo"
+            ],
+            "reference": {
+              "fields": [
+                "id_tipo"
+              ],
+              "resource": "dm_tipo_divida"
+            }
+          },
+          {
+            "fields": [
+              "id_tempo"
+            ],
+            "reference": {
+              "fields": [
+                "id_tempo"
+              ],
+              "resource": "dm_tempo_diario"
+            }
+          },
+          {
+            "fields": [
+              "id_favorecido"
+            ],
+            "reference": {
+              "fields": [
+                "id_favorecido"
+              ],
+              "resource": "dm_favorecido"
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+          "table": "ft_divida_pub"
+        }
+      ],
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8-sig",
+      "dialect": {
+        "delimiter": ";",
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "doubleQuote": true,
+        "skipInitialSpace": false
+      },
+      "profile": "tabular-data-resource",
+      "validation": {
+        "version": "4.38.0",
+        "time": 23.108,
+        "errors": [],
+        "tasks": [
+          {
+            "resource": {
+              "name": "ft_divida_pub",
+              "title": "Dívida Pública",
+              "path": "data/ft_divida_pub.csv.gz",
+              "schema": {
+                "fields": [
+                  {
+                    "name": "id_tempo",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "id_tipo",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "id_favorecido",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "id_contrato",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "ano_particao",
+                    "type": "integer",
+                    "format": "default",
+                    "bareNumber": true,
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "vr_juros",
+                    "type": "number",
+                    "format": "default",
+                    "bareNumber": true,
+                    "decimalChar": ".",
+                    "constraints": {
+                      "required": true
+                    }
+                  },
+                  {
+                    "name": "vr_amortizacao",
+                    "type": "number",
+                    "format": "default",
+                    "bareNumber": true,
+                    "decimalChar": ".",
+                    "constraints": {
+                      "required": true
+                    }
+                  }
+                ],
+                "missingValues": [
+                  ""
+                ],
+                "foreignKeys": [
+                  {
+                    "fields": [
+                      "id_contrato"
+                    ],
+                    "reference": {
+                      "fields": [
+                        "id_contrato"
+                      ],
+                      "resource": "dm_contrato_divida"
+                    }
+                  },
+                  {
+                    "fields": [
+                      "id_tipo"
+                    ],
+                    "reference": {
+                      "fields": [
+                        "id_tipo"
+                      ],
+                      "resource": "dm_tipo_divida"
+                    }
+                  },
+                  {
+                    "fields": [
+                      "id_tempo"
+                    ],
+                    "reference": {
+                      "fields": [
+                        "id_tempo"
+                      ],
+                      "resource": "dm_tempo_diario"
+                    }
+                  },
+                  {
+                    "fields": [
+                      "id_favorecido"
+                    ],
+                    "reference": {
+                      "fields": [
+                        "id_favorecido"
+                      ],
+                      "resource": "dm_favorecido"
+                    }
+                  }
+                ]
+              },
+              "sources": [
+                {
+                  "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+                  "table": "ft_divida_pub"
+                }
+              ],
+              "format": "csv",
+              "mediatype": "text/csv",
+              "encoding": "utf-8-sig",
+              "dialect": {
+                "delimiter": ";"
+              },
+              "profile": "tabular-data-resource",
+              "scheme": "file",
+              "hashing": "md5",
+              "compression": "gz",
+              "stats": {
+                "hash": "cf31d2d663c98a1ce893d8ad350fa19e",
+                "bytes": 92646,
+                "fields": 7,
+                "rows": 8817
+              }
+            },
+            "time": 23.108,
+            "scope": [
+              "hash-count-error",
+              "byte-count-error",
+              "field-count-error",
+              "row-count-error",
+              "blank-header",
+              "extra-label",
+              "missing-label",
+              "blank-label",
+              "duplicate-label",
+              "incorrect-label",
+              "blank-row",
+              "primary-key-error",
+              "foreign-key-error",
+              "extra-cell",
+              "missing-cell",
+              "type-error",
+              "constraint-error",
+              "unique-error"
+            ],
+            "partial": false,
+            "errors": [],
+            "stats": {
+              "errors": 0
+            },
+            "valid": true
+          }
+        ],
+        "stats": {
+          "errors": 0,
+          "tasks": 1
+        },
+        "valid": true
+      }
+    }
+  ],
+  "name": "execucao-da-divida",
+  "owner_org": "controladoria-geral-do-estado-cge",
+  "frequência de atualização": "diária",
+  "contributors": [
+    {
+      "title": "Diretoria Central de Transparência Ativa",
+      "role": "author",
+      "email": "transparencia@cge.mg.gov.br"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "description": "None\n# Portal da Transparência\n\nEsse data package visa documentar as tabelas do modelo dimensional utilizado no banco de dados do Portal da Transparência. \nOs data packages representando consultas específicas do Portal da Transparência serão extraídos deste data package para fins de publicação.\n\nEssa organização foi utilizada para evitar a necessidade de manter documentação em múltiplos repositórios para tabelas que são utilizadas em múltiplas consultas.\n\n## Instalação e configuração\n\nInstruções sobre instalação dos pré-requisitos e configuração do ambiente estão disponíves no arquivo [INSTALL](INSTALL.md)\n\n## Uso\n\n### Linha de comando\n\n#### Documentação\n\n```bash\nmake preview\n```\n\n```bash\nmake format resource=resource-name\n```\n\n#### Validação\n\nPara validação do data package com `make validate` e `make validate_metadata` é necessário a ativação do ambiente virtual do Python criado durante o processo de instalação.\n\nPara determinar qual comando para fazer a ativação execute na linha de comando\n\n```bash\nconda env list\n# conda environments:\n# age7                     /path/r-miniconda/envs/age7\n# base                  *  /path/opt/anaconda3\n```\n\nPara ativar execute\n\n```bash\nconda activate age7\n```\n\nEm alguns casos, o \"atalho\" para ativação do ambiente conda não é registrado. Por exemplo\n\n```bash\nconda env list\n# conda environments:\n                         /Users/fjunior/Library/r-miniconda/envs/age7\nbase                     /Users/fjunior/opt/anaconda3\n```\n\nNesse caso, ao invés de executar `conda activate age7`  necessário indicar o caminho para o ambiente conda (eg. `conda activate /path/r-miniconda/envs/age7`).\n\nNo windows é necessário utilizar o separador \\ no lugar de /:\n\n```bash\nconda activate C:\\Users\\user\\AppData\\Local\\R-MINI~1\\envs\\age7\n```\n\nO seu prompt da linha de comando, apesar de formas possivelmente diferentes, vai indicar se o ambiente virtual está ativo\n\n- `remuneracao$` -> `(age7) remuneracao$`\n\nPara validar: \n\n - os metadados armazenados no table schema, execute:\n\n```bash\nmake validate_metadata resource=resource_name\n```\n\n - os dados armazenados em `data/`, em conformidade com os metadados, execute:\n\n```bash\nmake validate\n```\n\n - somente um recurso unitário armazenado em `data/`, em conformidade com os metadados, execute:\n\n```bash\nmake validate_data resource=resource_name\n```\n\n### Rstudio\n\nO script `scripts/exploratory-analysis.R` pode ser utilizado de forma interativa para o processo de análise exploratória para construção de um perfil dos recursos (ie. tabelas fato e dimensão).\n\n\n",
+  "keywords": [
+    "Portal da Transparência",
+    "Dívida"
+  ],
+  "version": "0.1.0",
+  "title": "Despesas com dívida pública",
+  "homepage": "http://www.transparencia.mg.gov.br/divida-publica/execucao-da-divida"
+}
