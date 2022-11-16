@@ -1,0 +1,107 @@
+{
+  "version": "4.38.0",
+  "time": 0.02,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_tipo_orcam_plan",
+        "title": "Tipo Orçamento Planejamento",
+        "path": "data/dm_tipo_orcam_plan.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tipo_orcam",
+              "title": "Tipo d Orçamento - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Tipo de Orçamento",
+              "type": "string",
+              "format": "default",
+              "description": "- >\n   - Orçamento Fiscal: Despesas Correntes , Despesas de Capital e Despesa de Pessoal;\n   - Orçamento de Investimento das empresas controladas pelo Estado.\n",
+              "constraints": {
+                "enum": [
+                  "ORCAMENTO FISCAL",
+                  "DESPESAS DE PESSOAL",
+                  "DESPESAS CORRENTES",
+                  "DESPESAS DE CAPITAL",
+                  "ORCAMENTO DE INVESTIMENTO DAS EMPRESAS CONTROLADAS PELO ESTADO"
+                ]
+              },
+              "required": true,
+              "unique": false
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_tipo_orcam"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_tipo_orcam_plan"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "10e4e12d4a6e8a8b2035b4e7c80ff4f9",
+          "bytes": 43,
+          "fields": 2,
+          "rows": 0
+        }
+      },
+      "time": 0.02,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

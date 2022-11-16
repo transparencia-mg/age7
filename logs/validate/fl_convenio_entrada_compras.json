@@ -1,0 +1,170 @@
+{
+  "version": "4.38.0",
+  "time": 1.114,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "fl_convenio_entrada_compras",
+        "title": "Convênio Entrada Compras",
+        "path": "data/fl_convenio_entrada_compras.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_convenio",
+              "title": "Convênio Entrada - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nr_processo",
+              "title": "Número do Processo de Compra",
+              "type": "string",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nr_processo_formatado",
+              "title": "Número do Processo de Compra Formatado",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true,
+                "pattern": "\\d{7} \\d{6}/\\d{4}"
+              }
+            },
+            {
+              "name": "objeto",
+              "title": "Objeto do Processo",
+              "type": "string",
+              "format": "default",
+              "description": "Descrição dos bens e serviços que estão sendo comprados e sua finalidade.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "cd_orgao",
+              "title": "Órgão Demandante - Código",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true,
+                "pattern": "\\d{4}"
+              }
+            },
+            {
+              "name": "nome_orgao",
+              "title": "Órgão Demandante - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Órgão ou entidade que solicitou a compra de determinado material ou serviço. \n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nrdoc_contratado",
+              "title": "Número do documento Contratado",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nome_contratado",
+              "title": "Contratado - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Nome da pessoa física ou jurídica contratada para prestar um serviço ou entregar bens materiais ao Estado.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_convenio"
+              ],
+              "reference": {
+                "fields": [
+                  "id_convenio"
+                ],
+                "resource": "dm_convenio_entrada"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "fl_convenio_entrada_compras"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "a06dcca862dcd1d8f1aaa3a86636cfe1",
+          "bytes": 1060915,
+          "fields": 8,
+          "rows": 22621
+        }
+      },
+      "time": 1.114,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

@@ -1,0 +1,109 @@
+{
+  "version": "4.38.0",
+  "time": 0.044,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_municipio",
+        "title": "Município",
+        "path": "data/dm_municipio.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_municipio",
+              "title": "Município - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_municipio_ibge",
+              "title": "Município - Código",
+              "type": "string",
+              "format": "default",
+              "description": "Código do Município conforme consta na [Tabela de Códigos de Municípios do IBGE]https://www.ibge.gov.br/explica/codigos-dos-municipios.php)\n",
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Município - Descrição",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_municipio"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_municipio"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "755abdecc597069248de6eb367ac82f9",
+          "bytes": 10082,
+          "fields": 3,
+          "rows": 915
+        }
+      },
+      "time": 0.044,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

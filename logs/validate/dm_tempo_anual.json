@@ -1,0 +1,96 @@
+{
+  "version": "4.38.0",
+  "time": 0.023,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_tempo_anual",
+        "title": "Tempo Anual",
+        "path": "data/dm_tempo_anual.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tempo",
+              "title": "Tempo - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano",
+              "title": "Ano de Exercício",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "missingValues": [
+                "0"
+              ]
+            }
+          ],
+          "primaryKey": [
+            "id_tempo"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_tempo_anual"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "1b9496e66ddf910ead5e01636061dbd9",
+          "bytes": 526,
+          "fields": 2,
+          "rows": 152
+        }
+      },
+      "time": 0.023,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

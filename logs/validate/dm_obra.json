@@ -1,0 +1,140 @@
+{
+  "version": "4.38.0",
+  "time": 0.479,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_obra",
+        "title": "Obra",
+        "path": "data/dm_obra.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_obra",
+              "title": "Obra - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nr_obra",
+              "title": "Número da Obra",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "ano_exercicio",
+              "title": "Ano de Exercício",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Discriminação da Obra",
+              "type": "string",
+              "format": "default",
+              "description": "Descrição suscinta da obra na Lei Orçamentária no ano de exercício escolhido.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "un_meta_fisica",
+              "title": "Meta Física - Unidade Medida",
+              "type": "string",
+              "format": "default",
+              "description": "Padrão selecionado para mensurar a obra. Elemento que dá significado ao valor númerico estampado \ncomo meta física.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "qt_meta_fisica",
+              "title": "Meta Física - Quantidade",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "description": "Quantidade do produto que será orfetado para a sociedade\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_obra"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_obra"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "1bdbc6816b28390da0cf6c1544615207",
+          "bytes": 236433,
+          "fields": 6,
+          "rows": 11889
+        }
+      },
+      "time": 0.479,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

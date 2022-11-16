@@ -1,0 +1,275 @@
+{
+  "version": "4.38.0",
+  "time": 1.686,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "ft_convenio_entrada_dotacao",
+        "title": "Convênio Entrada Dotação",
+        "path": "data/ft_convenio_entrada_dotacao.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tempo",
+              "title": "Tempo - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_convenio",
+              "title": "Convênio de Entrada - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_orgao",
+              "title": "Órgão - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_concedente",
+              "title": "Concedente - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_programa",
+              "title": "Programa - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_acao",
+              "title": "Ação Orçamentária - Chave",
+              "type": "string",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_elemento",
+              "title": "Elemento de Despesa - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_unidade_orc",
+              "title": "Unidade Orçamentária - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "dotacao_orcamentaria",
+              "title": "Dotação Orçamentária",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_particao",
+              "title": "Ano",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_concedente_atual",
+              "title": "Valor Concedente Atualiado",
+              "description": "Valor financeiro previsto no convênio para o concedente repassar ao proponente, incluindo termos aditivos.\n",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_proponente_atual",
+              "title": "Valor Proponente Atualizado",
+              "description": "Valor financeiro previsto no convênio para o proponente dar como contrapartida financeira, incluindo termos aditivos.\n",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            "SEM DESCRICAO"
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_tempo"
+              ],
+              "reference": {
+                "fields": [
+                  "id_tempo"
+                ],
+                "resource": "dm_tempo_diario"
+              }
+            },
+            {
+              "fields": [
+                "id_concedente"
+              ],
+              "reference": {
+                "fields": [
+                  "id_concedente"
+                ],
+                "resource": "dm_concedente"
+              }
+            },
+            {
+              "fields": [
+                "id_orgao"
+              ],
+              "reference": {
+                "fields": [
+                  "id_orgao"
+                ],
+                "resource": "dm_orgao_proponente"
+              }
+            },
+            {
+              "fields": [
+                "id_elemento"
+              ],
+              "reference": {
+                "fields": [
+                  "id_elemento"
+                ],
+                "resource": "dm_elemento_desp"
+              }
+            },
+            {
+              "fields": [
+                "id_programa"
+              ],
+              "reference": {
+                "fields": [
+                  "id_programa"
+                ],
+                "resource": "dm_programa_conv_ent"
+              }
+            },
+            {
+              "fields": [
+                "id_convenio"
+              ],
+              "reference": {
+                "fields": [
+                  "id_convenio"
+                ],
+                "resource": "dm_convenio_entrada"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_convenio_entrada_dotacao"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "d8d6b6c92db5fa097b20b052abb2cf4d",
+          "bytes": 86842,
+          "fields": 12,
+          "rows": 5906
+        }
+      },
+      "time": 1.686,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

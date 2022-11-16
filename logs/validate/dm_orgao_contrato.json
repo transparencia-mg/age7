@@ -1,0 +1,117 @@
+{
+  "version": "4.38.0",
+  "time": 0.024,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_orgao_contrato",
+        "title": "Órgão do Contrato",
+        "path": "data/dm_orgao_contrato.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_orgao_contrato",
+              "title": "Órgão Contrato - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_orgao_contrato",
+              "title": "Órgão Contrato - Código",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "pattern": "\\d{4}"
+              },
+              "missingValues": [
+                "-1",
+                "-2",
+                "-3",
+                "-4"
+              ]
+            },
+            {
+              "name": "nome",
+              "title": "Órgão Contrato - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Nome completo do órgão ou entidade responsável pelo contrato.\n",
+              "missingValues": [
+                "INEXISTENTE",
+                "NÃO SE APLICA",
+                "INVÁLIDO",
+                "NÃO INFORMADO"
+              ]
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_orgao_contrato"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_orgao_contrato"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "bc477b0259ed8377252040dbbaabc98a",
+          "bytes": 2054,
+          "fields": 3,
+          "rows": 120
+        }
+      },
+      "time": 0.024,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

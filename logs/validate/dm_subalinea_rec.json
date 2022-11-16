@@ -1,0 +1,113 @@
+{
+  "version": "4.38.0",
+  "time": 0.098,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_subalinea_rec",
+        "title": "Subalínea da receita",
+        "path": "data/dm_subalinea_rec.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_subalinea",
+              "title": "Alinea - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_subalinea",
+              "title": "Subalínea - Código",
+              "bareNumber": true,
+              "type": "integer",
+              "format": "default",
+              "constraints": {
+                "minimum": 1,
+                "maximum": 99
+              },
+              "missingValues": [
+                "0"
+              ]
+            },
+            {
+              "name": "nome",
+              "title": "Subalínea - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "A subalínea constitui o nível mais analítico da receita, utilizado quando há necessidade de se detalhar a Alínea com maior especificidade. \nPor exemplo, a subalínea “Pessoas Físicas” é detalhamento da Alínea “Impostos sobre a Renda e Proventos de Qualquer Natureza”.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_subalinea"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_subalinea_rec"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "2cfd45985df562668f90b1977481393c",
+          "bytes": 36175,
+          "fields": 3,
+          "rows": 2550
+        }
+      },
+      "time": 0.098,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

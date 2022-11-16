@@ -1,0 +1,120 @@
+{
+  "version": "4.38.0",
+  "time": 4.922,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "ft_plan_prog_mensal",
+        "title": "Orçamento Proposta",
+        "path": "data/ft_plan_prog_mensal.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_orgao",
+              "type": "integer"
+            },
+            {
+              "name": "id_ppag",
+              "type": "integer"
+            },
+            {
+              "name": "id_programa",
+              "type": "integer"
+            },
+            {
+              "name": "id_acao",
+              "type": "integer"
+            },
+            {
+              "name": "ano_ppag",
+              "type": "integer"
+            },
+            {
+              "name": "mes",
+              "type": "integer"
+            },
+            {
+              "name": "vr_fisico_prog",
+              "type": "integer"
+            },
+            {
+              "name": "vr_fisico_reprog",
+              "type": "integer"
+            },
+            {
+              "name": "vr_fisico_realizado",
+              "type": "integer"
+            },
+            {
+              "name": "vr_orcam_prog",
+              "type": "number"
+            },
+            {
+              "name": "vr_orcam_reprog",
+              "type": "number"
+            },
+            {
+              "name": "vr_orcam_realizado",
+              "type": "number"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_plan_prog_mensal"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "3683ef82bc0eda2a9ecec703257c47f3",
+          "bytes": 1737696,
+          "fields": 12,
+          "rows": 149844
+        }
+      },
+      "time": 4.922,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

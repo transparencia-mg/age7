@@ -1,0 +1,107 @@
+{
+  "version": "4.38.0",
+  "time": 0.054,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_concedente",
+        "title": "Convênio de Entrada - Órgão Concedente",
+        "path": "data/dm_concedente.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_concedente",
+              "title": "Concedente - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nr_documento",
+              "title": "Número Documento",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Concedente",
+              "type": "string",
+              "format": "default",
+              "description": "- > \nÓrgão ou entidade responsável pela transferência dos recursos financeiros destinados à execução do objeto do convênio.\nExemplos: Ministérios da União, Prefeituras, associações, etc.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_concedente"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_concedente"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "6273d9a278952405d28c29fd15cfbcf7",
+          "bytes": 22391,
+          "fields": 3,
+          "rows": 1245
+        }
+      },
+      "time": 0.054,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

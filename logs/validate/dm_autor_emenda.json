@@ -1,0 +1,99 @@
+{
+  "version": "4.38.0",
+  "time": 0.027,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_autor_emenda",
+        "title": "Autor Emenda",
+        "path": "data/dm_autor_emenda.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_autor",
+              "title": "Autor da Emenda - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Autor da Emenda - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Nome do autor da emenda \n",
+              "constraints": {
+                "required": true
+              },
+              "missingValues": [
+                "SEM DESCRICAO"
+              ]
+            }
+          ],
+          "primaryKey": [
+            "id_autor"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_autor_emenda"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "ec75fd3157f0f520ba28526382179e71",
+          "bytes": 2873,
+          "fields": 2,
+          "rows": 281
+        }
+      },
+      "time": 0.027,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

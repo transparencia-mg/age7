@@ -1,0 +1,99 @@
+{
+  "version": "4.38.0",
+  "time": 0.23,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_cidade",
+        "title": "Cidade",
+        "path": "data/dm_cidade.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_cidade",
+              "title": "Cidade - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Cidade - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Cidade de origem ou destino do servidor ou colaborador eventual em viagem a trabalho.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_cidade"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_cidade"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "90704cf3e6c41ee2a49c5804f12c17d9",
+          "bytes": 67937,
+          "fields": 2,
+          "rows": 8104
+        }
+      },
+      "time": 0.23,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

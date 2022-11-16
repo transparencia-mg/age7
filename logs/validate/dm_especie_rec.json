@@ -1,0 +1,120 @@
+{
+  "version": "4.38.0",
+  "time": 0.046,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_especie_rec",
+        "title": "Espécie da receita",
+        "path": "data/dm_especie_rec.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_especie",
+              "title": "Espécie - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_especie",
+              "title": "Espécie - Código",
+              "description": "Código da espécie da receita (0 a 9)",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "enum": [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ]
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Espécie - Descrição",
+              "type": "string",
+              "description": "Classificação da Receita vinculada à origem que permite qualificar com maior detalhe o fato gerador das receitas, por exemplo: dentro da Origem Contribuições, identifica-se as espécies “Contribuições Sociais”, “Contribuições Econômicas”, “Contribuições para Entidades Privadas de Serviço Social e de Formação Profissional” e “Contribuição para Custeio de Iluminação Pública”.\n",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_especie"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_especie_rec"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "f1e7e588933e57c1f727bf512bafbb87",
+          "bytes": 5319,
+          "fields": 3,
+          "rows": 807
+        }
+      },
+      "time": 0.046,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

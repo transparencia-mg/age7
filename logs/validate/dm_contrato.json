@@ -1,0 +1,198 @@
+{
+  "version": "4.38.0",
+  "time": 7.869,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_contrato",
+        "title": "Contrato",
+        "path": "data/dm_contrato.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_contrato",
+              "title": "Contrato - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nr_contrato",
+              "title": "Número do Contrato",
+              "description": "Número identificador do processo de compra no Portal de Compras",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "url_contrato",
+              "title": "URL Contrato",
+              "description": "Link para acessar o contrato",
+              "type": "string",
+              "format": "default",
+              "missingValues": ""
+            },
+            {
+              "name": "objeto",
+              "title": "Objeto",
+              "description": "Descrição dos bens e serviços que estão sendo comprados e sua finalidade.",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "situacao",
+              "title": "Situação do Contrato",
+              "description": "Situação em que se encontra o contrato quanto a sua vigência.\n- Encerrado;\n- Vencido;\n- Rescindido ou\n- Vigente publicado\n",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "tipo",
+              "title": "Tipo de Contrato",
+              "description": "Informa o tipo de contrato firmado pela Administração, por exemplo, obra, fornecimento de bens, etc.\n",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "dt_publicacao",
+              "title": "Data de Publicação",
+              "type": "date",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "dt_inicio_vigencia",
+              "title": "Data Início da Vigência",
+              "type": "date",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "dt_fim_vigencia",
+              "title": "Data Fim da Vigência",
+              "type": "date",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "dt_fim_vigencia_atual",
+              "title": "Data Fim da Vigência Atualizada",
+              "type": "date",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_homologado",
+              "title": "Valor Homologado",
+              "description": "Valor total homologado licitado ou comprado do item de material/serviço.\n",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_atualizado",
+              "title": "Valor Atualizado",
+              "description": "Valor total do item de material/serviço atualizado pelas alterações contratuais, com ou sem termo de contrato.\n",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            "SEM DESCRICAO"
+          ],
+          "primaryKey": [
+            "id_contrato"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_contrato"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "2a75e88c5dd49a9cfa3f27377481cc3b",
+          "bytes": 6968996,
+          "fields": 12,
+          "rows": 76820
+        }
+      },
+      "time": 7.869,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

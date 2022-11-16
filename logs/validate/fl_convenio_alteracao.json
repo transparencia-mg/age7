@@ -1,0 +1,135 @@
+{
+  "version": "4.38.0",
+  "time": 4.403,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "fl_convenio_alteracao",
+        "title": "Convênio Alteração",
+        "path": "data/fl_convenio_alteracao.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_convenio",
+              "title": "Convênio / Parceria - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nr_alteracao",
+              "title": "Número da Alteração",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "dt_publicacao",
+              "title": "Data da Alteração",
+              "type": "date",
+              "format": "default"
+            },
+            {
+              "name": "tp_alteracao",
+              "title": "Tipo de Alteração",
+              "type": "string",
+              "format": "default",
+              "description": "Tipo de alteração ocorrida no Convênio / Parceria:\n - adequação do convênio;\n - alteração simples;\n - ampliação de meta;\n - cancelamento convênio;\n - dotação orcamentaria;\n - gestor parceria;\n - prorrogação de ofício;\n - retificação por erro humano;\n - termo aditivo;\n - valor;\n - vigência e\n - vigência/valor\n",
+              "missingValues": [
+                "sem classificação",
+                "outros"
+              ],
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "objetivo",
+              "title": "Objetivo da Alteração",
+              "type": "string",
+              "format": "default"
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_convenio"
+              ],
+              "reference": {
+                "fields": [
+                  "id_convenio"
+                ],
+                "resource": "dm_convenio"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "fl_convenio_alteracao"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "0a6ecf5203afc9587f643904be1e18c2",
+          "bytes": 3404964,
+          "fields": 5,
+          "rows": 46515
+        }
+      },
+      "time": 4.403,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

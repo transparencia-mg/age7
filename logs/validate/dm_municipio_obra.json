@@ -1,0 +1,110 @@
+{
+  "version": "4.38.0",
+  "time": 0.046,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_municipio_obra",
+        "title": "Município Obra",
+        "path": "data/dm_municipio_obra.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_municipio",
+              "title": "Município da Obra - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_municipio",
+              "title": "Município da Obra - Código",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Município da Obra - Código",
+              "type": "string",
+              "format": "default",
+              "description": "Nome da cidade na qual a obra será ou está sendo realizada.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_municipio"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_municipio_obra"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "11695f3614243f66ca9f1088de3df031",
+          "bytes": 8702,
+          "fields": 3,
+          "rows": 871
+        }
+      },
+      "time": 0.046,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

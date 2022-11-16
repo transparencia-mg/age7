@@ -1,0 +1,116 @@
+{
+  "version": "4.38.0",
+  "time": 2.038,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_favorecido_scdp",
+        "title": "Favorecido SCDP",
+        "path": "data/dm_favorecido_scdp.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_favorecido",
+              "title": "Favorecido - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nr_cpf_anonimizado",
+              "title": "CPF do Favorecido",
+              "description": "Número do registro do credor no cadastro nacional das pessoas físicas.",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "masp",
+              "title": "MASP do Favorecido",
+              "description": "Matrícula do servidor civil ou militar de Minas Gerais.",
+              "type": "string",
+              "format": "default"
+            },
+            {
+              "name": "nome_anonimizado",
+              "title": "Favorecido - Descrição",
+              "description": "Nome completo do servidor público ou colaborador eventual que realizou a viagem a trabalho.\n",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            "SEM DESCRICAO"
+          ],
+          "primaryKey": [
+            "id_favorecido"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_favorecido_scdp"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "b394b6071b8d88794b092357c0a202ef",
+          "bytes": 1310813,
+          "fields": 4,
+          "rows": 63748
+        }
+      },
+      "time": 2.038,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

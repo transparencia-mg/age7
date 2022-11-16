@@ -1,0 +1,118 @@
+{
+  "version": "4.38.0",
+  "time": 0.022,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_indicador_acao",
+        "title": "Indicador Ação",
+        "path": "data/dm_indicador_acao.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_indicador_acao",
+              "title": "Indicador de Ação Governamental - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_indicador_acao",
+              "type": "string",
+              "format": "default",
+              "title": "Indicador de Ação Governamental  - Código",
+              "description": "Código de identificador do orçamento conforme o SIAFI-MG\n",
+              "constraints": {
+                "enum": [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "9"
+                ]
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Indicador de Ação Governamental - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Descrição do identificador do orçamento conforme o SIAFI-MG\n",
+              "missingValues": [
+                "SEM DESCRICAO",
+                "PARA COMPOSICAO",
+                "SEM INFORMACAO"
+              ]
+            }
+          ],
+          "primaryKey": [
+            "id_indicador_acao"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_indicador_acao"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "5d90b03e8fa877ae15291db0cec3ca35",
+          "bytes": 201,
+          "fields": 3,
+          "rows": 14
+        }
+      },
+      "time": 0.022,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

@@ -1,0 +1,119 @@
+{
+  "version": "4.38.0",
+  "time": 0.027,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "sa_indicador_acao",
+        "title": "SA Indicador Ação",
+        "path": "data/sa_indicador_acao.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "sqd_indicador_acao",
+              "title": "Indicador de Ação Governamental",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "ano_exercicio",
+              "title": "Ano de Exercício",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "missingValues": [
+                "0"
+              ]
+            },
+            {
+              "name": "cd_indicador_acao",
+              "title": "Indicador de Ação Governamental  - Código",
+              "type": "integer",
+              "format": "default",
+              "description": "Código de identificador do orçamento conforme o SIAFI-MG\n",
+              "constraints": {
+                "required": true
+              },
+              "bareNumber": true
+            },
+            {
+              "name": "nome",
+              "title": "Indicador de Ação Governamental - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Descrião do identificador do orçamento conforme o SIAFI-MG\n",
+              "constraints": {
+                "required": true
+              },
+              "missingValues": [
+                "SEM DESCRICAO"
+              ]
+            }
+          ],
+          "missingValues": [
+            ""
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "sa_indicador_acao"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "832149ed560493ddf4af838125cdd8fa",
+          "bytes": 65,
+          "fields": 4,
+          "rows": 0
+        }
+      },
+      "time": 0.027,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

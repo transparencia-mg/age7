@@ -1,0 +1,108 @@
+{
+  "version": "4.38.0",
+  "time": 0.044,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_classe_matserv",
+        "title": "Classe Material/Serviço",
+        "path": "data/dm_classe_matserv.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_classe_matserv",
+              "title": "Classe Material e Serviço - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_classe_matserv",
+              "title": "Classe Material e Serviço - Código",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Classe Material e Serviço - Descrição",
+              "description": "Detalha o grupo de materiais e serviços",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            "SEM DESCRICAO"
+          ],
+          "primaryKey": [
+            "id_classe_matserv"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_classe_matserv"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "8ba5dd347bf350704213f57098368e87",
+          "bytes": 15367,
+          "fields": 3,
+          "rows": 836
+        }
+      },
+      "time": 0.044,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

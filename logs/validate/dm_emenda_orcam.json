@@ -1,0 +1,234 @@
+{
+  "version": "4.38.0",
+  "time": 0.779,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_emenda_orcam",
+        "title": "",
+        "path": "data/dm_emenda_orcam.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_emenda",
+              "title": "Emenda Orçamentária - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_exercicio",
+              "title": "Ano de Exercício",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "missingValues": [
+                "0"
+              ]
+            },
+            {
+              "name": "nr_inciso",
+              "title": "Número do Inciso",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nr_emenda",
+              "title": "Número da Emenda",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "grupo",
+              "title": "Grupo de Despesa - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Descrição do grupo de natureza econômica da despesa: \n- 1- Pessoal e Encargos Sociais; \n- 2- Juros e Encargos da Divida; \n- 3- Outras Despesas Correntes; \n- 4- Investimentos; \n- 5- Inversões Financeiras;\n- 6- Amortização da Divida e \n- 9- Reserva de Contingência\n",
+              "constraints": {
+                "enum": [
+                  "INVERSOES FINANCEIRAS",
+                  "INVESTIMENTOS",
+                  "OUTRAS DESPESAS CORRENTES",
+                  "PESSOAL E ENCARGOS SOCIAIS",
+                  "RESERVA DE CONTINGENCIA"
+                ]
+              }
+            },
+            {
+              "name": "modalidade_aplic",
+              "title": "Modalidade de Aplicação - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "- > \n  Classificação da natureza da despesa que traduz a forma como os recursos serão aplicados pelos órgãos/entiddes, \n  podendo ser diretamente pelos mesmos ou sbo a forma de transferência a outras entidades públicas ou privadas que \n  se encarregarão da execução das ações.\n",
+              "constraints": {
+                "enum": [
+                  "A DEFINIR",
+                  "APLICACOES DIRETAS",
+                  "TRANSFERENCIAS A INSTITUICOES PRIVADAS SEM FINS LUCRATIVOS",
+                  "TRANSFERENCIAS A MUNICIPIOS",
+                  "TRANSFERENCIAS A UNIAO"
+                ]
+              },
+              "missingValues": [
+                "SEM DESCRICAO",
+                "A DEFINIR"
+              ]
+            },
+            {
+              "name": "indicador_acao",
+              "title": "Indicador de Ação Governamental - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Descrição do identificador do orçamento conforme o SIAFI-MG\n",
+              "missingValues": [
+                "SEM DESCRICAO",
+                "NAO INFORMADO"
+              ]
+            },
+            {
+              "name": "fonte",
+              "title": "Fonte de Recurso - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "- > \n  Permite a identificação da origem e destinação dos recursos legalmente vinculados a órgão, fundo ou despesa.\n",
+              "constraints": {
+                "enum": [
+                  "RECURSOS ORDINARIOS",
+                  "OPERACOES DE CREDITO CONTRATUAIS",
+                  "FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB",
+                  "EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL",
+                  "RECURSOS DIRETAMENTE ARRECADADOS",
+                  "ALIENACAO DE BENS DO TESOURO ESTADUAL",
+                  "COTA ESTADUAL DO SALARIO EDUCACAO - QESE",
+                  "CONVENIOS, ACORDOS E AJUSTES"
+                ]
+              },
+              "missingValues": [
+                "SEM DESCRICAO"
+              ]
+            },
+            {
+              "name": "procedencia",
+              "title": "Procedência - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "- > \n Identifica a origem e a utilização dos recursos. \n O identificador de procedência e uso (IPU) informa, dentre outros, se os recursos serão para livre utilização, \n se foram transferidos de outra unidade orçamentária ou se objetivam oferecer contrapartida a convênios, acordos \n e ajustes.\n",
+              "constraints": {
+                "enum": [
+                  "RECURSOS DIRETAMENTE RECEBIDOS",
+                  "RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA",
+                  "RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES",
+                  "RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO"
+                ],
+                "required": true
+              },
+              "missingValues": [
+                "SEM DESCRICAO"
+              ]
+            },
+            {
+              "name": "uo_beneficiada",
+              "title": "Unidade Orçamentária Beneficiada",
+              "description": "Código e Nome da Unidade Orçamentária beneficiada com a emenda parlamentar.\n",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "origem_recurso",
+              "title": "Origem do Recurso",
+              "description": "Nome da Unidade Orçamentária onde ocorreu a dedução.\n",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "objeto",
+              "title": "Objeto",
+              "description": "- > \nObjeto do gasto da emenda parlamentar.\n",
+              "type": "string",
+              "format": "default"
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_emenda"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_emenda_orcam"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "784d36fd0eb45bc5a9107d47e390705f",
+          "bytes": 390270,
+          "fields": 12,
+          "rows": 12838
+        }
+      },
+      "time": 0.779,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

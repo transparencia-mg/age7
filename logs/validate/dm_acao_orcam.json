@@ -1,0 +1,112 @@
+{
+  "version": "4.38.0",
+  "time": 0.286,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_acao_orcam",
+        "title": "Ação Orçamentária",
+        "path": "data/dm_acao_orcam.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_acao",
+              "title": "Ação Orçamentária- Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_acao",
+              "title": "Ação Orçamentária - Código",
+              "type": "string",
+              "format": "default",
+              "bareNumber": true,
+              "missingValues": [
+                "0"
+              ],
+              "constraints": {
+                "pattern": "\\d{4}"
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Ação Orçamentária - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "- >\n  Conjunto de operações limitadas no tempo (projeto), realizadas de modo contínuo e permanente (atividade),\n  de natureza não orçamentária dos quais resulta um produto final (projeto ou não orçamentária), \n  de atuação necessária à manutenção da ação governamental (atividade) ou transferência financeira \n  (operação especial).\n",
+              "missingValues": [
+                "SEM DESCRICAO"
+              ]
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_acao"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_acao_orcam"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "a78764bec815e20961a187af0fc70122",
+          "bytes": 154458,
+          "fields": 3,
+          "rows": 8132
+        }
+      },
+      "time": 0.286,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

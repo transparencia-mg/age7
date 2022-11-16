@@ -1,0 +1,116 @@
+{
+  "version": "4.38.0",
+  "time": 0.022,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_situacao_obra",
+        "title": "Situação Obra",
+        "path": "data/dm_situacao_obra.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_situacao",
+              "title": "Situação da Obra - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_situacao",
+              "title": "Situação da Obra - Código",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "enum": [
+                  "E",
+                  "P",
+                  "I"
+                ]
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Situação da Obra - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Estágio em que a obra se encontra no momento de elaboração da Lei Orçamentária:\n - Execução;\n - Paralisado;\n - Iniciado\n",
+              "constraints": {
+                "enum": [
+                  "EXECUCAO",
+                  "PARALISADO",
+                  "INICIADO"
+                ]
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_situacao"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_situacao_obra"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "d73aaee7b925eb75fa3c4730ec6cc892",
+          "bytes": 44,
+          "fields": 3,
+          "rows": 0
+        }
+      },
+      "time": 0.022,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

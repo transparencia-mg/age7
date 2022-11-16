@@ -1,0 +1,106 @@
+{
+  "version": "4.38.0",
+  "time": 0.525,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_subitem_rec",
+        "title": "Subitem da receita",
+        "path": "data/dm_subitem_rec.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_subitem",
+              "title": "Subitem - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_subitem",
+              "title": "Subitem - Código",
+              "description": "Código identificador de subitem da receita",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Subitem - Descrição",
+              "description": "Detalhamento da classificação orçamentária da receita referente ao item de receita.",
+              "type": "string",
+              "format": "default",
+              "missingValues": [
+                "SEM DESCRICAO"
+              ]
+            }
+          ],
+          "primaryKey": [
+            "id_subitem"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_subitem_rec"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "f16d72f4742db50a968aa7ad726658a7",
+          "bytes": 125724,
+          "fields": 3,
+          "rows": 16856
+        }
+      },
+      "time": 0.525,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

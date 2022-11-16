@@ -1,0 +1,144 @@
+{
+  "version": "4.38.0",
+  "time": 3.96,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "ft_orcamento_proposta",
+        "title": "Orçamento Proposta",
+        "path": "data/ft_orcamento_proposta.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tempo",
+              "type": "integer"
+            },
+            {
+              "name": "id_grupo",
+              "type": "integer"
+            },
+            {
+              "name": "id_funcao",
+              "type": "integer"
+            },
+            {
+              "name": "id_modalidade",
+              "type": "integer"
+            },
+            {
+              "name": "id_indicador_acao",
+              "type": "integer"
+            },
+            {
+              "name": "id_procedencia",
+              "type": "integer"
+            },
+            {
+              "name": "id_programa",
+              "type": "integer"
+            },
+            {
+              "name": "id_categ_econ",
+              "type": "integer"
+            },
+            {
+              "name": "id_subfuncao",
+              "type": "integer"
+            },
+            {
+              "name": "id_fonte",
+              "type": "integer"
+            },
+            {
+              "name": "id_acao",
+              "type": "integer"
+            },
+            {
+              "name": "id_orgao",
+              "type": "integer"
+            },
+            {
+              "name": "sqe_progtrab",
+              "type": "integer"
+            },
+            {
+              "name": "cd_grupo_fonte",
+              "type": "integer"
+            },
+            {
+              "name": "cd_elemento_desp",
+              "type": "integer"
+            },
+            {
+              "name": "cd_identificador_orc",
+              "type": "integer"
+            },
+            {
+              "name": "ano_particao",
+              "type": "integer"
+            },
+            {
+              "name": "vr_proposta_credito",
+              "type": "number"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_orcamento_proposta"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "4a413ee5b0c8b2aa752a75add30123d3",
+          "bytes": 968996,
+          "fields": 18,
+          "rows": 98530
+        }
+      },
+      "time": 3.96,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

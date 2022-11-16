@@ -1,0 +1,266 @@
+{
+  "version": "4.38.0",
+  "time": 8.204,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "ft_convenio",
+        "title": "Convênio de Saída",
+        "path": "data/ft_convenio.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tempo",
+              "title": "Tempo - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_orgao",
+              "title": "Órgão - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_convenio",
+              "title": "Convênio / Parceria - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_municipio",
+              "title": "Municipío - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_convenente",
+              "title": "Convenente - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_particao",
+              "title": "Ano Partição",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_concede_atual",
+              "title": "Valor Concedente Atualizado",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "description": "- >\nValor financeiro previsto no convênio / parceria para o órgão concedente ou entidade estadual \nparceiro repassar ao convenente / Organização da Sociedade Civil (OSC) parceira, incluindo termos aditivos.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_emen_parl_atual",
+              "title": "Valor Emenda Parlamentar Atualizado",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "description": "- >\nValor financeiro referente a indicação de um ou mais deputados estaduais, previsto no convênio / parceira \npara o órgão concedente repassar ao convenente, incluindo termos aditivos.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_interv_atual",
+              "title": "Valor Interveniente Atualizado",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "description": "- > \n Valor financeiro previsto no convênio / parceria para o interveniente (entidade pública ou privada que \n participa do convênio para manifestar consentimento ou assumir obrigações) ou outros partícipes repassar ao \n convenente, incluindo termos aditivos.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_contra_atual",
+              "title": "Valor Contrapartida Atualizado",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "description": "- > \n Valor financeiro previsto no convênio / parceria referente a contrapartida financeira a ser dada pelo convenente \n (entidade ou pessoa que firmou a parceria com o órgão concedente), incluindo termos aditivos.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_total_atual",
+              "title": "Valor Total Atualizado",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "description": "- > \nValor financeiro total do convênio/parceria, incluindo termos aditivos. \nRefere-se à soma dos valores do concedente / órgão ou entidade estadual parceiro, emenda parlamentar, interveniente, \noutras fontes, contrapartida e rendimentos financeiros provenientes da aplicação dos recursos depositados na conta \nbancária do convênio / parceria.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_rep_concede_atual",
+              "title": "Valor Repassado Concedente Atualizado",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "description": "- > \nValor financeiro repassado pelo concedente/órgão ou entidade estadual parceiro ao convenente / Organização da \nSociedade Civil (OSC) parceria, referente ao(s) convênios(s)/ parceria(s) firmado(s) entre as partes por meio de \npagamento via SIAFI. \n\nAbrange o valor do concedente / órgão ou entidade estadual parceiro, das emendas parlamentares e outras fontes. \nO efetivo pagamento pode estar sujeito a compensação bancária.\n"
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_orgao"
+              ],
+              "reference": {
+                "fields": [
+                  "id_orgao"
+                ],
+                "resource": "dm_orgao_concedente"
+              }
+            },
+            {
+              "fields": [
+                "id_municipio"
+              ],
+              "reference": {
+                "fields": [
+                  "id_municipio"
+                ],
+                "resource": "dm_municipio"
+              }
+            },
+            {
+              "fields": [
+                "id_convenio"
+              ],
+              "reference": {
+                "fields": [
+                  "id_convenio"
+                ],
+                "resource": "dm_convenio"
+              }
+            },
+            {
+              "fields": [
+                "id_convenente"
+              ],
+              "reference": {
+                "fields": [
+                  "id_convenente"
+                ],
+                "resource": "dm_convenente"
+              }
+            },
+            {
+              "fields": [
+                "id_tempo"
+              ],
+              "reference": {
+                "fields": [
+                  "id_tempo"
+                ],
+                "resource": "dm_tempo_diario"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_convenio"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "1ccff1d0aeeb427acedd1294b0184053",
+          "bytes": 1155220,
+          "fields": 12,
+          "rows": 67814
+        }
+      },
+      "time": 8.204,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

@@ -1,0 +1,119 @@
+{
+  "version": "4.38.0",
+  "time": 2.157,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "fl_convenio_interveniente",
+        "title": "Convênio Interveniente",
+        "path": "data/fl_convenio_interveniente.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_convenio",
+              "title": "Convênio / Parceria - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "id_interveniente",
+              "title": "Interveniente - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_interveniente"
+              ],
+              "reference": {
+                "fields": [
+                  "id_interveniente"
+                ],
+                "resource": "dm_interveniente"
+              }
+            },
+            {
+              "fields": [
+                "id_convenio"
+              ],
+              "reference": {
+                "fields": [
+                  "id_convenio"
+                ],
+                "resource": "dm_convenio"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "fl_convenio_interveniente"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "306d2621df1281e3f034d4e25be20e70",
+          "bytes": 17067,
+          "fields": 2,
+          "rows": 3326
+        }
+      },
+      "time": 2.157,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

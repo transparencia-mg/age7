@@ -1,0 +1,108 @@
+{
+  "version": "4.38.0",
+  "time": 0.051,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_linha_fornec",
+        "title": "Linha de fornecimento",
+        "path": "data/dm_linha_fornec.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_linha_fornec",
+              "title": "Linha de Fornecimento - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_linha_fornec",
+              "title": "Linha de Fornecimento - Código",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Linha de Fornecimento - Descrição",
+              "type": "string",
+              "description": "Descrição da linha de fornecimento vinculada ao item de material/serviço.\n",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_linha_fornec"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_linha_fornec"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "e80630945499b1a57b78ee33eef46f69",
+          "bytes": 16295,
+          "fields": 3,
+          "rows": 1002
+        }
+      },
+      "time": 0.051,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

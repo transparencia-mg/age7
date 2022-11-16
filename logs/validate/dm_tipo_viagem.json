@@ -1,0 +1,99 @@
+{
+  "version": "4.38.0",
+  "time": 0.016,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_tipo_viagem",
+        "title": "Tipo viagem",
+        "path": "data/dm_tipo_viagem.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tipo_viagem",
+              "title": "Tipo de Viagem - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Tipo de Viagem - Descrição",
+              "description": "Descreve o tipo de viagem realizada pelo serviço a servidor, Nacional ou Internacional.",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            "SEM DESCRICAO"
+          ],
+          "primaryKey": [
+            "id_tipo_viagem"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_tipo_viagem"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "16e78326aff38fb0b10bd95ee25772b9",
+          "bytes": 65,
+          "fields": 2,
+          "rows": 2
+        }
+      },
+      "time": 0.016,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

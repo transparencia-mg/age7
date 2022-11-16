@@ -1,0 +1,166 @@
+{
+  "version": "4.38.0",
+  "time": 43.611,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_empenho_desp_2007",
+        "title": "Empenho Despesa 2007",
+        "path": "data/dm_empenho_desp_2007.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_empenho",
+              "title": "Número do Empenho - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_exercicio",
+              "title": "Ano de Exercício",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nr_empenho",
+              "title": "Número do Empenho",
+              "description": "Número de identificação do documento de empenho.",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "dt_empenho",
+              "title": "Data de registro do documento de empenho",
+              "type": "date",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "unidade_executora",
+              "title": "Unidade Executora",
+              "description": "Código composto do órgão executor (4 dígitos) e número sequencial da unidade executora (3 dígitos) e nome da unidade executora.\n",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "tipo_empenho",
+              "title": "Tipo de Empenho - Descrição",
+              "description": "Descrição do tipo de empenho: global, estimado, ordinário, extra-orçamentário.\n",
+              "type": "string",
+              "format": "default"
+            },
+            {
+              "name": "vr_empenho",
+              "title": "Valor do Empenho",
+              "description": "Valor do orçamento reservado para fazer face a compromisso formalmente assumido com fornecedor ou credor.",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "cd_uni_prog_gasto",
+              "title": "Código Unidade Programação de Gasto - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "uni_prog_gasto",
+              "title": "Unidade Programação de Gasto",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            "SEM DESCRICAO"
+          ],
+          "primaryKey": [
+            "id_empenho"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_empenho_desp"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "62e8071bc5cd6864723235542752a08b",
+          "bytes": 11047645,
+          "fields": 9,
+          "rows": 722089
+        }
+      },
+      "time": 43.611,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

@@ -1,0 +1,121 @@
+{
+  "version": "4.38.0",
+  "time": 0.025,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_unidade_resp_plan",
+        "title": "Unidade Responsável Planejamento",
+        "path": "data/dm_unidade_resp_plan.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_unidade",
+              "title": "Unidade Orçamentária Responsável - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_ppag",
+              "title": "Ano do PPAG",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "description": "Ano de monitoramento do Plano Plurianual de Ação Governamental.",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "cd_unidade",
+              "title": "Unidade Orçamentária Responsável - Código",
+              "type": "string",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "pattern": "\\d{4}"
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Unidade Orçamentária Responsável - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "- >\nEspecifica a unidade orçamentária responsável pelo gerenciamento em que \nestão consignados os recursos orçamentários alocados.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_unidade"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_unidade_resp_plan"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "28f0164a4c74f9804a067a5e70de327a",
+          "bytes": 52,
+          "fields": 4,
+          "rows": 0
+        }
+      },
+      "time": 0.025,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}
