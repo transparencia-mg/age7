@@ -53,7 +53,9 @@ fields:
     bareNumber: true
     decimalChar: '.'
     description: |
-      Valor financeiro previsto no convênio / parceria para o órgão concedente ou entidade estadual parceiro repassar ao convenente / Organização da Sociedade Civil (OSC) parceira, incluindo termos aditivos.
+      - >
+      Valor financeiro previsto no convênio / parceria para o órgão concedente ou entidade estadual 
+      parceiro repassar ao convenente / Organização da Sociedade Civil (OSC) parceira, incluindo termos aditivos.
     constraints:
       required: true
   - name: vr_emen_parl_atual
@@ -63,7 +65,9 @@ fields:
     bareNumber: true
     decimalChar: '.'
     description: |
-      Valor financeiro referente a indicação de um ou mais deputados estaduais, previsto no convênio / parceira para o órgão concedente repassar ao convenente, incluindo termos aditivos.
+      - >
+      Valor financeiro referente a indicação de um ou mais deputados estaduais, previsto no convênio / parceira 
+      para o órgão concedente repassar ao convenente, incluindo termos aditivos.
     constraints:
       required: true
   - name: vr_interv_atual
@@ -73,7 +77,10 @@ fields:
     bareNumber: true
     decimalChar: '.'
     description: |
-      Valor financeiro previsto no convênio / parceria para o interveniente (entidade pública ou privada que participa do convênio para manifestar consentimento ou assumir obrigações) ou outros partícipes repassar ao convenente, incluindo termos aditivos.
+      - >
+      Valor financeiro previsto no convênio / parceria para o interveniente (entidade pública ou privada que 
+      participa do convênio para manifestar consentimento ou assumir obrigações) ou outros partícipes repassar ao 
+      convenente, incluindo termos aditivos.
     constraints:
       required: true
   - name: vr_contra_atual
@@ -83,7 +90,9 @@ fields:
     bareNumber: true
     decimalChar: '.'
     description: |
-      Valor financeiro previsto no convênio / parceria referente a contrapartida financeira a ser dada pelo convenente (entidade ou pessoa que firmou a parceria com o órgão concedente), incluindo termos aditivos.
+      - >
+      Valor financeiro previsto no convênio / parceria referente a contrapartida financeira a ser dada pelo convenente 
+      (entidade ou pessoa que firmou a parceria com o órgão concedente), incluindo termos aditivos.
     constraints:
       required: true
   - name: vr_total_atual
@@ -93,8 +102,11 @@ fields:
     bareNumber: true
     decimalChar: '.'
     description: |
+      - >
       Valor financeiro total do convênio/parceria, incluindo termos aditivos. 
-      Refere-se à soma dos valores do concedente / órgão ou entidade estadual parceiro, emenda parlamentar, interveniente, outras fontes, contrapartida e rendimentos financeiros provenientes da aplicação dos recursos depositados na conta bancária do convênio / parceria.
+      Refere-se à soma dos valores do concedente / órgão ou entidade estadual parceiro, emenda parlamentar, interveniente, 
+      outras fontes, contrapartida e rendimentos financeiros provenientes da aplicação dos recursos depositados na conta 
+      bancária do convênio / parceria.
     constraints:
       required: true
   - name: vr_rep_concede_atual
@@ -104,8 +116,10 @@ fields:
     bareNumber: true
     decimalChar: '.'
     description: |
-      Valor financeiro repassado pelo concedente/órgão ou entidade estadual parceiro ao convenente / Organização da Sociedade Civil (OSC) parceria, referente ao(s) convênios(s)/ parceria(s) firmado(s) entre as partes por meio de pagamento via SIAFI. 
-
+      - >
+      Valor financeiro repassado pelo concedente/órgão ou entidade estadual parceiro ao convenente / Organização da 
+      Sociedade Civil (OSC) parceria, referente ao(s) convênios(s)/ parceria(s) firmado(s) entre as partes por meio de 
+      pagamento via SIAFI. 
       Abrange o valor do concedente / órgão ou entidade estadual parceiro, das emendas parlamentares e outras fontes. 
       O efetivo pagamento pode estar sujeito a compensação bancária.
 missingValues:
