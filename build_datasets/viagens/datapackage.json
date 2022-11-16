@@ -315,7 +315,9 @@
             "type": "year",
             "format": "default",
             "constraints": {
-              "required": true
+              "required": true,
+              "minimum": 1900,
+              "maximum": 2050
             }
           },
           {
@@ -354,7 +356,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.537,
+        "time": 4.001,
         "errors": [],
         "tasks": [
           {
@@ -414,7 +416,9 @@
                     "type": "year",
                     "format": "default",
                     "constraints": {
-                      "required": true
+                      "required": true,
+                      "minimum": 1900,
+                      "maximum": 2050
                     }
                   },
                   {
@@ -457,7 +461,7 @@
                 "rows": 55153
               }
             },
-            "time": 3.537,
+            "time": 4.001,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -654,7 +658,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.017,
+        "time": 0.019,
         "errors": [],
         "tasks": [
           {
@@ -686,7 +690,7 @@
                 "rows": 0
               }
             },
-            "time": 0.017,
+            "time": 0.019,
             "scope": [],
             "partial": false,
             "errors": [
@@ -1527,7 +1531,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 40.434,
+        "time": 44.744,
         "errors": [],
         "tasks": [
           {
@@ -1608,13 +1612,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "65d958e0dfaaf8a3d9486bee2bccb44b",
-                "bytes": 30477325,
+                "hash": "c58493d15ad8062c82c22ddd1caac79c",
+                "bytes": 30468577,
                 "fields": 5,
                 "rows": 643897
               }
             },
-            "time": 40.434,
+            "time": 44.744,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2081,7 +2085,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.035,
+        "time": 0.04,
         "errors": [],
         "tasks": [
           {
@@ -2233,7 +2237,7 @@
                 "rows": 198
               }
             },
-            "time": 0.035,
+            "time": 0.04,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3124,7 +3128,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 255.489,
+        "time": 282.763,
         "errors": [],
         "tasks": [
           {
@@ -3581,13 +3585,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "477ad26f608957dca77f57810ecd4aac",
-                "bytes": 18963012,
+                "hash": "b118f46c3381a7d1517db7dfd6cf58d4",
+                "bytes": 18963203,
                 "fields": 23,
-                "rows": 1403195
+                "rows": 1403210
               }
             },
-            "time": 255.489,
+            "time": 282.763,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3609,18 +3613,589 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [],
+            "errors": [
+              {
+                "cells": [
+                  "43556",
+                  "64470",
+                  "17",
+                  "141",
+                  "34",
+                  "1",
+                  "12",
+                  "5061",
+                  "1",
+                  "12",
+                  "5141",
+                  "643905",
+                  "1",
+                  "1",
+                  "5",
+                  "2",
+                  "4",
+                  "2022",
+                  "2022-09-21",
+                  "2022-09-21",
+                  "0.35",
+                  "90.30",
+                  "0.00"
+                ],
+                "rowNumber": 1400137,
+                "rowPosition": 1400138,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643905\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400138\" violates the foreign key: for \"id_documento_viagem\": values \"643905\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43556",
+                  "64470",
+                  "17",
+                  "141",
+                  "34",
+                  "1",
+                  "12",
+                  "5061",
+                  "1",
+                  "12",
+                  "5536",
+                  "643905",
+                  "1",
+                  "1",
+                  "5",
+                  "2",
+                  "2",
+                  "2022",
+                  "2022-09-21",
+                  "2022-09-21",
+                  "0.00",
+                  "0.00",
+                  "0.00"
+                ],
+                "rowNumber": 1400138,
+                "rowPosition": 1400139,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643905\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400139\" violates the foreign key: for \"id_documento_viagem\": values \"643905\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43556",
+                  "64470",
+                  "17",
+                  "141",
+                  "34",
+                  "1",
+                  "12",
+                  "5141",
+                  "1",
+                  "12",
+                  "5061",
+                  "643905",
+                  "1",
+                  "1",
+                  "5",
+                  "2",
+                  "1",
+                  "2022",
+                  "2022-09-21",
+                  "2022-09-21",
+                  "0.00",
+                  "0.00",
+                  "0.00"
+                ],
+                "rowNumber": 1400139,
+                "rowPosition": 1400140,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643905\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400140\" violates the foreign key: for \"id_documento_viagem\": values \"643905\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43556",
+                  "64470",
+                  "17",
+                  "141",
+                  "34",
+                  "1",
+                  "12",
+                  "5536",
+                  "1",
+                  "12",
+                  "5061",
+                  "643905",
+                  "1",
+                  "1",
+                  "5",
+                  "2",
+                  "3",
+                  "2022",
+                  "2022-09-21",
+                  "2022-09-21",
+                  "0.00",
+                  "0.00",
+                  "0.00"
+                ],
+                "rowNumber": 1400140,
+                "rowPosition": 1400141,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643905\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400141\" violates the foreign key: for \"id_documento_viagem\": values \"643905\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43567",
+                  "34705",
+                  "48",
+                  "2651",
+                  "4",
+                  "1",
+                  "12",
+                  "5595",
+                  "1",
+                  "27",
+                  "5592",
+                  "643908",
+                  "1",
+                  "1",
+                  "1",
+                  "3",
+                  "1",
+                  "2022",
+                  "2022-10-02",
+                  "2022-10-07",
+                  "5.00",
+                  "2350.00",
+                  "606.60"
+                ],
+                "rowNumber": 1400147,
+                "rowPosition": 1400148,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643908\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400148\" violates the foreign key: for \"id_documento_viagem\": values \"643908\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43567",
+                  "34705",
+                  "48",
+                  "2651",
+                  "4",
+                  "1",
+                  "27",
+                  "5592",
+                  "1",
+                  "12",
+                  "5595",
+                  "643908",
+                  "1",
+                  "1",
+                  "1",
+                  "3",
+                  "2",
+                  "2022",
+                  "2022-10-07",
+                  "2022-10-07",
+                  "0.35",
+                  "164.50",
+                  "581.90"
+                ],
+                "rowNumber": 1400148,
+                "rowPosition": 1400149,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643908\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400149\" violates the foreign key: for \"id_documento_viagem\": values \"643908\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43567",
+                  "59121",
+                  "48",
+                  "2651",
+                  "4",
+                  "1",
+                  "12",
+                  "5595",
+                  "1",
+                  "27",
+                  "5592",
+                  "643909",
+                  "1",
+                  "1",
+                  "1",
+                  "3",
+                  "1",
+                  "2022",
+                  "2022-10-02",
+                  "2022-10-07",
+                  "5.00",
+                  "2350.00",
+                  "606.60"
+                ],
+                "rowNumber": 1400153,
+                "rowPosition": 1400154,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643909\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400154\" violates the foreign key: for \"id_documento_viagem\": values \"643909\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43567",
+                  "59121",
+                  "48",
+                  "2651",
+                  "4",
+                  "1",
+                  "27",
+                  "5592",
+                  "1",
+                  "12",
+                  "5595",
+                  "643909",
+                  "1",
+                  "1",
+                  "1",
+                  "3",
+                  "2",
+                  "2022",
+                  "2022-10-07",
+                  "2022-10-07",
+                  "0.35",
+                  "164.50",
+                  "581.90"
+                ],
+                "rowNumber": 1400154,
+                "rowPosition": 1400155,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643909\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400155\" violates the foreign key: for \"id_documento_viagem\": values \"643909\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43567",
+                  "64289",
+                  "48",
+                  "2651",
+                  "4",
+                  "1",
+                  "12",
+                  "5595",
+                  "1",
+                  "27",
+                  "5592",
+                  "643911",
+                  "1",
+                  "1",
+                  "1",
+                  "3",
+                  "1",
+                  "2022",
+                  "2022-10-02",
+                  "2022-10-07",
+                  "5.00",
+                  "2350.00",
+                  "606.60"
+                ],
+                "rowNumber": 1400155,
+                "rowPosition": 1400156,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643911\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400156\" violates the foreign key: for \"id_documento_viagem\": values \"643911\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43567",
+                  "64289",
+                  "48",
+                  "2651",
+                  "4",
+                  "1",
+                  "27",
+                  "5592",
+                  "1",
+                  "12",
+                  "5595",
+                  "643911",
+                  "1",
+                  "1",
+                  "1",
+                  "3",
+                  "2",
+                  "2022",
+                  "2022-10-07",
+                  "2022-10-07",
+                  "0.35",
+                  "164.50",
+                  "581.90"
+                ],
+                "rowNumber": 1400156,
+                "rowPosition": 1400157,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643911\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400157\" violates the foreign key: for \"id_documento_viagem\": values \"643911\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43568",
+                  "941",
+                  "138",
+                  "2690",
+                  "34",
+                  "1",
+                  "12",
+                  "5595",
+                  "1",
+                  "12",
+                  "5380",
+                  "643910",
+                  "1",
+                  "1",
+                  "7",
+                  "1",
+                  "2",
+                  "2022",
+                  "2022-10-07",
+                  "2022-10-07",
+                  "0.35",
+                  "164.50",
+                  "0.00"
+                ],
+                "rowNumber": 1400157,
+                "rowPosition": 1400158,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643910\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400158\" violates the foreign key: for \"id_documento_viagem\": values \"643910\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43568",
+                  "941",
+                  "138",
+                  "2690",
+                  "34",
+                  "1",
+                  "12",
+                  "5380",
+                  "1",
+                  "12",
+                  "5595",
+                  "643910",
+                  "1",
+                  "1",
+                  "7",
+                  "1",
+                  "1",
+                  "2022",
+                  "2022-10-03",
+                  "2022-10-07",
+                  "4.00",
+                  "1880.00",
+                  "0.00"
+                ],
+                "rowNumber": 1400158,
+                "rowPosition": 1400159,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643910\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400159\" violates the foreign key: for \"id_documento_viagem\": values \"643910\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43571",
+                  "64700",
+                  "17",
+                  "2871",
+                  "34",
+                  "1",
+                  "12",
+                  "5061",
+                  "1",
+                  "12",
+                  "5536",
+                  "643907",
+                  "1",
+                  "1",
+                  "5",
+                  "2",
+                  "1",
+                  "2022",
+                  "2022-10-06",
+                  "2022-10-06",
+                  "0.00",
+                  "0.00",
+                  "0.00"
+                ],
+                "rowNumber": 1400179,
+                "rowPosition": 1400180,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643907\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400180\" violates the foreign key: for \"id_documento_viagem\": values \"643907\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43571",
+                  "64700",
+                  "17",
+                  "2871",
+                  "34",
+                  "1",
+                  "12",
+                  "5536",
+                  "1",
+                  "12",
+                  "5061",
+                  "643907",
+                  "1",
+                  "1",
+                  "5",
+                  "2",
+                  "2",
+                  "2022",
+                  "2022-10-06",
+                  "2022-10-06",
+                  "0.35",
+                  "90.30",
+                  "0.00"
+                ],
+                "rowNumber": 1400180,
+                "rowPosition": 1400181,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643907\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400181\" violates the foreign key: for \"id_documento_viagem\": values \"643907\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "43578",
+                  "1811",
+                  "22",
+                  "3108",
+                  "56",
+                  "1",
+                  "12",
+                  "5502",
+                  "1",
+                  "12",
+                  "5601",
+                  "643906",
+                  "1",
+                  "1",
+                  "7",
+                  "1",
+                  "3",
+                  "2022",
+                  "2022-10-14",
+                  "2022-10-14",
+                  "0.00",
+                  "0.00",
+                  "0.00"
+                ],
+                "rowNumber": 1400181,
+                "rowPosition": 1400182,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_documento_viagem\": values \"643906\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "message": "Row at position \"1400182\" violates the foreign key: for \"id_documento_viagem\": values \"643906\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              }
+            ],
             "stats": {
-              "errors": 0
+              "errors": 15
             },
-            "valid": true
+            "valid": false
           }
         ],
         "stats": {
-          "errors": 0,
+          "errors": 15,
           "tasks": 1
         },
-        "valid": true
+        "valid": false
       }
     },
     {
@@ -3958,7 +4533,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.159,
+        "time": 0.182,
         "errors": [],
         "tasks": [
           {
@@ -4293,13 +4868,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "94a62a7d89a28506a4b59827821f0e99",
-                "bytes": 9740557,
+                "hash": "5a82ced0868976a570e9e107da258349",
+                "bytes": 9740696,
                 "fields": 14,
                 "rows": 0
               }
             },
-            "time": 0.159,
+            "time": 0.182,
             "scope": [],
             "partial": false,
             "errors": [
@@ -5425,7 +6000,7 @@
       "path": "https://creativecommons.org/licenses/by/4.0/"
     }
   ],
-  "description": "None\n# Portal da Transparência\n\nEsse data package visa documentar as tabelas do modelo dimensional utilizado no banco de dados do Portal da Transparência. \nOs data packages representando consultas específicas do Portal da Transparência serão extraídos deste data package para fins de publicação.\n\nEssa organização foi utilizada para evitar a necessidade de manter documentação em múltiplos repositórios para tabelas que são utilizadas em múltiplas consultas.\n\n## Instalação e configuração\n\nInstruções sobre instalação dos pré-requisitos e configuração do ambiente estão disponíves no arquivo [INSTALL](INSTALL.md)\n\n## Uso\n\n### Linha de comando\n\n#### Documentação\n\n```bash\nmake preview\n```\n\n```bash\nmake format resource=resource-name\n```\n\n#### Validação\n\nPara validação do data package com `make validate` e `make validate_metadata` é necessário a ativação do ambiente virtual do Python criado durante o processo de instalação.\n\nPara determinar qual comando para fazer a ativação execute na linha de comando\n\n```bash\nconda env list\n# conda environments:\n# age7                     /path/r-miniconda/envs/age7\n# base                  *  /path/opt/anaconda3\n```\n\nPara ativar execute\n\n```bash\nconda activate age7\n```\n\nEm alguns casos, o \"atalho\" para ativação do ambiente conda não é registrado. Por exemplo\n\n```bash\nconda env list\n# conda environments:\n                         /Users/fjunior/Library/r-miniconda/envs/age7\nbase                     /Users/fjunior/opt/anaconda3\n```\n\nNesse caso, ao invés de executar `conda activate age7`  necessário indicar o caminho para o ambiente conda (eg. `conda activate /path/r-miniconda/envs/age7`).\n\nNo windows é necessário utilizar o separador \\ no lugar de /:\n\n```bash\nconda activate C:\\Users\\user\\AppData\\Local\\R-MINI~1\\envs\\age7\n```\n\nO seu prompt da linha de comando, apesar de formas possivelmente diferentes, vai indicar se o ambiente virtual está ativo\n\n- `remuneracao$` -> `(age7) remuneracao$`\n\nPara validar: \n\n - os metadados armazenados no table schema, execute:\n\n```bash\nmake validate_metadata resource=resource_name\n```\n\n - os dados armazenados em `data/`, em conformidade com os metadados, execute:\n\n```bash\nmake validate\n```\n\n - somente um recurso unitário armazenado em `data/`, em conformidade com os metadados, execute:\n\n```bash\nmake validate_data resource=resource_name\n```\n\n### Rstudio\n\nO script `scripts/exploratory-analysis.R` pode ser utilizado de forma interativa para o processo de análise exploratória para construção de um perfil dos recursos (ie. tabelas fato e dimensão).\n\n\n",
+  "description": "None\n# Portal da Transparência\n\nEsse data package visa documentar as tabelas do modelo dimensional utilizado no banco de dados do Portal da Transparência. \nOs data packages representando consultas específicas do Portal da Transparência serão extraídos deste data package para fins de publicação.\n\nEssa organização foi utilizada para evitar a necessidade de manter documentação em múltiplos repositórios para tabelas que são utilizadas em múltiplas consultas.\n\n## Instalação e configuração\n\nInstruções sobre instalação dos pré-requisitos e configuração do ambiente estão disponíves no arquivo [INSTALL](INSTALL.md)\n\n## Uso\n\n### Linha de comando\n\n#### Documentação\n\n```bash\nmake preview\n```\n\n```bash\nmake format resource=resource-name\n```\n\n#### Validação\n\nPara validação do data package com `make validate` e `make validate_metadata` é necessário a ativação do ambiente virtual do Python criado durante o processo de instalação.\n\nPara determinar qual comando para fazer a ativação execute na linha de comando\n\n```bash\nconda env list\n# conda environments:\n# age7                     /path/r-miniconda/envs/age7\n# base                  *  /path/opt/anaconda3\n```\n\nPara ativar execute\n\n```bash\nconda activate age7\n```\n\nEm alguns casos, o \"atalho\" para ativação do ambiente conda não é registrado. Por exemplo\n\n```bash\nconda env list\n# conda environments:\n                         /Users/fjunior/Library/r-miniconda/envs/age7\nbase                     /Users/fjunior/opt/anaconda3\n```\n\nNesse caso, ao invés de executar `conda activate age7`  necessário indicar o caminho para o ambiente conda (eg. `conda activate /path/r-miniconda/envs/age7`).\n\nNo windows é necessário utilizar o separador \\ no lugar de /:\n\n```bash\nconda activate C:\\Users\\user\\AppData\\Local\\R-MINI~1\\envs\\age7\n```\n\nO seu prompt da linha de comando, apesar de formas possivelmente diferentes, vai indicar se o ambiente virtual está ativo\n\n- `remuneracao$` -> `(age7) remuneracao$`\n\nPara validar: \n\n - os metadados armazenados no table schema, execute:\n\n```bash\nmake validate_metadata resource=resource_name\n```\n\n - os dados armazenados em `data/`, em conformidade com os metadados, execute:\n\n```bash\nmake validate\n```\n\n - somente um recurso unitário armazenado em `data/`, em conformidade com os metadados, execute:\n\n```bash\nmake validate_data resource=resource_name\n```\n\n### Rstudio\n\nO script `scripts/exploratory-analysis.R` pode ser utilizado de forma interativa para o processo de análise exploratória para construção de um perfil dos recursos (ie. tabelas fato e dimensão).\n\n",
   "keywords": [
     "Portal da Transparência",
     "Viagens",
