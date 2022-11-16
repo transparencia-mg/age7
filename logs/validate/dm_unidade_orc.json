@@ -1,0 +1,168 @@
+{
+  "version": "4.38.0",
+  "time": 0.036,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_unidade_orc",
+        "title": "Unidade Orçamentária",
+        "path": "data/dm_unidade_orc.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_unidade_orc",
+              "title": "Unidade Orçamentária - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_exercicio",
+              "title": "Ano de Exercício",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "cd_unidade_orc",
+              "title": "Unidade Orçamentária- Código",
+              "type": "string",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "pattern": "\\d{4}"
+              }
+            },
+            {
+              "name": "id_grupo_administracao",
+              "title": "Grupo Administração- Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "grupo_administracao",
+              "title": "Grupo Administração- Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Descrição da natureza jurídica no qual a unidade orçamentária está incluída.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "id_administracao",
+              "title": "Administração - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "administracao",
+              "title": "Administração - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Descrição da natureza jurídica no qual a unidade orçamentária está incluída.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Unidade Orçamentária - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "Nome completo da Unidade Orçamentária.\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "sigla",
+              "title": "Unidade Orçamentária - Sigla",
+              "type": "string",
+              "format": "default"
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "primaryKey": [
+            "id_unidade_orc"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_unidade_orc"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "0cbb6482ec889b8349b64cae907925d6",
+          "bytes": 95,
+          "fields": 9,
+          "rows": 0
+        }
+      },
+      "time": 0.036,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

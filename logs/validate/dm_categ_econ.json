@@ -1,0 +1,120 @@
+{
+  "version": "4.38.0",
+  "time": 0.028,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_categ_econ",
+        "title": "Categoria Econômica",
+        "path": "data/dm_categ_econ.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_categ_econ",
+              "title": "Categoria Econômica da Despesa- Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "cd_categ_econ",
+              "title": "Categoria Econômica da Despesa - Código",
+              "type": "string",
+              "format": "default",
+              "description": "Código identificador da categoria econômica da despesa.\n - 3 Despesas Correntes\n - 4 Despesas de Capital\n",
+              "constraints": {
+                "enum": [
+                  "3",
+                  "4"
+                ]
+              },
+              "missingValues": [
+                "0",
+                "9"
+              ]
+            },
+            {
+              "name": "nome",
+              "title": "Categoria Econômica da Despesa - Descrição",
+              "type": "string",
+              "format": "default",
+              "description": "- >\nClassificação da despesa quanto ao impacto econômico que ela gera, pdoendo ser corrente (funcionamento dos órgãos, pagamentos do servidores, etc) ou de capital (obras, equipamentos, etc).\n",
+              "constraints": {
+                "enum": [
+                  "DESPESAS DE CAPITAL",
+                  "DESPESAS CORRENTES"
+                ]
+              },
+              "missingValues": [
+                "SEM CATEGORIA",
+                "A CLASSIFICAR"
+              ]
+            }
+          ],
+          "primaryKey": [
+            "id_categ_econ"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_categ_econ"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "0bee8d6fa21957e58774b163b12987c0",
+          "bytes": 46,
+          "fields": 3,
+          "rows": 0
+        }
+      },
+      "time": 0.028,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

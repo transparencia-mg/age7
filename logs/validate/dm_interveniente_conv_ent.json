@@ -1,0 +1,109 @@
+{
+  "version": "4.38.0",
+  "time": 0.018,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "dm_interveniente_conv_ent",
+        "title": "Interveniente Convênio de Entrada",
+        "path": "data/dm_interveniente_conv_ent.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_interveniente",
+              "title": "Órgão Interveniente - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nr_documento",
+              "title": "Órgão Interveniente - Código",
+              "description": "Codigo do órgão interveniente do Convênio de Entrada",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "nome",
+              "title": "Órgão Interveniente - Descrição",
+              "description": "Órgão ou entidade que participa do convênio dando sua anuência ou assumindo obrigações diferentes daquelas assumidas pelo Proponente ou Concedente.\nÉ opcional, pode ser pessoa física ou uma Unidade/Órgão.\n",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            "SEM DESCRICAO"
+          ],
+          "primaryKey": [
+            "id_interveniente"
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "dm_interveniente_conv_ent"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "f9a6dd8e7c34539fbc61276c57145075",
+          "bytes": 57,
+          "fields": 3,
+          "rows": 0
+        }
+      },
+      "time": 0.018,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}
