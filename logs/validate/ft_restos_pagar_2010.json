@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 25.475,
+  "time": 49.534,
   "errors": [],
   "tasks": [
     {
@@ -16,6 +16,7 @@
               "type": "integer",
               "format": "default",
               "bareNumber": true,
+              "description": "- > \n  Chave estrangeira (Foreign Key) que aponta para a Chave Primária (Primary keys) da tabela dm_tempo_diario. \n  Ou seja, por meio dessa chave é possível identificar a data completa a qual o dado se refere.\n\n  Nota: \n  No site dados.mg.gov.br a tabela dm_tempo_diario pode ser encontrada no recurso Calendários - Dias \n  de cada conjunto.\n",
               "constraints": {
                 "required": true,
                 "unique": false
@@ -485,31 +486,41 @@
           "hash": "9735af5513ea400cc1b9738cf6735a39",
           "bytes": 2104127,
           "fields": 26,
-          "rows": 0
+          "rows": 128598
         }
       },
-      "time": 25.475,
-      "scope": [],
-      "partial": false,
-      "errors": [
-        {
-          "code": "schema-error",
-          "name": "Schema Error",
-          "tags": [],
-          "note": "primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
-          "message": "Schema is not valid: primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
-          "description": "Provided schema is not valid."
-        }
+      "time": 49.534,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
       ],
+      "partial": false,
+      "errors": [],
       "stats": {
-        "errors": 1
+        "errors": 0
       },
-      "valid": false
+      "valid": true
     }
   ],
   "stats": {
-    "errors": 1,
+    "errors": 0,
     "tasks": 1
   },
-  "valid": false
+  "valid": true
 }

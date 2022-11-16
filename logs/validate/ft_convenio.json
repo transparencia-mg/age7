@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 8.209,
+  "time": 9.148,
   "errors": [],
   "tasks": [
     {
@@ -16,6 +16,7 @@
               "type": "integer",
               "format": "default",
               "bareNumber": true,
+              "description": "- > \n  Chave estrangeira (Foreign Key) que aponta para a Chave Primária (Primary keys) da tabela dm_tempo_diario. \n  Ou seja, por meio dessa chave é possível identificar a data completa a qual o dado se refere.\n\n  Nota: \n  No site dados.mg.gov.br a tabela dm_tempo_diario pode ser encontrada no recurso Calendários - Dias \n  de cada conjunto.\n",
               "constraints": {
                 "required": true,
                 "unique": false
@@ -106,7 +107,7 @@
               "format": "default",
               "bareNumber": true,
               "decimalChar": ".",
-              "description": "- > \n Valor financeiro previsto no convênio / parceria para o interveniente (entidade pública ou privada que \n participa do convênio para manifestar consentimento ou assumir obrigações) ou outros partícipes repassar ao \n convenente, incluindo termos aditivos.\n",
+              "description": "- >\nValor financeiro previsto no convênio / parceria para o interveniente (entidade pública ou privada que \nparticipa do convênio para manifestar consentimento ou assumir obrigações) ou outros partícipes repassar ao \nconvenente, incluindo termos aditivos.\n",
               "constraints": {
                 "required": true
               }
@@ -118,7 +119,7 @@
               "format": "default",
               "bareNumber": true,
               "decimalChar": ".",
-              "description": "- > \n Valor financeiro previsto no convênio / parceria referente a contrapartida financeira a ser dada pelo convenente \n (entidade ou pessoa que firmou a parceria com o órgão concedente), incluindo termos aditivos.\n",
+              "description": "- >\nValor financeiro previsto no convênio / parceria referente a contrapartida financeira a ser dada pelo convenente \n(entidade ou pessoa que firmou a parceria com o órgão concedente), incluindo termos aditivos.\n",
               "constraints": {
                 "required": true
               }
@@ -130,7 +131,7 @@
               "format": "default",
               "bareNumber": true,
               "decimalChar": ".",
-              "description": "- > \nValor financeiro total do convênio/parceria, incluindo termos aditivos. \nRefere-se à soma dos valores do concedente / órgão ou entidade estadual parceiro, emenda parlamentar, interveniente, \noutras fontes, contrapartida e rendimentos financeiros provenientes da aplicação dos recursos depositados na conta \nbancária do convênio / parceria.\n",
+              "description": "- >\nValor financeiro total do convênio/parceria, incluindo termos aditivos. \nRefere-se à soma dos valores do concedente / órgão ou entidade estadual parceiro, emenda parlamentar, interveniente, \noutras fontes, contrapartida e rendimentos financeiros provenientes da aplicação dos recursos depositados na conta \nbancária do convênio / parceria.\n",
               "constraints": {
                 "required": true
               }
@@ -142,7 +143,7 @@
               "format": "default",
               "bareNumber": true,
               "decimalChar": ".",
-              "description": "- > \nValor financeiro repassado pelo concedente/órgão ou entidade estadual parceiro ao convenente / Organização da \nSociedade Civil (OSC) parceria, referente ao(s) convênios(s)/ parceria(s) firmado(s) entre as partes por meio de \npagamento via SIAFI. \n\nAbrange o valor do concedente / órgão ou entidade estadual parceiro, das emendas parlamentares e outras fontes. \nO efetivo pagamento pode estar sujeito a compensação bancária.\n"
+              "description": "- >\nValor financeiro repassado pelo concedente/órgão ou entidade estadual parceiro ao convenente / Organização da \nSociedade Civil (OSC) parceria, referente ao(s) convênios(s)/ parceria(s) firmado(s) entre as partes por meio de \npagamento via SIAFI. \nAbrange o valor do concedente / órgão ou entidade estadual parceiro, das emendas parlamentares e outras fontes. \nO efetivo pagamento pode estar sujeito a compensação bancária.\n"
             }
           ],
           "missingValues": [
@@ -223,13 +224,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "f946801ced475ddc02f5fb3ef72c84a7",
-          "bytes": 1121507,
+          "hash": "7d3e83e564162a2cfd1dbec3a9bcd201",
+          "bytes": 1130270,
           "fields": 12,
-          "rows": 67828
+          "rows": 67836
         }
       },
-      "time": 8.209,
+      "time": 9.148,
       "scope": [
         "hash-count-error",
         "byte-count-error",

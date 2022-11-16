@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 5.296,
+  "time": 5.397,
   "errors": [],
   "tasks": [
     {
@@ -16,6 +16,7 @@
               "type": "integer",
               "format": "default",
               "bareNumber": true,
+              "description": "- > \n  Chave estrangeira (Foreign Key) que aponta para a Chave Primária (Primary keys) da tabela dm_tempo_diario. \n  Ou seja, por meio dessa chave é possível identificar a data completa a qual o dado se refere.\n\n  Nota: \n  No site dados.mg.gov.br a tabela dm_tempo_diario pode ser encontrada no recurso Calendários - Dias \n  de cada conjunto.\n",
               "constraints": {
                 "required": true,
                 "unique": false
@@ -180,7 +181,7 @@
           "rows": 116910
         }
       },
-      "time": 5.296,
+      "time": 5.397,
       "scope": [
         "hash-count-error",
         "byte-count-error",

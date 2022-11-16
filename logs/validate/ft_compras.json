@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 16.432,
+  "time": 406.077,
   "errors": [],
   "tasks": [
     {
@@ -15,6 +15,7 @@
               "title": "Tempo - Chave",
               "type": "integer",
               "format": "default",
+              "description": "- > \n  Chave estrangeira (Foreign Key) que aponta para a Chave Primária (Primary keys) da tabela dm_tempo_diario. \n  Ou seja, por meio dessa chave é possível identificar a data completa a qual o dado se refere.\n\n  Nota: \n  No site dados.mg.gov.br a tabela dm_tempo_diario pode ser encontrada no recurso Calendários - Dias \n  de cada conjunto.\n",
               "bareNumber": true,
               "constraints": {
                 "required": true,
@@ -529,23 +530,76 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "0898c1b4413312a567b09d90573b4e99",
-          "bytes": 57605240,
+          "hash": "cfee85fa398e5b5b638032e3e31fe918",
+          "bytes": 57878686,
           "fields": 27,
-          "rows": 0
+          "rows": 1898288
         }
       },
-      "time": 16.432,
-      "scope": [],
+      "time": 406.077,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
       "partial": false,
       "errors": [
         {
-          "code": "schema-error",
-          "name": "Schema Error",
-          "tags": [],
-          "note": "primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
-          "message": "Schema is not valid: primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
-          "description": "Provided schema is not valid."
+          "cells": [
+            "43492",
+            "4",
+            "1831009",
+            "1",
+            "1",
+            "1",
+            "835",
+            "72545",
+            "1",
+            "77",
+            "183",
+            "4416",
+            "273711",
+            "380911",
+            "77974",
+            "889",
+            "1831800",
+            "3136",
+            "2413",
+            "2022",
+            "2022-10-27",
+            "0.0000",
+            "20000.0000",
+            "20000.00",
+            "20000.0000",
+            "20000.00",
+            "20000.00"
+          ],
+          "rowNumber": 1853845,
+          "rowPosition": 1853846,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_contrato\": values \"77974\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+          "message": "Row at position \"1853846\" violates the foreign key: for \"id_contrato\": values \"77974\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
         }
       ],
       "stats": {

@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 0.182,
+  "time": 100.557,
   "errors": [],
   "tasks": [
     {
@@ -16,6 +16,7 @@
               "type": "integer",
               "format": "default",
               "bareNumber": true,
+              "description": "- > \n  Chave estrangeira (Foreign Key) que aponta para a Chave Primária (Primary keys) da tabela dm_tempo_diario. \n  Ou seja, por meio dessa chave é possível identificar a data completa a qual o dado se refere.\n\n  Nota: \n  No site dados.mg.gov.br a tabela dm_tempo_diario pode ser encontrada no recurso Calendários - Dias \n  de cada conjunto.\n",
               "constraints": {
                 "required": true,
                 "unique": false
@@ -335,33 +336,624 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "5a82ced0868976a570e9e107da258349",
-          "bytes": 9740696,
+          "hash": "ebe8e727c4d7a8846b22f0ad742dccb8",
+          "bytes": 9885050,
           "fields": 14,
-          "rows": 0
+          "rows": 639462
         }
       },
-      "time": 0.182,
-      "scope": [],
+      "time": 100.557,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
       "partial": false,
       "errors": [
         {
-          "code": "schema-error",
-          "name": "Schema Error",
-          "tags": [],
-          "note": "primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
-          "message": "Schema is not valid: primary key \"['id_item']\" does not match the fields \"['id_item_desp', 'cd_item_desp', 'nome']\"",
-          "description": "Provided schema is not valid."
+          "cells": [
+            "654000",
+            "13213754",
+            "14400",
+            "1970",
+            "490",
+            "3012",
+            "56743",
+            "0",
+            "79",
+            "401",
+            "2022-11-03",
+            "2022-11-03",
+            "0.00",
+            "258.00"
+          ],
+          "rowNumber": 633143,
+          "rowPosition": 633144,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"654000\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633144\" violates the foreign key: for \"id_documento_viagem\": values \"654000\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "654000",
+            "13213754",
+            "14400",
+            "1970",
+            "490",
+            "3012",
+            "56743",
+            "0",
+            "79",
+            "401",
+            "2022-11-03",
+            "2022-11-03",
+            "0.00",
+            "258.00"
+          ],
+          "rowNumber": 633143,
+          "rowPosition": 633144,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"654000\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633144\" violates the foreign key: for \"id_documento_viagem\": values \"654000\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653994",
+            "13234813",
+            "14400",
+            "1970",
+            "490",
+            "3012",
+            "56743",
+            "0",
+            "72",
+            "1603",
+            "2022-10-25",
+            "2022-10-25",
+            "0.00",
+            "503.10"
+          ],
+          "rowNumber": 633144,
+          "rowPosition": 633145,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653994\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633145\" violates the foreign key: for \"id_documento_viagem\": values \"653994\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653994",
+            "13234813",
+            "14400",
+            "1970",
+            "490",
+            "3012",
+            "56743",
+            "0",
+            "72",
+            "1603",
+            "2022-10-25",
+            "2022-10-25",
+            "0.00",
+            "503.10"
+          ],
+          "rowNumber": 633144,
+          "rowPosition": 633145,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653994\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633145\" violates the foreign key: for \"id_documento_viagem\": values \"653994\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653999",
+            "13328123",
+            "14286",
+            "1948",
+            "58",
+            "3012",
+            "56726",
+            "0",
+            "650",
+            "931",
+            "2022-11-03",
+            "2022-11-03",
+            "0.00",
+            "625.70"
+          ],
+          "rowNumber": 633145,
+          "rowPosition": 633146,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653999\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633146\" violates the foreign key: for \"id_documento_viagem\": values \"653999\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653999",
+            "13328123",
+            "14286",
+            "1948",
+            "58",
+            "3012",
+            "56726",
+            "0",
+            "650",
+            "931",
+            "2022-11-03",
+            "2022-11-03",
+            "0.00",
+            "625.70"
+          ],
+          "rowNumber": 633145,
+          "rowPosition": 633146,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653999\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633146\" violates the foreign key: for \"id_documento_viagem\": values \"653999\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653996",
+            "13220610",
+            "14390",
+            "1955",
+            "58",
+            "3012",
+            "56714",
+            "0",
+            "37",
+            "9628",
+            "2022-10-13",
+            "2022-10-13",
+            "0.00",
+            "381.30"
+          ],
+          "rowNumber": 633146,
+          "rowPosition": 633147,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653996\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633147\" violates the foreign key: for \"id_documento_viagem\": values \"653996\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653996",
+            "13220610",
+            "14390",
+            "1955",
+            "58",
+            "3012",
+            "56714",
+            "0",
+            "37",
+            "9628",
+            "2022-10-13",
+            "2022-10-13",
+            "0.00",
+            "381.30"
+          ],
+          "rowNumber": 633146,
+          "rowPosition": 633147,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653996\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633147\" violates the foreign key: for \"id_documento_viagem\": values \"653996\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653995",
+            "13234813",
+            "14400",
+            "1970",
+            "490",
+            "3012",
+            "56743",
+            "0",
+            "73",
+            "1604",
+            "2022-10-25",
+            "2022-10-25",
+            "0.00",
+            "503.10"
+          ],
+          "rowNumber": 633147,
+          "rowPosition": 633148,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653995\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633148\" violates the foreign key: for \"id_documento_viagem\": values \"653995\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653995",
+            "13234813",
+            "14400",
+            "1970",
+            "490",
+            "3012",
+            "56743",
+            "0",
+            "73",
+            "1604",
+            "2022-10-25",
+            "2022-10-25",
+            "0.00",
+            "503.10"
+          ],
+          "rowNumber": 633147,
+          "rowPosition": 633148,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653995\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633148\" violates the foreign key: for \"id_documento_viagem\": values \"653995\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653997",
+            "13328123",
+            "14286",
+            "1948",
+            "58",
+            "3012",
+            "56726",
+            "0",
+            "676",
+            "957",
+            "2022-11-03",
+            "2022-11-03",
+            "0.00",
+            "954.50"
+          ],
+          "rowNumber": 633148,
+          "rowPosition": 633149,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653997\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633149\" violates the foreign key: for \"id_documento_viagem\": values \"653997\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653997",
+            "13328123",
+            "14286",
+            "1948",
+            "58",
+            "3012",
+            "56726",
+            "0",
+            "676",
+            "957",
+            "2022-11-03",
+            "2022-11-03",
+            "0.00",
+            "954.50"
+          ],
+          "rowNumber": 633148,
+          "rowPosition": 633149,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653997\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633149\" violates the foreign key: for \"id_documento_viagem\": values \"653997\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653999",
+            "13330688",
+            "14286",
+            "1948",
+            "492",
+            "2772",
+            "56726",
+            "1",
+            "0",
+            "0",
+            "",
+            "",
+            "0.00",
+            "776.27"
+          ],
+          "rowNumber": 633149,
+          "rowPosition": 633150,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653999\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633150\" violates the foreign key: for \"id_documento_viagem\": values \"653999\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653999",
+            "13330688",
+            "14286",
+            "1948",
+            "492",
+            "2772",
+            "56726",
+            "1",
+            "0",
+            "0",
+            "",
+            "",
+            "0.00",
+            "776.27"
+          ],
+          "rowNumber": 633149,
+          "rowPosition": 633150,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653999\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633150\" violates the foreign key: for \"id_documento_viagem\": values \"653999\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653999",
+            "13330688",
+            "14286",
+            "1948",
+            "492",
+            "2772",
+            "56726",
+            "1",
+            "0",
+            "0",
+            "",
+            "",
+            "0.00",
+            "1179.53"
+          ],
+          "rowNumber": 633150,
+          "rowPosition": 633151,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653999\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633151\" violates the foreign key: for \"id_documento_viagem\": values \"653999\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653999",
+            "13330688",
+            "14286",
+            "1948",
+            "492",
+            "2772",
+            "56726",
+            "1",
+            "0",
+            "0",
+            "",
+            "",
+            "0.00",
+            "1179.53"
+          ],
+          "rowNumber": 633150,
+          "rowPosition": 633151,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653999\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633151\" violates the foreign key: for \"id_documento_viagem\": values \"653999\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653997",
+            "13330688",
+            "14286",
+            "1948",
+            "492",
+            "2772",
+            "56726",
+            "1",
+            "0",
+            "0",
+            "",
+            "",
+            "0.00",
+            "941.93"
+          ],
+          "rowNumber": 633151,
+          "rowPosition": 633152,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653997\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633152\" violates the foreign key: for \"id_documento_viagem\": values \"653997\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653997",
+            "13330688",
+            "14286",
+            "1948",
+            "492",
+            "2772",
+            "56726",
+            "1",
+            "0",
+            "0",
+            "",
+            "",
+            "0.00",
+            "941.93"
+          ],
+          "rowNumber": 633151,
+          "rowPosition": 633152,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653997\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633152\" violates the foreign key: for \"id_documento_viagem\": values \"653997\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653997",
+            "13330688",
+            "14286",
+            "1948",
+            "492",
+            "2772",
+            "56726",
+            "1",
+            "0",
+            "0",
+            "",
+            "",
+            "0.00",
+            "966.63"
+          ],
+          "rowNumber": 633152,
+          "rowPosition": 633153,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653997\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633153\" violates the foreign key: for \"id_documento_viagem\": values \"653997\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "653997",
+            "13330688",
+            "14286",
+            "1948",
+            "492",
+            "2772",
+            "56726",
+            "1",
+            "0",
+            "0",
+            "",
+            "",
+            "0.00",
+            "966.63"
+          ],
+          "rowNumber": 633152,
+          "rowPosition": 633153,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"653997\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"633153\" violates the foreign key: for \"id_documento_viagem\": values \"653997\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
         }
       ],
       "stats": {
-        "errors": 1
+        "errors": 20
       },
       "valid": false
     }
   ],
   "stats": {
-    "errors": 1,
+    "errors": 20,
     "tasks": 1
   },
   "valid": false

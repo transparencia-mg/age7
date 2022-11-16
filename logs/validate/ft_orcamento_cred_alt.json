@@ -1,18 +1,19 @@
 {
   "version": "4.38.0",
-  "time": 15.24,
+  "time": 17.099,
   "errors": [],
   "tasks": [
     {
       "resource": {
         "name": "ft_orcamento_cred_alt",
-        "title": "Orçamento Proposta",
+        "title": "Orçamento Crédito Alteração",
         "path": "data/ft_orcamento_cred_alt.csv.gz",
         "schema": {
           "fields": [
             {
               "name": "id_tempo",
-              "type": "integer"
+              "type": "integer",
+              "description": "- > \n  Chave estrangeira (Foreign Key) que aponta para a Chave Primária (Primary keys) da tabela dm_tempo_diario. \n  Ou seja, por meio dessa chave é possível identificar a data completa a qual o dado se refere.\n\n  Nota: \n  No site dados.mg.gov.br a tabela dm_tempo_diario pode ser encontrada no recurso Calendários - Dias \n  de cada conjunto.\n"
             },
             {
               "name": "id_grupo",
@@ -149,13 +150,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "c98da608ac14472e75cad750eded85fd",
-          "bytes": 4050634,
+          "hash": "909aafed1c46fc36adf654e5eea00e2b",
+          "bytes": 4078096,
           "fields": 30,
-          "rows": 204575
+          "rows": 205878
         }
       },
-      "time": 15.24,
+      "time": 17.099,
       "scope": [
         "hash-count-error",
         "byte-count-error",
