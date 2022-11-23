@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 0.022,
+  "time": 0.025,
   "errors": [],
   "tasks": [
     {
@@ -73,13 +73,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "d73aaee7b925eb75fa3c4730ec6cc892",
-          "bytes": 44,
+          "hash": "396c6378c4389782a390902ec8efe640",
+          "bytes": 82,
           "fields": 3,
-          "rows": 0
+          "rows": 3
         }
       },
-      "time": 0.022,
+      "time": 0.025,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -101,16 +101,86 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "cell": "0",
+          "fieldName": "cd_situacao",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "10",
+            "0",
+            "EXECUCAO"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['E', 'P', 'I']\"",
+          "message": "The cell \"0\" in row at position \"2\" and field \"cd_situacao\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['E', 'P', 'I']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "0",
+          "fieldName": "cd_situacao",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "11",
+            "0",
+            "PARALISADO"
+          ],
+          "rowNumber": 2,
+          "rowPosition": 3,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['E', 'P', 'I']\"",
+          "message": "The cell \"0\" in row at position \"3\" and field \"cd_situacao\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['E', 'P', 'I']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "0",
+          "fieldName": "cd_situacao",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "12",
+            "0",
+            "INICIADO"
+          ],
+          "rowNumber": 3,
+          "rowPosition": 4,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['E', 'P', 'I']\"",
+          "message": "The cell \"0\" in row at position \"4\" and field \"cd_situacao\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['E', 'P', 'I']\"",
+          "description": "A field value does not conform to a constraint."
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 3
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 3,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }

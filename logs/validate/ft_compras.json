@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 406.077,
+  "time": 410.863,
   "errors": [],
   "tasks": [
     {
@@ -530,13 +530,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "cfee85fa398e5b5b638032e3e31fe918",
-          "bytes": 57878686,
+          "hash": "b8486171acc0e4f32b6473b8a534e590",
+          "bytes": 57945897,
           "fields": 27,
-          "rows": 1898288
+          "rows": 1900688
         }
       },
-      "time": 406.077,
+      "time": 410.863,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -558,59 +558,16 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [
-        {
-          "cells": [
-            "43492",
-            "4",
-            "1831009",
-            "1",
-            "1",
-            "1",
-            "835",
-            "72545",
-            "1",
-            "77",
-            "183",
-            "4416",
-            "273711",
-            "380911",
-            "77974",
-            "889",
-            "1831800",
-            "3136",
-            "2413",
-            "2022",
-            "2022-10-27",
-            "0.0000",
-            "20000.0000",
-            "20000.00",
-            "20000.0000",
-            "20000.00",
-            "20000.00"
-          ],
-          "rowNumber": 1853845,
-          "rowPosition": 1853846,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "for \"id_contrato\": values \"77974\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-          "message": "Row at position \"1853846\" violates the foreign key: for \"id_contrato\": values \"77974\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        }
-      ],
+      "errors": [],
       "stats": {
-        "errors": 1
+        "errors": 0
       },
-      "valid": false
+      "valid": true
     }
   ],
   "stats": {
-    "errors": 1,
+    "errors": 0,
     "tasks": 1
   },
-  "valid": false
+  "valid": true
 }
