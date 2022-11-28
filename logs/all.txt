@@ -44,7 +44,6 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fc.T...... dm_empenho_desp_2021.csv
 >fcsT...... dm_empenho_desp_2022.csv
 >fcsT...... dm_empenho_desp_compras_empenho.csv
->fcsT...... dm_empenho_desp_diarias_scdp_liqpag.csv
 >fc.T...... dm_empenho_resto_2002.csv
 >fc.T...... dm_empenho_resto_2003.csv
 >fc.T...... dm_empenho_resto_2004.csv
@@ -69,27 +68,22 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... dm_favorecido.csv
 >fcsT...... dm_favorecido_scdp.csv
 >fcsT...... dm_item_matserv.csv
->fcsT...... dm_material_servico.csv
 >fcsT...... dm_processo.csv
+>fcsT...... dm_unidade_medida.csv
 >fcsT...... fl_compras_empenho.csv
->fc.T...... fl_convenio_entrada_aditivo.csv
+>fcsT...... fl_convenio_entrada_aditivo.csv
 >fcsT...... fl_convenio_entrada_compras.csv
 >fcsT...... fl_despesa_pgto.csv
->fcsT...... ft_compras.csv
+>fc.T...... ft_compras.csv
 >fcsT...... ft_convenio_entrada.csv
 >fcsT...... ft_convenio_entrada_desp.csv
 >fcsT...... ft_convenio_entrada_dotacao.csv
->fcsT...... ft_convenio_investimento.csv
 >fcsT...... ft_despesa_2015.csv
 >fcsT...... ft_despesa_2020.csv
->fc.T...... ft_despesa_2021.csv
+>fcsT...... ft_despesa_2021.csv
 >fcsT...... ft_despesa_2022.csv
 >fc.T...... ft_diarias_2021.csv
 >fcsT...... ft_diarias_2022.csv
->fcsT...... ft_diarias_scdp.csv
->fcsT...... ft_diarias_scdp_liqpag.csv
->fc.T...... ft_divida_pub.csv
->fcsT...... ft_orcamento_cred_alt.csv
 >fcsT...... ft_orcamento_emenda.csv
 >fcsT...... ft_pessoal_desp.csv
 >fc.T...... ft_receita_prevista_v2018.csv
@@ -97,14 +91,12 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... ft_restos_pagar_2022.csv
 gzip -n < data/staging/ft_receita_prevista_v2018.csv > data/ft_receita_prevista_v2018.csv.gz
 gzip -n < data/staging/ft_receita_v2018.csv > data/ft_receita_v2018.csv.gz
-gzip -n < data/staging/ft_convenio_investimento.csv > data/ft_convenio_investimento.csv.gz
 gzip -n < data/staging/ft_convenio_entrada_dotacao.csv > data/ft_convenio_entrada_dotacao.csv.gz
 gzip -n < data/staging/ft_convenio_entrada_desp.csv > data/ft_convenio_entrada_desp.csv.gz
 gzip -n < data/staging/dm_convenio_entrada.csv > data/dm_convenio_entrada.csv.gz
 gzip -n < data/staging/dm_favorecido_scdp.csv > data/dm_favorecido_scdp.csv.gz
 gzip -n < data/staging/dm_documento_viagem.csv > data/dm_documento_viagem.csv.gz
 gzip -n < data/staging/dm_empenho_desp_compras_empenho.csv > data/dm_empenho_desp_compras_empenho.csv.gz
-gzip -n < data/staging/dm_empenho_desp_diarias_scdp_liqpag.csv > data/dm_empenho_desp_diarias_scdp_liqpag.csv.gz
 gzip -n < data/staging/dm_empenho_desp_2002.csv > data/dm_empenho_desp_2002.csv.gz
 gzip -n < data/staging/dm_empenho_desp_2003.csv > data/dm_empenho_desp_2003.csv.gz
 gzip -n < data/staging/dm_empenho_desp_2004.csv > data/dm_empenho_desp_2004.csv.gz
@@ -130,12 +122,11 @@ gzip -n < data/staging/dm_favorecido.csv > data/dm_favorecido.csv.gz
 gzip -n < data/staging/fl_despesa_pgto.csv > data/fl_despesa_pgto.csv.gz
 gzip -n < data/staging/dm_item_matserv.csv > data/dm_item_matserv.csv.gz
 gzip -n < data/staging/dm_processo.csv > data/dm_processo.csv.gz
+gzip -n < data/staging/dm_unidade_medida.csv > data/dm_unidade_medida.csv.gz
 gzip -n < data/staging/fl_compras_empenho.csv > data/fl_compras_empenho.csv.gz
 gzip -n < data/staging/fl_convenio_entrada_compras.csv > data/fl_convenio_entrada_compras.csv.gz
 gzip -n < data/staging/fl_convenio_entrada_aditivo.csv > data/fl_convenio_entrada_aditivo.csv.gz
 gzip -n < data/staging/ft_convenio_entrada.csv > data/ft_convenio_entrada.csv.gz
-gzip -n < data/staging/ft_diarias_scdp.csv > data/ft_diarias_scdp.csv.gz
-gzip -n < data/staging/ft_diarias_scdp_liqpag.csv > data/ft_diarias_scdp_liqpag.csv.gz
 gzip -n < data/staging/ft_compras.csv > data/ft_compras.csv.gz
 gzip -n < data/staging/ft_despesa_2015.csv > data/ft_despesa_2015.csv.gz
 gzip -n < data/staging/ft_despesa_2020.csv > data/ft_despesa_2020.csv.gz
@@ -164,24 +155,19 @@ gzip -n < data/staging/dm_empenho_resto_2019.csv > data/dm_empenho_resto_2019.cs
 gzip -n < data/staging/dm_empenho_resto_2020.csv > data/dm_empenho_resto_2020.csv.gz
 gzip -n < data/staging/dm_empenho_resto_2021.csv > data/dm_empenho_resto_2021.csv.gz
 gzip -n < data/staging/dm_empenho_resto_2022.csv > data/dm_empenho_resto_2022.csv.gz
-gzip -n < data/staging/dm_material_servico.csv > data/dm_material_servico.csv.gz
 gzip -n < data/staging/ft_diarias_2021.csv > data/ft_diarias_2021.csv.gz
 gzip -n < data/staging/ft_diarias_2022.csv > data/ft_diarias_2022.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2022.csv > data/ft_restos_pagar_2022.csv.gz
-gzip -n < data/staging/ft_divida_pub.csv > data/ft_divida_pub.csv.gz
 gzip -n < data/staging/ft_pessoal_desp.csv > data/ft_pessoal_desp.csv.gz
 gzip -n < data/staging/ft_orcamento_emenda.csv > data/ft_orcamento_emenda.csv.gz
-gzip -n < data/staging/ft_orcamento_cred_alt.csv > data/ft_orcamento_cred_alt.csv.gz
 dtamg-py etl-make validate -r ft_receita_prevista_v2018 > logs/validate/ft_receita_prevista_v2018.json
 dtamg-py etl-make validate -r ft_receita_v2018 > logs/validate/ft_receita_v2018.json
-dtamg-py etl-make validate -r ft_convenio_investimento > logs/validate/ft_convenio_investimento.json
 dtamg-py etl-make validate -r ft_convenio_entrada_dotacao > logs/validate/ft_convenio_entrada_dotacao.json
 dtamg-py etl-make validate -r ft_convenio_entrada_desp > logs/validate/ft_convenio_entrada_desp.json
 dtamg-py etl-make validate -r dm_convenio_entrada > logs/validate/dm_convenio_entrada.json
 dtamg-py etl-make validate -r dm_favorecido_scdp > logs/validate/dm_favorecido_scdp.json
 dtamg-py etl-make validate -r dm_documento_viagem > logs/validate/dm_documento_viagem.json
 dtamg-py etl-make validate -r dm_empenho_desp_compras_empenho > logs/validate/dm_empenho_desp_compras_empenho.json
-dtamg-py etl-make validate -r dm_empenho_desp_diarias_scdp_liqpag > logs/validate/dm_empenho_desp_diarias_scdp_liqpag.json
 dtamg-py etl-make validate -r dm_empenho_desp_2002 > logs/validate/dm_empenho_desp_2002.json
 dtamg-py etl-make validate -r dm_empenho_desp_2003 > logs/validate/dm_empenho_desp_2003.json
 dtamg-py etl-make validate -r dm_empenho_desp_2004 > logs/validate/dm_empenho_desp_2004.json
@@ -207,12 +193,11 @@ dtamg-py etl-make validate -r dm_favorecido > logs/validate/dm_favorecido.json
 dtamg-py etl-make validate -r fl_despesa_pgto > logs/validate/fl_despesa_pgto.json
 dtamg-py etl-make validate -r dm_item_matserv > logs/validate/dm_item_matserv.json
 dtamg-py etl-make validate -r dm_processo > logs/validate/dm_processo.json
+dtamg-py etl-make validate -r dm_unidade_medida > logs/validate/dm_unidade_medida.json
 dtamg-py etl-make validate -r fl_compras_empenho > logs/validate/fl_compras_empenho.json
 dtamg-py etl-make validate -r fl_convenio_entrada_compras > logs/validate/fl_convenio_entrada_compras.json
 dtamg-py etl-make validate -r fl_convenio_entrada_aditivo > logs/validate/fl_convenio_entrada_aditivo.json
 dtamg-py etl-make validate -r ft_convenio_entrada > logs/validate/ft_convenio_entrada.json
-dtamg-py etl-make validate -r ft_diarias_scdp > logs/validate/ft_diarias_scdp.json
-dtamg-py etl-make validate -r ft_diarias_scdp_liqpag > logs/validate/ft_diarias_scdp_liqpag.json
 dtamg-py etl-make validate -r ft_compras > logs/validate/ft_compras.json
 dtamg-py etl-make validate -r ft_despesa_2015 > logs/validate/ft_despesa_2015.json
 dtamg-py etl-make validate -r ft_despesa_2020 > logs/validate/ft_despesa_2020.json
@@ -241,14 +226,11 @@ dtamg-py etl-make validate -r dm_empenho_resto_2019 > logs/validate/dm_empenho_r
 dtamg-py etl-make validate -r dm_empenho_resto_2020 > logs/validate/dm_empenho_resto_2020.json
 dtamg-py etl-make validate -r dm_empenho_resto_2021 > logs/validate/dm_empenho_resto_2021.json
 dtamg-py etl-make validate -r dm_empenho_resto_2022 > logs/validate/dm_empenho_resto_2022.json
-dtamg-py etl-make validate -r dm_material_servico > logs/validate/dm_material_servico.json
 dtamg-py etl-make validate -r ft_diarias_2021 > logs/validate/ft_diarias_2021.json
 dtamg-py etl-make validate -r ft_diarias_2022 > logs/validate/ft_diarias_2022.json
 dtamg-py etl-make validate -r ft_restos_pagar_2022 > logs/validate/ft_restos_pagar_2022.json
-dtamg-py etl-make validate -r ft_divida_pub > logs/validate/ft_divida_pub.json
 dtamg-py etl-make validate -r ft_pessoal_desp > logs/validate/ft_pessoal_desp.json
 dtamg-py etl-make validate -r ft_orcamento_emenda > logs/validate/ft_orcamento_emenda.json
-dtamg-py etl-make validate -r ft_orcamento_cred_alt > logs/validate/ft_orcamento_cred_alt.json
 dtamg-py etl-make build-datapackage
 Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_contratado.R', stop_on_failure=TRUE)" 2> logs/tests/test_dm_contratado.Rout
 
@@ -299,7 +281,6 @@ Updating data and metadata of resource dm_empenho_resto_2019.
 Updating data and metadata of resource dm_empenho_resto_2020.
 Updating data and metadata of resource dm_empenho_resto_2021.
 Updating data and metadata of resource dm_favorecido.
-Updating data and metadata of resource dm_fonte.
 Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource ft_restos_pagar_2022.
 Updating data and metadata of resource dm_empenho_resto_2022.
@@ -311,17 +292,14 @@ Updating data and metadata of resource dm_contratado.
 Updating data and metadata of resource dm_contrato.
 Updating data and metadata of resource dm_empenho_desp_compras_empenho.
 Updating data and metadata of resource dm_item_matserv.
-Updating data and metadata of resource dm_material_servico.
 Updating data and metadata of resource dm_processo.
+Updating data and metadata of resource dm_unidade_medida.
 Updating data and metadata of resource fl_compras_empenho.
 Updating data and metadata of resource ft_compras.
 Updating resource datapackage.json.
 Dataset compras_contratos updated.
 dpckan --datapackage build_datasets/convenios-saida/datapackage.json dataset update 2> logs/update/convenios-saida.txt
-Updating dataset https://dados.mg.gov.br/dataset/convenios-saida.
-Updating data and metadata of resource ft_convenio_investimento.
-Updating resource datapackage.json.
-Dataset convenios-saida updated.
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/convenios-saida.
 dpckan --datapackage build_datasets/diarias/datapackage.json dataset update 2> logs/update/diarias.txt
 Updating dataset https://dados.mg.gov.br/dataset/diarias.
 Updating data and metadata of resource dm_empenho_desp_2002.
@@ -373,7 +351,6 @@ Updating data and metadata of resource dm_empenho_desp_2019.
 Updating data and metadata of resource dm_empenho_desp_2020.
 Updating data and metadata of resource dm_empenho_desp_2021.
 Updating data and metadata of resource dm_favorecido.
-Updating data and metadata of resource dm_fonte.
 Updating data and metadata of resource fl_despesa_pgto.
 Updating data and metadata of resource ft_despesa_2015.
 Updating data and metadata of resource ft_despesa_2020.
@@ -390,7 +367,6 @@ Dataset transferencia-de-impostos-a-municipios updated.
 dpckan --datapackage build_datasets/execucao-da-divida/datapackage.json dataset update 2> logs/update/execucao-da-divida.txt
 Updating dataset https://dados.mg.gov.br/dataset/execucao-da-divida.
 Updating data and metadata of resource dm_favorecido.
-Updating data and metadata of resource ft_divida_pub.
 Updating resource datapackage.json.
 Dataset execucao-da-divida updated.
 dpckan --datapackage build_datasets/despesa-com-pessoal/datapackage.json dataset update 2> logs/update/despesa-com-pessoal.txt
@@ -402,9 +378,7 @@ Dataset despesa-com-pessoal updated.
 dpckan --datapackage build_datasets/viagens/datapackage.json dataset update 2> logs/update/viagens.txt
 Updating dataset https://dados.mg.gov.br/dataset/viagens.
 Updating data and metadata of resource dm_documento_viagem.
-Updating data and metadata of resource dm_empenho_desp_diarias_scdp_liqpag.
 Updating data and metadata of resource dm_favorecido_scdp.
-Updating data and metadata of resource dm_fonte.
 Updating data and metadata of resource ft_diarias_scdp.
 Updating data and metadata of resource ft_diarias_scdp_liqpag.
 Updating resource datapackage.json.
@@ -434,12 +408,7 @@ Updating resource datapackage.json.
 Dataset planejamento-e-monitoramento updated.
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria.
-Updating data and metadata of resource dm_fonte.
 Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource ft_orcamento_emenda.
-Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset proposta-lei-orcamentaria updated.
-[main a32d443] Atualização age7
- 101 files changed, 130817 insertions(+), 131929 deletions(-)
- rewrite report/index.html (61%)
