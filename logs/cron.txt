@@ -618,3 +618,26 @@ rsync error: some files/attrs were not transferred (see previous errors) (code 2
 2022-12-01T03:30:22+0000 INFO  [dtamg_py.utils] Processando recurso ft_plan_prog_of_territorio...
 2022-12-01T03:30:22+0000 INFO  [dtamg_py.utils] Processando recurso ft_plan_prog_of_fonte...
 make: *** [Makefile:73: logs/update/convenios-saida.txt] Error 1
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+[main dcba877] Atualização age7 - logs notificação
+ 161 files changed, 5293443 insertions(+), 290988 deletions(-)
+ create mode 100644 logs/parse/dm_fonte.Rout
+ create mode 100644 logs/parse/dm_fonte_rec.Rout
+ create mode 100644 logs/parse/dm_indicador_plan.Rout
+ delete mode 100644 logs/update/convenios-entrada.txt
+ delete mode 100644 logs/update/despesa-com-pessoal.txt
+ delete mode 100644 logs/update/despesa.txt
+ delete mode 100644 logs/update/diarias.txt
+ delete mode 100644 logs/update/execucao-da-divida.txt
+ delete mode 100644 logs/update/planejamento-e-monitoramento.txt
+ delete mode 100644 logs/update/proposta-lei-orcamentaria.txt
+ delete mode 100644 logs/update/receita.txt
+ delete mode 100644 logs/update/transferencia-de-impostos-a-municipios.txt
+ delete mode 100644 logs/update/viagens.txt
+ rewrite logs/validate/dm_fonte.json (61%)
+ rewrite logs/validate/dm_fonte_rec.json (61%)
+ rewrite logs/validate/dm_indicador_plan.json (70%)
+ rewrite logs/validate/ft_diarias_scdp_liqpag.json (61%)
+To https://github.com/transparencia-mg/age7.git
+   07b787c..dcba877  main -> main
