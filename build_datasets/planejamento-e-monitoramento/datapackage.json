@@ -72,7 +72,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.046,
+        "time": 0.024,
         "errors": [],
         "tasks": [
           {
@@ -145,13 +145,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "5907223e3efec93de2563c748f2fbc91",
-                "bytes": 6101,
+                "hash": "7fb7e91b694d66ca340a29b609679a08",
+                "bytes": 119,
                 "fields": 4,
-                "rows": 726
+                "rows": 1
               }
             },
-            "time": 0.046,
+            "time": 0.024,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -448,10 +448,7 @@
             "title": "Polaridade",
             "type": "string",
             "format": "default",
-            "description": "Indica o sentido favorável de comportamento do indicador, cabendo duas possibilidades: \nmaior melhor ou menor melhor.\n",
-            "constraints": {
-              "required": true
-            }
+            "description": "Indica o sentido favorável de comportamento do indicador, cabendo duas possibilidades: \nmaior melhor ou menor melhor.\n"
           },
           {
             "name": "periodicidade",
@@ -510,7 +507,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.188,
+        "time": 0.04,
         "errors": [],
         "tasks": [
           {
@@ -575,10 +572,7 @@
                     "title": "Polaridade",
                     "type": "string",
                     "format": "default",
-                    "description": "Indica o sentido favorável de comportamento do indicador, cabendo duas possibilidades: \nmaior melhor ou menor melhor.\n",
-                    "constraints": {
-                      "required": true
-                    }
+                    "description": "Indica o sentido favorável de comportamento do indicador, cabendo duas possibilidades: \nmaior melhor ou menor melhor.\n"
                   },
                   {
                     "name": "periodicidade",
@@ -635,13 +629,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "b1026f5ee1868eea8f343131c648c1fd",
-                "bytes": 184819,
+                "hash": "7ce13f2fa79f84fe40f07cff77403bb4",
+                "bytes": 106,
                 "fields": 9,
-                "rows": 2584
+                "rows": 0
               }
             },
-            "time": 0.188,
+            "time": 0.04,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -663,338 +657,18 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [
-              {
-                "cell": "",
-                "fieldName": "polaridade",
-                "fieldNumber": 6,
-                "fieldPosition": 6,
-                "cells": [
-                  "20162573",
-                  "PERCENTUAL DE DOMICÍLIOS COM ACESSO À ÁGUA COM CANALIZAÇÃO INTERNA",
-                  "PERCENTUAL DE DOMICÍLIOS COM ACESSO À ÁGUA COM CANALIZAÇÃO INTERNA",
-                  "%",
-                  "PNAD/IBGE",
-                  "",
-                  "ANUAL",
-                  "-",
-                  "-"
-                ],
-                "rowNumber": 277,
-                "rowPosition": 278,
-                "code": "constraint-error",
-                "name": "Constraint Error",
-                "tags": [
-                  "#table",
-                  "#row",
-                  "#cell"
-                ],
-                "note": "constraint \"required\" is \"True\"",
-                "message": "The cell \"\" in row at position \"278\" and field \"polaridade\" at position \"6\" does not conform to a constraint: constraint \"required\" is \"True\"",
-                "description": "A field value does not conform to a constraint."
-              },
-              {
-                "cell": "",
-                "fieldName": "polaridade",
-                "fieldNumber": 6,
-                "fieldPosition": 6,
-                "cells": [
-                  "20162574",
-                  "PERCENTUAL DE DOMICÍLIOS COM ACESSO À REDE DE ESGOTO OU FOSSA SÉPTICA",
-                  "PERCENTUAL DE DOMICÍLIOS COM ACESSO À REDE DE ESGOTO OU FOSSA SÉPTICA",
-                  "%",
-                  "PNAD/IBGE",
-                  "",
-                  "ANUAL",
-                  "-",
-                  "-"
-                ],
-                "rowNumber": 278,
-                "rowPosition": 279,
-                "code": "constraint-error",
-                "name": "Constraint Error",
-                "tags": [
-                  "#table",
-                  "#row",
-                  "#cell"
-                ],
-                "note": "constraint \"required\" is \"True\"",
-                "message": "The cell \"\" in row at position \"279\" and field \"polaridade\" at position \"6\" does not conform to a constraint: constraint \"required\" is \"True\"",
-                "description": "A field value does not conform to a constraint."
-              },
-              {
-                "cell": "",
-                "fieldName": "polaridade",
-                "fieldNumber": 6,
-                "fieldPosition": 6,
-                "cells": [
-                  "20162575",
-                  "TAXA DE TRATAMENTO DE ESGOTO NA RMBH",
-                  "TAXA DE TRATAMENTO DE ESGOTO NA RMBH",
-                  "%",
-                  "PNAD/IBGE",
-                  "",
-                  "ANUAL",
-                  "-",
-                  "-"
-                ],
-                "rowNumber": 279,
-                "rowPosition": 280,
-                "code": "constraint-error",
-                "name": "Constraint Error",
-                "tags": [
-                  "#table",
-                  "#row",
-                  "#cell"
-                ],
-                "note": "constraint \"required\" is \"True\"",
-                "message": "The cell \"\" in row at position \"280\" and field \"polaridade\" at position \"6\" does not conform to a constraint: constraint \"required\" is \"True\"",
-                "description": "A field value does not conform to a constraint."
-              },
-              {
-                "cell": "",
-                "fieldName": "polaridade",
-                "fieldNumber": 6,
-                "fieldPosition": 6,
-                "cells": [
-                  "20162570",
-                  "NÚMERO DE DELEGAÇÕES HOSPEDADAS EM MG PARA TREINAMENTO E ACLIMATAÇÃO PARA AS OLIMPÍADAS/PARALIMPÍADAS RIO 2016",
-                  "NÚMERO DE DELEGAÇÕES HOSPEDADAS EM MG PARA TREINAMENTO E ACLIMATAÇÃO PARA AS OLIMPÍADAS/PARALIMPÍADAS RIO 2016",
-                  "NÚMERO ABSOLUTO",
-                  "SECRETARIA EXECUTIVA PROGRAMA MINAS 2016 ¿ SECRETARIA DE ESTADO DE ESPORTES.",
-                  "",
-                  "MENSAL",
-                  "ESTADUAL       ",
-                  "SOMA DO NÚMERO DE DELEGAÇÕES CONFIRMADAS EM TERRITÓRIO MINEIRO A PARTIR DE PROTOCOLOS DE ENTENDIMENTO FIRMADOS COM OS COMITÊS OLÍMPICOS DE CADA PAÍS E RESPECTIVAS EMBAIXADAS."
-                ],
-                "rowNumber": 388,
-                "rowPosition": 389,
-                "code": "constraint-error",
-                "name": "Constraint Error",
-                "tags": [
-                  "#table",
-                  "#row",
-                  "#cell"
-                ],
-                "note": "constraint \"required\" is \"True\"",
-                "message": "The cell \"\" in row at position \"389\" and field \"polaridade\" at position \"6\" does not conform to a constraint: constraint \"required\" is \"True\"",
-                "description": "A field value does not conform to a constraint."
-              },
-              {
-                "cell": "",
-                "fieldName": "polaridade",
-                "fieldNumber": 6,
-                "fieldPosition": 6,
-                "cells": [
-                  "20122139",
-                  "ADOLESCENTE/PRESO CUSTÓDIADO EM CONDIÇÕES ADEQUADAS À RESSOCIALIZAÇÃO",
-                  "ADOLESCENTE/PRESO CUSTÓDIADO EM CONDIÇÕES ADEQUADAS À RESSOCIALIZAÇÃO",
-                  "NÚMERO ABSOLUTO",
-                  "INFOPEN, SIAME E PLANILHA MENSAL DE ATIVIDADES ",
-                  "",
-                  "MENSAL",
-                  "ESTADUAL       ",
-                  "SOMATÓRIO DOS NÚMERO DE ADOLESCENTES E PRESOS ATENDIDOS DE FORMA HUMANIZADA"
-                ],
-                "rowNumber": 494,
-                "rowPosition": 495,
-                "code": "constraint-error",
-                "name": "Constraint Error",
-                "tags": [
-                  "#table",
-                  "#row",
-                  "#cell"
-                ],
-                "note": "constraint \"required\" is \"True\"",
-                "message": "The cell \"\" in row at position \"495\" and field \"polaridade\" at position \"6\" does not conform to a constraint: constraint \"required\" is \"True\"",
-                "description": "A field value does not conform to a constraint."
-              },
-              {
-                "cell": "",
-                "fieldName": "polaridade",
-                "fieldNumber": 6,
-                "fieldPosition": 6,
-                "cells": [
-                  "20122099",
-                  "PARTICIPAÇÃO DE MINAS GERAIS NOS EMPREGOS FORMAIS DO SETOR TURÍSTICO",
-                  "PARTICIPAÇÃO DE MINAS GERAIS NOS EMPREGOS FORMAIS DO SETOR TURÍSTICO",
-                  "%",
-                  "RAIS/CAGED",
-                  "",
-                  "ANUAL",
-                  "ESTADUAL       ",
-                  "(NÚMERO DE EMPREGADOS FORMAIS NAS ATIVIDADES CONSIDERADAS EM 31/12 EM MINAS GERAIS/NÚMERO DE EMPREGADOS FORMAIS NAS ATIVIDADES CONSIDERADAS EM 31/12 NOS ESTADOS DO SUDESTE) X 100"
-                ],
-                "rowNumber": 509,
-                "rowPosition": 510,
-                "code": "constraint-error",
-                "name": "Constraint Error",
-                "tags": [
-                  "#table",
-                  "#row",
-                  "#cell"
-                ],
-                "note": "constraint \"required\" is \"True\"",
-                "message": "The cell \"\" in row at position \"510\" and field \"polaridade\" at position \"6\" does not conform to a constraint: constraint \"required\" is \"True\"",
-                "description": "A field value does not conform to a constraint."
-              },
-              {
-                "cell": "",
-                "fieldName": "polaridade",
-                "fieldNumber": 6,
-                "fieldPosition": 6,
-                "cells": [
-                  "20122119",
-                  "PERCENTUAL DE IMPLANTAÇÃO DOS PROCESSOS DO NOVO MODELO DE ADMINISTRAÇÃO DE PESSOAL",
-                  "PERCENTUAL DE IMPLANTAÇÃO DOS PROCESSOS DO NOVO MODELO DE ADMINISTRAÇÃO DE PESSOAL",
-                  "%",
-                  "SUGESP/SEPLAG",
-                  "",
-                  "ANUAL",
-                  "ESTADUAL       ",
-                  "&#8721;PROCESSOS IMPLANTADOS / &#8721;PROCESSOS REDESENHADOS"
-                ],
-                "rowNumber": 555,
-                "rowPosition": 556,
-                "code": "constraint-error",
-                "name": "Constraint Error",
-                "tags": [
-                  "#table",
-                  "#row",
-                  "#cell"
-                ],
-                "note": "constraint \"required\" is \"True\"",
-                "message": "The cell \"\" in row at position \"556\" and field \"polaridade\" at position \"6\" does not conform to a constraint: constraint \"required\" is \"True\"",
-                "description": "A field value does not conform to a constraint."
-              },
-              {
-                "cell": "",
-                "fieldName": "polaridade",
-                "fieldNumber": 6,
-                "fieldPosition": 6,
-                "cells": [
-                  "20122081",
-                  "COBERTURA POPULACIONAL DA ESTRATÉGIA SAÚDE DA FAMÍLIA",
-                  "COBERTURA POPULACIONAL DA ESTRATÉGIA SAÚDE DA FAMÍLIA",
-                  "%",
-                  "SES/ MG",
-                  "",
-                  "ANUAL",
-                  "ESTADUAL       ",
-                  "Nº DE ESF X 3450 / POPULAÇÃO X 100"
-                ],
-                "rowNumber": 559,
-                "rowPosition": 560,
-                "code": "constraint-error",
-                "name": "Constraint Error",
-                "tags": [
-                  "#table",
-                  "#row",
-                  "#cell"
-                ],
-                "note": "constraint \"required\" is \"True\"",
-                "message": "The cell \"\" in row at position \"560\" and field \"polaridade\" at position \"6\" does not conform to a constraint: constraint \"required\" is \"True\"",
-                "description": "A field value does not conform to a constraint."
-              },
-              {
-                "cell": "",
-                "fieldName": "polaridade",
-                "fieldNumber": 6,
-                "fieldPosition": 6,
-                "cells": [
-                  "20122080",
-                  "TAXA DE MUNICIPIOS PERTENCENTES A PELO MENOS UMA ASSOCIAÇÃO E /OU NOS CONSÓRCIO PÚBLICO",
-                  "TAXA DE MUNICIPIOS PERTENCENTES A PELO MENOS UMA ASSOCIAÇÃO E /OU NOS CONSÓRCIO PÚBLICO",
-                  "%",
-                  "SEDRU -SECRETARIA DE ESTADO DE DESENVOLVIMENTO REGIONAL E POLÍTICA URBANA",
-                  "",
-                  "ANUAL",
-                  "MUNICIPAL      ",
-                  "N° TOTAL DE MUNICÍPIOS QUE PERTENCEM A PELO MENOS UMA ASSOCIAÇÃO MICRORREGIONAL E /OU CONSÓRCIO PÚBLICO/ (N° TOTAL DE MUNICÍPIOS X2)"
-                ],
-                "rowNumber": 721,
-                "rowPosition": 722,
-                "code": "constraint-error",
-                "name": "Constraint Error",
-                "tags": [
-                  "#table",
-                  "#row",
-                  "#cell"
-                ],
-                "note": "constraint \"required\" is \"True\"",
-                "message": "The cell \"\" in row at position \"722\" and field \"polaridade\" at position \"6\" does not conform to a constraint: constraint \"required\" is \"True\"",
-                "description": "A field value does not conform to a constraint."
-              },
-              {
-                "cell": "",
-                "fieldName": "polaridade",
-                "fieldNumber": 6,
-                "fieldPosition": 6,
-                "cells": [
-                  "20142237",
-                  "CAPACITAÇÕES ENVOLVENDO SERVIDORES PÚBLICOS REALIZADAS",
-                  "CAPACITAÇÕES ENVOLVENDO SERVIDORES PÚBLICOS REALIZADAS",
-                  "UNIDADE",
-                  "ESCRITÓRIO DE PRIORIDADES ESTRATÉGICAS",
-                  "",
-                  "ANUAL",
-                  "ESTADUAL       ",
-                  "NÚMERO DE CURSOS, AULAS, CAPACITAÇÕES, TREINAMENTOS, VIVÊNCIAS E IMERSÕES QUE APRESENTEM AOS SERVIDORES NOVAS FORMAS DE INTERAGIR COM OS CIDADÃOS"
-                ],
-                "rowNumber": 893,
-                "rowPosition": 894,
-                "code": "constraint-error",
-                "name": "Constraint Error",
-                "tags": [
-                  "#table",
-                  "#row",
-                  "#cell"
-                ],
-                "note": "constraint \"required\" is \"True\"",
-                "message": "The cell \"\" in row at position \"894\" and field \"polaridade\" at position \"6\" does not conform to a constraint: constraint \"required\" is \"True\"",
-                "description": "A field value does not conform to a constraint."
-              },
-              {
-                "cell": "",
-                "fieldName": "polaridade",
-                "fieldNumber": 6,
-                "fieldPosition": 6,
-                "cells": [
-                  "20142221",
-                  "RELATÓRIOS DAS DINAMICAS SOCIAIS DE VIOLENCIAS E CRIMINALIDADES  NAS ÁREAS DE ATUAÇÃO DOS CENTROS DE PREVENÇÃO À CRIMINALIDADE",
-                  "RELATÓRIOS DAS DINAMICAS SOCIAIS DE VIOLENCIAS E CRIMINALIDADES  NAS ÁREAS DE ATUAÇÃO DOS CENTROS DE PREVENÇÃO À CRIMINALIDADE",
-                  "NÚMERO ABSOLUTO",
-                  "COORDENADORIA ESPECIAL DE PREVENÇÃO À CRIMINALIDADE",
-                  "",
-                  "MENSAL",
-                  "ESTADUAL       ",
-                  "Nº DE RELATÓRIOS ELABORADOS"
-                ],
-                "rowNumber": 900,
-                "rowPosition": 901,
-                "code": "constraint-error",
-                "name": "Constraint Error",
-                "tags": [
-                  "#table",
-                  "#row",
-                  "#cell"
-                ],
-                "note": "constraint \"required\" is \"True\"",
-                "message": "The cell \"\" in row at position \"901\" and field \"polaridade\" at position \"6\" does not conform to a constraint: constraint \"required\" is \"True\"",
-                "description": "A field value does not conform to a constraint."
-              }
-            ],
+            "errors": [],
             "stats": {
-              "errors": 11
+              "errors": 0
             },
-            "valid": false
+            "valid": true
           }
         ],
         "stats": {
-          "errors": 11,
+          "errors": 0,
           "tasks": 1
         },
-        "valid": false
+        "valid": true
       }
     },
     {
@@ -2183,10 +1857,10 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "686e49fa0f2a8d29c693f986fa5d6ffe",
-                "bytes": 109,
+                "hash": "3fbab4cc2ed37c0e1f8bf5cb0acb8a6c",
+                "bytes": 57,
                 "fields": 4,
-                "rows": 3
+                "rows": 0
               }
             },
             "time": 0.027,
@@ -2459,7 +2133,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.046,
+        "time": 0.022,
         "errors": [],
         "tasks": [
           {
@@ -2523,13 +2197,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "10b342380e255588e919d6ee6c2f8d94",
-                "bytes": 8457,
+                "hash": "e6cc8773d4cb17a2f9c428a587016247",
+                "bytes": 45,
                 "fields": 3,
-                "rows": 871
+                "rows": 0
               }
             },
-            "time": 0.046,
+            "time": 0.022,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2618,7 +2292,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.019,
+        "time": 0.02,
         "errors": [],
         "tasks": [
           {
@@ -2673,13 +2347,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "9313770b72fae871471525bf7db9495f",
-                "bytes": 67,
+                "hash": "6e9d361ed6a7610d91a38b6420b63822",
+                "bytes": 54,
                 "fields": 2,
-                "rows": 2
+                "rows": 1
               }
             },
-            "time": 0.019,
+            "time": 0.02,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2819,13 +2493,13 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.04,
+        "time": 0.032,
         "errors": [],
         "tasks": [
           {
             "resource": {
               "name": "dm_funcao_plan",
-              "title": "",
+              "title": "Função",
               "path": "data/dm_funcao_plan.csv.gz",
               "schema": {
                 "fields": [
@@ -2925,13 +2599,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "5bc19fdbf5f23cb243563dd1e2c8a0e0",
-                "bytes": 2061,
+                "hash": "36948a568e16979e253e84836e1fe592",
+                "bytes": 76,
                 "fields": 4,
-                "rows": 319
+                "rows": 1
               }
             },
-            "time": 0.04,
+            "time": 0.032,
             "scope": [
               "hash-count-error",
               "byte-count-error",
