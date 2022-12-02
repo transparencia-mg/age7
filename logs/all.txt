@@ -666,3 +666,63 @@ Updating data and metadata of resource ft_orcamento_emenda.
 Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset proposta-lei-orcamentaria updated.
+[main 60b1d28] Atualização age7
+ 167 files changed, 474576 insertions(+), 5486969 deletions(-)
+ rewrite build_datasets/compras_contratos/datapackage.json (90%)
+ rewrite build_datasets/convenios-entrada/datapackage.json (86%)
+ rewrite build_datasets/convenios-saida/datapackage.json (86%)
+ rewrite build_datasets/despesa/datapackage.json (84%)
+ rewrite build_datasets/diarias/datapackage.json (76%)
+ rewrite build_datasets/receita/datapackage.json (78%)
+ rewrite build_datasets/restos_pagar/datapackage.json (96%)
+ rewrite datapackage.json (89%)
+ rewrite logs/check_validation.txt (78%)
+ delete mode 100644 logs/parse/dm_fonte.Rout
+ delete mode 100644 logs/parse/dm_fonte_rec.Rout
+ delete mode 100644 logs/parse/dm_indicador_plan.Rout
+ create mode 100644 logs/update/convenios-entrada.txt
+ rewrite logs/update/convenios-saida.txt (100%)
+ create mode 100644 logs/update/despesa-com-pessoal.txt
+ create mode 100644 logs/update/despesa.txt
+ create mode 100644 logs/update/diarias.txt
+ create mode 100644 logs/update/execucao-da-divida.txt
+ create mode 100644 logs/update/planejamento-e-monitoramento.txt
+ create mode 100644 logs/update/proposta-lei-orcamentaria.txt
+ create mode 100644 logs/update/receita.txt
+ create mode 100644 logs/update/transferencia-de-impostos-a-municipios.txt
+ create mode 100644 logs/update/viagens.txt
+ rewrite logs/validate/failed_reports.json (95%)
+ rewrite logs/validate/fl_compras_empenho.json (99%)
+ rewrite logs/validate/ft_compras.json (97%)
+ rewrite logs/validate/ft_convenio_entrada_desp.json (99%)
+ rewrite logs/validate/ft_convenio_investimento.json (99%)
+ rewrite logs/validate/ft_despesa_2013.json (98%)
+ rewrite logs/validate/ft_despesa_2016.json (98%)
+ rewrite logs/validate/ft_despesa_2021.json (98%)
+ rewrite logs/validate/ft_despesa_2022.json (98%)
+ rewrite logs/validate/ft_diarias_2021.json (98%)
+ rewrite logs/validate/ft_diarias_2022.json (98%)
+ rewrite logs/validate/ft_receita_prevista_v2018.json (98%)
+ rewrite logs/validate/ft_receita_v2018.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2002.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2003.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2004.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2005.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2006.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2007.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2008.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2009.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2010.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2011.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2012.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2013.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2014.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2015.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2016.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2017.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2018.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2019.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2020.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2021.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2022.json (98%)
+ rewrite report/index.html (90%)
