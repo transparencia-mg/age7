@@ -38,7 +38,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fc.T...... dm_empenho_desp_2019.csv
 >fc.T...... dm_empenho_desp_2020.csv
 >fc.T...... dm_empenho_desp_2021.csv
->fc.T...... dm_empenho_desp_2022.csv
+>fcsT...... dm_empenho_desp_2022.csv
 >fcsT...... dm_empenho_desp_compras_empenho.csv
 >fc.T...... dm_empenho_resto_2002.csv
 >fc.T...... dm_empenho_resto_2003.csv
@@ -60,15 +60,17 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fc.T...... dm_empenho_resto_2019.csv
 >fc.T...... dm_empenho_resto_2020.csv
 >fc.T...... dm_empenho_resto_2021.csv
->fc.T...... dm_empenho_resto_2022.csv
->fc.T...... dm_favorecido.csv
+>fcsT...... dm_empenho_resto_2022.csv
+>fcsT...... dm_favorecido.csv
 >fcsT...... dm_processo.csv
 >fcsT...... fl_compras_empenho.csv
->fcsT...... fl_convenio_alteracao.csv
+>fcsT...... fl_despesa_pgto.csv
 >fcsT...... ft_compras.csv
+>fcsT...... ft_convenio_entrada_desp.csv
+>fcsT...... ft_convenio_investimento.csv
 >fcsT...... ft_despesa_2013.csv
->fc.T...... ft_despesa_2021.csv
->fcsT...... ft_despesa_2022.csv
+>fc.T...... ft_diarias_2021.csv
+>fcsT...... ft_diarias_2022.csv
 >fc.T...... ft_restos_pagar_2002.csv
 >fc.T...... ft_restos_pagar_2003.csv
 >fc.T...... ft_restos_pagar_2004.csv
@@ -89,8 +91,9 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fc.T...... ft_restos_pagar_2019.csv
 >fc.T...... ft_restos_pagar_2020.csv
 >fc.T...... ft_restos_pagar_2021.csv
->fc.T...... ft_restos_pagar_2022.csv
-gzip -n < data/staging/fl_convenio_alteracao.csv > data/fl_convenio_alteracao.csv.gz
+>fcsT...... ft_restos_pagar_2022.csv
+gzip -n < data/staging/ft_convenio_investimento.csv > data/ft_convenio_investimento.csv.gz
+gzip -n < data/staging/ft_convenio_entrada_desp.csv > data/ft_convenio_entrada_desp.csv.gz
 gzip -n < data/staging/dm_empenho_desp_compras_empenho.csv > data/dm_empenho_desp_compras_empenho.csv.gz
 gzip -n < data/staging/dm_empenho_desp_2002.csv > data/dm_empenho_desp_2002.csv.gz
 gzip -n < data/staging/dm_empenho_desp_2003.csv > data/dm_empenho_desp_2003.csv.gz
@@ -114,12 +117,11 @@ gzip -n < data/staging/dm_empenho_desp_2020.csv > data/dm_empenho_desp_2020.csv.
 gzip -n < data/staging/dm_empenho_desp_2021.csv > data/dm_empenho_desp_2021.csv.gz
 gzip -n < data/staging/dm_empenho_desp_2022.csv > data/dm_empenho_desp_2022.csv.gz
 gzip -n < data/staging/dm_favorecido.csv > data/dm_favorecido.csv.gz
+gzip -n < data/staging/fl_despesa_pgto.csv > data/fl_despesa_pgto.csv.gz
 gzip -n < data/staging/dm_processo.csv > data/dm_processo.csv.gz
 gzip -n < data/staging/fl_compras_empenho.csv > data/fl_compras_empenho.csv.gz
 gzip -n < data/staging/ft_compras.csv > data/ft_compras.csv.gz
 gzip -n < data/staging/ft_despesa_2013.csv > data/ft_despesa_2013.csv.gz
-gzip -n < data/staging/ft_despesa_2021.csv > data/ft_despesa_2021.csv.gz
-gzip -n < data/staging/ft_despesa_2022.csv > data/ft_despesa_2022.csv.gz
 gzip -n < data/staging/dm_empenho_resto_2002.csv > data/dm_empenho_resto_2002.csv.gz
 gzip -n < data/staging/dm_empenho_resto_2003.csv > data/dm_empenho_resto_2003.csv.gz
 gzip -n < data/staging/dm_empenho_resto_2004.csv > data/dm_empenho_resto_2004.csv.gz
@@ -141,6 +143,8 @@ gzip -n < data/staging/dm_empenho_resto_2019.csv > data/dm_empenho_resto_2019.cs
 gzip -n < data/staging/dm_empenho_resto_2020.csv > data/dm_empenho_resto_2020.csv.gz
 gzip -n < data/staging/dm_empenho_resto_2021.csv > data/dm_empenho_resto_2021.csv.gz
 gzip -n < data/staging/dm_empenho_resto_2022.csv > data/dm_empenho_resto_2022.csv.gz
+gzip -n < data/staging/ft_diarias_2021.csv > data/ft_diarias_2021.csv.gz
+gzip -n < data/staging/ft_diarias_2022.csv > data/ft_diarias_2022.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2002.csv > data/ft_restos_pagar_2002.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2003.csv > data/ft_restos_pagar_2003.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2004.csv > data/ft_restos_pagar_2004.csv.gz
@@ -162,7 +166,8 @@ gzip -n < data/staging/ft_restos_pagar_2019.csv > data/ft_restos_pagar_2019.csv.
 gzip -n < data/staging/ft_restos_pagar_2020.csv > data/ft_restos_pagar_2020.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2021.csv > data/ft_restos_pagar_2021.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2022.csv > data/ft_restos_pagar_2022.csv.gz
-dtamg-py etl-make validate -r fl_convenio_alteracao > logs/validate/fl_convenio_alteracao.json
+dtamg-py etl-make validate -r ft_convenio_investimento > logs/validate/ft_convenio_investimento.json
+dtamg-py etl-make validate -r ft_convenio_entrada_desp > logs/validate/ft_convenio_entrada_desp.json
 dtamg-py etl-make validate -r dm_empenho_desp_compras_empenho > logs/validate/dm_empenho_desp_compras_empenho.json
 dtamg-py etl-make validate -r dm_empenho_desp_2002 > logs/validate/dm_empenho_desp_2002.json
 dtamg-py etl-make validate -r dm_empenho_desp_2003 > logs/validate/dm_empenho_desp_2003.json
@@ -186,12 +191,11 @@ dtamg-py etl-make validate -r dm_empenho_desp_2020 > logs/validate/dm_empenho_de
 dtamg-py etl-make validate -r dm_empenho_desp_2021 > logs/validate/dm_empenho_desp_2021.json
 dtamg-py etl-make validate -r dm_empenho_desp_2022 > logs/validate/dm_empenho_desp_2022.json
 dtamg-py etl-make validate -r dm_favorecido > logs/validate/dm_favorecido.json
+dtamg-py etl-make validate -r fl_despesa_pgto > logs/validate/fl_despesa_pgto.json
 dtamg-py etl-make validate -r dm_processo > logs/validate/dm_processo.json
 dtamg-py etl-make validate -r fl_compras_empenho > logs/validate/fl_compras_empenho.json
 dtamg-py etl-make validate -r ft_compras > logs/validate/ft_compras.json
 dtamg-py etl-make validate -r ft_despesa_2013 > logs/validate/ft_despesa_2013.json
-dtamg-py etl-make validate -r ft_despesa_2021 > logs/validate/ft_despesa_2021.json
-dtamg-py etl-make validate -r ft_despesa_2022 > logs/validate/ft_despesa_2022.json
 dtamg-py etl-make validate -r dm_empenho_resto_2002 > logs/validate/dm_empenho_resto_2002.json
 dtamg-py etl-make validate -r dm_empenho_resto_2003 > logs/validate/dm_empenho_resto_2003.json
 dtamg-py etl-make validate -r dm_empenho_resto_2004 > logs/validate/dm_empenho_resto_2004.json
@@ -213,6 +217,8 @@ dtamg-py etl-make validate -r dm_empenho_resto_2019 > logs/validate/dm_empenho_r
 dtamg-py etl-make validate -r dm_empenho_resto_2020 > logs/validate/dm_empenho_resto_2020.json
 dtamg-py etl-make validate -r dm_empenho_resto_2021 > logs/validate/dm_empenho_resto_2021.json
 dtamg-py etl-make validate -r dm_empenho_resto_2022 > logs/validate/dm_empenho_resto_2022.json
+dtamg-py etl-make validate -r ft_diarias_2021 > logs/validate/ft_diarias_2021.json
+dtamg-py etl-make validate -r ft_diarias_2022 > logs/validate/ft_diarias_2022.json
 dtamg-py etl-make validate -r ft_restos_pagar_2002 > logs/validate/ft_restos_pagar_2002.json
 dtamg-py etl-make validate -r ft_restos_pagar_2003 > logs/validate/ft_restos_pagar_2003.json
 dtamg-py etl-make validate -r ft_restos_pagar_2004 > logs/validate/ft_restos_pagar_2004.json
@@ -284,6 +290,7 @@ Updating data and metadata of resource dm_empenho_resto_2019.
 Updating data and metadata of resource dm_empenho_resto_2020.
 Updating data and metadata of resource dm_empenho_resto_2021.
 Updating data and metadata of resource dm_favorecido.
+Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource ft_restos_pagar_2002.
 Updating data and metadata of resource ft_restos_pagar_2003.
 Updating data and metadata of resource ft_restos_pagar_2004.
@@ -319,7 +326,6 @@ Dataset compras_contratos updated.
 dpckan --datapackage build_datasets/convenios-saida/datapackage.json dataset update 2> logs/update/convenios-saida.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-saida.
 Updating data and metadata of resource ft_convenio_investimento.
-Updating data and metadata of resource fl_convenio_alteracao.
 Updating resource datapackage.json.
 Dataset convenios-saida updated.
 dpckan --datapackage build_datasets/diarias/datapackage.json dataset update 2> logs/update/diarias.txt
@@ -375,9 +381,7 @@ Updating data and metadata of resource dm_empenho_desp_2021.
 Updating data and metadata of resource dm_favorecido.
 Updating data and metadata of resource fl_despesa_pgto.
 Updating data and metadata of resource ft_despesa_2013.
-Updating data and metadata of resource ft_despesa_2021.
 Updating data and metadata of resource dm_empenho_desp_2022.
-Updating data and metadata of resource ft_despesa_2022.
 Updating resource datapackage.json.
 Dataset despesa updated.
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
@@ -415,21 +419,6 @@ dpckan --datapackage build_datasets/planejamento-e-monitoramento/datapackage.jso
 Nothing to be updated in dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento.
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria.
-Updating data and metadata of resource ft_orcamento_cred_alt.
+Updating data and metadata of resource dm_tempo_anual.
 Updating resource datapackage.json.
 Dataset proposta-lei-orcamentaria updated.
-[main 1478485] Atualização age7
- 108 files changed, 30204 insertions(+), 11308 deletions(-)
- create mode 100644 logs/update/compras_contratos.txt
- create mode 100644 logs/update/convenios-entrada.txt
- create mode 100644 logs/update/convenios-saida.txt
- create mode 100644 logs/update/despesa-com-pessoal.txt
- create mode 100644 logs/update/despesa.txt
- create mode 100644 logs/update/diarias.txt
- create mode 100644 logs/update/execucao-da-divida.txt
- create mode 100644 logs/update/planejamento-e-monitoramento.txt
- create mode 100644 logs/update/proposta-lei-orcamentaria.txt
- create mode 100644 logs/update/receita.txt
- rewrite logs/update/restos_pagar.txt (100%)
- create mode 100644 logs/update/transferencia-de-impostos-a-municipios.txt
- create mode 100644 logs/update/viagens.txt
