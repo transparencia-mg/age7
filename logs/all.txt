@@ -40,7 +40,6 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fc.T...... dm_empenho_desp_2021.csv
 >fcsT...... dm_empenho_desp_2022.csv
 >fcsT...... dm_empenho_desp_compras_empenho.csv
->fcsT...... dm_empenho_desp_diarias_scdp_liqpag.csv
 >fc.T...... dm_empenho_resto_2002.csv
 >fc.T...... dm_empenho_resto_2003.csv
 >fc.T...... dm_empenho_resto_2004.csv
@@ -75,8 +74,6 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... ft_despesa_2022.csv
 >fc.T...... ft_diarias_2021.csv
 >fcsT...... ft_diarias_2022.csv
->fcsT...... ft_diarias_scdp.csv
->fcsT...... ft_diarias_scdp_liqpag.csv
 >fcsT...... ft_orcamento_cred_alt.csv
 >fc.T...... ft_restos_pagar_2002.csv
 >fc.T...... ft_restos_pagar_2003.csv
@@ -103,7 +100,6 @@ gzip -n < data/staging/ft_convenio_investimento.csv > data/ft_convenio_investime
 gzip -n < data/staging/fl_convenio_alteracao.csv > data/fl_convenio_alteracao.csv.gz
 gzip -n < data/staging/ft_convenio_entrada_desp.csv > data/ft_convenio_entrada_desp.csv.gz
 gzip -n < data/staging/dm_empenho_desp_compras_empenho.csv > data/dm_empenho_desp_compras_empenho.csv.gz
-gzip -n < data/staging/dm_empenho_desp_diarias_scdp_liqpag.csv > data/dm_empenho_desp_diarias_scdp_liqpag.csv.gz
 gzip -n < data/staging/dm_empenho_desp_2002.csv > data/dm_empenho_desp_2002.csv.gz
 gzip -n < data/staging/dm_empenho_desp_2003.csv > data/dm_empenho_desp_2003.csv.gz
 gzip -n < data/staging/dm_empenho_desp_2004.csv > data/dm_empenho_desp_2004.csv.gz
@@ -129,8 +125,6 @@ gzip -n < data/staging/dm_favorecido.csv > data/dm_favorecido.csv.gz
 gzip -n < data/staging/fl_despesa_pgto.csv > data/fl_despesa_pgto.csv.gz
 gzip -n < data/staging/dm_processo.csv > data/dm_processo.csv.gz
 gzip -n < data/staging/fl_compras_empenho.csv > data/fl_compras_empenho.csv.gz
-gzip -n < data/staging/ft_diarias_scdp.csv > data/ft_diarias_scdp.csv.gz
-gzip -n < data/staging/ft_diarias_scdp_liqpag.csv > data/ft_diarias_scdp_liqpag.csv.gz
 gzip -n < data/staging/ft_compras.csv > data/ft_compras.csv.gz
 gzip -n < data/staging/ft_despesa_2015.csv > data/ft_despesa_2015.csv.gz
 gzip -n < data/staging/ft_despesa_2021.csv > data/ft_despesa_2021.csv.gz
@@ -184,7 +178,6 @@ dtamg-py etl-make validate -r ft_convenio_investimento > logs/validate/ft_conven
 dtamg-py etl-make validate -r fl_convenio_alteracao > logs/validate/fl_convenio_alteracao.json
 dtamg-py etl-make validate -r ft_convenio_entrada_desp > logs/validate/ft_convenio_entrada_desp.json
 dtamg-py etl-make validate -r dm_empenho_desp_compras_empenho > logs/validate/dm_empenho_desp_compras_empenho.json
-dtamg-py etl-make validate -r dm_empenho_desp_diarias_scdp_liqpag > logs/validate/dm_empenho_desp_diarias_scdp_liqpag.json
 dtamg-py etl-make validate -r dm_empenho_desp_2002 > logs/validate/dm_empenho_desp_2002.json
 dtamg-py etl-make validate -r dm_empenho_desp_2003 > logs/validate/dm_empenho_desp_2003.json
 dtamg-py etl-make validate -r dm_empenho_desp_2004 > logs/validate/dm_empenho_desp_2004.json
@@ -210,8 +203,6 @@ dtamg-py etl-make validate -r dm_favorecido > logs/validate/dm_favorecido.json
 dtamg-py etl-make validate -r fl_despesa_pgto > logs/validate/fl_despesa_pgto.json
 dtamg-py etl-make validate -r dm_processo > logs/validate/dm_processo.json
 dtamg-py etl-make validate -r fl_compras_empenho > logs/validate/fl_compras_empenho.json
-dtamg-py etl-make validate -r ft_diarias_scdp > logs/validate/ft_diarias_scdp.json
-dtamg-py etl-make validate -r ft_diarias_scdp_liqpag > logs/validate/ft_diarias_scdp_liqpag.json
 dtamg-py etl-make validate -r ft_compras > logs/validate/ft_compras.json
 dtamg-py etl-make validate -r ft_despesa_2015 > logs/validate/ft_despesa_2015.json
 dtamg-py etl-make validate -r ft_despesa_2021 > logs/validate/ft_despesa_2021.json
@@ -425,7 +416,6 @@ Updating resource datapackage.json.
 Dataset despesa-com-pessoal updated.
 dpckan --datapackage build_datasets/viagens/datapackage.json dataset update 2> logs/update/viagens.txt
 Updating dataset https://dados.mg.gov.br/dataset/viagens.
-Updating data and metadata of resource dm_empenho_desp_diarias_scdp_liqpag.
 Updating data and metadata of resource ft_diarias_scdp.
 Updating data and metadata of resource ft_diarias_scdp_liqpag.
 Updating resource datapackage.json.
@@ -448,7 +438,3 @@ Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset proposta-lei-orcamentaria updated.
-[main f43d699] Atualização age7
- 103 files changed, 173267 insertions(+), 143800 deletions(-)
- rewrite logs/update/planejamento-e-monitoramento.txt (100%)
- create mode 100644 logs/update/proposta-lei-orcamentaria.txt
