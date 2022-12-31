@@ -400,20 +400,14 @@ Updating data and metadata of resource ft_despesa_2022.
 Updating resource datapackage.json.
 Dataset despesa updated.
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
-Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios.
-Updating data and metadata of resource dm_tempo_mensal.
-Updating resource datapackage.json.
-Dataset transferencia-de-impostos-a-municipios updated.
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios.
 dpckan --datapackage build_datasets/execucao-da-divida/datapackage.json dataset update 2> logs/update/execucao-da-divida.txt
 Updating dataset https://dados.mg.gov.br/dataset/execucao-da-divida.
 Updating data and metadata of resource dm_favorecido.
 Updating resource datapackage.json.
 Dataset execucao-da-divida updated.
 dpckan --datapackage build_datasets/despesa-com-pessoal/datapackage.json dataset update 2> logs/update/despesa-com-pessoal.txt
-Updating dataset https://dados.mg.gov.br/dataset/despesa-com-pessoal.
-Updating data and metadata of resource dm_tempo_mensal.
-Updating resource datapackage.json.
-Dataset despesa-com-pessoal updated.
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/despesa-com-pessoal.
 dpckan --datapackage build_datasets/viagens/datapackage.json dataset update 2> logs/update/viagens.txt
 Updating dataset https://dados.mg.gov.br/dataset/viagens.
 Updating data and metadata of resource ft_diarias_scdp.
@@ -421,10 +415,7 @@ Updating data and metadata of resource ft_diarias_scdp_liqpag.
 Updating resource datapackage.json.
 Dataset viagens updated.
 dpckan --datapackage build_datasets/receita/datapackage.json dataset update 2> logs/update/receita.txt
-Updating dataset https://dados.mg.gov.br/dataset/receita.
-Updating data and metadata of resource dm_tempo_mensal.
-Updating resource datapackage.json.
-Dataset receita updated.
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/receita.
 dpckan --datapackage build_datasets/convenios-entrada/datapackage.json dataset update 2> logs/update/convenios-entrada.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-entrada.
 Updating data and metadata of resource ft_convenio_entrada_desp.
@@ -438,5 +429,3 @@ Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset proposta-lei-orcamentaria updated.
-[main 35017ef] Atualização age7
- 99 files changed, 31935 insertions(+), 9539 deletions(-)
