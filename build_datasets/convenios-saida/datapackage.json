@@ -1089,7 +1089,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 43.565,
+        "time": 43.165,
         "errors": [],
         "tasks": [
           {
@@ -1282,13 +1282,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "8c305ec2509079b0cd645fd5a3431ca6",
-                "bytes": 6566246,
+                "hash": "c6cf2ca3c941cf2d06717e6c610d2e66",
+                "bytes": 6567908,
                 "fields": 11,
-                "rows": 612316
+                "rows": 612473
               }
             },
-            "time": 43.565,
+            "time": 43.165,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2446,7 +2446,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 4.987,
+        "time": 4.956,
         "errors": [],
         "tasks": [
           {
@@ -2538,13 +2538,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "d5d45bb98d0f76bff29cbde74d373e83",
-                "bytes": 3336475,
+                "hash": "2394963dcbcb368c11b794c866c65cd2",
+                "bytes": 3475299,
                 "fields": 5,
-                "rows": 47218
+                "rows": 47228
               }
             },
-            "time": 4.987,
+            "time": 4.956,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2569,134 +2569,14 @@
             "errors": [
               {
                 "cells": [
-                  "68960",
-                  "01/DO",
-                  "",
-                  "DOTAÇÃO ORÇAMENTÁRIA",
-                  "<p>Estabelecer a mútua cooperação entre os partícipes para fomentar o desenvolvimento agropecuário no município por meio da aquisição de uma retroescavadeira.</p>"
-                ],
-                "rowNumber": 45804,
-                "rowPosition": 45805,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_convenio\": values \"68960\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "message": "Row at position \"45805\" violates the foreign key: for \"id_convenio\": values \"68960\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "68872",
-                  "01/DO",
-                  "",
-                  "DOTAÇÃO ORÇAMENTÁRIA",
-                  "<p>Estabelecer a mútua cooperação entre os partícipes para fomentar o desenvolvimento agropecuário no município por meio da aquisição de um caminhão basculante.</p>"
-                ],
-                "rowNumber": 45805,
-                "rowPosition": 45806,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_convenio\": values \"68872\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "message": "Row at position \"45806\" violates the foreign key: for \"id_convenio\": values \"68872\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "69169",
-                  "01/AS",
-                  "",
-                  "ALTERAÇÃO SIMPLES",
-                  "<p>AQUISIÇÃO DE <strong>MOBILIÁRIO E/OU EQUIPAMENTO ESCOLAR</strong>, DESTINADOS AO ATENDIMENTO DE ALUNOS MATRICULADOS EM ESCOLAS DA REDE MUNICIPAL DE ENSINO, CONFORME DESCRITO NO PLANO DE APLICAÇÃO DE RECURSOS. FORTALECIMENTO DAS ESCOLAS MUNICIPAIS.</p>"
-                ],
-                "rowNumber": 45905,
-                "rowPosition": 45906,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_convenio\": values \"69169\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "message": "Row at position \"45906\" violates the foreign key: for \"id_convenio\": values \"69169\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "69075",
-                  "01/AS",
-                  "",
-                  "ALTERAÇÃO SIMPLES",
-                  "<p align=\"\"justify\"\">AQUISIÇÃO DE <strong>MOBILIARIO E/OU EQUIPAMENTO ESCOLAR, </strong>DESTINADOS AO ATENDIMENTO DE ALUNOS MATRICULADOS EM ESCOLAS DA REDE MUNICIPAL DE ENSINO, CONFORME DESCRITO NO PLANO DE APLICAÇÃO DE RECURSOS. FORTALECIMENTO DAS ESCOLAS MUNICIPAIS.</p>"
-                ],
-                "rowNumber": 45932,
-                "rowPosition": 45933,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_convenio\": values \"69075\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "message": "Row at position \"45933\" violates the foreign key: for \"id_convenio\": values \"69075\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "68871",
-                  "01/DO",
-                  "",
-                  "DOTAÇÃO ORÇAMENTÁRIA",
-                  "<p>O escopo do projeto é o desenvolvimento urbano do município por meio da aquisição de caminhão compactador de lixo. Especificações mínimas: Caminhão com motor eletrônico, Ano 2022/2023, equipado com coletor compactador de resíduos descartados, de fabricação nacional, com capacidade para 12 m³ (ou superior). A aquisição se dará por meio de procedimento licitatório.</p>"
-                ],
-                "rowNumber": 45955,
-                "rowPosition": 45956,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_convenio\": values \"68871\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "message": "Row at position \"45956\" violates the foreign key: for \"id_convenio\": values \"68871\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "69059",
-                  "01/DO",
-                  "",
-                  "DOTAÇÃO ORÇAMENTÁRIA",
-                  "<p>Repasse de recursos financeiros estaduais ao município destinados a aquisição de maquinário e/ou implementos agrícolas e/ou veículos para melhoria da infraestrutura rural local.</p>"
-                ],
-                "rowNumber": 45995,
-                "rowPosition": 45996,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_convenio\": values \"69059\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "message": "Row at position \"45996\" violates the foreign key: for \"id_convenio\": values \"69059\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
                   "69028",
                   "01/AS",
                   "",
                   "ALTERAÇÃO SIMPLES",
                   "<p>Calçamento de 10.914,55 m² em alvenaria poliédrica com espessura de 8 cm, construção de via para pedestre em blocos sextavados com 891,92 m², assentamento de 1.277,88 m de meio-fio de concreto pré-moldado tipo A - (12 x 16,7 x 35) cm, construção de 2.157,70 m de sarjeta de concreto urbano (SCU), Tipo 2 (50 x 7) cm I&#61;15%, e sinalização vertical, localizadas na Av. Marginal, Rua Manoel Valadares Silva, Rua Armando Nogueira, Rua Mestre Vicente Mesquita Sobrinho, Rua Paulo Roberto Tanure, Faixa Não Edificada e Via para Pedestre no Bairro Prolongamento do Icaraí e Av. Bela Vista e Rua Alice Bueno no Bairro Icaraí no município Divinópolis.</p><p><br /></p>"
                 ],
-                "rowNumber": 46037,
-                "rowPosition": 46038,
+                "rowNumber": 29279,
+                "rowPosition": 29280,
                 "code": "foreign-key-error",
                 "name": "ForeignKey Error",
                 "tags": [
@@ -2704,7 +2584,7 @@
                   "#row"
                 ],
                 "note": "for \"id_convenio\": values \"69028\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "message": "Row at position \"46038\" violates the foreign key: for \"id_convenio\": values \"69028\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"29280\" violates the foreign key: for \"id_convenio\": values \"69028\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -2715,8 +2595,8 @@
                   "DOTAÇÃO ORÇAMENTÁRIA",
                   "<p><span style=\"\"background-color:rgb( 255 , 255 , 255 )\"\">Estabelecer a mútua cooperação entre os partícipes para fomentar o desenvolvimento agropecuário no município, por meio da aquisição de maquinas ou equipamentos agrícolas.</span></p>"
                 ],
-                "rowNumber": 46041,
-                "rowPosition": 46042,
+                "rowNumber": 29283,
+                "rowPosition": 29284,
                 "code": "foreign-key-error",
                 "name": "ForeignKey Error",
                 "tags": [
@@ -2724,7 +2604,147 @@
                   "#row"
                 ],
                 "note": "for \"id_convenio\": values \"68870\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "message": "Row at position \"46042\" violates the foreign key: for \"id_convenio\": values \"68870\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"29284\" violates the foreign key: for \"id_convenio\": values \"68870\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "68960",
+                  "01/DO",
+                  "",
+                  "DOTAÇÃO ORÇAMENTÁRIA",
+                  "<p>Estabelecer a mútua cooperação entre os partícipes para fomentar o desenvolvimento agropecuário no município por meio da aquisição de uma retroescavadeira.</p>"
+                ],
+                "rowNumber": 33597,
+                "rowPosition": 33598,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_convenio\": values \"68960\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"33598\" violates the foreign key: for \"id_convenio\": values \"68960\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "68872",
+                  "01/DO",
+                  "",
+                  "DOTAÇÃO ORÇAMENTÁRIA",
+                  "<p>Estabelecer a mútua cooperação entre os partícipes para fomentar o desenvolvimento agropecuário no município por meio da aquisição de um caminhão basculante.</p>"
+                ],
+                "rowNumber": 33598,
+                "rowPosition": 33599,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_convenio\": values \"68872\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"33599\" violates the foreign key: for \"id_convenio\": values \"68872\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "69075",
+                  "01/AS",
+                  "",
+                  "ALTERAÇÃO SIMPLES",
+                  "<p align=\"\"justify\"\">AQUISIÇÃO DE <strong>MOBILIARIO E/OU EQUIPAMENTO ESCOLAR, </strong>DESTINADOS AO ATENDIMENTO DE ALUNOS MATRICULADOS EM ESCOLAS DA REDE MUNICIPAL DE ENSINO, CONFORME DESCRITO NO PLANO DE APLICAÇÃO DE RECURSOS. FORTALECIMENTO DAS ESCOLAS MUNICIPAIS.</p>"
+                ],
+                "rowNumber": 33793,
+                "rowPosition": 33794,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_convenio\": values \"69075\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"33794\" violates the foreign key: for \"id_convenio\": values \"69075\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "68871",
+                  "01/DO",
+                  "",
+                  "DOTAÇÃO ORÇAMENTÁRIA",
+                  "<p>O escopo do projeto é o desenvolvimento urbano do município por meio da aquisição de caminhão compactador de lixo. Especificações mínimas: Caminhão com motor eletrônico, Ano 2022/2023, equipado com coletor compactador de resíduos descartados, de fabricação nacional, com capacidade para 12 m³ (ou superior). A aquisição se dará por meio de procedimento licitatório.</p>"
+                ],
+                "rowNumber": 37719,
+                "rowPosition": 37720,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_convenio\": values \"68871\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"37720\" violates the foreign key: for \"id_convenio\": values \"68871\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "69169",
+                  "01/AS",
+                  "",
+                  "ALTERAÇÃO SIMPLES",
+                  "<p>AQUISIÇÃO DE <strong>MOBILIÁRIO E/OU EQUIPAMENTO ESCOLAR</strong>, DESTINADOS AO ATENDIMENTO DE ALUNOS MATRICULADOS EM ESCOLAS DA REDE MUNICIPAL DE ENSINO, CONFORME DESCRITO NO PLANO DE APLICAÇÃO DE RECURSOS. FORTALECIMENTO DAS ESCOLAS MUNICIPAIS.</p>"
+                ],
+                "rowNumber": 37806,
+                "rowPosition": 37807,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_convenio\": values \"69169\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"37807\" violates the foreign key: for \"id_convenio\": values \"69169\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "69119",
+                  "01/AS",
+                  "",
+                  "ALTERAÇÃO SIMPLES",
+                  "<p align=\"\"justify\"\"><strong>O presente convênio tem como objeto a mútua cooperação entre Estado e Município para atendimento à rede municipal, por meio de transferência de recurso financeiro estadual, destinado à execução de obras nas escolas da rede municipal, no âmbito do programa de descentralização do ensino nos anos iniciais do ensino fundamental, consoante o previsto no § 2º, do art. 211 da Constituição da República.</strong></p><p align=\"\"justify\"\"><br /></p><p><strong>Serão beneficiadas com as obras objeto deste convênio a seguinte escola: Escola Padre Rafael</strong></p>"
+                ],
+                "rowNumber": 37854,
+                "rowPosition": 37855,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_convenio\": values \"69119\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"37855\" violates the foreign key: for \"id_convenio\": values \"69119\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "69059",
+                  "01/DO",
+                  "",
+                  "DOTAÇÃO ORÇAMENTÁRIA",
+                  "<p>Repasse de recursos financeiros estaduais ao município destinados a aquisição de maquinário e/ou implementos agrícolas e/ou veículos para melhoria da infraestrutura rural local.</p>"
+                ],
+                "rowNumber": 37855,
+                "rowPosition": 37856,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_convenio\": values \"69059\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"37856\" violates the foreign key: for \"id_convenio\": values \"69059\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -2735,8 +2755,8 @@
                   "DOTAÇÃO ORÇAMENTÁRIA",
                   "<p align=\"\"justify\"\">Constitui objeto deste convênio a prestação de serviço educacional do IFNMG ao público atendido pela FUCAM. A oferta contempla 420 vagas para o curso de Formação Inicial e Continuada (FIC) de Microempreendedor Individual (MEI) de 180 horas, na modalidade presencial, podendo ser flexibilizado até 20% da Carga Horária em atividades a distância, para o público alvo prioritariamente, estudantes matriculados nos Centros Educacionais/Escolas Estaduais vinculadas à Fucam e trabalhadores/pessoas em condições de vulnerabilidade social atendidos pela FUCAM, podendo, havendo vagas remanescentes, será ofertado ao público em geral, com 16 anos ou mais, Ensino Fundamental I Completo, nos Centros Educacional da FUCAM de Minas Gerais, no período de janeiro de 2023 a janeiro de 2024. A execução do projeto será em duas etapas ofertando 210 em cada uma delas.</p><p>Para além do desenvolvimento técnico, por meio de disciplina formal, constante no currículo, serão desenvolvidas as competências para desenvolvimento integral do estudante, com vistas a prepará-lo para a gestão consciente e crítica de seu negócio.</p><p>Além da teoria, será trabalhada a prática, por meio de uma etapa gamificada denominada &#34;Desafio do Empreendedor&#34;, em que os estudantes formatarão um modelo de negócios que passará por uma banca composta por profissionais de mercado contratados para acompanhar e avaliar as propostas. </p><p>Aos melhores projetos, será destinado um prêmio para os três primeiros finalistas que serão premiados com aporte financeiro para implementação da proposta, sendo: </p><p>3º Lugar: R$2.000,00</p><p> 2º Lugar: R$3.000,00</p><p>1º Lugar: R$5.000,00</p>"
                 ],
-                "rowNumber": 46296,
-                "rowPosition": 46297,
+                "rowNumber": 39482,
+                "rowPosition": 39483,
                 "code": "foreign-key-error",
                 "name": "ForeignKey Error",
                 "tags": [
@@ -2744,7 +2764,27 @@
                   "#row"
                 ],
                 "note": "for \"id_convenio\": values \"69241\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "message": "Row at position \"46297\" violates the foreign key: for \"id_convenio\": values \"69241\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"39483\" violates the foreign key: for \"id_convenio\": values \"69241\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "69340",
+                  "01/DO",
+                  "",
+                  "DOTAÇÃO ORÇAMENTÁRIA",
+                  "<p>O objeto do projeto é a construção de 03 (três) poços artesianos no Município de Corinto. Assim, serão implantados sistemas de abastecimento de água para abastecer 03 comunidades rurais na zona rural do município, tais sejam Comunidades Junco, Brejo e Lavado. As obras de perfuração dos poços e construção de chafariz serão realizadas por empresa especializada contratada através de licitação.</p>"
+                ],
+                "rowNumber": 41409,
+                "rowPosition": 41410,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_convenio\": values \"69340\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"41410\" violates the foreign key: for \"id_convenio\": values \"69340\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -2755,8 +2795,8 @@
                   "ALTERAÇÃO SIMPLES",
                   "<p>Estabelecer a mútua cooperação entre os partícipes para fomentar o desenvolvimento agropecuário no município por meio da aquisição de um caminhão basculante.</p>"
                 ],
-                "rowNumber": 47158,
-                "rowPosition": 47159,
+                "rowNumber": 42554,
+                "rowPosition": 42555,
                 "code": "foreign-key-error",
                 "name": "ForeignKey Error",
                 "tags": [
@@ -2764,7 +2804,7 @@
                   "#row"
                 ],
                 "note": "for \"id_convenio\": values \"68872\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "message": "Row at position \"47159\" violates the foreign key: for \"id_convenio\": values \"68872\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"42555\" violates the foreign key: for \"id_convenio\": values \"68872\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -2775,8 +2815,8 @@
                   "DOTAÇÃO ORÇAMENTÁRIA",
                   "<p align=\"\"justify\"\"><span style=\"\"color:rgb( 0 , 0 , 0 )\"\">Constitui objeto do presente Termo de Colaboração a execução do Programa Núcleos de Fomento ao Paradesporto, para fomentar a prática de atividades físicas, esportivas e de lazer para pessoas com deficiência, por meio da contratação de serviços e aquisição de bens de consumo, conforme previsto no plano de trabalho.</span></p>"
                 ],
-                "rowNumber": 47159,
-                "rowPosition": 47160,
+                "rowNumber": 42555,
+                "rowPosition": 42556,
                 "code": "foreign-key-error",
                 "name": "ForeignKey Error",
                 "tags": [
@@ -2784,18 +2824,18 @@
                   "#row"
                 ],
                 "note": "for \"id_convenio\": values \"69247\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
-                "message": "Row at position \"47160\" violates the foreign key: for \"id_convenio\": values \"69247\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
+                "message": "Row at position \"42556\" violates the foreign key: for \"id_convenio\": values \"69247\" not found in the lookup table \"dm_convenio\" as \"id_convenio\"",
                 "description": "Values in the foreign key fields should exist in the reference table"
               }
             ],
             "stats": {
-              "errors": 11
+              "errors": 13
             },
             "valid": false
           }
         ],
         "stats": {
-          "errors": 11,
+          "errors": 13,
           "tasks": 1
         },
         "valid": false
