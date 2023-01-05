@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "time": 506.013,
+  "time": 515.216,
   "errors": [],
   "tasks": [
     {
@@ -473,13 +473,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "9fbb707058b100a16b85254d36cede49",
-          "bytes": 46374024,
+          "hash": "31878394e18f0082ec93276779a8ce0b",
+          "bytes": 46388551,
           "fields": 24,
-          "rows": 2930348
+          "rows": 2930896
         }
       },
-      "time": 506.013,
+      "time": 515.216,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -502,6 +502,591 @@
       ],
       "partial": false,
       "errors": [
+        {
+          "cells": [
+            "44470",
+            "20",
+            "46",
+            "478",
+            "3178",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13649519",
+            "498",
+            "2",
+            "53",
+            "616185",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "288567224.00"
+          ],
+          "rowNumber": 2902903,
+          "rowPosition": 2902904,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902904\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "20",
+            "46",
+            "478",
+            "3178",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13649519",
+            "498",
+            "2",
+            "55",
+            "616185",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "290204740.57"
+          ],
+          "rowNumber": 2902904,
+          "rowPosition": 2902905,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902905\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "20",
+            "46",
+            "478",
+            "3178",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13650439",
+            "498",
+            "2",
+            "57",
+            "616185",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "121004368.26"
+          ],
+          "rowNumber": 2902905,
+          "rowPosition": 2902906,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902906\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "20",
+            "46",
+            "478",
+            "3178",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13649357",
+            "498",
+            "2",
+            "58",
+            "616185",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "17929597.39"
+          ],
+          "rowNumber": 2902906,
+          "rowPosition": 2902907,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902907\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "20",
+            "46",
+            "478",
+            "3178",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13649519",
+            "498",
+            "2",
+            "60",
+            "616185",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "292326771.39"
+          ],
+          "rowNumber": 2902907,
+          "rowPosition": 2902908,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902908\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "20",
+            "46",
+            "478",
+            "3178",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13650439",
+            "498",
+            "2",
+            "62",
+            "616185",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "121717767.98"
+          ],
+          "rowNumber": 2902908,
+          "rowPosition": 2902909,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902909\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "20",
+            "46",
+            "478",
+            "3178",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13649519",
+            "498",
+            "2",
+            "64",
+            "616185",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "293773547.13"
+          ],
+          "rowNumber": 2902909,
+          "rowPosition": 2902910,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902910\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "20",
+            "46",
+            "478",
+            "3178",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13650439",
+            "498",
+            "2",
+            "66",
+            "616185",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "122372411.56"
+          ],
+          "rowNumber": 2902910,
+          "rowPosition": 2902911,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902911\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "21",
+            "48",
+            "496",
+            "3176",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13649858",
+            "498",
+            "2",
+            "52",
+            "616186",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "161537074.04"
+          ],
+          "rowNumber": 2902911,
+          "rowPosition": 2902912,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902912\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "21",
+            "48",
+            "496",
+            "3176",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13649858",
+            "498",
+            "2",
+            "54",
+            "616186",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "163273486.32"
+          ],
+          "rowNumber": 2902912,
+          "rowPosition": 2902913,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902913\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "21",
+            "48",
+            "496",
+            "3176",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13650143",
+            "498",
+            "2",
+            "56",
+            "616186",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "52805332.03"
+          ],
+          "rowNumber": 2902913,
+          "rowPosition": 2902914,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902914\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "21",
+            "48",
+            "496",
+            "3176",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13649858",
+            "498",
+            "2",
+            "59",
+            "616186",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "165352507.00"
+          ],
+          "rowNumber": 2902914,
+          "rowPosition": 2902915,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902915\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "21",
+            "48",
+            "496",
+            "3176",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13650143",
+            "498",
+            "2",
+            "61",
+            "616186",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "53371345.52"
+          ],
+          "rowNumber": 2902915,
+          "rowPosition": 2902916,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902916\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "21",
+            "48",
+            "496",
+            "3176",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13649858",
+            "498",
+            "2",
+            "63",
+            "616186",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "167012530.77"
+          ],
+          "rowNumber": 2902916,
+          "rowPosition": 2902917,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902917\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44470",
+            "21",
+            "48",
+            "496",
+            "3176",
+            "58",
+            "130",
+            "1953",
+            "3939",
+            "14390",
+            "56305",
+            "93",
+            "4249",
+            "1622564",
+            "13650143",
+            "498",
+            "2",
+            "65",
+            "616186",
+            "202212",
+            "2022",
+            "0.00",
+            "0.00",
+            "53916062.37"
+          ],
+          "rowNumber": 2902917,
+          "rowPosition": 2902918,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2902918\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
         {
           "cells": [
             "44468",
@@ -529,8 +1114,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911128,
-          "rowPosition": 2911129,
+          "rowNumber": 2914235,
+          "rowPosition": 2914236,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -538,7 +1123,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3174\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911129\" violates the foreign key: for \"id_item\": values \"3174\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914236\" violates the foreign key: for \"id_item\": values \"3174\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -568,8 +1153,8 @@
             "122372411.56",
             "0.00"
           ],
-          "rowNumber": 2911129,
-          "rowPosition": 2911130,
+          "rowNumber": 2914236,
+          "rowPosition": 2914237,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -577,7 +1162,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911130\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914237\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -607,8 +1192,8 @@
             "141717767.98",
             "0.00"
           ],
-          "rowNumber": 2911130,
-          "rowPosition": 2911131,
+          "rowNumber": 2914237,
+          "rowPosition": 2914238,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -616,7 +1201,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911131\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914238\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -646,8 +1231,8 @@
             "288567224.00",
             "0.00"
           ],
-          "rowNumber": 2911131,
-          "rowPosition": 2911132,
+          "rowNumber": 2914238,
+          "rowPosition": 2914239,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -655,7 +1240,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911132\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914239\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -685,8 +1270,8 @@
             "17929597.39",
             "0.00"
           ],
-          "rowNumber": 2911132,
-          "rowPosition": 2911133,
+          "rowNumber": 2914239,
+          "rowPosition": 2914240,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -694,7 +1279,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911133\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914240\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -724,8 +1309,8 @@
             "292326771.39",
             "0.00"
           ],
-          "rowNumber": 2911133,
-          "rowPosition": 2911134,
+          "rowNumber": 2914240,
+          "rowPosition": 2914241,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -733,7 +1318,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911134\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914241\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -763,8 +1348,8 @@
             "290204740.57",
             "0.00"
           ],
-          "rowNumber": 2911134,
-          "rowPosition": 2911135,
+          "rowNumber": 2914241,
+          "rowPosition": 2914242,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -772,7 +1357,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911135\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914242\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -802,8 +1387,8 @@
             "293773547.13",
             "0.00"
           ],
-          "rowNumber": 2911135,
-          "rowPosition": 2911136,
+          "rowNumber": 2914242,
+          "rowPosition": 2914243,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -811,7 +1396,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911136\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914243\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -841,8 +1426,8 @@
             "121004368.26",
             "0.00"
           ],
-          "rowNumber": 2911136,
-          "rowPosition": 2911137,
+          "rowNumber": 2914243,
+          "rowPosition": 2914244,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -850,7 +1435,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911137\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914244\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -880,8 +1465,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911137,
-          "rowPosition": 2911138,
+          "rowNumber": 2914244,
+          "rowPosition": 2914245,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -889,7 +1474,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911138\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914245\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -919,8 +1504,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911138,
-          "rowPosition": 2911139,
+          "rowNumber": 2914245,
+          "rowPosition": 2914246,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -928,7 +1513,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911139\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914246\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -958,8 +1543,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911139,
-          "rowPosition": 2911140,
+          "rowNumber": 2914246,
+          "rowPosition": 2914247,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -967,7 +1552,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911140\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914247\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -997,8 +1582,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911140,
-          "rowPosition": 2911141,
+          "rowNumber": 2914247,
+          "rowPosition": 2914248,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1006,7 +1591,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911141\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914248\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1036,8 +1621,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911141,
-          "rowPosition": 2911142,
+          "rowNumber": 2914248,
+          "rowPosition": 2914249,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1045,7 +1630,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911142\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914249\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1075,8 +1660,8 @@
             "-20000000.00",
             "0.00"
           ],
-          "rowNumber": 2911142,
-          "rowPosition": 2911143,
+          "rowNumber": 2914249,
+          "rowPosition": 2914250,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1084,7 +1669,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911143\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914250\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1114,8 +1699,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911143,
-          "rowPosition": 2911144,
+          "rowNumber": 2914250,
+          "rowPosition": 2914251,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1123,7 +1708,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911144\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914251\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1153,8 +1738,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911857,
-          "rowPosition": 2911858,
+          "rowNumber": 2914964,
+          "rowPosition": 2914965,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1162,7 +1747,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911858\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914965\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1192,8 +1777,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911858,
-          "rowPosition": 2911859,
+          "rowNumber": 2914965,
+          "rowPosition": 2914966,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1201,7 +1786,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911859\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914966\" violates the foreign key: for \"id_item\": values \"3178\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1231,8 +1816,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911859,
-          "rowPosition": 2911860,
+          "rowNumber": 2914966,
+          "rowPosition": 2914967,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1240,7 +1825,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3175\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911860\" violates the foreign key: for \"id_item\": values \"3175\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914967\" violates the foreign key: for \"id_item\": values \"3175\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1270,8 +1855,8 @@
             "53371345.52",
             "0.00"
           ],
-          "rowNumber": 2911860,
-          "rowPosition": 2911861,
+          "rowNumber": 2914967,
+          "rowPosition": 2914968,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1279,7 +1864,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911861\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914968\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1309,8 +1894,8 @@
             "163273486.32",
             "0.00"
           ],
-          "rowNumber": 2911861,
-          "rowPosition": 2911862,
+          "rowNumber": 2914968,
+          "rowPosition": 2914969,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1318,7 +1903,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911862\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914969\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1348,8 +1933,8 @@
             "165352507.00",
             "0.00"
           ],
-          "rowNumber": 2911862,
-          "rowPosition": 2911863,
+          "rowNumber": 2914969,
+          "rowPosition": 2914970,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1357,7 +1942,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911863\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914970\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1387,8 +1972,8 @@
             "167012530.77",
             "0.00"
           ],
-          "rowNumber": 2911863,
-          "rowPosition": 2911864,
+          "rowNumber": 2914970,
+          "rowPosition": 2914971,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1396,7 +1981,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911864\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914971\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1426,8 +2011,8 @@
             "52805332.03",
             "0.00"
           ],
-          "rowNumber": 2911864,
-          "rowPosition": 2911865,
+          "rowNumber": 2914971,
+          "rowPosition": 2914972,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1435,7 +2020,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911865\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914972\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1465,8 +2050,8 @@
             "53916062.37",
             "0.00"
           ],
-          "rowNumber": 2911865,
-          "rowPosition": 2911866,
+          "rowNumber": 2914972,
+          "rowPosition": 2914973,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1474,7 +2059,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911866\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914973\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1504,8 +2089,8 @@
             "161537074.04",
             "0.00"
           ],
-          "rowNumber": 2911866,
-          "rowPosition": 2911867,
+          "rowNumber": 2914973,
+          "rowPosition": 2914974,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1513,7 +2098,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911867\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914974\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1543,8 +2128,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911867,
-          "rowPosition": 2911868,
+          "rowNumber": 2914974,
+          "rowPosition": 2914975,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1552,7 +2137,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911868\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914975\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1582,8 +2167,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911868,
-          "rowPosition": 2911869,
+          "rowNumber": 2914975,
+          "rowPosition": 2914976,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1591,7 +2176,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911869\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914976\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1621,8 +2206,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911869,
-          "rowPosition": 2911870,
+          "rowNumber": 2914976,
+          "rowPosition": 2914977,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1630,7 +2215,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911870\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914977\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1660,8 +2245,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911870,
-          "rowPosition": 2911871,
+          "rowNumber": 2914977,
+          "rowPosition": 2914978,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1669,7 +2254,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911871\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914978\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1699,8 +2284,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911871,
-          "rowPosition": 2911872,
+          "rowNumber": 2914978,
+          "rowPosition": 2914979,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1708,7 +2293,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911872\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914979\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1738,8 +2323,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911872,
-          "rowPosition": 2911873,
+          "rowNumber": 2914979,
+          "rowPosition": 2914980,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1747,7 +2332,7 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911873\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914980\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1777,8 +2362,8 @@
             "0.00",
             "0.00"
           ],
-          "rowNumber": 2911873,
-          "rowPosition": 2911874,
+          "rowNumber": 2914980,
+          "rowPosition": 2914981,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1786,18 +2371,18 @@
             "#row"
           ],
           "note": "for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
-          "message": "Row at position \"2911874\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
+          "message": "Row at position \"2914981\" violates the foreign key: for \"id_item\": values \"3176\" not found in the lookup table \"dm_item_desp\" as \"id_item\"",
           "description": "Values in the foreign key fields should exist in the reference table"
         }
       ],
       "stats": {
-        "errors": 33
+        "errors": 48
       },
       "valid": false
     }
   ],
   "stats": {
-    "errors": 33,
+    "errors": 48,
     "tasks": 1
   },
   "valid": false
