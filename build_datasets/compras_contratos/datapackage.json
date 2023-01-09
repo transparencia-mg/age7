@@ -2020,7 +2020,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 7.355,
+        "time": 7.303,
         "errors": [],
         "tasks": [
           {
@@ -2096,13 +2096,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "49214100d7e692464cee054e2e9f5fc7",
-                "bytes": 8975580,
+                "hash": "800a1dec66609aca57b4acdb3b91b4e0",
+                "bytes": 8976104,
                 "fields": 4,
-                "rows": 194016
+                "rows": 194021
               }
             },
-            "time": 7.355,
+            "time": 7.303,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2487,7 +2487,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 33.532,
+        "time": 33.613,
         "errors": [],
         "tasks": [
           {
@@ -2666,13 +2666,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "4ba780ff7895601ba336f0e0ea61eeee",
-                "bytes": 24333080,
+                "hash": "2c0f74b1f33f6550562a2a90bcc2af81",
+                "bytes": 24335053,
                 "fields": 14,
-                "rows": 386030
+                "rows": 386031
               }
             },
-            "time": 33.532,
+            "time": 33.613,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3052,7 +3052,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 99.463,
+        "time": 98.888,
         "errors": [],
         "tasks": [
           {
@@ -3228,13 +3228,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "7f5d728daa0aa777a05385f9e31d44ff",
-                "bytes": 9972745,
+                "hash": "68a12186e507d099234c2d2c4b1cd620",
+                "bytes": 9970578,
                 "fields": 7,
                 "rows": 964106
               }
             },
-            "time": 99.463,
+            "time": 98.888,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3804,7 +3804,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 411.106,
+        "time": 410.849,
         "errors": [],
         "tasks": [
           {
@@ -4334,13 +4334,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "1815fa35a1f401c25069b2bf75ed5133",
-                "bytes": 58437070,
+                "hash": "b42d406157b3f63f2623da9a47b8c41b",
+                "bytes": 58437108,
                 "fields": 27,
-                "rows": 1918234
+                "rows": 1918235
               }
             },
-            "time": 411.106,
+            "time": 410.849,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4362,649 +4362,18 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [
-              {
-                "cells": [
-                  "44417",
-                  "4",
-                  "1831016",
-                  "16",
-                  "1",
-                  "1",
-                  "206",
-                  "56434",
-                  "1",
-                  "69",
-                  "169",
-                  "556",
-                  "154054",
-                  "383797",
-                  "79149",
-                  "889",
-                  "1831312",
-                  "2538",
-                  "2082",
-                  "2022",
-                  "2022-12-08",
-                  "250000.0000",
-                  "1.0500",
-                  "261250.00",
-                  "1.0000",
-                  "250000.00",
-                  "250000.00"
-                ],
-                "rowNumber": 1867379,
-                "rowPosition": 1867380,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79149\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1867380\" violates the foreign key: for \"id_contrato\": values \"79149\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44403",
-                  "4",
-                  "1831059",
-                  "57",
-                  "1",
-                  "1",
-                  "501",
-                  "69750",
-                  "1",
-                  "69",
-                  "795",
-                  "21413",
-                  "167146",
-                  "384951",
-                  "79146",
-                  "480",
-                  "1831312",
-                  "2538",
-                  "2081",
-                  "2022",
-                  "2022-12-23",
-                  "500000.0000",
-                  "0.1200",
-                  "61500.00",
-                  "0.0400",
-                  "21900.00",
-                  "21900.00"
-                ],
-                "rowNumber": 1913486,
-                "rowPosition": 1913487,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79146\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1913487\" violates the foreign key: for \"id_contrato\": values \"79146\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44440",
-                  "4",
-                  "1831095",
-                  "96",
-                  "1",
-                  "1",
-                  "883",
-                  "36309",
-                  "1",
-                  "77",
-                  "479",
-                  "2346",
-                  "134508",
-                  "385733",
-                  "79150",
-                  "1729",
-                  "1831240",
-                  "2548",
-                  "3293",
-                  "2022",
-                  "2022-12-29",
-                  "0.0000",
-                  "175350.0000",
-                  "175350.00",
-                  "181761.0400",
-                  "181761.04",
-                  "181761.04"
-                ],
-                "rowNumber": 1915134,
-                "rowPosition": 1915135,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79150\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1915135\" violates the foreign key: for \"id_contrato\": values \"79150\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44440",
-                  "4",
-                  "1831095",
-                  "96",
-                  "1",
-                  "1",
-                  "883",
-                  "36309",
-                  "1",
-                  "77",
-                  "479",
-                  "2346",
-                  "134512",
-                  "385733",
-                  "79150",
-                  "1729",
-                  "1831240",
-                  "2548",
-                  "3293",
-                  "2022",
-                  "2022-12-29",
-                  "0.0000",
-                  "78150.0000",
-                  "78150.00",
-                  "77886.5400",
-                  "77886.54",
-                  "77886.54"
-                ],
-                "rowNumber": 1915135,
-                "rowPosition": 1915136,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79150\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1915136\" violates the foreign key: for \"id_contrato\": values \"79150\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44440",
-                  "4",
-                  "1831095",
-                  "96",
-                  "1",
-                  "1",
-                  "883",
-                  "36309",
-                  "1",
-                  "77",
-                  "479",
-                  "2346",
-                  "134509",
-                  "385733",
-                  "79150",
-                  "1729",
-                  "1831240",
-                  "2548",
-                  "3293",
-                  "2022",
-                  "2022-12-29",
-                  "0.0000",
-                  "162000.0000",
-                  "162000.00",
-                  "155792.4200",
-                  "155792.42",
-                  "155792.42"
-                ],
-                "rowNumber": 1915136,
-                "rowPosition": 1915137,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79150\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1915137\" violates the foreign key: for \"id_contrato\": values \"79150\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44468",
-                  "17",
-                  "1831095",
-                  "96",
-                  "1",
-                  "1",
-                  "876",
-                  "17435",
-                  "1",
-                  "66",
-                  "76",
-                  "4337",
-                  "91084",
-                  "385662",
-                  "79152",
-                  "889",
-                  "1831724",
-                  "2772",
-                  "3293",
-                  "2022",
-                  "2022-12-29",
-                  "0.0000",
-                  "252325.0000",
-                  "252325.00",
-                  "252325.0000",
-                  "252325.00",
-                  "252325.00"
-                ],
-                "rowNumber": 1915602,
-                "rowPosition": 1915603,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79152\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1915603\" violates the foreign key: for \"id_contrato\": values \"79152\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44468",
-                  "17",
-                  "1831095",
-                  "96",
-                  "1",
-                  "1",
-                  "876",
-                  "17435",
-                  "1",
-                  "66",
-                  "76",
-                  "14973",
-                  "146182",
-                  "385662",
-                  "79152",
-                  "889",
-                  "1831724",
-                  "2772",
-                  "3293",
-                  "2022",
-                  "2022-12-29",
-                  "0.0000",
-                  "106677.0000",
-                  "106677.00",
-                  "106677.0000",
-                  "106677.00",
-                  "106677.00"
-                ],
-                "rowNumber": 1915603,
-                "rowPosition": 1915604,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79152\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1915604\" violates the foreign key: for \"id_contrato\": values \"79152\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44468",
-                  "17",
-                  "1831095",
-                  "96",
-                  "1",
-                  "1",
-                  "876",
-                  "17435",
-                  "1",
-                  "66",
-                  "76",
-                  "4337",
-                  "90058",
-                  "385662",
-                  "79152",
-                  "889",
-                  "1831724",
-                  "2772",
-                  "3293",
-                  "2022",
-                  "2022-12-29",
-                  "0.0000",
-                  "25232.5000",
-                  "25232.50",
-                  "25232.5000",
-                  "25232.50",
-                  "25232.50"
-                ],
-                "rowNumber": 1915604,
-                "rowPosition": 1915605,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79152\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1915605\" violates the foreign key: for \"id_contrato\": values \"79152\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44468",
-                  "17",
-                  "1831095",
-                  "96",
-                  "1",
-                  "1",
-                  "876",
-                  "17435",
-                  "1",
-                  "66",
-                  "76",
-                  "4337",
-                  "90057",
-                  "385662",
-                  "79152",
-                  "889",
-                  "1831724",
-                  "2772",
-                  "3293",
-                  "2022",
-                  "2022-12-29",
-                  "0.0000",
-                  "106275.0000",
-                  "106275.00",
-                  "106275.0000",
-                  "106275.00",
-                  "106275.00"
-                ],
-                "rowNumber": 1915605,
-                "rowPosition": 1915606,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79152\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1915606\" violates the foreign key: for \"id_contrato\": values \"79152\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44468",
-                  "17",
-                  "1831095",
-                  "96",
-                  "1",
-                  "1",
-                  "876",
-                  "17435",
-                  "1",
-                  "66",
-                  "76",
-                  "4337",
-                  "90059",
-                  "385662",
-                  "79152",
-                  "889",
-                  "1831724",
-                  "2772",
-                  "3293",
-                  "2022",
-                  "2022-12-29",
-                  "0.0000",
-                  "1062750.0000",
-                  "1062750.00",
-                  "1062750.0000",
-                  "1062750.00",
-                  "1062750.00"
-                ],
-                "rowNumber": 1915606,
-                "rowPosition": 1915607,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79152\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1915607\" violates the foreign key: for \"id_contrato\": values \"79152\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44432",
-                  "2",
-                  "1831081",
-                  "77",
-                  "1",
-                  "1",
-                  "66",
-                  "18875",
-                  "1",
-                  "42",
-                  "399",
-                  "5637",
-                  "34058",
-                  "385445",
-                  "79148",
-                  "889",
-                  "1831334",
-                  "2923",
-                  "2014",
-                  "2022",
-                  "2022-12-28",
-                  "73.0000",
-                  "63.0000",
-                  "4599.00",
-                  "63.0000",
-                  "4599.00",
-                  "4599.00"
-                ],
-                "rowNumber": 1916425,
-                "rowPosition": 1916426,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79148\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1916426\" violates the foreign key: for \"id_contrato\": values \"79148\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44447",
-                  "4",
-                  "1831059",
-                  "57",
-                  "1",
-                  "1",
-                  "501",
-                  "60226",
-                  "1",
-                  "26",
-                  "289",
-                  "10046",
-                  "165778",
-                  "385871",
-                  "79145",
-                  "1071",
-                  "1831233",
-                  "2863",
-                  "2081",
-                  "2022",
-                  "2022-12-30",
-                  "50000.0000",
-                  "4.5800",
-                  "229000.00",
-                  "3.9200",
-                  "196000.00",
-                  "196000.00"
-                ],
-                "rowNumber": 1916539,
-                "rowPosition": 1916540,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79145\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1916540\" violates the foreign key: for \"id_contrato\": values \"79145\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44447",
-                  "4",
-                  "1831059",
-                  "57",
-                  "1",
-                  "1",
-                  "501",
-                  "60226",
-                  "1",
-                  "26",
-                  "289",
-                  "10046",
-                  "158846",
-                  "385871",
-                  "79145",
-                  "1071",
-                  "1831233",
-                  "2863",
-                  "2081",
-                  "2022",
-                  "2022-12-30",
-                  "23900.0000",
-                  "7.7400",
-                  "184890.40",
-                  "4.0000",
-                  "95600.00",
-                  "95600.00"
-                ],
-                "rowNumber": 1916540,
-                "rowPosition": 1916541,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79145\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1916541\" violates the foreign key: for \"id_contrato\": values \"79145\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44466",
-                  "15",
-                  "1831065",
-                  "65",
-                  "1",
-                  "1",
-                  "856",
-                  "18604",
-                  "1",
-                  "51",
-                  "276",
-                  "12334",
-                  "343922",
-                  "385455",
-                  "79147",
-                  "889",
-                  "1831625",
-                  "2670",
-                  "2884",
-                  "2022",
-                  "2022-12-28",
-                  "132.0000",
-                  "257.2000",
-                  "33950.40",
-                  "257.2000",
-                  "33950.40",
-                  "33950.40"
-                ],
-                "rowNumber": 1916919,
-                "rowPosition": 1916920,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79147\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1916920\" violates the foreign key: for \"id_contrato\": values \"79147\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "44466",
-                  "15",
-                  "1831065",
-                  "65",
-                  "1",
-                  "1",
-                  "856",
-                  "20894",
-                  "1",
-                  "9",
-                  "77",
-                  "12266",
-                  "94257",
-                  "385455",
-                  "79151",
-                  "889",
-                  "1831364",
-                  "2736",
-                  "2884",
-                  "2022",
-                  "2022-12-28",
-                  "264.0000",
-                  "1052.0000",
-                  "277728.00",
-                  "1052.0000",
-                  "277728.00",
-                  "277728.00"
-                ],
-                "rowNumber": 1916920,
-                "rowPosition": 1916921,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "for \"id_contrato\": values \"79151\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "message": "Row at position \"1916921\" violates the foreign key: for \"id_contrato\": values \"79151\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              }
-            ],
+            "errors": [],
             "stats": {
-              "errors": 15
+              "errors": 0
             },
-            "valid": false
+            "valid": true
           }
         ],
         "stats": {
-          "errors": 15,
+          "errors": 0,
           "tasks": 1
         },
-        "valid": false
+        "valid": true
       }
     },
     {
@@ -5778,7 +5147,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 9.171,
+        "time": 9.236,
         "errors": [],
         "tasks": [
           {
@@ -5935,13 +5304,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "56afaa7ad0ff2e163fda6894ca35ad58",
-                "bytes": 7183877,
+                "hash": "1b6b8885cf6e8440e8a9a15d804ba24a",
+                "bytes": 7184484,
                 "fields": 12,
-                "rows": 79144
+                "rows": 79152
               }
             },
-            "time": 9.171,
+            "time": 9.236,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -6638,7 +6007,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 2.652,
+        "time": 2.624,
         "errors": [],
         "tasks": [
           {
@@ -6714,13 +6083,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "f24ab55908bb30bdcfc372da8d272ce7",
-                "bytes": 1609417,
+                "hash": "5cee8e76c13b2b9fab40eb5ea89246df",
+                "bytes": 1609701,
                 "fields": 4,
-                "rows": 73266
+                "rows": 73280
               }
             },
-            "time": 2.652,
+            "time": 2.624,
             "scope": [
               "hash-count-error",
               "byte-count-error",
