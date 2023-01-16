@@ -124,7 +124,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.163,
+        "time": 0.168,
         "errors": [],
         "tasks": [
           {
@@ -249,13 +249,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "ccea688940da6e7a698a22d90606f50c",
-                "bytes": 24690,
+                "hash": "4ae190d630bc0ac54d8df6f5d4b20180",
+                "bytes": 25439,
                 "fields": 9,
-                "rows": 2554
+                "rows": 2664
               }
             },
-            "time": 0.163,
+            "time": 0.168,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -906,7 +906,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 41.318,
+        "time": 40.793,
         "errors": [],
         "tasks": [
           {
@@ -987,13 +987,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "7af96bb089fbf42dc01b963f019c83d7",
-                "bytes": 20483134,
+                "hash": "30f29500ed05b3392198a7a97b5026de",
+                "bytes": 20484651,
                 "fields": 4,
                 "rows": 1183626
               }
             },
-            "time": 41.318,
+            "time": 40.793,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1177,7 +1177,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.045,
+        "time": 0.042,
         "errors": [],
         "tasks": [
           {
@@ -1327,13 +1327,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "2dbd63c655b02c58faecb9883320be44",
-                "bytes": 2680,
+                "hash": "3789b3b1fb1506247771e744b14ec0b6",
+                "bytes": 3101,
                 "fields": 3,
-                "rows": 198
+                "rows": 234
               }
             },
-            "time": 0.045,
+            "time": 0.042,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1355,18 +1355,387 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [],
+            "errors": [
+              {
+                "cell": "6",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "673",
+                  "6",
+                  "TRANSFERENCIAS DA UNIAO VINCULADAS A ASSISTENCIA SOCIAL - EMENDAS DE BANCADA"
+                ],
+                "rowNumber": 198,
+                "rowPosition": 199,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"6\" in row at position \"199\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "7",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "678",
+                  "7",
+                  "TRANSFERENCIAS DA UNIAO POR MEIO DE PORTARIA - EMENDAS INDIVIDUAIS"
+                ],
+                "rowNumber": 202,
+                "rowPosition": 203,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"7\" in row at position \"203\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "8",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "683",
+                  "8",
+                  "TRANSFERENCIAS DA UNIAO POR MEIO DE PORTARIA - EMENDAS DE BANCADA"
+                ],
+                "rowNumber": 207,
+                "rowPosition": 208,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"8\" in row at position \"208\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "65",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "684",
+                  "65",
+                  "TRANSFERENCIAS DA UNIAO VINCULADAS A SAUDE - BLOCO ESTRUTURACAO - EMENDAS DE BANCADA"
+                ],
+                "rowNumber": 208,
+                "rowPosition": 209,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"65\" in row at position \"209\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "67",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "685",
+                  "67",
+                  "ACORDOS E AJUSTES DE COOPERACAO MUTUA COM OS MUNICIPIOS"
+                ],
+                "rowNumber": 209,
+                "rowPosition": 210,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"67\" in row at position \"210\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "68",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "686",
+                  "68",
+                  "CONVENIOS COM AS INSTITUICOES PRIVADAS E OS ORGANISMOS DO EXTERIOR"
+                ],
+                "rowNumber": 210,
+                "rowPosition": 211,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"68\" in row at position \"211\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "4",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "689",
+                  "4",
+                  "TRANSFERENCIAS DO FNDE VINCULADAS A EDUCACAO - EMENDAS DE BANCADA"
+                ],
+                "rowNumber": 213,
+                "rowPosition": 214,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"4\" in row at position \"214\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "62",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "691",
+                  "62",
+                  "TRANSFERENCIAS DA UNIAO VINCULADAS A SAUDE - BLOCO MANUTENCAO - EMENDAS INDIVIDUAIS"
+                ],
+                "rowNumber": 215,
+                "rowPosition": 216,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"62\" in row at position \"216\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "66",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "694",
+                  "66",
+                  "ACORDOS E AJUSTES DE COOPERACAO MUTUA COM OS ESTADOS E O DISTRITO FEDERAL"
+                ],
+                "rowNumber": 218,
+                "rowPosition": 219,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"66\" in row at position \"219\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "69",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "695",
+                  "69",
+                  "CONVENIOS COM OS ESTADOS E O DISTRITO FEDERAL"
+                ],
+                "rowNumber": 219,
+                "rowPosition": 220,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"69\" in row at position \"220\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "3",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "697",
+                  "3",
+                  "TRANSFERENCIAS DO FNDE VINCULADAS A EDUCACAO - EMENDAS INDIVIDUAIS"
+                ],
+                "rowNumber": 221,
+                "rowPosition": 222,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"3\" in row at position \"222\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "5",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "698",
+                  "5",
+                  "TRANSFERENCIAS DA UNIAO VINCULADAS A ASSISTENCIA SOCIAL - EMENDAS INDIVIDUAIS"
+                ],
+                "rowNumber": 222,
+                "rowPosition": 223,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"5\" in row at position \"223\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "63",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "699",
+                  "63",
+                  "TRANSFERENCIAS DA UNIAO VINCULADAS A SAUDE - BLOCO MANUTENCAO - EMENDAS DE BANCADA"
+                ],
+                "rowNumber": 223,
+                "rowPosition": 224,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"63\" in row at position \"224\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "1",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "701",
+                  "1",
+                  "CONVENIOS COM A UNIAO E SUAS ENTIDADES - EMENDAS INDIVIDUAIS"
+                ],
+                "rowNumber": 225,
+                "rowPosition": 226,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"1\" in row at position \"226\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "14",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "703",
+                  "14",
+                  "RECURSOS DE DEPOSITOS JUDICIAIS - LIDES DAS QUAIS O ENTE FAZ PARTE"
+                ],
+                "rowNumber": 227,
+                "rowPosition": 228,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"14\" in row at position \"228\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "64",
+                "fieldName": "cd_fonte",
+                "fieldNumber": 2,
+                "fieldPosition": 2,
+                "cells": [
+                  "705",
+                  "64",
+                  "TRANSFERENCIAS DA UNIAO VINCULADAS A SAUDE - BLOCO ESTRUTURACAO - EMENDAS INDIVIDUAIS"
+                ],
+                "rowNumber": 229,
+                "rowPosition": 230,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "message": "The cell \"64\" in row at position \"230\" and field \"cd_fonte\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['10', '11', '12', '13', '18', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99']\"",
+                "description": "A field value does not conform to a constraint."
+              }
+            ],
             "stats": {
-              "errors": 0
+              "errors": 16
             },
-            "valid": true
+            "valid": false
           }
         ],
         "stats": {
-          "errors": 0,
+          "errors": 16,
           "tasks": 1
         },
-        "valid": true
+        "valid": false
       }
     },
     {
@@ -2117,7 +2486,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 9.93,
+        "time": 9.893,
         "errors": [],
         "tasks": [
           {
@@ -2230,13 +2599,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "720db07b164bc0bc17e694a2929d9805",
-                "bytes": 1563864,
+                "hash": "2e6d2ef70b990be08eafa7659af17904",
+                "bytes": 1559701,
                 "fields": 8,
                 "rows": 128344
               }
             },
-            "time": 9.93,
+            "time": 9.893,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2384,7 +2753,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 6.791,
+        "time": 6.852,
         "errors": [],
         "tasks": [
           {
@@ -2497,13 +2866,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "11a02f3916d7182cee013b6a6b5395e5",
-                "bytes": 1174550,
+                "hash": "f08f2c0b90cf8615b2f4cf87719a62ac",
+                "bytes": 1177953,
                 "fields": 8,
                 "rows": 87739
               }
             },
-            "time": 6.791,
+            "time": 6.852,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2651,7 +3020,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 5.567,
+        "time": 5.534,
         "errors": [],
         "tasks": [
           {
@@ -2764,13 +3133,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "5309aaac4aaba6df4f5b100b3a61b5e1",
-                "bytes": 998366,
+                "hash": "d0fcaca929791667bb16defec751caa3",
+                "bytes": 998281,
                 "fields": 8,
                 "rows": 71538
               }
             },
-            "time": 5.567,
+            "time": 5.534,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2918,7 +3287,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.521,
+        "time": 3.545,
         "errors": [],
         "tasks": [
           {
@@ -3031,13 +3400,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "f991417bc7ceda1dd40fad5cf025c733",
-                "bytes": 650891,
+                "hash": "addfb56ecaa8abf8ce1738c89342cd52",
+                "bytes": 650732,
                 "fields": 8,
                 "rows": 45258
               }
             },
-            "time": 3.521,
+            "time": 3.545,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3185,7 +3554,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.583,
+        "time": 3.525,
         "errors": [],
         "tasks": [
           {
@@ -3298,13 +3667,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "6ff41a0e1fa5b14f1df1c82fdd435474",
-                "bytes": 644106,
+                "hash": "4b1480ec5c94bf39eea4bc6f7795de37",
+                "bytes": 641555,
                 "fields": 8,
                 "rows": 45177
               }
             },
-            "time": 3.583,
+            "time": 3.525,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3452,7 +3821,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.649,
+        "time": 3.641,
         "errors": [],
         "tasks": [
           {
@@ -3565,13 +3934,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "9bc745e21f7488d140483e05d078e69c",
-                "bytes": 671321,
+                "hash": "6fb2dd17d5a9cb12daefcb083ee1390a",
+                "bytes": 670701,
                 "fields": 8,
                 "rows": 46665
               }
             },
-            "time": 3.649,
+            "time": 3.641,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3719,7 +4088,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.918,
+        "time": 3.836,
         "errors": [],
         "tasks": [
           {
@@ -3832,13 +4201,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "f977ee10c1d69ac5388d1ae6dd3b5ebd",
-                "bytes": 719526,
+                "hash": "f0d16ddb031306c0002ae0d0b6ec1d14",
+                "bytes": 718411,
                 "fields": 8,
                 "rows": 49567
               }
             },
-            "time": 3.918,
+            "time": 3.836,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3986,7 +4355,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.656,
+        "time": 3.649,
         "errors": [],
         "tasks": [
           {
@@ -4099,13 +4468,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "730b4eef8fd28758e72f0a5b8fe18f95",
-                "bytes": 670294,
+                "hash": "73111e282d71ed13f1652ea195f7c296",
+                "bytes": 671675,
                 "fields": 8,
                 "rows": 46651
               }
             },
-            "time": 3.656,
+            "time": 3.649,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4253,7 +4622,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.337,
+        "time": 3.355,
         "errors": [],
         "tasks": [
           {
@@ -4366,13 +4735,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "38cce6a532d0ee615820e2380f513f93",
-                "bytes": 594046,
+                "hash": "460ee9c17e960cb3651c1a1684fa425d",
+                "bytes": 591390,
                 "fields": 8,
                 "rows": 42367
               }
             },
-            "time": 3.337,
+            "time": 3.355,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4520,7 +4889,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.021,
+        "time": 3.001,
         "errors": [],
         "tasks": [
           {
@@ -4633,13 +5002,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "07f7924ab905f5ca37f53385911f4b87",
-                "bytes": 539927,
+                "hash": "51e7a948a7cce3782f3099606c6cd864",
+                "bytes": 538645,
                 "fields": 8,
                 "rows": 38126
               }
             },
-            "time": 3.021,
+            "time": 3.001,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4787,7 +5156,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.208,
+        "time": 3.223,
         "errors": [],
         "tasks": [
           {
@@ -4900,13 +5269,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "97d1428dc6e191e02722516de45dbd9a",
-                "bytes": 595756,
+                "hash": "f04e750889c3d30983208901ceb9c125",
+                "bytes": 595165,
                 "fields": 8,
                 "rows": 40965
               }
             },
-            "time": 3.208,
+            "time": 3.223,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -5054,7 +5423,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 3.988,
+        "time": 4.028,
         "errors": [],
         "tasks": [
           {
@@ -5167,13 +5536,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "59ee1c81658590ef45811b41db604f4d",
-                "bytes": 732453,
+                "hash": "173d1416f5b821e0f9d728f578f80a2c",
+                "bytes": 731961,
                 "fields": 8,
                 "rows": 51023
               }
             },
-            "time": 3.988,
+            "time": 4.028,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -5321,7 +5690,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 6.106,
+        "time": 6.047,
         "errors": [],
         "tasks": [
           {
@@ -5434,13 +5803,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e20f79a9418f9ef7bc4e54e9fc6fe7cb",
-                "bytes": 1039128,
+                "hash": "d806cec4fdb4defeadc4605489d431f3",
+                "bytes": 1040073,
                 "fields": 8,
                 "rows": 77573
               }
             },
-            "time": 6.106,
+            "time": 6.047,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -5588,7 +5957,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 6.301,
+        "time": 6.393,
         "errors": [],
         "tasks": [
           {
@@ -5701,13 +6070,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "db6498a7d9943f411ec581ed52290221",
-                "bytes": 1052798,
+                "hash": "6d15d9e7386dd2a8c3f88d7590829bbd",
+                "bytes": 1053113,
                 "fields": 8,
                 "rows": 82038
               }
             },
-            "time": 6.301,
+            "time": 6.393,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -5855,7 +6224,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 9.18,
+        "time": 9.193,
         "errors": [],
         "tasks": [
           {
@@ -5968,13 +6337,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "70c0e937c83a1a1c25bfc4086f26d22d",
-                "bytes": 1484343,
+                "hash": "f61dff649cb7949c5ebd1c78cf36b470",
+                "bytes": 1480757,
                 "fields": 8,
                 "rows": 118481
               }
             },
-            "time": 9.18,
+            "time": 9.193,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -6122,7 +6491,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 14.397,
+        "time": 14.462,
         "errors": [],
         "tasks": [
           {
@@ -6235,13 +6604,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "c6a935b8baf7bcfd78a5fb9a2a8b7f2c",
-                "bytes": 2328108,
+                "hash": "f0571a66fffa80939c7ea34565592bf9",
+                "bytes": 2325503,
                 "fields": 8,
                 "rows": 186255
               }
             },
-            "time": 14.397,
+            "time": 14.462,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -6389,7 +6758,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 20.246,
+        "time": 20.009,
         "errors": [],
         "tasks": [
           {
@@ -6502,13 +6871,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "336a5d5e69e3dec5d3c400e3f7f2695f",
-                "bytes": 3130138,
+                "hash": "b12f735d8e1890a506b6030934cc818e",
+                "bytes": 3119783,
                 "fields": 8,
                 "rows": 256370
               }
             },
-            "time": 20.246,
+            "time": 20.009,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -6656,7 +7025,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 16.856,
+        "time": 16.681,
         "errors": [],
         "tasks": [
           {
@@ -6769,13 +7138,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "94edfbd1cd8f41e36f094219aa4444fb",
-                "bytes": 2690192,
+                "hash": "5979753142f032ce6433bfdf3531ccc9",
+                "bytes": 2690879,
                 "fields": 8,
                 "rows": 217062
               }
             },
-            "time": 16.856,
+            "time": 16.681,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -6923,7 +7292,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 17.541,
+        "time": 17.395,
         "errors": [],
         "tasks": [
           {
@@ -7036,13 +7405,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "46c4ca7e92bd99a2ca9f182ec926c36a",
-                "bytes": 2739937,
+                "hash": "55ee8746863682c84c7f96843d6a8638",
+                "bytes": 2741082,
                 "fields": 8,
                 "rows": 227715
               }
             },
-            "time": 17.541,
+            "time": 17.395,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7190,7 +7559,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 19.685,
+        "time": 19.395,
         "errors": [],
         "tasks": [
           {
@@ -7303,13 +7672,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "aa2088ab0a3abffb7752b0c886bb424f",
-                "bytes": 2569354,
+                "hash": "152d34f44554c149d81b4e6b270918ca",
+                "bytes": 2568433,
                 "fields": 8,
                 "rows": 252932
               }
             },
-            "time": 19.685,
+            "time": 19.395,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7457,7 +7826,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 17.22,
+        "time": 17.258,
         "errors": [],
         "tasks": [
           {
@@ -7570,13 +7939,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "7e84e6b961056205b456ecc684d2b532",
-                "bytes": 2559775,
+                "hash": "d0a1d776ec2e221585393c431a5fa61c",
+                "bytes": 2561789,
                 "fields": 8,
                 "rows": 223830
               }
             },
-            "time": 17.22,
+            "time": 17.258,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -8815,7 +9184,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 82.676,
+        "time": 83.137,
         "errors": [],
         "tasks": [
           {
@@ -9298,13 +9667,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "98c4a3f03007e634ca36f72e8b7d3271",
-                "bytes": 4602426,
+                "hash": "1e2faaf495b5d92223e3651853d77b32",
+                "bytes": 4600011,
                 "fields": 26,
                 "rows": 294027
               }
             },
-            "time": 82.676,
+            "time": 83.137,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -9825,7 +10194,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 65.235,
+        "time": 65.197,
         "errors": [],
         "tasks": [
           {
@@ -10308,13 +10677,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "d877db7265352d35449e2290b343e61c",
-                "bytes": 3336927,
+                "hash": "da3b5d59d4b28bf391e6856e74a35c0f",
+                "bytes": 3335436,
                 "fields": 26,
                 "rows": 202945
               }
             },
-            "time": 65.235,
+            "time": 65.197,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -10835,7 +11204,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 67.559,
+        "time": 66.767,
         "errors": [],
         "tasks": [
           {
@@ -11318,13 +11687,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "c8c1530450f1a7723eeaf5f23e58a3e9",
-                "bytes": 3447668,
+                "hash": "8c64946f023dd3f77230c2301b5417c4",
+                "bytes": 3443544,
                 "fields": 26,
                 "rows": 213308
               }
             },
-            "time": 67.559,
+            "time": 66.767,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -11845,7 +12214,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 53.147,
+        "time": 53.794,
         "errors": [],
         "tasks": [
           {
@@ -12328,13 +12697,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "a42a177f4b5e3e31a0ef920aa8a68c8d",
-                "bytes": 2313981,
+                "hash": "a10ff883276c8a5b410a24304653671b",
+                "bytes": 2307414,
                 "fields": 26,
                 "rows": 145059
               }
             },
-            "time": 53.147,
+            "time": 53.794,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -12855,7 +13224,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 54.5,
+        "time": 54.177,
         "errors": [],
         "tasks": [
           {
@@ -13338,13 +13707,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "8f1f3b0098fe2fe6dda0b5947c1248d5",
-                "bytes": 2446144,
+                "hash": "d9343caf3e7206f842e16eccaf4f4265",
+                "bytes": 2447960,
                 "fields": 26,
                 "rows": 150380
               }
             },
-            "time": 54.5,
+            "time": 54.177,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -13865,7 +14234,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 54.752,
+        "time": 54.309,
         "errors": [],
         "tasks": [
           {
@@ -14348,13 +14717,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e629810e91fe3ac293a37e90c19858bd",
-                "bytes": 2501219,
+                "hash": "0d3efed3ef0ec9c4ae6c49ae586bc9bb",
+                "bytes": 2499835,
                 "fields": 26,
                 "rows": 150404
               }
             },
-            "time": 54.752,
+            "time": 54.309,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -14875,7 +15244,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 59.498,
+        "time": 59.636,
         "errors": [],
         "tasks": [
           {
@@ -15358,13 +15727,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "7138617258395216494a31f0517177e3",
-                "bytes": 2855761,
+                "hash": "ae87907f7fc05f3c8169532aad6f2f02",
+                "bytes": 2853557,
                 "fields": 26,
                 "rows": 177826
               }
             },
-            "time": 59.498,
+            "time": 59.636,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -15885,7 +16254,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 60.018,
+        "time": 60.442,
         "errors": [],
         "tasks": [
           {
@@ -16368,13 +16737,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "5e7bdfe22c18ae44f7f109eaa8489e63",
-                "bytes": 2989585,
+                "hash": "b2c723d7b2510fbce415a94ce24d608b",
+                "bytes": 2987232,
                 "fields": 26,
                 "rows": 182991
               }
             },
-            "time": 60.018,
+            "time": 60.442,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -16895,7 +17264,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 57.464,
+        "time": 57.475,
         "errors": [],
         "tasks": [
           {
@@ -17378,13 +17747,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "2edeffda116cd52a13d4fb667efa1122",
-                "bytes": 2687460,
+                "hash": "1eb3cb25a0f4c0c88785226cbe50f84c",
+                "bytes": 2684268,
                 "fields": 26,
                 "rows": 172022
               }
             },
-            "time": 57.464,
+            "time": 57.475,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -17905,7 +18274,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 53.608,
+        "time": 53.364,
         "errors": [],
         "tasks": [
           {
@@ -18388,13 +18757,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e4eaf5e4aa567da6a2ba67d05cbfa27e",
-                "bytes": 2253884,
+                "hash": "ac9e4b6539b47618fc33c25c0936957c",
+                "bytes": 2250992,
                 "fields": 26,
                 "rows": 145992
               }
             },
-            "time": 53.608,
+            "time": 53.364,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -18915,7 +19284,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 54.601,
+        "time": 54.401,
         "errors": [],
         "tasks": [
           {
@@ -19398,13 +19767,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "a11104b2d322ab0c750cd5a3338a6ec7",
-                "bytes": 2423443,
+                "hash": "f133d8e80a4d9f545ae94c6ed9ad2ded",
+                "bytes": 2416978,
                 "fields": 26,
                 "rows": 152955
               }
             },
-            "time": 54.601,
+            "time": 54.401,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -19925,7 +20294,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 61.543,
+        "time": 60.903,
         "errors": [],
         "tasks": [
           {
@@ -20408,13 +20777,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "d1f091656f96aa573f7dc73c9205ce97",
-                "bytes": 2778290,
+                "hash": "82777193ea4fd7f1739157d9df596bd4",
+                "bytes": 2777991,
                 "fields": 26,
                 "rows": 185881
               }
             },
-            "time": 61.543,
+            "time": 60.903,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -20935,7 +21304,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 75.203,
+        "time": 74.979,
         "errors": [],
         "tasks": [
           {
@@ -21418,13 +21787,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "eeef766192bb2829a83fc2ec2fa020d5",
-                "bytes": 3904080,
+                "hash": "56c076c51f2e33dff868d6ee1f761c08",
+                "bytes": 3902427,
                 "fields": 26,
                 "rows": 255882
               }
             },
-            "time": 75.203,
+            "time": 74.979,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -21945,7 +22314,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 67.126,
+        "time": 67.07,
         "errors": [],
         "tasks": [
           {
@@ -22428,13 +22797,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "a8e1b2e3159a43ee56b7ae2630d69ac9",
-                "bytes": 3324871,
+                "hash": "a95ebe37bdf62c72e8e2f14de95d05b6",
+                "bytes": 3327030,
                 "fields": 26,
                 "rows": 216748
               }
             },
-            "time": 67.126,
+            "time": 67.07,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -22955,7 +23324,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 83.583,
+        "time": 83.826,
         "errors": [],
         "tasks": [
           {
@@ -23438,13 +23807,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "44d9af644f1f371b2c8a6e92014ab8fb",
-                "bytes": 4515587,
+                "hash": "59ec70f3e00d62bd83018677a662bad3",
+                "bytes": 4520213,
                 "fields": 26,
                 "rows": 300010
               }
             },
-            "time": 83.583,
+            "time": 83.826,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -23965,7 +24334,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 124.136,
+        "time": 122.938,
         "errors": [],
         "tasks": [
           {
@@ -24448,13 +24817,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "f65939e55313123ffcb4437d5f3f6a22",
-                "bytes": 7206778,
+                "hash": "ef3dec6a07f48e4687bdc0805a7ba3d9",
+                "bytes": 7209404,
                 "fields": 26,
                 "rows": 503474
               }
             },
-            "time": 124.136,
+            "time": 122.938,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -24975,7 +25344,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 147.977,
+        "time": 149.277,
         "errors": [],
         "tasks": [
           {
@@ -25458,13 +25827,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "01f867ae71a937017fac59eaf9c0d358",
-                "bytes": 9304620,
+                "hash": "7d169da4a8e6536a90bdf1751c1e3c86",
+                "bytes": 9305831,
                 "fields": 26,
                 "rows": 633023
               }
             },
-            "time": 147.977,
+            "time": 149.277,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -25985,7 +26354,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 112.672,
+        "time": 112.376,
         "errors": [],
         "tasks": [
           {
@@ -26468,13 +26837,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "12f0aa695b1db66ede1e719b73573e29",
-                "bytes": 6633444,
+                "hash": "b0d9928c9333e766eeebc6d910d622ad",
+                "bytes": 6639783,
                 "fields": 26,
                 "rows": 440492
               }
             },
-            "time": 112.672,
+            "time": 112.376,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -26995,7 +27364,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 104.855,
+        "time": 105.56,
         "errors": [],
         "tasks": [
           {
@@ -27478,13 +27847,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "420b3fc42125fa7d94c67498e1eb37c7",
-                "bytes": 6106643,
+                "hash": "57630b3ba5293036026ba6d8d96a29f9",
+                "bytes": 6106799,
                 "fields": 26,
                 "rows": 404845
               }
             },
-            "time": 104.855,
+            "time": 105.56,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -27905,7 +28274,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 98.652,
+        "time": 98.225,
         "errors": [],
         "tasks": [
           {
@@ -28288,13 +28657,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "c2932d8b947bdb59c9aed5aa01edd35b",
-                "bytes": 6167121,
+                "hash": "79598f649c0d733ae8fb2e5f255797d7",
+                "bytes": 6171790,
                 "fields": 21,
                 "rows": 450718
               }
             },
-            "time": 98.652,
+            "time": 98.225,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -28715,7 +29084,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 93.726,
+        "time": 93.271,
         "errors": [],
         "tasks": [
           {
@@ -29098,13 +29467,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "4d52ea6064d06c10dbddc4fd165af353",
-                "bytes": 5843607,
+                "hash": "af61142a3cc66f9a3cf81d4c9350f345",
+                "bytes": 5841450,
                 "fields": 21,
                 "rows": 424188
               }
             },
-            "time": 93.726,
+            "time": 93.271,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -29208,7 +29577,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.042,
+        "time": 0.045,
         "errors": [],
         "tasks": [
           {
@@ -29278,13 +29647,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "428cee797bc17025ce1f44f6ed16d30e",
-                "bytes": 3632,
+                "hash": "e15fecd3f9be5fee5a134025960c1b28",
+                "bytes": 3786,
                 "fields": 4,
-                "rows": 608
+                "rows": 636
               }
             },
-            "time": 0.042,
+            "time": 0.045,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -29388,7 +29757,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.079,
+        "time": 0.081,
         "errors": [],
         "tasks": [
           {
@@ -29458,13 +29827,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "26f80cc26883bab3c02a7844881798d0",
-                "bytes": 11087,
+                "hash": "ca3f212d89fd36988c61b3ecbcca8c81",
+                "bytes": 11631,
                 "fields": 4,
-                "rows": 1631
+                "rows": 1715
               }
             },
-            "time": 0.079,
+            "time": 0.081,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -29568,7 +29937,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.193,
+        "time": 0.203,
         "errors": [],
         "tasks": [
           {
@@ -29638,13 +30007,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "c38157132e2e6cfd160357053daee6b2",
-                "bytes": 56811,
+                "hash": "158e94a9f2be962561c9c483c3367496",
+                "bytes": 59200,
                 "fields": 4,
-                "rows": 4950
+                "rows": 5210
               }
             },
-            "time": 0.193,
+            "time": 0.203,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -29748,7 +30117,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.503,
+        "time": 0.568,
         "errors": [],
         "tasks": [
           {
@@ -29818,13 +30187,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e2368375274d4aa8f9030c3734b223c4",
-                "bytes": 234595,
+                "hash": "e3c142724531e8a0c204372e28d76361",
+                "bytes": 247558,
                 "fields": 4,
-                "rows": 13708
+                "rows": 14547
               }
             },
-            "time": 0.503,
+            "time": 0.568,
             "scope": [
               "hash-count-error",
               "byte-count-error",
