@@ -1680,7 +1680,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 47.04,
+        "time": 46.798,
         "errors": [],
         "tasks": [
           {
@@ -1754,20 +1754,21 @@
               "mediatype": "text/csv",
               "encoding": "utf-8-sig",
               "dialect": {
-                "delimiter": ";"
+                "delimiter": ";",
+                "quoteChar": "\""
               },
               "profile": "tabular-data-resource",
               "scheme": "file",
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "fd07449a1b5b2dfef5c38a7cb0e01ab1",
-                "bytes": 32164218,
+                "hash": "aa746310c4cc2dd6587cbaff1a695c38",
+                "bytes": 32168205,
                 "fields": 5,
                 "rows": 676572
               }
             },
-            "time": 47.04,
+            "time": 46.798,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1925,7 +1926,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.042,
+        "time": 1.192,
         "errors": [],
         "tasks": [
           {
@@ -2048,13 +2049,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "9069ba7d7b811c2d6a1e71f58d34bc05",
-                "bytes": 862,
+                "hash": "c7c526b0cf01b61a1e04b0fd9ccc8335",
+                "bytes": 286028,
                 "fields": 9,
-                "rows": 24
+                "rows": 16510
               }
             },
-            "time": 0.042,
+            "time": 1.192,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2238,7 +2239,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 0.043,
+        "time": 0.044,
         "errors": [],
         "tasks": [
           {
@@ -2394,7 +2395,7 @@
                 "rows": 234
               }
             },
-            "time": 0.043,
+            "time": 0.044,
             "scope": [
               "hash-count-error",
               "byte-count-error",
