@@ -1,6 +1,6 @@
 {
   "version": "4.38.0",
-  "formated_date": "31/01/2023 03:53:35",
+  "formated_date": "01/02/2023 04:15:48",
   "time": 0.01,
   "errors": [],
   "tasks": [
@@ -163,7 +163,7 @@
           "rows": 136
         }
       },
-      "time": 0.047,
+      "time": 0.048,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -558,7 +558,7 @@
           "rows": 18323
         }
       },
-      "time": 0.641,
+      "time": 0.644,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -1624,6 +1624,2928 @@
     },
     {
       "resource": {
+        "name": "ft_diarias_scdp",
+        "title": "Diárias SCDP",
+        "path": "data/ft_diarias_scdp.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tempo",
+              "title": "Tempo - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "description": "- > \n  Chave estrangeira (Foreign Key) que aponta para a Chave Primária (Primary keys) da tabela dm_tempo_diario. \n  Ou seja, por meio dessa chave é possível identificar a data completa a qual o dado se refere.\n\n  Nota: \n  No site dados.mg.gov.br a tabela dm_tempo_diario pode ser encontrada no recurso Calendários - Dias \n  de cada conjunto.\n",
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_favorecido",
+              "title": "Favorecido - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_cargo",
+              "title": "Cargo - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_funcao_scdp",
+              "title": "Funçao - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_orgao",
+              "title": "Órgão- Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_pais_origem",
+              "title": "Pais Origem - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_estado_origem",
+              "title": "Estado Origem - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_cidade_origem",
+              "title": "Cidade Origem - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_pais_destino",
+              "title": "Pais Destino - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_estado_destino",
+              "title": "Estado Destino - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_cidade_destino",
+              "title": "Cidade Destino - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_documento_viagem",
+              "title": "Documento de Viagem- Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_tipo_viagem",
+              "title": "Tipo de Viagem - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_tipo_viajante",
+              "title": "Tipo de Viajante - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_meio_transporte",
+              "title": "Meio de Transporte - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_motivo",
+              "title": "Motivo - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ordem_trecho",
+              "title": "Ordem do Trecho",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "description": "- > \n Ordem sequencial dos trechos da viagem constante na PCDP (Proposta de Concessão de Diárias e Passagensno) \n do Sistema de Concessão Diárias e Passagens (SCDP).\n",
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_particao",
+              "title": "Ano Partição",
+              "type": "year",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "dt_inicio_trecho",
+              "title": "Data início do trecho",
+              "type": "date",
+              "format": "default",
+              "description": "Data de ínicio da viagem correspondete ao trecho.\n"
+            },
+            {
+              "name": "dt_fim_trecho",
+              "title": "Data fim do trecho",
+              "type": "date",
+              "format": "default",
+              "description": "Data fim da viagem correspondete ao trecho.\n"
+            },
+            {
+              "name": "qt_diaria",
+              "title": "Quantidade de diárias",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "description": "- > \n  Quantidade de diárias pagas pelo órgão em razão das viagens a trabalho. \n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_diaria",
+              "title": "Valor da diária",
+              "type": "number",
+              "format": "default",
+              "decimalChar": ".",
+              "bareNumber": true,
+              "description": "- > \n  Valor total pago pelo órgão ao servidor público ou colaborador eventual para custear suas despesas com alimentação,\n  estadia e deslocamento durante a viagem a trabalho. \n\n  Os valores unitários das diárias consta no [Decreto nº 47.045/16](https://www.almg.gov.br/consulte/legislacao/completa/completa.html?tipo=dec&num=47045&ano=2016).\n",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_passagem",
+              "title": "Valor da Passagem",
+              "type": "number",
+              "format": "default",
+              "decimalChar": ".",
+              "bareNumber": true,
+              "description": "Valor total pago referente às despesas com passagens aéreas e terrestres de servidor público ou colaborador eventual em razão de viagem a trabalho.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_cargo"
+              ],
+              "reference": {
+                "fields": [
+                  "id_cargo"
+                ],
+                "resource": "dm_cargo_scdp"
+              }
+            },
+            {
+              "fields": [
+                "id_pais_origem"
+              ],
+              "reference": {
+                "fields": [
+                  "id_pais"
+                ],
+                "resource": "dm_pais"
+              }
+            },
+            {
+              "fields": [
+                "id_estado_origem"
+              ],
+              "reference": {
+                "fields": [
+                  "id_estado"
+                ],
+                "resource": "dm_estado"
+              }
+            },
+            {
+              "fields": [
+                "id_funcao_scdp"
+              ],
+              "reference": {
+                "fields": [
+                  "id_funcao"
+                ],
+                "resource": "dm_funcao_scdp"
+              }
+            },
+            {
+              "fields": [
+                "id_pais_destino"
+              ],
+              "reference": {
+                "fields": [
+                  "id_pais"
+                ],
+                "resource": "dm_pais"
+              }
+            },
+            {
+              "fields": [
+                "id_cidade_destino"
+              ],
+              "reference": {
+                "fields": [
+                  "id_cidade"
+                ],
+                "resource": "dm_cidade"
+              }
+            },
+            {
+              "fields": [
+                "id_favorecido"
+              ],
+              "reference": {
+                "fields": [
+                  "id_favorecido"
+                ],
+                "resource": "dm_favorecido_scdp"
+              }
+            },
+            {
+              "fields": [
+                "id_estado_destino"
+              ],
+              "reference": {
+                "fields": [
+                  "id_estado"
+                ],
+                "resource": "dm_estado"
+              }
+            },
+            {
+              "fields": [
+                "id_documento_viagem"
+              ],
+              "reference": {
+                "fields": [
+                  "id_documento_viagem"
+                ],
+                "resource": "dm_documento_viagem"
+              }
+            },
+            {
+              "fields": [
+                "id_tipo_viagem"
+              ],
+              "reference": {
+                "fields": [
+                  "id_tipo_viagem"
+                ],
+                "resource": "dm_tipo_viagem"
+              }
+            },
+            {
+              "fields": [
+                "id_orgao"
+              ],
+              "reference": {
+                "fields": [
+                  "id_orgao"
+                ],
+                "resource": "dm_orgao_scdp"
+              }
+            },
+            {
+              "fields": [
+                "id_meio_transporte"
+              ],
+              "reference": {
+                "fields": [
+                  "id_meio_transporte"
+                ],
+                "resource": "dm_meio_transporte"
+              }
+            },
+            {
+              "fields": [
+                "id_motivo"
+              ],
+              "reference": {
+                "fields": [
+                  "id_motivo"
+                ],
+                "resource": "dm_motivo_viagem"
+              }
+            },
+            {
+              "fields": [
+                "id_tempo"
+              ],
+              "reference": {
+                "fields": [
+                  "id_tempo"
+                ],
+                "resource": "dm_tempo_diario"
+              }
+            },
+            {
+              "fields": [
+                "id_tipo_viajante"
+              ],
+              "reference": {
+                "fields": [
+                  "id_tipo_viajante"
+                ],
+                "resource": "dm_tipo_viajante"
+              }
+            },
+            {
+              "fields": [
+                "id_cidade_origem"
+              ],
+              "reference": {
+                "fields": [
+                  "id_cidade"
+                ],
+                "resource": "dm_cidade"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_diarias_scdp"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "8909d5f36d1cf950a839698e5839df1f",
+          "bytes": 19976324,
+          "fields": 23,
+          "rows": 1474366
+        }
+      },
+      "time": 296.721,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [
+        {
+          "cells": [
+            "44493",
+            "61275",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5540",
+            "1",
+            "12",
+            "5491",
+            "677251",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-23",
+            "2023-01-23",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417175,
+          "rowPosition": 1417176,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677251\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417176\" violates the foreign key: for \"id_documento_viagem\": values \"677251\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44493",
+            "62641",
+            "22",
+            "4599",
+            "56",
+            "1",
+            "12",
+            "4995",
+            "1",
+            "12",
+            "5146",
+            "677271",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-23",
+            "2023-01-23",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417176,
+          "rowPosition": 1417177,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677271\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417177\" violates the foreign key: for \"id_documento_viagem\": values \"677271\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44493",
+            "62641",
+            "22",
+            "4599",
+            "56",
+            "1",
+            "12",
+            "5146",
+            "1",
+            "12",
+            "4995",
+            "677271",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-23",
+            "2023-01-23",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417177,
+          "rowPosition": 1417178,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677271\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417178\" violates the foreign key: for \"id_documento_viagem\": values \"677271\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44494",
+            "6122",
+            "22",
+            "3647",
+            "56",
+            "1",
+            "12",
+            "4981",
+            "1",
+            "12",
+            "5458",
+            "677246",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-24",
+            "2023-01-24",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417178,
+          "rowPosition": 1417179,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677246\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417179\" violates the foreign key: for \"id_documento_viagem\": values \"677246\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44494",
+            "60664",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5163",
+            "1",
+            "12",
+            "5540",
+            "677267",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-24",
+            "2023-01-24",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417179,
+          "rowPosition": 1417180,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677267\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417180\" violates the foreign key: for \"id_documento_viagem\": values \"677267\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44494",
+            "60664",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5540",
+            "1",
+            "12",
+            "5163",
+            "677267",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-24",
+            "2023-01-24",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417180,
+          "rowPosition": 1417181,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677267\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417181\" violates the foreign key: for \"id_documento_viagem\": values \"677267\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44494",
+            "61275",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5163",
+            "1",
+            "12",
+            "5540",
+            "677253",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-24",
+            "2023-01-24",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417181,
+          "rowPosition": 1417182,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677253\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417182\" violates the foreign key: for \"id_documento_viagem\": values \"677253\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44494",
+            "61275",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5540",
+            "1",
+            "12",
+            "5163",
+            "677253",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-24",
+            "2023-01-24",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417182,
+          "rowPosition": 1417183,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677253\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417183\" violates the foreign key: for \"id_documento_viagem\": values \"677253\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44494",
+            "62641",
+            "22",
+            "4599",
+            "56",
+            "1",
+            "12",
+            "4995",
+            "1",
+            "12",
+            "5146",
+            "677239",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-24",
+            "2023-01-24",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417183,
+          "rowPosition": 1417184,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677239\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417184\" violates the foreign key: for \"id_documento_viagem\": values \"677239\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44494",
+            "62641",
+            "22",
+            "4599",
+            "56",
+            "1",
+            "12",
+            "5146",
+            "1",
+            "12",
+            "4995",
+            "677239",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-24",
+            "2023-01-24",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417184,
+          "rowPosition": 1417185,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677239\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417185\" violates the foreign key: for \"id_documento_viagem\": values \"677239\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44495",
+            "2913",
+            "42",
+            "3776",
+            "56",
+            "1",
+            "12",
+            "4788",
+            "1",
+            "12",
+            "5394",
+            "677260",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-25",
+            "2023-01-25",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417185,
+          "rowPosition": 1417186,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677260\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417186\" violates the foreign key: for \"id_documento_viagem\": values \"677260\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44495",
+            "2913",
+            "42",
+            "3776",
+            "56",
+            "1",
+            "12",
+            "5394",
+            "1",
+            "12",
+            "4788",
+            "677260",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-25",
+            "2023-01-25",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417186,
+          "rowPosition": 1417187,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677260\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417187\" violates the foreign key: for \"id_documento_viagem\": values \"677260\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44495",
+            "53029",
+            "17",
+            "2488",
+            "34",
+            "1",
+            "12",
+            "4966",
+            "1",
+            "12",
+            "5540",
+            "677255",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-25",
+            "2023-01-25",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417187,
+          "rowPosition": 1417188,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677255\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417188\" violates the foreign key: for \"id_documento_viagem\": values \"677255\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44495",
+            "53029",
+            "17",
+            "2488",
+            "34",
+            "1",
+            "12",
+            "5540",
+            "1",
+            "12",
+            "4966",
+            "677255",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-25",
+            "2023-01-25",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417188,
+          "rowPosition": 1417189,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677255\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417189\" violates the foreign key: for \"id_documento_viagem\": values \"677255\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44495",
+            "61275",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "4980",
+            "1",
+            "12",
+            "5540",
+            "677261",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-25",
+            "2023-01-25",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417189,
+          "rowPosition": 1417190,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677261\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417190\" violates the foreign key: for \"id_documento_viagem\": values \"677261\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44495",
+            "61275",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5540",
+            "1",
+            "12",
+            "4980",
+            "677261",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-25",
+            "2023-01-25",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417190,
+          "rowPosition": 1417191,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677261\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417191\" violates the foreign key: for \"id_documento_viagem\": values \"677261\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44496",
+            "3479",
+            "22",
+            "3776",
+            "56",
+            "1",
+            "12",
+            "5569",
+            "1",
+            "12",
+            "5455",
+            "677247",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-26",
+            "2023-01-26",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417191,
+          "rowPosition": 1417192,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677247\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417192\" violates the foreign key: for \"id_documento_viagem\": values \"677247\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44496",
+            "3479",
+            "22",
+            "3776",
+            "56",
+            "1",
+            "12",
+            "5455",
+            "1",
+            "12",
+            "5569",
+            "677247",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-26",
+            "2023-01-26",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417192,
+          "rowPosition": 1417193,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677247\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417193\" violates the foreign key: for \"id_documento_viagem\": values \"677247\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44496",
+            "6152",
+            "42",
+            "3647",
+            "56",
+            "1",
+            "12",
+            "5058",
+            "1",
+            "12",
+            "5044",
+            "677274",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-26",
+            "2023-01-26",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417193,
+          "rowPosition": 1417194,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677274\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417194\" violates the foreign key: for \"id_documento_viagem\": values \"677274\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44496",
+            "6284",
+            "35",
+            "3585",
+            "18",
+            "1",
+            "12",
+            "4931",
+            "1",
+            "12",
+            "5540",
+            "677259",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-26",
+            "2023-01-26",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417194,
+          "rowPosition": 1417195,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677259\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417195\" violates the foreign key: for \"id_documento_viagem\": values \"677259\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44496",
+            "6284",
+            "35",
+            "3585",
+            "18",
+            "1",
+            "12",
+            "5540",
+            "1",
+            "12",
+            "4931",
+            "677259",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-26",
+            "2023-01-26",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417195,
+          "rowPosition": 1417196,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677259\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417196\" violates the foreign key: for \"id_documento_viagem\": values \"677259\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44496",
+            "6486",
+            "22",
+            "3647",
+            "56",
+            "1",
+            "12",
+            "5041",
+            "1",
+            "12",
+            "5304",
+            "677241",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-26",
+            "2023-01-26",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417196,
+          "rowPosition": 1417197,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677241\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417197\" violates the foreign key: for \"id_documento_viagem\": values \"677241\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44496",
+            "7917",
+            "42",
+            "3776",
+            "56",
+            "1",
+            "12",
+            "5058",
+            "1",
+            "12",
+            "5044",
+            "677252",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-26",
+            "2023-01-26",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417197,
+          "rowPosition": 1417198,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677252\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417198\" violates the foreign key: for \"id_documento_viagem\": values \"677252\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44496",
+            "13806",
+            "42",
+            "3776",
+            "56",
+            "1",
+            "12",
+            "5162",
+            "1",
+            "12",
+            "5245",
+            "677273",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-26",
+            "2023-01-26",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417198,
+          "rowPosition": 1417199,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677273\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417199\" violates the foreign key: for \"id_documento_viagem\": values \"677273\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44496",
+            "13806",
+            "42",
+            "3776",
+            "56",
+            "1",
+            "12",
+            "5245",
+            "1",
+            "12",
+            "5162",
+            "677273",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-26",
+            "2023-01-26",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417199,
+          "rowPosition": 1417200,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677273\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417200\" violates the foreign key: for \"id_documento_viagem\": values \"677273\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44497",
+            "3479",
+            "22",
+            "3776",
+            "56",
+            "1",
+            "12",
+            "5100",
+            "1",
+            "12",
+            "5569",
+            "677243",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-27",
+            "2023-01-27",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417200,
+          "rowPosition": 1417201,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677243\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417201\" violates the foreign key: for \"id_documento_viagem\": values \"677243\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44497",
+            "3479",
+            "22",
+            "3776",
+            "56",
+            "1",
+            "12",
+            "5569",
+            "1",
+            "12",
+            "5100",
+            "677243",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-27",
+            "2023-01-27",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417201,
+          "rowPosition": 1417202,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677243\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417202\" violates the foreign key: for \"id_documento_viagem\": values \"677243\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44497",
+            "11022",
+            "15",
+            "3585",
+            "18",
+            "1",
+            "12",
+            "5163",
+            "1",
+            "12",
+            "4931",
+            "677258",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-27",
+            "2023-01-27",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417202,
+          "rowPosition": 1417203,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677258\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417203\" violates the foreign key: for \"id_documento_viagem\": values \"677258\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44497",
+            "22673",
+            "42",
+            "3776",
+            "56",
+            "1",
+            "12",
+            "5006",
+            "1",
+            "12",
+            "5531",
+            "677262",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-27",
+            "2023-01-27",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1417203,
+          "rowPosition": 1417204,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677262\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1417204\" violates the foreign key: for \"id_documento_viagem\": values \"677262\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44434",
+            "65611",
+            "1",
+            "1",
+            "32",
+            "1",
+            "12",
+            "5595",
+            "1",
+            "12",
+            "4951",
+            "677244",
+            "1",
+            "3",
+            "7",
+            "5",
+            "2",
+            "2022",
+            "2022-11-25",
+            "2022-11-25",
+            "0.35",
+            "164.50",
+            "0.00"
+          ],
+          "rowNumber": 1434618,
+          "rowPosition": 1434619,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677244\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434619\" violates the foreign key: for \"id_documento_viagem\": values \"677244\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44434",
+            "65611",
+            "1",
+            "1",
+            "32",
+            "1",
+            "12",
+            "4951",
+            "1",
+            "12",
+            "5595",
+            "677244",
+            "1",
+            "3",
+            "7",
+            "5",
+            "1",
+            "2022",
+            "2022-11-25",
+            "2022-11-25",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434619,
+          "rowPosition": 1434620,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677244\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434620\" violates the foreign key: for \"id_documento_viagem\": values \"677244\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44435",
+            "65611",
+            "1",
+            "1",
+            "32",
+            "1",
+            "12",
+            "5595",
+            "1",
+            "12",
+            "4951",
+            "677265",
+            "1",
+            "3",
+            "7",
+            "5",
+            "2",
+            "2022",
+            "2022-11-26",
+            "2022-11-26",
+            "0.35",
+            "164.50",
+            "0.00"
+          ],
+          "rowNumber": 1434620,
+          "rowPosition": 1434621,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677265\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434621\" violates the foreign key: for \"id_documento_viagem\": values \"677265\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44435",
+            "65611",
+            "1",
+            "1",
+            "32",
+            "1",
+            "12",
+            "4951",
+            "1",
+            "12",
+            "5595",
+            "677265",
+            "1",
+            "3",
+            "7",
+            "5",
+            "1",
+            "2022",
+            "2022-11-26",
+            "2022-11-26",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434621,
+          "rowPosition": 1434622,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677265\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434622\" violates the foreign key: for \"id_documento_viagem\": values \"677265\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44436",
+            "65611",
+            "1",
+            "1",
+            "32",
+            "1",
+            "12",
+            "5595",
+            "1",
+            "12",
+            "4951",
+            "677263",
+            "1",
+            "3",
+            "7",
+            "5",
+            "2",
+            "2022",
+            "2022-11-27",
+            "2022-11-27",
+            "0.35",
+            "164.50",
+            "0.00"
+          ],
+          "rowNumber": 1434622,
+          "rowPosition": 1434623,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677263\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434623\" violates the foreign key: for \"id_documento_viagem\": values \"677263\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44436",
+            "65611",
+            "1",
+            "1",
+            "32",
+            "1",
+            "12",
+            "4951",
+            "1",
+            "12",
+            "5595",
+            "677263",
+            "1",
+            "3",
+            "7",
+            "5",
+            "1",
+            "2022",
+            "2022-11-27",
+            "2022-11-27",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434623,
+          "rowPosition": 1434624,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677263\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434624\" violates the foreign key: for \"id_documento_viagem\": values \"677263\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44476",
+            "1162",
+            "23",
+            "3083",
+            "34",
+            "1",
+            "12",
+            "4812",
+            "1",
+            "12",
+            "5587",
+            "677249",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-06",
+            "2023-01-06",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434624,
+          "rowPosition": 1434625,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677249\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434625\" violates the foreign key: for \"id_documento_viagem\": values \"677249\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44476",
+            "1162",
+            "23",
+            "3083",
+            "34",
+            "1",
+            "12",
+            "5587",
+            "1",
+            "12",
+            "4812",
+            "677249",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-06",
+            "2023-01-06",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434625,
+          "rowPosition": 1434626,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677249\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434626\" violates the foreign key: for \"id_documento_viagem\": values \"677249\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44482",
+            "19636",
+            "23",
+            "2488",
+            "34",
+            "1",
+            "12",
+            "5587",
+            "1",
+            "12",
+            "5394",
+            "677250",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-12",
+            "2023-01-12",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434626,
+          "rowPosition": 1434627,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677250\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434627\" violates the foreign key: for \"id_documento_viagem\": values \"677250\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44482",
+            "19636",
+            "23",
+            "2488",
+            "34",
+            "1",
+            "12",
+            "5394",
+            "1",
+            "12",
+            "5587",
+            "677250",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-12",
+            "2023-01-12",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434627,
+          "rowPosition": 1434628,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677250\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434628\" violates the foreign key: for \"id_documento_viagem\": values \"677250\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44487",
+            "12396",
+            "42",
+            "3776",
+            "56",
+            "1",
+            "12",
+            "4888",
+            "1",
+            "12",
+            "5496",
+            "677242",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-17",
+            "2023-01-17",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434628,
+          "rowPosition": 1434629,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677242\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434629\" violates the foreign key: for \"id_documento_viagem\": values \"677242\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44487",
+            "12396",
+            "42",
+            "3776",
+            "56",
+            "1",
+            "12",
+            "5496",
+            "1",
+            "12",
+            "4888",
+            "677242",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-17",
+            "2023-01-17",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434629,
+          "rowPosition": 1434630,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677242\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434630\" violates the foreign key: for \"id_documento_viagem\": values \"677242\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44487",
+            "13812",
+            "22",
+            "3647",
+            "56",
+            "1",
+            "12",
+            "4888",
+            "1",
+            "12",
+            "5496",
+            "677272",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-17",
+            "2023-01-17",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434630,
+          "rowPosition": 1434631,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677272\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434631\" violates the foreign key: for \"id_documento_viagem\": values \"677272\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44487",
+            "13812",
+            "22",
+            "3647",
+            "56",
+            "1",
+            "12",
+            "5496",
+            "1",
+            "12",
+            "4888",
+            "677272",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-17",
+            "2023-01-17",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434631,
+          "rowPosition": 1434632,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677272\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434632\" violates the foreign key: for \"id_documento_viagem\": values \"677272\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44487",
+            "14696",
+            "37",
+            "3624",
+            "18",
+            "1",
+            "12",
+            "5403",
+            "1",
+            "12",
+            "5585",
+            "677269",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-17",
+            "2023-01-17",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434632,
+          "rowPosition": 1434633,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677269\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434633\" violates the foreign key: for \"id_documento_viagem\": values \"677269\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44489",
+            "57586",
+            "17",
+            "5097",
+            "34",
+            "1",
+            "12",
+            "4931",
+            "1",
+            "12",
+            "5540",
+            "677270",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-19",
+            "2023-01-19",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434633,
+          "rowPosition": 1434634,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677270\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434634\" violates the foreign key: for \"id_documento_viagem\": values \"677270\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44489",
+            "57586",
+            "17",
+            "5097",
+            "34",
+            "1",
+            "12",
+            "5540",
+            "1",
+            "12",
+            "4931",
+            "677270",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-19",
+            "2023-01-19",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434634,
+          "rowPosition": 1434635,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677270\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434635\" violates the foreign key: for \"id_documento_viagem\": values \"677270\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44489",
+            "60664",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "4931",
+            "1",
+            "12",
+            "5540",
+            "677266",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-19",
+            "2023-01-19",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434635,
+          "rowPosition": 1434636,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677266\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434636\" violates the foreign key: for \"id_documento_viagem\": values \"677266\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44489",
+            "60664",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5540",
+            "1",
+            "12",
+            "4931",
+            "677266",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-19",
+            "2023-01-19",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434636,
+          "rowPosition": 1434637,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677266\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434637\" violates the foreign key: for \"id_documento_viagem\": values \"677266\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44489",
+            "61275",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "4931",
+            "1",
+            "12",
+            "5540",
+            "677245",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-19",
+            "2023-01-19",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434637,
+          "rowPosition": 1434638,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677245\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434638\" violates the foreign key: for \"id_documento_viagem\": values \"677245\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44489",
+            "61275",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5540",
+            "1",
+            "12",
+            "4931",
+            "677245",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-19",
+            "2023-01-19",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434638,
+          "rowPosition": 1434639,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677245\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434639\" violates the foreign key: for \"id_documento_viagem\": values \"677245\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44489",
+            "63257",
+            "385",
+            "5450",
+            "32",
+            "1",
+            "12",
+            "5586",
+            "1",
+            "12",
+            "5580",
+            "677248",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-19",
+            "2023-01-19",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434639,
+          "rowPosition": 1434640,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677248\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434640\" violates the foreign key: for \"id_documento_viagem\": values \"677248\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44489",
+            "63257",
+            "385",
+            "5450",
+            "32",
+            "1",
+            "12",
+            "5580",
+            "1",
+            "12",
+            "5586",
+            "677248",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-19",
+            "2023-01-19",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434640,
+          "rowPosition": 1434641,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677248\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434641\" violates the foreign key: for \"id_documento_viagem\": values \"677248\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44490",
+            "56838",
+            "74",
+            "3595",
+            "34",
+            "1",
+            "12",
+            "5614",
+            "1",
+            "12",
+            "5305",
+            "677256",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-20",
+            "2023-01-20",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434641,
+          "rowPosition": 1434642,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677256\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434642\" violates the foreign key: for \"id_documento_viagem\": values \"677256\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44490",
+            "56838",
+            "74",
+            "3595",
+            "34",
+            "1",
+            "12",
+            "5305",
+            "1",
+            "12",
+            "5614",
+            "677256",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-20",
+            "2023-01-20",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434642,
+          "rowPosition": 1434643,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677256\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434643\" violates the foreign key: for \"id_documento_viagem\": values \"677256\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44490",
+            "61275",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5123",
+            "1",
+            "12",
+            "5540",
+            "677268",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-20",
+            "2023-01-20",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434643,
+          "rowPosition": 1434644,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677268\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434644\" violates the foreign key: for \"id_documento_viagem\": values \"677268\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44490",
+            "61275",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5540",
+            "1",
+            "12",
+            "5123",
+            "677268",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-20",
+            "2023-01-20",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434644,
+          "rowPosition": 1434645,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677268\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434645\" violates the foreign key: for \"id_documento_viagem\": values \"677268\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44490",
+            "62641",
+            "22",
+            "4599",
+            "56",
+            "1",
+            "12",
+            "4995",
+            "1",
+            "12",
+            "5146",
+            "677240",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-20",
+            "2023-01-20",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434645,
+          "rowPosition": 1434646,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677240\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434646\" violates the foreign key: for \"id_documento_viagem\": values \"677240\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44490",
+            "62641",
+            "22",
+            "4599",
+            "56",
+            "1",
+            "12",
+            "5146",
+            "1",
+            "12",
+            "4995",
+            "677240",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-20",
+            "2023-01-20",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434646,
+          "rowPosition": 1434647,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677240\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434647\" violates the foreign key: for \"id_documento_viagem\": values \"677240\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44493",
+            "6122",
+            "22",
+            "3647",
+            "56",
+            "1",
+            "12",
+            "4981",
+            "1",
+            "12",
+            "5458",
+            "677257",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-23",
+            "2023-01-23",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434647,
+          "rowPosition": 1434648,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677257\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434648\" violates the foreign key: for \"id_documento_viagem\": values \"677257\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44493",
+            "11481",
+            "22",
+            "3647",
+            "56",
+            "1",
+            "12",
+            "4749",
+            "1",
+            "12",
+            "5572",
+            "677275",
+            "1",
+            "1",
+            "7",
+            "1",
+            "3",
+            "2023",
+            "2023-01-23",
+            "2023-01-23",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434648,
+          "rowPosition": 1434649,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677275\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434649\" violates the foreign key: for \"id_documento_viagem\": values \"677275\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44493",
+            "60664",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5491",
+            "1",
+            "12",
+            "5540",
+            "677264",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-23",
+            "2023-01-23",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434649,
+          "rowPosition": 1434650,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677264\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434650\" violates the foreign key: for \"id_documento_viagem\": values \"677264\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44493",
+            "60664",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5540",
+            "1",
+            "12",
+            "5491",
+            "677264",
+            "1",
+            "1",
+            "7",
+            "1",
+            "1",
+            "2023",
+            "2023-01-23",
+            "2023-01-23",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434650,
+          "rowPosition": 1434651,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677264\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434651\" violates the foreign key: for \"id_documento_viagem\": values \"677264\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44493",
+            "61100",
+            "22",
+            "4599",
+            "56",
+            "1",
+            "12",
+            "4749",
+            "1",
+            "12",
+            "5572",
+            "677254",
+            "1",
+            "1",
+            "7",
+            "1",
+            "3",
+            "2023",
+            "2023-01-23",
+            "2023-01-23",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434651,
+          "rowPosition": 1434652,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677254\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434652\" violates the foreign key: for \"id_documento_viagem\": values \"677254\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44493",
+            "61275",
+            "23",
+            "219",
+            "34",
+            "1",
+            "12",
+            "5491",
+            "1",
+            "12",
+            "5540",
+            "677251",
+            "1",
+            "1",
+            "7",
+            "1",
+            "2",
+            "2023",
+            "2023-01-23",
+            "2023-01-23",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          "rowNumber": 1434652,
+          "rowPosition": 1434653,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677251\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"1434653\" violates the foreign key: for \"id_documento_viagem\": values \"677251\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        }
+      ],
+      "stats": {
+        "errors": 64
+      },
+      "valid": false
+    },
+    {
+      "resource": {
         "name": "dm_emenda_orcam",
         "title": "Emenda Orçamentária",
         "path": "data/dm_emenda_orcam.csv.gz",
@@ -1816,7 +4738,7 @@
           "rows": 13418
         }
       },
-      "time": 0.92,
+      "time": 0.929,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -20803,7 +23725,7 @@
           "rows": 42763
         }
       },
-      "time": 6.457,
+      "time": 6.461,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -26565,7 +29487,7 @@
           "rows": 2265
         }
       },
-      "time": 0.14,
+      "time": 0.144,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -37921,6 +40843,548 @@
     },
     {
       "resource": {
+        "name": "ft_diarias_scdp_liqpag",
+        "title": "Diárias SCDP - Liquidação e Pagamento",
+        "path": "data/ft_diarias_scdp_liqpag.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_documento_viagem",
+              "title": "Documento de Viagem - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "description": "- > \n  Chave estrangeira (Foreign Key) que aponta para a Chave Primária (Primary keys) da tabela dm_tempo_diario. \n  Ou seja, por meio dessa chave é possível identificar a data completa a qual o dado se refere.\n\n  Nota: \n  No site dados.mg.gov.br a tabela dm_tempo_diario pode ser encontrada no recurso Calendários - Dias \n  de cada conjunto.\n",
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_empenho",
+              "title": "Número do Empenho - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_programa",
+              "title": "Programa - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_funcao",
+              "title": "Função - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_fonte",
+              "title": "Fonte de Recurso - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_item",
+              "title": "Item de Despesa - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_acao",
+              "title": "Ação Orçamentária - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "fl_passagem",
+              "title": "Passagem - Flag",
+              "type": "string",
+              "format": "default",
+              "description": "- '0' - Diárias\n- '1' - Passagem\n",
+              "constraints": {
+                "required": true,
+                "enum": [
+                  "0",
+                  "1"
+                ]
+              }
+            },
+            {
+              "name": "nr_liquidacao",
+              "title": "Número Liquidação",
+              "type": "string",
+              "format": "default",
+              "description": "Número do documento de liquidação.\n",
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "nr_pagamento",
+              "title": "Número Pagamento",
+              "type": "string",
+              "format": "default",
+              "description": "Número do documento de ordem de pagamento.\n",
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "dt_liquidacao",
+              "title": "Data da liquidação",
+              "type": "date",
+              "format": "default"
+            },
+            {
+              "name": "dt_pagamento",
+              "type": "date",
+              "format": "default"
+            },
+            {
+              "name": "vr_devolvido",
+              "title": "Valor Devolvido",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_liqpag",
+              "title": "Valor liquidado/Pago",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "description": "- > \n  Valor pago referente às despesas com diárias e passagens aéreas e terrestres de servidor público ou \n  colaborador eventual em razão de viagem a trabalho.\n",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_funcao"
+              ],
+              "reference": {
+                "fields": [
+                  "id_funcao"
+                ],
+                "resource": "dm_funcao_desp"
+              }
+            },
+            {
+              "fields": [
+                "id_fonte"
+              ],
+              "reference": {
+                "fields": [
+                  "id_fonte"
+                ],
+                "resource": "dm_fonte"
+              }
+            },
+            {
+              "fields": [
+                "id_item"
+              ],
+              "reference": {
+                "fields": [
+                  "id_item"
+                ],
+                "resource": "dm_item_desp"
+              }
+            },
+            {
+              "fields": [
+                "id_programa"
+              ],
+              "reference": {
+                "fields": [
+                  "id_programa"
+                ],
+                "resource": "dm_programa"
+              }
+            },
+            {
+              "fields": [
+                "id_empenho"
+              ],
+              "reference": {
+                "fields": [
+                  "id_empenho"
+                ],
+                "resource": "dm_empenho_desp_diarias_scdp_liqpag"
+              }
+            },
+            {
+              "fields": [
+                "id_documento_viagem"
+              ],
+              "reference": {
+                "fields": [
+                  "id_documento_viagem"
+                ],
+                "resource": "dm_documento_viagem"
+              }
+            },
+            {
+              "fields": [
+                "id_acao"
+              ],
+              "reference": {
+                "fields": [
+                  "id_acao"
+                ],
+                "resource": "dm_acao"
+              }
+            },
+            {
+              "fields": [
+                "id_item"
+              ],
+              "reference": {
+                "fields": [
+                  "id_item"
+                ],
+                "resource": "dm_item_desp"
+              }
+            },
+            {
+              "fields": [
+                "id_fonte"
+              ],
+              "reference": {
+                "fields": [
+                  "id_fonte"
+                ],
+                "resource": "dm_fonte"
+              }
+            },
+            {
+              "fields": [
+                "id_programa"
+              ],
+              "reference": {
+                "fields": [
+                  "id_programa"
+                ],
+                "resource": "dm_programa"
+              }
+            },
+            {
+              "fields": [
+                "id_documento_viagem"
+              ],
+              "reference": {
+                "fields": [
+                  "id_documento_viagem"
+                ],
+                "resource": "dm_documento_viagem"
+              }
+            },
+            {
+              "fields": [
+                "id_acao"
+              ],
+              "reference": {
+                "fields": [
+                  "id_acao"
+                ],
+                "resource": "dm_acao"
+              }
+            },
+            {
+              "fields": [
+                "id_empenho"
+              ],
+              "reference": {
+                "fields": [
+                  "id_empenho"
+                ],
+                "resource": "dm_empenho_desp_diarias_scdp_liqpag"
+              }
+            },
+            {
+              "fields": [
+                "id_funcao"
+              ],
+              "reference": {
+                "fields": [
+                  "id_funcao"
+                ],
+                "resource": "dm_funcao_desp"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_diarias_scdp_liqpag"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "45b39906264c07b7439b59dc59804cde",
+          "bytes": 10235356,
+          "fields": 14,
+          "rows": 661090
+        }
+      },
+      "time": 102.44,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [
+        {
+          "cells": [
+            "677244",
+            "13357492",
+            "14353",
+            "1948",
+            "58",
+            "2800",
+            "56813",
+            "0",
+            "239",
+            "269",
+            "2022-11-24",
+            "2022-11-24",
+            "0.00",
+            "164.50"
+          ],
+          "rowNumber": 654912,
+          "rowPosition": 654913,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677244\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"654913\" violates the foreign key: for \"id_documento_viagem\": values \"677244\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "677244",
+            "13357492",
+            "14353",
+            "1948",
+            "58",
+            "2800",
+            "56813",
+            "0",
+            "239",
+            "269",
+            "2022-11-24",
+            "2022-11-24",
+            "0.00",
+            "164.50"
+          ],
+          "rowNumber": 654912,
+          "rowPosition": 654913,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677244\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"654913\" violates the foreign key: for \"id_documento_viagem\": values \"677244\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "677263",
+            "13357492",
+            "14353",
+            "1948",
+            "58",
+            "2800",
+            "56813",
+            "0",
+            "241",
+            "271",
+            "2022-11-24",
+            "2022-11-24",
+            "0.00",
+            "164.50"
+          ],
+          "rowNumber": 654921,
+          "rowPosition": 654922,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677263\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"654922\" violates the foreign key: for \"id_documento_viagem\": values \"677263\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "677263",
+            "13357492",
+            "14353",
+            "1948",
+            "58",
+            "2800",
+            "56813",
+            "0",
+            "241",
+            "271",
+            "2022-11-24",
+            "2022-11-24",
+            "0.00",
+            "164.50"
+          ],
+          "rowNumber": 654921,
+          "rowPosition": 654922,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677263\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"654922\" violates the foreign key: for \"id_documento_viagem\": values \"677263\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "677265",
+            "13357492",
+            "14353",
+            "1948",
+            "58",
+            "2800",
+            "56813",
+            "0",
+            "240",
+            "270",
+            "2022-11-24",
+            "2022-11-24",
+            "0.00",
+            "164.50"
+          ],
+          "rowNumber": 654951,
+          "rowPosition": 654952,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677265\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"654952\" violates the foreign key: for \"id_documento_viagem\": values \"677265\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "677265",
+            "13357492",
+            "14353",
+            "1948",
+            "58",
+            "2800",
+            "56813",
+            "0",
+            "240",
+            "270",
+            "2022-11-24",
+            "2022-11-24",
+            "0.00",
+            "164.50"
+          ],
+          "rowNumber": 654951,
+          "rowPosition": 654952,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_documento_viagem\": values \"677265\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "message": "Row at position \"654952\" violates the foreign key: for \"id_documento_viagem\": values \"677265\" not found in the lookup table \"dm_documento_viagem\" as \"id_documento_viagem\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        }
+      ],
+      "stats": {
+        "errors": 6
+      },
+      "valid": false
+    },
+    {
+      "resource": {
         "name": "dm_fonte_rec",
         "title": "Fonte de Recurso",
         "path": "data/dm_fonte_rec.csv.gz",
@@ -38073,7 +41537,7 @@
           "rows": 159
         }
       },
-      "time": 0.039,
+      "time": 0.04,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -38529,13 +41993,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "0cdb9719c48a403c97503489d7e5b908",
-          "bytes": 66192894,
+          "hash": "7a730d7008f2988c2add84c029f23fc3",
+          "bytes": 66200496,
           "fields": 2,
           "rows": 0
         }
       },
-      "time": 186.517,
+      "time": 186.274,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -38953,7 +42417,7 @@
           "rows": 7256
         }
       },
-      "time": 2.263,
+      "time": 2.277,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -48429,7 +51893,7 @@
           "rows": 234
         }
       },
-      "time": 0.044,
+      "time": 0.043,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -48825,11 +52289,699 @@
         "errors": 16
       },
       "valid": false
+    },
+    {
+      "resource": {
+        "name": "ft_compras",
+        "title": "Compras",
+        "path": "data/ft_compras.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tempo",
+              "title": "Tempo - Chave",
+              "type": "integer",
+              "format": "default",
+              "description": "- > \n  Chave estrangeira (Foreign Key) que aponta para a Chave Primária (Primary keys) da tabela dm_tempo_diario. \n  Ou seja, por meio dessa chave é possível identificar a data completa a qual o dado se refere.\n\n  Nota: \n  No site dados.mg.gov.br a tabela dm_tempo_diario pode ser encontrada no recurso Calendários - Dias \n  de cada conjunto.\n",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_procedimento",
+              "title": "Procedimento de Contratação - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_orgao_demanda",
+              "title": "Órgão Demandante - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_orgao_contrato",
+              "title": "Órgão do Contrato - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_situacao_proc",
+              "title": "Situação do Processo de Compra - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_situacao_cont",
+              "title": "Situação do Contrato - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_municipio",
+              "title": "Município - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_contratado",
+              "title": "Contratado - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_tipo_licitacao",
+              "title": "Tipo de Licitação - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_grupo_matserv",
+              "title": "Grupo Material e Serviço - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_classe_matserv",
+              "title": "Classe Material e Serviço - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_material_servico",
+              "title": "Material e Serviço - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_item_matserv",
+              "title": "Item Material e Serviço - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_processo",
+              "title": "Processo - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_contrato",
+              "title": "Número do Contrato - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_unidade_medida",
+              "title": "Unidade de Medida - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_linha_fornec",
+              "title": "Linha de Fornecimento - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_item",
+              "title": "Item - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_unidade_orc",
+              "title": "Unidade Orçamentária - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "unique": false
+              }
+            },
+            {
+              "name": "ano_particao",
+              "title": "Ano Partição",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "dt_item_homologa",
+              "title": "Data da Homologação do Item",
+              "type": "date",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "qt_item_pedido",
+              "title": "Item do Pedido - Quantidade",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_un_referencia",
+              "title": "Valor Unitário de Referência",
+              "description": "Valor unitário estimado de um determinado bem ou serviço, obtido por meio de pesquisa de mercado ou cadastro de preços.\n",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_referencia",
+              "title": "Valor de Referência",
+              "description": "Valor estimado de um determinado bem ou serviço, obtido por meio de pesquisa de mercado ou cadastro de preços.\n",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_un_homologado",
+              "title": "Valor Unitário Homologado",
+              "description": "Valor unitário final licitado ou comprado.",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_homologado",
+              "title": "Valor Homologado",
+              "description": "Valor final licitado ou comprado.",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_atualizado",
+              "title": "Valor Atualizado",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_processo"
+              ],
+              "reference": {
+                "fields": [
+                  "id_processo"
+                ],
+                "resource": "dm_processo"
+              }
+            },
+            {
+              "fields": [
+                "id_situacao_cont"
+              ],
+              "reference": {
+                "fields": [
+                  "id_situacao_cont"
+                ],
+                "resource": "dm_situacao_cont"
+              }
+            },
+            {
+              "fields": [
+                "id_situacao_proc"
+              ],
+              "reference": {
+                "fields": [
+                  "id_situacao_proc"
+                ],
+                "resource": "dm_situacao_proc"
+              }
+            },
+            {
+              "fields": [
+                "id_linha_fornec"
+              ],
+              "reference": {
+                "fields": [
+                  "id_linha_fornec"
+                ],
+                "resource": "dm_linha_fornec"
+              }
+            },
+            {
+              "fields": [
+                "id_classe_matserv"
+              ],
+              "reference": {
+                "fields": [
+                  "id_classe_matserv"
+                ],
+                "resource": "dm_classe_matserv"
+              }
+            },
+            {
+              "fields": [
+                "id_tempo"
+              ],
+              "reference": {
+                "fields": [
+                  "id_tempo"
+                ],
+                "resource": "dm_tempo_diario"
+              }
+            },
+            {
+              "fields": [
+                "id_municipio"
+              ],
+              "reference": {
+                "fields": [
+                  "id_municipio"
+                ],
+                "resource": "dm_municipio"
+              }
+            },
+            {
+              "fields": [
+                "id_item_matserv"
+              ],
+              "reference": {
+                "fields": [
+                  "id_item_matserv"
+                ],
+                "resource": "dm_item_matserv"
+              }
+            },
+            {
+              "fields": [
+                "id_tipo_licitacao"
+              ],
+              "reference": {
+                "fields": [
+                  "id_tipo_licitacao"
+                ],
+                "resource": "dm_tipo_licitacao"
+              }
+            },
+            {
+              "fields": [
+                "id_item"
+              ],
+              "reference": {
+                "fields": [
+                  "id_item"
+                ],
+                "resource": "dm_item_desp"
+              }
+            },
+            {
+              "fields": [
+                "id_material_servico"
+              ],
+              "reference": {
+                "fields": [
+                  "id_material_servico"
+                ],
+                "resource": "dm_material_servico"
+              }
+            },
+            {
+              "fields": [
+                "id_orgao_contrato"
+              ],
+              "reference": {
+                "fields": [
+                  "id_orgao_contrato"
+                ],
+                "resource": "dm_orgao_contrato"
+              }
+            },
+            {
+              "fields": [
+                "id_contrato"
+              ],
+              "reference": {
+                "fields": [
+                  "id_contrato"
+                ],
+                "resource": "dm_contrato"
+              }
+            },
+            {
+              "fields": [
+                "id_orgao_demanda"
+              ],
+              "reference": {
+                "fields": [
+                  "id_orgao_demanda"
+                ],
+                "resource": "dm_orgao_demanda"
+              }
+            },
+            {
+              "fields": [
+                "id_unidade_medida"
+              ],
+              "reference": {
+                "fields": [
+                  "id_unidade_medida"
+                ],
+                "resource": "dm_unidade_medida"
+              }
+            },
+            {
+              "fields": [
+                "id_grupo_matserv"
+              ],
+              "reference": {
+                "fields": [
+                  "id_grupo_matserv"
+                ],
+                "resource": "dm_grupo_matserv"
+              }
+            },
+            {
+              "fields": [
+                "id_contratado"
+              ],
+              "reference": {
+                "fields": [
+                  "id_contratado"
+                ],
+                "resource": "dm_contratado"
+              }
+            },
+            {
+              "fields": [
+                "id_procedimento"
+              ],
+              "reference": {
+                "fields": [
+                  "id_procedimento"
+                ],
+                "resource": "dm_procedimento"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_compras"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "05e3987adb41ef5cae10282623292e5f",
+          "bytes": 58488394,
+          "fields": 27,
+          "rows": 1920024
+        }
+      },
+      "time": 414.14,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [
+        {
+          "cells": [
+            "44444",
+            "4",
+            "1831044",
+            "36",
+            "1",
+            "1",
+            "876",
+            "70894",
+            "1",
+            "41",
+            "806",
+            "14879",
+            "327837",
+            "386228",
+            "79255",
+            "1511",
+            "1831346",
+            "2891",
+            "2633",
+            "2022",
+            "2023-01-25",
+            "0.0000",
+            "161250.0000",
+            "161250.00",
+            "175000.0000",
+            "175000.00",
+            "175000.00"
+          ],
+          "rowNumber": 1916802,
+          "rowPosition": 1916803,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_contrato\": values \"79255\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+          "message": "Row at position \"1916803\" violates the foreign key: for \"id_contrato\": values \"79255\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44444",
+            "4",
+            "1831044",
+            "36",
+            "1",
+            "1",
+            "876",
+            "70894",
+            "1",
+            "41",
+            "806",
+            "14879",
+            "328044",
+            "386228",
+            "79255",
+            "164",
+            "1831346",
+            "2891",
+            "2633",
+            "2022",
+            "2023-01-25",
+            "0.0000",
+            "16073.7700",
+            "16073.77",
+            "4545.1100",
+            "4545.11",
+            "4545.11"
+          ],
+          "rowNumber": 1916803,
+          "rowPosition": 1916804,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_contrato\": values \"79255\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+          "message": "Row at position \"1916804\" violates the foreign key: for \"id_contrato\": values \"79255\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "44444",
+            "4",
+            "1831044",
+            "36",
+            "1",
+            "1",
+            "876",
+            "70894",
+            "1",
+            "41",
+            "806",
+            "14879",
+            "341700",
+            "386228",
+            "79255",
+            "889",
+            "1831346",
+            "2891",
+            "2633",
+            "2022",
+            "2023-01-25",
+            "0.0000",
+            "9265.0000",
+            "9265.00",
+            "6454.8500",
+            "6454.85",
+            "6454.85"
+          ],
+          "rowNumber": 1916804,
+          "rowPosition": 1916805,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "for \"id_contrato\": values \"79255\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+          "message": "Row at position \"1916805\" violates the foreign key: for \"id_contrato\": values \"79255\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        }
+      ],
+      "stats": {
+        "errors": 3
+      },
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 1594,
-    "tasks": 11
+    "errors": 1667,
+    "tasks": 14
   },
   "valid": false
 }

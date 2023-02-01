@@ -1420,7 +1420,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 65.253,
+        "time": 64.297,
         "errors": [],
         "tasks": [
           {
@@ -1546,13 +1546,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "a1d109ba80707eac3240829ecc285740",
-                "bytes": 16203698,
+                "hash": "8560cf2d85ba490c520dc5c275253ead",
+                "bytes": 16213734,
                 "fields": 9,
-                "rows": 964244
+                "rows": 964822
               }
             },
-            "time": 65.253,
+            "time": 64.297,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2487,7 +2487,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 33.41,
+        "time": 33.651,
         "errors": [],
         "tasks": [
           {
@@ -2666,13 +2666,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "a50506ce7e156425e2a134c5a2920383",
-                "bytes": 24356300,
+                "hash": "e5ba3862c1fe1a28f7cd7b14ef06c1fe",
+                "bytes": 24356333,
                 "fields": 14,
-                "rows": 386310
+                "rows": 386340
               }
             },
-            "time": 33.41,
+            "time": 33.651,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3052,7 +3052,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 98.229,
+        "time": 97.733,
         "errors": [],
         "tasks": [
           {
@@ -3228,13 +3228,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "9e4e040fd6c67db4466ceca3929b785d",
-                "bytes": 9991186,
+                "hash": "f67dda9787bacbf87e31bf7fdca13386",
+                "bytes": 9997762,
                 "fields": 7,
-                "rows": 964747
+                "rows": 965325
               }
             },
-            "time": 98.229,
+            "time": 97.733,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3804,7 +3804,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 405.785,
+        "time": 414.14,
         "errors": [],
         "tasks": [
           {
@@ -4334,13 +4334,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "9bb7a192169fd989cccb47ecb3c6b463",
-                "bytes": 58473703,
+                "hash": "05e3987adb41ef5cae10282623292e5f",
+                "bytes": 58488394,
                 "fields": 27,
-                "rows": 1919470
+                "rows": 1920024
               }
             },
-            "time": 405.785,
+            "time": 414.14,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4362,18 +4362,145 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [],
+            "errors": [
+              {
+                "cells": [
+                  "44444",
+                  "4",
+                  "1831044",
+                  "36",
+                  "1",
+                  "1",
+                  "876",
+                  "70894",
+                  "1",
+                  "41",
+                  "806",
+                  "14879",
+                  "327837",
+                  "386228",
+                  "79255",
+                  "1511",
+                  "1831346",
+                  "2891",
+                  "2633",
+                  "2022",
+                  "2023-01-25",
+                  "0.0000",
+                  "161250.0000",
+                  "161250.00",
+                  "175000.0000",
+                  "175000.00",
+                  "175000.00"
+                ],
+                "rowNumber": 1916802,
+                "rowPosition": 1916803,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_contrato\": values \"79255\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+                "message": "Row at position \"1916803\" violates the foreign key: for \"id_contrato\": values \"79255\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "44444",
+                  "4",
+                  "1831044",
+                  "36",
+                  "1",
+                  "1",
+                  "876",
+                  "70894",
+                  "1",
+                  "41",
+                  "806",
+                  "14879",
+                  "328044",
+                  "386228",
+                  "79255",
+                  "164",
+                  "1831346",
+                  "2891",
+                  "2633",
+                  "2022",
+                  "2023-01-25",
+                  "0.0000",
+                  "16073.7700",
+                  "16073.77",
+                  "4545.1100",
+                  "4545.11",
+                  "4545.11"
+                ],
+                "rowNumber": 1916803,
+                "rowPosition": 1916804,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_contrato\": values \"79255\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+                "message": "Row at position \"1916804\" violates the foreign key: for \"id_contrato\": values \"79255\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "44444",
+                  "4",
+                  "1831044",
+                  "36",
+                  "1",
+                  "1",
+                  "876",
+                  "70894",
+                  "1",
+                  "41",
+                  "806",
+                  "14879",
+                  "341700",
+                  "386228",
+                  "79255",
+                  "889",
+                  "1831346",
+                  "2891",
+                  "2633",
+                  "2022",
+                  "2023-01-25",
+                  "0.0000",
+                  "9265.0000",
+                  "9265.00",
+                  "6454.8500",
+                  "6454.85",
+                  "6454.85"
+                ],
+                "rowNumber": 1916804,
+                "rowPosition": 1916805,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "for \"id_contrato\": values \"79255\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+                "message": "Row at position \"1916805\" violates the foreign key: for \"id_contrato\": values \"79255\" not found in the lookup table \"dm_contrato\" as \"id_contrato\"",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              }
+            ],
             "stats": {
-              "errors": 0
+              "errors": 3
             },
-            "valid": true
+            "valid": false
           }
         ],
         "stats": {
-          "errors": 0,
+          "errors": 3,
           "tasks": 1
         },
-        "valid": true
+        "valid": false
       }
     },
     {
@@ -5147,7 +5274,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.38.0",
-        "time": 9.249,
+        "time": 9.163,
         "errors": [],
         "tasks": [
           {
@@ -5304,13 +5431,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "87718bcbe6f47815338977b1d66f5e2c",
-                "bytes": 7195562,
+                "hash": "ab78e6173fae57ce3b6bd9c9f94e718b",
+                "bytes": 7195549,
                 "fields": 12,
                 "rows": 79254
               }
             },
-            "time": 9.249,
+            "time": 9.163,
             "scope": [
               "hash-count-error",
               "byte-count-error",
