@@ -868,6 +868,34 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
+  - name: dm_empenho_desp_2023
+    title: Empenho Despesa 2023
+    path: data/dm_empenho_desp_2023.csv.gz
+    schema: schemas/dm_empenho_desp_2023.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_desp_2023
+    title: Empenho Despesa 2023
+    path: data/dm_empenho_desp_2023.csv.gz
+    schema: schemas/dm_empenho_desp_2023.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
   - name: dm_favorecido
     title: Favorecido
     path: data/dm_favorecido.csv.gz
@@ -1680,6 +1708,20 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
+  - name: ft_despesa_2023
+    title: Despesa 2023
+    path: data/ft_despesa_2023.csv.gz
+    schema: schemas/ft_despesa_2023.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2023
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
   - name: dm_situacao_op_desp
     title: Situação Ordem de Pagamento
     path: data/dm_situacao_op_desp.csv.gz
@@ -2104,6 +2146,20 @@ resources:
     title: Empenho Restos a Pagar 2022
     path: data/dm_empenho_resto_2022.csv.gz
     schema: schemas/dm_empenho_resto_2022.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: dm_empenho_resto_2023
+    title: Empenho Restos a Pagar 2023
+    path: data/dm_empenho_resto_2023.csv.gz
+    schema: schemas/dm_empenho_resto_2023.yaml
     sources:
       - title: >-
           Tabela origem no schema AGE7 no banco de dados do Portal da
@@ -2563,6 +2619,20 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
+  - name: ft_diarias_2023
+    title: Diárias 2023
+    path: data/ft_diarias_2023.csv.gz
+    schema: schemas/ft_diarias_2023.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
   - name: ft_restos_pagar_2002
     title: ft_restos_pagar 2002
     path: data/ft_restos_pagar_2002.csv.gz
@@ -2847,6 +2917,20 @@ resources:
     title: ft_restos_pagar 2022
     path: data/ft_restos_pagar_2022.csv.gz
     schema: schemas/ft_restos_pagar_2022.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2023
+    title: ft_restos_pagar 2023
+    path: data/ft_restos_pagar_2023.csv.gz
+    schema: schemas/ft_restos_pagar_2023.yaml
     sources:
       - title: >-
           Tabela origem no schema AGE7 no banco de dados do Portal da
