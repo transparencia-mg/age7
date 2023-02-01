@@ -882,20 +882,6 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
-  - name: dm_empenho_desp_2023
-    title: Empenho Despesa 2023
-    path: data/dm_empenho_desp_2023.csv.gz
-    schema: schemas/dm_empenho_desp_2023.yaml
-    sources:
-      - title: >-
-          Tabela origem no schema AGE7 no banco de dados do Portal da
-          Transparência
-        table: dm_empenho_desp
-    format: csv
-    mediatype: text/csv
-    encoding: utf-8-sig
-    dialect: schemas/dialect.json
-    profile: tabular-data-resource
   - name: dm_favorecido
     title: Favorecido
     path: data/dm_favorecido.csv.gz
