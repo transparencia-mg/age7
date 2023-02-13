@@ -1,15 +1,14 @@
-name: Add issues to project
+# This uses a reusable workflow
+name: Reusable Workflow to add a project to issues
 
 on:
   issues:
     types: [opened]
 
 jobs:
-  add-to-project:
-    name: Add issue to project
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/add-to-project@v0.4.0
-        with:
-          project-url: https://github.com/orgs/transparencia-mg/projects/1
-          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+  do-it:
+    uses: gabrielbdornas/reusable-workflows/.github/workflows/add_project_to_issue_reusable.yml@main
+    secrets:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        USER: ${{ secrets.USER }}
+        PROJECT_NUMBER: ${{ secrets.PROJECT_NUMBER }}
