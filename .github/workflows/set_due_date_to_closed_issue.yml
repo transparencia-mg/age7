@@ -1,0 +1,14 @@
+# This uses a reusable workflow
+name: Reusable Workflow to set due date to closed issue
+
+on:
+  issues:
+    types: [closed]
+
+jobs:
+  do-it:
+    uses: gabrielbdornas/reusable-workflows/.github/workflows/set_due_date_to_closed_issue_reusable.yml@main
+    secrets:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        USER: ${{ secrets.USER }}
+        PROJECT_NUMBER: ${{ secrets.PROJECT_NUMBER }}
