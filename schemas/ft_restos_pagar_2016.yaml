@@ -101,7 +101,7 @@ fields:
       required: true
       unique: false
   - name: id_favorecido
-    tille: Favorecido - Chave
+    title: Favorecido - Chave
     type: integer
     format: default
     bareNumber: true
@@ -109,7 +109,7 @@ fields:
       required: true
       unique: false
   - name: id_empenho
-    tille: Número do Empenho - Chave
+    title: Número do Empenho - Chave
     type: integer
     format: default
     bareNumber: true
@@ -117,14 +117,14 @@ fields:
       required: true
       unique: false
   - name: id_tipo_documento
-    tille: Tipo de Documento - Chave
+    title: Tipo de Documento - Chave
     type: integer
     format: default
     bareNumber: true
     constraints:
       required: true
   - name: ano_origem
-    tille: Ano Origem
+    title: Ano Origem
     type: year
     format: default
     bareNumber: true
@@ -133,14 +133,14 @@ fields:
     constraints:
       required: true
   - name: cd_evento
-    tille: Evento - Código
+    title: Evento - Código
     type: string
     format: default
     constraints:
       required: true
       unique: false
   - name: tp_operacao
-    tille: Tipo de Operação
+    title: Tipo de Operação
     type: string
     format: default
     constraints:
@@ -149,33 +149,33 @@ fields:
         - '1'
         - '2'
   - name: cd_documento
-    tille: Documento - Código
+    title: Documento - Código
     type: string
     format: default
     constraints:
       required: true
       unique: false
   - name: nr_ordem
-    tille: Número de Ordem
+    title: Número de Ordem
     type: string
     format: default
     constraints:
       required: true
       unique: false
   - name: dt_documento
-    tille: Data do Documento
+    title: Data do Documento
     type: date
     format: default
     constraints:
       required: true
   - name: ano_particao
-    tille: Ano de Partição
+    title: Ano de Partição
     type: year
     bareNumber: true
     constraints:
       required: true
   - name: vr_nao_processado
-    tille: Valor Inscrito Não Processado
+    title: Valor Inscrito Não Processado
     type: number
     format: default
     bareNumber: true
@@ -185,7 +185,7 @@ fields:
     constraints:
       required: true
   - name: vr_processado
-    tille: Valor Inscrito Processado
+    title: Valor Inscrito Processado
     type: number
     format: default
     bareNumber: true
@@ -195,7 +195,7 @@ fields:
     constraints:
       required: true
   - name: vr_pago
-    tille: valor Pago
+    title: valor Pago
     type: number
     format: default
     bareNumber: true
