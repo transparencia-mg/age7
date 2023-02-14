@@ -1,5 +1,5 @@
 # This uses a reusable workflow
-name: Reusable Workflow to add a project to issues
+name: Reusable Workflow to add a project to issues and update fields information
 
 on:
   issues:
@@ -24,8 +24,8 @@ jobs:
         uses: github/update-project-action@v2
         with:
           github_token: ${{ secrets.GH_TOKEN }}
-          organization: ${{ secrets.USER }}
-          project_number: ${{ secrets.PROJECT_NUMBER }}
-          content_id: ${{ github.event.client_payload.command.resource.id }}
-          field: "Rotina - Atividade - Meta"
-          value: "Atualização de dados - Criação e/ou atualização de dados - Manter conjuntos Age7 atualizados"      
+          organization: transparencia-mg
+          project_number: 1
+          content_id: ${{ github.event.issue.node_id }}
+          field: Rotina - Atividade - Meta
+          value: Atualização de dados - Criação e/ou atualização de dados - Manter conjuntos Age7 atualizados
