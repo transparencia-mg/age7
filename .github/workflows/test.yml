@@ -1,7 +1,7 @@
 name: Update status on project board
 on:
   issues:
-    types: [closed]
+    types: [opened]
 jobs:
   update_project:
     runs-on: ubuntu-latest
@@ -13,8 +13,7 @@ jobs:
           github_token: ${{ secrets.GH_TOKEN }}
           organization: ${{ secrets.USER }}
           project_number: ${{ secrets.PROJECT_NUMBER }}
-          operation: read
-          content_id: ${{ github.event.client_payload.command.resource.id }}
+          content_id: ${{ github.event.issue.node_id }}
       - name: Output status
         run: |
           echo "Current status value: ${{ steps.read_status.outputs.field_read_value }}"
