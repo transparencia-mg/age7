@@ -7,15 +7,18 @@ on:
 
 jobs:
   do-it:
-    uses: gabrielbdornas/reusable-workflows/.github/workflows/add_project_to_issue_reusable.yml@main
-    secrets:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        USER: ${{ secrets.USER }}
-        TYPE: ${{ secrets.TYPE }}
-        PROJECT_NUMBER: ${{ secrets.PROJECT_NUMBER }}
-    - name: Output status
-      run: |
-        echo "Current status value: ${{ github.event.issue.node_id }}"
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      uses: gabrielbdornas/reusable-workflows/.github/workflows/add_project_to_issue_reusable.yml@main
+      secrets:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          USER: ${{ secrets.USER }}
+          TYPE: ${{ secrets.TYPE }}
+          PROJECT_NUMBER: ${{ secrets.PROJECT_NUMBER }}
+      - name: Output status
+        run: |
+          echo "Current status value: ${{ github.event.issue.node_id }}"
 
   update-project:
     name: Update field(s) on @work-dta project
