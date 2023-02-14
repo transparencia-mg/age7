@@ -1,5 +1,5 @@
 # This uses a reusable workflow
-name: Reusable Workflow to add a project to issues and update fields information
+name: Reusable Workflow to add a project to issues
 
 on:
   issues:
@@ -7,31 +7,9 @@ on:
 
 jobs:
   do-it:
-    name: Test
-    runs-on: ubuntu-latest
-    steps:
-      uses: gabrielbdornas/reusable-workflows/.github/workflows/add_project_to_issue_reusable.yml@main
-      secrets:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          USER: ${{ secrets.USER }}
-          TYPE: ${{ secrets.TYPE }}
-          PROJECT_NUMBER: ${{ secrets.PROJECT_NUMBER }}
-      - name: Output status
-        run: |
-          echo "Current status value: ${{ github.event.issue.node_id }}"
-
-  update-project:
-    name: Update field(s) on @work-dta project
-    runs-on: ubuntu-latest
-    needs: do-it
-    steps:
-      - name: Update Rotina - Atividade - Meta
-        id: update_rotina_atividade_meta
-        uses: github/update-project-action@v2
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          organization: transparencia-mg
-          project_number: 1
-          content_id: ${{ github.event.issue.node_id }}
-          field: Rotina - Atividade - Meta
-          value: Atualização de dados - Criação e/ou atualização de dados - Manter conjuntos Age7 atualizados
+    uses: gabrielbdornas/reusable-workflows/.github/workflows/add_project_to_issue_reusable.yml@main
+    secrets:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        USER: ${{ secrets.USER }}
+        TYPE: ${{ secrets.TYPE }}
+        PROJECT_NUMBER: ${{ secrets.PROJECT_NUMBER }}
