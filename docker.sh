@@ -1,5 +1,6 @@
 #!/bin/bash
 source $HOME/.bash_profile
+docker build . --file Dockerfile --tag dtamg/age7:latest
 docker run -i --rm -v $PROJECT_PATH:/work_dir \
                     -v /pwd:/pwd \
                     -v $PROJECT_PATH/.local/share/AzureR:/root/.local/share/AzureR \
@@ -11,4 +12,4 @@ docker run -i --rm -v $PROJECT_PATH:/work_dir \
                     -e DB_DATABASE=$DB_DATABASE \
                     -e DB_PASSWORD=$DB_PASSWORD \
                     -e RETICULATE_PYTHON=$RETICULATE_PYTHON \
-                    gabrielbdornas/dtamg-age7:latest ./all.sh
+                    dtamg/age7:latest ./all.sh
