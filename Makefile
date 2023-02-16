@@ -1,9 +1,13 @@
-.PHONY: help container-bash vars parse extract full-extract ingest data validate check-validation notify load all clean report
+.PHONY: help image container-bash vars parse extract full-extract ingest data validate check-validation notify load all clean report
 
 include config.mk
 
 help: 
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-10s\033[0m %s\n", $$1, $$2}'
+
+image: Dockerfile renv.lock
+	@echo 'Creating Docker Image...'
+	@docker build . --file Dockerfile --tag dtamg/age7:latest
 
 container-bash: ## Start Docker Container
 	@echo 'Starting Docker Container...'
