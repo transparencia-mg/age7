@@ -1,6 +1,6 @@
 #!/bin/bash
 source $HOME/.bash_profile
-make image && docker run -i --rm -v $PROJECT_PATH:/work_dir \
+docker run -i --rm -v $PROJECT_PATH:/work_dir \
      -v /pwd:/pwd \
      -v $PROJECT_PATH/.local/share/AzureR:/root/.local/share/AzureR \
      -e CKAN_HOST=$CKAN_HOST \
