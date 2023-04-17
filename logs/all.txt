@@ -81,28 +81,7 @@ Nothing to be updated in dataset https://dados.mg.gov.br/dataset/despesa-com-pes
 Dataset https://dados.mg.gov.br/dataset/despesa-com-pessoal updated
 dpckan --datapackage build_datasets/viagens/datapackage.json dataset update 2> logs/update/viagens.txt
 Updating dataset https://dados.mg.gov.br/dataset/viagens
-Updating data and metadata of resource dm_acao.
-Updating data and metadata of resource dm_cargo_scdp.
-Updating data and metadata of resource dm_cidade.
-Updating data and metadata of resource dm_documento_viagem.
-Updating data and metadata of resource dm_empenho_desp_diarias_scdp_liqpag.
-Updating data and metadata of resource dm_estado.
-Updating data and metadata of resource dm_favorecido_scdp.
-Updating data and metadata of resource dm_fonte.
-Updating data and metadata of resource dm_funcao_desp.
-Updating data and metadata of resource dm_funcao_scdp.
-Updating data and metadata of resource dm_item_desp.
-Updating data and metadata of resource dm_meio_transporte.
-Updating data and metadata of resource dm_motivo_viagem.
-Updating data and metadata of resource dm_orgao_scdp.
-Updating data and metadata of resource dm_pais.
-Updating data and metadata of resource dm_programa.
-Updating data and metadata of resource dm_tempo_diario.
-Updating data and metadata of resource dm_tipo_viagem.
-Updating data and metadata of resource dm_tipo_viajante.
-Updating data and metadata of resource ft_diarias_scdp.
-Updating data and metadata of resource ft_diarias_scdp_liqpag.
-Updating resource datapackage.json.
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/viagens.
 Dataset https://dados.mg.gov.br/dataset/viagens updated
 dpckan --datapackage build_datasets/receita/datapackage.json dataset update 2> logs/update/receita.txt
 Updating dataset https://dados.mg.gov.br/dataset/receita
@@ -120,7 +99,3 @@ dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json d
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Nothing to be updated in dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main c1c6910e] Atualização age7
- 5 files changed, 129 insertions(+), 1259 deletions(-)
- rewrite logs/all.txt (91%)
- delete mode 100644 logs/ingest.txt
