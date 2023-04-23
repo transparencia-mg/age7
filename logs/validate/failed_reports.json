@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "formated_date": "22/04/2023 10:14:48",
+  "formated_date": "23/04/2023 10:07:18",
   "time": 0.01,
   "errors": [],
   "tasks": [
@@ -163,7 +163,7 @@
           "rows": 136
         }
       },
-      "time": 0.053,
+      "time": 0.054,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -447,6 +447,2578 @@
     },
     {
       "resource": {
+        "name": "ft_despesa_2023",
+        "title": "Despesa 2023",
+        "path": "data/ft_despesa_2023.csv.gz",
+        "schema": {
+          "fields": [
+            {
+              "name": "id_tempo",
+              "title": "Tempo - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "description": "- > \n  Chave estrangeira (Foreign Key) que aponta para a Chave Primária (Primary keys) da tabela dm_tempo_diario. \n  Ou seja, por meio dessa chave é possível identificar a data completa a qual o dado se refere.\n\n  Nota: \n  No site dados.mg.gov.br a tabela dm_tempo_diario pode ser encontrada no recurso Calendários - Dias \n  de cada conjunto.\n",
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_categ_econ",
+              "title": "Categoria Econômica da Despesa - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_grupo",
+              "title": "Grupo de Despesa - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_elemento",
+              "title": "Elemento de Despesa - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_item",
+              "title": "Item de Despesa - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_fonte",
+              "title": "Fonte de Recurso - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_modalidade_aplic",
+              "title": "Modalidade de Aplicação - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_funcao",
+              "title": "Função - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_subfuncao",
+              "title": "Subfunção - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_programa",
+              "title": "Programa - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_acao",
+              "title": "Ação Orçamentária - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_procedencia",
+              "title": "Procedência - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_unidade_orc",
+              "title": "Unidade Orçamentária - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_favorecido",
+              "title": "Favorecido - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_empenho",
+              "title": "Número do Empenho - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "id_tipo_documento",
+              "title": "Tipo de Documento - Chave",
+              "type": "integer",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true,
+                "unique": false
+              }
+            },
+            {
+              "name": "tp_operacao",
+              "title": "Tipo Operação - Chave Origem",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "enum": [
+                  "1",
+                  "2"
+                ]
+              }
+            },
+            {
+              "name": "cd_documento",
+              "title": "Documento - Código",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "cd_evento",
+              "title": "Evento - Código",
+              "type": "string",
+              "format": "default",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "dt_anomes",
+              "title": "Ano e Mês",
+              "type": "string",
+              "format": "default",
+              "bareNumber": true,
+              "notes": [
+                "O tipo yearmonth somente aceita representação YYYY-MM (ie. com hífen)"
+              ]
+            },
+            {
+              "name": "ano_particao",
+              "title": "Ano Partição",
+              "type": "year",
+              "format": "default",
+              "bareNumber": true,
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_empenhado",
+              "title": "Valor Empenhado",
+              "description": "Valor do orçamento reservado para fazer face a compromisso formalmente assumido com fornecedor ou credor.\n",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_liquidado",
+              "title": "Valor Liquidado",
+              "description": "Valor que o fornecedor ou credor tem direito a receber referente a produto ou serviço devidamente entregue ou prestado.\n",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            },
+            {
+              "name": "vr_pago",
+              "title": "Valor Pago",
+              "description": "- > \nValor referente aos pagamentos efetuados através de movimentações bancárias, escriturais e apropriação contábil da\ndespesa. O efetivo pagamento pode estar pendente de transmissão ao banco e/ou sujeito a compensação bancária.\n",
+              "type": "number",
+              "format": "default",
+              "bareNumber": true,
+              "decimalChar": ".",
+              "constraints": {
+                "required": true
+              }
+            }
+          ],
+          "missingValues": [
+            ""
+          ],
+          "foreignKeys": [
+            {
+              "fields": [
+                "id_unidade_orc"
+              ],
+              "reference": {
+                "fields": [
+                  "id_unidade_orc"
+                ],
+                "resource": "dm_unidade_orc"
+              }
+            },
+            {
+              "fields": [
+                "id_tipo_documento"
+              ],
+              "reference": {
+                "fields": [
+                  "id_tipo_documento"
+                ],
+                "resource": "dm_tipo_documento"
+              }
+            },
+            {
+              "fields": [
+                "id_programa"
+              ],
+              "reference": {
+                "fields": [
+                  "id_programa"
+                ],
+                "resource": "dm_programa"
+              }
+            },
+            {
+              "fields": [
+                "id_item"
+              ],
+              "reference": {
+                "fields": [
+                  "id_item"
+                ],
+                "resource": "dm_item_desp"
+              }
+            },
+            {
+              "fields": [
+                "id_categ_econ"
+              ],
+              "reference": {
+                "fields": [
+                  "id_categ_econ"
+                ],
+                "resource": "dm_categ_econ"
+              }
+            },
+            {
+              "fields": [
+                "id_grupo"
+              ],
+              "reference": {
+                "fields": [
+                  "id_grupo"
+                ],
+                "resource": "dm_grupo_desp"
+              }
+            },
+            {
+              "fields": [
+                "id_funcao"
+              ],
+              "reference": {
+                "fields": [
+                  "id_funcao"
+                ],
+                "resource": "dm_funcao_desp"
+              }
+            },
+            {
+              "fields": [
+                "id_empenho"
+              ],
+              "reference": {
+                "fields": [
+                  "id_empenho"
+                ],
+                "resource": "dm_empenho_desp_2023"
+              }
+            },
+            {
+              "fields": [
+                "id_tempo"
+              ],
+              "reference": {
+                "fields": [
+                  "id_tempo"
+                ],
+                "resource": "dm_tempo_diario"
+              }
+            },
+            {
+              "fields": [
+                "id_subfuncao"
+              ],
+              "reference": {
+                "fields": [
+                  "id_subfuncao"
+                ],
+                "resource": "dm_subfuncao_desp"
+              }
+            },
+            {
+              "fields": [
+                "id_acao"
+              ],
+              "reference": {
+                "fields": [
+                  "id_acao"
+                ],
+                "resource": "dm_acao"
+              }
+            },
+            {
+              "fields": [
+                "id_modalidade_aplic"
+              ],
+              "reference": {
+                "fields": [
+                  "id_modalidade_aplic"
+                ],
+                "resource": "dm_modalidade_aplic"
+              }
+            },
+            {
+              "fields": [
+                "id_procedencia"
+              ],
+              "reference": {
+                "fields": [
+                  "id_procedencia"
+                ],
+                "resource": "dm_procedencia"
+              }
+            },
+            {
+              "fields": [
+                "id_elemento"
+              ],
+              "reference": {
+                "fields": [
+                  "id_elemento"
+                ],
+                "resource": "dm_elemento_desp"
+              }
+            },
+            {
+              "fields": [
+                "id_fonte"
+              ],
+              "reference": {
+                "fields": [
+                  "id_fonte"
+                ],
+                "resource": "dm_fonte"
+              }
+            },
+            {
+              "fields": [
+                "id_favorecido"
+              ],
+              "reference": {
+                "fields": [
+                  "id_favorecido"
+                ],
+                "resource": "dm_favorecido"
+              }
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Tabela origem no schema AGE7 no banco de dados do Portal da Transparência",
+            "table": "ft_despesa_2023"
+          }
+        ],
+        "format": "csv",
+        "mediatype": "text/csv",
+        "encoding": "utf-8-sig",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "profile": "tabular-data-resource",
+        "scheme": "file",
+        "hashing": "md5",
+        "compression": "gz",
+        "stats": {
+          "hash": "b7bf7aeeffb9b821069b08b58f40619a",
+          "bytes": 11775487,
+          "fields": 24,
+          "rows": 778162
+        }
+      },
+      "time": 183.575,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761262,
+          "rowPosition": 761263,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761263\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761263,
+          "rowPosition": 761264,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761264\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761264,
+          "rowPosition": 761265,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761265\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761265,
+          "rowPosition": 761266,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761266\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761266,
+          "rowPosition": 761267,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761267\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761267,
+          "rowPosition": 761268,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761268\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761268,
+          "rowPosition": 761269,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761269\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761269,
+          "rowPosition": 761270,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761270\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761270,
+          "rowPosition": 761271,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761271\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761271,
+          "rowPosition": 761272,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761272\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761272,
+          "rowPosition": 761273,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761273\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761273,
+          "rowPosition": 761274,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761274\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761274,
+          "rowPosition": 761275,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761275\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761275,
+          "rowPosition": 761276,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761276\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761276,
+          "rowPosition": 761277,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761277\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761277,
+          "rowPosition": 761278,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761278\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761278,
+          "rowPosition": 761279,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761279\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761279,
+          "rowPosition": 761280,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761280\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761280,
+          "rowPosition": 761281,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761281\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761281,
+          "rowPosition": 761282,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761282\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761282,
+          "rowPosition": 761283,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761283\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761283,
+          "rowPosition": 761284,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761284\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 761284,
+          "rowPosition": 761285,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"761285\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762461,
+          "rowPosition": 762462,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762462\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762462,
+          "rowPosition": 762463,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762463\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762463,
+          "rowPosition": 762464,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762464\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762464,
+          "rowPosition": 762465,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762465\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762465,
+          "rowPosition": 762466,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762466\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762466,
+          "rowPosition": 762467,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762467\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762467,
+          "rowPosition": 762468,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762468\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762468,
+          "rowPosition": 762469,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762469\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762469,
+          "rowPosition": 762470,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762470\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762470,
+          "rowPosition": 762471,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762471\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762471,
+          "rowPosition": 762472,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762472\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762472,
+          "rowPosition": 762473,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762473\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762473,
+          "rowPosition": 762474,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762474\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762474,
+          "rowPosition": 762475,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762475\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762475,
+          "rowPosition": 762476,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762476\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762851,
+          "rowPosition": 762852,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762852\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762852,
+          "rowPosition": 762853,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762853\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762853,
+          "rowPosition": 762854,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762854\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762854,
+          "rowPosition": 762855,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762855\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762855,
+          "rowPosition": 762856,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762856\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762856,
+          "rowPosition": 762857,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762857\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762857,
+          "rowPosition": 762858,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762858\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762858,
+          "rowPosition": 762859,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762859\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762859,
+          "rowPosition": 762860,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762860\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762860,
+          "rowPosition": 762861,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762861\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762861,
+          "rowPosition": 762862,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762862\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762862,
+          "rowPosition": 762863,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762863\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762863,
+          "rowPosition": 762864,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762864\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762864,
+          "rowPosition": 762865,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762865\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 762865,
+          "rowPosition": 762866,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"762866\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        }
+      ],
+      "stats": {
+        "errors": 53
+      },
+      "valid": false
+    },
+    {
+      "resource": {
         "name": "dm_item_rec",
         "title": "Item de Receita",
         "path": "data/dm_item_rec.csv.gz",
@@ -558,7 +3130,7 @@
           "rows": 18342
         }
       },
-      "time": 0.624,
+      "time": 0.743,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -1816,7 +4388,7 @@
           "rows": 13418
         }
       },
-      "time": 0.905,
+      "time": 0.914,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -20803,7 +23375,7 @@
           "rows": 44854
         }
       },
-      "time": 7.8,
+      "time": 7.814,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -32165,7 +34737,7 @@
           "rows": 2265
         }
       },
-      "time": 0.146,
+      "time": 0.143,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -43692,13 +46264,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "b33b54814961723af7e6ec243f008f56",
-          "bytes": 10137211,
+          "hash": "acc8ebe049e59b8decd13b2f01558bad",
+          "bytes": 10141204,
           "fields": 7,
-          "rows": 993183
+          "rows": 992223
         }
       },
-      "time": 130.466,
+      "time": 130.035,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -43843,8 +46415,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 829446,
-          "rowPosition": 829447,
+          "rowNumber": 829394,
+          "rowPosition": 829395,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -43853,7 +46425,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829447\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829395\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -43870,8 +46442,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 829447,
-          "rowPosition": 829448,
+          "rowNumber": 829395,
+          "rowPosition": 829396,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -43880,7 +46452,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829448\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829396\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -43897,8 +46469,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 829448,
-          "rowPosition": 829449,
+          "rowNumber": 829396,
+          "rowPosition": 829397,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -43907,7 +46479,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829449\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829397\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -43924,8 +46496,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 829449,
-          "rowPosition": 829450,
+          "rowNumber": 829397,
+          "rowPosition": 829398,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -43934,7 +46506,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829450\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829398\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -43951,8 +46523,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 829450,
-          "rowPosition": 829451,
+          "rowNumber": 829398,
+          "rowPosition": 829399,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -43961,7 +46533,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829451\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829399\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -43978,8 +46550,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 829451,
-          "rowPosition": 829452,
+          "rowNumber": 829399,
+          "rowPosition": 829400,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -43988,7 +46560,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829452\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829400\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44005,8 +46577,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 829452,
-          "rowPosition": 829453,
+          "rowNumber": 829400,
+          "rowPosition": 829401,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44015,7 +46587,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829453\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"829401\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44032,8 +46604,8 @@
             "2736",
             "2160 11.334.039.4373.1 3.3.90.39.19 0.1.1"
           ],
-          "rowNumber": 851502,
-          "rowPosition": 851503,
+          "rowNumber": 854306,
+          "rowPosition": 854307,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44042,7 +46614,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"2160 11.334.039.4373.1 3.3.90.39.19 0.1.1\" in row at position \"851503\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"2160 11.334.039.4373.1 3.3.90.39.19 0.1.1\" in row at position \"854307\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44059,8 +46631,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 922037,
-          "rowPosition": 922038,
+          "rowNumber": 929310,
+          "rowPosition": 929311,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44069,7 +46641,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"922038\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"929311\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44086,8 +46658,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 922038,
-          "rowPosition": 922039,
+          "rowNumber": 929311,
+          "rowPosition": 929312,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44096,7 +46668,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"922039\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"929312\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44113,8 +46685,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 922082,
-          "rowPosition": 922083,
+          "rowNumber": 929355,
+          "rowPosition": 929356,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44123,7 +46695,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"922083\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"929356\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44140,8 +46712,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 922083,
-          "rowPosition": 922084,
+          "rowNumber": 929356,
+          "rowPosition": 929357,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44150,7 +46722,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"922084\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"929357\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44167,8 +46739,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 922085,
-          "rowPosition": 922086,
+          "rowNumber": 929358,
+          "rowPosition": 929359,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44177,7 +46749,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"922086\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"929359\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44194,8 +46766,8 @@
             "2611",
             "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
           ],
-          "rowNumber": 922086,
-          "rowPosition": 922087,
+          "rowNumber": 929359,
+          "rowPosition": 929360,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44204,7 +46776,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"922087\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"929360\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44221,8 +46793,8 @@
             "2743",
             "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
           ],
-          "rowNumber": 961788,
-          "rowPosition": 961789,
+          "rowNumber": 966409,
+          "rowPosition": 966410,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44231,7 +46803,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"961789\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"966410\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44248,8 +46820,8 @@
             "2743",
             "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
           ],
-          "rowNumber": 961789,
-          "rowPosition": 961790,
+          "rowNumber": 966410,
+          "rowPosition": 966411,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44258,7 +46830,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"961790\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"966411\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44275,8 +46847,8 @@
             "2743",
             "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
           ],
-          "rowNumber": 961790,
-          "rowPosition": 961791,
+          "rowNumber": 966411,
+          "rowPosition": 966412,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44285,7 +46857,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"961791\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"966412\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44302,8 +46874,8 @@
             "2743",
             "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
           ],
-          "rowNumber": 961791,
-          "rowPosition": 961792,
+          "rowNumber": 966412,
+          "rowPosition": 966413,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44312,7 +46884,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"961792\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"966413\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44329,8 +46901,8 @@
             "2743",
             "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
           ],
-          "rowNumber": 961792,
-          "rowPosition": 961793,
+          "rowNumber": 966413,
+          "rowPosition": 966414,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44339,7 +46911,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"961793\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"966414\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44356,8 +46928,8 @@
             "2743",
             "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
           ],
-          "rowNumber": 961793,
-          "rowPosition": 961794,
+          "rowNumber": 966414,
+          "rowPosition": 966415,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44366,7 +46938,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"961794\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"966415\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44383,8 +46955,8 @@
             "2743",
             "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
           ],
-          "rowNumber": 961794,
-          "rowPosition": 961795,
+          "rowNumber": 966415,
+          "rowPosition": 966416,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44393,7 +46965,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"961795\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"966416\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         },
         {
@@ -44410,8 +46982,8 @@
             "2816",
             "1250 06.181.034.4048.1 4.4.90.51.03 0.1.1"
           ],
-          "rowNumber": 992664,
-          "rowPosition": 992665,
+          "rowNumber": 991821,
+          "rowPosition": 991822,
           "code": "constraint-error",
           "name": "Constraint Error",
           "tags": [
@@ -44420,7 +46992,7 @@
             "#cell"
           ],
           "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-          "message": "The cell \"1250 06.181.034.4048.1 4.4.90.51.03 0.1.1\" in row at position \"992665\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+          "message": "The cell \"1250 06.181.034.4048.1 4.4.90.51.03 0.1.1\" in row at position \"991822\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
           "description": "A field value does not conform to a constraint."
         }
       ],
@@ -44785,7 +47357,7 @@
           "rows": 162
         }
       },
-      "time": 0.048,
+      "time": 0.047,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -45270,7 +47842,7 @@
           "rows": 0
         }
       },
-      "time": 181.268,
+      "time": 179.043,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -45688,7 +48260,7 @@
           "rows": 7524
         }
       },
-      "time": 3.448,
+      "time": 3.497,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -56282,7 +58854,7 @@
           "rows": 237
         }
       },
-      "time": 0.049,
+      "time": 0.05,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -56704,8 +59276,8 @@
     }
   ],
   "stats": {
-    "errors": 1817,
-    "tasks": 13
+    "errors": 1870,
+    "tasks": 14
   },
   "valid": false
 }
