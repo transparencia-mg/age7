@@ -1175,7 +1175,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.281,
+        "time": 0.322,
         "errors": [],
         "tasks": [
           {
@@ -1253,13 +1253,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "8f3b58cf95a4449a67cea0e078ffcdb7",
-                "bytes": 124179,
+                "hash": "a6f489f6290df74b9d2f2126880a13d6",
+                "bytes": 142274,
                 "fields": 4,
-                "rows": 7000
+                "rows": 8000
               }
             },
-            "time": 0.281,
+            "time": 0.322,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1420,7 +1420,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 66.672,
+        "time": 65.418,
         "errors": [],
         "tasks": [
           {
@@ -1546,13 +1546,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "1a67cc31870376ea1e49b7db5b32463a",
-                "bytes": 16706635,
+                "hash": "1a14a3721c568f77d2ecbdae67e5cb93",
+                "bytes": 16706811,
                 "fields": 9,
-                "rows": 991551
+                "rows": 991699
               }
             },
-            "time": 66.672,
+            "time": 65.418,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2020,7 +2020,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 7.488,
+        "time": 7.34,
         "errors": [],
         "tasks": [
           {
@@ -2096,13 +2096,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "00774071d5b14c94c6cf7e67cedb59c2",
-                "bytes": 9041311,
+                "hash": "bd07ebbed417cab56d666f4028800f18",
+                "bytes": 9042437,
                 "fields": 4,
-                "rows": 195113
+                "rows": 195130
               }
             },
-            "time": 7.488,
+            "time": 7.34,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2487,7 +2487,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 33.044,
+        "time": 33.289,
         "errors": [],
         "tasks": [
           {
@@ -2666,13 +2666,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e8c1a6507329c68f834213c0d66f565c",
-                "bytes": 24630815,
+                "hash": "0e3871e7f885a02a0db9ee1596ef3c86",
+                "bytes": 24634558,
                 "fields": 14,
-                "rows": 390936
+                "rows": 391039
               }
             },
-            "time": 33.044,
+            "time": 33.289,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2771,7 +2771,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.091,
+        "time": 0.092,
         "errors": [],
         "tasks": [
           {
@@ -2836,13 +2836,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "ee93459a6d78d4a7b8a791efd03fd754",
-                "bytes": 16367,
+                "hash": "2276ef7a74ed9d5fbd5625fc10c07631",
+                "bytes": 16365,
                 "fields": 3,
                 "rows": 2000
               }
             },
-            "time": 0.091,
+            "time": 0.092,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3052,7 +3052,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 64.141,
+        "time": 65.225,
         "errors": [],
         "tasks": [
           {
@@ -3228,13 +3228,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e3f0a15075a5573d25e13fb87526fef6",
-                "bytes": 10141528,
+                "hash": "9b3ce6a59b8f52d1518c6e6186672e5e",
+                "bytes": 10139354,
                 "fields": 7,
                 "rows": 0
               }
             },
-            "time": 64.141,
+            "time": 65.225,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -10163,28 +10163,6 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"974\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_processo",
-                  "id_empenho",
-                  "id_programa",
-                  "id_acao",
-                  "id_elemento",
-                  "id_item",
-                  "dotacao_orcamentaria"
-                ],
-                "rowNumber": 974,
-                "rowPosition": 975,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"975\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -25276,6 +25254,28 @@
                 "note": "not found in the lookup table",
                 "message": "Row at position \"2701\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_processo",
+                  "id_empenho",
+                  "id_programa",
+                  "id_acao",
+                  "id_elemento",
+                  "id_item",
+                  "dotacao_orcamentaria"
+                ],
+                "rowNumber": 2701,
+                "rowPosition": 2702,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"2702\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
               }
             ],
             "stats": {
@@ -25825,7 +25825,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 34.118,
+        "time": 34.703,
         "errors": [],
         "tasks": [
           {
@@ -26355,13 +26355,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "1559daddd98f1562f206dbcfffc7fdce",
-                "bytes": 59113092,
+                "hash": "e01f47a3b4f8a1a685f6cc0f8e11062a",
+                "bytes": 59123707,
                 "fields": 27,
                 "rows": 0
               }
             },
-            "time": 34.118,
+            "time": 34.703,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -70997,7 +70997,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.043,
+        "time": 0.044,
         "errors": [],
         "tasks": [
           {
@@ -71150,7 +71150,7 @@
                 "rows": 103
               }
             },
-            "time": 0.043,
+            "time": 0.044,
             "scope": [
               "hash-count-error",
               "byte-count-error",
