@@ -1486,7 +1486,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 2.368,
+        "time": 2.321,
         "errors": [],
         "tasks": [
           {
@@ -1559,13 +1559,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "3d93fbd64a90bd28c38579402492a55b",
-                "bytes": 1396143,
+                "hash": "b678af9b5ed91fecf3ec95a3a8dda7a4",
+                "bytes": 1396797,
                 "fields": 4,
-                "rows": 67956
+                "rows": 67986
               }
             },
-            "time": 2.368,
+            "time": 2.321,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1761,8 +1761,8 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "674053bfbd6704ebb641d4e6220ad425",
-                "bytes": 240884,
+                "hash": "40e2f0e0f2ed2207b9c9fe30a063de82",
+                "bytes": 243286,
                 "fields": 5,
                 "rows": 7000
               }
@@ -1925,7 +1925,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 1.237,
+        "time": 1.26,
         "errors": [],
         "tasks": [
           {
@@ -2048,13 +2048,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "40062eb485c3f30cba1a7183c97a9e9b",
-                "bytes": 309000,
+                "hash": "fe2b68df01baa9ed7854b8c920d9e149",
+                "bytes": 309212,
                 "fields": 9,
-                "rows": 17750
+                "rows": 17760
               }
             },
-            "time": 1.237,
+            "time": 1.26,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2238,7 +2238,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.053,
+        "time": 0.05,
         "errors": [],
         "tasks": [
           {
@@ -2394,7 +2394,7 @@
                 "rows": 237
               }
             },
-            "time": 0.053,
+            "time": 0.05,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2876,7 +2876,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.254,
+        "time": 0.247,
         "errors": [],
         "tasks": [
           {
@@ -2932,13 +2932,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "d80f6d9bcc668fcb99b0e05af8363113",
-                "bytes": 66671,
+                "hash": "3a8eafaa30eece1842c20d19ba02903c",
+                "bytes": 67950,
                 "fields": 2,
-                "rows": 8000
+                "rows": 8106
               }
             },
-            "time": 0.254,
+            "time": 0.247,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3585,7 +3585,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 6.53,
+        "time": 6.45,
         "errors": [],
         "tasks": [
           {
@@ -4043,13 +4043,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "c88758bf3d06fc6dbcb48814a36c6f35",
-                "bytes": 20828020,
+                "hash": "23a48a7e6e83fb8c4fc72f55dc875f4d",
+                "bytes": 20847972,
                 "fields": 23,
                 "rows": 0
               }
             },
-            "time": 6.53,
+            "time": 6.45,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -24010,6 +24010,82 @@
                   "vr_diaria",
                   "vr_passagem"
                 ],
+                "rowNumber": 525,
+                "rowPosition": 526,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"526\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_tempo",
+                  "id_favorecido",
+                  "id_cargo",
+                  "id_funcao_scdp",
+                  "id_orgao",
+                  "id_pais_origem",
+                  "id_estado_origem",
+                  "id_cidade_origem",
+                  "id_pais_destino",
+                  "id_estado_destino",
+                  "id_cidade_destino",
+                  "id_documento_viagem",
+                  "id_tipo_viagem",
+                  "id_tipo_viajante",
+                  "id_meio_transporte",
+                  "id_motivo",
+                  "ordem_trecho",
+                  "ano_particao",
+                  "dt_inicio_trecho",
+                  "dt_fim_trecho",
+                  "qt_diaria",
+                  "vr_diaria",
+                  "vr_passagem"
+                ],
+                "rowNumber": 526,
+                "rowPosition": 527,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"527\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_tempo",
+                  "id_favorecido",
+                  "id_cargo",
+                  "id_funcao_scdp",
+                  "id_orgao",
+                  "id_pais_origem",
+                  "id_estado_origem",
+                  "id_cidade_origem",
+                  "id_pais_destino",
+                  "id_estado_destino",
+                  "id_cidade_destino",
+                  "id_documento_viagem",
+                  "id_tipo_viagem",
+                  "id_tipo_viajante",
+                  "id_meio_transporte",
+                  "id_motivo",
+                  "ordem_trecho",
+                  "ano_particao",
+                  "dt_inicio_trecho",
+                  "dt_fim_trecho",
+                  "qt_diaria",
+                  "vr_diaria",
+                  "vr_passagem"
+                ],
                 "rowNumber": 527,
                 "rowPosition": 528,
                 "code": "foreign-key-error",
@@ -29188,6 +29264,82 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"664\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_tempo",
+                  "id_favorecido",
+                  "id_cargo",
+                  "id_funcao_scdp",
+                  "id_orgao",
+                  "id_pais_origem",
+                  "id_estado_origem",
+                  "id_cidade_origem",
+                  "id_pais_destino",
+                  "id_estado_destino",
+                  "id_cidade_destino",
+                  "id_documento_viagem",
+                  "id_tipo_viagem",
+                  "id_tipo_viajante",
+                  "id_meio_transporte",
+                  "id_motivo",
+                  "ordem_trecho",
+                  "ano_particao",
+                  "dt_inicio_trecho",
+                  "dt_fim_trecho",
+                  "qt_diaria",
+                  "vr_diaria",
+                  "vr_passagem"
+                ],
+                "rowNumber": 664,
+                "rowPosition": 665,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"665\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_tempo",
+                  "id_favorecido",
+                  "id_cargo",
+                  "id_funcao_scdp",
+                  "id_orgao",
+                  "id_pais_origem",
+                  "id_estado_origem",
+                  "id_cidade_origem",
+                  "id_pais_destino",
+                  "id_estado_destino",
+                  "id_cidade_destino",
+                  "id_documento_viagem",
+                  "id_tipo_viagem",
+                  "id_tipo_viajante",
+                  "id_meio_transporte",
+                  "id_motivo",
+                  "ordem_trecho",
+                  "ano_particao",
+                  "dt_inicio_trecho",
+                  "dt_fim_trecho",
+                  "qt_diaria",
+                  "vr_diaria",
+                  "vr_passagem"
+                ],
+                "rowNumber": 665,
+                "rowPosition": 666,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"666\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -41414,6 +41566,82 @@
                   "vr_diaria",
                   "vr_passagem"
                 ],
+                "rowNumber": 987,
+                "rowPosition": 988,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"988\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_tempo",
+                  "id_favorecido",
+                  "id_cargo",
+                  "id_funcao_scdp",
+                  "id_orgao",
+                  "id_pais_origem",
+                  "id_estado_origem",
+                  "id_cidade_origem",
+                  "id_pais_destino",
+                  "id_estado_destino",
+                  "id_cidade_destino",
+                  "id_documento_viagem",
+                  "id_tipo_viagem",
+                  "id_tipo_viajante",
+                  "id_meio_transporte",
+                  "id_motivo",
+                  "ordem_trecho",
+                  "ano_particao",
+                  "dt_inicio_trecho",
+                  "dt_fim_trecho",
+                  "qt_diaria",
+                  "vr_diaria",
+                  "vr_passagem"
+                ],
+                "rowNumber": 988,
+                "rowPosition": 989,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"989\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_tempo",
+                  "id_favorecido",
+                  "id_cargo",
+                  "id_funcao_scdp",
+                  "id_orgao",
+                  "id_pais_origem",
+                  "id_estado_origem",
+                  "id_cidade_origem",
+                  "id_pais_destino",
+                  "id_estado_destino",
+                  "id_cidade_destino",
+                  "id_documento_viagem",
+                  "id_tipo_viagem",
+                  "id_tipo_viajante",
+                  "id_meio_transporte",
+                  "id_motivo",
+                  "ordem_trecho",
+                  "ano_particao",
+                  "dt_inicio_trecho",
+                  "dt_fim_trecho",
+                  "qt_diaria",
+                  "vr_diaria",
+                  "vr_passagem"
+                ],
                 "rowNumber": 989,
                 "rowPosition": 990,
                 "code": "foreign-key-error",
@@ -41843,234 +42071,6 @@
                 "note": "not found in the lookup table",
                 "message": "Row at position \"1001\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_favorecido",
-                  "id_cargo",
-                  "id_funcao_scdp",
-                  "id_orgao",
-                  "id_pais_origem",
-                  "id_estado_origem",
-                  "id_cidade_origem",
-                  "id_pais_destino",
-                  "id_estado_destino",
-                  "id_cidade_destino",
-                  "id_documento_viagem",
-                  "id_tipo_viagem",
-                  "id_tipo_viajante",
-                  "id_meio_transporte",
-                  "id_motivo",
-                  "ordem_trecho",
-                  "ano_particao",
-                  "dt_inicio_trecho",
-                  "dt_fim_trecho",
-                  "qt_diaria",
-                  "vr_diaria",
-                  "vr_passagem"
-                ],
-                "rowNumber": 1001,
-                "rowPosition": 1002,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"1002\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_favorecido",
-                  "id_cargo",
-                  "id_funcao_scdp",
-                  "id_orgao",
-                  "id_pais_origem",
-                  "id_estado_origem",
-                  "id_cidade_origem",
-                  "id_pais_destino",
-                  "id_estado_destino",
-                  "id_cidade_destino",
-                  "id_documento_viagem",
-                  "id_tipo_viagem",
-                  "id_tipo_viajante",
-                  "id_meio_transporte",
-                  "id_motivo",
-                  "ordem_trecho",
-                  "ano_particao",
-                  "dt_inicio_trecho",
-                  "dt_fim_trecho",
-                  "qt_diaria",
-                  "vr_diaria",
-                  "vr_passagem"
-                ],
-                "rowNumber": 1002,
-                "rowPosition": 1003,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"1003\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_favorecido",
-                  "id_cargo",
-                  "id_funcao_scdp",
-                  "id_orgao",
-                  "id_pais_origem",
-                  "id_estado_origem",
-                  "id_cidade_origem",
-                  "id_pais_destino",
-                  "id_estado_destino",
-                  "id_cidade_destino",
-                  "id_documento_viagem",
-                  "id_tipo_viagem",
-                  "id_tipo_viajante",
-                  "id_meio_transporte",
-                  "id_motivo",
-                  "ordem_trecho",
-                  "ano_particao",
-                  "dt_inicio_trecho",
-                  "dt_fim_trecho",
-                  "qt_diaria",
-                  "vr_diaria",
-                  "vr_passagem"
-                ],
-                "rowNumber": 1003,
-                "rowPosition": 1004,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"1004\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_favorecido",
-                  "id_cargo",
-                  "id_funcao_scdp",
-                  "id_orgao",
-                  "id_pais_origem",
-                  "id_estado_origem",
-                  "id_cidade_origem",
-                  "id_pais_destino",
-                  "id_estado_destino",
-                  "id_cidade_destino",
-                  "id_documento_viagem",
-                  "id_tipo_viagem",
-                  "id_tipo_viajante",
-                  "id_meio_transporte",
-                  "id_motivo",
-                  "ordem_trecho",
-                  "ano_particao",
-                  "dt_inicio_trecho",
-                  "dt_fim_trecho",
-                  "qt_diaria",
-                  "vr_diaria",
-                  "vr_passagem"
-                ],
-                "rowNumber": 1004,
-                "rowPosition": 1005,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"1005\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_favorecido",
-                  "id_cargo",
-                  "id_funcao_scdp",
-                  "id_orgao",
-                  "id_pais_origem",
-                  "id_estado_origem",
-                  "id_cidade_origem",
-                  "id_pais_destino",
-                  "id_estado_destino",
-                  "id_cidade_destino",
-                  "id_documento_viagem",
-                  "id_tipo_viagem",
-                  "id_tipo_viajante",
-                  "id_meio_transporte",
-                  "id_motivo",
-                  "ordem_trecho",
-                  "ano_particao",
-                  "dt_inicio_trecho",
-                  "dt_fim_trecho",
-                  "qt_diaria",
-                  "vr_diaria",
-                  "vr_passagem"
-                ],
-                "rowNumber": 1005,
-                "rowPosition": 1006,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"1006\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_favorecido",
-                  "id_cargo",
-                  "id_funcao_scdp",
-                  "id_orgao",
-                  "id_pais_origem",
-                  "id_estado_origem",
-                  "id_cidade_origem",
-                  "id_pais_destino",
-                  "id_estado_destino",
-                  "id_cidade_destino",
-                  "id_documento_viagem",
-                  "id_tipo_viagem",
-                  "id_tipo_viajante",
-                  "id_meio_transporte",
-                  "id_motivo",
-                  "ordem_trecho",
-                  "ano_particao",
-                  "dt_inicio_trecho",
-                  "dt_fim_trecho",
-                  "qt_diaria",
-                  "vr_diaria",
-                  "vr_passagem"
-                ],
-                "rowNumber": 1006,
-                "rowPosition": 1007,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"1007\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
               }
             ],
             "stats": {
@@ -42422,7 +42422,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 2.055,
+        "time": 2.03,
         "errors": [],
         "tasks": [
           {
@@ -42758,13 +42758,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "7a306f67486e5d506f1fa63bcc5acff9",
-                "bytes": 10612641,
+                "hash": "5fc71f6d204699c2df4aaeeea581a805",
+                "bytes": 10621322,
                 "fields": 14,
                 "rows": 0
               }
             },
-            "time": 2.055,
+            "time": 2.03,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -42978,8 +42978,8 @@
                   "vr_devolvido",
                   "vr_liqpag"
                 ],
-                "rowNumber": 4,
-                "rowPosition": 5,
+                "rowNumber": 2,
+                "rowPosition": 3,
                 "code": "foreign-key-error",
                 "name": "ForeignKey Error",
                 "tags": [
@@ -42987,7 +42987,94 @@
                   "#row"
                 ],
                 "note": "not found in the lookup table",
-                "message": "Row at position \"5\" violates the foreign key: not found in the lookup table",
+                "message": "Row at position \"3\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 2,
+                "rowPosition": 3,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"3\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 3,
+                "rowPosition": 4,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"4\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 3,
+                "rowPosition": 4,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"4\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -43075,6 +43162,93 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"5\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 4,
+                "rowPosition": 5,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"5\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 5,
+                "rowPosition": 6,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"6\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 5,
+                "rowPosition": 6,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"6\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -43732,6 +43906,122 @@
                   "vr_devolvido",
                   "vr_liqpag"
                 ],
+                "rowNumber": 12,
+                "rowPosition": 13,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"13\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 12,
+                "rowPosition": 13,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"13\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 13,
+                "rowPosition": 14,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"14\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 13,
+                "rowPosition": 14,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"14\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
                 "rowNumber": 13,
                 "rowPosition": 14,
                 "code": "foreign-key-error",
@@ -44119,6 +44409,64 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"18\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 18,
+                "rowPosition": 19,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"19\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 18,
+                "rowPosition": 19,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"19\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -44776,8 +45124,8 @@
                   "vr_devolvido",
                   "vr_liqpag"
                 ],
-                "rowNumber": 26,
-                "rowPosition": 27,
+                "rowNumber": 25,
+                "rowPosition": 26,
                 "code": "foreign-key-error",
                 "name": "ForeignKey Error",
                 "tags": [
@@ -44785,7 +45133,36 @@
                   "#row"
                 ],
                 "note": "not found in the lookup table",
-                "message": "Row at position \"27\" violates the foreign key: not found in the lookup table",
+                "message": "Row at position \"26\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 25,
+                "rowPosition": 26,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"26\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -44834,8 +45211,8 @@
                   "vr_devolvido",
                   "vr_liqpag"
                 ],
-                "rowNumber": 27,
-                "rowPosition": 28,
+                "rowNumber": 26,
+                "rowPosition": 27,
                 "code": "foreign-key-error",
                 "name": "ForeignKey Error",
                 "tags": [
@@ -44843,7 +45220,7 @@
                   "#row"
                 ],
                 "note": "not found in the lookup table",
-                "message": "Row at position \"28\" violates the foreign key: not found in the lookup table",
+                "message": "Row at position \"27\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -44931,6 +45308,93 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"28\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 27,
+                "rowPosition": 28,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"28\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 28,
+                "rowPosition": 29,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"29\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 28,
+                "rowPosition": 29,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"29\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -46690,6 +47154,64 @@
                   "vr_devolvido",
                   "vr_liqpag"
                 ],
+                "rowNumber": 44,
+                "rowPosition": 45,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"45\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 44,
+                "rowPosition": 45,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"45\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
                 "rowNumber": 45,
                 "rowPosition": 46,
                 "code": "foreign-key-error",
@@ -47077,6 +47599,122 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"49\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 48,
+                "rowPosition": 49,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"49\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 48,
+                "rowPosition": 49,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"49\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 49,
+                "rowPosition": 50,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"50\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 49,
+                "rowPosition": 50,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"50\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -47734,6 +48372,93 @@
                   "vr_devolvido",
                   "vr_liqpag"
                 ],
+                "rowNumber": 56,
+                "rowPosition": 57,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"57\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 56,
+                "rowPosition": 57,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"57\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 57,
+                "rowPosition": 58,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"58\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
                 "rowNumber": 57,
                 "rowPosition": 58,
                 "code": "foreign-key-error",
@@ -47792,8 +48517,8 @@
                   "vr_devolvido",
                   "vr_liqpag"
                 ],
-                "rowNumber": 58,
-                "rowPosition": 59,
+                "rowNumber": 57,
+                "rowPosition": 58,
                 "code": "foreign-key-error",
                 "name": "ForeignKey Error",
                 "tags": [
@@ -47801,7 +48526,7 @@
                   "#row"
                 ],
                 "note": "not found in the lookup table",
-                "message": "Row at position \"59\" violates the foreign key: not found in the lookup table",
+                "message": "Row at position \"58\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -47889,6 +48614,151 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"59\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 58,
+                "rowPosition": 59,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"59\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 59,
+                "rowPosition": 60,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"60\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 59,
+                "rowPosition": 60,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"60\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 60,
+                "rowPosition": 61,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"61\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 60,
+                "rowPosition": 61,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"61\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -48005,6 +48875,122 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"62\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 61,
+                "rowPosition": 62,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"62\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 61,
+                "rowPosition": 62,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"62\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 62,
+                "rowPosition": 63,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"63\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 62,
+                "rowPosition": 63,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"63\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -48295,6 +49281,64 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"65\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 65,
+                "rowPosition": 66,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"66\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 65,
+                "rowPosition": 66,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"66\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -48933,6 +49977,122 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"72\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 72,
+                "rowPosition": 73,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"73\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 72,
+                "rowPosition": 73,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"73\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 73,
+                "rowPosition": 74,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"74\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 73,
+                "rowPosition": 74,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"74\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -50054,6 +51214,93 @@
                   "vr_devolvido",
                   "vr_liqpag"
                 ],
+                "rowNumber": 84,
+                "rowPosition": 85,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"85\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 84,
+                "rowPosition": 85,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"85\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 85,
+                "rowPosition": 86,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"86\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
                 "rowNumber": 85,
                 "rowPosition": 86,
                 "code": "foreign-key-error",
@@ -50112,8 +51359,8 @@
                   "vr_devolvido",
                   "vr_liqpag"
                 ],
-                "rowNumber": 86,
-                "rowPosition": 87,
+                "rowNumber": 85,
+                "rowPosition": 86,
                 "code": "foreign-key-error",
                 "name": "ForeignKey Error",
                 "tags": [
@@ -50121,7 +51368,7 @@
                   "#row"
                 ],
                 "note": "not found in the lookup table",
-                "message": "Row at position \"87\" violates the foreign key: not found in the lookup table",
+                "message": "Row at position \"86\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -50209,6 +51456,93 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"87\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 86,
+                "rowPosition": 87,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"87\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 87,
+                "rowPosition": 88,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"88\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 87,
+                "rowPosition": 88,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"88\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -50808,6 +52142,64 @@
                   "vr_devolvido",
                   "vr_liqpag"
                 ],
+                "rowNumber": 94,
+                "rowPosition": 95,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"95\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 94,
+                "rowPosition": 95,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"95\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
                 "rowNumber": 95,
                 "rowPosition": 96,
                 "code": "foreign-key-error",
@@ -50905,6 +52297,64 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"97\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 97,
+                "rowPosition": 98,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"98\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_documento_viagem",
+                  "id_empenho",
+                  "id_programa",
+                  "id_funcao",
+                  "id_fonte",
+                  "id_item",
+                  "id_acao",
+                  "fl_passagem",
+                  "nr_liquidacao",
+                  "nr_pagamento",
+                  "dt_liquidacao",
+                  "dt_pagamento",
+                  "vr_devolvido",
+                  "vr_liqpag"
+                ],
+                "rowNumber": 97,
+                "rowPosition": 98,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"98\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               },
               {
@@ -51736,64 +53186,6 @@
                   "vr_devolvido",
                   "vr_liqpag"
                 ],
-                "rowNumber": 104,
-                "rowPosition": 105,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"105\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 104,
-                "rowPosition": 105,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"105\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
                 "rowNumber": 105,
                 "rowPosition": 106,
                 "code": "foreign-key-error",
@@ -70393,1398 +71785,6 @@
                 ],
                 "note": "not found in the lookup table",
                 "message": "Row at position \"266\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 265,
-                "rowPosition": 266,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"266\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 265,
-                "rowPosition": 266,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"266\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 266,
-                "rowPosition": 267,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"267\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 266,
-                "rowPosition": 267,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"267\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 266,
-                "rowPosition": 267,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"267\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 266,
-                "rowPosition": 267,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"267\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 267,
-                "rowPosition": 268,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"268\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 267,
-                "rowPosition": 268,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"268\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 267,
-                "rowPosition": 268,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"268\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 267,
-                "rowPosition": 268,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"268\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 268,
-                "rowPosition": 269,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"269\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 268,
-                "rowPosition": 269,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"269\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 268,
-                "rowPosition": 269,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"269\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 268,
-                "rowPosition": 269,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"269\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 269,
-                "rowPosition": 270,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"270\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 269,
-                "rowPosition": 270,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"270\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 269,
-                "rowPosition": 270,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"270\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 269,
-                "rowPosition": 270,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"270\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 270,
-                "rowPosition": 271,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"271\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 270,
-                "rowPosition": 271,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"271\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 270,
-                "rowPosition": 271,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"271\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 270,
-                "rowPosition": 271,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"271\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 271,
-                "rowPosition": 272,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"272\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 271,
-                "rowPosition": 272,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"272\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 271,
-                "rowPosition": 272,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"272\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 271,
-                "rowPosition": 272,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"272\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 272,
-                "rowPosition": 273,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"273\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 272,
-                "rowPosition": 273,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"273\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 272,
-                "rowPosition": 273,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"273\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 272,
-                "rowPosition": 273,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"273\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 273,
-                "rowPosition": 274,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"274\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 273,
-                "rowPosition": 274,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"274\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 273,
-                "rowPosition": 274,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"274\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 273,
-                "rowPosition": 274,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"274\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 274,
-                "rowPosition": 275,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"275\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 274,
-                "rowPosition": 275,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"275\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 274,
-                "rowPosition": 275,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"275\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 274,
-                "rowPosition": 275,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"275\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 275,
-                "rowPosition": 276,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"276\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 275,
-                "rowPosition": 276,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"276\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 275,
-                "rowPosition": 276,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"276\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 275,
-                "rowPosition": 276,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"276\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 276,
-                "rowPosition": 277,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"277\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 276,
-                "rowPosition": 277,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"277\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 276,
-                "rowPosition": 277,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"277\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 276,
-                "rowPosition": 277,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"277\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 277,
-                "rowPosition": 278,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"278\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_documento_viagem",
-                  "id_empenho",
-                  "id_programa",
-                  "id_funcao",
-                  "id_fonte",
-                  "id_item",
-                  "id_acao",
-                  "fl_passagem",
-                  "nr_liquidacao",
-                  "nr_pagamento",
-                  "dt_liquidacao",
-                  "dt_pagamento",
-                  "vr_devolvido",
-                  "vr_liqpag"
-                ],
-                "rowNumber": 277,
-                "rowPosition": 278,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"278\" violates the foreign key: not found in the lookup table",
                 "description": "Values in the foreign key fields should exist in the reference table"
               }
             ],
