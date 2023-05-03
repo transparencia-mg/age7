@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 65.185,
+  "time": 64.236,
   "errors": [],
   "tasks": [
     {
@@ -176,13 +176,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "7e7b82396223dd03ba199ad722b44f35",
-          "bytes": 10158538,
+          "hash": "0219255faf0588b006d4ba7939d1033e",
+          "bytes": 10159972,
           "fields": 7,
           "rows": 0
         }
       },
-      "time": 65.185,
+      "time": 64.236,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -7111,28 +7111,6 @@
           ],
           "note": "not found in the lookup table",
           "message": "Row at position \"974\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_processo",
-            "id_empenho",
-            "id_programa",
-            "id_acao",
-            "id_elemento",
-            "id_item",
-            "dotacao_orcamentaria"
-          ],
-          "rowNumber": 974,
-          "rowPosition": 975,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"975\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -22223,6 +22201,28 @@
           ],
           "note": "not found in the lookup table",
           "message": "Row at position \"2701\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_processo",
+            "id_empenho",
+            "id_programa",
+            "id_acao",
+            "id_elemento",
+            "id_item",
+            "dotacao_orcamentaria"
+          ],
+          "rowNumber": 2701,
+          "rowPosition": 2702,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2702\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         }
       ],
