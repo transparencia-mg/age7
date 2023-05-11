@@ -1047,3 +1047,108 @@ Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating data and metadata of resource ft_obra.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
+[main a1b63906] Atualização age7
+ 301 files changed, 735949 insertions(+), 3780405 deletions(-)
+ create mode 100644 build_datasets/compras_contratos/CHANGELOG.md
+ create mode 100644 build_datasets/compras_contratos/CONTRIBUTING.md
+ create mode 100644 build_datasets/compras_contratos/README.md
+ create mode 100644 build_datasets/compras_contratos/datapackage.json
+ create mode 100644 build_datasets/convenios-entrada/CHANGELOG.md
+ create mode 100644 build_datasets/convenios-entrada/CONTRIBUTING.md
+ create mode 100644 build_datasets/convenios-entrada/README.md
+ create mode 100644 build_datasets/convenios-entrada/datapackage.json
+ create mode 100644 build_datasets/convenios-saida/CHANGELOG.md
+ create mode 100644 build_datasets/convenios-saida/CONTRIBUTING.md
+ create mode 100644 build_datasets/convenios-saida/README.md
+ create mode 100644 build_datasets/convenios-saida/datapackage.json
+ create mode 100644 build_datasets/despesa-com-pessoal/CHANGELOG.md
+ create mode 100644 build_datasets/despesa-com-pessoal/CONTRIBUTING.md
+ create mode 100644 build_datasets/despesa-com-pessoal/README.md
+ create mode 100644 build_datasets/despesa-com-pessoal/datapackage.json
+ create mode 100644 build_datasets/despesa/CHANGELOG.md
+ create mode 100644 build_datasets/despesa/CONTRIBUTING.md
+ create mode 100644 build_datasets/despesa/README.md
+ create mode 100644 build_datasets/despesa/datapackage.json
+ create mode 100644 build_datasets/diarias/CHANGELOG.md
+ create mode 100644 build_datasets/diarias/CONTRIBUTING.md
+ create mode 100644 build_datasets/diarias/README.md
+ create mode 100644 build_datasets/diarias/datapackage.json
+ create mode 100644 build_datasets/execucao-da-divida/CHANGELOG.md
+ create mode 100644 build_datasets/execucao-da-divida/CONTRIBUTING.md
+ create mode 100644 build_datasets/execucao-da-divida/README.md
+ create mode 100644 build_datasets/execucao-da-divida/datapackage.json
+ create mode 100644 build_datasets/planejamento-e-monitoramento/CHANGELOG.md
+ create mode 100644 build_datasets/planejamento-e-monitoramento/CONTRIBUTING.md
+ create mode 100644 build_datasets/planejamento-e-monitoramento/README.md
+ create mode 100644 build_datasets/planejamento-e-monitoramento/datapackage.json
+ create mode 100644 build_datasets/proposta-lei-orcamentaria/CHANGELOG.md
+ create mode 100644 build_datasets/proposta-lei-orcamentaria/CONTRIBUTING.md
+ create mode 100644 build_datasets/proposta-lei-orcamentaria/README.md
+ create mode 100644 build_datasets/proposta-lei-orcamentaria/datapackage.json
+ create mode 100644 build_datasets/receita/CHANGELOG.md
+ create mode 100644 build_datasets/receita/CONTRIBUTING.md
+ create mode 100644 build_datasets/receita/README.md
+ create mode 100644 build_datasets/receita/datapackage.json
+ create mode 100644 build_datasets/restos_pagar/CHANGELOG.md
+ create mode 100644 build_datasets/restos_pagar/CONTRIBUTING.md
+ create mode 100644 build_datasets/restos_pagar/README.md
+ create mode 100644 build_datasets/restos_pagar/datapackage.json
+ create mode 100644 build_datasets/transferencia-de-impostos-a-municipios/CHANGELOG.md
+ create mode 100644 build_datasets/transferencia-de-impostos-a-municipios/CONTRIBUTING.md
+ create mode 100644 build_datasets/transferencia-de-impostos-a-municipios/README.md
+ create mode 100644 build_datasets/transferencia-de-impostos-a-municipios/datapackage.json
+ create mode 100644 build_datasets/viagens/CHANGELOG.md
+ create mode 100644 build_datasets/viagens/CONTRIBUTING.md
+ create mode 100644 build_datasets/viagens/README.md
+ create mode 100644 build_datasets/viagens/datapackage.json
+ rewrite datapackage.json (87%)
+ create mode 100644 logs/build.txt
+ rewrite logs/check_validation.txt (85%)
+ rewrite logs/cron.txt (67%)
+ create mode 100644 logs/tests/test_dm_favorecido_scdp.Rout
+ create mode 100644 logs/update/compras_contratos.txt
+ create mode 100644 logs/update/convenios-entrada.txt
+ create mode 100644 logs/update/convenios-saida.txt
+ create mode 100644 logs/update/despesa-com-pessoal.txt
+ create mode 100644 logs/update/despesa.txt
+ create mode 100644 logs/update/diarias.txt
+ create mode 100644 logs/update/execucao-da-divida.txt
+ create mode 100644 logs/update/planejamento-e-monitoramento.txt
+ create mode 100644 logs/update/proposta-lei-orcamentaria.txt
+ create mode 100644 logs/update/receita.txt
+ create mode 100644 logs/update/restos_pagar.txt
+ create mode 100644 logs/update/transferencia-de-impostos-a-municipios.txt
+ create mode 100644 logs/update/viagens.txt
+ rewrite logs/validate/failed_reports.json (94%)
+ rewrite logs/validate/fl_compras_empenho.json (98%)
+ rewrite logs/validate/fl_despesa_pgto.json (99%)
+ rewrite logs/validate/ft_compras.json (92%)
+ rewrite logs/validate/ft_convenio_entrada_desp.json (99%)
+ rewrite logs/validate/ft_convenio_investimento.json (99%)
+ rewrite logs/validate/ft_despesa_2022.json (98%)
+ rewrite logs/validate/ft_despesa_2023.json (98%)
+ rewrite logs/validate/ft_diarias_2022.json (98%)
+ rewrite logs/validate/ft_diarias_2023.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2002.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2003.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2004.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2005.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2006.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2007.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2008.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2009.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2010.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2011.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2012.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2013.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2014.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2015.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2016.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2017.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2018.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2019.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2020.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2021.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2022.json (98%)
+ rewrite logs/validate/ft_restos_pagar_2023.json (98%)
+ rewrite report/index.html (92%)
