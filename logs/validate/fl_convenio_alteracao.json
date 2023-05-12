@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 7.098,
+  "time": 7.079,
   "errors": [],
   "tasks": [
     {
@@ -92,13 +92,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "27261ec84d27b47052c6369eaddc3733",
-          "bytes": 3568357,
+          "hash": "1c5fcb589817aef8ebc963e7e2493f4b",
+          "bytes": 3412595,
           "fields": 5,
-          "rows": 47714
+          "rows": 47726
         }
       },
-      "time": 7.098,
+      "time": 7.079,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -120,177 +120,16 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [
-        {
-          "cells": [
-            "id_convenio",
-            "nr_alteracao",
-            "dt_publicacao",
-            "tp_alteracao",
-            "objetivo"
-          ],
-          "rowNumber": 47216,
-          "rowPosition": 47217,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"47217\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_convenio",
-            "nr_alteracao",
-            "dt_publicacao",
-            "tp_alteracao",
-            "objetivo"
-          ],
-          "rowNumber": 47217,
-          "rowPosition": 47218,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"47218\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_convenio",
-            "nr_alteracao",
-            "dt_publicacao",
-            "tp_alteracao",
-            "objetivo"
-          ],
-          "rowNumber": 47295,
-          "rowPosition": 47296,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"47296\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_convenio",
-            "nr_alteracao",
-            "dt_publicacao",
-            "tp_alteracao",
-            "objetivo"
-          ],
-          "rowNumber": 47336,
-          "rowPosition": 47337,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"47337\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_convenio",
-            "nr_alteracao",
-            "dt_publicacao",
-            "tp_alteracao",
-            "objetivo"
-          ],
-          "rowNumber": 47379,
-          "rowPosition": 47380,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"47380\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_convenio",
-            "nr_alteracao",
-            "dt_publicacao",
-            "tp_alteracao",
-            "objetivo"
-          ],
-          "rowNumber": 47410,
-          "rowPosition": 47411,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"47411\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_convenio",
-            "nr_alteracao",
-            "dt_publicacao",
-            "tp_alteracao",
-            "objetivo"
-          ],
-          "rowNumber": 47416,
-          "rowPosition": 47417,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"47417\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_convenio",
-            "nr_alteracao",
-            "dt_publicacao",
-            "tp_alteracao",
-            "objetivo"
-          ],
-          "rowNumber": 47453,
-          "rowPosition": 47454,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"47454\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        }
-      ],
+      "errors": [],
       "stats": {
-        "errors": 8
+        "errors": 0
       },
-      "valid": false
+      "valid": true
     }
   ],
   "stats": {
-    "errors": 8,
+    "errors": 0,
     "tasks": 1
   },
-  "valid": false
+  "valid": true
 }
