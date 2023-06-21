@@ -2446,7 +2446,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 7.22,
+        "time": 7.097,
         "errors": [],
         "tasks": [
           {
@@ -2538,13 +2538,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "c573ba7a685e42c161110a7244aefe46",
-                "bytes": 3471485,
+                "hash": "953150e9dcdbdc85950bdf734aa4566d",
+                "bytes": 3469696,
                 "fields": 5,
-                "rows": 48023
+                "rows": 48028
               }
             },
-            "time": 7.22,
+            "time": 7.097,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2566,18 +2566,39 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [],
+            "errors": [
+              {
+                "cells": [
+                  "id_convenio",
+                  "nr_alteracao",
+                  "dt_publicacao",
+                  "tp_alteracao",
+                  "objetivo"
+                ],
+                "rowNumber": 47163,
+                "rowPosition": 47164,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"47164\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              }
+            ],
             "stats": {
-              "errors": 0
+              "errors": 1
             },
-            "valid": true
+            "valid": false
           }
         ],
         "stats": {
-          "errors": 0,
+          "errors": 1,
           "tasks": 1
         },
-        "valid": true
+        "valid": false
       }
     },
     {
