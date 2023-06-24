@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 7.121,
+  "time": 7.138,
   "errors": [],
   "tasks": [
     {
@@ -92,13 +92,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "602942a540faf9b9abd725d4333073ee",
-          "bytes": 3471835,
+          "hash": "715d55130c32497dbd45b3a35b82a09b",
+          "bytes": 3472600,
           "fields": 5,
-          "rows": 48057
+          "rows": 48065
         }
       },
-      "time": 7.121,
+      "time": 7.138,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -129,8 +129,8 @@
             "tp_alteracao",
             "objetivo"
           ],
-          "rowNumber": 47215,
-          "rowPosition": 47216,
+          "rowNumber": 47217,
+          "rowPosition": 47218,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -138,18 +138,38 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"47216\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"47218\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_convenio",
+            "nr_alteracao",
+            "dt_publicacao",
+            "tp_alteracao",
+            "objetivo"
+          ],
+          "rowNumber": 47219,
+          "rowPosition": 47220,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"47220\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         }
       ],
       "stats": {
-        "errors": 1
+        "errors": 2
       },
       "valid": false
     }
   ],
   "stats": {
-    "errors": 1,
+    "errors": 2,
     "tasks": 1
   },
   "valid": false
