@@ -1420,7 +1420,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 66.819,
+        "time": 66.407,
         "errors": [],
         "tasks": [
           {
@@ -1546,13 +1546,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "7996bfc199e6f93e647d9037ac74348b",
-                "bytes": 16920766,
+                "hash": "dfeb76040e04882d4c59a86b4cc9dbad",
+                "bytes": 16934777,
                 "fields": 9,
-                "rows": 1003001
+                "rows": 1003780
               }
             },
-            "time": 66.819,
+            "time": 66.407,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2020,7 +2020,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 7.224,
+        "time": 7.217,
         "errors": [],
         "tasks": [
           {
@@ -2096,13 +2096,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "5bf7a13fbc003d6ce853cba7e8c6efa5",
-                "bytes": 9110487,
+                "hash": "f7ee678945a705332ae9931b972bed23",
+                "bytes": 9130295,
                 "fields": 4,
-                "rows": 196420
+                "rows": 196433
               }
             },
-            "time": 7.224,
+            "time": 7.217,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2487,7 +2487,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 33.552,
+        "time": 33.812,
         "errors": [],
         "tasks": [
           {
@@ -2666,13 +2666,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "1f4cb8a0af2f0a23e1fdd40646c5f072",
-                "bytes": 24951001,
+                "hash": "c439de4ee64f360265d2eec55aecb41c",
+                "bytes": 24960099,
                 "fields": 14,
-                "rows": 396140
+                "rows": 396219
               }
             },
-            "time": 33.552,
+            "time": 33.812,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2771,7 +2771,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.09,
+        "time": 0.092,
         "errors": [],
         "tasks": [
           {
@@ -2836,13 +2836,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "8fd3bcc641f41a3f159f0d824d0df5b7",
-                "bytes": 16389,
+                "hash": "a9d7ec1846116a30b5117b8dba898431",
+                "bytes": 16397,
                 "fields": 3,
-                "rows": 2002
+                "rows": 2003
               }
             },
-            "time": 0.09,
+            "time": 0.092,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3052,7 +3052,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 133.619,
+        "time": 132.994,
         "errors": [],
         "tasks": [
           {
@@ -3228,13 +3228,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "d83c3832c611048057a441d62a7e8e32",
-                "bytes": 10270268,
+                "hash": "eaeee508778b84413c6d71118d22fd0e",
+                "bytes": 10272096,
                 "fields": 7,
-                "rows": 1003508
+                "rows": 1004287
               }
             },
-            "time": 133.619,
+            "time": 132.994,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3271,8 +3271,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 822952,
-                "rowPosition": 822953,
+                "rowNumber": 822538,
+                "rowPosition": 822539,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3281,7 +3281,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822953\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822539\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3298,8 +3298,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 822953,
-                "rowPosition": 822954,
+                "rowNumber": 822539,
+                "rowPosition": 822540,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3308,7 +3308,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822954\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822540\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3325,8 +3325,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 822954,
-                "rowPosition": 822955,
+                "rowNumber": 822540,
+                "rowPosition": 822541,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3335,7 +3335,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822955\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822541\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3352,8 +3352,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 822955,
-                "rowPosition": 822956,
+                "rowNumber": 822541,
+                "rowPosition": 822542,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3362,7 +3362,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822956\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822542\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3379,8 +3379,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 822956,
-                "rowPosition": 822957,
+                "rowNumber": 822542,
+                "rowPosition": 822543,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3389,7 +3389,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822957\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822543\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3406,8 +3406,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 822957,
-                "rowPosition": 822958,
+                "rowNumber": 822543,
+                "rowPosition": 822544,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3416,7 +3416,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822958\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822544\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3433,8 +3433,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 822958,
-                "rowPosition": 822959,
+                "rowNumber": 822544,
+                "rowPosition": 822545,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3443,7 +3443,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822959\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"822545\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3460,8 +3460,8 @@
                   "2736",
                   "2160 11.334.039.4373.1 3.3.90.39.19 0.1.1"
                 ],
-                "rowNumber": 842907,
-                "rowPosition": 842908,
+                "rowNumber": 844057,
+                "rowPosition": 844058,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3470,7 +3470,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"2160 11.334.039.4373.1 3.3.90.39.19 0.1.1\" in row at position \"842908\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"2160 11.334.039.4373.1 3.3.90.39.19 0.1.1\" in row at position \"844058\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3487,8 +3487,8 @@
                   "3088",
                   "1400 06.182.155.4472.1 4.4.90.52.26 0.2.1"
                 ],
-                "rowNumber": 892431,
-                "rowPosition": 892432,
+                "rowNumber": 892762,
+                "rowPosition": 892763,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3497,7 +3497,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.26 0.2.1\" in row at position \"892432\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.26 0.2.1\" in row at position \"892763\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3514,8 +3514,8 @@
                   "2611",
                   "1450 06.181.139.4412.1 4.4.90.52.07 1.1.1"
                 ],
-                "rowNumber": 903612,
-                "rowPosition": 903613,
+                "rowNumber": 903435,
+                "rowPosition": 903436,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3524,7 +3524,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1450 06.181.139.4412.1 4.4.90.52.07 1.1.1\" in row at position \"903613\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1450 06.181.139.4412.1 4.4.90.52.07 1.1.1\" in row at position \"903436\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3541,8 +3541,8 @@
                   "3019",
                   "1400 06.182.155.4472.1 4.4.90.52.17 0.2.1"
                 ],
-                "rowNumber": 904018,
-                "rowPosition": 904019,
+                "rowNumber": 903758,
+                "rowPosition": 903759,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3551,7 +3551,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.17 0.2.1\" in row at position \"904019\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.17 0.2.1\" in row at position \"903759\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3568,8 +3568,8 @@
                   "3019",
                   "1400 06.182.155.4472.1 4.4.90.52.17 0.2.1"
                 ],
-                "rowNumber": 904019,
-                "rowPosition": 904020,
+                "rowNumber": 903759,
+                "rowPosition": 903760,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3578,7 +3578,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.17 0.2.1\" in row at position \"904020\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.17 0.2.1\" in row at position \"903760\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3595,8 +3595,8 @@
                   "3019",
                   "1400 06.182.155.4472.1 4.4.90.52.17 0.2.1"
                 ],
-                "rowNumber": 906610,
-                "rowPosition": 906611,
+                "rowNumber": 906043,
+                "rowPosition": 906044,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3605,7 +3605,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.17 0.2.1\" in row at position \"906611\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.17 0.2.1\" in row at position \"906044\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3622,8 +3622,8 @@
                   "2742",
                   "1400 06.182.155.4472.1 4.4.90.52.03 0.1.1"
                 ],
-                "rowNumber": 906624,
-                "rowPosition": 906625,
+                "rowNumber": 906057,
+                "rowPosition": 906058,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3632,7 +3632,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.03 0.1.1\" in row at position \"906625\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.03 0.1.1\" in row at position \"906058\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3649,8 +3649,8 @@
                   "2742",
                   "1400 06.182.155.4472.1 4.4.90.52.03 0.1.1"
                 ],
-                "rowNumber": 906625,
-                "rowPosition": 906626,
+                "rowNumber": 906058,
+                "rowPosition": 906059,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3659,7 +3659,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.03 0.1.1\" in row at position \"906626\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.03 0.1.1\" in row at position \"906059\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3676,8 +3676,8 @@
                   "2742",
                   "1400 06.182.155.4472.1 4.4.90.52.03 0.2.1"
                 ],
-                "rowNumber": 906627,
-                "rowPosition": 906628,
+                "rowNumber": 906060,
+                "rowPosition": 906061,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3686,7 +3686,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.03 0.2.1\" in row at position \"906628\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1400 06.182.155.4472.1 4.4.90.52.03 0.2.1\" in row at position \"906061\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3703,8 +3703,8 @@
                   "2611",
                   "1250 06.181.034.4048.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 919597,
-                "rowPosition": 919598,
+                "rowNumber": 917745,
+                "rowPosition": 917746,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3713,7 +3713,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1250 06.181.034.4048.1 4.4.90.52.07 0.1.1\" in row at position \"919598\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1250 06.181.034.4048.1 4.4.90.52.07 0.1.1\" in row at position \"917746\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3730,8 +3730,8 @@
                   "3019",
                   "1250 06.181.034.4048.1 4.4.90.52.17 0.2.1"
                 ],
-                "rowNumber": 929420,
-                "rowPosition": 929421,
+                "rowNumber": 926908,
+                "rowPosition": 926909,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3740,7 +3740,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1250 06.181.034.4048.1 4.4.90.52.17 0.2.1\" in row at position \"929421\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1250 06.181.034.4048.1 4.4.90.52.17 0.2.1\" in row at position \"926909\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3757,8 +3757,8 @@
                   "3019",
                   "1250 06.181.034.4048.1 4.4.90.52.17 0.2.1"
                 ],
-                "rowNumber": 929421,
-                "rowPosition": 929422,
+                "rowNumber": 926909,
+                "rowPosition": 926910,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3767,7 +3767,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1250 06.181.034.4048.1 4.4.90.52.17 0.2.1\" in row at position \"929422\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1250 06.181.034.4048.1 4.4.90.52.17 0.2.1\" in row at position \"926910\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3784,8 +3784,8 @@
                   "2816",
                   "1250 06.181.034.4048.1 4.4.90.51.03 0.1.1"
                 ],
-                "rowNumber": 932196,
-                "rowPosition": 932197,
+                "rowNumber": 929639,
+                "rowPosition": 929640,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3794,7 +3794,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1250 06.181.034.4048.1 4.4.90.51.03 0.1.1\" in row at position \"932197\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1250 06.181.034.4048.1 4.4.90.51.03 0.1.1\" in row at position \"929640\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3811,8 +3811,8 @@
                   "3019",
                   "1250 06.181.034.4048.1 4.4.90.52.17 0.1.1"
                 ],
-                "rowNumber": 936415,
-                "rowPosition": 936416,
+                "rowNumber": 933825,
+                "rowPosition": 933826,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3821,7 +3821,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1250 06.181.034.4048.1 4.4.90.52.17 0.1.1\" in row at position \"936416\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1250 06.181.034.4048.1 4.4.90.52.17 0.1.1\" in row at position \"933826\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3838,8 +3838,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 937551,
-                "rowPosition": 937552,
+                "rowNumber": 934945,
+                "rowPosition": 934946,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3848,7 +3848,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"937552\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"934946\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3865,8 +3865,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 937552,
-                "rowPosition": 937553,
+                "rowNumber": 934946,
+                "rowPosition": 934947,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3875,7 +3875,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"937553\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"934947\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3892,8 +3892,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 937553,
-                "rowPosition": 937554,
+                "rowNumber": 934947,
+                "rowPosition": 934948,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3902,7 +3902,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"937554\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"934948\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3919,8 +3919,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 937554,
-                "rowPosition": 937555,
+                "rowNumber": 934948,
+                "rowPosition": 934949,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3929,7 +3929,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"937555\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"934949\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3946,8 +3946,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 937555,
-                "rowPosition": 937556,
+                "rowNumber": 934949,
+                "rowPosition": 934950,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3956,7 +3956,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"937556\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"934950\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -3973,8 +3973,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 937556,
-                "rowPosition": 937557,
+                "rowNumber": 934950,
+                "rowPosition": 934951,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -3983,7 +3983,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"937557\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"934951\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4000,8 +4000,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 937557,
-                "rowPosition": 937558,
+                "rowNumber": 934951,
+                "rowPosition": 934952,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4010,7 +4010,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"937558\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"934952\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4027,8 +4027,8 @@
                   "2611",
                   "1510 06.181.005.1068.1 4.4.90.52.07 1.1.1"
                 ],
-                "rowNumber": 937560,
-                "rowPosition": 937561,
+                "rowNumber": 934954,
+                "rowPosition": 934955,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4037,7 +4037,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.1068.1 4.4.90.52.07 1.1.1\" in row at position \"937561\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.1068.1 4.4.90.52.07 1.1.1\" in row at position \"934955\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4054,8 +4054,8 @@
                   "2611",
                   "1510 06.181.005.1068.1 4.4.90.52.07 1.1.1"
                 ],
-                "rowNumber": 937561,
-                "rowPosition": 937562,
+                "rowNumber": 934955,
+                "rowPosition": 934956,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4064,7 +4064,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.1068.1 4.4.90.52.07 1.1.1\" in row at position \"937562\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.1068.1 4.4.90.52.07 1.1.1\" in row at position \"934956\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4081,8 +4081,8 @@
                   "2611",
                   "1510 06.181.005.1068.1 4.4.90.52.07 1.1.1"
                 ],
-                "rowNumber": 937562,
-                "rowPosition": 937563,
+                "rowNumber": 934956,
+                "rowPosition": 934957,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4091,7 +4091,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.1068.1 4.4.90.52.07 1.1.1\" in row at position \"937563\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.1068.1 4.4.90.52.07 1.1.1\" in row at position \"934957\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4108,8 +4108,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 944445,
-                "rowPosition": 944446,
+                "rowNumber": 941968,
+                "rowPosition": 941969,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4118,7 +4118,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"944446\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"941969\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4135,8 +4135,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 944446,
-                "rowPosition": 944447,
+                "rowNumber": 941969,
+                "rowPosition": 941970,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4145,7 +4145,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"944447\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"941970\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4162,8 +4162,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 944447,
-                "rowPosition": 944448,
+                "rowNumber": 941970,
+                "rowPosition": 941971,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4172,7 +4172,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"944448\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"941971\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4189,8 +4189,8 @@
                   "2743",
                   "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
                 ],
-                "rowNumber": 949516,
-                "rowPosition": 949517,
+                "rowNumber": 947416,
+                "rowPosition": 947417,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4199,7 +4199,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"949517\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"947417\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4216,8 +4216,8 @@
                   "2743",
                   "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
                 ],
-                "rowNumber": 949517,
-                "rowPosition": 949518,
+                "rowNumber": 947417,
+                "rowPosition": 947418,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4226,7 +4226,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"949518\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"947418\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4243,8 +4243,8 @@
                   "2743",
                   "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
                 ],
-                "rowNumber": 949518,
-                "rowPosition": 949519,
+                "rowNumber": 947418,
+                "rowPosition": 947419,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4253,7 +4253,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"949519\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"947419\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4270,8 +4270,8 @@
                   "2743",
                   "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
                 ],
-                "rowNumber": 949519,
-                "rowPosition": 949520,
+                "rowNumber": 947419,
+                "rowPosition": 947420,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4280,7 +4280,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"949520\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"947420\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4297,8 +4297,8 @@
                   "2743",
                   "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
                 ],
-                "rowNumber": 949520,
-                "rowPosition": 949521,
+                "rowNumber": 947420,
+                "rowPosition": 947421,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4307,7 +4307,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"949521\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"947421\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4324,8 +4324,8 @@
                   "2743",
                   "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
                 ],
-                "rowNumber": 949521,
-                "rowPosition": 949522,
+                "rowNumber": 947421,
+                "rowPosition": 947422,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4334,7 +4334,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"949522\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"947422\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4351,8 +4351,8 @@
                   "2743",
                   "1510 06.181.005.4025.1 4.4.90.52.06 0.1.1"
                 ],
-                "rowNumber": 949522,
-                "rowPosition": 949523,
+                "rowNumber": 947422,
+                "rowPosition": 947423,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4361,7 +4361,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"949523\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.06 0.1.1\" in row at position \"947423\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4378,8 +4378,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 966640,
-                "rowPosition": 966641,
+                "rowNumber": 964461,
+                "rowPosition": 964462,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4388,7 +4388,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"966641\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"964462\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4405,8 +4405,8 @@
                   "2611",
                   "1510 06.181.005.1068.1 4.4.90.52.07 1.1.1"
                 ],
-                "rowNumber": 966641,
-                "rowPosition": 966642,
+                "rowNumber": 964462,
+                "rowPosition": 964463,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4415,7 +4415,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.1068.1 4.4.90.52.07 1.1.1\" in row at position \"966642\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.1068.1 4.4.90.52.07 1.1.1\" in row at position \"964463\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4432,8 +4432,8 @@
                   "3105",
                   "1510 06.181.005.4022.1 4.4.90.40.06 0.1.1"
                 ],
-                "rowNumber": 981523,
-                "rowPosition": 981524,
+                "rowNumber": 976746,
+                "rowPosition": 976747,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4442,7 +4442,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4022.1 4.4.90.40.06 0.1.1\" in row at position \"981524\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4022.1 4.4.90.40.06 0.1.1\" in row at position \"976747\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4459,8 +4459,8 @@
                   "3105",
                   "1510 06.181.005.4025.1 4.4.90.40.06 0.1.1"
                 ],
-                "rowNumber": 981524,
-                "rowPosition": 981525,
+                "rowNumber": 976747,
+                "rowPosition": 976748,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4469,7 +4469,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.40.06 0.1.1\" in row at position \"981525\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.40.06 0.1.1\" in row at position \"976748\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4486,8 +4486,8 @@
                   "2611",
                   "1510 06.181.005.4022.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 981525,
-                "rowPosition": 981526,
+                "rowNumber": 976748,
+                "rowPosition": 976749,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4496,7 +4496,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4022.1 4.4.90.52.07 0.1.1\" in row at position \"981526\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4022.1 4.4.90.52.07 0.1.1\" in row at position \"976749\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4513,8 +4513,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 981526,
-                "rowPosition": 981527,
+                "rowNumber": 976749,
+                "rowPosition": 976750,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4523,7 +4523,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"981527\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"976750\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4540,8 +4540,8 @@
                   "3019",
                   "1510 06.181.005.4022.1 4.4.90.52.17 0.1.1"
                 ],
-                "rowNumber": 982049,
-                "rowPosition": 982050,
+                "rowNumber": 977097,
+                "rowPosition": 977098,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4550,7 +4550,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4022.1 4.4.90.52.17 0.1.1\" in row at position \"982050\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4022.1 4.4.90.52.17 0.1.1\" in row at position \"977098\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4567,8 +4567,8 @@
                   "3019",
                   "1510 06.181.005.4025.1 4.4.90.52.17 0.2.1"
                 ],
-                "rowNumber": 982050,
-                "rowPosition": 982051,
+                "rowNumber": 977098,
+                "rowPosition": 977099,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4577,7 +4577,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.17 0.2.1\" in row at position \"982051\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.17 0.2.1\" in row at position \"977099\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4594,8 +4594,8 @@
                   "3019",
                   "1510 06.181.005.4025.1 4.4.90.52.17 0.2.1"
                 ],
-                "rowNumber": 982051,
-                "rowPosition": 982052,
+                "rowNumber": 977099,
+                "rowPosition": 977100,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4604,7 +4604,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.17 0.2.1\" in row at position \"982052\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.17 0.2.1\" in row at position \"977100\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4621,8 +4621,8 @@
                   "3078",
                   "2350 12.364.021.4069.1 4.4.90.52.25 0.1.1"
                 ],
-                "rowNumber": 982150,
-                "rowPosition": 982151,
+                "rowNumber": 977170,
+                "rowPosition": 977171,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4631,7 +4631,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"2350 12.364.021.4069.1 4.4.90.52.25 0.1.1\" in row at position \"982151\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"2350 12.364.021.4069.1 4.4.90.52.25 0.1.1\" in row at position \"977171\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4648,8 +4648,8 @@
                   "3018",
                   "1510 06.181.005.1068.1 4.4.90.52.08 1.1.1"
                 ],
-                "rowNumber": 987828,
-                "rowPosition": 987829,
+                "rowNumber": 981282,
+                "rowPosition": 981283,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4658,7 +4658,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.1068.1 4.4.90.52.08 1.1.1\" in row at position \"987829\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.1068.1 4.4.90.52.08 1.1.1\" in row at position \"981283\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4675,8 +4675,8 @@
                   "2944",
                   "1510 06.181.005.1068.1 4.4.90.52.14 1.1.1"
                 ],
-                "rowNumber": 987829,
-                "rowPosition": 987830,
+                "rowNumber": 981283,
+                "rowPosition": 981284,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4685,7 +4685,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.1068.1 4.4.90.52.14 1.1.1\" in row at position \"987830\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.1068.1 4.4.90.52.14 1.1.1\" in row at position \"981284\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4702,8 +4702,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.1.1"
                 ],
-                "rowNumber": 999343,
-                "rowPosition": 999344,
+                "rowNumber": 994983,
+                "rowPosition": 994984,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4712,7 +4712,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"999344\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.1.1\" in row at position \"994984\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4729,8 +4729,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999344,
-                "rowPosition": 999345,
+                "rowNumber": 994984,
+                "rowPosition": 994985,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4739,7 +4739,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999345\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994985\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4756,8 +4756,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999345,
-                "rowPosition": 999346,
+                "rowNumber": 994985,
+                "rowPosition": 994986,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4766,7 +4766,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999346\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994986\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4783,8 +4783,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999346,
-                "rowPosition": 999347,
+                "rowNumber": 994986,
+                "rowPosition": 994987,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4793,7 +4793,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999347\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994987\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4810,8 +4810,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999347,
-                "rowPosition": 999348,
+                "rowNumber": 994987,
+                "rowPosition": 994988,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4820,7 +4820,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999348\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994988\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4837,8 +4837,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999348,
-                "rowPosition": 999349,
+                "rowNumber": 994988,
+                "rowPosition": 994989,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4847,7 +4847,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999349\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994989\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4864,8 +4864,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999349,
-                "rowPosition": 999350,
+                "rowNumber": 994989,
+                "rowPosition": 994990,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4874,7 +4874,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999350\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994990\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4891,8 +4891,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999350,
-                "rowPosition": 999351,
+                "rowNumber": 994990,
+                "rowPosition": 994991,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4901,7 +4901,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999351\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994991\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4918,8 +4918,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999351,
-                "rowPosition": 999352,
+                "rowNumber": 994991,
+                "rowPosition": 994992,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4928,7 +4928,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999352\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994992\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4945,8 +4945,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999352,
-                "rowPosition": 999353,
+                "rowNumber": 994992,
+                "rowPosition": 994993,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4955,7 +4955,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999353\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994993\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4972,8 +4972,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999353,
-                "rowPosition": 999354,
+                "rowNumber": 994993,
+                "rowPosition": 994994,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -4982,7 +4982,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999354\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994994\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -4999,8 +4999,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999354,
-                "rowPosition": 999355,
+                "rowNumber": 994994,
+                "rowPosition": 994995,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5009,7 +5009,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999355\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994995\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5026,8 +5026,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999355,
-                "rowPosition": 999356,
+                "rowNumber": 994995,
+                "rowPosition": 994996,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5036,7 +5036,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999356\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994996\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5053,8 +5053,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999356,
-                "rowPosition": 999357,
+                "rowNumber": 994996,
+                "rowPosition": 994997,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5063,7 +5063,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999357\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994997\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5080,8 +5080,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999357,
-                "rowPosition": 999358,
+                "rowNumber": 994997,
+                "rowPosition": 994998,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5090,7 +5090,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999358\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994998\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5107,8 +5107,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999358,
-                "rowPosition": 999359,
+                "rowNumber": 994998,
+                "rowPosition": 994999,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5117,7 +5117,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999359\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"994999\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5134,8 +5134,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999359,
-                "rowPosition": 999360,
+                "rowNumber": 994999,
+                "rowPosition": 995000,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5144,7 +5144,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999360\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995000\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5161,8 +5161,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999360,
-                "rowPosition": 999361,
+                "rowNumber": 995000,
+                "rowPosition": 995001,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5171,7 +5171,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999361\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995001\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5188,8 +5188,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999361,
-                "rowPosition": 999362,
+                "rowNumber": 995001,
+                "rowPosition": 995002,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5198,7 +5198,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999362\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995002\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5215,8 +5215,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999362,
-                "rowPosition": 999363,
+                "rowNumber": 995002,
+                "rowPosition": 995003,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5225,7 +5225,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999363\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995003\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5242,8 +5242,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999363,
-                "rowPosition": 999364,
+                "rowNumber": 995003,
+                "rowPosition": 995004,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5252,7 +5252,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999364\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995004\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5269,8 +5269,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999364,
-                "rowPosition": 999365,
+                "rowNumber": 995004,
+                "rowPosition": 995005,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5279,7 +5279,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999365\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995005\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5296,8 +5296,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999365,
-                "rowPosition": 999366,
+                "rowNumber": 995005,
+                "rowPosition": 995006,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5306,7 +5306,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999366\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995006\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5323,8 +5323,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999366,
-                "rowPosition": 999367,
+                "rowNumber": 995006,
+                "rowPosition": 995007,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5333,7 +5333,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999367\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995007\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5350,8 +5350,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999367,
-                "rowPosition": 999368,
+                "rowNumber": 995007,
+                "rowPosition": 995008,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5360,7 +5360,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999368\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995008\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5377,8 +5377,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999368,
-                "rowPosition": 999369,
+                "rowNumber": 995008,
+                "rowPosition": 995009,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5387,7 +5387,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999369\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995009\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5404,8 +5404,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999369,
-                "rowPosition": 999370,
+                "rowNumber": 995009,
+                "rowPosition": 995010,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5414,7 +5414,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999370\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995010\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5431,8 +5431,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999370,
-                "rowPosition": 999371,
+                "rowNumber": 995010,
+                "rowPosition": 995011,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5441,7 +5441,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999371\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995011\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5458,8 +5458,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999371,
-                "rowPosition": 999372,
+                "rowNumber": 995011,
+                "rowPosition": 995012,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5468,7 +5468,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999372\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995012\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5485,8 +5485,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999372,
-                "rowPosition": 999373,
+                "rowNumber": 995012,
+                "rowPosition": 995013,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5495,7 +5495,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999373\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995013\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5512,8 +5512,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999373,
-                "rowPosition": 999374,
+                "rowNumber": 995013,
+                "rowPosition": 995014,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5522,7 +5522,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999374\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995014\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5539,8 +5539,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999374,
-                "rowPosition": 999375,
+                "rowNumber": 995014,
+                "rowPosition": 995015,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5549,7 +5549,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999375\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995015\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5566,8 +5566,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999375,
-                "rowPosition": 999376,
+                "rowNumber": 995015,
+                "rowPosition": 995016,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5576,7 +5576,7 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999376\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995016\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5593,8 +5593,8 @@
                   "2611",
                   "1510 06.181.005.4025.1 4.4.90.52.07 0.2.1"
                 ],
-                "rowNumber": 999376,
-                "rowPosition": 999377,
+                "rowNumber": 995016,
+                "rowPosition": 995017,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5603,7 +5603,34 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"999377\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4025.1 4.4.90.52.07 0.2.1\" in row at position \"995017\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "1250 06.181.034.4048.1 3.3.90.39.22 0.1.1",
+                "fieldName": "dotacao_orcamentaria",
+                "fieldNumber": 7,
+                "fieldPosition": 7,
+                "cells": [
+                  "358778",
+                  "13927866",
+                  "14534",
+                  "57224",
+                  "534",
+                  "2594",
+                  "1250 06.181.034.4048.1 3.3.90.39.22 0.1.1"
+                ],
+                "rowNumber": 996479,
+                "rowPosition": 996480,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1250 06.181.034.4048.1 3.3.90.39.22 0.1.1\" in row at position \"996480\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               },
               {
@@ -5620,8 +5647,8 @@
                   "3018",
                   "1510 06.181.005.4022.1 4.4.90.52.08 0.1.1"
                 ],
-                "rowNumber": 1001385,
-                "rowPosition": 1001386,
+                "rowNumber": 999560,
+                "rowPosition": 999561,
                 "code": "constraint-error",
                 "name": "Constraint Error",
                 "tags": [
@@ -5630,18 +5657,18 @@
                   "#cell"
                 ],
                 "note": "constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
-                "message": "The cell \"1510 06.181.005.4022.1 4.4.90.52.08 0.1.1\" in row at position \"1001386\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
+                "message": "The cell \"1510 06.181.005.4022.1 4.4.90.52.08 0.1.1\" in row at position \"999561\" and field \"dotacao_orcamentaria\" at position \"7\" does not conform to a constraint: constraint \"pattern\" is \"\\d{4} \\d{2}.\\d{3}.\\d{3}.\\d{4}.\\d{1} \\d{1}.\\d{1}.\\d{2}.\\d{2}.\\d{2} \\d{1}.\\d{2}.\\d{1}\"",
                 "description": "A field value does not conform to a constraint."
               }
             ],
             "stats": {
-              "errors": 88
+              "errors": 89
             },
             "valid": false
           }
         ],
         "stats": {
-          "errors": 88,
+          "errors": 89,
           "tasks": 1
         },
         "valid": false
@@ -6181,7 +6208,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 431.135,
+        "time": 431.501,
         "errors": [],
         "tasks": [
           {
@@ -6711,13 +6738,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "96ab7eed631aa030e466dc37fef77a4c",
-                "bytes": 59825189,
+                "hash": "75f5d9eefb30d766ec8fdb3d9a86987e",
+                "bytes": 59834478,
                 "fields": 27,
-                "rows": 1968119
+                "rows": 1968442
               }
             },
-            "time": 431.135,
+            "time": 431.501,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7524,7 +7551,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 9.383,
+        "time": 9.285,
         "errors": [],
         "tasks": [
           {
@@ -7681,13 +7708,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "513e98837f37bf3084bf2f2d6990513f",
-                "bytes": 7384837,
+                "hash": "1c2beccae465adb7e2e20d7ad04f369b",
+                "bytes": 7386218,
                 "fields": 12,
-                "rows": 81186
+                "rows": 81200
               }
             },
-            "time": 9.383,
+            "time": 9.285,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -8384,7 +8411,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 2.646,
+        "time": 2.65,
         "errors": [],
         "tasks": [
           {
@@ -8460,13 +8487,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "817e06f5aa410571d89c4985b2d35409",
-                "bytes": 1673899,
+                "hash": "027be3c20016f4700fdb7bc1e244a9cb",
+                "bytes": 1674255,
                 "fields": 4,
-                "rows": 76332
+                "rows": 76348
               }
             },
-            "time": 2.646,
+            "time": 2.65,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -9629,7 +9656,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.763,
+        "time": 0.772,
         "errors": [],
         "tasks": [
           {
@@ -9692,13 +9719,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "f9cdbec41828fc8ff2a7ed682e3a551c",
-                "bytes": 399007,
+                "hash": "44de4184d9604dd41616225d84bd57d7",
+                "bytes": 399022,
                 "fields": 3,
-                "rows": 23089
+                "rows": 23090
               }
             },
-            "time": 0.763,
+            "time": 0.772,
             "scope": [
               "hash-count-error",
               "byte-count-error",
