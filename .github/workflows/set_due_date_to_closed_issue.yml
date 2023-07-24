@@ -7,7 +7,7 @@ on:
 
 jobs:
   do-it:
-    uses: gabrielbdornas/reusable-workflows/.github/workflows/set_due_date_to_orgs_closed_issue_reusable.yml@main
+    uses: gabrielbdornas/reusable-workflows/.github/workflows/set_due_date_to_closed_issue_reusable.yml@v2.2
     secrets:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         USER: ${{ secrets.USER }}
