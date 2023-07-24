@@ -7,9 +7,7 @@ on:
 
 jobs:
   do-it:
-    uses: gabrielbdornas/reusable-workflows/.github/workflows/add_project_to_issue_reusable.yml@main
+    uses: gabrielbdornas/reusable-workflows/.github/workflows/add_project_to_issue_reusable.yml@V2.2
     secrets:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        USER: ${{ secrets.USER }}
-        TYPE: ${{ secrets.TYPE }}
         PROJECT_NUMBER: ${{ secrets.PROJECT_NUMBER }}
