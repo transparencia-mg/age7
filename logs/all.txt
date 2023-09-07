@@ -22,11 +22,14 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... dm_cargo_scdp.csv
 >fcsT...... dm_estado.csv
 >fcsT...... dm_favorecido_scdp.csv
+>fcsT...... dm_situacao_obra.csv
 gzip -n < data/staging/dm_acao.csv > data/dm_acao.csv.gz
 gzip -n < data/staging/dm_favorecido_scdp.csv > data/dm_favorecido_scdp.csv.gz
 gzip -n < data/staging/dm_estado.csv > data/dm_estado.csv.gz
 gzip -n < data/staging/dm_cargo_scdp.csv > data/dm_cargo_scdp.csv.gz
+gzip -n < data/staging/dm_situacao_obra.csv > data/dm_situacao_obra.csv.gz
 dtamg-py etl-make validate -r dm_acao > logs/validate/dm_acao.json
 dtamg-py etl-make validate -r dm_favorecido_scdp > logs/validate/dm_favorecido_scdp.json
 dtamg-py etl-make validate -r dm_estado > logs/validate/dm_estado.json
 dtamg-py etl-make validate -r dm_cargo_scdp > logs/validate/dm_cargo_scdp.json
+dtamg-py etl-make validate -r dm_situacao_obra > logs/validate/dm_situacao_obra.json
