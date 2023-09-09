@@ -21,12 +21,24 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... dm_acao.csv
 >fcsT...... dm_acao_resto.csv
 >fcsT...... dm_alinea_rec.csv
->fcsT...... dm_situacao_obra.csv
+>fcsT...... dm_favorecido_scdp.csv
+>fcsT...... dm_fonte.csv
+>fcsT...... dm_fonte_orcam.csv
+>fcsT...... dm_fonte_rec.csv
+>fcsT...... dm_funcao_plan.csv
 gzip -n < data/staging/dm_alinea_rec.csv > data/dm_alinea_rec.csv.gz
+gzip -n < data/staging/dm_fonte_rec.csv > data/dm_fonte_rec.csv.gz
 gzip -n < data/staging/dm_acao.csv > data/dm_acao.csv.gz
+gzip -n < data/staging/dm_favorecido_scdp.csv > data/dm_favorecido_scdp.csv.gz
+gzip -n < data/staging/dm_fonte.csv > data/dm_fonte.csv.gz
 gzip -n < data/staging/dm_acao_resto.csv > data/dm_acao_resto.csv.gz
-gzip -n < data/staging/dm_situacao_obra.csv > data/dm_situacao_obra.csv.gz
+gzip -n < data/staging/dm_funcao_plan.csv > data/dm_funcao_plan.csv.gz
+gzip -n < data/staging/dm_fonte_orcam.csv > data/dm_fonte_orcam.csv.gz
 dtamg-py etl-make validate -r dm_alinea_rec > logs/validate/dm_alinea_rec.json
+dtamg-py etl-make validate -r dm_fonte_rec > logs/validate/dm_fonte_rec.json
 dtamg-py etl-make validate -r dm_acao > logs/validate/dm_acao.json
+dtamg-py etl-make validate -r dm_favorecido_scdp > logs/validate/dm_favorecido_scdp.json
+dtamg-py etl-make validate -r dm_fonte > logs/validate/dm_fonte.json
 dtamg-py etl-make validate -r dm_acao_resto > logs/validate/dm_acao_resto.json
-dtamg-py etl-make validate -r dm_situacao_obra > logs/validate/dm_situacao_obra.json
+dtamg-py etl-make validate -r dm_funcao_plan > logs/validate/dm_funcao_plan.json
+dtamg-py etl-make validate -r dm_fonte_orcam > logs/validate/dm_fonte_orcam.json
