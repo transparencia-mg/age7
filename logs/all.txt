@@ -18,6 +18,6 @@ make: Nothing to be done for 'parse'.
 python scripts/python/extract_csv_evento_etl_carga.py 2> logs/evento_etl_carga.txt
 dtamg-py etl-make full-extract 2> logs/full_extract.txt
 rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
->fcsT...... dm_acao.csv
-gzip -n < data/staging/dm_acao.csv > data/dm_acao.csv.gz
-dtamg-py etl-make validate -r dm_acao > logs/validate/dm_acao.json
+>fcsT...... dm_fonte.csv
+gzip -n < data/staging/dm_fonte.csv > data/dm_fonte.csv.gz
+dtamg-py etl-make validate -r dm_fonte > logs/validate/dm_fonte.json
