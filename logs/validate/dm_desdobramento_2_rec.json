@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.032,
+  "time": 0.112,
   "errors": [],
   "tasks": [
     {
@@ -93,13 +93,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "9adfb17db7ed2c50fbcb5cf9de72fd46",
-          "bytes": 51,
+          "hash": "6b61d0bbdc717e45c32eb0f08401d279",
+          "bytes": 21316,
           "fields": 3,
-          "rows": 0
+          "rows": 2560
         }
       },
-      "time": 0.032,
+      "time": 0.112,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -121,16 +121,500 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "cell": "49",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2153",
+            "49",
+            "CONTRIBUICAO SOCIAL SOBRE O LUCRO LIQUIDO - CSLL - PARCELAMENTOS"
+          ],
+          "rowNumber": 2224,
+          "rowPosition": 2225,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"49\" in row at position \"2225\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "56",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2169",
+            "56",
+            "TRANSFERENCIAS DECORRENTES DE DECISAO JUDICIAL (PRECATORIOS) RELATIVAS AO FUNDO DE MANUTENCAO E DESENVOLVIMENTO DO ENSINO FUNDAMENTAL E DE VALORIZACAO"
+          ],
+          "rowNumber": 2240,
+          "rowPosition": 2241,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"56\" in row at position \"2241\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "58",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2211",
+            "58",
+            "TRANSFERENCIAS REFERENTES AO PROGRAMA DE APOIO A AQUISICAO DE EQUIPAMENTOS PARA A REDE PUBLICA DE ENSINO FUNDAMENTAL"
+          ],
+          "rowNumber": 2282,
+          "rowPosition": 2283,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"58\" in row at position \"2283\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "59",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2212",
+            "59",
+            "TRANSFERENCIAS REFERENTES AO PROGRAMA DE APOIO A REESTRUTURACAO DA REDE FISICA PUBLICA DA EDUCACAO BASICA  - REESTFISICA"
+          ],
+          "rowNumber": 2283,
+          "rowPosition": 2284,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"59\" in row at position \"2284\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "57",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2307",
+            "57",
+            "TRANSFERENCIAS REFERENTES AO PROGRAMA NACIONAL DE SAUDE DO ESCOLAR - PNSE"
+          ],
+          "rowNumber": 2307,
+          "rowPosition": 2308,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"57\" in row at position \"2308\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "56",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2326",
+            "56",
+            "OPERACOES DE CREDITO INTERNAS PARA PROGRAMAS DE MORADIA POPULAR"
+          ],
+          "rowNumber": 2326,
+          "rowPosition": 2327,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"56\" in row at position \"2327\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "56",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2346",
+            "56",
+            "CONTRIBUICAO DO MILITAR PARA O SISTEMA DE PROTECAO SOCIAL DOS MILITARES, ORIUNDA DE SENTENCAS JUDICIAIS"
+          ],
+          "rowNumber": 2346,
+          "rowPosition": 2347,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"56\" in row at position \"2347\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "49",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2356",
+            "49",
+            "CONTRIBUICAO PARA O PIS/PASEP - PARCELAMENTOS"
+          ],
+          "rowNumber": 2356,
+          "rowPosition": 2357,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"49\" in row at position \"2357\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "98",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2360",
+            "98",
+            "TRANSFERENCIAS DECORRENTES DE PARTICIPACAO EM OUTRAS RECEITAS DE IMPOSTOS DA UNIAO"
+          ],
+          "rowNumber": 2360,
+          "rowPosition": 2361,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"98\" in row at position \"2361\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "49",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2413",
+            "49",
+            "CONTRIBUICOES PARA O REGIME GERAL DE PREVIDENCIA SOCIAL - RGPS - PARCELAMENTOS"
+          ],
+          "rowNumber": 2413,
+          "rowPosition": 2414,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"49\" in row at position \"2414\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "58",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2428",
+            "58",
+            "TRANSFERENCIA OBRIGATORIA DECORRENTE DA LEI COMPLEMENTAR NO 176/20"
+          ],
+          "rowNumber": 2428,
+          "rowPosition": 2429,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"58\" in row at position \"2429\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "98",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2430",
+            "98",
+            "TRANSFERENCIAS DECORRENTES DE PARTICIPACAO EM OUTRAS RECEITAS DE IMPOSTOS DOS ESTADOS E DO DISTRITO FEDERAL"
+          ],
+          "rowNumber": 2430,
+          "rowPosition": 2431,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"98\" in row at position \"2431\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "49",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2458",
+            "49",
+            "CONTRIBUICAO PARA FINANCIAMENTO DA SEGURIDADE SOCIAL - COFINS SOBRE O FATURAMENTO - PARCELAMENTOS"
+          ],
+          "rowNumber": 2458,
+          "rowPosition": 2459,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"49\" in row at position \"2459\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "57",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2469",
+            "57",
+            "TRANSFERENCIA ESPECIAL DA UNIAO"
+          ],
+          "rowNumber": 2469,
+          "rowPosition": 2470,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"57\" in row at position \"2470\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "56",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2523",
+            "56",
+            "TRANSFERENCIAS REFERENTES AO PROGRAMA DE APOIO AOS SISTEMAS DE ENSINO PARA ATENDIMENTO A EDUCACAO DE JOVENS E ADULTOS - PEJA"
+          ],
+          "rowNumber": 2523,
+          "rowPosition": 2524,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"56\" in row at position \"2524\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "62",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2552",
+            "62",
+            "DEDUÇÃO REC. - TRANSFERÊNCIA DA COMPENSAÇÃO FINANCEIRA DAS PERDAS COM ARRECADAÇÃO DE ICMS- ART. 3º, §4º, LC 194/2022"
+          ],
+          "rowNumber": 2552,
+          "rowPosition": 2553,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"62\" in row at position \"2553\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "62",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2553",
+            "62",
+            "DEDUÇÃO REC. - TRANSF. COMPENS. FINANC. PERDAS ARRECAD. ICMS -  LC N° 194/2022 - PRINCIPAL"
+          ],
+          "rowNumber": 2553,
+          "rowPosition": 2554,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"62\" in row at position \"2554\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "62",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2554",
+            "62",
+            "TRANSFERENCIA DA COMPENSACAO FINANCEIRA DAS PERDAS COM ARRECADACAO DE ICMS- ART. 3O,  4O, LC 194/2022"
+          ],
+          "rowNumber": 2554,
+          "rowPosition": 2555,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"62\" in row at position \"2555\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "62",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2555",
+            "62",
+            "DEDUÇÃO REC. - TRANSF. COMPENS. FINANC. PERDAS ARRECAD. ICMS -  LC N° 194/2022 - PRINC. - COTA PARTE DO FUNDEB"
+          ],
+          "rowNumber": 2555,
+          "rowPosition": 2556,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"62\" in row at position \"2556\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "62",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2556",
+            "62",
+            "DEDUÇÃO REC. - TRANSF. COMPENS. FINANC. PERDAS ARRECAD. ICMS -  LC N° 194/2022 - PRINC. - COTA PARTE DOS MUNICÍPIOS"
+          ],
+          "rowNumber": 2556,
+          "rowPosition": 2557,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"62\" in row at position \"2557\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        },
+        {
+          "cell": "62",
+          "fieldName": "cd_desdobramento_2",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "2557",
+            "62",
+            "DEDUÇÃO REC. - TRANSF. COMPENS. FINANC. PERDAS ARRECAD. ICMS -  LC N° 194/2022 - PRINC. - COTA PARTE DO ESTADO"
+          ],
+          "rowNumber": 2557,
+          "rowPosition": 2558,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "message": "The cell \"62\" in row at position \"2558\" and field \"cd_desdobramento_2\" at position \"2\" does not conform to a constraint: constraint \"enum\" is \"['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '50', '51', '52', '53', '54', '55', '80', '99']\"",
+          "description": "A field value does not conform to a constraint."
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 21
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 21,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }
