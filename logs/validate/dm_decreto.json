@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.023,
+  "time": 0.177,
   "errors": [],
   "tasks": [
     {
@@ -53,13 +53,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "8d921eef6132e5d0b3d359ef06dad6a5",
-          "bytes": 40,
+          "hash": "6b427343d8becb31ee402a965cb52959",
+          "bytes": 22409,
           "fields": 2,
-          "rows": 0
+          "rows": 5388
         }
       },
-      "time": 0.023,
+      "time": 0.177,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -81,16 +81,3315 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5195,
+          "rowPosition": 5196,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 2",
+          "message": "Row at position \"5196\" violates the primary key: the same as in the row at position 2",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5196,
+          "rowPosition": 5197,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 3",
+          "message": "Row at position \"5197\" violates the primary key: the same as in the row at position 3",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5197,
+          "rowPosition": 5198,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 4",
+          "message": "Row at position \"5198\" violates the primary key: the same as in the row at position 4",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5198,
+          "rowPosition": 5199,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 5",
+          "message": "Row at position \"5199\" violates the primary key: the same as in the row at position 5",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5199,
+          "rowPosition": 5200,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 6",
+          "message": "Row at position \"5200\" violates the primary key: the same as in the row at position 6",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5200,
+          "rowPosition": 5201,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 7",
+          "message": "Row at position \"5201\" violates the primary key: the same as in the row at position 7",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5201,
+          "rowPosition": 5202,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 8",
+          "message": "Row at position \"5202\" violates the primary key: the same as in the row at position 8",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5202,
+          "rowPosition": 5203,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 9",
+          "message": "Row at position \"5203\" violates the primary key: the same as in the row at position 9",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5203,
+          "rowPosition": 5204,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 10",
+          "message": "Row at position \"5204\" violates the primary key: the same as in the row at position 10",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5204,
+          "rowPosition": 5205,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 11",
+          "message": "Row at position \"5205\" violates the primary key: the same as in the row at position 11",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5205,
+          "rowPosition": 5206,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 12",
+          "message": "Row at position \"5206\" violates the primary key: the same as in the row at position 12",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5206,
+          "rowPosition": 5207,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 13",
+          "message": "Row at position \"5207\" violates the primary key: the same as in the row at position 13",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5207,
+          "rowPosition": 5208,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 14",
+          "message": "Row at position \"5208\" violates the primary key: the same as in the row at position 14",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5208,
+          "rowPosition": 5209,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 15",
+          "message": "Row at position \"5209\" violates the primary key: the same as in the row at position 15",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5209,
+          "rowPosition": 5210,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 16",
+          "message": "Row at position \"5210\" violates the primary key: the same as in the row at position 16",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5210,
+          "rowPosition": 5211,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 17",
+          "message": "Row at position \"5211\" violates the primary key: the same as in the row at position 17",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5211,
+          "rowPosition": 5212,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 18",
+          "message": "Row at position \"5212\" violates the primary key: the same as in the row at position 18",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5212,
+          "rowPosition": 5213,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 19",
+          "message": "Row at position \"5213\" violates the primary key: the same as in the row at position 19",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5213,
+          "rowPosition": 5214,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 20",
+          "message": "Row at position \"5214\" violates the primary key: the same as in the row at position 20",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5214,
+          "rowPosition": 5215,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 21",
+          "message": "Row at position \"5215\" violates the primary key: the same as in the row at position 21",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5215,
+          "rowPosition": 5216,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 22",
+          "message": "Row at position \"5216\" violates the primary key: the same as in the row at position 22",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5216,
+          "rowPosition": 5217,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 23",
+          "message": "Row at position \"5217\" violates the primary key: the same as in the row at position 23",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5217,
+          "rowPosition": 5218,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 24",
+          "message": "Row at position \"5218\" violates the primary key: the same as in the row at position 24",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5218,
+          "rowPosition": 5219,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 25",
+          "message": "Row at position \"5219\" violates the primary key: the same as in the row at position 25",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5219,
+          "rowPosition": 5220,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 26",
+          "message": "Row at position \"5220\" violates the primary key: the same as in the row at position 26",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5220,
+          "rowPosition": 5221,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 28",
+          "message": "Row at position \"5221\" violates the primary key: the same as in the row at position 28",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5221,
+          "rowPosition": 5222,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 30",
+          "message": "Row at position \"5222\" violates the primary key: the same as in the row at position 30",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5222,
+          "rowPosition": 5223,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 31",
+          "message": "Row at position \"5223\" violates the primary key: the same as in the row at position 31",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5223,
+          "rowPosition": 5224,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 33",
+          "message": "Row at position \"5224\" violates the primary key: the same as in the row at position 33",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5224,
+          "rowPosition": 5225,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 35",
+          "message": "Row at position \"5225\" violates the primary key: the same as in the row at position 35",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5225,
+          "rowPosition": 5226,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 37",
+          "message": "Row at position \"5226\" violates the primary key: the same as in the row at position 37",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5226,
+          "rowPosition": 5227,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 39",
+          "message": "Row at position \"5227\" violates the primary key: the same as in the row at position 39",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5227,
+          "rowPosition": 5228,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 41",
+          "message": "Row at position \"5228\" violates the primary key: the same as in the row at position 41",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5228,
+          "rowPosition": 5229,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 42",
+          "message": "Row at position \"5229\" violates the primary key: the same as in the row at position 42",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5229,
+          "rowPosition": 5230,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 44",
+          "message": "Row at position \"5230\" violates the primary key: the same as in the row at position 44",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5230,
+          "rowPosition": 5231,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 46",
+          "message": "Row at position \"5231\" violates the primary key: the same as in the row at position 46",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5231,
+          "rowPosition": 5232,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 48",
+          "message": "Row at position \"5232\" violates the primary key: the same as in the row at position 48",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5232,
+          "rowPosition": 5233,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 50",
+          "message": "Row at position \"5233\" violates the primary key: the same as in the row at position 50",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5233,
+          "rowPosition": 5234,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 52",
+          "message": "Row at position \"5234\" violates the primary key: the same as in the row at position 52",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5234,
+          "rowPosition": 5235,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 53",
+          "message": "Row at position \"5235\" violates the primary key: the same as in the row at position 53",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5235,
+          "rowPosition": 5236,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 55",
+          "message": "Row at position \"5236\" violates the primary key: the same as in the row at position 55",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5236,
+          "rowPosition": 5237,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 57",
+          "message": "Row at position \"5237\" violates the primary key: the same as in the row at position 57",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5237,
+          "rowPosition": 5238,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 59",
+          "message": "Row at position \"5238\" violates the primary key: the same as in the row at position 59",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5238,
+          "rowPosition": 5239,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 61",
+          "message": "Row at position \"5239\" violates the primary key: the same as in the row at position 61",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5239,
+          "rowPosition": 5240,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 63",
+          "message": "Row at position \"5240\" violates the primary key: the same as in the row at position 63",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5240,
+          "rowPosition": 5241,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 65",
+          "message": "Row at position \"5241\" violates the primary key: the same as in the row at position 65",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5241,
+          "rowPosition": 5242,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 67",
+          "message": "Row at position \"5242\" violates the primary key: the same as in the row at position 67",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5242,
+          "rowPosition": 5243,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 69",
+          "message": "Row at position \"5243\" violates the primary key: the same as in the row at position 69",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5243,
+          "rowPosition": 5244,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 71",
+          "message": "Row at position \"5244\" violates the primary key: the same as in the row at position 71",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5244,
+          "rowPosition": 5245,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 73",
+          "message": "Row at position \"5245\" violates the primary key: the same as in the row at position 73",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5245,
+          "rowPosition": 5246,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 75",
+          "message": "Row at position \"5246\" violates the primary key: the same as in the row at position 75",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5246,
+          "rowPosition": 5247,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 76",
+          "message": "Row at position \"5247\" violates the primary key: the same as in the row at position 76",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5247,
+          "rowPosition": 5248,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 78",
+          "message": "Row at position \"5248\" violates the primary key: the same as in the row at position 78",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5248,
+          "rowPosition": 5249,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 80",
+          "message": "Row at position \"5249\" violates the primary key: the same as in the row at position 80",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5249,
+          "rowPosition": 5250,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 82",
+          "message": "Row at position \"5250\" violates the primary key: the same as in the row at position 82",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5250,
+          "rowPosition": 5251,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 84",
+          "message": "Row at position \"5251\" violates the primary key: the same as in the row at position 84",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5251,
+          "rowPosition": 5252,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 86",
+          "message": "Row at position \"5252\" violates the primary key: the same as in the row at position 86",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5252,
+          "rowPosition": 5253,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 88",
+          "message": "Row at position \"5253\" violates the primary key: the same as in the row at position 88",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5253,
+          "rowPosition": 5254,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 90",
+          "message": "Row at position \"5254\" violates the primary key: the same as in the row at position 90",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5254,
+          "rowPosition": 5255,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 92",
+          "message": "Row at position \"5255\" violates the primary key: the same as in the row at position 92",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5255,
+          "rowPosition": 5256,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 94",
+          "message": "Row at position \"5256\" violates the primary key: the same as in the row at position 94",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5256,
+          "rowPosition": 5257,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 96",
+          "message": "Row at position \"5257\" violates the primary key: the same as in the row at position 96",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5257,
+          "rowPosition": 5258,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 98",
+          "message": "Row at position \"5258\" violates the primary key: the same as in the row at position 98",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5258,
+          "rowPosition": 5259,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 100",
+          "message": "Row at position \"5259\" violates the primary key: the same as in the row at position 100",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5259,
+          "rowPosition": 5260,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 102",
+          "message": "Row at position \"5260\" violates the primary key: the same as in the row at position 102",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5260,
+          "rowPosition": 5261,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 104",
+          "message": "Row at position \"5261\" violates the primary key: the same as in the row at position 104",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5261,
+          "rowPosition": 5262,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 106",
+          "message": "Row at position \"5262\" violates the primary key: the same as in the row at position 106",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5262,
+          "rowPosition": 5263,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 108",
+          "message": "Row at position \"5263\" violates the primary key: the same as in the row at position 108",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5263,
+          "rowPosition": 5264,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 110",
+          "message": "Row at position \"5264\" violates the primary key: the same as in the row at position 110",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5264,
+          "rowPosition": 5265,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 112",
+          "message": "Row at position \"5265\" violates the primary key: the same as in the row at position 112",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5265,
+          "rowPosition": 5266,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 114",
+          "message": "Row at position \"5266\" violates the primary key: the same as in the row at position 114",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5266,
+          "rowPosition": 5267,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 116",
+          "message": "Row at position \"5267\" violates the primary key: the same as in the row at position 116",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5267,
+          "rowPosition": 5268,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 118",
+          "message": "Row at position \"5268\" violates the primary key: the same as in the row at position 118",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5268,
+          "rowPosition": 5269,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 120",
+          "message": "Row at position \"5269\" violates the primary key: the same as in the row at position 120",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5269,
+          "rowPosition": 5270,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 122",
+          "message": "Row at position \"5270\" violates the primary key: the same as in the row at position 122",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5270,
+          "rowPosition": 5271,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 124",
+          "message": "Row at position \"5271\" violates the primary key: the same as in the row at position 124",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5271,
+          "rowPosition": 5272,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 126",
+          "message": "Row at position \"5272\" violates the primary key: the same as in the row at position 126",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5272,
+          "rowPosition": 5273,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 128",
+          "message": "Row at position \"5273\" violates the primary key: the same as in the row at position 128",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5273,
+          "rowPosition": 5274,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 131",
+          "message": "Row at position \"5274\" violates the primary key: the same as in the row at position 131",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5274,
+          "rowPosition": 5275,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 133",
+          "message": "Row at position \"5275\" violates the primary key: the same as in the row at position 133",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5275,
+          "rowPosition": 5276,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 135",
+          "message": "Row at position \"5276\" violates the primary key: the same as in the row at position 135",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5276,
+          "rowPosition": 5277,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 137",
+          "message": "Row at position \"5277\" violates the primary key: the same as in the row at position 137",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5277,
+          "rowPosition": 5278,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 139",
+          "message": "Row at position \"5278\" violates the primary key: the same as in the row at position 139",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5278,
+          "rowPosition": 5279,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 141",
+          "message": "Row at position \"5279\" violates the primary key: the same as in the row at position 141",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5279,
+          "rowPosition": 5280,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 143",
+          "message": "Row at position \"5280\" violates the primary key: the same as in the row at position 143",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5280,
+          "rowPosition": 5281,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 145",
+          "message": "Row at position \"5281\" violates the primary key: the same as in the row at position 145",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5281,
+          "rowPosition": 5282,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 147",
+          "message": "Row at position \"5282\" violates the primary key: the same as in the row at position 147",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5282,
+          "rowPosition": 5283,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 149",
+          "message": "Row at position \"5283\" violates the primary key: the same as in the row at position 149",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5283,
+          "rowPosition": 5284,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 151",
+          "message": "Row at position \"5284\" violates the primary key: the same as in the row at position 151",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5284,
+          "rowPosition": 5285,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 153",
+          "message": "Row at position \"5285\" violates the primary key: the same as in the row at position 153",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5285,
+          "rowPosition": 5286,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 155",
+          "message": "Row at position \"5286\" violates the primary key: the same as in the row at position 155",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5286,
+          "rowPosition": 5287,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 156",
+          "message": "Row at position \"5287\" violates the primary key: the same as in the row at position 156",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5287,
+          "rowPosition": 5288,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 157",
+          "message": "Row at position \"5288\" violates the primary key: the same as in the row at position 157",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5288,
+          "rowPosition": 5289,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 158",
+          "message": "Row at position \"5289\" violates the primary key: the same as in the row at position 158",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5289,
+          "rowPosition": 5290,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 159",
+          "message": "Row at position \"5290\" violates the primary key: the same as in the row at position 159",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5290,
+          "rowPosition": 5291,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 160",
+          "message": "Row at position \"5291\" violates the primary key: the same as in the row at position 160",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5291,
+          "rowPosition": 5292,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 161",
+          "message": "Row at position \"5292\" violates the primary key: the same as in the row at position 161",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5292,
+          "rowPosition": 5293,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 162",
+          "message": "Row at position \"5293\" violates the primary key: the same as in the row at position 162",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5293,
+          "rowPosition": 5294,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 163",
+          "message": "Row at position \"5294\" violates the primary key: the same as in the row at position 163",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5294,
+          "rowPosition": 5295,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 164",
+          "message": "Row at position \"5295\" violates the primary key: the same as in the row at position 164",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5295,
+          "rowPosition": 5296,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 165",
+          "message": "Row at position \"5296\" violates the primary key: the same as in the row at position 165",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5296,
+          "rowPosition": 5297,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 166",
+          "message": "Row at position \"5297\" violates the primary key: the same as in the row at position 166",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5297,
+          "rowPosition": 5298,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 167",
+          "message": "Row at position \"5298\" violates the primary key: the same as in the row at position 167",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5298,
+          "rowPosition": 5299,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 170",
+          "message": "Row at position \"5299\" violates the primary key: the same as in the row at position 170",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5299,
+          "rowPosition": 5300,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 171",
+          "message": "Row at position \"5300\" violates the primary key: the same as in the row at position 171",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5300,
+          "rowPosition": 5301,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 173",
+          "message": "Row at position \"5301\" violates the primary key: the same as in the row at position 173",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5301,
+          "rowPosition": 5302,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 176",
+          "message": "Row at position \"5302\" violates the primary key: the same as in the row at position 176",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5302,
+          "rowPosition": 5303,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 178",
+          "message": "Row at position \"5303\" violates the primary key: the same as in the row at position 178",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5303,
+          "rowPosition": 5304,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 179",
+          "message": "Row at position \"5304\" violates the primary key: the same as in the row at position 179",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5304,
+          "rowPosition": 5305,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 181",
+          "message": "Row at position \"5305\" violates the primary key: the same as in the row at position 181",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5305,
+          "rowPosition": 5306,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 184",
+          "message": "Row at position \"5306\" violates the primary key: the same as in the row at position 184",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5306,
+          "rowPosition": 5307,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 186",
+          "message": "Row at position \"5307\" violates the primary key: the same as in the row at position 186",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5307,
+          "rowPosition": 5308,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 188",
+          "message": "Row at position \"5308\" violates the primary key: the same as in the row at position 188",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5308,
+          "rowPosition": 5309,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 190",
+          "message": "Row at position \"5309\" violates the primary key: the same as in the row at position 190",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5309,
+          "rowPosition": 5310,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 192",
+          "message": "Row at position \"5310\" violates the primary key: the same as in the row at position 192",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5310,
+          "rowPosition": 5311,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 194",
+          "message": "Row at position \"5311\" violates the primary key: the same as in the row at position 194",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5311,
+          "rowPosition": 5312,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 196",
+          "message": "Row at position \"5312\" violates the primary key: the same as in the row at position 196",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5312,
+          "rowPosition": 5313,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 198",
+          "message": "Row at position \"5313\" violates the primary key: the same as in the row at position 198",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5313,
+          "rowPosition": 5314,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 200",
+          "message": "Row at position \"5314\" violates the primary key: the same as in the row at position 200",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5314,
+          "rowPosition": 5315,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 202",
+          "message": "Row at position \"5315\" violates the primary key: the same as in the row at position 202",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5315,
+          "rowPosition": 5316,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 204",
+          "message": "Row at position \"5316\" violates the primary key: the same as in the row at position 204",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5316,
+          "rowPosition": 5317,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 206",
+          "message": "Row at position \"5317\" violates the primary key: the same as in the row at position 206",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5317,
+          "rowPosition": 5318,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 207",
+          "message": "Row at position \"5318\" violates the primary key: the same as in the row at position 207",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5318,
+          "rowPosition": 5319,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 210",
+          "message": "Row at position \"5319\" violates the primary key: the same as in the row at position 210",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5319,
+          "rowPosition": 5320,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 211",
+          "message": "Row at position \"5320\" violates the primary key: the same as in the row at position 211",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5320,
+          "rowPosition": 5321,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 213",
+          "message": "Row at position \"5321\" violates the primary key: the same as in the row at position 213",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5321,
+          "rowPosition": 5322,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 215",
+          "message": "Row at position \"5322\" violates the primary key: the same as in the row at position 215",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5322,
+          "rowPosition": 5323,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 217",
+          "message": "Row at position \"5323\" violates the primary key: the same as in the row at position 217",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5323,
+          "rowPosition": 5324,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 219",
+          "message": "Row at position \"5324\" violates the primary key: the same as in the row at position 219",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5324,
+          "rowPosition": 5325,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 221",
+          "message": "Row at position \"5325\" violates the primary key: the same as in the row at position 221",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5325,
+          "rowPosition": 5326,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 223",
+          "message": "Row at position \"5326\" violates the primary key: the same as in the row at position 223",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5326,
+          "rowPosition": 5327,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 225",
+          "message": "Row at position \"5327\" violates the primary key: the same as in the row at position 225",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5327,
+          "rowPosition": 5328,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 227",
+          "message": "Row at position \"5328\" violates the primary key: the same as in the row at position 227",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5328,
+          "rowPosition": 5329,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 229",
+          "message": "Row at position \"5329\" violates the primary key: the same as in the row at position 229",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5329,
+          "rowPosition": 5330,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 230",
+          "message": "Row at position \"5330\" violates the primary key: the same as in the row at position 230",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5330,
+          "rowPosition": 5331,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 231",
+          "message": "Row at position \"5331\" violates the primary key: the same as in the row at position 231",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5331,
+          "rowPosition": 5332,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 232",
+          "message": "Row at position \"5332\" violates the primary key: the same as in the row at position 232",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5332,
+          "rowPosition": 5333,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 233",
+          "message": "Row at position \"5333\" violates the primary key: the same as in the row at position 233",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5333,
+          "rowPosition": 5334,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 234",
+          "message": "Row at position \"5334\" violates the primary key: the same as in the row at position 234",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5334,
+          "rowPosition": 5335,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 235",
+          "message": "Row at position \"5335\" violates the primary key: the same as in the row at position 235",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5335,
+          "rowPosition": 5336,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 236",
+          "message": "Row at position \"5336\" violates the primary key: the same as in the row at position 236",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5336,
+          "rowPosition": 5337,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 237",
+          "message": "Row at position \"5337\" violates the primary key: the same as in the row at position 237",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5337,
+          "rowPosition": 5338,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 238",
+          "message": "Row at position \"5338\" violates the primary key: the same as in the row at position 238",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5338,
+          "rowPosition": 5339,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 239",
+          "message": "Row at position \"5339\" violates the primary key: the same as in the row at position 239",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5339,
+          "rowPosition": 5340,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 241",
+          "message": "Row at position \"5340\" violates the primary key: the same as in the row at position 241",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5340,
+          "rowPosition": 5341,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 242",
+          "message": "Row at position \"5341\" violates the primary key: the same as in the row at position 242",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5341,
+          "rowPosition": 5342,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 244",
+          "message": "Row at position \"5342\" violates the primary key: the same as in the row at position 244",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5342,
+          "rowPosition": 5343,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 247",
+          "message": "Row at position \"5343\" violates the primary key: the same as in the row at position 247",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5343,
+          "rowPosition": 5344,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 251",
+          "message": "Row at position \"5344\" violates the primary key: the same as in the row at position 251",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5344,
+          "rowPosition": 5345,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 255",
+          "message": "Row at position \"5345\" violates the primary key: the same as in the row at position 255",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5345,
+          "rowPosition": 5346,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 259",
+          "message": "Row at position \"5346\" violates the primary key: the same as in the row at position 259",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5346,
+          "rowPosition": 5347,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 261",
+          "message": "Row at position \"5347\" violates the primary key: the same as in the row at position 261",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5347,
+          "rowPosition": 5348,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 262",
+          "message": "Row at position \"5348\" violates the primary key: the same as in the row at position 262",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5348,
+          "rowPosition": 5349,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 263",
+          "message": "Row at position \"5349\" violates the primary key: the same as in the row at position 263",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5349,
+          "rowPosition": 5350,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 266",
+          "message": "Row at position \"5350\" violates the primary key: the same as in the row at position 266",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5350,
+          "rowPosition": 5351,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 268",
+          "message": "Row at position \"5351\" violates the primary key: the same as in the row at position 268",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5351,
+          "rowPosition": 5352,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 269",
+          "message": "Row at position \"5352\" violates the primary key: the same as in the row at position 269",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5352,
+          "rowPosition": 5353,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 272",
+          "message": "Row at position \"5353\" violates the primary key: the same as in the row at position 272",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5353,
+          "rowPosition": 5354,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 274",
+          "message": "Row at position \"5354\" violates the primary key: the same as in the row at position 274",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5354,
+          "rowPosition": 5355,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 277",
+          "message": "Row at position \"5355\" violates the primary key: the same as in the row at position 277",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5355,
+          "rowPosition": 5356,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 280",
+          "message": "Row at position \"5356\" violates the primary key: the same as in the row at position 280",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5356,
+          "rowPosition": 5357,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 282",
+          "message": "Row at position \"5357\" violates the primary key: the same as in the row at position 282",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5357,
+          "rowPosition": 5358,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 283",
+          "message": "Row at position \"5358\" violates the primary key: the same as in the row at position 283",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5358,
+          "rowPosition": 5359,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 290",
+          "message": "Row at position \"5359\" violates the primary key: the same as in the row at position 290",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5359,
+          "rowPosition": 5360,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 295",
+          "message": "Row at position \"5360\" violates the primary key: the same as in the row at position 295",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5360,
+          "rowPosition": 5361,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 297",
+          "message": "Row at position \"5361\" violates the primary key: the same as in the row at position 297",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5361,
+          "rowPosition": 5362,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 300",
+          "message": "Row at position \"5362\" violates the primary key: the same as in the row at position 300",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5362,
+          "rowPosition": 5363,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 302",
+          "message": "Row at position \"5363\" violates the primary key: the same as in the row at position 302",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5363,
+          "rowPosition": 5364,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 307",
+          "message": "Row at position \"5364\" violates the primary key: the same as in the row at position 307",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5364,
+          "rowPosition": 5365,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 310",
+          "message": "Row at position \"5365\" violates the primary key: the same as in the row at position 310",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5365,
+          "rowPosition": 5366,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 313",
+          "message": "Row at position \"5366\" violates the primary key: the same as in the row at position 313",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5366,
+          "rowPosition": 5367,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 317",
+          "message": "Row at position \"5367\" violates the primary key: the same as in the row at position 317",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5367,
+          "rowPosition": 5368,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 320",
+          "message": "Row at position \"5368\" violates the primary key: the same as in the row at position 320",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5368,
+          "rowPosition": 5369,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 325",
+          "message": "Row at position \"5369\" violates the primary key: the same as in the row at position 325",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5369,
+          "rowPosition": 5370,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 328",
+          "message": "Row at position \"5370\" violates the primary key: the same as in the row at position 328",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5370,
+          "rowPosition": 5371,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 334",
+          "message": "Row at position \"5371\" violates the primary key: the same as in the row at position 334",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5371,
+          "rowPosition": 5372,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 338",
+          "message": "Row at position \"5372\" violates the primary key: the same as in the row at position 338",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5372,
+          "rowPosition": 5373,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 341",
+          "message": "Row at position \"5373\" violates the primary key: the same as in the row at position 341",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5373,
+          "rowPosition": 5374,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 344",
+          "message": "Row at position \"5374\" violates the primary key: the same as in the row at position 344",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5374,
+          "rowPosition": 5375,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 346",
+          "message": "Row at position \"5375\" violates the primary key: the same as in the row at position 346",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5375,
+          "rowPosition": 5376,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 347",
+          "message": "Row at position \"5376\" violates the primary key: the same as in the row at position 347",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5376,
+          "rowPosition": 5377,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 350",
+          "message": "Row at position \"5377\" violates the primary key: the same as in the row at position 350",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5377,
+          "rowPosition": 5378,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 352",
+          "message": "Row at position \"5378\" violates the primary key: the same as in the row at position 352",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5378,
+          "rowPosition": 5379,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 354",
+          "message": "Row at position \"5379\" violates the primary key: the same as in the row at position 354",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5379,
+          "rowPosition": 5380,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 357",
+          "message": "Row at position \"5380\" violates the primary key: the same as in the row at position 357",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5380,
+          "rowPosition": 5381,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 359",
+          "message": "Row at position \"5381\" violates the primary key: the same as in the row at position 359",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5381,
+          "rowPosition": 5382,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 360",
+          "message": "Row at position \"5382\" violates the primary key: the same as in the row at position 360",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5382,
+          "rowPosition": 5383,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 362",
+          "message": "Row at position \"5383\" violates the primary key: the same as in the row at position 362",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5383,
+          "rowPosition": 5384,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 366",
+          "message": "Row at position \"5384\" violates the primary key: the same as in the row at position 366",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5384,
+          "rowPosition": 5385,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 368",
+          "message": "Row at position \"5385\" violates the primary key: the same as in the row at position 368",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5385,
+          "rowPosition": 5386,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 370",
+          "message": "Row at position \"5386\" violates the primary key: the same as in the row at position 370",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5386,
+          "rowPosition": 5387,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 371",
+          "message": "Row at position \"5387\" violates the primary key: the same as in the row at position 371",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5387,
+          "rowPosition": 5388,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 373",
+          "message": "Row at position \"5388\" violates the primary key: the same as in the row at position 373",
+          "description": "Values in the primary key fields should be unique for every row"
+        },
+        {
+          "cells": [
+            "id_decreto",
+            "nr_decreto"
+          ],
+          "rowNumber": 5388,
+          "rowPosition": 5389,
+          "code": "primary-key-error",
+          "name": "PrimaryKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "the same as in the row at position 374",
+          "message": "Row at position \"5389\" violates the primary key: the same as in the row at position 374",
+          "description": "Values in the primary key fields should be unique for every row"
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 194
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 194,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }
