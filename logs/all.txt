@@ -483,3 +483,10 @@ Updating data and metadata of resource ft_orcamento_emenda.
 Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
+[main da417fc7] Atualização age7
+ 123 files changed, 68931 insertions(+), 142791 deletions(-)
+ rewrite build_datasets/proposta-lei-orcamentaria/datapackage.json (81%)
+ rewrite logs/cron.txt (66%)
+ rename logs/parse/{dm_fonte.Rout => dm_emenda_orcam.Rout} (69%)
+ delete mode 100644 logs/parse/dm_fonte_orcam.Rout
+ rewrite logs/validate/dm_emenda_orcam.json (99%)
