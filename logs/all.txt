@@ -1,10 +1,4 @@
-Updating e1b956b1..dbea8aaa
-Fast-forward
- schemas/dm_item_rec.yaml               | 15 ---------------
- schemas/fl_compras_empenho.yaml        |  2 +-
- schemas/ft_receita_prevista_v2018.yaml |  2 +-
- schemas/ft_receita_v2018.yaml          | 31 -------------------------------
- 4 files changed, 2 insertions(+), 48 deletions(-)
+Already up to date.
 rm -rf logs/extract/*
 rm -rf logs/parse/*
 rm -rf logs/tests/*
@@ -19,5 +13,4 @@ rm -rf data/raw/*
 rm -f datapackage.json
 rm -rf build_datasets
 rm -rf reports.html
-Rscript --verbose scripts/r/parse-sql.R dm_item_rec 2> logs/parse/dm_item_rec.Rout
 Rscript --verbose scripts/r/parse-sql.R ft_receita_prevista_v2018 2> logs/parse/ft_receita_prevista_v2018.Rout
