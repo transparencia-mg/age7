@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.032,
+  "time": 0.027,
   "errors": [],
   "tasks": [
     {
@@ -59,13 +59,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "1b9496e66ddf910ead5e01636061dbd9",
-          "bytes": 526,
+          "hash": "74fc32a9db2811546085d573dc2854a4",
+          "bytes": 37,
           "fields": 2,
-          "rows": 152
+          "rows": 0
         }
       },
-      "time": 0.032,
+      "time": 0.027,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -87,39 +87,16 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [
-        {
-          "cell": "0",
-          "fieldName": "ano",
-          "fieldNumber": 2,
-          "fieldPosition": 2,
-          "cells": [
-            "299",
-            "0"
-          ],
-          "rowNumber": 1,
-          "rowPosition": 2,
-          "code": "constraint-error",
-          "name": "Constraint Error",
-          "tags": [
-            "#table",
-            "#row",
-            "#cell"
-          ],
-          "note": "constraint \"required\" is \"True\"",
-          "message": "The cell \"0\" in row at position \"2\" and field \"ano\" at position \"2\" does not conform to a constraint: constraint \"required\" is \"True\"",
-          "description": "A field value does not conform to a constraint."
-        }
-      ],
+      "errors": [],
       "stats": {
-        "errors": 1
+        "errors": 0
       },
-      "valid": false
+      "valid": true
     }
   ],
   "stats": {
-    "errors": 1,
+    "errors": 0,
     "tasks": 1
   },
-  "valid": false
+  "valid": true
 }
