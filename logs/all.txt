@@ -41,6 +41,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fc.T...... dm_empenho_desp_2022.csv
 >fcsT...... dm_empenho_desp_2023.csv
 >fcsT...... dm_empenho_desp_compras_empenho.csv
+>fcsT...... dm_empenho_desp_diarias_scdp_liqpag.csv
 >fc.T...... dm_empenho_resto_2002.csv
 >fc.T...... dm_empenho_resto_2003.csv
 >fc.T...... dm_empenho_resto_2004.csv
@@ -70,10 +71,12 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... ft_compras.csv
 >fcsT...... ft_convenio_entrada_desp.csv
 >fcsT...... ft_convenio_investimento.csv
->fc.T...... ft_despesa_2022.csv
+>fcsT...... ft_despesa_2022.csv
 >fcsT...... ft_despesa_2023.csv
 >fc.T...... ft_diarias_2022.csv
 >fcsT...... ft_diarias_2023.csv
+>fcsT...... ft_diarias_scdp.csv
+>fcsT...... ft_diarias_scdp_liqpag.csv
 >fcsT...... ft_orcamento_cred_alt.csv
 >fc.T...... ft_restos_pagar_2002.csv
 >fc.T...... ft_restos_pagar_2003.csv
@@ -100,6 +103,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 gzip -n < data/staging/ft_convenio_investimento.csv > data/ft_convenio_investimento.csv.gz
 gzip -n < data/staging/ft_convenio_entrada_desp.csv > data/ft_convenio_entrada_desp.csv.gz
 gzip -n < data/staging/dm_empenho_desp_compras_empenho.csv > data/dm_empenho_desp_compras_empenho.csv.gz
+gzip -n < data/staging/dm_empenho_desp_diarias_scdp_liqpag.csv > data/dm_empenho_desp_diarias_scdp_liqpag.csv.gz
 gzip -n < data/staging/dm_empenho_desp_2002.csv > data/dm_empenho_desp_2002.csv.gz
 gzip -n < data/staging/dm_empenho_desp_2003.csv > data/dm_empenho_desp_2003.csv.gz
 gzip -n < data/staging/dm_empenho_desp_2004.csv > data/dm_empenho_desp_2004.csv.gz
@@ -126,6 +130,8 @@ gzip -n < data/staging/dm_favorecido.csv > data/dm_favorecido.csv.gz
 gzip -n < data/staging/fl_despesa_pgto.csv > data/fl_despesa_pgto.csv.gz
 gzip -n < data/staging/dm_processo.csv > data/dm_processo.csv.gz
 gzip -n < data/staging/fl_compras_empenho.csv > data/fl_compras_empenho.csv.gz
+gzip -n < data/staging/ft_diarias_scdp.csv > data/ft_diarias_scdp.csv.gz
+gzip -n < data/staging/ft_diarias_scdp_liqpag.csv > data/ft_diarias_scdp_liqpag.csv.gz
 gzip -n < data/staging/ft_compras.csv > data/ft_compras.csv.gz
 gzip -n < data/staging/ft_despesa_2022.csv > data/ft_despesa_2022.csv.gz
 gzip -n < data/staging/ft_despesa_2023.csv > data/ft_despesa_2023.csv.gz
@@ -179,6 +185,7 @@ gzip -n < data/staging/ft_orcamento_cred_alt.csv > data/ft_orcamento_cred_alt.cs
 dtamg-py etl-make validate -r ft_convenio_investimento > logs/validate/ft_convenio_investimento.json
 dtamg-py etl-make validate -r ft_convenio_entrada_desp > logs/validate/ft_convenio_entrada_desp.json
 dtamg-py etl-make validate -r dm_empenho_desp_compras_empenho > logs/validate/dm_empenho_desp_compras_empenho.json
+dtamg-py etl-make validate -r dm_empenho_desp_diarias_scdp_liqpag > logs/validate/dm_empenho_desp_diarias_scdp_liqpag.json
 dtamg-py etl-make validate -r dm_empenho_desp_2002 > logs/validate/dm_empenho_desp_2002.json
 dtamg-py etl-make validate -r dm_empenho_desp_2003 > logs/validate/dm_empenho_desp_2003.json
 dtamg-py etl-make validate -r dm_empenho_desp_2004 > logs/validate/dm_empenho_desp_2004.json
@@ -205,6 +212,8 @@ dtamg-py etl-make validate -r dm_favorecido > logs/validate/dm_favorecido.json
 dtamg-py etl-make validate -r fl_despesa_pgto > logs/validate/fl_despesa_pgto.json
 dtamg-py etl-make validate -r dm_processo > logs/validate/dm_processo.json
 dtamg-py etl-make validate -r fl_compras_empenho > logs/validate/fl_compras_empenho.json
+dtamg-py etl-make validate -r ft_diarias_scdp > logs/validate/ft_diarias_scdp.json
+dtamg-py etl-make validate -r ft_diarias_scdp_liqpag > logs/validate/ft_diarias_scdp_liqpag.json
 dtamg-py etl-make validate -r ft_compras > logs/validate/ft_compras.json
 dtamg-py etl-make validate -r ft_despesa_2022 > logs/validate/ft_despesa_2022.json
 dtamg-py etl-make validate -r ft_despesa_2023 > logs/validate/ft_despesa_2023.json
@@ -323,6 +332,3 @@ Error during https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updati
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Error during https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updating
-[main c9dd24ae] Atualização age7
- 98 files changed, 90619 insertions(+), 8926 deletions(-)
- rewrite logs/cron.txt (66%)
