@@ -387,3 +387,13 @@ Error during https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updati
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Error during https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updating
+[main 612e76b8] Atualização age7
+ 121 files changed, 50818 insertions(+), 479334 deletions(-)
+ rewrite build_datasets/compras_contratos/datapackage.json (74%)
+ rewrite build_datasets/viagens/datapackage.json (93%)
+ rewrite logs/cron.txt (66%)
+ rewrite logs/validate/failed_reports.json (83%)
+ rewrite logs/validate/ft_compras.json (94%)
+ rewrite logs/validate/ft_diarias_scdp.json (98%)
+ rewrite logs/validate/ft_diarias_scdp_liqpag.json (98%)
+ rewrite report/index.html (89%)
