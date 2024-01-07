@@ -1089,7 +1089,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 46.406,
+        "time": 47.062,
         "errors": [],
         "tasks": [
           {
@@ -1282,13 +1282,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "a70a6aed8d90941ad46c7d19badb0648",
+                "hash": "c67f92e003aa3ec79bedec77c108a879",
                 "bytes": 7033117,
                 "fields": 11,
                 "rows": 653183
               }
             },
-            "time": 46.406,
+            "time": 47.062,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1310,18 +1310,71 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [],
+            "errors": [
+              {
+                "cells": [
+                  "id_tempo",
+                  "id_unidade_orc",
+                  "id_municipio",
+                  "id_item",
+                  "cd_ibge",
+                  "nr_doc_liquidacao",
+                  "tp_documento",
+                  "tp_operacao",
+                  "cd_transacao_org",
+                  "ano_particao",
+                  "vr_investido"
+                ],
+                "rowNumber": 636937,
+                "rowPosition": 636938,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"636938\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              },
+              {
+                "cells": [
+                  "id_tempo",
+                  "id_unidade_orc",
+                  "id_municipio",
+                  "id_item",
+                  "cd_ibge",
+                  "nr_doc_liquidacao",
+                  "tp_documento",
+                  "tp_operacao",
+                  "cd_transacao_org",
+                  "ano_particao",
+                  "vr_investido"
+                ],
+                "rowNumber": 636938,
+                "rowPosition": 636939,
+                "code": "foreign-key-error",
+                "name": "ForeignKey Error",
+                "tags": [
+                  "#table",
+                  "#row"
+                ],
+                "note": "not found in the lookup table",
+                "message": "Row at position \"636939\" violates the foreign key: not found in the lookup table",
+                "description": "Values in the foreign key fields should exist in the reference table"
+              }
+            ],
             "stats": {
-              "errors": 0
+              "errors": 2
             },
-            "valid": true
+            "valid": false
           }
         ],
         "stats": {
-          "errors": 0,
+          "errors": 2,
           "tasks": 1
         },
-        "valid": true
+        "valid": false
       }
     },
     {
