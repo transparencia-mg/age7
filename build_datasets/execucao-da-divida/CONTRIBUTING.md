@@ -16,7 +16,7 @@ Todas as contribuições são bem vindas. Alguns exemplos são:
 
 Além disso, fique a vontade para utilizar os demais canais oficiais de atendimento do Poder Executivo Estadual:
 
-- [Fale Conosco](https://www.transparencia.mg.gov.br/faleconosco): Dúvidas
-- [Manifestações de Ouvidoria](http://www.ouvidoriageral.mg.gov.br/): Denúncia, Reclamação, Crítica, Elogio ou Sugestões.
+- [Fale Conosco](https://www.transparencia.mg.gov.br/canais-de-atendimento/faleconosco): Dúvidas
+- [Manifestações de Ouvidoria](https://www.ouvidoriageral.mg.gov.br/canais-atendimento): Denúncia, Reclamação, Crítica, Elogio ou Sugestões.
 - [Pedido de Acesso à Informação](http://www.acessoainformacao.mg.gov.br/sistema/site/index.html): Acesso às informações dos órgãos e entidades estaduais que não estejam publicamente disponíveis.
 - [Pedido de abertura de bases de dados](http://www.acessoainformacao.mg.gov.br/sistema/site/index.html?ReturnUrl=%2fsistema%2f): Solicitação de abertura de bases de dados dos órgãos e entidades que não estejam publicamente disponíveis.
