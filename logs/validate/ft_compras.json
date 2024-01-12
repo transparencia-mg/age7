@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 447.367,
+  "time": 449.298,
   "errors": [],
   "tasks": [
     {
@@ -530,13 +530,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "a4b3ab4c2f31bf2b07673791115aa149",
-          "bytes": 61447550,
+          "hash": "21b02f8a69e573908eccbd2d008a67b0",
+          "bytes": 61449449,
           "fields": 27,
-          "rows": 2025347
+          "rows": 2025431
         }
       },
-      "time": 447.367,
+      "time": 449.298,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -559,6 +559,48 @@
       ],
       "partial": false,
       "errors": [
+        {
+          "cells": [
+            "id_tempo",
+            "id_procedimento",
+            "id_orgao_demanda",
+            "id_orgao_contrato",
+            "id_situacao_proc",
+            "id_situacao_cont",
+            "id_municipio",
+            "id_contratado",
+            "id_tipo_licitacao",
+            "id_grupo_matserv",
+            "id_classe_matserv",
+            "id_material_servico",
+            "id_item_matserv",
+            "id_processo",
+            "id_contrato",
+            "id_unidade_medida",
+            "id_linha_fornec",
+            "id_item",
+            "id_unidade_orc",
+            "ano_particao",
+            "dt_item_homologa",
+            "qt_item_pedido",
+            "vr_un_referencia",
+            "vr_referencia",
+            "vr_un_homologado",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 1969836,
+          "rowPosition": 1969837,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"1969837\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
         {
           "cells": [
             "id_tempo",
@@ -683,6 +725,48 @@
           ],
           "note": "not found in the lookup table",
           "message": "Row at position \"2008247\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_procedimento",
+            "id_orgao_demanda",
+            "id_orgao_contrato",
+            "id_situacao_proc",
+            "id_situacao_cont",
+            "id_municipio",
+            "id_contratado",
+            "id_tipo_licitacao",
+            "id_grupo_matserv",
+            "id_classe_matserv",
+            "id_material_servico",
+            "id_item_matserv",
+            "id_processo",
+            "id_contrato",
+            "id_unidade_medida",
+            "id_linha_fornec",
+            "id_item",
+            "id_unidade_orc",
+            "ano_particao",
+            "dt_item_homologa",
+            "qt_item_pedido",
+            "vr_un_referencia",
+            "vr_referencia",
+            "vr_un_homologado",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 2010052,
+          "rowPosition": 2010053,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2010053\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1555,8 +1639,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2013717,
-          "rowPosition": 2013718,
+          "rowNumber": 2013628,
+          "rowPosition": 2013629,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1564,7 +1648,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2013718\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2013629\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1597,8 +1681,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2013777,
-          "rowPosition": 2013778,
+          "rowNumber": 2013774,
+          "rowPosition": 2013775,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1606,7 +1690,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2013778\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2013775\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1639,8 +1723,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2014027,
-          "rowPosition": 2014028,
+          "rowNumber": 2013834,
+          "rowPosition": 2013835,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1648,7 +1732,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2014028\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2013835\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1681,8 +1765,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2014038,
-          "rowPosition": 2014039,
+          "rowNumber": 2014111,
+          "rowPosition": 2014112,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1690,7 +1774,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2014039\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2014112\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1723,8 +1807,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2014049,
-          "rowPosition": 2014050,
+          "rowNumber": 2014122,
+          "rowPosition": 2014123,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1732,7 +1816,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2014050\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2014123\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1765,8 +1849,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2014050,
-          "rowPosition": 2014051,
+          "rowNumber": 2014133,
+          "rowPosition": 2014134,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1774,7 +1858,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2014051\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2014134\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1807,8 +1891,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2014094,
-          "rowPosition": 2014095,
+          "rowNumber": 2014134,
+          "rowPosition": 2014135,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1816,7 +1900,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2014095\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2014135\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1849,8 +1933,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2014095,
-          "rowPosition": 2014096,
+          "rowNumber": 2014178,
+          "rowPosition": 2014179,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1858,7 +1942,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2014096\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2014179\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1891,8 +1975,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2015017,
-          "rowPosition": 2015018,
+          "rowNumber": 2014179,
+          "rowPosition": 2014180,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1900,7 +1984,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2015018\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2014180\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1933,8 +2017,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2015128,
-          "rowPosition": 2015129,
+          "rowNumber": 2015101,
+          "rowPosition": 2015102,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1942,7 +2026,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2015129\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2015102\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -1975,8 +2059,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2015341,
-          "rowPosition": 2015342,
+          "rowNumber": 2015212,
+          "rowPosition": 2015213,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -1984,7 +2068,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2015342\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2015213\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2017,8 +2101,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2015378,
-          "rowPosition": 2015379,
+          "rowNumber": 2015425,
+          "rowPosition": 2015426,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2026,7 +2110,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2015379\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2015426\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2059,8 +2143,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2015835,
-          "rowPosition": 2015836,
+          "rowNumber": 2015462,
+          "rowPosition": 2015463,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2068,7 +2152,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2015836\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2015463\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2101,8 +2185,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2015842,
-          "rowPosition": 2015843,
+          "rowNumber": 2015919,
+          "rowPosition": 2015920,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2110,7 +2194,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2015843\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2015920\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2143,8 +2227,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2016363,
-          "rowPosition": 2016364,
+          "rowNumber": 2015926,
+          "rowPosition": 2015927,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2152,7 +2236,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2016364\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2015927\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2185,8 +2269,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2016364,
-          "rowPosition": 2016365,
+          "rowNumber": 2016447,
+          "rowPosition": 2016448,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2194,7 +2278,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2016365\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2016448\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2227,8 +2311,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2016439,
-          "rowPosition": 2016440,
+          "rowNumber": 2016448,
+          "rowPosition": 2016449,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2236,7 +2320,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2016440\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2016449\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2269,8 +2353,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2016440,
-          "rowPosition": 2016441,
+          "rowNumber": 2016523,
+          "rowPosition": 2016524,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2278,7 +2362,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2016441\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2016524\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2311,8 +2395,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2016441,
-          "rowPosition": 2016442,
+          "rowNumber": 2016524,
+          "rowPosition": 2016525,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2320,7 +2404,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2016442\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2016525\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2353,8 +2437,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2016753,
-          "rowPosition": 2016754,
+          "rowNumber": 2016525,
+          "rowPosition": 2016526,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2362,7 +2446,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2016754\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2016526\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2395,8 +2479,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2016754,
-          "rowPosition": 2016755,
+          "rowNumber": 2016837,
+          "rowPosition": 2016838,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2404,7 +2488,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2016755\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2016838\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2437,8 +2521,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2016755,
-          "rowPosition": 2016756,
+          "rowNumber": 2016838,
+          "rowPosition": 2016839,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2446,7 +2530,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2016756\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2016839\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2479,8 +2563,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2016756,
-          "rowPosition": 2016757,
+          "rowNumber": 2016839,
+          "rowPosition": 2016840,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2488,7 +2572,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2016757\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2016840\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2521,8 +2605,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2016757,
-          "rowPosition": 2016758,
+          "rowNumber": 2016840,
+          "rowPosition": 2016841,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2530,7 +2614,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2016758\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2016841\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2563,8 +2647,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2016758,
-          "rowPosition": 2016759,
+          "rowNumber": 2016841,
+          "rowPosition": 2016842,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2572,7 +2656,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2016759\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2016842\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2605,8 +2689,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2018906,
-          "rowPosition": 2018907,
+          "rowNumber": 2016842,
+          "rowPosition": 2016843,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2614,7 +2698,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2018907\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2016843\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2647,8 +2731,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2020758,
-          "rowPosition": 2020759,
+          "rowNumber": 2017725,
+          "rowPosition": 2017726,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2656,7 +2740,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2020759\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2017726\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2689,8 +2773,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2020760,
-          "rowPosition": 2020761,
+          "rowNumber": 2017726,
+          "rowPosition": 2017727,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2698,7 +2782,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2020761\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2017727\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2731,8 +2815,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2021457,
-          "rowPosition": 2021458,
+          "rowNumber": 2017727,
+          "rowPosition": 2017728,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2740,7 +2824,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2021458\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2017728\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2773,8 +2857,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2021458,
-          "rowPosition": 2021459,
+          "rowNumber": 2017972,
+          "rowPosition": 2017973,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2782,7 +2866,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2021459\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2017973\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2815,8 +2899,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2021459,
-          "rowPosition": 2021460,
+          "rowNumber": 2018990,
+          "rowPosition": 2018991,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2824,7 +2908,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2021460\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2018991\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2857,8 +2941,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2021460,
-          "rowPosition": 2021461,
+          "rowNumber": 2020842,
+          "rowPosition": 2020843,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2866,7 +2950,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2021461\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2020843\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2899,8 +2983,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2021461,
-          "rowPosition": 2021462,
+          "rowNumber": 2020844,
+          "rowPosition": 2020845,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2908,7 +2992,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2021462\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2020845\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2941,8 +3025,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2021550,
-          "rowPosition": 2021551,
+          "rowNumber": 2021541,
+          "rowPosition": 2021542,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2950,7 +3034,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2021551\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2021542\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -2983,8 +3067,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2022227,
-          "rowPosition": 2022228,
+          "rowNumber": 2021542,
+          "rowPosition": 2021543,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -2992,7 +3076,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2022228\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2021543\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -3025,8 +3109,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2022962,
-          "rowPosition": 2022963,
+          "rowNumber": 2021543,
+          "rowPosition": 2021544,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -3034,7 +3118,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2022963\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2021544\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -3067,8 +3151,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2023080,
-          "rowPosition": 2023081,
+          "rowNumber": 2021544,
+          "rowPosition": 2021545,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -3076,7 +3160,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2023081\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2021545\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -3109,8 +3193,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2023381,
-          "rowPosition": 2023382,
+          "rowNumber": 2021545,
+          "rowPosition": 2021546,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -3118,7 +3202,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2023382\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2021546\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -3151,8 +3235,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2023384,
-          "rowPosition": 2023385,
+          "rowNumber": 2021634,
+          "rowPosition": 2021635,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -3160,7 +3244,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2023385\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2021635\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -3193,8 +3277,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2023385,
-          "rowPosition": 2023386,
+          "rowNumber": 2022311,
+          "rowPosition": 2022312,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -3202,7 +3286,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2023386\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2022312\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -3235,8 +3319,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2023395,
-          "rowPosition": 2023396,
+          "rowNumber": 2023046,
+          "rowPosition": 2023047,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -3244,7 +3328,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2023396\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2023047\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -3277,8 +3361,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2023522,
-          "rowPosition": 2023523,
+          "rowNumber": 2023164,
+          "rowPosition": 2023165,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -3286,7 +3370,7 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2023523\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2023165\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         },
         {
@@ -3319,8 +3403,8 @@
             "vr_homologado",
             "vr_atualizado"
           ],
-          "rowNumber": 2024839,
-          "rowPosition": 2024840,
+          "rowNumber": 2023465,
+          "rowPosition": 2023466,
           "code": "foreign-key-error",
           "name": "ForeignKey Error",
           "tags": [
@@ -3328,18 +3412,312 @@
             "#row"
           ],
           "note": "not found in the lookup table",
-          "message": "Row at position \"2024840\" violates the foreign key: not found in the lookup table",
+          "message": "Row at position \"2023466\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_procedimento",
+            "id_orgao_demanda",
+            "id_orgao_contrato",
+            "id_situacao_proc",
+            "id_situacao_cont",
+            "id_municipio",
+            "id_contratado",
+            "id_tipo_licitacao",
+            "id_grupo_matserv",
+            "id_classe_matserv",
+            "id_material_servico",
+            "id_item_matserv",
+            "id_processo",
+            "id_contrato",
+            "id_unidade_medida",
+            "id_linha_fornec",
+            "id_item",
+            "id_unidade_orc",
+            "ano_particao",
+            "dt_item_homologa",
+            "qt_item_pedido",
+            "vr_un_referencia",
+            "vr_referencia",
+            "vr_un_homologado",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 2023466,
+          "rowPosition": 2023467,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2023467\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_procedimento",
+            "id_orgao_demanda",
+            "id_orgao_contrato",
+            "id_situacao_proc",
+            "id_situacao_cont",
+            "id_municipio",
+            "id_contratado",
+            "id_tipo_licitacao",
+            "id_grupo_matserv",
+            "id_classe_matserv",
+            "id_material_servico",
+            "id_item_matserv",
+            "id_processo",
+            "id_contrato",
+            "id_unidade_medida",
+            "id_linha_fornec",
+            "id_item",
+            "id_unidade_orc",
+            "ano_particao",
+            "dt_item_homologa",
+            "qt_item_pedido",
+            "vr_un_referencia",
+            "vr_referencia",
+            "vr_un_homologado",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 2023467,
+          "rowPosition": 2023468,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2023468\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_procedimento",
+            "id_orgao_demanda",
+            "id_orgao_contrato",
+            "id_situacao_proc",
+            "id_situacao_cont",
+            "id_municipio",
+            "id_contratado",
+            "id_tipo_licitacao",
+            "id_grupo_matserv",
+            "id_classe_matserv",
+            "id_material_servico",
+            "id_item_matserv",
+            "id_processo",
+            "id_contrato",
+            "id_unidade_medida",
+            "id_linha_fornec",
+            "id_item",
+            "id_unidade_orc",
+            "ano_particao",
+            "dt_item_homologa",
+            "qt_item_pedido",
+            "vr_un_referencia",
+            "vr_referencia",
+            "vr_un_homologado",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 2023468,
+          "rowPosition": 2023469,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2023469\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_procedimento",
+            "id_orgao_demanda",
+            "id_orgao_contrato",
+            "id_situacao_proc",
+            "id_situacao_cont",
+            "id_municipio",
+            "id_contratado",
+            "id_tipo_licitacao",
+            "id_grupo_matserv",
+            "id_classe_matserv",
+            "id_material_servico",
+            "id_item_matserv",
+            "id_processo",
+            "id_contrato",
+            "id_unidade_medida",
+            "id_linha_fornec",
+            "id_item",
+            "id_unidade_orc",
+            "ano_particao",
+            "dt_item_homologa",
+            "qt_item_pedido",
+            "vr_un_referencia",
+            "vr_referencia",
+            "vr_un_homologado",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 2023469,
+          "rowPosition": 2023470,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2023470\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_procedimento",
+            "id_orgao_demanda",
+            "id_orgao_contrato",
+            "id_situacao_proc",
+            "id_situacao_cont",
+            "id_municipio",
+            "id_contratado",
+            "id_tipo_licitacao",
+            "id_grupo_matserv",
+            "id_classe_matserv",
+            "id_material_servico",
+            "id_item_matserv",
+            "id_processo",
+            "id_contrato",
+            "id_unidade_medida",
+            "id_linha_fornec",
+            "id_item",
+            "id_unidade_orc",
+            "ano_particao",
+            "dt_item_homologa",
+            "qt_item_pedido",
+            "vr_un_referencia",
+            "vr_referencia",
+            "vr_un_homologado",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 2023479,
+          "rowPosition": 2023480,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2023480\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_procedimento",
+            "id_orgao_demanda",
+            "id_orgao_contrato",
+            "id_situacao_proc",
+            "id_situacao_cont",
+            "id_municipio",
+            "id_contratado",
+            "id_tipo_licitacao",
+            "id_grupo_matserv",
+            "id_classe_matserv",
+            "id_material_servico",
+            "id_item_matserv",
+            "id_processo",
+            "id_contrato",
+            "id_unidade_medida",
+            "id_linha_fornec",
+            "id_item",
+            "id_unidade_orc",
+            "ano_particao",
+            "dt_item_homologa",
+            "qt_item_pedido",
+            "vr_un_referencia",
+            "vr_referencia",
+            "vr_un_homologado",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 2023606,
+          "rowPosition": 2023607,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2023607\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_procedimento",
+            "id_orgao_demanda",
+            "id_orgao_contrato",
+            "id_situacao_proc",
+            "id_situacao_cont",
+            "id_municipio",
+            "id_contratado",
+            "id_tipo_licitacao",
+            "id_grupo_matserv",
+            "id_classe_matserv",
+            "id_material_servico",
+            "id_item_matserv",
+            "id_processo",
+            "id_contrato",
+            "id_unidade_medida",
+            "id_linha_fornec",
+            "id_item",
+            "id_unidade_orc",
+            "ano_particao",
+            "dt_item_homologa",
+            "qt_item_pedido",
+            "vr_un_referencia",
+            "vr_referencia",
+            "vr_un_homologado",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 2024923,
+          "rowPosition": 2024924,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2024924\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         }
       ],
       "stats": {
-        "errors": 66
+        "errors": 75
       },
       "valid": false
     }
   ],
   "stats": {
-    "errors": 66,
+    "errors": 75,
     "tasks": 1
   },
   "valid": false
