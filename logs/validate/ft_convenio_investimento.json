@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 46.586,
+  "time": 47.525,
   "errors": [],
   "tasks": [
     {
@@ -199,7 +199,7 @@
           "rows": 653183
         }
       },
-      "time": 46.586,
+      "time": 47.525,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -221,69 +221,16 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [
-        {
-          "cells": [
-            "id_tempo",
-            "id_unidade_orc",
-            "id_municipio",
-            "id_item",
-            "cd_ibge",
-            "nr_doc_liquidacao",
-            "tp_documento",
-            "tp_operacao",
-            "cd_transacao_org",
-            "ano_particao",
-            "vr_investido"
-          ],
-          "rowNumber": 636937,
-          "rowPosition": 636938,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"636938\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_tempo",
-            "id_unidade_orc",
-            "id_municipio",
-            "id_item",
-            "cd_ibge",
-            "nr_doc_liquidacao",
-            "tp_documento",
-            "tp_operacao",
-            "cd_transacao_org",
-            "ano_particao",
-            "vr_investido"
-          ],
-          "rowNumber": 636938,
-          "rowPosition": 636939,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"636939\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        }
-      ],
+      "errors": [],
       "stats": {
-        "errors": 2
+        "errors": 0
       },
-      "valid": false
+      "valid": true
     }
   ],
   "stats": {
-    "errors": 2,
+    "errors": 0,
     "tasks": 1
   },
-  "valid": false
+  "valid": true
 }
