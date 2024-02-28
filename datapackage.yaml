@@ -882,20 +882,6 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
-  - name: dm_empenho_desp_2024
-    title: Empenho Despesa 2024
-    path: data/dm_empenho_desp_2024.csv.gz
-    schema: schemas/dm_empenho_desp_2024.yaml
-    sources:
-      - title: >-
-          Tabela origem no schema AGE7 no banco de dados do Portal da
-          Transparência
-        table: dm_empenho_desp
-    format: csv
-    mediatype: text/csv
-    encoding: utf-8-sig
-    dialect: schemas/dialect.json
-    profile: tabular-data-resource
   - name: dm_favorecido
     title: Favorecido
     path: data/dm_favorecido.csv.gz
@@ -1722,20 +1708,6 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
-  - name: ft_despesa_2024
-    title: Despesa 2024
-    path: data/ft_despesa_2024.csv.gz
-    schema: schemas/ft_despesa_2024.yaml
-    sources:
-      - title: >-
-          Tabela origem no schema AGE7 no banco de dados do Portal da
-          Transparência
-        table: ft_despesa_2024
-    format: csv
-    mediatype: text/csv
-    encoding: utf-8-sig
-    dialect: schemas/dialect.json
-    profile: tabular-data-resource
   - name: dm_situacao_op_desp
     title: Situação Ordem de Pagamento
     path: data/dm_situacao_op_desp.csv.gz
@@ -2174,20 +2146,6 @@ resources:
     title: Empenho Restos a Pagar 2023
     path: data/dm_empenho_resto_2023.csv.gz
     schema: schemas/dm_empenho_resto_2023.yaml
-    sources:
-      - title: >-
-          Tabela origem no schema AGE7 no banco de dados do Portal da
-          Transparência
-        table: dm_empenho_resto
-    format: csv
-    mediatype: text/csv
-    encoding: utf-8-sig
-    dialect: schemas/dialect.json
-    profile: tabular-data-resource
- - name: dm_empenho_resto_2024
-    title: Empenho Restos a Pagar 2024
-    path: data/dm_empenho_resto_2024.csv.gz
-    schema: schemas/dm_empenho_resto_2024.yaml
     sources:
       - title: >-
           Tabela origem no schema AGE7 no banco de dados do Portal da
@@ -2661,20 +2619,6 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
-  - name: ft_diarias_2024
-    title: Diárias 2024
-    path: data/ft_diarias_2024.csv.gz
-    schema: schemas/ft_diarias_2024.yaml
-    sources:
-      - title: >-
-          Tabela origem no schema AGE7 no banco de dados do Portal da
-          Transparência
-        table: ft_diarias
-    format: csv
-    mediatype: text/csv
-    encoding: utf-8-sig
-    dialect: schemas/dialect.json
-    profile: tabular-data-resource
   - name: ft_restos_pagar_2002
     title: ft_restos_pagar 2002
     path: data/ft_restos_pagar_2002.csv.gz
@@ -2973,20 +2917,6 @@ resources:
     title: ft_restos_pagar 2023
     path: data/ft_restos_pagar_2023.csv.gz
     schema: schemas/ft_restos_pagar_2023.yaml
-    sources:
-      - title: >-
-          Tabela origem no schema AGE7 no banco de dados do Portal da
-          Transparência
-        table: ft_restos_pagar
-    format: csv
-    mediatype: text/csv
-    encoding: utf-8-sig
-    dialect: schemas/dialect.json
-    profile: tabular-data-resource
-  - name: ft_restos_pagar_2024
-    title: ft_restos_pagar 2024
-    path: data/ft_restos_pagar_2024.csv.gz
-    schema: schemas/ft_restos_pagar_2024.yaml
     sources:
       - title: >-
           Tabela origem no schema AGE7 no banco de dados do Portal da
