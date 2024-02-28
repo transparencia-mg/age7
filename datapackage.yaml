@@ -2184,20 +2184,20 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
-  - name: dm_empenho_resto_2024
-    title: Empenho Restos a Pagar 2024
-    path: data/dm_empenho_resto_2024.csv.gz
-    schema: schemas/dm_empenho_resto_2024.yaml
-    sources:
-      - title: >-
-          Tabela origem no schema AGE7 no banco de dados do Portal da
-          Transparência
-        table: dm_empenho_resto
-    format: csv
-    mediatype: text/csv
-    encoding: utf-8-sig
-    dialect: schemas/dialect.json
-    profile: tabular-data-resource
+ - name: dm_empenho_resto_2024
+   title: Empenho Restos a Pagar 2024
+   path: data/dm_empenho_resto_2024.csv.gz
+   schema: schemas/dm_empenho_resto_2024.yaml
+   sources:
+    - title: >-
+        Tabela origem no schema AGE7 no banco de dados do Portal da
+        Transparência
+      table: dm_empenho_resto
+   format: csv
+   mediatype: text/csv
+   encoding: utf-8-sig
+   dialect: schemas/dialect.json
+   profile: tabular-data-resource
   - name: dm_categ_econ
     title: Categoria Econômica
     path: data/dm_categ_econ.csv.gz
