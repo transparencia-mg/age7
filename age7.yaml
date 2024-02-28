@@ -25,7 +25,6 @@ consultas:
       - ft_restos_pagar_2021
       - ft_restos_pagar_2022
       - ft_restos_pagar_2023
-      - ft_restos_pagar_2024
   compras_contratos:
     title: Compras e contratos
     url: http://www.transparencia.mg.gov.br/compras-e-patrimonio/compras-e-contratos
@@ -69,7 +68,6 @@ consultas:
       - ft_diarias_2021
       - ft_diarias_2022
       - ft_diarias_2023
-      - ft_diarias_2024
   despesa:
     title: Despesa pública
     url: http://www.transparencia.mg.gov.br/despesa-estado/despesa
@@ -96,7 +94,6 @@ consultas:
       - ft_despesa_2021      
       - ft_despesa_2022
       - ft_despesa_2023
-      - ft_despesa_2024
       - fl_despesa_pgto
   transferencia-de-impostos-a-municipios:
     title: Despesas com repasse a municípios
@@ -612,24 +609,6 @@ fact_tables:
     - dm_tipo_documento
     - dm_unidade_orc
 
-  ft_despesa_2024:
-    - dm_acao
-    - dm_categ_econ
-    - dm_elemento_desp
-    - dm_empenho_desp_2024
-    - dm_favorecido
-    - dm_fonte
-    - dm_funcao_desp
-    - dm_grupo_desp
-    - dm_item_desp
-    - dm_modalidade_aplic
-    - dm_procedencia
-    - dm_programa
-    - dm_subfuncao_desp
-    - dm_tempo_diario
-    - dm_tipo_documento
-    - dm_unidade_orc
-
   fl_despesa_pgto:
     - dm_situacao_op_desp
 
@@ -1029,24 +1008,6 @@ fact_tables:
     - dm_programa_resto
     - dm_subfuncao_resto
 
-  ft_restos_pagar_2024:
-    - dm_elemento_desp
-    - dm_modalidade_aplic
-    - dm_grupo_desp
-    - dm_favorecido
-    - dm_unidade_orc
-    - dm_tempo_anual
-    - dm_empenho_resto_2024
-    - dm_categ_econ
-    - dm_item_desp
-    - dm_fonte
-    - dm_tipo_documento
-    - dm_funcao_resto
-    - dm_procedencia
-    - dm_acao_resto
-    - dm_programa_resto
-    - dm_subfuncao_resto
-
   ft_diarias_2002:
     - dm_acao
     - dm_elemento_desp
@@ -1288,17 +1249,6 @@ fact_tables:
     - dm_tempo_diario
     - dm_tipo_documento
     - dm_unidade_orc  
-
-  ft_diarias_2023:
-    - dm_acao
-    - dm_elemento_desp
-    - dm_empenho_desp_2024
-    - dm_favorecido
-    - dm_item_desp
-    - dm_programa
-    - dm_tempo_diario
-    - dm_tipo_documento
-    - dm_unidade_orc 
 
   ft_diarias_scdp:
       - dm_cargo_scdp
