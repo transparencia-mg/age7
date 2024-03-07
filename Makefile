@@ -36,8 +36,8 @@ $(SQL_FILES): scripts/sql/%.sql: scripts/r/parse-sql.R schemas/%.yaml
 	Rscript --verbose $< $* 2> logs/parse/$*.Rout
 
 full-extract:
-	# python3 scripts/python/full-extract.py
-	python3 scripts/python/extract_csv_evento_etl_carga.py 2> logs/evento_etl_carga.txt
+	# python scripts/python/full-extract.py
+	python scripts/python/extract_csv_evento_etl_carga.py 2> logs/evento_etl_carga.txt
 	dtamg-py etl-make full-extract 2> logs/full_extract.txt
 
 extract: $(DATA_RAW_FILES) # Extract raw files from external source into data/raw/
@@ -80,7 +80,7 @@ $(VALIDATION_FILES): logs/validate/%.json: data/%.csv.gz schemas/%.yaml
 	-dtamg-py etl-make validate -r $* > $@
 
 check-validation:
-	@python3 scripts/check_validation.py
+	@python scripts/check_validation.py
 
 validate-metadata: ## Valida arquivo yaml com tableschema
 	@echo "Validando tableschemas"
@@ -90,7 +90,7 @@ vars:
 	@echo 'DATA_FILES:' $(DATA_FILES)
 
 report: 
-	@python3 scripts/consolidate_reports.py
+	@python scripts/consolidate_reports.py
 	@livemark build index.md --target report/index.html
 
 clean:
