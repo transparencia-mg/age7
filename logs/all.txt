@@ -18,26 +18,27 @@ make: Nothing to be done for 'parse'.
 python scripts/python/extract_csv_evento_etl_carga.py 2> logs/evento_etl_carga.txt
 dtamg-py etl-make full-extract 2> logs/full_extract.txt
 rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
+>fcsT...... ft_orcamento_cred_alt.csv
 >fc.T...... ft_restos_pagar_2002.csv
 >fc.T...... ft_restos_pagar_2003.csv
 >fc.T...... ft_restos_pagar_2004.csv
->fcsT...... ft_restos_pagar_2005.csv
+>fc.T...... ft_restos_pagar_2005.csv
 >fc.T...... ft_restos_pagar_2006.csv
 >fc.T...... ft_restos_pagar_2007.csv
 >fc.T...... ft_restos_pagar_2008.csv
->fcsT...... ft_restos_pagar_2009.csv
+>fc.T...... ft_restos_pagar_2009.csv
 >fc.T...... ft_restos_pagar_2010.csv
 >fc.T...... ft_restos_pagar_2011.csv
 >fc.T...... ft_restos_pagar_2012.csv
->fcsT...... ft_restos_pagar_2013.csv
+>fc.T...... ft_restos_pagar_2013.csv
 >fc.T...... ft_restos_pagar_2014.csv
 >fc.T...... ft_restos_pagar_2015.csv
 >fc.T...... ft_restos_pagar_2016.csv
->fcsT...... ft_restos_pagar_2017.csv
+>fc.T...... ft_restos_pagar_2017.csv
 >fc.T...... ft_restos_pagar_2018.csv
 >fc.T...... ft_restos_pagar_2019.csv
 >fc.T...... ft_restos_pagar_2020.csv
->fcsT...... ft_restos_pagar_2021.csv
+>fc.T...... ft_restos_pagar_2021.csv
 >fc.T...... ft_restos_pagar_2022.csv
 >fc.T...... ft_restos_pagar_2023.csv
 >fcsT...... ft_restos_pagar_2024.csv
@@ -64,6 +65,7 @@ gzip -n < data/staging/ft_restos_pagar_2021.csv > data/ft_restos_pagar_2021.csv.
 gzip -n < data/staging/ft_restos_pagar_2022.csv > data/ft_restos_pagar_2022.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2023.csv > data/ft_restos_pagar_2023.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2024.csv > data/ft_restos_pagar_2024.csv.gz
+gzip -n < data/staging/ft_orcamento_cred_alt.csv > data/ft_orcamento_cred_alt.csv.gz
 dtamg-py etl-make validate -r ft_restos_pagar_2002 > logs/validate/ft_restos_pagar_2002.json
 dtamg-py etl-make validate -r ft_restos_pagar_2003 > logs/validate/ft_restos_pagar_2003.json
 dtamg-py etl-make validate -r ft_restos_pagar_2004 > logs/validate/ft_restos_pagar_2004.json
@@ -87,6 +89,7 @@ dtamg-py etl-make validate -r ft_restos_pagar_2021 > logs/validate/ft_restos_pag
 dtamg-py etl-make validate -r ft_restos_pagar_2022 > logs/validate/ft_restos_pagar_2022.json
 dtamg-py etl-make validate -r ft_restos_pagar_2023 > logs/validate/ft_restos_pagar_2023.json
 dtamg-py etl-make validate -r ft_restos_pagar_2024 > logs/validate/ft_restos_pagar_2024.json
+dtamg-py etl-make validate -r ft_orcamento_cred_alt > logs/validate/ft_orcamento_cred_alt.json
 dtamg-py etl-make build-datapackage
 Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_contratado.R', stop_on_failure=TRUE)" 2> logs/tests/test_dm_contratado.Rout
 
@@ -116,28 +119,6 @@ Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_favorecido_scd
 dtamg-py etl-make build-datapackages 2> logs/build.txt
 dpckan --datapackage build_datasets/restos_pagar/datapackage.json dataset update 2> logs/update/restos_pagar.txt
 Updating dataset https://dados.mg.gov.br/dataset/restos_pagar
-Updating data and metadata of resource dm_empenho_resto_2002.
-Updating data and metadata of resource dm_empenho_resto_2003.
-Updating data and metadata of resource dm_empenho_resto_2004.
-Updating data and metadata of resource dm_empenho_resto_2005.
-Updating data and metadata of resource dm_empenho_resto_2006.
-Updating data and metadata of resource dm_empenho_resto_2007.
-Updating data and metadata of resource dm_empenho_resto_2008.
-Updating data and metadata of resource dm_empenho_resto_2009.
-Updating data and metadata of resource dm_empenho_resto_2010.
-Updating data and metadata of resource dm_empenho_resto_2011.
-Updating data and metadata of resource dm_empenho_resto_2012.
-Updating data and metadata of resource dm_empenho_resto_2013.
-Updating data and metadata of resource dm_empenho_resto_2014.
-Updating data and metadata of resource dm_empenho_resto_2015.
-Updating data and metadata of resource dm_empenho_resto_2016.
-Updating data and metadata of resource dm_empenho_resto_2017.
-Updating data and metadata of resource dm_empenho_resto_2018.
-Updating data and metadata of resource dm_empenho_resto_2019.
-Updating data and metadata of resource dm_empenho_resto_2020.
-Updating data and metadata of resource dm_empenho_resto_2021.
-Updating data and metadata of resource dm_favorecido.
-Updating data and metadata of resource dm_procedencia.
 Updating data and metadata of resource ft_restos_pagar_2002.
 Updating data and metadata of resource ft_restos_pagar_2003.
 Updating data and metadata of resource ft_restos_pagar_2004.
@@ -159,8 +140,6 @@ Updating data and metadata of resource ft_restos_pagar_2019.
 Updating data and metadata of resource ft_restos_pagar_2020.
 Updating data and metadata of resource ft_restos_pagar_2021.
 Updating data and metadata of resource ft_restos_pagar_2022.
-Updating data and metadata of resource dm_empenho_resto_2022.
-Updating data and metadata of resource dm_empenho_resto_2023.
 Updating data and metadata of resource ft_restos_pagar_2023.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/restos_pagar updated
@@ -221,12 +200,6 @@ Nothing to be updated in dataset https://dados.mg.gov.br/dataset/planejamento-e-
 Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
-Updating data and metadata of resource dm_tempo_anual.
+Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 1a55c47b] Atualização age7
- 52 files changed, 904 insertions(+), 1427 deletions(-)
- rewrite logs/all.txt (75%)
- rewrite logs/cron.txt (66%)
- delete mode 100644 logs/parse/dm_empenho_resto_2024.Rout
- delete mode 100644 logs/parse/ft_restos_pagar_2024.Rout
