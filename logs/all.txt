@@ -40,7 +40,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fc.T...... ft_restos_pagar_2021.csv
 >fc.T...... ft_restos_pagar_2022.csv
 >fc.T...... ft_restos_pagar_2023.csv
->fcsT...... ft_restos_pagar_2024.csv
+>fc.T...... ft_restos_pagar_2024.csv
 gzip -n < data/staging/ft_restos_pagar_2002.csv > data/ft_restos_pagar_2002.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2003.csv > data/ft_restos_pagar_2003.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2004.csv > data/ft_restos_pagar_2004.csv.gz
@@ -148,9 +148,7 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/compras_contratos updated
 dpckan --datapackage build_datasets/convenios-saida/datapackage.json dataset update 2> logs/update/convenios-saida.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-saida
-Updating data and metadata of resource fl_convenio_alteracao.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/convenios-saida updated
+Error during https://dados.mg.gov.br/dataset/convenios-saida updating
 dpckan --datapackage build_datasets/diarias/datapackage.json dataset update 2> logs/update/diarias.txt
 Updating dataset https://dados.mg.gov.br/dataset/diarias
 Updating data and metadata of resource ft_diarias_2023.
@@ -199,6 +197,3 @@ dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json d
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Nothing to be updated in dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 35badec7] Atualização age7
- 48 files changed, 662 insertions(+), 665 deletions(-)
- rewrite logs/cron.txt (66%)
