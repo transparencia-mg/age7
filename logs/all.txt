@@ -18,6 +18,7 @@ make: Nothing to be done for 'parse'.
 python scripts/python/extract_csv_evento_etl_carga.py 2> logs/evento_etl_carga.txt
 dtamg-py etl-make full-extract 2> logs/full_extract.txt
 rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
+>fcsT...... ft_orcamento_cred_alt.csv
 >fc.T...... ft_restos_pagar_2002.csv
 >fc.T...... ft_restos_pagar_2003.csv
 >fc.T...... ft_restos_pagar_2004.csv
@@ -64,6 +65,7 @@ gzip -n < data/staging/ft_restos_pagar_2021.csv > data/ft_restos_pagar_2021.csv.
 gzip -n < data/staging/ft_restos_pagar_2022.csv > data/ft_restos_pagar_2022.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2023.csv > data/ft_restos_pagar_2023.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2024.csv > data/ft_restos_pagar_2024.csv.gz
+gzip -n < data/staging/ft_orcamento_cred_alt.csv > data/ft_orcamento_cred_alt.csv.gz
 dtamg-py etl-make validate -r ft_restos_pagar_2002 > logs/validate/ft_restos_pagar_2002.json
 dtamg-py etl-make validate -r ft_restos_pagar_2003 > logs/validate/ft_restos_pagar_2003.json
 dtamg-py etl-make validate -r ft_restos_pagar_2004 > logs/validate/ft_restos_pagar_2004.json
@@ -87,6 +89,7 @@ dtamg-py etl-make validate -r ft_restos_pagar_2021 > logs/validate/ft_restos_pag
 dtamg-py etl-make validate -r ft_restos_pagar_2022 > logs/validate/ft_restos_pagar_2022.json
 dtamg-py etl-make validate -r ft_restos_pagar_2023 > logs/validate/ft_restos_pagar_2023.json
 dtamg-py etl-make validate -r ft_restos_pagar_2024 > logs/validate/ft_restos_pagar_2024.json
+dtamg-py etl-make validate -r ft_orcamento_cred_alt > logs/validate/ft_orcamento_cred_alt.json
 dtamg-py etl-make build-datapackage
 Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_contratado.R', stop_on_failure=TRUE)" 2> logs/tests/test_dm_contratado.Rout
 
@@ -193,11 +196,9 @@ Nothing to be updated in dataset https://dados.mg.gov.br/dataset/convenios-entra
 Dataset https://dados.mg.gov.br/dataset/convenios-entrada updated
 dpckan --datapackage build_datasets/planejamento-e-monitoramento/datapackage.json dataset update 2> logs/update/planejamento-e-monitoramento.txt
 Updating dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento
-Nothing to be updated in dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento.
-Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
+Error during https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updating
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
-Nothing to be updated in dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria.
+Updating data and metadata of resource ft_orcamento_cred_alt.
+Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 814b7a9b] Atualização age7
- 48 files changed, 384 insertions(+), 366 deletions(-)
