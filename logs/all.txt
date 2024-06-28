@@ -145,7 +145,10 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/restos_pagar updated
 dpckan --datapackage build_datasets/compras_contratos/datapackage.json dataset update 2> logs/update/compras_contratos.txt
 Updating dataset https://dados.mg.gov.br/dataset/compras_contratos
-Error during https://dados.mg.gov.br/dataset/compras_contratos updating
+Updating data and metadata of resource fl_compras_empenho.
+Updating data and metadata of resource ft_compras.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/compras_contratos updated
 dpckan --datapackage build_datasets/convenios-saida/datapackage.json dataset update 2> logs/update/convenios-saida.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-saida
 Updating data and metadata of resource fl_convenio_alteracao.
@@ -200,6 +203,3 @@ Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main d4af844e] Atualização age7
- 50 files changed, 671 insertions(+), 753 deletions(-)
- rewrite logs/cron.txt (67%)
