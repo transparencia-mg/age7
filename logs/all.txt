@@ -181,10 +181,7 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/despesa-com-pessoal updated
 dpckan --datapackage build_datasets/viagens/datapackage.json dataset update 2> logs/update/viagens.txt
 Updating dataset https://dados.mg.gov.br/dataset/viagens
-Updating data and metadata of resource ft_diarias_scdp.
-Updating data and metadata of resource ft_diarias_scdp_liqpag.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/viagens updated
+Error during https://dados.mg.gov.br/dataset/viagens updating
 dpckan --datapackage build_datasets/receita/datapackage.json dataset update 2> logs/update/receita.txt
 Updating dataset https://dados.mg.gov.br/dataset/receita
 Updating data and metadata of resource dm_tempo_mensal.
@@ -203,6 +200,3 @@ Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 9525dd5a] Atualização age7
- 50 files changed, 670 insertions(+), 673 deletions(-)
- rewrite logs/cron.txt (66%)
