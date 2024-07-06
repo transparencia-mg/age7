@@ -152,13 +152,12 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/compras_contratos updated
 dpckan --datapackage build_datasets/convenios-saida/datapackage.json dataset update 2> logs/update/convenios-saida.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-saida
-Nothing to be updated in dataset https://dados.mg.gov.br/dataset/convenios-saida.
+Updating data and metadata of resource fl_convenio_alteracao.
+Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/convenios-saida updated
 dpckan --datapackage build_datasets/diarias/datapackage.json dataset update 2> logs/update/diarias.txt
 Updating dataset https://dados.mg.gov.br/dataset/diarias
-Updating data and metadata of resource ft_diarias_2023.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/diarias updated
+Error during https://dados.mg.gov.br/dataset/diarias updating
 dpckan --datapackage build_datasets/despesa/datapackage.json dataset update 2> logs/update/despesa.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa
 Updating data and metadata of resource fl_despesa_pgto.
@@ -204,6 +203,3 @@ Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main ec7f60e7] Atualização age7
- 49 files changed, 679 insertions(+), 678 deletions(-)
- rewrite logs/cron.txt (66%)
