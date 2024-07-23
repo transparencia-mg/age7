@@ -187,8 +187,7 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/receita updated
 dpckan --datapackage build_datasets/convenios-entrada/datapackage.json dataset update 2> logs/update/convenios-entrada.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-entrada
-Nothing to be updated in dataset https://dados.mg.gov.br/dataset/convenios-entrada.
-Dataset https://dados.mg.gov.br/dataset/convenios-entrada updated
+Error during https://dados.mg.gov.br/dataset/convenios-entrada updating
 dpckan --datapackage build_datasets/planejamento-e-monitoramento/datapackage.json dataset update 2> logs/update/planejamento-e-monitoramento.txt
 Updating dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento
 Nothing to be updated in dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento.
@@ -197,6 +196,3 @@ dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json d
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Nothing to be updated in dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 754ccd19] Atualização age7
- 48 files changed, 665 insertions(+), 657 deletions(-)
- rewrite logs/cron.txt (66%)
