@@ -164,7 +164,9 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/despesa updated
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
-Error during https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios updating
+Updating data and metadata of resource dm_tempo_mensal.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios updated
 dpckan --datapackage build_datasets/execucao-da-divida/datapackage.json dataset update 2> logs/update/execucao-da-divida.txt
 Updating dataset https://dados.mg.gov.br/dataset/execucao-da-divida
 Nothing to be updated in dataset https://dados.mg.gov.br/dataset/execucao-da-divida.
@@ -195,6 +197,3 @@ dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json d
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Nothing to be updated in dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 939a75f5] Atualização age7
- 48 files changed, 656 insertions(+), 660 deletions(-)
- rewrite logs/cron.txt (66%)
