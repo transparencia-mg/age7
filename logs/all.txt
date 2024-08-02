@@ -50,28 +50,6 @@ dtamg-py etl-make build-datapackages 2> logs/build.txt
 dpckan --datapackage build_datasets/restos_pagar/datapackage.json dataset update 2> logs/update/restos_pagar.txt
 Updating dataset https://dados.mg.gov.br/dataset/restos_pagar
 Updating data and metadata of resource dm_tempo_anual.
-Updating data and metadata of resource ft_restos_pagar_2002.
-Updating data and metadata of resource ft_restos_pagar_2003.
-Updating data and metadata of resource ft_restos_pagar_2004.
-Updating data and metadata of resource ft_restos_pagar_2005.
-Updating data and metadata of resource ft_restos_pagar_2006.
-Updating data and metadata of resource ft_restos_pagar_2007.
-Updating data and metadata of resource ft_restos_pagar_2008.
-Updating data and metadata of resource ft_restos_pagar_2009.
-Updating data and metadata of resource ft_restos_pagar_2010.
-Updating data and metadata of resource ft_restos_pagar_2011.
-Updating data and metadata of resource ft_restos_pagar_2012.
-Updating data and metadata of resource ft_restos_pagar_2013.
-Updating data and metadata of resource ft_restos_pagar_2014.
-Updating data and metadata of resource ft_restos_pagar_2015.
-Updating data and metadata of resource ft_restos_pagar_2016.
-Updating data and metadata of resource ft_restos_pagar_2017.
-Updating data and metadata of resource ft_restos_pagar_2018.
-Updating data and metadata of resource ft_restos_pagar_2019.
-Updating data and metadata of resource ft_restos_pagar_2020.
-Updating data and metadata of resource ft_restos_pagar_2021.
-Updating data and metadata of resource ft_restos_pagar_2022.
-Updating data and metadata of resource ft_restos_pagar_2023.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/restos_pagar updated
 dpckan --datapackage build_datasets/compras_contratos/datapackage.json dataset update 2> logs/update/compras_contratos.txt
@@ -92,10 +70,7 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/diarias updated
 dpckan --datapackage build_datasets/despesa/datapackage.json dataset update 2> logs/update/despesa.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa
-Updating data and metadata of resource fl_despesa_pgto.
-Updating data and metadata of resource ft_despesa_2023.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/despesa updated
+Error during https://dados.mg.gov.br/dataset/despesa updating
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
 Updating data and metadata of resource dm_tempo_mensal.
@@ -103,7 +78,8 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios updated
 dpckan --datapackage build_datasets/execucao-da-divida/datapackage.json dataset update 2> logs/update/execucao-da-divida.txt
 Updating dataset https://dados.mg.gov.br/dataset/execucao-da-divida
-Error during https://dados.mg.gov.br/dataset/execucao-da-divida updating
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/execucao-da-divida.
+Dataset https://dados.mg.gov.br/dataset/execucao-da-divida updated
 dpckan --datapackage build_datasets/despesa-com-pessoal/datapackage.json dataset update 2> logs/update/despesa-com-pessoal.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa-com-pessoal
 Error during https://dados.mg.gov.br/dataset/despesa-com-pessoal updating
@@ -131,7 +107,3 @@ Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource dm_tempo_anual.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 538195ec] Atualização age7
- 28 files changed, 416 insertions(+), 473 deletions(-)
- rewrite logs/cron.txt (66%)
- delete mode 100644 logs/ingest.txt
