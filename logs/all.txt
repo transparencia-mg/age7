@@ -54,25 +54,19 @@ Dataset https://dados.mg.gov.br/dataset/restos_pagar updated
 dpckan --datapackage build_datasets/compras_contratos/datapackage.json dataset update 2> logs/update/compras_contratos.txt
 Updating dataset https://dados.mg.gov.br/dataset/compras_contratos
 Updating data and metadata of resource fl_compras_empenho.
-Updating data and metadata of resource ft_compras.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/compras_contratos updated
+Error during https://dados.mg.gov.br/dataset/compras_contratos updating
 dpckan --datapackage build_datasets/convenios-saida/datapackage.json dataset update 2> logs/update/convenios-saida.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-saida
 Updating data and metadata of resource fl_convenio_alteracao.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/convenios-saida updated
+Error during https://dados.mg.gov.br/dataset/convenios-saida updating
 dpckan --datapackage build_datasets/diarias/datapackage.json dataset update 2> logs/update/diarias.txt
 Updating dataset https://dados.mg.gov.br/dataset/diarias
 Updating data and metadata of resource ft_diarias_2023.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/diarias updated
+Error during https://dados.mg.gov.br/dataset/diarias updating
 dpckan --datapackage build_datasets/despesa/datapackage.json dataset update 2> logs/update/despesa.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa
 Updating data and metadata of resource fl_despesa_pgto.
-Updating data and metadata of resource ft_despesa_2023.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/despesa updated
+Error during https://dados.mg.gov.br/dataset/despesa updating
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
 Updating data and metadata of resource dm_tempo_mensal.
@@ -88,9 +82,7 @@ Error during https://dados.mg.gov.br/dataset/despesa-com-pessoal updating
 dpckan --datapackage build_datasets/viagens/datapackage.json dataset update 2> logs/update/viagens.txt
 Updating dataset https://dados.mg.gov.br/dataset/viagens
 Updating data and metadata of resource ft_diarias_scdp.
-Updating data and metadata of resource ft_diarias_scdp_liqpag.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/viagens updated
+Error during https://dados.mg.gov.br/dataset/viagens updating
 dpckan --datapackage build_datasets/receita/datapackage.json dataset update 2> logs/update/receita.txt
 Updating dataset https://dados.mg.gov.br/dataset/receita
 Updating data and metadata of resource dm_tempo_mensal.
@@ -108,6 +100,3 @@ dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json d
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Nothing to be updated in dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 4eeffa54] Atualização age7
- 24 files changed, 378 insertions(+), 383 deletions(-)
- rewrite logs/cron.txt (66%)
