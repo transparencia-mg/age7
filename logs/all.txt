@@ -62,7 +62,6 @@ Updating data and metadata of resource fl_convenio_alteracao.
 Error during https://dados.mg.gov.br/dataset/convenios-saida updating
 dpckan --datapackage build_datasets/diarias/datapackage.json dataset update 2> logs/update/diarias.txt
 Updating dataset https://dados.mg.gov.br/dataset/diarias
-Updating data and metadata of resource ft_diarias_2023.
 Error during https://dados.mg.gov.br/dataset/diarias updating
 dpckan --datapackage build_datasets/despesa/datapackage.json dataset update 2> logs/update/despesa.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa
@@ -70,8 +69,7 @@ Updating data and metadata of resource fl_despesa_pgto.
 Error during https://dados.mg.gov.br/dataset/despesa updating
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
-Updating data and metadata of resource dm_tempo_mensal.
-Updating resource datapackage.json.
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios.
 Dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios updated
 dpckan --datapackage build_datasets/execucao-da-divida/datapackage.json dataset update 2> logs/update/execucao-da-divida.txt
 Updating dataset https://dados.mg.gov.br/dataset/execucao-da-divida
@@ -86,8 +84,7 @@ Updating data and metadata of resource ft_diarias_scdp.
 Error during https://dados.mg.gov.br/dataset/viagens updating
 dpckan --datapackage build_datasets/receita/datapackage.json dataset update 2> logs/update/receita.txt
 Updating dataset https://dados.mg.gov.br/dataset/receita
-Updating data and metadata of resource dm_tempo_mensal.
-Updating resource datapackage.json.
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/receita.
 Dataset https://dados.mg.gov.br/dataset/receita updated
 dpckan --datapackage build_datasets/convenios-entrada/datapackage.json dataset update 2> logs/update/convenios-entrada.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-entrada
@@ -102,6 +99,3 @@ Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource dm_tempo_anual.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main e36e578b] Atualização age7
- 27 files changed, 385 insertions(+), 388 deletions(-)
- rewrite logs/cron.txt (66%)
