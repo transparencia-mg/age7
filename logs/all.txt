@@ -58,7 +58,6 @@ Updating data and metadata of resource fl_compras_empenho.
 Error during https://dados.mg.gov.br/dataset/compras_contratos updating
 dpckan --datapackage build_datasets/convenios-saida/datapackage.json dataset update 2> logs/update/convenios-saida.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-saida
-Updating data and metadata of resource fl_convenio_alteracao.
 Error during https://dados.mg.gov.br/dataset/convenios-saida updating
 dpckan --datapackage build_datasets/diarias/datapackage.json dataset update 2> logs/update/diarias.txt
 Updating dataset https://dados.mg.gov.br/dataset/diarias
@@ -102,6 +101,3 @@ Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource dm_tempo_anual.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 6e715b42] Atualização age7
- 27 files changed, 389 insertions(+), 390 deletions(-)
- rewrite logs/cron.txt (66%)
