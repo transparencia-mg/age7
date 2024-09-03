@@ -69,7 +69,8 @@ Updating data and metadata of resource fl_despesa_pgto.
 Error during https://dados.mg.gov.br/dataset/despesa updating
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
-Nothing to be updated in dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios.
+Updating data and metadata of resource dm_tempo_mensal.
+Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios updated
 dpckan --datapackage build_datasets/execucao-da-divida/datapackage.json dataset update 2> logs/update/execucao-da-divida.txt
 Updating dataset https://dados.mg.gov.br/dataset/execucao-da-divida
@@ -84,7 +85,8 @@ Updating data and metadata of resource ft_diarias_scdp.
 Error during https://dados.mg.gov.br/dataset/viagens updating
 dpckan --datapackage build_datasets/receita/datapackage.json dataset update 2> logs/update/receita.txt
 Updating dataset https://dados.mg.gov.br/dataset/receita
-Nothing to be updated in dataset https://dados.mg.gov.br/dataset/receita.
+Updating data and metadata of resource dm_tempo_mensal.
+Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/receita updated
 dpckan --datapackage build_datasets/convenios-entrada/datapackage.json dataset update 2> logs/update/convenios-entrada.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-entrada
@@ -98,6 +100,3 @@ dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json d
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Nothing to be updated in dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main f34a34d9] Atualização age7
- 20 files changed, 366 insertions(+), 369 deletions(-)
- rewrite logs/cron.txt (66%)
