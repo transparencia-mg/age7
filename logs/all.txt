@@ -49,7 +49,8 @@ Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_favorecido_scd
 dtamg-py etl-make build-datapackages 2> logs/build.txt
 dpckan --datapackage build_datasets/restos_pagar/datapackage.json dataset update 2> logs/update/restos_pagar.txt
 Updating dataset https://dados.mg.gov.br/dataset/restos_pagar
-Error during https://dados.mg.gov.br/dataset/restos_pagar updating
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/restos_pagar.
+Dataset https://dados.mg.gov.br/dataset/restos_pagar updated
 dpckan --datapackage build_datasets/compras_contratos/datapackage.json dataset update 2> logs/update/compras_contratos.txt
 Updating dataset https://dados.mg.gov.br/dataset/compras_contratos
 Updating data and metadata of resource fl_compras_empenho.
@@ -99,6 +100,3 @@ dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json d
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Nothing to be updated in dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 025d59fe] Atualização age7
- 24 files changed, 380 insertions(+), 386 deletions(-)
- rewrite logs/cron.txt (66%)
