@@ -2633,6 +2633,20 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
+  - name: ft_diarias_2024
+    title: Diárias 2024
+    path: data/ft_diarias_2024.csv.gz
+    schema: schemas/ft_diarias_2024.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
   - name: ft_restos_pagar_2002
     title: ft_restos_pagar 2002
     path: data/ft_restos_pagar_2002.csv.gz
