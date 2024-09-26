@@ -1,14 +1,4 @@
-Updating 5afa2cc8..57a4efb1
-Fast-forward
- age7.yaml                         |  49 +++++++
- datapackage.yaml                  |  14 ++
- schemas/dm_empenho_desp_2024.yaml |  70 +++++++++
- schemas/ft_despesa_2024.yaml      | 302 ++++++++++++++++++++++++++++++++++++++
- schemas/ft_diarias_2024.yaml      | 207 ++++++++++++++++++++++++++
- 5 files changed, 642 insertions(+)
- create mode 100644 schemas/dm_empenho_desp_2024.yaml
- create mode 100644 schemas/ft_despesa_2024.yaml
- create mode 100644 schemas/ft_diarias_2024.yaml
+Already up to date.
 rm -rf logs/extract/*
 rm -rf logs/parse/*
 rm -rf logs/tests/*
@@ -23,11 +13,10 @@ rm -rf data/raw/*
 rm -f datapackage.json
 rm -rf build_datasets
 rm -rf reports.html
-Rscript --verbose scripts/r/parse-sql.R ft_diarias_2024 2> logs/parse/ft_diarias_2024.Rout
+make: Nothing to be done for 'parse'.
 # python scripts/python/full-extract.py
 python scripts/python/extract_csv_evento_etl_carga.py 2> logs/evento_etl_carga.txt
 dtamg-py etl-make full-extract 2> logs/full_extract.txt
-rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
->f+++++++++ ft_diarias_2024.csv
-gzip -n < data/staging/ft_diarias_2024.csv > data/ft_diarias_2024.csv.gz
-dtamg-py etl-make validate -r ft_diarias_2024 > logs/validate/ft_diarias_2024.json
+make: Nothing to be done for 'ingest'.
+make: Nothing to be done for 'data'.
+make: Nothing to be done for 'validate'.
