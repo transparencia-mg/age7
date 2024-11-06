@@ -13,10 +13,105 @@ rm -rf data/raw/*
 rm -f datapackage.json
 rm -rf build_datasets
 rm -rf reports.html
-make: Nothing to be done for 'parse'.
+Rscript --verbose scripts/r/parse-sql.R dm_empenho_desp_2024 2> logs/parse/dm_empenho_desp_2024.Rout
+Rscript --verbose scripts/r/parse-sql.R ft_despesa_2024 2> logs/parse/ft_despesa_2024.Rout
 # python scripts/python/full-extract.py
 python scripts/python/extract_csv_evento_etl_carga.py 2> logs/evento_etl_carga.txt
 dtamg-py etl-make full-extract 2> logs/full_extract.txt
-make: Nothing to be done for 'ingest'.
-make: Nothing to be done for 'data'.
-make: Nothing to be done for 'validate'.
+rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
+>f+++++++++ dm_empenho_desp_2024.csv
+>f+++++++++ ft_despesa_2024.csv
+gzip -n < data/staging/dm_empenho_desp_2024.csv > data/dm_empenho_desp_2024.csv.gz
+gzip -n < data/staging/ft_despesa_2024.csv > data/ft_despesa_2024.csv.gz
+dtamg-py etl-make validate -r dm_empenho_desp_2024 > logs/validate/dm_empenho_desp_2024.json
+dtamg-py etl-make validate -r ft_despesa_2024 > logs/validate/ft_despesa_2024.json
+dtamg-py etl-make build-datapackage
+Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_contratado.R', stop_on_failure=TRUE)" 2> logs/tests/test_dm_contratado.Rout
+
+══ Testing test_dm_contratado.R ════════════════════════════════════════════════
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 1 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 2 ] Done!
+Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_favorecido.R', stop_on_failure=TRUE)" 2> logs/tests/test_dm_favorecido.Rout
+
+══ Testing test_dm_favorecido.R ════════════════════════════════════════════════
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 1 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 2 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 3 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 4 ][ FAIL 0 | WARN 1 | SKIP 0 | PASS 4 ][ FAIL 0 | WARN 1 | SKIP 0 | PASS 5 ][ FAIL 0 | WARN 1 | SKIP 0 | PASS 6 ][ FAIL 0 | WARN 1 | SKIP 0 | PASS 7 ][ FAIL 0 | WARN 1 | SKIP 0 | PASS 8 ]
+
+── Warning (test_dm_favorecido.R:51:3): Anonimização hanseniase 2021 ───────────
+Python '/work_dir/python' was requested but '/usr/local/bin/python' was loaded instead (see reticulate::py_config() for more information)
+Backtrace:
+  1. dtamg::flatten_resource(...) test_dm_favorecido.R:51:2
+  3. reticulate:::`$.python.builtin.module`(frictionless, "Package")
+  4. reticulate:::py_resolve_module_proxy(x)
+  9. reticulate::import(module)
+ 10. reticulate:::ensure_python_initialized(required_module = module)
+ 11. reticulate:::initialize_python(required_module, use_environment)
+ 12. (function() {...
+
+[ FAIL 0 | WARN 1 | SKIP 0 | PASS 8 ]
+Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_favorecido_scdp.R', stop_on_failure=TRUE)" 2> logs/tests/test_dm_favorecido_scdp.Rout
+
+══ Testing test_dm_favorecido_scdp.R ═══════════════════════════════════════════
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 1 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 2 ] Done!
+dtamg-py etl-make build-datapackages 2> logs/build.txt
+dpckan --datapackage build_datasets/restos_pagar/datapackage.json dataset update 2> logs/update/restos_pagar.txt
+Updating dataset https://dados.mg.gov.br/dataset/restos_pagar
+Updating data and metadata of resource dm_tempo_anual.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/restos_pagar updated
+dpckan --datapackage build_datasets/compras_contratos/datapackage.json dataset update 2> logs/update/compras_contratos.txt
+Updating dataset https://dados.mg.gov.br/dataset/compras_contratos
+Updating data and metadata of resource fl_compras_empenho.
+Updating data and metadata of resource ft_compras.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/compras_contratos updated
+dpckan --datapackage build_datasets/convenios-saida/datapackage.json dataset update 2> logs/update/convenios-saida.txt
+Updating dataset https://dados.mg.gov.br/dataset/convenios-saida
+Updating data and metadata of resource fl_convenio_alteracao.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/convenios-saida updated
+dpckan --datapackage build_datasets/diarias/datapackage.json dataset update 2> logs/update/diarias.txt
+Updating dataset https://dados.mg.gov.br/dataset/diarias
+Updating data and metadata of resource ft_diarias_2023.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/diarias updated
+dpckan --datapackage build_datasets/despesa/datapackage.json dataset update 2> logs/update/despesa.txt
+Updating dataset https://dados.mg.gov.br/dataset/despesa
+Updating data and metadata of resource fl_despesa_pgto.
+Updating data and metadata of resource ft_despesa_2023.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/despesa updated
+dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
+Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
+Updating data and metadata of resource dm_tempo_mensal.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios updated
+dpckan --datapackage build_datasets/execucao-da-divida/datapackage.json dataset update 2> logs/update/execucao-da-divida.txt
+Updating dataset https://dados.mg.gov.br/dataset/execucao-da-divida
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/execucao-da-divida.
+Dataset https://dados.mg.gov.br/dataset/execucao-da-divida updated
+dpckan --datapackage build_datasets/despesa-com-pessoal/datapackage.json dataset update 2> logs/update/despesa-com-pessoal.txt
+Updating dataset https://dados.mg.gov.br/dataset/despesa-com-pessoal
+Error during https://dados.mg.gov.br/dataset/despesa-com-pessoal updating
+dpckan --datapackage build_datasets/viagens/datapackage.json dataset update 2> logs/update/viagens.txt
+Updating dataset https://dados.mg.gov.br/dataset/viagens
+Updating data and metadata of resource ft_diarias_scdp.
+Updating data and metadata of resource ft_diarias_scdp_liqpag.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/viagens updated
+dpckan --datapackage build_datasets/receita/datapackage.json dataset update 2> logs/update/receita.txt
+Updating dataset https://dados.mg.gov.br/dataset/receita
+Updating data and metadata of resource dm_tempo_mensal.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/receita updated
+dpckan --datapackage build_datasets/convenios-entrada/datapackage.json dataset update 2> logs/update/convenios-entrada.txt
+Updating dataset https://dados.mg.gov.br/dataset/convenios-entrada
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/convenios-entrada.
+Dataset https://dados.mg.gov.br/dataset/convenios-entrada updated
+dpckan --datapackage build_datasets/planejamento-e-monitoramento/datapackage.json dataset update 2> logs/update/planejamento-e-monitoramento.txt
+Updating dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento.
+Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
+dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
+Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
+Updating data and metadata of resource dm_tempo_anual.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
