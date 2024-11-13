@@ -71,11 +71,7 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/diarias updated
 dpckan --datapackage build_datasets/despesa/datapackage.json dataset update 2> logs/update/despesa.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa
-Updating data and metadata of resource fl_despesa_pgto.
-Updating data and metadata of resource ft_despesa_2023.
-Updating data and metadata of resource ft_despesa_2024.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/despesa updated
+Error during https://dados.mg.gov.br/dataset/despesa updating
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
 Updating data and metadata of resource dm_tempo_mensal.
@@ -112,6 +108,3 @@ Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource dm_tempo_anual.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 099e6090] Atualização age7
- 28 files changed, 401 insertions(+), 404 deletions(-)
- rewrite logs/cron.txt (66%)
