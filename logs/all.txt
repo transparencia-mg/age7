@@ -71,7 +71,11 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/diarias updated
 dpckan --datapackage build_datasets/despesa/datapackage.json dataset update 2> logs/update/despesa.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa
-Error during https://dados.mg.gov.br/dataset/despesa updating
+Updating data and metadata of resource fl_despesa_pgto.
+Updating data and metadata of resource ft_despesa_2023.
+Updating data and metadata of resource ft_despesa_2024.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/despesa updated
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
 Updating data and metadata of resource dm_tempo_mensal.
@@ -86,10 +90,7 @@ Updating dataset https://dados.mg.gov.br/dataset/despesa-com-pessoal
 Error during https://dados.mg.gov.br/dataset/despesa-com-pessoal updating
 dpckan --datapackage build_datasets/viagens/datapackage.json dataset update 2> logs/update/viagens.txt
 Updating dataset https://dados.mg.gov.br/dataset/viagens
-Updating data and metadata of resource ft_diarias_scdp.
-Updating data and metadata of resource ft_diarias_scdp_liqpag.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/viagens updated
+Error during https://dados.mg.gov.br/dataset/viagens updating
 dpckan --datapackage build_datasets/receita/datapackage.json dataset update 2> logs/update/receita.txt
 Updating dataset https://dados.mg.gov.br/dataset/receita
 Updating data and metadata of resource dm_tempo_mensal.
@@ -108,6 +109,3 @@ Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource dm_tempo_anual.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 2e25709d] Atualização age7
- 28 files changed, 402 insertions(+), 409 deletions(-)
- rewrite logs/cron.txt (66%)
