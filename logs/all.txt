@@ -49,7 +49,8 @@ Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_favorecido_scd
 dtamg-py etl-make build-datapackages 2> logs/build.txt
 dpckan --datapackage build_datasets/restos_pagar/datapackage.json dataset update 2> logs/update/restos_pagar.txt
 Updating dataset https://dados.mg.gov.br/dataset/restos_pagar
-Nothing to be updated in dataset https://dados.mg.gov.br/dataset/restos_pagar.
+Updating data and metadata of resource dm_tempo_anual.
+Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/restos_pagar updated
 dpckan --datapackage build_datasets/compras_contratos/datapackage.json dataset update 2> logs/update/compras_contratos.txt
 Updating dataset https://dados.mg.gov.br/dataset/compras_contratos
@@ -70,7 +71,11 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/diarias updated
 dpckan --datapackage build_datasets/despesa/datapackage.json dataset update 2> logs/update/despesa.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa
-Error during https://dados.mg.gov.br/dataset/despesa updating
+Updating data and metadata of resource fl_despesa_pgto.
+Updating data and metadata of resource ft_despesa_2023.
+Updating data and metadata of resource ft_despesa_2024.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/despesa updated
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
 Updating data and metadata of resource dm_tempo_mensal.
@@ -104,8 +109,6 @@ Nothing to be updated in dataset https://dados.mg.gov.br/dataset/planejamento-e-
 Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
-Nothing to be updated in dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria.
+Updating data and metadata of resource dm_tempo_anual.
+Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 9df3bef9] Atualização age7
- 25 files changed, 393 insertions(+), 405 deletions(-)
- rewrite logs/cron.txt (66%)
