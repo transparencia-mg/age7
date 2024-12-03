@@ -18,10 +18,8 @@ make: Nothing to be done for 'parse'.
 python scripts/python/extract_csv_evento_etl_carga.py 2> logs/evento_etl_carga.txt
 dtamg-py etl-make full-extract 2> logs/full_extract.txt
 make: Nothing to be done for 'ingest'.
-gzip -n < data/staging/ft_despesa_2024.csv > data/ft_despesa_2024.csv.gz
-gzip -n < data/staging/ft_restos_pagar_2024.csv > data/ft_restos_pagar_2024.csv.gz
-dtamg-py etl-make validate -r ft_despesa_2024 > logs/validate/ft_despesa_2024.json
-dtamg-py etl-make validate -r ft_restos_pagar_2024 > logs/validate/ft_restos_pagar_2024.json
+make: Nothing to be done for 'data'.
+make: Nothing to be done for 'validate'.
 dtamg-py etl-make build-datapackage
 Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_contratado.R', stop_on_failure=TRUE)" 2> logs/tests/test_dm_contratado.Rout
 
@@ -52,7 +50,6 @@ dtamg-py etl-make build-datapackages 2> logs/build.txt
 dpckan --datapackage build_datasets/restos_pagar/datapackage.json dataset update 2> logs/update/restos_pagar.txt
 Updating dataset https://dados.mg.gov.br/dataset/restos_pagar
 Updating data and metadata of resource dm_tempo_anual.
-Updating data and metadata of resource ft_restos_pagar_2024.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/restos_pagar updated
 dpckan --datapackage build_datasets/compras_contratos/datapackage.json dataset update 2> logs/update/compras_contratos.txt
@@ -110,5 +107,3 @@ Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource dm_tempo_anual.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main ad42a5f1] Atualização age7
- 24 files changed, 108 insertions(+), 105 deletions(-)
