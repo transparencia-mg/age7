@@ -22,5 +22,5 @@ ano_particao,
 vr_empenhado,
 vr_liquidado,
 vr_pago
-from ft_despesa_2024
+from ft_despesa_2023
 
