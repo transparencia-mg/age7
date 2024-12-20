@@ -24,3 +24,82 @@ rsync error: some files/attrs were not transferred (see previous errors) (code 2
 rsync: [sender] link_stat "/work_dir/data/raw/*" failed: No such file or directory (2)
 rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1333) [sender=3.2.3]
 make: *** [Makefile:41: full-extract] Error 137
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+[main 08f78f4a] Atualização age7 - logs notificação
+ 75 files changed, 23 insertions(+), 3007327 deletions(-)
+ delete mode 100644 build_datasets/compras_contratos/CHANGELOG.md
+ delete mode 100644 build_datasets/compras_contratos/CONTRIBUTING.md
+ delete mode 100644 build_datasets/compras_contratos/README.md
+ delete mode 100644 build_datasets/compras_contratos/datapackage.json
+ delete mode 100644 build_datasets/convenios-entrada/CHANGELOG.md
+ delete mode 100644 build_datasets/convenios-entrada/CONTRIBUTING.md
+ delete mode 100644 build_datasets/convenios-entrada/README.md
+ delete mode 100644 build_datasets/convenios-entrada/datapackage.json
+ delete mode 100644 build_datasets/convenios-saida/CHANGELOG.md
+ delete mode 100644 build_datasets/convenios-saida/CONTRIBUTING.md
+ delete mode 100644 build_datasets/convenios-saida/README.md
+ delete mode 100644 build_datasets/convenios-saida/datapackage.json
+ delete mode 100644 build_datasets/despesa-com-pessoal/CHANGELOG.md
+ delete mode 100644 build_datasets/despesa-com-pessoal/CONTRIBUTING.md
+ delete mode 100644 build_datasets/despesa-com-pessoal/README.md
+ delete mode 100644 build_datasets/despesa-com-pessoal/datapackage.json
+ delete mode 100644 build_datasets/despesa/CHANGELOG.md
+ delete mode 100644 build_datasets/despesa/CONTRIBUTING.md
+ delete mode 100644 build_datasets/despesa/README.md
+ delete mode 100644 build_datasets/despesa/datapackage.json
+ delete mode 100644 build_datasets/diarias/CHANGELOG.md
+ delete mode 100644 build_datasets/diarias/CONTRIBUTING.md
+ delete mode 100644 build_datasets/diarias/README.md
+ delete mode 100644 build_datasets/diarias/datapackage.json
+ delete mode 100644 build_datasets/execucao-da-divida/CHANGELOG.md
+ delete mode 100644 build_datasets/execucao-da-divida/CONTRIBUTING.md
+ delete mode 100644 build_datasets/execucao-da-divida/README.md
+ delete mode 100644 build_datasets/execucao-da-divida/datapackage.json
+ delete mode 100644 build_datasets/planejamento-e-monitoramento/CHANGELOG.md
+ delete mode 100644 build_datasets/planejamento-e-monitoramento/CONTRIBUTING.md
+ delete mode 100644 build_datasets/planejamento-e-monitoramento/README.md
+ delete mode 100644 build_datasets/planejamento-e-monitoramento/datapackage.json
+ delete mode 100644 build_datasets/proposta-lei-orcamentaria/CHANGELOG.md
+ delete mode 100644 build_datasets/proposta-lei-orcamentaria/CONTRIBUTING.md
+ delete mode 100644 build_datasets/proposta-lei-orcamentaria/README.md
+ delete mode 100644 build_datasets/proposta-lei-orcamentaria/datapackage.json
+ delete mode 100644 build_datasets/receita/CHANGELOG.md
+ delete mode 100644 build_datasets/receita/CONTRIBUTING.md
+ delete mode 100644 build_datasets/receita/README.md
+ delete mode 100644 build_datasets/receita/datapackage.json
+ delete mode 100644 build_datasets/restos_pagar/CHANGELOG.md
+ delete mode 100644 build_datasets/restos_pagar/CONTRIBUTING.md
+ delete mode 100644 build_datasets/restos_pagar/README.md
+ delete mode 100644 build_datasets/restos_pagar/datapackage.json
+ delete mode 100644 build_datasets/transferencia-de-impostos-a-municipios/CHANGELOG.md
+ delete mode 100644 build_datasets/transferencia-de-impostos-a-municipios/CONTRIBUTING.md
+ delete mode 100644 build_datasets/transferencia-de-impostos-a-municipios/README.md
+ delete mode 100644 build_datasets/transferencia-de-impostos-a-municipios/datapackage.json
+ delete mode 100644 build_datasets/viagens/CHANGELOG.md
+ delete mode 100644 build_datasets/viagens/CONTRIBUTING.md
+ delete mode 100644 build_datasets/viagens/README.md
+ delete mode 100644 build_datasets/viagens/datapackage.json
+ delete mode 100644 datapackage.json
+ rewrite logs/all.txt (98%)
+ delete mode 100644 logs/build.txt
+ delete mode 100644 logs/check_validation.txt
+ delete mode 100644 logs/ingest.txt
+ delete mode 100644 logs/tests/test_dm_contratado.Rout
+ delete mode 100644 logs/tests/test_dm_favorecido.Rout
+ delete mode 100644 logs/tests/test_dm_favorecido_scdp.Rout
+ delete mode 100644 logs/update/compras_contratos.txt
+ delete mode 100644 logs/update/convenios-entrada.txt
+ delete mode 100644 logs/update/convenios-saida.txt
+ delete mode 100644 logs/update/despesa-com-pessoal.txt
+ delete mode 100644 logs/update/despesa.txt
+ delete mode 100644 logs/update/diarias.txt
+ delete mode 100644 logs/update/execucao-da-divida.txt
+ delete mode 100644 logs/update/planejamento-e-monitoramento.txt
+ delete mode 100644 logs/update/proposta-lei-orcamentaria.txt
+ delete mode 100644 logs/update/receita.txt
+ delete mode 100644 logs/update/restos_pagar.txt
+ delete mode 100644 logs/update/transferencia-de-impostos-a-municipios.txt
+ delete mode 100644 logs/update/viagens.txt
+To https://github.com/transparencia-mg/age7.git
+   ab88a3c0..08f78f4a  main -> main
