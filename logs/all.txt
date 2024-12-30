@@ -17,13 +17,9 @@ make: Nothing to be done for 'parse'.
 # python scripts/python/full-extract.py
 python scripts/python/extract_csv_evento_etl_carga.py 2> logs/evento_etl_carga.txt
 dtamg-py etl-make full-extract 2> logs/full_extract.txt
-rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
->fc.T...... ft_despesa_2022.csv
->fcsT...... ft_orcamento_emenda.csv
-gzip -n < data/staging/ft_despesa_2022.csv > data/ft_despesa_2022.csv.gz
-gzip -n < data/staging/ft_orcamento_emenda.csv > data/ft_orcamento_emenda.csv.gz
-dtamg-py etl-make validate -r ft_despesa_2022 > logs/validate/ft_despesa_2022.json
-dtamg-py etl-make validate -r ft_orcamento_emenda > logs/validate/ft_orcamento_emenda.json
+make: Nothing to be done for 'ingest'.
+make: Nothing to be done for 'data'.
+make: Nothing to be done for 'validate'.
 dtamg-py etl-make build-datapackage
 Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_contratado.R', stop_on_failure=TRUE)" 2> logs/tests/test_dm_contratado.Rout
 
@@ -127,9 +123,5 @@ Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource dm_tempo_anual.
-Updating data and metadata of resource ft_orcamento_emenda.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 915e4b58] Atualização age7
- 38 files changed, 12815 insertions(+), 12868 deletions(-)
- rewrite logs/cron.txt (66%)
