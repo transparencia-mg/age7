@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.951,
+  "time": 0.985,
   "errors": [],
   "tasks": [
     {
@@ -192,13 +192,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "d92c5823bc0ae45c10c7954bc8846422",
-          "bytes": 408462,
+          "hash": "7fc19266648bce9e70f585bba3adc9b0",
+          "bytes": 422863,
           "fields": 12,
-          "rows": 13994
+          "rows": 14768
         }
       },
-      "time": 0.951,
+      "time": 0.985,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -220,16 +220,49 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "cell": "RECURSOS ORDINARIOS - OUTROS RECURSOS NAO VINCULADOS",
+          "fieldName": "fonte",
+          "fieldNumber": 8,
+          "fieldPosition": 8,
+          "cells": [
+            "28494",
+            "2025",
+            "743",
+            "921",
+            "OUTRAS DESPESAS CORRENTES",
+            "A DEFINIR",
+            "DEMAIS PROJETOS E ATIVIDADES",
+            "RECURSOS ORDINARIOS - OUTROS RECURSOS NAO VINCULADOS",
+            "RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES",
+            "1991 - RESERVA DE CONTINGENCIA",
+            "SECRETARIA DE ESTADO DE GOVERNO",
+            "-"
+          ],
+          "rowNumber": 12535,
+          "rowPosition": 12536,
+          "code": "constraint-error",
+          "name": "Constraint Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "constraint \"enum\" is \"['RECURSOS ORDINARIOS', 'RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS', 'OPERACOES DE CREDITO CONTRATUAIS', 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB', 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL', 'RECURSOS DIRETAMENTE ARRECADADOS', 'ALIENACAO DE BENS DO TESOURO ESTADUAL', 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE', 'CONVENIOS, ACORDOS E AJUSTES']\"",
+          "message": "The cell \"RECURSOS ORDINARIOS - OUTROS RECURSOS NAO VINCULADOS\" in row at position \"12536\" and field \"fonte\" at position \"8\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS ORDINARIOS', 'RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS', 'OPERACOES DE CREDITO CONTRATUAIS', 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB', 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL', 'RECURSOS DIRETAMENTE ARRECADADOS', 'ALIENACAO DE BENS DO TESOURO ESTADUAL', 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE', 'CONVENIOS, ACORDOS E AJUSTES']\"",
+          "description": "A field value does not conform to a constraint."
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 1
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 1,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }
