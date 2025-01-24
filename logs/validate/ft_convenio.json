@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 5.456,
+  "time": 14.0,
   "errors": [],
   "tasks": [
     {
@@ -224,13 +224,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "53fc0d3796b1c6996e9f9cb7bd8527c2",
-          "bytes": 155,
+          "hash": "00347be7c43caac33b31be624292a7f0",
+          "bytes": 1283306,
           "fields": 12,
-          "rows": 1
+          "rows": 78145
         }
       },
-      "time": 5.456,
+      "time": 14.0,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -252,71 +252,16 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [
-        {
-          "cells": [
-            "id_tempo",
-            "id_orgao",
-            "id_convenio",
-            "id_municipio",
-            "id_convenente",
-            "ano_particao",
-            "vr_concede_atual",
-            "vr_emen_parl_atual",
-            "vr_interv_atual",
-            "vr_contra_atual",
-            "vr_total_atual",
-            "vr_rep_concede_atual"
-          ],
-          "rowNumber": 1,
-          "rowPosition": 2,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_tempo",
-            "id_orgao",
-            "id_convenio",
-            "id_municipio",
-            "id_convenente",
-            "ano_particao",
-            "vr_concede_atual",
-            "vr_emen_parl_atual",
-            "vr_interv_atual",
-            "vr_contra_atual",
-            "vr_total_atual",
-            "vr_rep_concede_atual"
-          ],
-          "rowNumber": 1,
-          "rowPosition": 2,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        }
-      ],
+      "errors": [],
       "stats": {
-        "errors": 2
+        "errors": 0
       },
-      "valid": false
+      "valid": true
     }
   ],
   "stats": {
-    "errors": 2,
+    "errors": 0,
     "tasks": 1
   },
-  "valid": false
+  "valid": true
 }
