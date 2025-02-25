@@ -1,4 +1,4 @@
-Dados Abertos sobre Proposta Orçamentária e Ateração orçamentária.
+Dados Abertos sobre Proposta Orçamentária e Alteração orçamentária.
 
 Esse conjunto de dados, documentado de acordo com o padrão de metadados [Frictionless](https://frictionlessdata.io/), corresponde ao [modelo dimensional](https://pt.wikipedia.org/wiki/Modelagem_dimensional) que alimenta a consulta [Proposta Orçamentária e Alterações Orçamentárias](https://www.transparencia.mg.gov.br/planejamento-e-resultados/proposta-alteracoes-orcamentaria) do Portal da Transparência do Estado de Minas Gerais.
 
