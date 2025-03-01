@@ -1,7 +1,4 @@
-Merge made by the 'recursive' strategy.
- age7.yaml                                    |  2 +-
- datasets/proposta-lei-orcamentaria/README.md | 14 +++++++-------
- 2 files changed, 8 insertions(+), 8 deletions(-)
+Already up to date.
 rm -rf logs/extract/*
 rm -rf logs/parse/*
 rm -rf logs/tests/*
@@ -25,8 +22,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... dm_contrato.csv
 >fcsT...... dm_convenente.csv
 >fcsT...... dm_convenio.csv
->fcsT...... dm_convenio_entrada.csv
->fcsT...... dm_decreto.csv
+>fc.T...... dm_convenio_entrada.csv
 >fcsT...... dm_documento_viagem.csv
 >fcsT...... dm_empenho_desp_2002.csv
 >fcsT...... dm_empenho_desp_2003.csv
@@ -81,7 +77,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... dm_favorecido.csv
 >fcsT...... dm_favorecido_scdp.csv
 >fcsT...... dm_item_matserv.csv
->fcsT...... dm_programa_plan.csv
+>fcsT...... dm_material_servico.csv
 >fcsT...... fl_compras_empenho.csv
 >fcsT...... fl_convenio_alteracao.csv
 >fcsT...... fl_convenio_entrada_aditivo.csv
@@ -90,7 +86,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fc.T...... fl_convenio_interveniente.csv
 >fcsT...... ft_compras_contrato.csv
 >fcsT...... ft_convenio.csv
->fcsT...... ft_convenio_entrada_dotacao.csv
+>fc.T...... ft_convenio_entrada_dotacao.csv
 >fcsT...... ft_convenio_entrada_rec.csv
 >fcsT...... ft_convenio_investimento.csv
 >fc.T...... ft_convenio_tipoatendimento.csv
@@ -126,7 +122,9 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... ft_orcamento_emenda.csv
 >fcsT...... ft_orcamento_proposta.csv
 >fcsT...... ft_pessoal_desp.csv
+>fcsT...... ft_plan_exec_of_fonte.csv
 >fcsT...... ft_plan_execucao_acao.csv
+>fcsT...... ft_plan_fonte_fin_acao.csv
 >fcsT...... ft_receita_prevista_v2018.csv
 >fcsT...... ft_receita_v2018.csv
 >fcsT...... ft_restos_pagar_2002.csv
@@ -251,6 +249,7 @@ gzip -n < data/staging/dm_empenho_resto_2022.csv > data/dm_empenho_resto_2022.cs
 gzip -n < data/staging/dm_empenho_resto_2023.csv > data/dm_empenho_resto_2023.csv.gz
 gzip -n < data/staging/dm_empenho_resto_2024.csv > data/dm_empenho_resto_2024.csv.gz
 gzip -n < data/staging/dm_empenho_resto_2025.csv > data/dm_empenho_resto_2025.csv.gz
+gzip -n < data/staging/dm_material_servico.csv > data/dm_material_servico.csv.gz
 gzip -n < data/staging/ft_diarias_2024.csv > data/ft_diarias_2024.csv.gz
 gzip -n < data/staging/ft_diarias_2025.csv > data/ft_diarias_2025.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2002.csv > data/ft_restos_pagar_2002.csv.gz
@@ -279,11 +278,11 @@ gzip -n < data/staging/ft_restos_pagar_2024.csv > data/ft_restos_pagar_2024.csv.
 gzip -n < data/staging/ft_restos_pagar_2025.csv > data/ft_restos_pagar_2025.csv.gz
 gzip -n < data/staging/ft_divida_pub.csv > data/ft_divida_pub.csv.gz
 gzip -n < data/staging/ft_pessoal_desp.csv > data/ft_pessoal_desp.csv.gz
-gzip -n < data/staging/dm_programa_plan.csv > data/dm_programa_plan.csv.gz
-gzip -n < data/staging/dm_decreto.csv > data/dm_decreto.csv.gz
 gzip -n < data/staging/ft_orcamento_proposta.csv > data/ft_orcamento_proposta.csv.gz
 gzip -n < data/staging/ft_orcamento_emenda.csv > data/ft_orcamento_emenda.csv.gz
 gzip -n < data/staging/ft_orcamento_cred_alt.csv > data/ft_orcamento_cred_alt.csv.gz
+gzip -n < data/staging/ft_plan_exec_of_fonte.csv > data/ft_plan_exec_of_fonte.csv.gz
+gzip -n < data/staging/ft_plan_fonte_fin_acao.csv > data/ft_plan_fonte_fin_acao.csv.gz
 gzip -n < data/staging/ft_plan_execucao_acao.csv > data/ft_plan_execucao_acao.csv.gz
 dtamg-py etl-make validate -r ft_receita_prevista_v2018 > logs/validate/ft_receita_prevista_v2018.json
 dtamg-py etl-make validate -r ft_receita_v2018 > logs/validate/ft_receita_v2018.json
@@ -383,6 +382,7 @@ dtamg-py etl-make validate -r dm_empenho_resto_2022 > logs/validate/dm_empenho_r
 dtamg-py etl-make validate -r dm_empenho_resto_2023 > logs/validate/dm_empenho_resto_2023.json
 dtamg-py etl-make validate -r dm_empenho_resto_2024 > logs/validate/dm_empenho_resto_2024.json
 dtamg-py etl-make validate -r dm_empenho_resto_2025 > logs/validate/dm_empenho_resto_2025.json
+dtamg-py etl-make validate -r dm_material_servico > logs/validate/dm_material_servico.json
 dtamg-py etl-make validate -r ft_diarias_2024 > logs/validate/ft_diarias_2024.json
 dtamg-py etl-make validate -r ft_diarias_2025 > logs/validate/ft_diarias_2025.json
 dtamg-py etl-make validate -r ft_restos_pagar_2002 > logs/validate/ft_restos_pagar_2002.json
@@ -411,11 +411,11 @@ dtamg-py etl-make validate -r ft_restos_pagar_2024 > logs/validate/ft_restos_pag
 dtamg-py etl-make validate -r ft_restos_pagar_2025 > logs/validate/ft_restos_pagar_2025.json
 dtamg-py etl-make validate -r ft_divida_pub > logs/validate/ft_divida_pub.json
 dtamg-py etl-make validate -r ft_pessoal_desp > logs/validate/ft_pessoal_desp.json
-dtamg-py etl-make validate -r dm_programa_plan > logs/validate/dm_programa_plan.json
-dtamg-py etl-make validate -r dm_decreto > logs/validate/dm_decreto.json
 dtamg-py etl-make validate -r ft_orcamento_proposta > logs/validate/ft_orcamento_proposta.json
 dtamg-py etl-make validate -r ft_orcamento_emenda > logs/validate/ft_orcamento_emenda.json
 dtamg-py etl-make validate -r ft_orcamento_cred_alt > logs/validate/ft_orcamento_cred_alt.json
+dtamg-py etl-make validate -r ft_plan_exec_of_fonte > logs/validate/ft_plan_exec_of_fonte.json
+dtamg-py etl-make validate -r ft_plan_fonte_fin_acao > logs/validate/ft_plan_fonte_fin_acao.json
 dtamg-py etl-make validate -r ft_plan_execucao_acao > logs/validate/ft_plan_execucao_acao.json
 dtamg-py etl-make build-datapackage
 Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_contratado.R', stop_on_failure=TRUE)" 2> logs/tests/test_dm_contratado.Rout
@@ -504,6 +504,7 @@ Updating data and metadata of resource dm_contratado.
 Updating data and metadata of resource dm_contrato.
 Updating data and metadata of resource dm_empenho_desp_compras_empenho.
 Updating data and metadata of resource dm_item_matserv.
+Updating data and metadata of resource dm_material_servico.
 Updating data and metadata of resource fl_compras_empenho.
 Updating data and metadata of resource ft_compras.
 Updating data and metadata of resource ft_compras_contrato.
@@ -605,8 +606,7 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/despesa updated
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
-Updating data and metadata of resource dm_tempo_mensal.
-Updating resource datapackage.json.
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios.
 Dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios updated
 dpckan --datapackage build_datasets/execucao-da-divida/datapackage.json dataset update 2> logs/update/execucao-da-divida.txt
 Updating dataset https://dados.mg.gov.br/dataset/execucao-da-divida
@@ -628,7 +628,6 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/viagens updated
 dpckan --datapackage build_datasets/receita/datapackage.json dataset update 2> logs/update/receita.txt
 Updating dataset https://dados.mg.gov.br/dataset/receita
-Updating data and metadata of resource dm_tempo_mensal.
 Updating data and metadata of resource ft_receita_prevista_v2018.
 Updating data and metadata of resource ft_receita_v2018.
 Updating resource datapackage.json.
@@ -645,7 +644,8 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/convenios-entrada updated
 dpckan --datapackage build_datasets/planejamento-e-monitoramento/datapackage.json dataset update 2> logs/update/planejamento-e-monitoramento.txt
 Updating dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento
-Updating data and metadata of resource dm_programa_plan.
+Updating data and metadata of resource ft_plan_exec_of_fonte.
+Updating data and metadata of resource ft_plan_fonte_fin_acao.
 Updating data and metadata of resource ft_plan_execucao_acao.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
@@ -653,12 +653,8 @@ dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json d
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource dm_emenda_orcam.
-Updating data and metadata of resource dm_decreto.
 Updating data and metadata of resource ft_orcamento_proposta.
 Updating data and metadata of resource ft_orcamento_emenda.
 Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main f0c04cac] Atualização age7
- 156 files changed, 4895048 insertions(+), 562310 deletions(-)
- rewrite logs/cron.txt (66%)
