@@ -22,6 +22,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... dm_contrato.csv
 >fcsT...... dm_convenente.csv
 >fcsT...... dm_convenio.csv
+>fc.T...... dm_convenio_entrada.csv
 >fcsT...... dm_documento_viagem.csv
 >fc.T...... dm_empenho_desp_2002.csv
 >fc.T...... dm_empenho_desp_2003.csv
@@ -75,12 +76,11 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... dm_empenho_resto_2025.csv
 >fcsT...... dm_favorecido.csv
 >fcsT...... dm_favorecido_scdp.csv
->fcsT...... dm_funcao_scdp.csv
 >fcsT...... dm_item_matserv.csv
 >fcsT...... dm_tipo_atendimento.csv
 >fcsT...... fl_compras_empenho.csv
 >fcsT...... fl_convenio_alteracao.csv
->fc.T...... fl_convenio_entrada_aditivo.csv
+>fcsT...... fl_convenio_entrada_aditivo.csv
 >fcsT...... fl_convenio_entrada_compras.csv
 >fc.T...... fl_convenio_entrada_interv.csv
 >fc.T...... fl_convenio_interveniente.csv
@@ -88,7 +88,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... ft_compras.csv
 >fcsT...... ft_compras_contrato.csv
 >fcsT...... ft_convenio.csv
->fc.T...... ft_convenio_entrada_dotacao.csv
+>fcsT...... ft_convenio_entrada_dotacao.csv
 >fcsT...... ft_convenio_entrada_rec.csv
 >fcsT...... ft_convenio_investimento.csv
 >fcsT...... ft_convenio_tipoatendimento.csv
@@ -152,13 +152,13 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... ft_restos_pagar_2025.csv
 gzip -n < data/staging/ft_receita_prevista_v2018.csv > data/ft_receita_prevista_v2018.csv.gz
 gzip -n < data/staging/ft_receita_v2018.csv > data/ft_receita_v2018.csv.gz
-gzip -n < data/staging/dm_funcao_scdp.csv > data/dm_funcao_scdp.csv.gz
 gzip -n < data/staging/ft_convenio_investimento.csv > data/ft_convenio_investimento.csv.gz
 gzip -n < data/staging/ft_convenio_tipoatendimento.csv > data/ft_convenio_tipoatendimento.csv.gz
 gzip -n < data/staging/fl_convenio_interveniente.csv > data/fl_convenio_interveniente.csv.gz
 gzip -n < data/staging/fl_convenio_alteracao.csv > data/fl_convenio_alteracao.csv.gz
 gzip -n < data/staging/ft_convenio_entrada_dotacao.csv > data/ft_convenio_entrada_dotacao.csv.gz
 gzip -n < data/staging/ft_convenio_entrada_rec.csv > data/ft_convenio_entrada_rec.csv.gz
+gzip -n < data/staging/dm_convenio_entrada.csv > data/dm_convenio_entrada.csv.gz
 gzip -n < data/staging/dm_favorecido_scdp.csv > data/dm_favorecido_scdp.csv.gz
 gzip -n < data/staging/dm_documento_viagem.csv > data/dm_documento_viagem.csv.gz
 gzip -n < data/staging/dm_empenho_desp_compras_empenho.csv > data/dm_empenho_desp_compras_empenho.csv.gz
@@ -284,13 +284,13 @@ gzip -n < data/staging/ft_orcamento_emenda.csv > data/ft_orcamento_emenda.csv.gz
 gzip -n < data/staging/ft_orcamento_cred_alt.csv > data/ft_orcamento_cred_alt.csv.gz
 dtamg-py etl-make validate -r ft_receita_prevista_v2018 > logs/validate/ft_receita_prevista_v2018.json
 dtamg-py etl-make validate -r ft_receita_v2018 > logs/validate/ft_receita_v2018.json
-dtamg-py etl-make validate -r dm_funcao_scdp > logs/validate/dm_funcao_scdp.json
 dtamg-py etl-make validate -r ft_convenio_investimento > logs/validate/ft_convenio_investimento.json
 dtamg-py etl-make validate -r ft_convenio_tipoatendimento > logs/validate/ft_convenio_tipoatendimento.json
 dtamg-py etl-make validate -r fl_convenio_interveniente > logs/validate/fl_convenio_interveniente.json
 dtamg-py etl-make validate -r fl_convenio_alteracao > logs/validate/fl_convenio_alteracao.json
 dtamg-py etl-make validate -r ft_convenio_entrada_dotacao > logs/validate/ft_convenio_entrada_dotacao.json
 dtamg-py etl-make validate -r ft_convenio_entrada_rec > logs/validate/ft_convenio_entrada_rec.json
+dtamg-py etl-make validate -r dm_convenio_entrada > logs/validate/dm_convenio_entrada.json
 dtamg-py etl-make validate -r dm_favorecido_scdp > logs/validate/dm_favorecido_scdp.json
 dtamg-py etl-make validate -r dm_documento_viagem > logs/validate/dm_documento_viagem.json
 dtamg-py etl-make validate -r dm_empenho_desp_compras_empenho > logs/validate/dm_empenho_desp_compras_empenho.json
@@ -612,7 +612,6 @@ Updating dataset https://dados.mg.gov.br/dataset/viagens
 Updating data and metadata of resource dm_documento_viagem.
 Updating data and metadata of resource dm_empenho_desp_diarias_scdp_liqpag.
 Updating data and metadata of resource dm_favorecido_scdp.
-Updating data and metadata of resource dm_funcao_scdp.
 Updating data and metadata of resource ft_diarias_scdp.
 Updating data and metadata of resource ft_diarias_scdp_liqpag.
 Updating resource datapackage.json.
@@ -628,6 +627,7 @@ dpckan --datapackage build_datasets/convenios-entrada/datapackage.json dataset u
 Updating dataset https://dados.mg.gov.br/dataset/convenios-entrada
 Updating data and metadata of resource ft_convenio_entrada_dotacao.
 Updating data and metadata of resource ft_convenio_entrada_rec.
+Updating data and metadata of resource dm_convenio_entrada.
 Updating data and metadata of resource fl_convenio_entrada_compras.
 Updating data and metadata of resource fl_convenio_entrada_interv.
 Updating data and metadata of resource fl_convenio_entrada_aditivo.
@@ -635,8 +635,7 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/convenios-entrada updated
 dpckan --datapackage build_datasets/planejamento-e-monitoramento/datapackage.json dataset update 2> logs/update/planejamento-e-monitoramento.txt
 Updating dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento
-Nothing to be updated in dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento.
-Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
+Error during https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updating
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource dm_emenda_orcam.
@@ -645,79 +644,3 @@ Updating data and metadata of resource ft_orcamento_emenda.
 Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main bb443709] Atualização age7
- 211 files changed, 2580514 insertions(+), 139303 deletions(-)
- create mode 100644 build_datasets/compras_contratos/CHANGELOG.md
- create mode 100644 build_datasets/compras_contratos/CONTRIBUTING.md
- create mode 100644 build_datasets/compras_contratos/README.md
- create mode 100644 build_datasets/compras_contratos/datapackage.json
- create mode 100644 build_datasets/convenios-entrada/CHANGELOG.md
- create mode 100644 build_datasets/convenios-entrada/CONTRIBUTING.md
- create mode 100644 build_datasets/convenios-entrada/README.md
- create mode 100644 build_datasets/convenios-entrada/datapackage.json
- create mode 100644 build_datasets/convenios-saida/CHANGELOG.md
- create mode 100644 build_datasets/convenios-saida/CONTRIBUTING.md
- create mode 100644 build_datasets/convenios-saida/README.md
- create mode 100644 build_datasets/convenios-saida/datapackage.json
- create mode 100644 build_datasets/despesa-com-pessoal/CHANGELOG.md
- create mode 100644 build_datasets/despesa-com-pessoal/CONTRIBUTING.md
- create mode 100644 build_datasets/despesa-com-pessoal/README.md
- create mode 100644 build_datasets/despesa-com-pessoal/datapackage.json
- create mode 100644 build_datasets/despesa/CHANGELOG.md
- create mode 100644 build_datasets/despesa/CONTRIBUTING.md
- create mode 100644 build_datasets/despesa/README.md
- create mode 100644 build_datasets/despesa/datapackage.json
- create mode 100644 build_datasets/diarias/CHANGELOG.md
- create mode 100644 build_datasets/diarias/CONTRIBUTING.md
- create mode 100644 build_datasets/diarias/README.md
- create mode 100644 build_datasets/diarias/datapackage.json
- create mode 100644 build_datasets/execucao-da-divida/CHANGELOG.md
- create mode 100644 build_datasets/execucao-da-divida/CONTRIBUTING.md
- create mode 100644 build_datasets/execucao-da-divida/README.md
- create mode 100644 build_datasets/execucao-da-divida/datapackage.json
- create mode 100644 build_datasets/planejamento-e-monitoramento/CHANGELOG.md
- create mode 100644 build_datasets/planejamento-e-monitoramento/CONTRIBUTING.md
- create mode 100644 build_datasets/planejamento-e-monitoramento/README.md
- create mode 100644 build_datasets/planejamento-e-monitoramento/datapackage.json
- create mode 100644 build_datasets/proposta-lei-orcamentaria/CHANGELOG.md
- create mode 100644 build_datasets/proposta-lei-orcamentaria/CONTRIBUTING.md
- create mode 100644 build_datasets/proposta-lei-orcamentaria/README.md
- create mode 100644 build_datasets/proposta-lei-orcamentaria/datapackage.json
- create mode 100644 build_datasets/receita/CHANGELOG.md
- create mode 100644 build_datasets/receita/CONTRIBUTING.md
- create mode 100644 build_datasets/receita/README.md
- create mode 100644 build_datasets/receita/datapackage.json
- create mode 100644 build_datasets/restos_pagar/CHANGELOG.md
- create mode 100644 build_datasets/restos_pagar/CONTRIBUTING.md
- create mode 100644 build_datasets/restos_pagar/README.md
- create mode 100644 build_datasets/restos_pagar/datapackage.json
- create mode 100644 build_datasets/transferencia-de-impostos-a-municipios/CHANGELOG.md
- create mode 100644 build_datasets/transferencia-de-impostos-a-municipios/CONTRIBUTING.md
- create mode 100644 build_datasets/transferencia-de-impostos-a-municipios/README.md
- create mode 100644 build_datasets/transferencia-de-impostos-a-municipios/datapackage.json
- create mode 100644 build_datasets/viagens/CHANGELOG.md
- create mode 100644 build_datasets/viagens/CONTRIBUTING.md
- create mode 100644 build_datasets/viagens/README.md
- create mode 100644 build_datasets/viagens/datapackage.json
- create mode 100644 datapackage.json
- create mode 100644 logs/build.txt
- create mode 100644 logs/ingest.txt
- create mode 100644 logs/tests/test_dm_contratado.Rout
- create mode 100644 logs/tests/test_dm_favorecido.Rout
- create mode 100644 logs/tests/test_dm_favorecido_scdp.Rout
- create mode 100644 logs/update/compras_contratos.txt
- create mode 100644 logs/update/convenios-entrada.txt
- create mode 100644 logs/update/convenios-saida.txt
- create mode 100644 logs/update/despesa-com-pessoal.txt
- create mode 100644 logs/update/despesa.txt
- create mode 100644 logs/update/diarias.txt
- create mode 100644 logs/update/execucao-da-divida.txt
- create mode 100644 logs/update/planejamento-e-monitoramento.txt
- create mode 100644 logs/update/proposta-lei-orcamentaria.txt
- create mode 100644 logs/update/receita.txt
- create mode 100644 logs/update/restos_pagar.txt
- create mode 100644 logs/update/transferencia-de-impostos-a-municipios.txt
- create mode 100644 logs/update/viagens.txt
- rewrite logs/validate/fl_compras_empenho.json (85%)
- rewrite logs/validate/ft_compras.json (85%)
- rewrite logs/validate/ft_compras_contrato.json (81%)
