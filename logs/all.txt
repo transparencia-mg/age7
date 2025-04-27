@@ -22,6 +22,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... dm_contrato.csv
 >fcsT...... dm_convenente.csv
 >fcsT...... dm_convenio.csv
+>fcsT...... dm_decreto.csv
 >fcsT...... dm_documento_viagem.csv
 >fc.T...... dm_empenho_desp_2002.csv
 >fc.T...... dm_empenho_desp_2003.csv
@@ -76,6 +77,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... dm_favorecido.csv
 >fcsT...... dm_favorecido_scdp.csv
 >fcsT...... dm_item_matserv.csv
+>fcsT...... dm_material_servico.csv
 >fcsT...... dm_tipo_atendimento.csv
 >fcsT...... fl_compras_empenho.csv
 >fcsT...... fl_convenio_alteracao.csv
@@ -122,7 +124,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... ft_orcamento_cred_alt.csv
 >fcsT...... ft_orcamento_emenda.csv
 >fc.T...... ft_orcamento_proposta.csv
->fc.T...... ft_pessoal_desp.csv
+>fcsT...... ft_pessoal_desp.csv
 >fcsT...... ft_receita_prevista_v2018.csv
 >fcsT...... ft_receita_v2018.csv
 >fc.T...... ft_restos_pagar_2002.csv
@@ -249,6 +251,7 @@ gzip -n < data/staging/dm_empenho_resto_2022.csv > data/dm_empenho_resto_2022.cs
 gzip -n < data/staging/dm_empenho_resto_2023.csv > data/dm_empenho_resto_2023.csv.gz
 gzip -n < data/staging/dm_empenho_resto_2024.csv > data/dm_empenho_resto_2024.csv.gz
 gzip -n < data/staging/dm_empenho_resto_2025.csv > data/dm_empenho_resto_2025.csv.gz
+gzip -n < data/staging/dm_material_servico.csv > data/dm_material_servico.csv.gz
 gzip -n < data/staging/ft_diarias_2024.csv > data/ft_diarias_2024.csv.gz
 gzip -n < data/staging/ft_diarias_2025.csv > data/ft_diarias_2025.csv.gz
 gzip -n < data/staging/ft_restos_pagar_2002.csv > data/ft_restos_pagar_2002.csv.gz
@@ -277,6 +280,7 @@ gzip -n < data/staging/ft_restos_pagar_2024.csv > data/ft_restos_pagar_2024.csv.
 gzip -n < data/staging/ft_restos_pagar_2025.csv > data/ft_restos_pagar_2025.csv.gz
 gzip -n < data/staging/ft_divida_pub.csv > data/ft_divida_pub.csv.gz
 gzip -n < data/staging/ft_pessoal_desp.csv > data/ft_pessoal_desp.csv.gz
+gzip -n < data/staging/dm_decreto.csv > data/dm_decreto.csv.gz
 gzip -n < data/staging/ft_orcamento_proposta.csv > data/ft_orcamento_proposta.csv.gz
 gzip -n < data/staging/ft_orcamento_emenda.csv > data/ft_orcamento_emenda.csv.gz
 gzip -n < data/staging/ft_orcamento_cred_alt.csv > data/ft_orcamento_cred_alt.csv.gz
@@ -380,6 +384,7 @@ dtamg-py etl-make validate -r dm_empenho_resto_2022 > logs/validate/dm_empenho_r
 dtamg-py etl-make validate -r dm_empenho_resto_2023 > logs/validate/dm_empenho_resto_2023.json
 dtamg-py etl-make validate -r dm_empenho_resto_2024 > logs/validate/dm_empenho_resto_2024.json
 dtamg-py etl-make validate -r dm_empenho_resto_2025 > logs/validate/dm_empenho_resto_2025.json
+dtamg-py etl-make validate -r dm_material_servico > logs/validate/dm_material_servico.json
 dtamg-py etl-make validate -r ft_diarias_2024 > logs/validate/ft_diarias_2024.json
 dtamg-py etl-make validate -r ft_diarias_2025 > logs/validate/ft_diarias_2025.json
 dtamg-py etl-make validate -r ft_restos_pagar_2002 > logs/validate/ft_restos_pagar_2002.json
@@ -408,6 +413,7 @@ dtamg-py etl-make validate -r ft_restos_pagar_2024 > logs/validate/ft_restos_pag
 dtamg-py etl-make validate -r ft_restos_pagar_2025 > logs/validate/ft_restos_pagar_2025.json
 dtamg-py etl-make validate -r ft_divida_pub > logs/validate/ft_divida_pub.json
 dtamg-py etl-make validate -r ft_pessoal_desp > logs/validate/ft_pessoal_desp.json
+dtamg-py etl-make validate -r dm_decreto > logs/validate/dm_decreto.json
 dtamg-py etl-make validate -r ft_orcamento_proposta > logs/validate/ft_orcamento_proposta.json
 dtamg-py etl-make validate -r ft_orcamento_emenda > logs/validate/ft_orcamento_emenda.json
 dtamg-py etl-make validate -r ft_orcamento_cred_alt > logs/validate/ft_orcamento_cred_alt.json
@@ -592,7 +598,8 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/despesa updated
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
-Nothing to be updated in dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios.
+Updating data and metadata of resource dm_tempo_mensal.
+Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios updated
 dpckan --datapackage build_datasets/execucao-da-divida/datapackage.json dataset update 2> logs/update/execucao-da-divida.txt
 Updating dataset https://dados.mg.gov.br/dataset/execucao-da-divida
@@ -614,6 +621,7 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/viagens updated
 dpckan --datapackage build_datasets/receita/datapackage.json dataset update 2> logs/update/receita.txt
 Updating dataset https://dados.mg.gov.br/dataset/receita
+Updating data and metadata of resource dm_tempo_mensal.
 Updating data and metadata of resource ft_receita_prevista_v2018.
 Updating data and metadata of resource ft_receita_v2018.
 Updating resource datapackage.json.
@@ -634,11 +642,9 @@ Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource dm_emenda_orcam.
+Updating data and metadata of resource dm_decreto.
 Updating data and metadata of resource ft_orcamento_proposta.
 Updating data and metadata of resource ft_orcamento_emenda.
 Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 3db2446f] Atualização age7
- 149 files changed, 291018 insertions(+), 290831 deletions(-)
- rewrite logs/cron.txt (66%)
