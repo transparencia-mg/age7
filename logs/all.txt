@@ -25,12 +25,12 @@ Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_contratado.R',
 Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_favorecido.R', stop_on_failure=TRUE)" 2> logs/tests/test_dm_favorecido.Rout
 Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_favorecido_scdp.R', stop_on_failure=TRUE)" 2> logs/tests/test_dm_favorecido_scdp.Rout
 
+
 ══ Testing test_dm_favorecido.R ════════════════════════════════════════════════
-[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ]
-══ Testing test_dm_contratado.R ════════════════════════════════════════════════
-[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ]
 ══ Testing test_dm_favorecido_scdp.R ═══════════════════════════════════════════
-[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 1 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 1 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 2 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 2 ] Done!
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ]
+══ Testing test_dm_contratado.R ════════════════════════════════════════════════
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 0 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 1 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 2 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 1 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 2 ] Done!
 [ FAIL 0 | WARN 0 | SKIP 0 | PASS 1 ][ FAIL 0 | WARN 0 | SKIP 0 | PASS 2 ] Done!
 [ FAIL 1 | WARN 0 | SKIP 0 | PASS 2 ][ FAIL 1 | WARN 1 | SKIP 0 | PASS 2 ][ FAIL 1 | WARN 1 | SKIP 0 | PASS 3 ][ FAIL 1 | WARN 1 | SKIP 0 | PASS 4 ][ FAIL 1 | WARN 1 | SKIP 0 | PASS 5 ][ FAIL 1 | WARN 1 | SKIP 0 | PASS 6 ]
 
