@@ -1228,7 +1228,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.07,
+        "time": 0.882,
         "errors": [],
         "tasks": [
           {
@@ -1306,13 +1306,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "b2953ba77f45790f3ed307870482a784",
-                "bytes": 19402,
+                "hash": "258af2e2b41e25fa334739e80aa11769",
+                "bytes": 397037,
                 "fields": 4,
-                "rows": 1000
+                "rows": 22766
               }
             },
-            "time": 0.07,
+            "time": 0.882,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2446,7 +2446,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.03,
+        "time": 0.029,
         "errors": [],
         "tasks": [
           {
@@ -2523,13 +2523,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "749d09802824709f38a0a921dda17d06",
-                "bytes": 72,
+                "hash": "d251dab27d238cc1cf35d9571331c7ab",
+                "bytes": 124,
                 "fields": 3,
-                "rows": 1
+                "rows": 4
               }
             },
-            "time": 0.03,
+            "time": 0.029,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2625,7 +2625,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.032,
+        "time": 0.034,
         "errors": [],
         "tasks": [
           {
@@ -2690,7 +2690,7 @@
                 "rows": 152
               }
             },
-            "time": 0.032,
+            "time": 0.034,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2939,7 +2939,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.063,
+        "time": 0.988,
         "errors": [],
         "tasks": [
           {
@@ -3131,13 +3131,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "08a2280f1c6d1312496ae664d086998f",
-                "bytes": 307,
+                "hash": "7fc19266648bce9e70f585bba3adc9b0",
+                "bytes": 422863,
                 "fields": 12,
-                "rows": 1
+                "rows": 14768
               }
             },
-            "time": 0.063,
+            "time": 0.988,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3159,18 +3159,51 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [],
+            "errors": [
+              {
+                "cell": "RECURSOS ORDINARIOS - OUTROS RECURSOS NAO VINCULADOS",
+                "fieldName": "fonte",
+                "fieldNumber": 8,
+                "fieldPosition": 8,
+                "cells": [
+                  "28494",
+                  "2025",
+                  "743",
+                  "921",
+                  "OUTRAS DESPESAS CORRENTES",
+                  "A DEFINIR",
+                  "DEMAIS PROJETOS E ATIVIDADES",
+                  "RECURSOS ORDINARIOS - OUTROS RECURSOS NAO VINCULADOS",
+                  "RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES",
+                  "1991 - RESERVA DE CONTINGENCIA",
+                  "SECRETARIA DE ESTADO DE GOVERNO",
+                  "-"
+                ],
+                "rowNumber": 12535,
+                "rowPosition": 12536,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['RECURSOS ORDINARIOS', 'RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS', 'OPERACOES DE CREDITO CONTRATUAIS', 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB', 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL', 'RECURSOS DIRETAMENTE ARRECADADOS', 'ALIENACAO DE BENS DO TESOURO ESTADUAL', 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE', 'CONVENIOS, ACORDOS E AJUSTES']\"",
+                "message": "The cell \"RECURSOS ORDINARIOS - OUTROS RECURSOS NAO VINCULADOS\" in row at position \"12536\" and field \"fonte\" at position \"8\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS ORDINARIOS', 'RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS', 'OPERACOES DE CREDITO CONTRATUAIS', 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB', 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL', 'RECURSOS DIRETAMENTE ARRECADADOS', 'ALIENACAO DE BENS DO TESOURO ESTADUAL', 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE', 'CONVENIOS, ACORDOS E AJUSTES']\"",
+                "description": "A field value does not conform to a constraint."
+              }
+            ],
             "stats": {
-              "errors": 0
+              "errors": 1
             },
-            "valid": true
+            "valid": false
           }
         ],
         "stats": {
-          "errors": 0,
+          "errors": 1,
           "tasks": 1
         },
-        "valid": true
+        "valid": false
       }
     },
     {
@@ -3379,7 +3412,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.022,
+        "time": 0.173,
         "errors": [],
         "tasks": [
           {
@@ -3432,13 +3465,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e2edcc54c23e8f02a560d925bf7fa8d3",
-                "bytes": 51,
+                "hash": "7fe9bb916e3b86e948a8df99cfb69f09",
+                "bytes": 22923,
                 "fields": 2,
-                "rows": 1
+                "rows": 5533
               }
             },
-            "time": 0.022,
+            "time": 0.173,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3926,7 +3959,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.026,
+        "time": 0.34,
         "errors": [],
         "tasks": [
           {
@@ -3995,13 +4028,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "451cda923d0e1b4dbad389cf974ca3b1",
-                "bytes": 93,
+                "hash": "27d038065a8be92b97b7da69ddbefec4",
+                "bytes": 168932,
                 "fields": 3,
-                "rows": 1
+                "rows": 8986
               }
             },
-            "time": 0.026,
+            "time": 0.34,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7363,7 +7396,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 5.082,
+        "time": 5.059,
         "errors": [],
         "tasks": [
           {
@@ -7465,13 +7498,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "44b0ff7e630632b8937d40ab518e8214",
-                "bytes": 1140011,
+                "hash": "7c20c32f4f45c0f2ff6d9c3e554a6ae0",
+                "bytes": 1139917,
                 "fields": 18,
                 "rows": 114122
               }
             },
-            "time": 5.082,
+            "time": 5.059,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7558,7 +7591,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 147.366,
+        "time": 149.861,
         "errors": [],
         "tasks": [
           {
@@ -7604,13 +7637,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "d8e2673b3b11ab4111aac91aec7abfd4",
-                "bytes": 40891822,
+                "hash": "5493aecce48ff5ab61e92740542a5b29",
+                "bytes": 40967833,
                 "fields": 4,
-                "rows": 8126526
+                "rows": 8141294
               }
             },
-            "time": 147.366,
+            "time": 149.861,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7867,7 +7900,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 6.521,
+        "time": 6.296,
         "errors": [],
         "tasks": [
           {
@@ -8017,13 +8050,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "b00cb4631ac37e7edc696d3de88734ff",
-                "bytes": 1587030,
+                "hash": "2e5f8181fc5b8cb44d6bef15418f0edc",
+                "bytes": 1587745,
                 "fields": 30,
-                "rows": 76540
+                "rows": 76569
               }
             },
-            "time": 6.521,
+            "time": 6.296,
             "scope": [
               "hash-count-error",
               "byte-count-error",
