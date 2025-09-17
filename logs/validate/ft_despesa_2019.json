@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 79.749,
+  "time": 80.354,
   "errors": [],
   "tasks": [
     {
@@ -473,13 +473,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "91c8a07baf1220b26efd15497f11c20b",
-          "bytes": 49641549,
+          "hash": "04f2b6a13251b3da2e6f96f5017166ff",
+          "bytes": 49640011,
           "fields": 24,
           "rows": 0
         }
       },
-      "time": 79.749,
+      "time": 80.354,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -502,45 +502,6 @@
       ],
       "partial": true,
       "errors": [
-        {
-          "cells": [
-            "id_tempo",
-            "id_categ_econ",
-            "id_grupo",
-            "id_elemento",
-            "id_item",
-            "id_fonte",
-            "id_modalidade_aplic",
-            "id_funcao",
-            "id_subfuncao",
-            "id_programa",
-            "id_acao",
-            "id_procedencia",
-            "id_unidade_orc",
-            "id_favorecido",
-            "id_empenho",
-            "id_tipo_documento",
-            "tp_operacao",
-            "cd_documento",
-            "cd_evento",
-            "dt_anomes",
-            "ano_particao",
-            "vr_empenhado",
-            "vr_liquidado",
-            "vr_pago"
-          ],
-          "rowNumber": 18224,
-          "rowPosition": 18225,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"18225\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
         {
           "cells": [
             "id_tempo",
@@ -39500,6 +39461,45 @@
           ],
           "note": "not found in the lookup table",
           "message": "Row at position \"19224\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 19224,
+          "rowPosition": 19225,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"19225\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         }
       ],
