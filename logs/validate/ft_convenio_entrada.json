@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 3.017,
+  "time": 0.547,
   "errors": [],
   "tasks": [
     {
@@ -202,13 +202,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "2735c3275f15733f37ac748ae62b81cd",
-          "bytes": 34270,
+          "hash": "acf3214a2940c09304018001a9e7ffb3",
+          "bytes": 143,
           "fields": 9,
-          "rows": 2297
+          "rows": 1
         }
       },
-      "time": 3.017,
+      "time": 0.547,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -230,16 +230,113 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "cells": [
+            "id_tempo",
+            "id_orgao",
+            "id_convenio",
+            "id_concedente",
+            "id_unidade_orc",
+            "id_situacao",
+            "ano_particao",
+            "vr_concedente_atual",
+            "vr_proponente_atual"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_orgao",
+            "id_convenio",
+            "id_concedente",
+            "id_unidade_orc",
+            "id_situacao",
+            "ano_particao",
+            "vr_concedente_atual",
+            "vr_proponente_atual"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_orgao",
+            "id_convenio",
+            "id_concedente",
+            "id_unidade_orc",
+            "id_situacao",
+            "ano_particao",
+            "vr_concedente_atual",
+            "vr_proponente_atual"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_orgao",
+            "id_convenio",
+            "id_concedente",
+            "id_unidade_orc",
+            "id_situacao",
+            "ano_particao",
+            "vr_concedente_atual",
+            "vr_proponente_atual"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 4
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 4,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }
