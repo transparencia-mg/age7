@@ -304,7 +304,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.029,
+        "time": 0.032,
         "errors": [],
         "tasks": [
           {
@@ -378,13 +378,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "62413c0b249b40b35724429b7dcdcedb",
-                "bytes": 70,
+                "hash": "c01b02938c3139dd9b9cace16726b535",
+                "bytes": 79,
                 "fields": 3,
-                "rows": 1
+                "rows": 2
               }
             },
-            "time": 0.029,
+            "time": 0.032,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -518,7 +518,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.203,
+        "time": 4.06,
         "errors": [],
         "tasks": [
           {
@@ -618,13 +618,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "45adc00d1f9da1b7d4b0dc5a10a08604",
-                "bytes": 17910,
+                "hash": "72fc8f3e960c9f7d979aae296fa1a93c",
+                "bytes": 422039,
                 "fields": 6,
-                "rows": 2269
+                "rows": 55153
               }
             },
-            "time": 0.203,
+            "time": 4.06,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -739,7 +739,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 47.521,
+        "time": 48.0,
         "errors": [],
         "tasks": [
           {
@@ -820,13 +820,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e13292c6982cfa2dc312dfc9a7e619ee",
-                "bytes": 24034267,
+                "hash": "1965e3f942ea30dbe35d62079bd8dba9",
+                "bytes": 24039023,
                 "fields": 4,
-                "rows": 1386220
+                "rows": 1386486
               }
             },
-            "time": 47.521,
+            "time": 48.0,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1006,7 +1006,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 56.821,
+        "time": 60.722,
         "errors": [],
         "tasks": [
           {
@@ -1150,13 +1150,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "464d4eef0209c540a5c0f4278b25c9b0",
-                "bytes": 118,
+                "hash": "21ac6ed9b70a929c5f943a4bc08992c8",
+                "bytes": 94705,
                 "fields": 7,
-                "rows": 1
+                "rows": 8993
               }
             },
-            "time": 56.821,
+            "time": 60.722,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1178,41 +1178,18 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_tipo",
-                  "id_favorecido",
-                  "id_contrato",
-                  "ano_particao",
-                  "vr_juros",
-                  "vr_amortizacao"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              }
-            ],
+            "errors": [],
             "stats": {
-              "errors": 1
+              "errors": 0
             },
-            "valid": false
+            "valid": true
           }
         ],
         "stats": {
-          "errors": 1,
+          "errors": 0,
           "tasks": 1
         },
-        "valid": false
+        "valid": true
       }
     }
   ],
