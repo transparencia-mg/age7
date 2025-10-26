@@ -50,6 +50,7 @@ dtamg-py etl-make build-datapackages 2> logs/build.txt
 dpckan --datapackage build_datasets/restos_pagar/datapackage.json dataset update 2> logs/update/restos_pagar.txt
 Updating dataset https://dados.mg.gov.br/dataset/restos_pagar
 Updating data and metadata of resource dm_elemento_desp.
+Updating data and metadata of resource dm_tempo_anual.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/restos_pagar updated
 dpckan --datapackage build_datasets/compras_contratos/datapackage.json dataset update 2> logs/update/compras_contratos.txt
@@ -57,7 +58,8 @@ Updating dataset https://dados.mg.gov.br/dataset/compras_contratos
 Error during https://dados.mg.gov.br/dataset/compras_contratos updating
 dpckan --datapackage build_datasets/convenios-saida/datapackage.json dataset update 2> logs/update/convenios-saida.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-saida
-Error during https://dados.mg.gov.br/dataset/convenios-saida updating
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/convenios-saida.
+Dataset https://dados.mg.gov.br/dataset/convenios-saida updated
 dpckan --datapackage build_datasets/diarias/datapackage.json dataset update 2> logs/update/diarias.txt
 Updating dataset https://dados.mg.gov.br/dataset/diarias
 Updating data and metadata of resource dm_elemento_desp.
@@ -69,6 +71,18 @@ Updating dataset https://dados.mg.gov.br/dataset/despesa
 Updating data and metadata of resource dm_elemento_desp.
 Updating data and metadata of resource fl_despesa_pgto.
 Updating data and metadata of resource ft_despesa_2002.
+Updating data and metadata of resource ft_despesa_2003.
+Updating data and metadata of resource ft_despesa_2004.
+Updating data and metadata of resource ft_despesa_2005.
+Updating data and metadata of resource ft_despesa_2006.
+Updating data and metadata of resource ft_despesa_2007.
+Updating data and metadata of resource ft_despesa_2008.
+Updating data and metadata of resource ft_despesa_2009.
+Updating data and metadata of resource ft_despesa_2010.
+Updating data and metadata of resource ft_despesa_2011.
+Updating data and metadata of resource ft_despesa_2012.
+Updating data and metadata of resource ft_despesa_2013.
+Updating data and metadata of resource ft_despesa_2014.
 Error during https://dados.mg.gov.br/dataset/despesa updating
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
@@ -102,11 +116,7 @@ Nothing to be updated in dataset https://dados.mg.gov.br/dataset/planejamento-e-
 Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
+Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource dm_emenda_orcam.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[detached HEAD 5606c30a] Atualização age7
- 47 files changed, 652 insertions(+), 1197 deletions(-)
- rewrite logs/all.txt (84%)
- rewrite logs/cron.txt (66%)
- delete mode 100644 logs/ingest.txt
