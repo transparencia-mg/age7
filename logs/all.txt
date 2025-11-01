@@ -62,12 +62,28 @@ Nothing to be updated in dataset https://dados.mg.gov.br/dataset/convenios-saida
 Dataset https://dados.mg.gov.br/dataset/convenios-saida updated
 dpckan --datapackage build_datasets/diarias/datapackage.json dataset update 2> logs/update/diarias.txt
 Updating dataset https://dados.mg.gov.br/dataset/diarias
-Updating data and metadata of resource dm_elemento_desp.
-Updating data and metadata of resource ft_diarias_2025.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/diarias updated
+Error during https://dados.mg.gov.br/dataset/diarias updating
 dpckan --datapackage build_datasets/despesa/datapackage.json dataset update 2> logs/update/despesa.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa
+Updating data and metadata of resource dm_elemento_desp.
+Updating data and metadata of resource fl_despesa_pgto.
+Updating data and metadata of resource ft_despesa_2002.
+Updating data and metadata of resource ft_despesa_2003.
+Updating data and metadata of resource ft_despesa_2004.
+Updating data and metadata of resource ft_despesa_2005.
+Updating data and metadata of resource ft_despesa_2006.
+Updating data and metadata of resource ft_despesa_2007.
+Updating data and metadata of resource ft_despesa_2008.
+Updating data and metadata of resource ft_despesa_2009.
+Updating data and metadata of resource ft_despesa_2010.
+Updating data and metadata of resource ft_despesa_2011.
+Updating data and metadata of resource ft_despesa_2012.
+Updating data and metadata of resource ft_despesa_2013.
+Updating data and metadata of resource ft_despesa_2014.
+Updating data and metadata of resource ft_despesa_2015.
+Updating data and metadata of resource ft_despesa_2016.
+Updating data and metadata of resource ft_despesa_2017.
+Updating data and metadata of resource ft_despesa_2018.
 Error during https://dados.mg.gov.br/dataset/despesa updating
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
@@ -76,7 +92,8 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios updated
 dpckan --datapackage build_datasets/execucao-da-divida/datapackage.json dataset update 2> logs/update/execucao-da-divida.txt
 Updating dataset https://dados.mg.gov.br/dataset/execucao-da-divida
-Error during https://dados.mg.gov.br/dataset/execucao-da-divida updating
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/execucao-da-divida.
+Dataset https://dados.mg.gov.br/dataset/execucao-da-divida updated
 dpckan --datapackage build_datasets/despesa-com-pessoal/datapackage.json dataset update 2> logs/update/despesa-com-pessoal.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa-com-pessoal
 Error during https://dados.mg.gov.br/dataset/despesa-com-pessoal updating
@@ -86,9 +103,7 @@ Nothing to be updated in dataset https://dados.mg.gov.br/dataset/viagens.
 Dataset https://dados.mg.gov.br/dataset/viagens updated
 dpckan --datapackage build_datasets/receita/datapackage.json dataset update 2> logs/update/receita.txt
 Updating dataset https://dados.mg.gov.br/dataset/receita
-Updating data and metadata of resource dm_tempo_mensal.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/receita updated
+Error during https://dados.mg.gov.br/dataset/receita updating
 dpckan --datapackage build_datasets/convenios-entrada/datapackage.json dataset update 2> logs/update/convenios-entrada.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-entrada
 Updating data and metadata of resource dm_elemento_desp.
@@ -100,7 +115,6 @@ Nothing to be updated in dataset https://dados.mg.gov.br/dataset/planejamento-e-
 Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
-Error during https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updating
-[detached HEAD a5451fd5] Atualização age7
- 47 files changed, 561 insertions(+), 565 deletions(-)
- rewrite logs/cron.txt (66%)
+Updating data and metadata of resource dm_emenda_orcam.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
