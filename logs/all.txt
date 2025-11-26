@@ -120,13 +120,10 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/convenios-entrada updated
 dpckan --datapackage build_datasets/planejamento-e-monitoramento/datapackage.json dataset update 2> logs/update/planejamento-e-monitoramento.txt
 Updating dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento
-Error during https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updating
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento.
+Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
-Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource dm_emenda_orcam.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[detached HEAD 22735a34] Atualização age7
- 46 files changed, 562 insertions(+), 563 deletions(-)
- rewrite logs/cron.txt (66%)
