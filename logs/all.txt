@@ -62,7 +62,10 @@ Nothing to be updated in dataset https://dados.mg.gov.br/dataset/convenios-saida
 Dataset https://dados.mg.gov.br/dataset/convenios-saida updated
 dpckan --datapackage build_datasets/diarias/datapackage.json dataset update 2> logs/update/diarias.txt
 Updating dataset https://dados.mg.gov.br/dataset/diarias
-Error during https://dados.mg.gov.br/dataset/diarias updating
+Updating data and metadata of resource dm_elemento_desp.
+Updating data and metadata of resource ft_diarias_2025.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/diarias updated
 dpckan --datapackage build_datasets/despesa/datapackage.json dataset update 2> logs/update/despesa.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa
 Error during https://dados.mg.gov.br/dataset/despesa updating
@@ -102,6 +105,3 @@ Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource dm_emenda_orcam.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[detached HEAD 2e4cb63d] Atualização age7
- 46 files changed, 560 insertions(+), 562 deletions(-)
- rewrite logs/cron.txt (66%)
