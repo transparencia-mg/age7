@@ -49,10 +49,7 @@ Rscript --verbose -e "testthat::test_file('tests/testthat/test_dm_favorecido_scd
 dtamg-py etl-make build-datapackages 2> logs/build.txt
 dpckan --datapackage build_datasets/restos_pagar/datapackage.json dataset update 2> logs/update/restos_pagar.txt
 Updating dataset https://dados.mg.gov.br/dataset/restos_pagar
-Updating data and metadata of resource dm_elemento_desp.
-Updating data and metadata of resource dm_tempo_anual.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/restos_pagar updated
+Error during https://dados.mg.gov.br/dataset/restos_pagar updating
 dpckan --datapackage build_datasets/compras_contratos/datapackage.json dataset update 2> logs/update/compras_contratos.txt
 Updating dataset https://dados.mg.gov.br/dataset/compras_contratos
 Error during https://dados.mg.gov.br/dataset/compras_contratos updating
@@ -71,20 +68,16 @@ Updating dataset https://dados.mg.gov.br/dataset/despesa
 Error during https://dados.mg.gov.br/dataset/despesa updating
 dpckan --datapackage build_datasets/transferencia-de-impostos-a-municipios/datapackage.json dataset update 2> logs/update/transferencia-de-impostos-a-municipios.txt
 Updating dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios
-Updating data and metadata of resource dm_tempo_mensal.
-Updating resource datapackage.json.
-Dataset https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios updated
+Error during https://dados.mg.gov.br/dataset/transferencia-de-impostos-a-municipios updating
 dpckan --datapackage build_datasets/execucao-da-divida/datapackage.json dataset update 2> logs/update/execucao-da-divida.txt
 Updating dataset https://dados.mg.gov.br/dataset/execucao-da-divida
-Nothing to be updated in dataset https://dados.mg.gov.br/dataset/execucao-da-divida.
-Dataset https://dados.mg.gov.br/dataset/execucao-da-divida updated
+Error during https://dados.mg.gov.br/dataset/execucao-da-divida updating
 dpckan --datapackage build_datasets/despesa-com-pessoal/datapackage.json dataset update 2> logs/update/despesa-com-pessoal.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa-com-pessoal
 Error during https://dados.mg.gov.br/dataset/despesa-com-pessoal updating
 dpckan --datapackage build_datasets/viagens/datapackage.json dataset update 2> logs/update/viagens.txt
 Updating dataset https://dados.mg.gov.br/dataset/viagens
-Nothing to be updated in dataset https://dados.mg.gov.br/dataset/viagens.
-Dataset https://dados.mg.gov.br/dataset/viagens updated
+Error during https://dados.mg.gov.br/dataset/viagens updating
 dpckan --datapackage build_datasets/receita/datapackage.json dataset update 2> logs/update/receita.txt
 Updating dataset https://dados.mg.gov.br/dataset/receita
 Updating data and metadata of resource dm_tempo_mensal.
@@ -105,6 +98,3 @@ Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource dm_emenda_orcam.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[detached HEAD d0cef15a] Atualização age7
- 46 files changed, 557 insertions(+), 557 deletions(-)
- rewrite logs/cron.txt (66%)
