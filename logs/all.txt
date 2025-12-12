@@ -881,3 +881,11 @@ Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating data and metadata of resource ft_obra.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
+[detached HEAD ebb3623b] Atualização age7
+ 233 files changed, 3665062 insertions(+), 995241 deletions(-)
+ rewrite build_datasets/compras_contratos/datapackage.json (71%)
+ rewrite logs/cron.txt (66%)
+ create mode 100644 logs/ingest.txt
+ rewrite logs/validate/fl_compras_empenho.json (99%)
+ rewrite logs/validate/ft_compras.json (98%)
+ copy logs/validate/{fl_compras_empenho.json => ft_diarias_scdp_liqpag.json} (50%)
