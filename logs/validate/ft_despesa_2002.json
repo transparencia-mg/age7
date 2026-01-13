@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 89.118,
+  "time": 87.943,
   "errors": [],
   "tasks": [
     {
@@ -473,13 +473,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "dd349c7ec310d8a8dca73cc7a1b001bc",
-          "bytes": 52341643,
+          "hash": "d87270894743543f983de2a2351473c4",
+          "bytes": 52340226,
           "fields": 24,
           "rows": 0
         }
       },
-      "time": 89.118,
+      "time": 87.943,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -502,84 +502,6 @@
       ],
       "partial": true,
       "errors": [
-        {
-          "cells": [
-            "id_tempo",
-            "id_categ_econ",
-            "id_grupo",
-            "id_elemento",
-            "id_item",
-            "id_fonte",
-            "id_modalidade_aplic",
-            "id_funcao",
-            "id_subfuncao",
-            "id_programa",
-            "id_acao",
-            "id_procedencia",
-            "id_unidade_orc",
-            "id_favorecido",
-            "id_empenho",
-            "id_tipo_documento",
-            "tp_operacao",
-            "cd_documento",
-            "cd_evento",
-            "dt_anomes",
-            "ano_particao",
-            "vr_empenhado",
-            "vr_liquidado",
-            "vr_pago"
-          ],
-          "rowNumber": 6143,
-          "rowPosition": 6144,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"6144\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_tempo",
-            "id_categ_econ",
-            "id_grupo",
-            "id_elemento",
-            "id_item",
-            "id_fonte",
-            "id_modalidade_aplic",
-            "id_funcao",
-            "id_subfuncao",
-            "id_programa",
-            "id_acao",
-            "id_procedencia",
-            "id_unidade_orc",
-            "id_favorecido",
-            "id_empenho",
-            "id_tipo_documento",
-            "tp_operacao",
-            "cd_documento",
-            "cd_evento",
-            "dt_anomes",
-            "ano_particao",
-            "vr_empenhado",
-            "vr_liquidado",
-            "vr_pago"
-          ],
-          "rowNumber": 6144,
-          "rowPosition": 6145,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"6145\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
         {
           "cells": [
             "id_tempo",
@@ -39500,6 +39422,84 @@
           ],
           "note": "not found in the lookup table",
           "message": "Row at position \"7143\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 7143,
+          "rowPosition": 7144,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"7144\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_categ_econ",
+            "id_grupo",
+            "id_elemento",
+            "id_item",
+            "id_fonte",
+            "id_modalidade_aplic",
+            "id_funcao",
+            "id_subfuncao",
+            "id_programa",
+            "id_acao",
+            "id_procedencia",
+            "id_unidade_orc",
+            "id_favorecido",
+            "id_empenho",
+            "id_tipo_documento",
+            "tp_operacao",
+            "cd_documento",
+            "cd_evento",
+            "dt_anomes",
+            "ano_particao",
+            "vr_empenhado",
+            "vr_liquidado",
+            "vr_pago"
+          ],
+          "rowNumber": 7144,
+          "rowPosition": 7145,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"7145\" violates the foreign key: not found in the lookup table",
           "description": "Values in the foreign key fields should exist in the reference table"
         }
       ],
