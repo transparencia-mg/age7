@@ -2625,7 +2625,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.037,
+        "time": 0.035,
         "errors": [],
         "tasks": [
           {
@@ -2690,7 +2690,7 @@
                 "rows": 152
               }
             },
-            "time": 0.037,
+            "time": 0.035,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2939,7 +2939,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 1.034,
+        "time": 1.017,
         "errors": [],
         "tasks": [
           {
@@ -3131,13 +3131,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "7fc19266648bce9e70f585bba3adc9b0",
-                "bytes": 422863,
+                "hash": "cccf50b0c6d3469cff897cbfc125abf6",
+                "bytes": 429350,
                 "fields": 12,
-                "rows": 14768
+                "rows": 15344
               }
             },
-            "time": 1.034,
+            "time": 1.017,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3191,16 +3191,176 @@
                 "note": "constraint \"enum\" is \"['RECURSOS ORDINARIOS', 'RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS', 'OPERACOES DE CREDITO CONTRATUAIS', 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB', 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL', 'RECURSOS DIRETAMENTE ARRECADADOS', 'ALIENACAO DE BENS DO TESOURO ESTADUAL', 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE', 'CONVENIOS, ACORDOS E AJUSTES']\"",
                 "message": "The cell \"RECURSOS ORDINARIOS - OUTROS RECURSOS NAO VINCULADOS\" in row at position \"12536\" and field \"fonte\" at position \"8\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS ORDINARIOS', 'RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS', 'OPERACOES DE CREDITO CONTRATUAIS', 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB', 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL', 'RECURSOS DIRETAMENTE ARRECADADOS', 'ALIENACAO DE BENS DO TESOURO ESTADUAL', 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE', 'CONVENIOS, ACORDOS E AJUSTES']\"",
                 "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "RECURSOS RECEBIDOS PARA AUXILIOS",
+                "fieldName": "procedencia",
+                "fieldNumber": 9,
+                "fieldPosition": 9,
+                "cells": [
+                  "30308",
+                  "2026",
+                  "556",
+                  "696",
+                  "OUTRAS DESPESAS CORRENTES",
+                  "A DEFINIR",
+                  "DEMAIS PROJETOS E ATIVIDADES",
+                  "RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS",
+                  "RECURSOS RECEBIDOS PARA AUXILIOS",
+                  "1441 - ",
+                  "-",
+                  "-"
+                ],
+                "rowNumber": 14705,
+                "rowPosition": 14706,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "message": "The cell \"RECURSOS RECEBIDOS PARA AUXILIOS\" in row at position \"14706\" and field \"procedencia\" at position \"9\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "RECURSOS RECEBIDOS PARA AUXILIOS",
+                "fieldName": "procedencia",
+                "fieldNumber": 9,
+                "fieldPosition": 9,
+                "cells": [
+                  "30309",
+                  "2026",
+                  "530",
+                  "705",
+                  "OUTRAS DESPESAS CORRENTES",
+                  "A DEFINIR",
+                  "DEMAIS PROJETOS E ATIVIDADES",
+                  "RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS",
+                  "RECURSOS RECEBIDOS PARA AUXILIOS",
+                  "1021 - ",
+                  "-",
+                  "-"
+                ],
+                "rowNumber": 14706,
+                "rowPosition": 14707,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "message": "The cell \"RECURSOS RECEBIDOS PARA AUXILIOS\" in row at position \"14707\" and field \"procedencia\" at position \"9\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "RECURSOS RECEBIDOS PARA BENEFICIOS PREVISTOS NO ART.39 DA LC 64/2002",
+                "fieldName": "procedencia",
+                "fieldNumber": 9,
+                "fieldPosition": 9,
+                "cells": [
+                  "29972",
+                  "2026",
+                  "533",
+                  "698",
+                  "PESSOAL E ENCARGOS SOCIAIS",
+                  "A DEFINIR",
+                  "DEMAIS PROJETOS E ATIVIDADES",
+                  "RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS",
+                  "RECURSOS RECEBIDOS PARA BENEFICIOS PREVISTOS NO ART.39 DA LC 64/2002",
+                  "1021 - ",
+                  "-",
+                  "-"
+                ],
+                "rowNumber": 14805,
+                "rowPosition": 14806,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "message": "The cell \"RECURSOS RECEBIDOS PARA BENEFICIOS PREVISTOS NO ART.39 DA LC 64/2002\" in row at position \"14806\" and field \"procedencia\" at position \"9\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "RECURSOS RECEBIDOS PARA AUXILIOS",
+                "fieldName": "procedencia",
+                "fieldNumber": 9,
+                "fieldPosition": 9,
+                "cells": [
+                  "29973",
+                  "2026",
+                  "557",
+                  "697",
+                  "OUTRAS DESPESAS CORRENTES",
+                  "A DEFINIR",
+                  "DEMAIS PROJETOS E ATIVIDADES",
+                  "RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS",
+                  "RECURSOS RECEBIDOS PARA AUXILIOS",
+                  "1441 - ",
+                  "-",
+                  "-"
+                ],
+                "rowNumber": 14806,
+                "rowPosition": 14807,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "message": "The cell \"RECURSOS RECEBIDOS PARA AUXILIOS\" in row at position \"14807\" and field \"procedencia\" at position \"9\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "RECURSOS DECORRENTES DA CONVERSAO DE MULTAS AMBIENTAIS",
+                "fieldName": "fonte",
+                "fieldNumber": 8,
+                "fieldPosition": 8,
+                "cells": [
+                  "30539",
+                  "2026",
+                  "552",
+                  "658",
+                  "OUTRAS DESPESAS CORRENTES",
+                  "A DEFINIR",
+                  "DEMAIS PROJETOS E ATIVIDADES",
+                  "RECURSOS DECORRENTES DA CONVERSAO DE MULTAS AMBIENTAIS",
+                  "RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES",
+                  "1371 - ",
+                  "-",
+                  "-"
+                ],
+                "rowNumber": 15331,
+                "rowPosition": 15332,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['RECURSOS ORDINARIOS', 'RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS', 'OPERACOES DE CREDITO CONTRATUAIS', 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB', 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL', 'RECURSOS DIRETAMENTE ARRECADADOS', 'ALIENACAO DE BENS DO TESOURO ESTADUAL', 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE', 'CONVENIOS, ACORDOS E AJUSTES']\"",
+                "message": "The cell \"RECURSOS DECORRENTES DA CONVERSAO DE MULTAS AMBIENTAIS\" in row at position \"15332\" and field \"fonte\" at position \"8\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS ORDINARIOS', 'RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS', 'OPERACOES DE CREDITO CONTRATUAIS', 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB', 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL', 'RECURSOS DIRETAMENTE ARRECADADOS', 'ALIENACAO DE BENS DO TESOURO ESTADUAL', 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE', 'CONVENIOS, ACORDOS E AJUSTES']\"",
+                "description": "A field value does not conform to a constraint."
               }
             ],
             "stats": {
-              "errors": 1
+              "errors": 6
             },
             "valid": false
           }
         ],
         "stats": {
-          "errors": 1,
+          "errors": 6,
           "tasks": 1
         },
         "valid": false
@@ -3319,10 +3479,10 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "fd527cf2819c3a76b021b43fdf65fbe7",
-                "bytes": 3191,
+                "hash": "32bb4ab546ed04b098296313cef89bc9",
+                "bytes": 3237,
                 "fields": 2,
-                "rows": 315
+                "rows": 319
               }
             },
             "time": 0.035,
@@ -7396,7 +7556,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 5.371,
+        "time": 5.344,
         "errors": [],
         "tasks": [
           {
@@ -7498,13 +7658,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "1e9c5628406fc472c61f0fbf2cdd0d57",
-                "bytes": 1188042,
+                "hash": "42ace0292d25d5d45a11b033cc7a9c79",
+                "bytes": 1267402,
                 "fields": 18,
-                "rows": 118530
+                "rows": 118533
               }
             },
-            "time": 5.371,
+            "time": 5.344,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7591,7 +7751,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 182.51,
+        "time": 184.229,
         "errors": [],
         "tasks": [
           {
@@ -7637,13 +7797,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "daca62ae867685eae8bc76968c41fb47",
-                "bytes": 50312673,
+                "hash": "dba3e1b89fa3343f13ccf93adcd6275f",
+                "bytes": 50392641,
                 "fields": 4,
-                "rows": 9942990
+                "rows": 9958334
               }
             },
-            "time": 182.51,
+            "time": 184.229,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7900,7 +8060,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 6.83,
+        "time": 6.857,
         "errors": [],
         "tasks": [
           {
@@ -8050,13 +8210,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "2c9933db2a73f15ebdafb29bba5ec578",
-                "bytes": 1692707,
+                "hash": "f2981ddd9f993fd7142f1549dc92925a",
+                "bytes": 1692700,
                 "fields": 30,
                 "rows": 81142
               }
             },
-            "time": 6.83,
+            "time": 6.857,
             "scope": [
               "hash-count-error",
               "byte-count-error",
