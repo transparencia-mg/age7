@@ -67,7 +67,6 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/diarias updated
 dpckan --datapackage build_datasets/despesa/datapackage.json dataset update 2> logs/update/despesa.txt
 Updating dataset https://dados.mg.gov.br/dataset/despesa
-Updating data and metadata of resource dm_elemento_desp.
 Updating data and metadata of resource fl_despesa_pgto.
 Updating data and metadata of resource ft_despesa_2002.
 Updating data and metadata of resource ft_despesa_2003.
@@ -121,12 +120,10 @@ Nothing to be updated in dataset https://dados.mg.gov.br/dataset/convenios-entra
 Dataset https://dados.mg.gov.br/dataset/convenios-entrada updated
 dpckan --datapackage build_datasets/planejamento-e-monitoramento/datapackage.json dataset update 2> logs/update/planejamento-e-monitoramento.txt
 Updating dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento
-Error during https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updating
+Nothing to be updated in dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento.
+Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Updating data and metadata of resource dm_emenda_orcam.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[detached HEAD b9bd69cb] Atualização age7
- 71 files changed, 755 insertions(+), 725 deletions(-)
- rewrite logs/cron.txt (66%)
