@@ -96,3 +96,9 @@ Error during https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updati
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
 Error during https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updating
+[detached HEAD 2e021b93] Atualização age7
+ 48 files changed, 6206 insertions(+), 1136 deletions(-)
+ create mode 100644 build_datasets/viagens/temp/datapackage.json
+ rewrite logs/all.txt (84%)
+ rewrite logs/cron.txt (66%)
+ delete mode 100644 logs/ingest.txt
