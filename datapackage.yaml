@@ -910,6 +910,20 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
+ - name: dm_empenho_desp_2026
+    title: Empenho Despesa 2026
+    path: data/dm_empenho_desp_2026.csv.gz
+    schema: schemas/dm_empenho_desp_2026.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_desp
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
   - name: dm_favorecido
     title: Favorecido
     path: data/dm_favorecido.csv.gz
@@ -1764,6 +1778,20 @@ resources:
     encoding: utf-8-sig
     dialect: schemas/dialect.json
     profile: tabular-data-resource
+  - name: ft_despesa_2026
+    title: Despesa 2026
+    path: data/ft_despesa_2026.csv.gz
+    schema: schemas/ft_despesa_2026.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_despesa_2026
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
   - name: dm_situacao_op_desp
     title: Situação Ordem de Pagamento
     path: data/dm_situacao_op_desp.csv.gz
@@ -2239,7 +2267,21 @@ resources:
     mediatype: text/csv
     encoding: utf-8-sig
     dialect: schemas/dialect.json
-    profile: tabular-data-resource    
+    profile: tabular-data-resource 
+  - name: dm_empenho_resto_2026
+    title: Empenho Restos a Pagar 2026
+    path: data/dm_empenho_resto_2026.csv.gz
+    schema: schemas/dm_empenho_resto_2026.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: dm_empenho_resto
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource  
   - name: dm_categ_econ
     title: Categoria Econômica
     path: data/dm_categ_econ.csv.gz
@@ -2730,7 +2772,21 @@ resources:
     mediatype: text/csv
     encoding: utf-8-sig
     dialect: schemas/dialect.json
-    profile: tabular-data-resource    
+    profile: tabular-data-resource  
+  - name: ft_diarias_2026
+    title: Diárias 2026
+    path: data/ft_diarias_2026.csv.gz
+    schema: schemas/ft_diarias_2026.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_diarias
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
   - name: ft_restos_pagar_2002
     title: ft_restos_pagar 2002
     path: data/ft_restos_pagar_2002.csv.gz
@@ -3057,6 +3113,20 @@ resources:
     title: ft_restos_pagar 2025
     path: data/ft_restos_pagar_2025.csv.gz
     schema: schemas/ft_restos_pagar_2025.yaml
+    sources:
+      - title: >-
+          Tabela origem no schema AGE7 no banco de dados do Portal da
+          Transparência
+        table: ft_restos_pagar
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: schemas/dialect.json
+    profile: tabular-data-resource
+  - name: ft_restos_pagar_2026
+    title: ft_restos_pagar 2026
+    path: data/ft_restos_pagar_2026.csv.gz
+    schema: schemas/ft_restos_pagar_2026.yaml
     sources:
       - title: >-
           Tabela origem no schema AGE7 no banco de dados do Portal da
