@@ -7,8 +7,6 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    container:
-      image: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
