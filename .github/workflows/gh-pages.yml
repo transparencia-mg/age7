@@ -7,8 +7,6 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    container:
-      image: gabrielbdornas/dtamg-age7:latest
     steps:
       - uses: actions/checkout@v2
 
