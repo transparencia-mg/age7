@@ -1,4 +1,15 @@
-Already up to date.
+Merge made by the 'recursive' strategy.
+ schemas/dm_empenho_desp_2026.yaml  |  70 +++++++++
+ schemas/dm_empenho_resto_2026.yaml |  63 ++++++++
+ schemas/ft_despesa_2026.yaml       | 302 +++++++++++++++++++++++++++++++++++++
+ schemas/ft_diarias_2026.yaml       | 207 +++++++++++++++++++++++++
+ schemas/ft_restos_pagar_2026.yaml  | 246 ++++++++++++++++++++++++++++++
+ 5 files changed, 888 insertions(+)
+ create mode 100644 schemas/dm_empenho_desp_2026.yaml
+ create mode 100644 schemas/dm_empenho_resto_2026.yaml
+ create mode 100644 schemas/ft_despesa_2026.yaml
+ create mode 100644 schemas/ft_diarias_2026.yaml
+ create mode 100644 schemas/ft_restos_pagar_2026.yaml
 rm -rf logs/extract/*
 rm -rf logs/parse/*
 rm -rf logs/tests/*
