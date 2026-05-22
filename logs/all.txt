@@ -18,7 +18,9 @@ make: Nothing to be done for 'parse'.
 python scripts/python/extract_csv_evento_etl_carga.py 2> logs/evento_etl_carga.txt
 dtamg-py etl-make full-extract 2> logs/full_extract.txt
 rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
+>fcsT...... dm_concedente.csv
 >fcsT...... dm_convenio.csv
+>fcsT...... dm_decreto.csv
 >fcsT...... dm_documento_viagem.csv
 >fc.T...... dm_empenho_desp_2002.csv
 >fc.T...... dm_empenho_desp_2003.csv
@@ -106,6 +108,7 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... dm_municipio_plan.csv
 >fcsT...... dm_ppag_plan.csv
 >fcsT...... dm_processo.csv
+>fcsT...... dm_tipo_atendimento.csv
 >fcsT...... fl_compras_empenho.csv
 >fcsT...... fl_convenio_alteracao.csv
 >fc.T...... fl_convenio_entrada_aditivo.csv
@@ -242,7 +245,9 @@ gzip -n < data/staging/fl_convenio_entrada_interv.csv > data/fl_convenio_entrada
 gzip -n < data/staging/fl_convenio_entrada_aditivo.csv > data/fl_convenio_entrada_aditivo.csv.gz
 gzip -n < data/staging/ft_convenio_entrada.csv > data/ft_convenio_entrada.csv.gz
 gzip -n < data/staging/dm_interveniente_conv_ent.csv > data/dm_interveniente_conv_ent.csv.gz
+gzip -n < data/staging/dm_concedente.csv > data/dm_concedente.csv.gz
 gzip -n < data/staging/dm_interveniente.csv > data/dm_interveniente.csv.gz
+gzip -n < data/staging/dm_tipo_atendimento.csv > data/dm_tipo_atendimento.csv.gz
 gzip -n < data/staging/ft_diarias_scdp.csv > data/ft_diarias_scdp.csv.gz
 gzip -n < data/staging/ft_diarias_scdp_liqpag.csv > data/ft_diarias_scdp_liqpag.csv.gz
 gzip -n < data/staging/dm_meio_transporte.csv > data/dm_meio_transporte.csv.gz
@@ -335,6 +340,7 @@ gzip -n < data/staging/dm_ppag_plan.csv > data/dm_ppag_plan.csv.gz
 gzip -n < data/staging/dm_municipio_plan.csv > data/dm_municipio_plan.csv.gz
 gzip -n < data/staging/dm_horizonte_plan.csv > data/dm_horizonte_plan.csv.gz
 gzip -n < data/staging/dm_funcao_plan.csv > data/dm_funcao_plan.csv.gz
+gzip -n < data/staging/dm_decreto.csv > data/dm_decreto.csv.gz
 gzip -n < data/staging/dm_indicador_acao.csv > data/dm_indicador_acao.csv.gz
 gzip -n < data/staging/sa_indicador_acao.csv > data/sa_indicador_acao.csv.gz
 gzip -n < data/staging/dm_fonte_orcam.csv > data/dm_fonte_orcam.csv.gz
@@ -406,7 +412,9 @@ dtamg-py etl-make validate -r fl_convenio_entrada_interv > logs/validate/fl_conv
 dtamg-py etl-make validate -r fl_convenio_entrada_aditivo > logs/validate/fl_convenio_entrada_aditivo.json
 dtamg-py etl-make validate -r ft_convenio_entrada > logs/validate/ft_convenio_entrada.json
 dtamg-py etl-make validate -r dm_interveniente_conv_ent > logs/validate/dm_interveniente_conv_ent.json
+dtamg-py etl-make validate -r dm_concedente > logs/validate/dm_concedente.json
 dtamg-py etl-make validate -r dm_interveniente > logs/validate/dm_interveniente.json
+dtamg-py etl-make validate -r dm_tipo_atendimento > logs/validate/dm_tipo_atendimento.json
 dtamg-py etl-make validate -r ft_diarias_scdp > logs/validate/ft_diarias_scdp.json
 dtamg-py etl-make validate -r ft_diarias_scdp_liqpag > logs/validate/ft_diarias_scdp_liqpag.json
 dtamg-py etl-make validate -r dm_meio_transporte > logs/validate/dm_meio_transporte.json
@@ -499,6 +507,7 @@ dtamg-py etl-make validate -r dm_ppag_plan > logs/validate/dm_ppag_plan.json
 dtamg-py etl-make validate -r dm_municipio_plan > logs/validate/dm_municipio_plan.json
 dtamg-py etl-make validate -r dm_horizonte_plan > logs/validate/dm_horizonte_plan.json
 dtamg-py etl-make validate -r dm_funcao_plan > logs/validate/dm_funcao_plan.json
+dtamg-py etl-make validate -r dm_decreto > logs/validate/dm_decreto.json
 dtamg-py etl-make validate -r dm_indicador_acao > logs/validate/dm_indicador_acao.json
 dtamg-py etl-make validate -r sa_indicador_acao > logs/validate/sa_indicador_acao.json
 dtamg-py etl-make validate -r dm_fonte_orcam > logs/validate/dm_fonte_orcam.json
@@ -566,6 +575,7 @@ Updating data and metadata of resource dm_funcao_resto.
 Updating data and metadata of resource dm_grupo_desp.
 Updating data and metadata of resource dm_item_desp.
 Updating data and metadata of resource dm_modalidade_aplic.
+Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource ft_restos_pagar_2002.
 Updating data and metadata of resource ft_restos_pagar_2003.
 Updating data and metadata of resource ft_restos_pagar_2004.
@@ -611,6 +621,7 @@ Updating data and metadata of resource fl_convenio_alteracao.
 Updating data and metadata of resource ft_convenio.
 Updating data and metadata of resource dm_convenio.
 Updating data and metadata of resource dm_interveniente.
+Updating data and metadata of resource dm_tipo_atendimento.
 Updating data and metadata of resource dm_municipio.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/convenios-saida updated
@@ -701,6 +712,7 @@ Updating data and metadata of resource fl_convenio_entrada_interv.
 Updating data and metadata of resource fl_convenio_entrada_aditivo.
 Updating data and metadata of resource ft_convenio_entrada.
 Updating data and metadata of resource dm_interveniente_conv_ent.
+Updating data and metadata of resource dm_concedente.
 Updating data and metadata of resource dm_elemento_desp.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/convenios-entrada updated
@@ -720,7 +732,9 @@ Updating data and metadata of resource dm_funcao_desp.
 Updating data and metadata of resource dm_fonte.
 Updating data and metadata of resource dm_grupo_desp.
 Updating data and metadata of resource dm_modalidade_aplic.
+Updating data and metadata of resource dm_tempo_anual.
 Updating data and metadata of resource dm_emenda_orcam.
+Updating data and metadata of resource dm_decreto.
 Updating data and metadata of resource dm_indicador_acao.
 Updating data and metadata of resource sa_indicador_acao.
 Updating data and metadata of resource dm_fonte_orcam.
@@ -734,9 +748,3 @@ Updating data and metadata of resource ft_orcamento_emenda.
 Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main 3c8cdf89] Atualização age7
- 187 files changed, 5895977 insertions(+), 1069865 deletions(-)
- rewrite build_datasets/compras_contratos/datapackage.json (78%)
- rewrite logs/cron.txt (66%)
- rewrite logs/validate/fl_compras_empenho.json (99%)
- rewrite logs/validate/ft_compras.json (78%)
