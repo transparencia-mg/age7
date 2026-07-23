@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 6.032,
+  "time": 0.103,
   "errors": [],
   "tasks": [
     {
@@ -76,13 +76,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "5e1b6065a3665a140475cb9a8c0d5cc5",
-          "bytes": 17260,
+          "hash": "5f2550c980500eb24a39fa79eeac3f08",
+          "bytes": 60,
           "fields": 2,
-          "rows": 3356
+          "rows": 1
         }
       },
-      "time": 6.032,
+      "time": 0.103,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -104,16 +104,51 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "cells": [
+            "id_convenio",
+            "id_interveniente"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_convenio",
+            "id_interveniente"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 2
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 2,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }

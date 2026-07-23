@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 7.42,
+  "time": 0.096,
   "errors": [],
   "tasks": [
     {
@@ -105,13 +105,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "259b7db7a00d807e01de459bf4d7b0ee",
-          "bytes": 769729,
+          "hash": "a0d66dfb9f964a2dc3f03667dd95bbbc",
+          "bytes": 121,
           "fields": 5,
-          "rows": 106809
+          "rows": 1
         }
       },
-      "time": 7.42,
+      "time": 0.096,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -133,16 +133,57 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "cells": [
+            "id_convenio",
+            "id_classifica_rec",
+            "dt_registro_receita",
+            "ano_particao",
+            "vr_arrecadado"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_convenio",
+            "id_classifica_rec",
+            "dt_registro_receita",
+            "ano_particao",
+            "vr_arrecadado"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 2
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 2,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }

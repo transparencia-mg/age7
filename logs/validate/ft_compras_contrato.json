@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 46.221,
+  "time": 0.244,
   "errors": [],
   "tasks": [
     {
@@ -201,13 +201,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "6dc623a3c9e116ef42f38a4255b45fb3",
-          "bytes": 2226745,
+          "hash": "229a66b99e666c3e0c94af0af6bed2aa",
+          "bytes": 145,
           "fields": 9,
-          "rows": 101667
+          "rows": 1
         }
       },
-      "time": 46.221,
+      "time": 0.244,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -229,16 +229,161 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "cells": [
+            "id_tempo",
+            "id_processo",
+            "id_orgao_contrato",
+            "id_contrato",
+            "id_contratado",
+            "id_situacao_cont",
+            "ano_particao",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_processo",
+            "id_orgao_contrato",
+            "id_contrato",
+            "id_contratado",
+            "id_situacao_cont",
+            "ano_particao",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_processo",
+            "id_orgao_contrato",
+            "id_contrato",
+            "id_contratado",
+            "id_situacao_cont",
+            "ano_particao",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_processo",
+            "id_orgao_contrato",
+            "id_contrato",
+            "id_contratado",
+            "id_situacao_cont",
+            "ano_particao",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_processo",
+            "id_orgao_contrato",
+            "id_contrato",
+            "id_contratado",
+            "id_situacao_cont",
+            "ano_particao",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        },
+        {
+          "cells": [
+            "id_tempo",
+            "id_processo",
+            "id_orgao_contrato",
+            "id_contrato",
+            "id_contratado",
+            "id_situacao_cont",
+            "ano_particao",
+            "vr_homologado",
+            "vr_atualizado"
+          ],
+          "rowNumber": 1,
+          "rowPosition": 2,
+          "code": "foreign-key-error",
+          "name": "ForeignKey Error",
+          "tags": [
+            "#table",
+            "#row"
+          ],
+          "note": "not found in the lookup table",
+          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
+          "description": "Values in the foreign key fields should exist in the reference table"
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 6
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 6,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }
