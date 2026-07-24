@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.281,
+  "time": 2.897,
   "errors": [],
   "tasks": [
     {
@@ -255,13 +255,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "a1c54fdf08d71e852a9794293c1e0ada",
-          "bytes": 178,
+          "hash": "17ac59da066bc7e29b3ae3fa86933068",
+          "bytes": 231289,
           "fields": 13,
-          "rows": 1
+          "rows": 17968
         }
       },
-      "time": 0.281,
+      "time": 2.897,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -283,213 +283,16 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [
-        {
-          "cells": [
-            "id_unidade_orc",
-            "id_origem",
-            "id_especie",
-            "id_rubrica",
-            "id_alinea",
-            "id_subalinea",
-            "id_item",
-            "id_fonte",
-            "cd_fonte_recurso",
-            "cd_classificacao_rec",
-            "ano_particao",
-            "vr_previsto_inicial",
-            "vr_previsto_atual"
-          ],
-          "rowNumber": 1,
-          "rowPosition": 2,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_unidade_orc",
-            "id_origem",
-            "id_especie",
-            "id_rubrica",
-            "id_alinea",
-            "id_subalinea",
-            "id_item",
-            "id_fonte",
-            "cd_fonte_recurso",
-            "cd_classificacao_rec",
-            "ano_particao",
-            "vr_previsto_inicial",
-            "vr_previsto_atual"
-          ],
-          "rowNumber": 1,
-          "rowPosition": 2,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_unidade_orc",
-            "id_origem",
-            "id_especie",
-            "id_rubrica",
-            "id_alinea",
-            "id_subalinea",
-            "id_item",
-            "id_fonte",
-            "cd_fonte_recurso",
-            "cd_classificacao_rec",
-            "ano_particao",
-            "vr_previsto_inicial",
-            "vr_previsto_atual"
-          ],
-          "rowNumber": 1,
-          "rowPosition": 2,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_unidade_orc",
-            "id_origem",
-            "id_especie",
-            "id_rubrica",
-            "id_alinea",
-            "id_subalinea",
-            "id_item",
-            "id_fonte",
-            "cd_fonte_recurso",
-            "cd_classificacao_rec",
-            "ano_particao",
-            "vr_previsto_inicial",
-            "vr_previsto_atual"
-          ],
-          "rowNumber": 1,
-          "rowPosition": 2,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_unidade_orc",
-            "id_origem",
-            "id_especie",
-            "id_rubrica",
-            "id_alinea",
-            "id_subalinea",
-            "id_item",
-            "id_fonte",
-            "cd_fonte_recurso",
-            "cd_classificacao_rec",
-            "ano_particao",
-            "vr_previsto_inicial",
-            "vr_previsto_atual"
-          ],
-          "rowNumber": 1,
-          "rowPosition": 2,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_unidade_orc",
-            "id_origem",
-            "id_especie",
-            "id_rubrica",
-            "id_alinea",
-            "id_subalinea",
-            "id_item",
-            "id_fonte",
-            "cd_fonte_recurso",
-            "cd_classificacao_rec",
-            "ano_particao",
-            "vr_previsto_inicial",
-            "vr_previsto_atual"
-          ],
-          "rowNumber": 1,
-          "rowPosition": 2,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        },
-        {
-          "cells": [
-            "id_unidade_orc",
-            "id_origem",
-            "id_especie",
-            "id_rubrica",
-            "id_alinea",
-            "id_subalinea",
-            "id_item",
-            "id_fonte",
-            "cd_fonte_recurso",
-            "cd_classificacao_rec",
-            "ano_particao",
-            "vr_previsto_inicial",
-            "vr_previsto_atual"
-          ],
-          "rowNumber": 1,
-          "rowPosition": 2,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        }
-      ],
+      "errors": [],
       "stats": {
-        "errors": 7
+        "errors": 0
       },
-      "valid": false
+      "valid": true
     }
   ],
   "stats": {
-    "errors": 7,
+    "errors": 0,
     "tasks": 1
   },
-  "valid": false
+  "valid": true
 }

@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.081,
+  "time": 1.899,
   "errors": [],
   "tasks": [
     {
@@ -127,13 +127,13 @@
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "fa4cbbd7055daef6bf25d4512a8bb6d1",
-          "bytes": 230,
+          "hash": "fc2e780e4c3267aa25e5bf0b4a71c070",
+          "bytes": 1479240,
           "fields": 8,
-          "rows": 1
+          "rows": 32387
         }
       },
-      "time": 0.081,
+      "time": 1.899,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -155,40 +155,16 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [
-        {
-          "cells": [
-            "id_convenio",
-            "nr_processo",
-            "nr_processo_formatado",
-            "objeto",
-            "cd_orgao",
-            "nome_orgao",
-            "nrdoc_contratado",
-            "nome_contratado"
-          ],
-          "rowNumber": 1,
-          "rowPosition": 2,
-          "code": "foreign-key-error",
-          "name": "ForeignKey Error",
-          "tags": [
-            "#table",
-            "#row"
-          ],
-          "note": "not found in the lookup table",
-          "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-          "description": "Values in the foreign key fields should exist in the reference table"
-        }
-      ],
+      "errors": [],
       "stats": {
-        "errors": 1
+        "errors": 0
       },
-      "valid": false
+      "valid": true
     }
   ],
   "stats": {
-    "errors": 1,
+    "errors": 0,
     "tasks": 1
   },
-  "valid": false
+  "valid": true
 }

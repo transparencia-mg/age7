@@ -124,7 +124,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.047,
+        "time": 0.2,
         "errors": [],
         "tasks": [
           {
@@ -249,13 +249,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "05bc007300d637576ae9db498d44ff22",
-                "bytes": 161,
+                "hash": "3348e70c86a043ae1ccf6a2794ca5e02",
+                "bytes": 27832,
                 "fields": 9,
-                "rows": 1
+                "rows": 3007
               }
             },
-            "time": 0.047,
+            "time": 0.2,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -389,7 +389,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.045,
+        "time": 4.071,
         "errors": [],
         "tasks": [
           {
@@ -489,13 +489,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "37515f8b2962fa75f7f7e93c7fab7840",
-                "bytes": 61,
+                "hash": "72fc8f3e960c9f7d979aae296fa1a93c",
+                "bytes": 422039,
                 "fields": 6,
-                "rows": 0
+                "rows": 55153
               }
             },
-            "time": 0.045,
+            "time": 4.071,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -692,7 +692,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.047,
+        "time": 0.072,
         "errors": [],
         "tasks": [
           {
@@ -855,13 +855,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "2543f094cba9d33810cd6ac304a7d90b",
-                "bytes": 40,
+                "hash": "d1e68df0891b7535623bb76c94f80341",
+                "bytes": 10821,
                 "fields": 3,
-                "rows": 0
+                "rows": 720
               }
             },
-            "time": 0.047,
+            "time": 0.072,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1089,7 +1089,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.161,
+        "time": 56.514,
         "errors": [],
         "tasks": [
           {
@@ -1282,13 +1282,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "0ef8b3c6815661ce5544251c2897fb29",
-                "bytes": 122,
+                "hash": "c8d8f17e24496e6b737ef2ea7d5f279b",
+                "bytes": 8438884,
                 "fields": 11,
-                "rows": 0
+                "rows": 782070
               }
             },
-            "time": 0.161,
+            "time": 56.514,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1599,7 +1599,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.346,
+        "time": 17.94,
         "errors": [],
         "tasks": [
           {
@@ -1870,13 +1870,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "8682e47ae0dc62c499634e6e4d2580be",
-                "bytes": 191,
+                "hash": "e986a40b46acd242fcf230613fcb5c33",
+                "bytes": 1653697,
                 "fields": 14,
-                "rows": 1
+                "rows": 96125
               }
             },
-            "time": 0.346,
+            "time": 17.94,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -1898,222 +1898,18 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_orgao",
-                  "id_convenio",
-                  "id_municipio",
-                  "id_convenente",
-                  "id_tipo_atendimento",
-                  "id_situacao",
-                  "ano_particao",
-                  "vr_concede_atual",
-                  "vr_emen_parl_atual",
-                  "vr_interv_atual",
-                  "vr_contra_atual",
-                  "vr_total_atual",
-                  "vr_total_public"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_orgao",
-                  "id_convenio",
-                  "id_municipio",
-                  "id_convenente",
-                  "id_tipo_atendimento",
-                  "id_situacao",
-                  "ano_particao",
-                  "vr_concede_atual",
-                  "vr_emen_parl_atual",
-                  "vr_interv_atual",
-                  "vr_contra_atual",
-                  "vr_total_atual",
-                  "vr_total_public"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_orgao",
-                  "id_convenio",
-                  "id_municipio",
-                  "id_convenente",
-                  "id_tipo_atendimento",
-                  "id_situacao",
-                  "ano_particao",
-                  "vr_concede_atual",
-                  "vr_emen_parl_atual",
-                  "vr_interv_atual",
-                  "vr_contra_atual",
-                  "vr_total_atual",
-                  "vr_total_public"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_orgao",
-                  "id_convenio",
-                  "id_municipio",
-                  "id_convenente",
-                  "id_tipo_atendimento",
-                  "id_situacao",
-                  "ano_particao",
-                  "vr_concede_atual",
-                  "vr_emen_parl_atual",
-                  "vr_interv_atual",
-                  "vr_contra_atual",
-                  "vr_total_atual",
-                  "vr_total_public"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_orgao",
-                  "id_convenio",
-                  "id_municipio",
-                  "id_convenente",
-                  "id_tipo_atendimento",
-                  "id_situacao",
-                  "ano_particao",
-                  "vr_concede_atual",
-                  "vr_emen_parl_atual",
-                  "vr_interv_atual",
-                  "vr_contra_atual",
-                  "vr_total_atual",
-                  "vr_total_public"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_orgao",
-                  "id_convenio",
-                  "id_municipio",
-                  "id_convenente",
-                  "id_tipo_atendimento",
-                  "id_situacao",
-                  "ano_particao",
-                  "vr_concede_atual",
-                  "vr_emen_parl_atual",
-                  "vr_interv_atual",
-                  "vr_contra_atual",
-                  "vr_total_atual",
-                  "vr_total_public"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_orgao",
-                  "id_convenio",
-                  "id_municipio",
-                  "id_convenente",
-                  "id_tipo_atendimento",
-                  "id_situacao",
-                  "ano_particao",
-                  "vr_concede_atual",
-                  "vr_emen_parl_atual",
-                  "vr_interv_atual",
-                  "vr_contra_atual",
-                  "vr_total_atual",
-                  "vr_total_public"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              }
-            ],
+            "errors": [],
             "stats": {
-              "errors": 7
+              "errors": 0
             },
-            "valid": false
+            "valid": true
           }
         ],
         "stats": {
-          "errors": 7,
+          "errors": 0,
           "tasks": 1
         },
-        "valid": false
+        "valid": true
       }
     },
     {
@@ -2442,7 +2238,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.103,
+        "time": 6.176,
         "errors": [],
         "tasks": [
           {
@@ -2518,13 +2314,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "5f2550c980500eb24a39fa79eeac3f08",
-                "bytes": 60,
+                "hash": "6b62416400dc802cae4298efd163d2d6",
+                "bytes": 17249,
                 "fields": 2,
-                "rows": 1
+                "rows": 3356
               }
             },
-            "time": 0.103,
+            "time": 6.176,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2546,53 +2342,18 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [
-              {
-                "cells": [
-                  "id_convenio",
-                  "id_interveniente"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_convenio",
-                  "id_interveniente"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              }
-            ],
+            "errors": [],
             "stats": {
-              "errors": 2
+              "errors": 0
             },
-            "valid": false
+            "valid": true
           }
         ],
         "stats": {
-          "errors": 2,
+          "errors": 0,
           "tasks": 1
         },
-        "valid": false
+        "valid": true
       }
     },
     {
@@ -2685,7 +2446,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.093,
+        "time": 9.439,
         "errors": [],
         "tasks": [
           {
@@ -2777,13 +2538,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "06c83e05a1177a97a88e4d2c7dd9a4be",
-                "bytes": 73,
+                "hash": "a04b3d06de9d0aa8bf022dda986ee10f",
+                "bytes": 4938790,
                 "fields": 5,
-                "rows": 0
+                "rows": 56752
               }
             },
-            "time": 0.093,
+            "time": 9.439,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3047,7 +2808,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.248,
+        "time": 16.147,
         "errors": [],
         "tasks": [
           {
@@ -3271,13 +3032,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "0a654a99caa4bc508dc17292bbea1b3f",
-                "bytes": 156,
+                "hash": "a5cbaa4d227198c2109b7069b805a343",
+                "bytes": 1543877,
                 "fields": 12,
-                "rows": 1
+                "rows": 89635
               }
             },
-            "time": 0.248,
+            "time": 16.147,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3299,154 +3060,18 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_orgao",
-                  "id_convenio",
-                  "id_municipio",
-                  "id_convenente",
-                  "ano_particao",
-                  "vr_concede_atual",
-                  "vr_emen_parl_atual",
-                  "vr_interv_atual",
-                  "vr_contra_atual",
-                  "vr_total_atual",
-                  "vr_rep_concede_atual"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_orgao",
-                  "id_convenio",
-                  "id_municipio",
-                  "id_convenente",
-                  "ano_particao",
-                  "vr_concede_atual",
-                  "vr_emen_parl_atual",
-                  "vr_interv_atual",
-                  "vr_contra_atual",
-                  "vr_total_atual",
-                  "vr_rep_concede_atual"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_orgao",
-                  "id_convenio",
-                  "id_municipio",
-                  "id_convenente",
-                  "ano_particao",
-                  "vr_concede_atual",
-                  "vr_emen_parl_atual",
-                  "vr_interv_atual",
-                  "vr_contra_atual",
-                  "vr_total_atual",
-                  "vr_rep_concede_atual"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_orgao",
-                  "id_convenio",
-                  "id_municipio",
-                  "id_convenente",
-                  "ano_particao",
-                  "vr_concede_atual",
-                  "vr_emen_parl_atual",
-                  "vr_interv_atual",
-                  "vr_contra_atual",
-                  "vr_total_atual",
-                  "vr_rep_concede_atual"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              },
-              {
-                "cells": [
-                  "id_tempo",
-                  "id_orgao",
-                  "id_convenio",
-                  "id_municipio",
-                  "id_convenente",
-                  "ano_particao",
-                  "vr_concede_atual",
-                  "vr_emen_parl_atual",
-                  "vr_interv_atual",
-                  "vr_contra_atual",
-                  "vr_total_atual",
-                  "vr_rep_concede_atual"
-                ],
-                "rowNumber": 1,
-                "rowPosition": 2,
-                "code": "foreign-key-error",
-                "name": "ForeignKey Error",
-                "tags": [
-                  "#table",
-                  "#row"
-                ],
-                "note": "not found in the lookup table",
-                "message": "Row at position \"2\" violates the foreign key: not found in the lookup table",
-                "description": "Values in the foreign key fields should exist in the reference table"
-              }
-            ],
+            "errors": [],
             "stats": {
-              "errors": 5
+              "errors": 0
             },
-            "valid": false
+            "valid": true
           }
         ],
         "stats": {
-          "errors": 5,
+          "errors": 0,
           "tasks": 1
         },
-        "valid": false
+        "valid": true
       }
     },
     {
@@ -3704,7 +3329,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.093,
+        "time": 12.992,
         "errors": [],
         "tasks": [
           {
@@ -3948,20 +3573,21 @@
               "mediatype": "text/csv",
               "encoding": "utf-8-sig",
               "dialect": {
-                "delimiter": ";"
+                "delimiter": ";",
+                "quoteChar": "\""
               },
               "profile": "tabular-data-resource",
               "scheme": "file",
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "c849708b9a857709135a151fd92b453e",
-                "bytes": 177,
+                "hash": "63b44fe2365ccc68bdd0d33a25fd0db2",
+                "bytes": 9596405,
                 "fields": 20,
-                "rows": 0
+                "rows": 90237
               }
             },
-            "time": 0.093,
+            "time": 12.992,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4075,7 +3701,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.032,
+        "time": 0.224,
         "errors": [],
         "tasks": [
           {
@@ -4155,13 +3781,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "d0dfc602adea4ed997879b543027014b",
-                "bytes": 65,
+                "hash": "b0863d1fbc839e2f9ded81c2fdd7d903",
+                "bytes": 39175,
                 "fields": 4,
-                "rows": 0
+                "rows": 5461
               }
             },
-            "time": 0.032,
+            "time": 0.224,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4265,7 +3891,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.028,
+        "time": 0.081,
         "errors": [],
         "tasks": [
           {
@@ -4335,13 +3961,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e07fd0c78ec4137a1e9b309cb0ce098d",
-                "bytes": 59,
+                "hash": "0853ee0637f29abd0d6c8a2cc704e481",
+                "bytes": 17618,
                 "fields": 3,
-                "rows": 0
+                "rows": 1513
               }
             },
-            "time": 0.028,
+            "time": 0.081,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4457,7 +4083,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.03,
+        "time": 0.417,
         "errors": [],
         "tasks": [
           {
@@ -4539,13 +4165,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "966bf07c06a6e22fdc52719ad0f5fdf7",
-                "bytes": 58,
+                "hash": "d04929c68aa871dbcc1e5e3974d04067",
+                "bytes": 206961,
                 "fields": 4,
-                "rows": 0
+                "rows": 9793
               }
             },
-            "time": 0.03,
+            "time": 0.417,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4649,7 +4275,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.029,
+        "time": 0.031,
         "errors": [],
         "tasks": [
           {
@@ -4719,13 +4345,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "52a70b6959031a4ea1dacd70fb14dfdf",
-                "bytes": 50,
+                "hash": "18339ec55c6ecdb41683232953b28f39",
+                "bytes": 107,
                 "fields": 3,
-                "rows": 0
+                "rows": 4
               }
             },
-            "time": 0.029,
+            "time": 0.031,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4825,7 +4451,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.034,
+        "time": 0.031,
         "errors": [],
         "tasks": [
           {
@@ -4891,13 +4517,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "9fe75654cbb19a4f94e39496c2b548ff",
-                "bytes": 41,
+                "hash": "cc29790eac6e618161d49da128f138eb",
+                "bytes": 1071,
                 "fields": 3,
-                "rows": 0
+                "rows": 55
               }
             },
-            "time": 0.034,
+            "time": 0.031,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4998,7 +4624,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.038,
+        "time": 0.074,
         "errors": [],
         "tasks": [
           {
@@ -5065,13 +4691,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "d8ae9ff36f14742d5662d21953d7b710",
-                "bytes": 51,
+                "hash": "86fd3ffc7078716ec8c11d0f0ae05c0e",
+                "bytes": 10092,
                 "fields": 3,
-                "rows": 0
+                "rows": 916
               }
             },
-            "time": 0.038,
+            "time": 0.074,
             "scope": [
               "hash-count-error",
               "byte-count-error",
