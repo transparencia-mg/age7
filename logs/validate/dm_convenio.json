@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.091,
+  "time": 13.218,
   "errors": [],
   "tasks": [
     {
@@ -244,20 +244,21 @@
         "mediatype": "text/csv",
         "encoding": "utf-8-sig",
         "dialect": {
-          "delimiter": ";"
+          "delimiter": ";",
+          "quoteChar": "\""
         },
         "profile": "tabular-data-resource",
         "scheme": "file",
         "hashing": "md5",
         "compression": "gz",
         "stats": {
-          "hash": "c849708b9a857709135a151fd92b453e",
-          "bytes": 177,
+          "hash": "5f6db42537b2693438bdfbff642924f3",
+          "bytes": 9602759,
           "fields": 20,
-          "rows": 0
+          "rows": 90254
         }
       },
-      "time": 0.091,
+      "time": 13.218,
       "scope": [
         "hash-count-error",
         "byte-count-error",

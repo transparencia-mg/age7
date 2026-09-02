@@ -145,11 +145,10 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... dm_tipo_acao_plan.csv
 >fcsT...... dm_tipo_orcam_plan.csv
 >fcsT...... dm_tipo_prog_plan.csv
->fcsT...... dm_unidade_medida.csv
 >fcsT...... dm_unidade_resp_plan.csv
 >fcsT...... fl_compras_empenho.csv
 >fcsT...... fl_convenio_alteracao.csv
->fcsT...... fl_convenio_entrada_aditivo.csv
+>fc.T...... fl_convenio_entrada_aditivo.csv
 >fcsT...... fl_convenio_entrada_compras.csv
 >fc.T...... fl_convenio_entrada_interv.csv
 >fc.T...... fl_convenio_interveniente.csv
@@ -159,12 +158,14 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... fl_plan_programa.csv
 >fcsT...... fl_plan_responsavel.csv
 >fcsT...... ft_compras.csv
->fc.T...... ft_compras_contrato.csv
+>fcsT...... ft_compras_contrato.csv
 >fcsT...... ft_convenio.csv
->fcsT...... ft_convenio_entrada.csv
+>fc.T...... ft_convenio_entrada.csv
 >fcsT...... ft_convenio_entrada_desp.csv
 >fc.T...... ft_convenio_entrada_dotacao.csv
->fc.T...... ft_convenio_tipoatendimento.csv
+>fcsT...... ft_convenio_entrada_rec.csv
+>fcsT...... ft_convenio_investimento.csv
+>fcsT...... ft_convenio_tipoatendimento.csv
 >fcsT...... ft_despesa_2002.csv
 >fcsT...... ft_despesa_2003.csv
 >fcsT...... ft_despesa_2004.csv
@@ -256,11 +257,13 @@ gzip -n < data/staging/ft_receita_v2018.csv > data/ft_receita_v2018.csv.gz
 gzip -n < data/staging/dm_item_desp.csv > data/dm_item_desp.csv.gz
 gzip -n < data/staging/dm_acao.csv > data/dm_acao.csv.gz
 gzip -n < data/staging/dm_funcao_scdp.csv > data/dm_funcao_scdp.csv.gz
+gzip -n < data/staging/ft_convenio_investimento.csv > data/ft_convenio_investimento.csv.gz
 gzip -n < data/staging/ft_convenio_tipoatendimento.csv > data/ft_convenio_tipoatendimento.csv.gz
 gzip -n < data/staging/fl_convenio_interveniente.csv > data/fl_convenio_interveniente.csv.gz
 gzip -n < data/staging/fl_convenio_alteracao.csv > data/fl_convenio_alteracao.csv.gz
 gzip -n < data/staging/ft_convenio_entrada_dotacao.csv > data/ft_convenio_entrada_dotacao.csv.gz
 gzip -n < data/staging/ft_convenio_entrada_desp.csv > data/ft_convenio_entrada_desp.csv.gz
+gzip -n < data/staging/ft_convenio_entrada_rec.csv > data/ft_convenio_entrada_rec.csv.gz
 gzip -n < data/staging/dm_convenio_entrada.csv > data/dm_convenio_entrada.csv.gz
 gzip -n < data/staging/dm_favorecido_scdp.csv > data/dm_favorecido_scdp.csv.gz
 gzip -n < data/staging/dm_documento_viagem.csv > data/dm_documento_viagem.csv.gz
@@ -301,7 +304,6 @@ gzip -n < data/staging/dm_grupo_matserv.csv > data/dm_grupo_matserv.csv.gz
 gzip -n < data/staging/dm_item_matserv.csv > data/dm_item_matserv.csv.gz
 gzip -n < data/staging/dm_linha_fornec.csv > data/dm_linha_fornec.csv.gz
 gzip -n < data/staging/dm_processo.csv > data/dm_processo.csv.gz
-gzip -n < data/staging/dm_unidade_medida.csv > data/dm_unidade_medida.csv.gz
 gzip -n < data/staging/fl_compras_empenho.csv > data/fl_compras_empenho.csv.gz
 gzip -n < data/staging/ft_convenio.csv > data/ft_convenio.csv.gz
 gzip -n < data/staging/fl_convenio_entrada_compras.csv > data/fl_convenio_entrada_compras.csv.gz
@@ -480,11 +482,13 @@ dtamg-py etl-make validate -r ft_receita_v2018 > logs/validate/ft_receita_v2018.
 dtamg-py etl-make validate -r dm_item_desp > logs/validate/dm_item_desp.json
 dtamg-py etl-make validate -r dm_acao > logs/validate/dm_acao.json
 dtamg-py etl-make validate -r dm_funcao_scdp > logs/validate/dm_funcao_scdp.json
+dtamg-py etl-make validate -r ft_convenio_investimento > logs/validate/ft_convenio_investimento.json
 dtamg-py etl-make validate -r ft_convenio_tipoatendimento > logs/validate/ft_convenio_tipoatendimento.json
 dtamg-py etl-make validate -r fl_convenio_interveniente > logs/validate/fl_convenio_interveniente.json
 dtamg-py etl-make validate -r fl_convenio_alteracao > logs/validate/fl_convenio_alteracao.json
 dtamg-py etl-make validate -r ft_convenio_entrada_dotacao > logs/validate/ft_convenio_entrada_dotacao.json
 dtamg-py etl-make validate -r ft_convenio_entrada_desp > logs/validate/ft_convenio_entrada_desp.json
+dtamg-py etl-make validate -r ft_convenio_entrada_rec > logs/validate/ft_convenio_entrada_rec.json
 dtamg-py etl-make validate -r dm_convenio_entrada > logs/validate/dm_convenio_entrada.json
 dtamg-py etl-make validate -r dm_favorecido_scdp > logs/validate/dm_favorecido_scdp.json
 dtamg-py etl-make validate -r dm_documento_viagem > logs/validate/dm_documento_viagem.json
@@ -525,7 +529,6 @@ dtamg-py etl-make validate -r dm_grupo_matserv > logs/validate/dm_grupo_matserv.
 dtamg-py etl-make validate -r dm_item_matserv > logs/validate/dm_item_matserv.json
 dtamg-py etl-make validate -r dm_linha_fornec > logs/validate/dm_linha_fornec.json
 dtamg-py etl-make validate -r dm_processo > logs/validate/dm_processo.json
-dtamg-py etl-make validate -r dm_unidade_medida > logs/validate/dm_unidade_medida.json
 dtamg-py etl-make validate -r fl_compras_empenho > logs/validate/fl_compras_empenho.json
 dtamg-py etl-make validate -r ft_convenio > logs/validate/ft_convenio.json
 dtamg-py etl-make validate -r fl_convenio_entrada_compras > logs/validate/fl_convenio_entrada_compras.json
@@ -787,6 +790,7 @@ Error during https://dados.mg.gov.br/dataset/compras_contratos updating
 dpckan --datapackage build_datasets/convenios-saida/datapackage.json dataset update 2> logs/update/convenios-saida.txt
 Updating dataset https://dados.mg.gov.br/dataset/convenios-saida
 Updating data and metadata of resource dm_item_desp.
+Updating data and metadata of resource ft_convenio_investimento.
 Updating data and metadata of resource ft_convenio_tipoatendimento.
 Updating data and metadata of resource fl_convenio_interveniente.
 Updating data and metadata of resource fl_convenio_alteracao.
@@ -950,6 +954,7 @@ Updating dataset https://dados.mg.gov.br/dataset/convenios-entrada
 Updating data and metadata of resource dm_item_desp.
 Updating data and metadata of resource ft_convenio_entrada_dotacao.
 Updating data and metadata of resource ft_convenio_entrada_desp.
+Updating data and metadata of resource ft_convenio_entrada_rec.
 Updating data and metadata of resource dm_convenio_entrada.
 Updating data and metadata of resource fl_convenio_entrada_compras.
 Updating data and metadata of resource fl_convenio_entrada_interv.
@@ -1032,43 +1037,3 @@ Updating data and metadata of resource ft_orcamento_cred_alt.
 Updating data and metadata of resource ft_obra.
 Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
-[main a3b92f35] Atualização age7
- 247 files changed, 1948654 insertions(+), 4717054 deletions(-)
- rewrite build_datasets/compras_contratos/datapackage.json (85%)
- rewrite build_datasets/despesa/datapackage.json (96%)
- rewrite datapackage.json (66%)
- rewrite logs/check_validation.txt (85%)
- rewrite logs/cron.txt (66%)
- create mode 100644 logs/ingest.txt
- rewrite logs/validate/failed_reports.json (72%)
- rewrite logs/validate/fl_compras_empenho.json (99%)
- rewrite logs/validate/ft_compras.json (98%)
- copy logs/validate/{ft_restos_pagar_2026.json => ft_convenio_entrada_desp.json} (60%)
- copy logs/validate/{ft_despesa_2026.json => ft_convenio_entrada_dotacao.json} (50%)
- rewrite logs/validate/ft_despesa_2002.json (98%)
- rewrite logs/validate/ft_despesa_2003.json (98%)
- rewrite logs/validate/ft_despesa_2004.json (98%)
- rewrite logs/validate/ft_despesa_2005.json (98%)
- rewrite logs/validate/ft_despesa_2006.json (98%)
- rewrite logs/validate/ft_despesa_2007.json (98%)
- rewrite logs/validate/ft_despesa_2008.json (98%)
- rewrite logs/validate/ft_despesa_2009.json (98%)
- rewrite logs/validate/ft_despesa_2010.json (98%)
- rewrite logs/validate/ft_despesa_2011.json (98%)
- rewrite logs/validate/ft_despesa_2012.json (98%)
- rewrite logs/validate/ft_despesa_2013.json (98%)
- rewrite logs/validate/ft_despesa_2014.json (98%)
- rewrite logs/validate/ft_despesa_2015.json (98%)
- rewrite logs/validate/ft_despesa_2016.json (98%)
- rewrite logs/validate/ft_despesa_2017.json (98%)
- rewrite logs/validate/ft_despesa_2018.json (98%)
- rewrite logs/validate/ft_despesa_2019.json (98%)
- rewrite logs/validate/ft_despesa_2020.json (98%)
- rewrite logs/validate/ft_despesa_2021.json (98%)
- rewrite logs/validate/ft_despesa_2022.json (98%)
- rewrite logs/validate/ft_despesa_2023.json (98%)
- rewrite logs/validate/ft_despesa_2024.json (98%)
- rewrite logs/validate/ft_despesa_2025.json (98%)
- rewrite logs/validate/ft_despesa_2026.json (98%)
- rewrite logs/validate/ft_restos_pagar_2026.json (98%)
- rewrite report/index.html (71%)
