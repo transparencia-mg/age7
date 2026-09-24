@@ -5,7 +5,7 @@ Traceback (most recent call last):
     raise err
   File "/usr/local/lib/python3.9/socket.py", line 832, in create_connection
     sock.connect(sa)
-socket.timeout: timed out
+OSError: [Errno 113] No route to host
 
 During handling of the above exception, another exception occurred:
 
@@ -18,4 +18,4 @@ Traceback (most recent call last):
     self.connect()
   File "/usr/local/lib/python3.9/site-packages/pymysql/connections.py", line 664, in connect
     raise exc
-pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '10.15.135.205' (timed out)")
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '10.15.135.205' ([Errno 113] No route to host)")
