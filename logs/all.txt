@@ -195,9 +195,10 @@ rsync --itemize-changes --checksum data/raw/* data/staging/ 2> logs/ingest.txt
 >fcsT...... ft_diarias_2026.csv
 >fcsT...... ft_diarias_scdp.csv
 >fcsT...... ft_diarias_scdp_liqpag.csv
->fc.T...... ft_divida_pub.csv
+>fcsT...... ft_divida_pub.csv
 >fcsT...... ft_obra.csv
 >fcsT...... ft_orcamento_cred_alt.csv
+>fcsT...... ft_orcamento_emenda.csv
 >fcsT...... ft_orcamento_proposta.csv
 >fcsT...... ft_pessoal_desp.csv
 >fcsT...... ft_plan_acao_ppag.csv
@@ -446,6 +447,7 @@ gzip -n < data/staging/dm_orgao_obra.csv > data/dm_orgao_obra.csv.gz
 gzip -n < data/staging/dm_situacao_obra.csv > data/dm_situacao_obra.csv.gz
 gzip -n < data/staging/dm_territorio_planeja.csv > data/dm_territorio_planeja.csv.gz
 gzip -n < data/staging/ft_orcamento_proposta.csv > data/ft_orcamento_proposta.csv.gz
+gzip -n < data/staging/ft_orcamento_emenda.csv > data/ft_orcamento_emenda.csv.gz
 gzip -n < data/staging/ft_orcamento_cred_alt.csv > data/ft_orcamento_cred_alt.csv.gz
 gzip -n < data/staging/ft_obra.csv > data/ft_obra.csv.gz
 gzip -n < data/staging/ft_plan_acao_ppag.csv > data/ft_plan_acao_ppag.csv.gz
@@ -670,6 +672,7 @@ dtamg-py etl-make validate -r dm_orgao_obra > logs/validate/dm_orgao_obra.json
 dtamg-py etl-make validate -r dm_situacao_obra > logs/validate/dm_situacao_obra.json
 dtamg-py etl-make validate -r dm_territorio_planeja > logs/validate/dm_territorio_planeja.json
 dtamg-py etl-make validate -r ft_orcamento_proposta > logs/validate/ft_orcamento_proposta.json
+dtamg-py etl-make validate -r ft_orcamento_emenda > logs/validate/ft_orcamento_emenda.json
 dtamg-py etl-make validate -r ft_orcamento_cred_alt > logs/validate/ft_orcamento_cred_alt.json
 dtamg-py etl-make validate -r ft_obra > logs/validate/ft_obra.json
 dtamg-py etl-make validate -r ft_plan_acao_ppag > logs/validate/ft_plan_acao_ppag.json
@@ -1001,43 +1004,32 @@ Updating resource datapackage.json.
 Dataset https://dados.mg.gov.br/dataset/planejamento-e-monitoramento updated
 dpckan --datapackage build_datasets/proposta-lei-orcamentaria/datapackage.json dataset update 2> logs/update/proposta-lei-orcamentaria.txt
 Updating dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria
-Error during https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updating
-[main 4ad1d625] Atualização age7
- 245 files changed, 2132174 insertions(+), 4720451 deletions(-)
- rewrite build_datasets/compras_contratos/datapackage.json (85%)
- rewrite build_datasets/despesa/datapackage.json (96%)
- rewrite datapackage.json (63%)
- rewrite logs/check_validation.txt (88%)
- rewrite logs/cron.txt (66%)
- rewrite logs/validate/failed_reports.json (69%)
- rewrite logs/validate/fl_compras_empenho.json (99%)
- rewrite logs/validate/ft_compras.json (98%)
- copy logs/validate/{ft_restos_pagar_2026.json => ft_convenio_entrada_desp.json} (60%)
- copy logs/validate/{ft_despesa_2026.json => ft_convenio_entrada_dotacao.json} (50%)
- rewrite logs/validate/ft_despesa_2002.json (98%)
- rewrite logs/validate/ft_despesa_2003.json (98%)
- rewrite logs/validate/ft_despesa_2004.json (98%)
- rewrite logs/validate/ft_despesa_2005.json (98%)
- rewrite logs/validate/ft_despesa_2006.json (98%)
- rewrite logs/validate/ft_despesa_2007.json (98%)
- rewrite logs/validate/ft_despesa_2008.json (98%)
- rewrite logs/validate/ft_despesa_2009.json (98%)
- rewrite logs/validate/ft_despesa_2010.json (98%)
- rewrite logs/validate/ft_despesa_2011.json (98%)
- rewrite logs/validate/ft_despesa_2012.json (98%)
- rewrite logs/validate/ft_despesa_2013.json (98%)
- rewrite logs/validate/ft_despesa_2014.json (98%)
- rewrite logs/validate/ft_despesa_2015.json (98%)
- rewrite logs/validate/ft_despesa_2016.json (98%)
- rewrite logs/validate/ft_despesa_2017.json (98%)
- rewrite logs/validate/ft_despesa_2018.json (98%)
- rewrite logs/validate/ft_despesa_2019.json (98%)
- rewrite logs/validate/ft_despesa_2020.json (98%)
- rewrite logs/validate/ft_despesa_2021.json (98%)
- rewrite logs/validate/ft_despesa_2022.json (98%)
- rewrite logs/validate/ft_despesa_2023.json (98%)
- rewrite logs/validate/ft_despesa_2024.json (98%)
- rewrite logs/validate/ft_despesa_2025.json (98%)
- rewrite logs/validate/ft_despesa_2026.json (98%)
- rewrite logs/validate/ft_restos_pagar_2026.json (98%)
- rewrite report/index.html (67%)
+Updating data and metadata of resource dm_funcao_desp.
+Updating data and metadata of resource dm_acao.
+Updating data and metadata of resource dm_fonte.
+Updating data and metadata of resource dm_modalidade_aplic.
+Updating data and metadata of resource dm_tempo_anual.
+Updating data and metadata of resource dm_emenda_orcam.
+Updating data and metadata of resource dm_autor_emenda.
+Updating data and metadata of resource dm_decreto.
+Updating data and metadata of resource dm_indicador_acao.
+Updating data and metadata of resource sa_indicador_acao.
+Updating data and metadata of resource dm_acao_orcam.
+Updating data and metadata of resource dm_fonte_orcam.
+Updating data and metadata of resource dm_funcao_orcam.
+Updating data and metadata of resource dm_subfuncao_orcam.
+Updating data and metadata of resource dm_grupo_orcam.
+Updating data and metadata of resource dm_programa_orcam.
+Updating data and metadata of resource dm_procedencia_orcam.
+Updating data and metadata of resource dm_orgao_orcam.
+Updating data and metadata of resource dm_indic_acao_orcam.
+Updating data and metadata of resource dm_municipio_obra.
+Updating data and metadata of resource dm_orgao_obra.
+Updating data and metadata of resource dm_situacao_obra.
+Updating data and metadata of resource dm_territorio_planeja.
+Updating data and metadata of resource ft_orcamento_proposta.
+Updating data and metadata of resource ft_orcamento_emenda.
+Updating data and metadata of resource ft_orcamento_cred_alt.
+Updating data and metadata of resource ft_obra.
+Updating resource datapackage.json.
+Dataset https://dados.mg.gov.br/dataset/proposta-lei-orcamentaria updated
