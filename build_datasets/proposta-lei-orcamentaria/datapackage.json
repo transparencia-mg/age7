@@ -1228,7 +1228,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.03,
+        "time": 0.96,
         "errors": [],
         "tasks": [
           {
@@ -1306,13 +1306,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "1d35f834c153e6a4b772a6e5afce3248",
-                "bytes": 54,
+                "hash": "ae42a9988e6cdca3a1153afb7c6b0d52",
+                "bytes": 409170,
                 "fields": 4,
-                "rows": 0
+                "rows": 23599
               }
             },
-            "time": 0.03,
+            "time": 0.96,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2446,7 +2446,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.028,
+        "time": 0.029,
         "errors": [],
         "tasks": [
           {
@@ -2523,13 +2523,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "0bee8d6fa21957e58774b163b12987c0",
-                "bytes": 46,
+                "hash": "d251dab27d238cc1cf35d9571331c7ab",
+                "bytes": 124,
                 "fields": 3,
-                "rows": 0
+                "rows": 4
               }
             },
-            "time": 0.028,
+            "time": 0.029,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2625,7 +2625,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.035,
+        "time": 0.032,
         "errors": [],
         "tasks": [
           {
@@ -2690,7 +2690,7 @@
                 "rows": 152
               }
             },
-            "time": 0.035,
+            "time": 0.032,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -2939,7 +2939,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.063,
+        "time": 1.066,
         "errors": [],
         "tasks": [
           {
@@ -3131,13 +3131,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "2beedc5a1a35a3fa77f06ed89240baa1",
-                "bytes": 125,
+                "hash": "7b3de393174590f02c86d53765c214d0",
+                "bytes": 429414,
                 "fields": 12,
-                "rows": 0
+                "rows": 15349
               }
             },
-            "time": 0.063,
+            "time": 1.066,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3159,18 +3159,211 @@
               "unique-error"
             ],
             "partial": false,
-            "errors": [],
+            "errors": [
+              {
+                "cell": "RECURSOS ORDINARIOS - OUTROS RECURSOS NAO VINCULADOS",
+                "fieldName": "fonte",
+                "fieldNumber": 8,
+                "fieldPosition": 8,
+                "cells": [
+                  "28494",
+                  "2025",
+                  "743",
+                  "921",
+                  "OUTRAS DESPESAS CORRENTES",
+                  "A DEFINIR",
+                  "DEMAIS PROJETOS E ATIVIDADES",
+                  "RECURSOS ORDINARIOS - OUTROS RECURSOS NAO VINCULADOS",
+                  "RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES",
+                  "1991 - RESERVA DE CONTINGENCIA",
+                  "SECRETARIA DE ESTADO DE GOVERNO",
+                  "-"
+                ],
+                "rowNumber": 12535,
+                "rowPosition": 12536,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['RECURSOS ORDINARIOS', 'RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS', 'OPERACOES DE CREDITO CONTRATUAIS', 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB', 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL', 'RECURSOS DIRETAMENTE ARRECADADOS', 'ALIENACAO DE BENS DO TESOURO ESTADUAL', 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE', 'CONVENIOS, ACORDOS E AJUSTES']\"",
+                "message": "The cell \"RECURSOS ORDINARIOS - OUTROS RECURSOS NAO VINCULADOS\" in row at position \"12536\" and field \"fonte\" at position \"8\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS ORDINARIOS', 'RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS', 'OPERACOES DE CREDITO CONTRATUAIS', 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB', 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL', 'RECURSOS DIRETAMENTE ARRECADADOS', 'ALIENACAO DE BENS DO TESOURO ESTADUAL', 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE', 'CONVENIOS, ACORDOS E AJUSTES']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "RECURSOS RECEBIDOS PARA AUXILIOS",
+                "fieldName": "procedencia",
+                "fieldNumber": 9,
+                "fieldPosition": 9,
+                "cells": [
+                  "30308",
+                  "2026",
+                  "556",
+                  "696",
+                  "OUTRAS DESPESAS CORRENTES",
+                  "A DEFINIR",
+                  "DEMAIS PROJETOS E ATIVIDADES",
+                  "RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS",
+                  "RECURSOS RECEBIDOS PARA AUXILIOS",
+                  "1441 - ",
+                  "-",
+                  "-"
+                ],
+                "rowNumber": 14705,
+                "rowPosition": 14706,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "message": "The cell \"RECURSOS RECEBIDOS PARA AUXILIOS\" in row at position \"14706\" and field \"procedencia\" at position \"9\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "RECURSOS RECEBIDOS PARA AUXILIOS",
+                "fieldName": "procedencia",
+                "fieldNumber": 9,
+                "fieldPosition": 9,
+                "cells": [
+                  "30309",
+                  "2026",
+                  "530",
+                  "705",
+                  "OUTRAS DESPESAS CORRENTES",
+                  "A DEFINIR",
+                  "DEMAIS PROJETOS E ATIVIDADES",
+                  "RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS",
+                  "RECURSOS RECEBIDOS PARA AUXILIOS",
+                  "1021 - ",
+                  "-",
+                  "-"
+                ],
+                "rowNumber": 14706,
+                "rowPosition": 14707,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "message": "The cell \"RECURSOS RECEBIDOS PARA AUXILIOS\" in row at position \"14707\" and field \"procedencia\" at position \"9\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "RECURSOS RECEBIDOS PARA BENEFICIOS PREVISTOS NO ART.39 DA LC 64/2002",
+                "fieldName": "procedencia",
+                "fieldNumber": 9,
+                "fieldPosition": 9,
+                "cells": [
+                  "29972",
+                  "2026",
+                  "533",
+                  "698",
+                  "PESSOAL E ENCARGOS SOCIAIS",
+                  "A DEFINIR",
+                  "DEMAIS PROJETOS E ATIVIDADES",
+                  "RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS",
+                  "RECURSOS RECEBIDOS PARA BENEFICIOS PREVISTOS NO ART.39 DA LC 64/2002",
+                  "1021 - ",
+                  "-",
+                  "-"
+                ],
+                "rowNumber": 14805,
+                "rowPosition": 14806,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "message": "The cell \"RECURSOS RECEBIDOS PARA BENEFICIOS PREVISTOS NO ART.39 DA LC 64/2002\" in row at position \"14806\" and field \"procedencia\" at position \"9\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "RECURSOS RECEBIDOS PARA AUXILIOS",
+                "fieldName": "procedencia",
+                "fieldNumber": 9,
+                "fieldPosition": 9,
+                "cells": [
+                  "29973",
+                  "2026",
+                  "557",
+                  "697",
+                  "OUTRAS DESPESAS CORRENTES",
+                  "A DEFINIR",
+                  "DEMAIS PROJETOS E ATIVIDADES",
+                  "RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS",
+                  "RECURSOS RECEBIDOS PARA AUXILIOS",
+                  "1441 - ",
+                  "-",
+                  "-"
+                ],
+                "rowNumber": 14806,
+                "rowPosition": 14807,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "message": "The cell \"RECURSOS RECEBIDOS PARA AUXILIOS\" in row at position \"14807\" and field \"procedencia\" at position \"9\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS DIRETAMENTE RECEBIDOS', 'RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA', 'RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES', 'RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO']\"",
+                "description": "A field value does not conform to a constraint."
+              },
+              {
+                "cell": "RECURSOS DECORRENTES DA CONVERSAO DE MULTAS AMBIENTAIS",
+                "fieldName": "fonte",
+                "fieldNumber": 8,
+                "fieldPosition": 8,
+                "cells": [
+                  "30539",
+                  "2026",
+                  "552",
+                  "658",
+                  "OUTRAS DESPESAS CORRENTES",
+                  "A DEFINIR",
+                  "DEMAIS PROJETOS E ATIVIDADES",
+                  "RECURSOS DECORRENTES DA CONVERSAO DE MULTAS AMBIENTAIS",
+                  "RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES",
+                  "1371 - ",
+                  "-",
+                  "-"
+                ],
+                "rowNumber": 15336,
+                "rowPosition": 15337,
+                "code": "constraint-error",
+                "name": "Constraint Error",
+                "tags": [
+                  "#table",
+                  "#row",
+                  "#cell"
+                ],
+                "note": "constraint \"enum\" is \"['RECURSOS ORDINARIOS', 'RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS', 'OPERACOES DE CREDITO CONTRATUAIS', 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB', 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL', 'RECURSOS DIRETAMENTE ARRECADADOS', 'ALIENACAO DE BENS DO TESOURO ESTADUAL', 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE', 'CONVENIOS, ACORDOS E AJUSTES']\"",
+                "message": "The cell \"RECURSOS DECORRENTES DA CONVERSAO DE MULTAS AMBIENTAIS\" in row at position \"15337\" and field \"fonte\" at position \"8\" does not conform to a constraint: constraint \"enum\" is \"['RECURSOS ORDINARIOS', 'RECURSOS ORDINARIOS - RECURSOS NAO VINCULADOS DE IMPOSTOS', 'OPERACOES DE CREDITO CONTRATUAIS', 'FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO BASICA - FUNDEB', 'EXPLORACAO E PRODUCAO DE PETROLEO  E GAS NATURAL', 'RECURSOS DIRETAMENTE ARRECADADOS', 'ALIENACAO DE BENS DO TESOURO ESTADUAL', 'COTA ESTADUAL DO SALARIO EDUCACAO - QESE', 'CONVENIOS, ACORDOS E AJUSTES']\"",
+                "description": "A field value does not conform to a constraint."
+              }
+            ],
             "stats": {
-              "errors": 0
+              "errors": 6
             },
-            "valid": true
+            "valid": false
           }
         ],
         "stats": {
-          "errors": 0,
+          "errors": 6,
           "tasks": 1
         },
-        "valid": true
+        "valid": false
       }
     },
     {
@@ -3230,7 +3423,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.023,
+        "time": 0.036,
         "errors": [],
         "tasks": [
           {
@@ -3286,13 +3479,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "50474f2ca6693a3a1d502809a2c2924f",
-                "bytes": 38,
+                "hash": "32bb4ab546ed04b098296313cef89bc9",
+                "bytes": 3237,
                 "fields": 2,
-                "rows": 0
+                "rows": 319
               }
             },
-            "time": 0.023,
+            "time": 0.036,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3379,7 +3572,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.022,
+        "time": 0.192,
         "errors": [],
         "tasks": [
           {
@@ -3432,13 +3625,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "8d921eef6132e5d0b3d359ef06dad6a5",
-                "bytes": 40,
+                "hash": "c8273bb09b765a9dbdd003531720d542",
+                "bytes": 24361,
                 "fields": 2,
-                "rows": 0
+                "rows": 5883
               }
             },
-            "time": 0.022,
+            "time": 0.192,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -3926,7 +4119,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.027,
+        "time": 0.357,
         "errors": [],
         "tasks": [
           {
@@ -3995,13 +4188,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e792ad9340434facde7d027d04a14dbd",
-                "bytes": 40,
+                "hash": "cde312a01a75ab043f11c4a789d840dd",
+                "bytes": 170116,
                 "fields": 3,
-                "rows": 0
+                "rows": 9046
               }
             },
-            "time": 0.027,
+            "time": 0.357,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4108,7 +4301,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.035,
+        "time": 0.03,
         "errors": [],
         "tasks": [
           {
@@ -4178,13 +4371,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "cb3629800f8ee1543f51623a150ddf2a",
-                "bytes": 45,
+                "hash": "bbf250d4b4b5cc363bcc35655e9e9d78",
+                "bytes": 105,
                 "fields": 3,
-                "rows": 0
+                "rows": 3
               }
             },
-            "time": 0.035,
+            "time": 0.03,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -4922,7 +5115,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.028,
+        "time": 0.037,
         "errors": [],
         "tasks": [
           {
@@ -4986,13 +5179,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "63291422105122c3a744fac385e7a798",
-                "bytes": 45,
+                "hash": "61e96634eb4b525735e090f4b48b2fcb",
+                "bytes": 1757,
                 "fields": 3,
-                "rows": 0
+                "rows": 121
               }
             },
-            "time": 0.028,
+            "time": 0.037,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -5315,7 +5508,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.028,
+        "time": 0.092,
         "errors": [],
         "tasks": [
           {
@@ -5386,13 +5579,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e524a5dec6f6e978801636df3b51f782",
-                "bytes": 44,
+                "hash": "3f3c63ed52bef17dcf47f2f15b808183",
+                "bytes": 26297,
                 "fields": 3,
-                "rows": 0
+                "rows": 1814
               }
             },
-            "time": 0.028,
+            "time": 0.092,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -5509,7 +5702,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.03,
+        "time": 0.051,
         "errors": [],
         "tasks": [
           {
@@ -5589,13 +5782,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "11b874ac1cf7a09f15943b9085ea23f8",
-                "bytes": 47,
+                "hash": "1be312a8138cf666b946d42e016a614e",
+                "bytes": 583,
                 "fields": 3,
-                "rows": 0
+                "rows": 20
               }
             },
-            "time": 0.03,
+            "time": 0.051,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -5704,7 +5897,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.029,
+        "time": 0.176,
         "errors": [],
         "tasks": [
           {
@@ -5779,13 +5972,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e088adcbadec51739e4afbe70b043046",
-                "bytes": 55,
+                "hash": "f9e5d1627a7c42b340b165c68c23c30c",
+                "bytes": 28979,
                 "fields": 4,
-                "rows": 0
+                "rows": 3981
               }
             },
-            "time": 0.029,
+            "time": 0.176,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -6733,7 +6926,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.03,
+        "time": 0.17,
         "errors": [],
         "tasks": [
           {
@@ -6806,13 +6999,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "e088adcbadec51739e4afbe70b043046",
-                "bytes": 55,
+                "hash": "65e6b556ffe0b03ba83d6b855b8c4015",
+                "bytes": 27410,
                 "fields": 4,
-                "rows": 0
+                "rows": 3800
               }
             },
-            "time": 0.03,
+            "time": 0.17,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -6912,7 +7105,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.026,
+        "time": 0.028,
         "errors": [],
         "tasks": [
           {
@@ -6978,13 +7171,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "d73aaee7b925eb75fa3c4730ec6cc892",
-                "bytes": 44,
+                "hash": "396c6378c4389782a390902ec8efe640",
+                "bytes": 82,
                 "fields": 3,
-                "rows": 0
+                "rows": 3
               }
             },
-            "time": 0.026,
+            "time": 0.028,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7099,7 +7292,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.03,
+        "time": 0.033,
         "errors": [],
         "tasks": [
           {
@@ -7180,13 +7373,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "8271bdc64bd47b6ffed3aa6c0e24a954",
-                "bytes": 46,
+                "hash": "af38b0fed0a9700c763ff2d146645f5d",
+                "bytes": 307,
                 "fields": 3,
-                "rows": 0
+                "rows": 18
               }
             },
-            "time": 0.03,
+            "time": 0.033,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7363,7 +7556,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.047,
+        "time": 5.217,
         "errors": [],
         "tasks": [
           {
@@ -7465,13 +7658,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "5be27a58122af46aad01bd88ff3e8af8",
-                "bytes": 159,
+                "hash": "cba501c358b75cbce3f881491f21bea1",
+                "bytes": 1190260,
                 "fields": 18,
-                "rows": 0
+                "rows": 118558
               }
             },
-            "time": 0.047,
+            "time": 5.217,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7558,7 +7751,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 248.767,
+        "time": 251.671,
         "errors": [],
         "tasks": [
           {
@@ -7604,13 +7797,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "6fdfea0a49937e16afbced4b6a12c4cb",
-                "bytes": 69142131,
+                "hash": "7247ee461b87928e5949e0b576b82580",
+                "bytes": 69221906,
                 "fields": 4,
-                "rows": 13554846
+                "rows": 13570195
               }
             },
-            "time": 248.767,
+            "time": 251.671,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -7867,7 +8060,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.064,
+        "time": 7.581,
         "errors": [],
         "tasks": [
           {
@@ -8017,13 +8210,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "6862d45cb89ac03541bbbdd7a2b6acd6",
-                "bytes": 221,
+                "hash": "78f29eaa9d2e61338f0c9b6cdffd816d",
+                "bytes": 1873179,
                 "fields": 30,
-                "rows": 0
+                "rows": 89350
               }
             },
-            "time": 0.064,
+            "time": 7.581,
             "scope": [
               "hash-count-error",
               "byte-count-error",
@@ -8130,7 +8323,7 @@
       "profile": "tabular-data-resource",
       "validation": {
         "version": "4.16.6",
-        "time": 0.041,
+        "time": 0.372,
         "errors": [],
         "tasks": [
           {
@@ -8192,13 +8385,13 @@
               "hashing": "md5",
               "compression": "gz",
               "stats": {
-                "hash": "4587344b78a11e3cb063240afb9f9251",
-                "bytes": 94,
+                "hash": "5797d1aa96899ef3a9e449a145d271d7",
+                "bytes": 123894,
                 "fields": 8,
-                "rows": 0
+                "rows": 13120
               }
             },
-            "time": 0.041,
+            "time": 0.372,
             "scope": [
               "hash-count-error",
               "byte-count-error",
